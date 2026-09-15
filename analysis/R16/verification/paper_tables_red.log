@@ -1,0 +1,122 @@
+test_authorized_not_counted (test_paper_tables.PaperTableTests.test_authorized_not_counted) ... ERROR
+test_bool_false (test_paper_tables.PaperTableTests.test_bool_false) ... ERROR
+test_bool_true (test_paper_tables.PaperTableTests.test_bool_true) ... ERROR
+test_calendar_and_no_commit_separate (test_paper_tables.PaperTableTests.test_calendar_and_no_commit_separate) ... ERROR
+test_conflict_requires_full (test_paper_tables.PaperTableTests.test_conflict_requires_full) ... ERROR
+test_count_full (test_paper_tables.PaperTableTests.test_count_full) ... ERROR
+test_count_records_not_tasks (test_paper_tables.PaperTableTests.test_count_records_not_tasks) ... ERROR
+test_duplicate_rejected (test_paper_tables.PaperTableTests.test_duplicate_rejected) ... ERROR
+test_empty (test_paper_tables.PaperTableTests.test_empty) ... ERROR
+test_reject_unknown_bool (test_paper_tables.PaperTableTests.test_reject_unknown_bool) ... ERROR
+
+======================================================================
+ERROR: test_authorized_not_counted (test_paper_tables.PaperTableTests.test_authorized_not_counted)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/ReCheck_ICASSP_R16/analysis/test_paper_tables.py", line 23, in test_authorized_not_counted
+    s=summarize([row(review='EXPLICIT_USER_DATE_REVISION')]); self.assertEqual(s['conflicts'],0)
+  File "/mnt/data/ReCheck_ICASSP_R16/analysis/paper_tables.py", line 5, in summarize
+    raise NotImplementedError('table aggregation not implemented')
+NotImplementedError: table aggregation not implemented
+
+======================================================================
+ERROR: test_bool_false (test_paper_tables.PaperTableTests.test_bool_false)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/ReCheck_ICASSP_R16/analysis/test_paper_tables.py", line 9, in test_bool_false
+    def test_bool_false(self): self.assertFalse(flag('False'))
+                                                ~~~~^^^^^^^^^
+  File "/mnt/data/ReCheck_ICASSP_R16/analysis/paper_tables.py", line 3, in flag
+    raise NotImplementedError('table validation not implemented')
+NotImplementedError: table validation not implemented
+
+======================================================================
+ERROR: test_bool_true (test_paper_tables.PaperTableTests.test_bool_true)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/ReCheck_ICASSP_R16/analysis/test_paper_tables.py", line 8, in test_bool_true
+    def test_bool_true(self): self.assertTrue(flag('True'))
+                                              ~~~~^^^^^^^^
+  File "/mnt/data/ReCheck_ICASSP_R16/analysis/paper_tables.py", line 3, in flag
+    raise NotImplementedError('table validation not implemented')
+NotImplementedError: table validation not implemented
+
+======================================================================
+ERROR: test_calendar_and_no_commit_separate (test_paper_tables.PaperTableTests.test_calendar_and_no_commit_separate)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/ReCheck_ICASSP_R16/analysis/test_paper_tables.py", line 20, in test_calendar_and_no_commit_separate
+    s=summarize([row('a',conflict='True',review='CALENDAR_EFFECT_CONFLICT'),row('b',conflict='True',review='NO_NATIVE_ADD_TEXT_ONLY')])
+  File "/mnt/data/ReCheck_ICASSP_R16/analysis/paper_tables.py", line 5, in summarize
+    raise NotImplementedError('table aggregation not implemented')
+NotImplementedError: table aggregation not implemented
+
+======================================================================
+ERROR: test_conflict_requires_full (test_paper_tables.PaperTableTests.test_conflict_requires_full)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/ReCheck_ICASSP_R16/analysis/test_paper_tables.py", line 15, in test_conflict_requires_full
+    with self.assertRaises(ValueError): validate_rows([row(full='False',conflict='True',review='CALENDAR_EFFECT_CONFLICT')])
+                                        ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/ReCheck_ICASSP_R16/analysis/paper_tables.py", line 7, in validate_rows
+    raise NotImplementedError('identity validation not implemented')
+NotImplementedError: identity validation not implemented
+
+======================================================================
+ERROR: test_count_full (test_paper_tables.PaperTableTests.test_count_full)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/ReCheck_ICASSP_R16/analysis/test_paper_tables.py", line 18, in test_count_full
+    def test_count_full(self): self.assertEqual(summarize([row('a'),row('b',full='False')])['source_full'],1)
+                                                ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/ReCheck_ICASSP_R16/analysis/paper_tables.py", line 5, in summarize
+    raise NotImplementedError('table aggregation not implemented')
+NotImplementedError: table aggregation not implemented
+
+======================================================================
+ERROR: test_count_records_not_tasks (test_paper_tables.PaperTableTests.test_count_records_not_tasks)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/ReCheck_ICASSP_R16/analysis/test_paper_tables.py", line 17, in test_count_records_not_tasks
+    s=summarize([row('a'),row('b')]); self.assertEqual((s['records'],s['tasks']), (2,1))
+  File "/mnt/data/ReCheck_ICASSP_R16/analysis/paper_tables.py", line 5, in summarize
+    raise NotImplementedError('table aggregation not implemented')
+NotImplementedError: table aggregation not implemented
+
+======================================================================
+ERROR: test_duplicate_rejected (test_paper_tables.PaperTableTests.test_duplicate_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/ReCheck_ICASSP_R16/analysis/test_paper_tables.py", line 13, in test_duplicate_rejected
+    with self.assertRaises(ValueError): validate_rows([row(),row()])
+                                        ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/mnt/data/ReCheck_ICASSP_R16/analysis/paper_tables.py", line 7, in validate_rows
+    raise NotImplementedError('identity validation not implemented')
+NotImplementedError: identity validation not implemented
+
+======================================================================
+ERROR: test_empty (test_paper_tables.PaperTableTests.test_empty)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/ReCheck_ICASSP_R16/analysis/test_paper_tables.py", line 24, in test_empty
+    def test_empty(self): self.assertEqual(summarize([])['records'],0)
+                                           ~~~~~~~~~^^^^
+  File "/mnt/data/ReCheck_ICASSP_R16/analysis/paper_tables.py", line 5, in summarize
+    raise NotImplementedError('table aggregation not implemented')
+NotImplementedError: table aggregation not implemented
+
+======================================================================
+ERROR: test_reject_unknown_bool (test_paper_tables.PaperTableTests.test_reject_unknown_bool)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/ReCheck_ICASSP_R16/analysis/test_paper_tables.py", line 11, in test_reject_unknown_bool
+    with self.assertRaises(ValueError): flag('unknown')
+                                        ~~~~^^^^^^^^^^^
+  File "/mnt/data/ReCheck_ICASSP_R16/analysis/paper_tables.py", line 3, in flag
+    raise NotImplementedError('table validation not implemented')
+NotImplementedError: table validation not implemented
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.002s
+
+FAILED (errors=10)

@@ -1,0 +1,196 @@
+{
+  "phase": "R16_RECHECK_MANUSCRIPT_AND_EVIDENCE_SYNTHESIS",
+  "date_utc": "2026-09-15T12:46:14.669544+00:00",
+  "new_remote_llm_calls": 0,
+  "new_model_episodes": 0,
+  "new_native_tool_experiments": 0,
+  "full_english_working_draft_completed": true,
+  "submission_ready_certified": false,
+  "author_evidence_review": {
+    "scope": "ReCheck research evidence and case review",
+    "reported_status": "completed",
+    "provenance": "User stated in the current request: 作者核查已完成",
+    "author_names": null,
+    "reviewer_count": null,
+    "per_case_signed_adjudications_provided": false,
+    "independent_annotator_agreement": null,
+    "final_manuscript_original_author_composition": "not established by evidence-review confirmation",
+    "source_annotations_modified": false
+  },
+  "author_identity_details_received": false,
+  "original_author_manuscript_received": false,
+  "R15_frozen_analysis_unit_tests": {
+    "run": 35,
+    "failures": 0,
+    "errors": 0
+  },
+  "new_descriptive_aggregation_unit_tests": {
+    "run": 10,
+    "failures": 0,
+    "errors": 0
+  },
+  "R15_records_recomputed": 576,
+  "independent_numeric_no_creation_checks_passed": 64,
+  "R15_original_and_recomputed_outputs_identical": 13,
+  "pdf_checks": {
+    "pages": [
+      {
+        "page": 1,
+        "size_points": [
+          612,
+          792
+        ],
+        "text_bbox_points": [
+          54.42498016357422,
+          96.69713592529297,
+          558.9907836914062,
+          723.5408935546875
+        ],
+        "text_characters": 4463
+      },
+      {
+        "page": 2,
+        "size_points": [
+          612,
+          792
+        ],
+        "text_bbox_points": [
+          54.42500305175781,
+          74.40748596191406,
+          558.9968872070312,
+          723.541259765625
+        ],
+        "text_characters": 4822
+      },
+      {
+        "page": 3,
+        "size_points": [
+          612,
+          792
+        ],
+        "text_bbox_points": [
+          54.42498779296875,
+          71.34786224365234,
+          558.9884033203125,
+          723.5408325195312
+        ],
+        "text_characters": 4524
+      },
+      {
+        "page": 4,
+        "size_points": [
+          612,
+          792
+        ],
+        "text_bbox_points": [
+          54.42499923706055,
+          74.40724182128906,
+          558.9971923828125,
+          723.5408935546875
+        ],
+        "text_characters": 4960
+      },
+      {
+        "page": 5,
+        "size_points": [
+          612,
+          792
+        ],
+        "text_bbox_points": [
+          54.42498779296875,
+          74.40748596191406,
+          298.20654296875,
+          187.98123168945312
+        ],
+        "text_characters": 442
+      }
+    ],
+    "page_count": 5,
+    "technical_content_ends_by_page": 4,
+    "page5_references_only": true,
+    "abstract_whitespace_word_count": 142,
+    "body_font_points": 10,
+    "table_font_points": 9,
+    "figure_label_font_points": 9,
+    "embedded_font_entries": 16,
+    "all_fonts_embedded": true,
+    "type3_font_entries": 0,
+    "overfull_warnings": 0,
+    "undefined_references": 0,
+    "encrypted": false,
+    "known_nonfatal_warning": "epstopdf: shell escape disabled; no EPS conversion is required",
+    "visible_working_draft_marker": true,
+    "author_details_pending": true,
+    "official_submission_system_checked": false
+  },
+  "fresh_source_checks": {
+    "registered_source_files": 19,
+    "all_hashes_match": true,
+    "clean_build_exit_codes": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "working_draft_pages": 5,
+    "page_render_equality": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "PDF_byte_identity_required": false,
+    "scope": "Same-environment compile and render reproduction, not official conference validation"
+  },
+  "pdf": {
+    "name": "ReCheck_ICASSP_Research_Draft_R16.pdf",
+    "bytes": 196711,
+    "sha256": "10f1f8746a9c8298e846477774298ac2a7b98ae9caae47901c74ae0d28550de2"
+  },
+  "latex_archive": {
+    "name": "ReCheck_ICASSP_LaTeX_R16.zip",
+    "bytes": 82088,
+    "sha256": "a0f369b35d7f7def29e4755cb26de5e35f17aea41561016ae253918389d55a45"
+  },
+  "input_archives_unchanged": {
+    "R12_Public_Evaluator_Audit.zip": {
+      "bytes": 878402,
+      "sha256": "eb53d1226e0a213d2a212fbc76f804cc6cc21f651a23b1765df57a9fe242ec7b"
+    },
+    "R13_Temporal_Scope_Audit.zip": {
+      "bytes": 369458,
+      "sha256": "2a4fdc0b453f3455695234a2685f037faf5c36aa3ee22171e8444ce72f23738c"
+    },
+    "R14_Public_Corpus_Analysis.zip": {
+      "bytes": 19449608,
+      "sha256": "2bb15d73541df1254acc3e28d939d068d61b348243c3e055ad539b9d99361cfe"
+    },
+    "R15_Public_Effect_Audit.zip": {
+      "bytes": 20234542,
+      "sha256": "d7af1d62444d82864aac3ca2fc4ea341ae6ce98cdc5091553e5417759ca51d19"
+    }
+  },
+  "corpus_revision": "593e686f4d0c2e9fcae5ae664c16a7687907cf97",
+  "public_corpus_raw_zip_sha256": "22eae5e31183ca4e109bd13ed5f6b79f082a6e81511f1ae0dfd38f83499a6dd6",
+  "ToolSandbox_control_revision": "c8571d7854316d2e1c5f288e59fe1e34e53f6dd1",
+  "SAP_source_code_revision": "23c256af44af28f8f7b1b94be8acdb24c8ec80ea",
+  "prior_scores_or_annotations_changed": false,
+  "historical_all_round_tests_rerun": false,
+  "official_template_bytes_downloaded": false,
+  "template_provenance": "Inherited style-definition transcription checked against current official web-readable style; not a byte-identical official download.",
+  "github_written": false,
+  "conference_submission_attempted": false,
+  "repairlens_changed": false,
+  "limitations": [
+    "Complete generated draft is not certified to satisfy ICASSP original-author-composition policy.",
+    "Reviewer counts and inter-rater agreement are unknown; user completion report recorded as provided.",
+    "Known small repeated task templates; no population error rate, causal judge attribution or ranking change.",
+    "Same-environment tests and rendering, not independent human review or official submission inspection."
+  ],
+  "build_diagnostics_retained": [
+    "First author-placeholder TeX syntax error corrected; original log retained.",
+    "Line overflows corrected without changing content-area dimensions.",
+    "Final-page check initially assumed reference5 stayed on page5; after typography change reference5 moved to page4. Final check re-derived from page content; no scientific result changed."
+  ]
+}

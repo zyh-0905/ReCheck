@@ -1,0 +1,281 @@
+{
+  "recheck": {
+    "objective:recheck-myopic": {
+      "n_clusters": 64,
+      "mean_difference": -0.020440755208333328,
+      "low": -0.024871978081597215,
+      "high": -0.016087906901041664,
+      "bootstrap_repeats": 3000,
+      "bootstrap_seed": 8675309,
+      "interval": "paired percentile bootstrap, descriptive"
+    },
+    "objective:recheck-ttl": {
+      "n_clusters": 64,
+      "mean_difference": -0.010411349826388888,
+      "low": -0.012818804253472215,
+      "high": -0.008183588324652772,
+      "bootstrap_repeats": 3000,
+      "bootstrap_seed": 8675309,
+      "interval": "paired percentile bootstrap, descriptive"
+    },
+    "objective:recheck-entropy": {
+      "n_clusters": 64,
+      "mean_difference": -0.013284288194444443,
+      "low": -0.016645494249131948,
+      "high": -0.010123581271701392,
+      "bootstrap_repeats": 3000,
+      "bootstrap_seed": 8675309,
+      "interval": "paired percentile bootstrap, descriptive"
+    },
+    "objective:recheck-fresh": {
+      "n_clusters": 64,
+      "mean_difference": -0.12235557725694443,
+      "low": -0.12899024251302083,
+      "high": -0.11590107693142361,
+      "bootstrap_repeats": 3000,
+      "bootstrap_seed": 8675309,
+      "interval": "paired percentile bootstrap, descriptive"
+    },
+    "objective:recheck-no_task": {
+      "n_clusters": 64,
+      "mean_difference": -0.03633778211805555,
+      "low": -0.03938680284288194,
+      "high": -0.033373193359375004,
+      "bootstrap_repeats": 3000,
+      "bootstrap_seed": 8675309,
+      "interval": "paired percentile bootstrap, descriptive"
+    },
+    "success:recheck-myopic": {
+      "n_clusters": 64,
+      "mean_difference": 0.0899197048611111,
+      "low": 0.08180338541666665,
+      "high": 0.09809054904513889,
+      "bootstrap_repeats": 3000,
+      "bootstrap_seed": 8675309,
+      "interval": "paired percentile bootstrap, descriptive"
+    },
+    "success:recheck-ttl": {
+      "n_clusters": 64,
+      "mean_difference": 0.000748697916666664,
+      "low": -0.0038736979166666564,
+      "high": 0.005317111545138895,
+      "bootstrap_repeats": 3000,
+      "bootstrap_seed": 8675309,
+      "interval": "paired percentile bootstrap, descriptive"
+    },
+    "success:recheck-entropy": {
+      "n_clusters": 64,
+      "mean_difference": -0.022580295138888883,
+      "low": -0.02803846571180555,
+      "high": -0.017165527343749997,
+      "bootstrap_repeats": 3000,
+      "bootstrap_seed": 8675309,
+      "interval": "paired percentile bootstrap, descriptive"
+    },
+    "success:recheck-fresh": {
+      "n_clusters": 64,
+      "mean_difference": -0.10327690972222223,
+      "low": -0.11156765407986112,
+      "high": -0.09551839192708332,
+      "bootstrap_repeats": 3000,
+      "bootstrap_seed": 8675309,
+      "interval": "paired percentile bootstrap, descriptive"
+    },
+    "success:recheck-no_task": {
+      "n_clusters": 64,
+      "mean_difference": 0.07939453125,
+      "low": 0.07361083984375,
+      "high": 0.08500434027777776,
+      "bootstrap_repeats": 3000,
+      "bootstrap_seed": 8675309,
+      "interval": "paired percentile bootstrap, descriptive"
+    },
+    "probes_per_task:recheck-myopic": {
+      "n_clusters": 64,
+      "mean_difference": 0.11814236111111111,
+      "low": 0.11349772135416668,
+      "high": 0.12300347222222222,
+      "bootstrap_repeats": 3000,
+      "bootstrap_seed": 8675309,
+      "interval": "paired percentile bootstrap, descriptive"
+    },
+    "probes_per_task:recheck-ttl": {
+      "n_clusters": 64,
+      "mean_difference": 0.005577256944444444,
+      "low": -0.0015087890625000004,
+      "high": 0.013086480034722231,
+      "bootstrap_repeats": 3000,
+      "bootstrap_seed": 8675309,
+      "interval": "paired percentile bootstrap, descriptive"
+    },
+    "probes_per_task:recheck-entropy": {
+      "n_clusters": 64,
+      "mean_difference": -0.03617621527777777,
+      "low": -0.045400390625,
+      "high": -0.026876898871527784,
+      "bootstrap_repeats": 3000,
+      "bootstrap_seed": 8675309,
+      "interval": "paired percentile bootstrap, descriptive"
+    },
+    "probes_per_task:recheck-fresh": {
+      "n_clusters": 64,
+      "mean_difference": -0.7673068576388888,
+      "low": -0.80814697265625,
+      "high": -0.7263538953993054,
+      "bootstrap_repeats": 3000,
+      "bootstrap_seed": 8675309,
+      "interval": "paired percentile bootstrap, descriptive"
+    },
+    "probes_per_task:recheck-no_task": {
+      "n_clusters": 64,
+      "mean_difference": -0.07252604166666671,
+      "low": -0.08442192925347229,
+      "high": -0.06042724609375006,
+      "bootstrap_repeats": 3000,
+      "bootstrap_seed": 8675309,
+      "interval": "paired percentile bootstrap, descriptive"
+    }
+  },
+  "repairlens": {
+    "normalized_cost:exact-restart": {
+      "n_clusters": 120,
+      "strata": 6,
+      "mean_difference": -0.24524787175718243,
+      "low": -0.27290779147824346,
+      "high": -0.21825560086028442,
+      "bootstrap_repeats": 3000,
+      "bootstrap_seed": 8675309,
+      "interval": "paired within-family percentile bootstrap; equal stratum weights; descriptive"
+    },
+    "normalized_cost:lookahead2-restart": {
+      "n_clusters": 120,
+      "strata": 6,
+      "mean_difference": -0.23386879614635214,
+      "low": -0.2608852952220945,
+      "high": -0.20845616042895485,
+      "bootstrap_repeats": 3000,
+      "bootstrap_seed": 8675309,
+      "interval": "paired within-family percentile bootstrap; equal stratum weights; descriptive"
+    },
+    "normalized_cost:exact-myopic": {
+      "n_clusters": 120,
+      "strata": 6,
+      "mean_difference": -0.08338700153402946,
+      "low": -0.10716527493860073,
+      "high": -0.058922118561594426,
+      "bootstrap_repeats": 3000,
+      "bootstrap_seed": 8675309,
+      "interval": "paired within-family percentile bootstrap; equal stratum weights; descriptive"
+    },
+    "normalized_cost:exact-class_entropy": {
+      "n_clusters": 120,
+      "strata": 6,
+      "mean_difference": -0.07344570392039419,
+      "low": -0.09529685946953761,
+      "high": -0.05201741794327283,
+      "bootstrap_repeats": 3000,
+      "bootstrap_seed": 8675309,
+      "interval": "paired within-family percentile bootstrap; equal stratum weights; descriptive"
+    },
+    "normalized_cost:lookahead2-class_entropy": {
+      "n_clusters": 120,
+      "strata": 6,
+      "mean_difference": -0.06206662830956389,
+      "low": -0.08569785397349548,
+      "high": -0.03925664909563089,
+      "bootstrap_repeats": 3000,
+      "bootstrap_seed": 8675309,
+      "interval": "paired within-family percentile bootstrap; equal stratum weights; descriptive"
+    },
+    "normalized_cost:exact-discard_replay": {
+      "n_clusters": 120,
+      "strata": 6,
+      "mean_difference": -0.06718238861600795,
+      "low": -0.08428800267846907,
+      "high": -0.05011578891707992,
+      "bootstrap_repeats": 3000,
+      "bootstrap_seed": 8675309,
+      "interval": "paired within-family percentile bootstrap; equal stratum weights; descriptive"
+    },
+    "normalized_cost:lookahead2-exact": {
+      "n_clusters": 120,
+      "strata": 6,
+      "mean_difference": 0.011379075610830298,
+      "low": 0.004235107493216435,
+      "high": 0.018828187422416817,
+      "bootstrap_repeats": 3000,
+      "bootstrap_seed": 8675309,
+      "interval": "paired within-family percentile bootstrap; equal stratum weights; descriptive"
+    },
+    "complete:exact-restart": {
+      "n_clusters": 120,
+      "strata": 6,
+      "mean_difference": 0.0,
+      "low": 0.0,
+      "high": 0.0,
+      "bootstrap_repeats": 3000,
+      "bootstrap_seed": 8675309,
+      "interval": "paired within-family percentile bootstrap; equal stratum weights; descriptive"
+    },
+    "complete:lookahead2-restart": {
+      "n_clusters": 120,
+      "strata": 6,
+      "mean_difference": 0.0,
+      "low": 0.0,
+      "high": 0.0,
+      "bootstrap_repeats": 3000,
+      "bootstrap_seed": 8675309,
+      "interval": "paired within-family percentile bootstrap; equal stratum weights; descriptive"
+    },
+    "complete:exact-myopic": {
+      "n_clusters": 120,
+      "strata": 6,
+      "mean_difference": 0.0,
+      "low": 0.0,
+      "high": 0.0,
+      "bootstrap_repeats": 3000,
+      "bootstrap_seed": 8675309,
+      "interval": "paired within-family percentile bootstrap; equal stratum weights; descriptive"
+    },
+    "complete:exact-class_entropy": {
+      "n_clusters": 120,
+      "strata": 6,
+      "mean_difference": 0.0,
+      "low": 0.0,
+      "high": 0.0,
+      "bootstrap_repeats": 3000,
+      "bootstrap_seed": 8675309,
+      "interval": "paired within-family percentile bootstrap; equal stratum weights; descriptive"
+    },
+    "complete:lookahead2-class_entropy": {
+      "n_clusters": 120,
+      "strata": 6,
+      "mean_difference": 0.0,
+      "low": 0.0,
+      "high": 0.0,
+      "bootstrap_repeats": 3000,
+      "bootstrap_seed": 8675309,
+      "interval": "paired within-family percentile bootstrap; equal stratum weights; descriptive"
+    },
+    "complete:exact-discard_replay": {
+      "n_clusters": 120,
+      "strata": 6,
+      "mean_difference": 0.0,
+      "low": 0.0,
+      "high": 0.0,
+      "bootstrap_repeats": 3000,
+      "bootstrap_seed": 8675309,
+      "interval": "paired within-family percentile bootstrap; equal stratum weights; descriptive"
+    },
+    "complete:lookahead2-exact": {
+      "n_clusters": 120,
+      "strata": 6,
+      "mean_difference": 0.0,
+      "low": 0.0,
+      "high": 0.0,
+      "bootstrap_repeats": 3000,
+      "bootstrap_seed": 8675309,
+      "interval": "paired within-family percentile bootstrap; equal stratum weights; descriptive"
+    }
+  }
+}

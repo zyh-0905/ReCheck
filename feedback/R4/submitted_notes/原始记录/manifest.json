@@ -1,0 +1,328 @@
+{
+  "version": "r4-4.0.0",
+  "config": {
+    "model": "deepseek-flash",
+    "provider_label": "User previously verified DeepSeek endpoint; returned ID recorded, version not independently attested",
+    "key_env": "LLM_API_KEY",
+    "local_no_auth": false,
+    "backend_kind": "live",
+    "max_tokens_field": "max_tokens",
+    "max_output_tokens": 16384,
+    "temperature": null,
+    "extra_body": {
+      "reasoning_effort": "high",
+      "thinking": {
+        "type": "enabled"
+      }
+    },
+    "instruction_role": "system",
+    "timeout_seconds": 300,
+    "min_interval_seconds": 0.5,
+    "max_requests": 408,
+    "max_estimated_spend": null,
+    "prices": {
+      "currency": "UNKNOWN",
+      "input_per_million": null,
+      "output_per_million": null,
+      "cached_input_per_million": null
+    },
+    "base_url_sha256": "5abe20d7d3d56ed5cd86f95d28d3e712ce59ab9161922170c78a4cfc18eaaf0f"
+  },
+  "study": "r4_recheck",
+  "spec": {
+    "protocol_id": "R4_BUNDLE_BUDGET_01",
+    "version": "4.0.0",
+    "phase": "development_not_confirmatory",
+    "steps": 8,
+    "episode_budget": 8,
+    "step_cap": 4,
+    "assumed_hazards": [
+      0.12,
+      0.12,
+      0.12
+    ],
+    "weights": [
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "methods": [
+      "recheck_joint",
+      "bundle_rollout",
+      "bundle_myopic",
+      "age_paced"
+    ],
+    "repeat_methods": [
+      "recheck_joint",
+      "bundle_myopic"
+    ],
+    "repeat_step": 3,
+    "main_calls": 408,
+    "primary_records": 384,
+    "repeat_records": 24,
+    "total_with_smoke": 409,
+    "output_cap": 16384,
+    "order_seed": 4400700,
+    "streams": [
+      {
+        "stream": 0,
+        "condition": "overlap_matched",
+        "overlap": true,
+        "actual_hazard": 0.12,
+        "persistence": 0.85,
+        "price": 0.05,
+        "initial_task": 0,
+        "task_seed": 4410100,
+        "world_seed": 4420200,
+        "data_seed": 4430300
+      },
+      {
+        "stream": 1,
+        "condition": "overlap_matched",
+        "overlap": true,
+        "actual_hazard": 0.12,
+        "persistence": 0.85,
+        "price": 0.05,
+        "initial_task": 1,
+        "task_seed": 4410101,
+        "world_seed": 4420201,
+        "data_seed": 4430301
+      },
+      {
+        "stream": 2,
+        "condition": "overlap_matched",
+        "overlap": true,
+        "actual_hazard": 0.12,
+        "persistence": 0.85,
+        "price": 0.05,
+        "initial_task": 2,
+        "task_seed": 4410102,
+        "world_seed": 4420202,
+        "data_seed": 4430302
+      },
+      {
+        "stream": 3,
+        "condition": "disjoint_matched",
+        "overlap": false,
+        "actual_hazard": 0.12,
+        "persistence": 0.85,
+        "price": 0.05,
+        "initial_task": 0,
+        "task_seed": 4410103,
+        "world_seed": 4420203,
+        "data_seed": 4430303
+      },
+      {
+        "stream": 4,
+        "condition": "disjoint_matched",
+        "overlap": false,
+        "actual_hazard": 0.12,
+        "persistence": 0.85,
+        "price": 0.05,
+        "initial_task": 1,
+        "task_seed": 4410104,
+        "world_seed": 4420204,
+        "data_seed": 4430304
+      },
+      {
+        "stream": 5,
+        "condition": "disjoint_matched",
+        "overlap": false,
+        "actual_hazard": 0.12,
+        "persistence": 0.85,
+        "price": 0.05,
+        "initial_task": 2,
+        "task_seed": 4410105,
+        "world_seed": 4420205,
+        "data_seed": 4430305
+      },
+      {
+        "stream": 6,
+        "condition": "overlap_no_drift",
+        "overlap": true,
+        "actual_hazard": 0.0,
+        "persistence": 0.85,
+        "price": 0.05,
+        "initial_task": 0,
+        "task_seed": 4410106,
+        "world_seed": 4420206,
+        "data_seed": 4430306
+      },
+      {
+        "stream": 7,
+        "condition": "overlap_no_drift",
+        "overlap": true,
+        "actual_hazard": 0.0,
+        "persistence": 0.85,
+        "price": 0.05,
+        "initial_task": 1,
+        "task_seed": 4410107,
+        "world_seed": 4420207,
+        "data_seed": 4430307
+      },
+      {
+        "stream": 8,
+        "condition": "overlap_no_drift",
+        "overlap": true,
+        "actual_hazard": 0.0,
+        "persistence": 0.85,
+        "price": 0.05,
+        "initial_task": 2,
+        "task_seed": 4410108,
+        "world_seed": 4420208,
+        "data_seed": 4430308
+      },
+      {
+        "stream": 9,
+        "condition": "overlap_underestimated",
+        "overlap": true,
+        "actual_hazard": 0.24,
+        "persistence": 0.85,
+        "price": 0.05,
+        "initial_task": 0,
+        "task_seed": 4410109,
+        "world_seed": 4420209,
+        "data_seed": 4430309
+      },
+      {
+        "stream": 10,
+        "condition": "overlap_underestimated",
+        "overlap": true,
+        "actual_hazard": 0.24,
+        "persistence": 0.85,
+        "price": 0.05,
+        "initial_task": 1,
+        "task_seed": 4410110,
+        "world_seed": 4420210,
+        "data_seed": 4430310
+      },
+      {
+        "stream": 11,
+        "condition": "overlap_underestimated",
+        "overlap": true,
+        "actual_hazard": 0.24,
+        "persistence": 0.85,
+        "price": 0.05,
+        "initial_task": 2,
+        "task_seed": 4410111,
+        "world_seed": 4420211,
+        "data_seed": 4430311
+      }
+    ],
+    "offline_grid": {
+      "budgets": [
+        4,
+        8,
+        12
+      ],
+      "hazards": [
+        0.06,
+        0.12
+      ],
+      "persistence": [
+        0.5,
+        0.85
+      ],
+      "overlap": [
+        false,
+        true
+      ],
+      "actual_multipliers": [
+        0,
+        1,
+        2
+      ]
+    },
+    "limits": [
+      "Known finite semantics and hazards; exact deterministic probes; no open-world guarantee.",
+      "New reference API, not a public benchmark or production API.",
+      "Hard budget credits and loss price are not currency or model token budgets.",
+      "Rollout and coverage scheduling have prior art; this is a mechanistic increment over R3, not established publication novelty.",
+      "Rule compiler uses exactly the same public task and memory as the LLM; its cost is separately labelled, not additional model results.",
+      "All fixed cells and seeds retained; no selection by hidden losses or model outcomes."
+    ]
+  },
+  "billing_schedule": {
+    "enabled": false,
+    "currency": "UNKNOWN",
+    "source": "",
+    "model_ids": [],
+    "valid_from_utc": "",
+    "valid_until_utc": "",
+    "off_peak": {
+      "input_per_million": null,
+      "cached_input_per_million": null,
+      "output_per_million": null
+    },
+    "peak": {
+      "input_per_million": null,
+      "cached_input_per_million": null,
+      "output_per_million": null
+    },
+    "peak_windows_utc": []
+  },
+  "source_hashes": {
+    "EXECUTION_PROMPT_ZH.md": "8395e42583e9cd1a3a79ba9e49f813a33511e4bdcd562f1aa79033b00fc12cb7",
+    "LICENSE": "748f17c6499a0c1c087c85ae2b1cd1090ad2063d9eaeb55e52511a1b7f2f9370",
+    "README_ZH.md": "cc8c8e7d52097673fc2e5e8db7cffc0328648b80faac7a7869efd367759b236d",
+    "billing.example.json": "98eea6dee20e8ba4d9459ac7e0f98bd7ba52344e4dea40d17a916a47cac2aef8",
+    "config.example.json": "fdf9d87dc7a18c73c779fa5de7a07d7674947e45296c2e294dafe8ff8ba9f1d6",
+    "configs/r4_protocol.json": "0a3abba9d11961d19a86a825a3444e7b54500db8bd3a80867c7c2d803b9ac069",
+    "docs/DESIGN.md": "8c8f7f1d7390c91faedcbb83291dfb2dc6e652c02bbcd4c58ccb21a558a53de1",
+    "docs/IMPLEMENTATION_PLAN.md": "91cb8f04cc15859b245222b8a8d72fe49e0cf61c69d2f8be51392849d0f3d848",
+    "docs/OFFLINE_FINDINGS_ZH.md": "a746f2185d71eef1ddc0ee8898df61eb4096773d5283ef1bfd016c32be3726ac",
+    "docs/PROVENANCE.json": "aa0a2888cd5c24b9af329e36438db97033ef71217d6ae1ec27000cf0578f0bf9",
+    "docs/REVIEW_LIMITATIONS_ZH.md": "2d4b306f0f7c3004743141f4a12e26f7a9d99b739fb26b93066ec09b158a74eb",
+    "docs/THEORY_AND_PRIOR_ART.md": "3ecffe5f585119e60b02e181fae15bc9826639dd62ee00e3e2223a195ea3a7a9",
+    "pilot/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "pilot/client.py": "2ca3fa9ee567762efa403c8052017f45d64adfc74a8e0da91355cc06530a92ae",
+    "pilot/common.py": "2b2b230f5c6936d25ab80abdd03fc4ca58a645cf1ad1f3a442659cf3368e469d",
+    "pilot/recheck.py": "06f235dd60f371b6280ae164981a9570811c292c3e16df2221fafae55068d5e8",
+    "r4.py": "2af6769fcc3b074520d1c5d2f2ed6060773c742d1dff0e75c9aa9b23c918b5b3",
+    "r4lib/__init__.py": "4152996b0315451760d36d8aa97df805f8276416e5d8a4f0f1fa983c63e43a70",
+    "r4lib/accounting.py": "d89f82f41e0d82ef3474bd8495f1b5277ac7acd4d2cd4f529eebdf1a3ea644f2",
+    "r4lib/environment.py": "766fc9c1bef4f803474f71b5e46c5a36696f18d46eb2dec49699dddc2c5ded30",
+    "r4lib/experiment.py": "50ee7181894ef90dd0eea0fa775954d8b82006ee559678f486232696db776b12",
+    "r4lib/legacy_r2_audit.py": "57183514e695b144c2309905be2db1c692be5a3c9a99a2fd82ca857470e60392",
+    "r4lib/model.py": "f1bf8450e72fad240219917464f6e0fa7ede509616b4ead6c868d1ab50f999b5",
+    "r4lib/offline.py": "0f87e0bab238bdd514082851938cd2bd8cb65a9b803483e95374faebd49c5cc0",
+    "r4lib/protocol.py": "ac79a9f9a1bfc4c3b7e13c541f0ca6cf1a5971dd0e8963b61586bae57e358966",
+    "r4lib/repair_guard.py": "658b2fcb0f17b58827fbdad521fd6bb0643f4d6be9e29ea7f5e4a82ea1d27d02",
+    "r4lib/review.py": "ff2f025f77adf38ee873cc03eb7d2206be760d0e7b4579bf4318a84e3fdd4e2e",
+    "r4lib/session.py": "37c019612837d921d2b14cf2344def4deea437ec40e47ff24a89f50613f787b3",
+    "r4lib/storage.py": "3ffd86fac9a962970896d33c68806b307c0e6cfef2a94d6c2443d59429229bf4",
+    "r4lib/worker.py": "9a4bc34db6aa7af067d3420bb357512282685848ba0bebdc50d0a0e16633440e",
+    "regression/r2_failures.json": "f76dd84acaeee31960e65d348e37659638a03fd0be02751518406d5f9ae9155c",
+    "regression/repair_cost_inputs.json": "a1d105d2554735d3742a08750b9e66bca9be7fe13c90e1d7abfde21a0712ee37",
+    "requirements.txt": "7bd6b8946940b79948c548c8048e545684b91c8edc9444d8dfc0c8f76a97c0a7",
+    "tests/test_audit_boundaries.py": "6a83a88d8accd1abf181095ef15f1a5c5a08b028dd90225247f8779154bfcee7",
+    "tests/test_environment.py": "dab1e40207106cae02f8cb3c43a897fc563ebc4767912d7eddcddcf7fbf0805f",
+    "tests/test_model.py": "5a0e992106aa835b2ea4ca9b84f633e0c4a81e98acaad357af0d1b767aae8d68",
+    "tests/test_protocol.py": "87d87648ee7d5cbb1b0dd80c49c44d6e64d47baf19a130792cb8c9f4778f878b",
+    "tests/test_runtime.py": "c032a6c5d1774289746ae00403a5dcdf90a47800a897ca2b2873c894eabedfaa",
+    "tests/test_support.py": "a8eda0266a12585d8ea5ad512a2c4f8e8a35d83715b78edd7cd8d121ceb14b78",
+    "vendor/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "vendor/recheck_core.py": "df2a275361d74155007335a84299331a1780b13a73ab9e5abd5f078fe42d4310"
+  },
+  "fingerprint": "96ecac95511637c75f82a667c211ee91566c903aa29a48cf5e18638f20f1933d",
+  "created_utc": "2026-09-12T15:37:49.979083+00:00",
+  "profile_sha256": "af542d06b25b5b59c9e40510526297c494e84400920cdb71faddcd32765b33ba",
+  "runtime": {
+    "python": "3.11.15",
+    "numpy": "2.3.5",
+    "os": "Darwin"
+  },
+  "evidence_label": "REAL_ENDPOINT_CONTROLLED_DEVELOPMENT_NOT_CONFIRMATORY"
+}

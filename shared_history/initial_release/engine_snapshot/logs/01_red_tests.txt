@@ -1,0 +1,154 @@
+FFFFFFFFFFFFFFFFFF                                                       [100%]
+=================================== FAILURES ===================================
+______________ test_binary_parity_probability_matches_enumeration ______________
+
+    def test_binary_parity_probability_matches_enumeration():
+>       from src.recheck.core import mismatch_probability
+E       ModuleNotFoundError: No module named 'src.recheck.core'
+
+tests/test_recheck.py:7: ModuleNotFoundError
+_________________________ test_invalid_hazard_rejected _________________________
+
+    def test_invalid_hazard_rejected():
+>       from src.recheck.core import mismatch_probability
+E       ModuleNotFoundError: No module named 'src.recheck.core'
+
+tests/test_recheck.py:16: ModuleNotFoundError
+___________________ test_one_step_has_correct_price_boundary ___________________
+
+    def test_one_step_has_correct_price_boundary():
+>       from src.recheck.core import solve_refresh_dp
+E       ModuleNotFoundError: No module named 'src.recheck.core'
+
+tests/test_recheck.py:21: ModuleNotFoundError
+_____________ test_finite_horizon_dp_matches_recursive_enumeration _____________
+
+    def test_finite_horizon_dp_matches_recursive_enumeration():
+>       from src.recheck.core import solve_refresh_dp, mismatch_probability
+E       ModuleNotFoundError: No module named 'src.recheck.core'
+
+tests/test_recheck.py:28: ModuleNotFoundError
+___________________ test_irrelevant_channel_is_never_probed ____________________
+
+    def test_irrelevant_channel_is_never_probed():
+>       from src.recheck.core import solve_refresh_dp
+E       ModuleNotFoundError: No module named 'src.recheck.core'
+
+tests/test_recheck.py:41: ModuleNotFoundError
+_______________ test_zero_drift_never_probed_after_exact_prefix ________________
+
+    def test_zero_drift_never_probed_after_exact_prefix():
+>       from src.recheck.core import solve_refresh_dp
+E       ModuleNotFoundError: No module named 'src.recheck.core'
+
+tests/test_recheck.py:47: ModuleNotFoundError
+_________________________ test_bad_transition_rejected _________________________
+
+    def test_bad_transition_rejected():
+>       from src.recheck.core import solve_refresh_dp
+E       ModuleNotFoundError: No module named 'src.recheck.core'
+
+tests/test_recheck.py:53: ModuleNotFoundError
+____________________ test_sql_probe_and_decoding_all_modes _____________________
+
+    def test_sql_probe_and_decoding_all_modes():
+>       from src.recheck.sql_environment import SQLToolWorld
+E       ModuleNotFoundError: No module named 'src.recheck.sql_environment'
+
+tests/test_recheck.py:59: ModuleNotFoundError
+____________________ test_sql_wrong_modes_can_change_result ____________________
+
+    def test_sql_wrong_modes_can_change_result():
+>       from src.recheck.sql_environment import SQLToolWorld
+E       ModuleNotFoundError: No module named 'src.recheck.sql_environment'
+
+tests/test_recheck.py:71: ModuleNotFoundError
+__________________ test_terminal_union_and_cache_subtraction ___________________
+
+    def test_terminal_union_and_cache_subtraction():
+>       from src.repairlens.core import terminal_cost
+E       ModuleNotFoundError: No module named 'src.repairlens.core'
+
+tests/test_repairlens.py:13: ModuleNotFoundError
+_______________________ test_exact_policy_hand_computed ________________________
+
+    def test_exact_policy_hand_computed():
+>       from src.repairlens.core import RepairSolver
+E       ModuleNotFoundError: No module named 'src.repairlens.core'
+
+tests/test_repairlens.py:21: ModuleNotFoundError
+____________ test_productive_probe_is_better_than_discarding_result ____________
+
+    def test_productive_probe_is_better_than_discarding_result():
+>       from src.repairlens.core import Probe, RepairProblem, RepairSolver
+E       ModuleNotFoundError: No module named 'src.repairlens.core'
+
+tests/test_repairlens.py:29: ModuleNotFoundError
+__________________ test_irrelevant_nuisance_probe_not_chosen ___________________
+
+    def test_irrelevant_nuisance_probe_not_chosen():
+>       from src.repairlens.core import Probe, RepairProblem, RepairSolver
+E       ModuleNotFoundError: No module named 'src.repairlens.core'
+
+tests/test_repairlens.py:39: ModuleNotFoundError
+________________________ test_empty_support_is_not_safe ________________________
+
+    def test_empty_support_is_not_safe():
+>       from src.repairlens.core import terminal_cost
+E       ModuleNotFoundError: No module named 'src.repairlens.core'
+
+tests/test_repairlens.py:47: ModuleNotFoundError
+_________________________ test_negative_cost_rejected __________________________
+
+    def test_negative_cost_rejected():
+>       from src.repairlens.core import Probe, RepairProblem
+E       ModuleNotFoundError: No module named 'src.repairlens.core'
+
+tests/test_repairlens.py:52: ModuleNotFoundError
+__________________ test_cache_requires_matching_input_digest ___________________
+
+tmp_path = PosixPath('/tmp/pytest-of-root/pytest-0/test_cache_requires_matching_i0')
+
+    def test_cache_requires_matching_input_digest(tmp_path):
+>       from src.repairlens.artifacts import ArtifactStore
+E       ModuleNotFoundError: No module named 'src.repairlens.artifacts'
+
+tests/test_repairlens.py:57: ModuleNotFoundError
+______________________ test_artifact_snapshot_restoration ______________________
+
+tmp_path = PosixPath('/tmp/pytest-of-root/pytest-0/test_artifact_snapshot_restora0')
+
+    def test_artifact_snapshot_restoration(tmp_path):
+>       from src.repairlens.artifacts import ArtifactStore
+E       ModuleNotFoundError: No module named 'src.repairlens.artifacts'
+
+tests/test_repairlens.py:65: ModuleNotFoundError
+______________________ test_cache_detects_content_tamper _______________________
+
+tmp_path = PosixPath('/tmp/pytest-of-root/pytest-0/test_cache_detects_content_tam0')
+
+    def test_cache_detects_content_tamper(tmp_path):
+>       from src.repairlens.artifacts import ArtifactStore
+E       ModuleNotFoundError: No module named 'src.repairlens.artifacts'
+
+tests/test_repairlens.py:75: ModuleNotFoundError
+=========================== short test summary info ============================
+FAILED tests/test_recheck.py::test_binary_parity_probability_matches_enumeration - ModuleNotFoundError: No module named 'src.recheck.core'
+FAILED tests/test_recheck.py::test_invalid_hazard_rejected - ModuleNotFoundError: No module named 'src.recheck.core'
+FAILED tests/test_recheck.py::test_one_step_has_correct_price_boundary - ModuleNotFoundError: No module named 'src.recheck.core'
+FAILED tests/test_recheck.py::test_finite_horizon_dp_matches_recursive_enumeration - ModuleNotFoundError: No module named 'src.recheck.core'
+FAILED tests/test_recheck.py::test_irrelevant_channel_is_never_probed - ModuleNotFoundError: No module named 'src.recheck.core'
+FAILED tests/test_recheck.py::test_zero_drift_never_probed_after_exact_prefix - ModuleNotFoundError: No module named 'src.recheck.core'
+FAILED tests/test_recheck.py::test_bad_transition_rejected - ModuleNotFoundError: No module named 'src.recheck.core'
+FAILED tests/test_recheck.py::test_sql_probe_and_decoding_all_modes - ModuleNotFoundError: No module named 'src.recheck.sql_environment'
+FAILED tests/test_recheck.py::test_sql_wrong_modes_can_change_result - ModuleNotFoundError: No module named 'src.recheck.sql_environment'
+FAILED tests/test_repairlens.py::test_terminal_union_and_cache_subtraction - ModuleNotFoundError: No module named 'src.repairlens.core'
+FAILED tests/test_repairlens.py::test_exact_policy_hand_computed - ModuleNotFoundError: No module named 'src.repairlens.core'
+FAILED tests/test_repairlens.py::test_productive_probe_is_better_than_discarding_result - ModuleNotFoundError: No module named 'src.repairlens.core'
+FAILED tests/test_repairlens.py::test_irrelevant_nuisance_probe_not_chosen - ModuleNotFoundError: No module named 'src.repairlens.core'
+FAILED tests/test_repairlens.py::test_empty_support_is_not_safe - ModuleNotFoundError: No module named 'src.repairlens.core'
+FAILED tests/test_repairlens.py::test_negative_cost_rejected - ModuleNotFoundError: No module named 'src.repairlens.core'
+FAILED tests/test_repairlens.py::test_cache_requires_matching_input_digest - ModuleNotFoundError: No module named 'src.repairlens.artifacts'
+FAILED tests/test_repairlens.py::test_artifact_snapshot_restoration - ModuleNotFoundError: No module named 'src.repairlens.artifacts'
+FAILED tests/test_repairlens.py::test_cache_detects_content_tamper - ModuleNotFoundError: No module named 'src.repairlens.artifacts'
+18 failed in 0.12s

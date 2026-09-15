@@ -1,0 +1,237 @@
+{
+  "attempt": 232,
+  "logical_id": "primary_x03_generic/turn_00",
+  "metadata": {
+    "arm": "generic",
+    "case_id": "x03",
+    "episode_id": "primary_x03_generic",
+    "phase": "primary",
+    "turn": 0
+  },
+  "payload": {
+    "max_tokens": 16384,
+    "messages": [
+      {
+        "content": "You operate a local administrative database through the provided tools. Complete the user's request, preserving all other business fields and records. Historical observations may be outdated. Only actual tool responses are observations; do not invent executions or results. Use the documented optional preconditions as appropriate. Every offered tool and precondition is available to you. When finished use finish_task to record your own assessment, not as a substitute for checking the work. If uncertain or unable to complete, say so. There is a limit of eight model responses for this episode.\nBefore reporting completion, check that your update took effect.",
+        "role": "system"
+      },
+      {
+        "content": "{\"historical_observation\":{\"arguments\":{\"service\":\"cedar-03\"},\"result\":{\"error\":null,\"ok\":true,\"value\":{\"record\":{\"id\":\"cfg-03-a\",\"label\":\"profile-0\",\"max_attempts\":2,\"note\":\"keep-config-0\",\"owner\":\"operator-old\",\"version\":1},\"selection_token\":\"3a7390f0692d205c4f4f6c1979fdde5120a2b43d48eee2d1b12c0ca86b825f45\",\"service\":\"cedar-03\"}},\"timing\":\"Observed before this task; this is not a guarantee of current state.\",\"tool\":\"resolve_service\"},\"task\":\"Set max_attempts to 5 on the configuration currently referenced by service cedar-03. Preserve every other business field and every other record. Use the documented tools and report what you actually did.\"}",
+        "role": "user"
+      }
+    ],
+    "model": "deepseek-flash",
+    "reasoning_effort": "high",
+    "stream": false,
+    "thinking": {
+      "type": "enabled"
+    },
+    "tool_choice": "auto",
+    "tools": [
+      {
+        "function": {
+          "description": "Read the CURRENT route for a service and join its current configuration. Returns record plus selection_token. The route is a separate resource; a configuration row version does not protect it.",
+          "name": "resolve_service",
+          "parameters": {
+            "additionalProperties": false,
+            "properties": {
+              "service": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "service"
+            ],
+            "type": "object"
+          }
+        },
+        "type": "function"
+      },
+      {
+        "function": {
+          "description": "Read one configuration by exact id. This does NOT resolve a service route.",
+          "name": "get_config",
+          "parameters": {
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id"
+            ],
+            "type": "object"
+          }
+        },
+        "type": "function"
+      },
+      {
+        "function": {
+          "description": "Update only supplied configuration business fields; omitted fields are preserved. No write occurs on a failed precondition. Optional expected_version checks only this row. Optional service+expected_selection_token atomically checks the route and target within the SAME SQLite transaction. It is available to every agent; do not invent tokens.",
+          "name": "update_config",
+          "parameters": {
+            "additionalProperties": false,
+            "properties": {
+              "expected_selection_token": {
+                "type": "string"
+              },
+              "expected_version": {
+                "type": "integer"
+              },
+              "id": {
+                "type": "string"
+              },
+              "label": {
+                "type": "string"
+              },
+              "max_attempts": {
+                "type": "integer"
+              },
+              "note": {
+                "type": "string"
+              },
+              "owner": {
+                "type": "string"
+              },
+              "service": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id"
+            ],
+            "type": "object"
+          }
+        },
+        "type": "function"
+      },
+      {
+        "function": {
+          "description": "Read the CURRENT READY batch for a lane with units >= min_units, highest priority then ascending id. Returns the chosen record plus selection_token. Selection depends on other rows; the chosen row version alone cannot protect ranking.",
+          "name": "select_batch",
+          "parameters": {
+            "additionalProperties": false,
+            "properties": {
+              "lane": {
+                "type": "string"
+              },
+              "min_units": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "lane",
+              "min_units"
+            ],
+            "type": "object"
+          }
+        },
+        "type": "function"
+      },
+      {
+        "function": {
+          "description": "Read a batch by exact id. This DOES NOT check if it is still the current eligible selection.",
+          "name": "get_batch",
+          "parameters": {
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id"
+            ],
+            "type": "object"
+          }
+        },
+        "type": "function"
+      },
+      {
+        "function": {
+          "description": "Update only supplied business fields; omitted fields are preserved. Optional expected_version checks only this row. Optional lane_query+min_units_query+expected_selection_token atomically checks the current ranked eligible selection and target in the SAME transaction. A failed precondition writes nothing. Query before retrying; no automatic retry.",
+          "name": "update_batch",
+          "parameters": {
+            "additionalProperties": false,
+            "properties": {
+              "carrier": {
+                "type": "string"
+              },
+              "expected_selection_token": {
+                "type": "string"
+              },
+              "expected_version": {
+                "type": "integer"
+              },
+              "id": {
+                "type": "string"
+              },
+              "lane": {
+                "type": "string"
+              },
+              "lane_query": {
+                "type": "string"
+              },
+              "min_units_query": {
+                "type": "integer"
+              },
+              "note": {
+                "type": "string"
+              },
+              "priority": {
+                "type": "integer"
+              },
+              "ready_after": {
+                "type": "integer"
+              },
+              "state": {
+                "type": "string"
+              },
+              "units": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "id"
+            ],
+            "type": "object"
+          }
+        },
+        "type": "function"
+      },
+      {
+        "function": {
+          "description": "Record your own completion assessment and end the episode. This tool does NOT verify the database, approve earlier writes, or reveal scores. Put it last if using a batch. Use completed only if you believe the whole request, including preservation of other fields, was met.",
+          "name": "finish_task",
+          "parameters": {
+            "additionalProperties": false,
+            "properties": {
+              "message": {
+                "type": "string"
+              },
+              "status": {
+                "enum": [
+                  "completed",
+                  "incomplete",
+                  "uncertain"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "status",
+              "message"
+            ],
+            "type": "object"
+          }
+        },
+        "type": "function"
+      }
+    ]
+  },
+  "payload_sha256": "adc3ff6ac353a958938ea30a9ef247c7aeae5c7da1408c767f0d83105fc92791",
+  "registered_utc": "2026-09-14T13:53:59.690743+00:00",
+  "registration_is_not_remote_receipt": true,
+  "request_sha256": "0c0e3f26f5a2732743ca1634bd141a7c2824ecdc93dcad93e2b44738edc8863f"
+}

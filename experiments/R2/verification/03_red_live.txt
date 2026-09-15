@@ -1,0 +1,131 @@
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 720, in _warm_feature_flows
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 704, in _warm_collaboration_flows
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/generated/interface/models.py", line 32317, in hydrate_crdt_from_proto
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/remote.py", line 749, in __call__
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/client.py", line 150, in call
+artifact_tool.rpc.client.RemoteError: hydrateCrdtFromProto requires an empty collaborative document.
+test_different_request_same_id_blocked (test_r2_live.LiveTests.test_different_request_same_id_blocked) ... FAIL
+test_full_protocol_and_no_private_fields (test_r2_live.LiveTests.test_full_protocol_and_no_private_fields) ... FAIL
+test_hard_cap_before_transmission (test_r2_live.LiveTests.test_hard_cap_before_transmission) ... FAIL
+test_http_error_pauses_and_no_retry (test_r2_live.LiveTests.test_http_error_pauses_and_no_retry) ... FAIL
+test_invalid_json_saved_no_retry (test_r2_live.LiveTests.test_invalid_json_saved_no_retry) ... FAIL
+test_real_secret_not_in_model_payload (test_r2_live.LiveTests.test_real_secret_not_in_model_payload) ... FAIL
+test_registered_and_send_intent_are_separate (test_r2_live.LiveTests.test_registered_and_send_intent_are_separate) ... FAIL
+test_success_resume_not_resampled (test_r2_live.LiveTests.test_success_resume_not_resampled) ... FAIL
+test_truncation_saved_and_pauses_on_resume (test_r2_live.LiveTests.test_truncation_saved_and_pauses_on_resume) ... FAIL
+test_uncertain_start_does_not_retry (test_r2_live.LiveTests.test_uncertain_start_does_not_retry) ... FAIL
+
+======================================================================
+FAIL: test_different_request_same_id_blocked (test_r2_live.LiveTests.test_different_request_same_id_blocked)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_live.py", line 63, in test_different_request_same_id_blocked
+    c=self.client(d);c.complete("one",self.msg('Return exactly {"ok":true}'))
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_live.py", line 53, in client
+    self.assertTrue(callable(getattr(session,"Client",None)),"Client missing")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : Client missing
+
+======================================================================
+FAIL: test_full_protocol_and_no_private_fields (test_r2_live.LiveTests.test_full_protocol_and_no_private_fields)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_live.py", line 108, in test_full_protocol_and_no_private_fields
+    self.assertTrue(callable(getattr(experiment,"run",None)),"experiment.run missing")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : experiment.run missing
+
+======================================================================
+FAIL: test_hard_cap_before_transmission (test_r2_live.LiveTests.test_hard_cap_before_transmission)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_live.py", line 93, in test_hard_cap_before_transmission
+    c=self.client(d,cap=1);c.complete("one",self.msg('Return exactly {"ok":true}'))
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_live.py", line 53, in client
+    self.assertTrue(callable(getattr(session,"Client",None)),"Client missing")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : Client missing
+
+======================================================================
+FAIL: test_http_error_pauses_and_no_retry (test_r2_live.LiveTests.test_http_error_pauses_and_no_retry)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_live.py", line 79, in test_http_error_pauses_and_no_retry
+    c=self.client(d)
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_live.py", line 53, in client
+    self.assertTrue(callable(getattr(session,"Client",None)),"Client missing")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : Client missing
+
+======================================================================
+FAIL: test_invalid_json_saved_no_retry (test_r2_live.LiveTests.test_invalid_json_saved_no_retry)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_live.py", line 73, in test_invalid_json_saved_no_retry
+    c=self.client(d)
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_live.py", line 53, in client
+    self.assertTrue(callable(getattr(session,"Client",None)),"Client missing")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : Client missing
+
+======================================================================
+FAIL: test_real_secret_not_in_model_payload (test_r2_live.LiveTests.test_real_secret_not_in_model_payload)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_live.py", line 103, in test_real_secret_not_in_model_payload
+    self.assertTrue(callable(getattr(session,"Client",None)))
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_registered_and_send_intent_are_separate (test_r2_live.LiveTests.test_registered_and_send_intent_are_separate)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_live.py", line 98, in test_registered_and_send_intent_are_separate
+    c=self.client(d);c.complete("one",self.msg('Return exactly {"ok":true}'))
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_live.py", line 53, in client
+    self.assertTrue(callable(getattr(session,"Client",None)),"Client missing")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : Client missing
+
+======================================================================
+FAIL: test_success_resume_not_resampled (test_r2_live.LiveTests.test_success_resume_not_resampled)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_live.py", line 58, in test_success_resume_not_resampled
+    c=self.client(d);a=c.complete("one",self.msg('Return exactly {"ok":true}'))
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_live.py", line 53, in client
+    self.assertTrue(callable(getattr(session,"Client",None)),"Client missing")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : Client missing
+
+======================================================================
+FAIL: test_truncation_saved_and_pauses_on_resume (test_r2_live.LiveTests.test_truncation_saved_and_pauses_on_resume)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_live.py", line 67, in test_truncation_saved_and_pauses_on_resume
+    c=self.client(d)
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_live.py", line 53, in client
+    self.assertTrue(callable(getattr(session,"Client",None)),"Client missing")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : Client missing
+
+======================================================================
+FAIL: test_uncertain_start_does_not_retry (test_r2_live.LiveTests.test_uncertain_start_does_not_retry)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_live.py", line 86, in test_uncertain_start_does_not_retry
+    c=self.client(d);msg=self.msg('Return exactly {"ok":true}');pl=request_payload(self.cfg(),msg)
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_live.py", line 53, in client
+    self.assertTrue(callable(getattr(session,"Client",None)),"Client missing")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : Client missing
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.502s
+
+FAILED (failures=10)

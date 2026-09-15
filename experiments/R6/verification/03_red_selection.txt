@@ -1,0 +1,187 @@
+test_acquisition_scores_without_oracle_argument (tests.test_selection.SelectionTests.test_acquisition_scores_without_oracle_argument) ... FAIL
+test_budgets_share_prefix_but_not_future_labels (tests.test_selection.SelectionTests.test_budgets_share_prefix_but_not_future_labels) ... FAIL
+test_every_added_atom_has_equal_workflow_cost (tests.test_selection.SelectionTests.test_every_added_atom_has_equal_workflow_cost) ... FAIL
+test_features_equal_exact_myopic_stage (tests.test_selection.SelectionTests.test_features_equal_exact_myopic_stage) ... FAIL
+test_selection_deterministic_at_fixed_seed (tests.test_selection.SelectionTests.test_selection_deterministic_at_fixed_seed) ... FAIL
+test_single_model_ignores_labels_of_future_unbought_cells (tests.test_selection.SelectionTests.test_single_model_ignores_labels_of_future_unbought_cells) ... FAIL
+test_unknown_selector_rejected (tests.test_selection.SelectionTests.test_unknown_selector_rejected) ... FAIL
+
+======================================================================
+FAIL: test_acquisition_scores_without_oracle_argument (tests.test_selection.SelectionTests.test_acquisition_scores_without_oracle_argument)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_selection.py", line 6, in mod
+    try:return importlib.import_module('r6lib.selection')
+               ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/importlib/__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'r6lib.selection'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_selection.py", line 23, in test_acquisition_scores_without_oracle_argument
+    s=mod(self);d=s.Design(self.small());l=a.Learner(a.PaidOracle([6100017]));l.initialize_singles()
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_selection.py", line 7, in mod
+    except ImportError as e:t.fail('selector not implemented: '+str(e))
+                            ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: selector not implemented: No module named 'r6lib.selection'
+
+======================================================================
+FAIL: test_budgets_share_prefix_but_not_future_labels (tests.test_selection.SelectionTests.test_budgets_share_prefix_but_not_future_labels)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_selection.py", line 6, in mod
+    try:return importlib.import_module('r6lib.selection')
+               ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/importlib/__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'r6lib.selection'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_selection.py", line 28, in test_budgets_share_prefix_but_not_future_labels
+    s=mod(self);p=self.small();d=s.Design(p)
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_selection.py", line 7, in mod
+    except ImportError as e:t.fail('selector not implemented: '+str(e))
+                            ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: selector not implemented: No module named 'r6lib.selection'
+
+======================================================================
+FAIL: test_every_added_atom_has_equal_workflow_cost (tests.test_selection.SelectionTests.test_every_added_atom_has_equal_workflow_cost)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_selection.py", line 6, in mod
+    try:return importlib.import_module('r6lib.selection')
+               ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/importlib/__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'r6lib.selection'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_selection.py", line 47, in test_every_added_atom_has_equal_workflow_cost
+    s=mod(self);p=self.small();d=s.Design(p)
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_selection.py", line 7, in mod
+    except ImportError as e:t.fail('selector not implemented: '+str(e))
+                            ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: selector not implemented: No module named 'r6lib.selection'
+
+======================================================================
+FAIL: test_features_equal_exact_myopic_stage (tests.test_selection.SelectionTests.test_features_equal_exact_myopic_stage)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_selection.py", line 6, in mod
+    try:return importlib.import_module('r6lib.selection')
+               ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/importlib/__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'r6lib.selection'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_selection.py", line 14, in test_features_equal_exact_myopic_stage
+    s=mod(self);p=self.small();d=s.Design(p)
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_selection.py", line 7, in mod
+    except ImportError as e:t.fail('selector not implemented: '+str(e))
+                            ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: selector not implemented: No module named 'r6lib.selection'
+
+======================================================================
+FAIL: test_selection_deterministic_at_fixed_seed (tests.test_selection.SelectionTests.test_selection_deterministic_at_fixed_seed)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_selection.py", line 6, in mod
+    try:return importlib.import_module('r6lib.selection')
+               ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/importlib/__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'r6lib.selection'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_selection.py", line 36, in test_selection_deterministic_at_fixed_seed
+    s=mod(self);p=self.small();d=s.Design(p)
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_selection.py", line 7, in mod
+    except ImportError as e:t.fail('selector not implemented: '+str(e))
+                            ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: selector not implemented: No module named 'r6lib.selection'
+
+======================================================================
+FAIL: test_single_model_ignores_labels_of_future_unbought_cells (tests.test_selection.SelectionTests.test_single_model_ignores_labels_of_future_unbought_cells)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_selection.py", line 6, in mod
+    try:return importlib.import_module('r6lib.selection')
+               ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/importlib/__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'r6lib.selection'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_selection.py", line 41, in test_single_model_ignores_labels_of_future_unbought_cells
+    s=mod(self);o=a.PaidOracle([6100019]);l=a.Learner(o);l.initialize_singles();before=l.table().copy()
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_selection.py", line 7, in mod
+    except ImportError as e:t.fail('selector not implemented: '+str(e))
+                            ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: selector not implemented: No module named 'r6lib.selection'
+
+======================================================================
+FAIL: test_unknown_selector_rejected (tests.test_selection.SelectionTests.test_unknown_selector_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_selection.py", line 6, in mod
+    try:return importlib.import_module('r6lib.selection')
+               ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/importlib/__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'r6lib.selection'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_selection.py", line 52, in test_unknown_selector_rejected
+    s=mod(self);d=s.Design(self.small())
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_selection.py", line 7, in mod
+    except ImportError as e:t.fail('selector not implemented: '+str(e))
+                            ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: selector not implemented: No module named 'r6lib.selection'
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.007s
+
+FAILED (failures=7)

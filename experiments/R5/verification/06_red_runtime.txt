@@ -1,0 +1,102 @@
+test_archive_rejects_bad_paths (test_runtime.ExecutionTests.test_archive_rejects_bad_paths) ... ERROR
+test_budget_and_correct_replay (test_runtime.ExecutionTests.test_budget_and_correct_replay) ... ERROR
+test_independent_evaluator_all_modes (test_runtime.ExecutionTests.test_independent_evaluator_all_modes) ... ok
+test_lock_refuses_existing (test_runtime.ExecutionTests.test_lock_refuses_existing) ... ERROR
+test_no_network_guard (test_runtime.ExecutionTests.test_no_network_guard) ... ERROR
+test_run_has_no_test_scores (test_runtime.ExecutionTests.test_run_has_no_test_scores) ... ERROR
+test_same_world_menu_pairing (test_runtime.ExecutionTests.test_same_world_menu_pairing) ... ERROR
+test_source_hash_changed_blocks (test_runtime.ExecutionTests.test_source_hash_changed_blocks) ... ERROR
+test_write_once (test_runtime.ExecutionTests.test_write_once) ... ERROR
+
+======================================================================
+ERROR: test_archive_rejects_bad_paths (test_runtime.ExecutionTests.test_archive_rejects_bad_paths)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r5_work/R5_Research_Kit/tests/test_runtime.py", line 65, in test_archive_rejects_bad_paths
+    with self.assertRaises(ValueError):storage.verify_bundle(z)
+                                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r5_work/R5_Research_Kit/r5lib/storage.py", line 2, in __getattr__
+    raise NotImplementedError("not implemented")
+NotImplementedError: not implemented
+
+======================================================================
+ERROR: test_budget_and_correct_replay (test_runtime.ExecutionTests.test_budget_and_correct_replay)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r5_work/R5_Research_Kit/tests/test_runtime.py", line 30, in test_budget_and_correct_replay
+    a=runtime.run_one(case,p,'shared','task_exact',k)
+      ^^^^^^^^^^^^^^^
+  File "/mnt/data/r5_work/R5_Research_Kit/r5lib/runtime.py", line 2, in __getattr__
+    raise NotImplementedError("not implemented")
+NotImplementedError: not implemented
+
+======================================================================
+ERROR: test_lock_refuses_existing (test_runtime.ExecutionTests.test_lock_refuses_existing)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r5_work/R5_Research_Kit/tests/test_runtime.py", line 52, in test_lock_refuses_existing
+    with storage.lock(p):
+         ^^^^^^^^^^^^
+  File "/mnt/data/r5_work/R5_Research_Kit/r5lib/storage.py", line 2, in __getattr__
+    raise NotImplementedError("not implemented")
+NotImplementedError: not implemented
+
+======================================================================
+ERROR: test_no_network_guard (test_runtime.ExecutionTests.test_no_network_guard)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r5_work/R5_Research_Kit/tests/test_runtime.py", line 58, in test_no_network_guard
+    with storage.no_network():
+         ^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r5_work/R5_Research_Kit/r5lib/storage.py", line 2, in __getattr__
+    raise NotImplementedError("not implemented")
+NotImplementedError: not implemented
+
+======================================================================
+ERROR: test_run_has_no_test_scores (test_runtime.ExecutionTests.test_run_has_no_test_scores)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r5_work/R5_Research_Kit/tests/test_runtime.py", line 68, in test_run_has_no_test_scores
+    a=runtime.run_one(data.make_cases(p)[0],p,'shared','never',calibration.fit([1]))
+      ^^^^^^^^^^^^^^^
+  File "/mnt/data/r5_work/R5_Research_Kit/r5lib/runtime.py", line 2, in __getattr__
+    raise NotImplementedError("not implemented")
+NotImplementedError: not implemented
+
+======================================================================
+ERROR: test_same_world_menu_pairing (test_runtime.ExecutionTests.test_same_world_menu_pairing)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r5_work/R5_Research_Kit/tests/test_runtime.py", line 23, in test_same_world_menu_pairing
+    a=runtime.run_one(cases[0],p,'single','task_myopic',k)
+      ^^^^^^^^^^^^^^^
+  File "/mnt/data/r5_work/R5_Research_Kit/r5lib/runtime.py", line 2, in __getattr__
+    raise NotImplementedError("not implemented")
+NotImplementedError: not implemented
+
+======================================================================
+ERROR: test_source_hash_changed_blocks (test_runtime.ExecutionTests.test_source_hash_changed_blocks)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r5_work/R5_Research_Kit/tests/test_runtime.py", line 40, in test_source_hash_changed_blocks
+    storage.make_manifest(p)
+    ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r5_work/R5_Research_Kit/r5lib/storage.py", line 2, in __getattr__
+    raise NotImplementedError("not implemented")
+NotImplementedError: not implemented
+
+======================================================================
+ERROR: test_write_once (test_runtime.ExecutionTests.test_write_once)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r5_work/R5_Research_Kit/tests/test_runtime.py", line 47, in test_write_once
+    storage.write_once(p,{'x':1});storage.write_once(p,{'x':1})
+    ^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r5_work/R5_Research_Kit/r5lib/storage.py", line 2, in __getattr__
+    raise NotImplementedError("not implemented")
+NotImplementedError: not implemented
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.061s
+
+FAILED (errors=8)

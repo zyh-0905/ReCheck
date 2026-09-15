@@ -1,0 +1,192 @@
+test_native_components (test_native.NativeGate.test_native_components) ... FAIL
+test_current_feedback_reuse (test_native.NativeIntegration.test_current_feedback_reuse) ... ERROR
+test_empty_or_ambiguous_lookup_rejected (test_native.NativeIntegration.test_empty_or_ambiguous_lookup_rejected) ... ERROR
+test_error_trigger_can_resolve_composite (test_native.NativeIntegration.test_error_trigger_can_resolve_composite) ... ERROR
+test_explicit_error_recovery (test_native.NativeIntegration.test_explicit_error_recovery) ... ERROR
+test_explicit_number_goal_not_person_goal (test_native.NativeIntegration.test_explicit_number_goal_not_person_goal) ... ERROR
+test_fresh_lookup_resolves (test_native.NativeIntegration.test_fresh_lookup_resolves) ... ERROR
+test_mutation_denied_to_policy (test_native.NativeIntegration.test_mutation_denied_to_policy) ... ERROR
+test_official_walkthroughs (test_native.NativeIntegration.test_official_walkthroughs) ... ERROR
+test_old_feedback_not_safe (test_native.NativeIntegration.test_old_feedback_not_safe) ... ERROR
+test_posthoc_lookup_does_not_undo (test_native.NativeIntegration.test_posthoc_lookup_does_not_undo) ... ERROR
+test_reassigned (test_native.NativeIntegration.test_reassigned) ... ERROR
+test_snapshot_roundtrip (test_native.NativeIntegration.test_snapshot_roundtrip) ... ERROR
+test_stable (test_native.NativeIntegration.test_stable) ... ERROR
+test_unknown_function_blocked (test_native.NativeIntegration.test_unknown_function_blocked) ... ERROR
+test_unmapped_silent_success (test_native.NativeIntegration.test_unmapped_silent_success) ... ERROR
+test_unrelated_change (test_native.NativeIntegration.test_unrelated_change) ... ERROR
+test_duplicate (test_score.TestScore.test_duplicate) ... ok
+test_duplicate_ids_rejected (test_score.TestScore.test_duplicate_ids_rejected) ... ok
+test_explicit_phone_differs_from_named_person (test_score.TestScore.test_explicit_phone_differs_from_named_person) ... ok
+test_no_write (test_score.TestScore.test_no_write) ... ok
+test_prior_rows_excluded (test_score.TestScore.test_prior_rows_excluded) ... ok
+test_reassigned (test_score.TestScore.test_reassigned) ... ok
+test_target_valid (test_score.TestScore.test_target_valid) ... ok
+test_unknown_goal_rejected (test_score.TestScore.test_unknown_goal_rejected) ... ok
+test_unknown_recipient (test_score.TestScore.test_unknown_recipient) ... ok
+test_wrong_content (test_score.TestScore.test_wrong_content) ... ok
+test_wrong_phone (test_score.TestScore.test_wrong_phone) ... ok
+test_wrong_then_correct (test_score.TestScore.test_wrong_then_correct) ... ok
+
+======================================================================
+ERROR: test_current_feedback_reuse (test_native.NativeIntegration.test_current_feedback_reuse)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r7b_work/study/tests/test_native.py", line 22, in test_current_feedback_reuse
+    a=ns.run_fixture('reassigned','post_change','reuse_observed_then_resolve');b=ns.run_fixture('reassigned','post_change','always_resolve')
+      ^^^^^^^^^^^^^^
+AttributeError: module 'native_study' has no attribute 'run_fixture'
+
+======================================================================
+ERROR: test_empty_or_ambiguous_lookup_rejected (test_native.NativeIntegration.test_empty_or_ambiguous_lookup_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r7b_work/study/tests/test_native.py", line 39, in test_empty_or_ambiguous_lookup_rejected
+    with self.assertRaises(ValueError):ns.select_exact_contact([],ns.TARGET)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'native_study' has no attribute 'select_exact_contact'
+
+======================================================================
+ERROR: test_error_trigger_can_resolve_composite (test_native.NativeIntegration.test_error_trigger_can_resolve_composite)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r7b_work/study/tests/test_native.py", line 28, in test_error_trigger_can_resolve_composite
+    r=ns.run_fixture('combined','none','query_on_error');self.assertTrue(r['score']['safe_success'])
+      ^^^^^^^^^^^^^^
+AttributeError: module 'native_study' has no attribute 'run_fixture'
+
+======================================================================
+ERROR: test_explicit_error_recovery (test_native.NativeIntegration.test_explicit_error_recovery)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r7b_work/study/tests/test_native.py", line 26, in test_explicit_error_recovery
+    r=ns.run_fixture('cellular_off','none','cached_reactive');self.assertTrue(r['score']['safe_success']);self.assertEqual(r['score']['new_writes'],1)
+      ^^^^^^^^^^^^^^
+AttributeError: module 'native_study' has no attribute 'run_fixture'
+
+======================================================================
+ERROR: test_explicit_number_goal_not_person_goal (test_native.NativeIntegration.test_explicit_number_goal_not_person_goal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r7b_work/study/tests/test_native.py", line 37, in test_explicit_number_goal_not_person_goal
+    r=ns.run_explicit_phone_boundary();self.assertTrue(r['phone_goal']['safe_success']);self.assertFalse(r['person_goal']['safe_success'])
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'native_study' has no attribute 'run_explicit_phone_boundary'
+
+======================================================================
+ERROR: test_fresh_lookup_resolves (test_native.NativeIntegration.test_fresh_lookup_resolves)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r7b_work/study/tests/test_native.py", line 20, in test_fresh_lookup_resolves
+    def test_fresh_lookup_resolves(self):self.assertTrue(ns.run_fixture('reassigned','none','always_resolve')['score']['safe_success'])
+                                                         ^^^^^^^^^^^^^^
+AttributeError: module 'native_study' has no attribute 'run_fixture'
+
+======================================================================
+ERROR: test_mutation_denied_to_policy (test_native.NativeIntegration.test_mutation_denied_to_policy)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r7b_work/study/tests/test_native.py", line 35, in test_mutation_denied_to_policy
+    with self.assertRaises(ValueError):ns.check_invalid_call('remove_contact',{'person_id':ns.TARGET_ID})
+                                       ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'native_study' has no attribute 'check_invalid_call'
+
+======================================================================
+ERROR: test_official_walkthroughs (test_native.NativeIntegration.test_official_walkthroughs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r7b_work/study/tests/test_native.py", line 10, in test_official_walkthroughs
+    for name in ns.OFFICIAL_CASES:
+                ^^^^^^^^^^^^^^^^^
+AttributeError: module 'native_study' has no attribute 'OFFICIAL_CASES'
+
+======================================================================
+ERROR: test_old_feedback_not_safe (test_native.NativeIntegration.test_old_feedback_not_safe)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r7b_work/study/tests/test_native.py", line 24, in test_old_feedback_not_safe
+    def test_old_feedback_not_safe(self):self.assertFalse(ns.run_fixture('reassigned','pre_change','reuse_observed_then_resolve')['score']['safe_success'])
+                                                          ^^^^^^^^^^^^^^
+AttributeError: module 'native_study' has no attribute 'run_fixture'
+
+======================================================================
+ERROR: test_posthoc_lookup_does_not_undo (test_native.NativeIntegration.test_posthoc_lookup_does_not_undo)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r7b_work/study/tests/test_native.py", line 30, in test_posthoc_lookup_does_not_undo
+    r=ns.run_fixture('reassigned','none','cached_reactive',posthoc=True);self.assertEqual(r['score']['wrong_writes'],1);self.assertFalse(r['score']['safe_success'])
+      ^^^^^^^^^^^^^^
+AttributeError: module 'native_study' has no attribute 'run_fixture'
+
+======================================================================
+ERROR: test_reassigned (test_native.NativeIntegration.test_reassigned)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r7b_work/study/tests/test_native.py", line 19, in test_reassigned
+    r=ns.run_fixture('reassigned','none','query_on_error');self.assertFalse(r['score']['target_reached']);self.assertEqual(r['recipient_ids'],[ns.OTHER_ID])
+      ^^^^^^^^^^^^^^
+AttributeError: module 'native_study' has no attribute 'run_fixture'
+
+======================================================================
+ERROR: test_snapshot_roundtrip (test_native.NativeIntegration.test_snapshot_roundtrip)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r7b_work/study/tests/test_native.py", line 31, in test_snapshot_roundtrip
+    def test_snapshot_roundtrip(self):self.assertTrue(ns.check_snapshot_roundtrip())
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'native_study' has no attribute 'check_snapshot_roundtrip'
+
+======================================================================
+ERROR: test_stable (test_native.NativeIntegration.test_stable)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r7b_work/study/tests/test_native.py", line 13, in test_stable
+    for method in ns.METHODS:
+                  ^^^^^^^^^^
+AttributeError: module 'native_study' has no attribute 'METHODS'
+
+======================================================================
+ERROR: test_unknown_function_blocked (test_native.NativeIntegration.test_unknown_function_blocked)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r7b_work/study/tests/test_native.py", line 33, in test_unknown_function_blocked
+    with self.assertRaises(ValueError):ns.check_invalid_call('__import__',{})
+                                       ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'native_study' has no attribute 'check_invalid_call'
+
+======================================================================
+ERROR: test_unmapped_silent_success (test_native.NativeIntegration.test_unmapped_silent_success)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r7b_work/study/tests/test_native.py", line 17, in test_unmapped_silent_success
+    r=ns.run_fixture('moved','none','cached_reactive');self.assertTrue(r['policy_return']['reported_sent']);self.assertEqual(r['score']['wrong_writes'],1)
+      ^^^^^^^^^^^^^^
+AttributeError: module 'native_study' has no attribute 'run_fixture'
+
+======================================================================
+ERROR: test_unrelated_change (test_native.NativeIntegration.test_unrelated_change)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r7b_work/study/tests/test_native.py", line 15, in test_unrelated_change
+    def test_unrelated_change(self):self.assertTrue(ns.run_fixture('unrelated','none','cached_reactive')['score']['safe_success'])
+                                                    ^^^^^^^^^^^^^^
+AttributeError: module 'native_study' has no attribute 'run_fixture'
+
+======================================================================
+FAIL: test_native_components (test_native.NativeGate.test_native_components)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r7b_work/study/tests/test_native.py", line 6, in test_native_components
+    self.assertEqual(ns.capabilities(),{'native_context':True,'native_execution':True,'native_evaluation':True})
+AssertionError: {'native_context': False, 'native_execution': False, 'native_evaluation': False} != {'native_context': True, 'native_execution': True, 'native_evaluation': True}
+- {'native_context': False, 'native_evaluation': False, 'native_execution': False}
+?                    ^^^^                        ^^^^                       ^^^^
+
++ {'native_context': True, 'native_evaluation': True, 'native_execution': True}
+?                    ^^^                        ^^^                       ^^^
+
+
+----------------------------------------------------------------------
+Ran 29 tests in 0.002s
+
+FAILED (failures=1, errors=16)

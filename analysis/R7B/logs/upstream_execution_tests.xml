@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="6" time="1.018" timestamp="2026-09-13T06:44:13.035899" hostname="localhost"><testcase classname="tests.roles.execution_environment_test" name="test_execution_environment_syntax_error" time="0.068"><failure message="assert Message(sende...NT', 'AGENT']) == Message(sende...NT: 'AGENT'&gt;])&#10;  &#10;  Omitting 7 identical items, use -vv to show&#10;  Differing attributes:&#10;  ['content', 'tool_call_exception']&#10;  &#10;  Drill down into differing attribute content:&#10;    content: '  File &quot;&lt;input&gt;&quot;, line 1\n    improt math\n           ^^^^\nSyntaxError: invalid syntax\n' != '  File &quot;&lt;input&gt;&quot;, line 1\n    improt math\n           ^\nSyntaxError: invalid syntax\n'...&#10;  &#10;  ...Full output truncated (13 lines hidden), use '-vv' to show">execution_environment = &lt;tool_sandbox.roles.execution_environment.ExecutionEnvironment object at 0x7f99a8f9d7d0&gt;
+
+    def test_execution_environment_syntax_error(
+        execution_environment: ExecutionEnvironment,
+    ) -&gt; None:
+        execution_environment.add_messages(
+            [
+                Message(
+                    sender=RoleType.AGENT,
+                    recipient=RoleType.EXECUTION_ENVIRONMENT,
+                    content="improt math",
+                )
+            ]
+        )
+        execution_environment.respond()
+        content = textwrap.dedent("""\
+          File "&lt;input&gt;", line 1
+            improt math
+                   ^
+        SyntaxError: invalid syntax
+        """)
+&gt;       assert execution_environment.get_messages()[-1] == Message(
+            sender=RoleType.EXECUTION_ENVIRONMENT,
+            recipient=RoleType.AGENT,
+            content=content,
+            conversation_active=True,
+            tool_call_exception=content,
+        )
+E       assert Message(sende...NT', 'AGENT']) == Message(sende...NT: 'AGENT'&gt;])
+E         
+E         Omitting 7 identical items, use -vv to show
+E         Differing attributes:
+E         ['content', 'tool_call_exception']
+E         
+E         Drill down into differing attribute content:
+E           content: '  File "&lt;input&gt;", line 1\n    improt math\n           ^^^^\nSyntaxError: invalid syntax\n' != '  File "&lt;input&gt;", line 1\n    improt math\n           ^\nSyntaxError: invalid syntax\n'...
+E         
+E         ...Full output truncated (13 lines hidden), use '-vv' to show
+
+tests/roles/execution_environment_test.py:63: AssertionError</failure></testcase><testcase classname="tests.roles.execution_environment_test" name="test_execution_environment_raise_error" time="0.010" /><testcase classname="tests.roles.execution_environment_test" name="test_execution_environment_incomplete_command" time="0.008" /><testcase classname="tests.roles.execution_environment_test" name="test_execution_environment_successful_execution" time="0.008" /><testcase classname="tests.roles.execution_environment_test" name="test_valid_parallel_tool_call" time="0.026" /><testcase classname="tests.roles.execution_environment_test" name="test_invalid_parallel_tool_call" time="0.026"><failure message="AssertionError: assert 'search_stock' == 'set_wifi_status'&#10;  &#10;  - set_wifi_status&#10;  + search_stock">execution_environment = &lt;tool_sandbox.roles.execution_environment.ExecutionEnvironment object at 0x7f99a902c910&gt;
+
+    def test_invalid_parallel_tool_call(
+        execution_environment: ExecutionEnvironment,
+    ) -&gt; None:
+        # Set up the environment by adding a system message that specifies which tools to
+        # import.
+        execution_environment.add_messages(
+            [
+                Message(
+                    sender=RoleType.AGENT,
+                    recipient=RoleType.EXECUTION_ENVIRONMENT,
+                    content=(
+                        "import json\n"
+                        "from tool_sandbox.tools.setting import set_wifi_status\n"
+                        "from tool_sandbox.tools.rapid_api_search_tools import search_stock\n"
+                    ),
+                    conversation_active=True,
+                )
+            ]
+        )
+        execution_context = get_current_context()
+        settings_df = execution_context.get_database(DatabaseNamespace.SETTING)
+        execution_context.update_database(
+            DatabaseNamespace.SETTING, settings_df.with_columns(pl.lit(False).alias("wifi"))
+        )
+        execution_environment.respond()
+    
+        # Agents can issue parallel tool calls. The expectation is that these are
+        # independent and can thus be executed in any order. If that is not the case it
+        # means that the tool calls are not truly parallel, but have some dependency on each
+        # other. In the example below the tool calls depend on each other, but when executed
+        # sequentially in the given order they would succeed. Since the execution
+        # environment calls the tools in all order permutations the overall result should be
+        # a failure. More specifically, when calling the `search_stock` tool first it will
+        # fail with an exception saying that WiFi is not enabled.
+        execution_environment.add_messages(
+            [
+                Message(
+                    sender=RoleType.AGENT,
+                    recipient=RoleType.EXECUTION_ENVIRONMENT,
+                    content="call_ucWrTNIM4Prh1KlK77k1Zjeu_parameters = {'on': True}\ncall_ucWrTNIM4Prh1KlK77k1Zjeu_response = set_wifi_status(**call_ucWrTNIM4Prh1KlK77k1Zjeu_parameters)\nprint(repr(call_ucWrTNIM4Prh1KlK77k1Zjeu_response))",
+                    conversation_active=True,
+                    openai_tool_call_id="call_ucWrTNIM4Prh1KlK77k1Zjeu",
+                    openai_function_name="set_wifi_status",
+                ),
+                Message(
+                    sender=RoleType.AGENT,
+                    recipient=RoleType.EXECUTION_ENVIRONMENT,
+                    content="call_e60fwDpTW2yecfBg2BQPNy88_parameters = {'query': 'Apple'}\ncall_e60fwDpTW2yecfBg2BQPNy88_response = search_stock(**call_e60fwDpTW2yecfBg2BQPNy88_parameters)\nprint(repr(call_e60fwDpTW2yecfBg2BQPNy88_response))",
+                    conversation_active=True,
+                    openai_tool_call_id="call_e60fwDpTW2yecfBg2BQPNy88",
+                    openai_function_name="search_stock",
+                ),
+            ]
+        )
+    
+        execution_environment.respond()
+        # WiFi should still be off.
+        assert not execution_context.get_database(DatabaseNamespace.SETTING)["wifi"][0]
+    
+        # Without setting `get_all_history_snapshots` we only get the latest tool call back.
+        df = get_current_context().get_database(
+            DatabaseNamespace.SANDBOX, get_all_history_snapshots=True
+        )
+        # The response should be in the same order as the (potentially permutated) requests.
+        assert RoleType.EXECUTION_ENVIRONMENT == df[-2]["sender"][0]
+        assert RoleType.AGENT == df[-2]["recipient"][0]
+&gt;       assert "search_stock" == df[-2]["openai_function_name"][0]
+E       AssertionError: assert 'search_stock' == 'set_wifi_status'
+E         
+E         - set_wifi_status
+E         + search_stock
+
+tests/roles/execution_environment_test.py:289: AssertionError</failure></testcase></testsuite></testsuites>

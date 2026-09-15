@@ -1,0 +1,147 @@
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 720, in _warm_feature_flows
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 704, in _warm_collaboration_flows
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/generated/interface/models.py", line 32317, in hydrate_crdt_from_proto
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/remote.py", line 749, in __call__
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/client.py", line 150, in call
+artifact_tool.rpc.client.RemoteError: hydrateCrdtFromProto requires an empty collaborative document.
+test_calibration_diagonal_and_shape (test_data.DataAndCalibrationTests.test_calibration_diagonal_and_shape) ... ERROR
+test_catalog_deterministic (test_data.DataAndCalibrationTests.test_catalog_deterministic) ... ERROR
+test_directional_pagination_loss (test_data.DataAndCalibrationTests.test_directional_pagination_loss) ... ERROR
+test_empty_calibration_rejected (test_data.DataAndCalibrationTests.test_empty_calibration_rejected) ... ERROR
+test_evaluation_seeds_disjoint (test_data.DataAndCalibrationTests.test_evaluation_seeds_disjoint) ... ERROR
+test_invalid_modes (test_data.DataAndCalibrationTests.test_invalid_modes) ... ERROR
+test_modes_roundtrip (test_data.DataAndCalibrationTests.test_modes_roundtrip) ... ERROR
+test_predictor_does_not_receive_test_rows (test_data.DataAndCalibrationTests.test_predictor_does_not_receive_test_rows) ... ERROR
+test_profiles (test_data.DataAndCalibrationTests.test_profiles) ... ERROR
+test_single_effect_ablation_bounds (test_data.DataAndCalibrationTests.test_single_effect_ablation_bounds) ... ERROR
+test_task_public_no_mode (test_data.DataAndCalibrationTests.test_task_public_no_mode) ... ERROR
+
+======================================================================
+ERROR: test_calibration_diagonal_and_shape (test_data.DataAndCalibrationTests.test_calibration_diagonal_and_shape)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r5_work/R5_Research_Kit/tests/test_data.py", line 34, in test_calibration_diagonal_and_shape
+    a=calibration.fit([110,111])
+      ^^^^^^^^^^^^^^^
+  File "/mnt/data/r5_work/R5_Research_Kit/r5lib/calibration.py", line 2, in __getattr__
+    raise NotImplementedError("Calibration API not implemented")
+NotImplementedError: Calibration API not implemented
+
+======================================================================
+ERROR: test_catalog_deterministic (test_data.DataAndCalibrationTests.test_catalog_deterministic)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r5_work/R5_Research_Kit/tests/test_data.py", line 8, in test_catalog_deterministic
+    self.assertEqual(data.make_rows(11), data.make_rows(11))
+                     ^^^^^^^^^^^^^^
+  File "/mnt/data/r5_work/R5_Research_Kit/r5lib/data.py", line 2, in __getattr__
+    raise NotImplementedError("Data API not implemented")
+NotImplementedError: Data API not implemented
+
+======================================================================
+ERROR: test_directional_pagination_loss (test_data.DataAndCalibrationTests.test_directional_pagination_loss)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r5_work/R5_Research_Kit/tests/test_data.py", line 46, in test_directional_pagination_loss
+    a=calibration.single_failure(rows,task,cached=1,true=0)
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r5_work/R5_Research_Kit/r5lib/calibration.py", line 2, in __getattr__
+    raise NotImplementedError("Calibration API not implemented")
+NotImplementedError: Calibration API not implemented
+
+======================================================================
+ERROR: test_empty_calibration_rejected (test_data.DataAndCalibrationTests.test_empty_calibration_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r5_work/R5_Research_Kit/tests/test_data.py", line 60, in test_empty_calibration_rejected
+    with self.assertRaises(ValueError):calibration.fit([])
+                                       ^^^^^^^^^^^^^^^
+  File "/mnt/data/r5_work/R5_Research_Kit/r5lib/calibration.py", line 2, in __getattr__
+    raise NotImplementedError("Calibration API not implemented")
+NotImplementedError: Calibration API not implemented
+
+======================================================================
+ERROR: test_evaluation_seeds_disjoint (test_data.DataAndCalibrationTests.test_evaluation_seeds_disjoint)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r5_work/R5_Research_Kit/tests/test_data.py", line 29, in test_evaluation_seeds_disjoint
+    p=data.load_protocol()
+      ^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r5_work/R5_Research_Kit/r5lib/data.py", line 2, in __getattr__
+    raise NotImplementedError("Data API not implemented")
+NotImplementedError: Data API not implemented
+
+======================================================================
+ERROR: test_invalid_modes (test_data.DataAndCalibrationTests.test_invalid_modes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r5_work/R5_Research_Kit/tests/test_data.py", line 19, in test_invalid_modes
+    with self.assertRaises(ValueError):data.decode(8)
+                                       ^^^^^^^^^^^
+  File "/mnt/data/r5_work/R5_Research_Kit/r5lib/data.py", line 2, in __getattr__
+    raise NotImplementedError("Data API not implemented")
+NotImplementedError: Data API not implemented
+
+======================================================================
+ERROR: test_modes_roundtrip (test_data.DataAndCalibrationTests.test_modes_roundtrip)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r5_work/R5_Research_Kit/tests/test_data.py", line 16, in test_modes_roundtrip
+    self.assertEqual(data.encode(data.decode(x)),x)
+                     ^^^^^^^^^^^
+  File "/mnt/data/r5_work/R5_Research_Kit/r5lib/data.py", line 2, in __getattr__
+    raise NotImplementedError("Data API not implemented")
+NotImplementedError: Data API not implemented
+
+======================================================================
+ERROR: test_predictor_does_not_receive_test_rows (test_data.DataAndCalibrationTests.test_predictor_does_not_receive_test_rows)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r5_work/R5_Research_Kit/tests/test_data.py", line 52, in test_predictor_does_not_receive_test_rows
+    a=calibration.fit([110])
+      ^^^^^^^^^^^^^^^
+  File "/mnt/data/r5_work/R5_Research_Kit/r5lib/calibration.py", line 2, in __getattr__
+    raise NotImplementedError("Calibration API not implemented")
+NotImplementedError: Calibration API not implemented
+
+======================================================================
+ERROR: test_profiles (test_data.DataAndCalibrationTests.test_profiles)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r5_work/R5_Research_Kit/tests/test_data.py", line 11, in test_profiles
+    rows=data.make_rows(11, 'reservation_free_clustered')
+         ^^^^^^^^^^^^^^
+  File "/mnt/data/r5_work/R5_Research_Kit/r5lib/data.py", line 2, in __getattr__
+    raise NotImplementedError("Data API not implemented")
+NotImplementedError: Data API not implemented
+
+======================================================================
+ERROR: test_single_effect_ablation_bounds (test_data.DataAndCalibrationTests.test_single_effect_ablation_bounds)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r5_work/R5_Research_Kit/tests/test_data.py", line 55, in test_single_effect_ablation_bounds
+    t=np.asarray(calibration.fit([110])['table'])
+                 ^^^^^^^^^^^^^^^
+  File "/mnt/data/r5_work/R5_Research_Kit/r5lib/calibration.py", line 2, in __getattr__
+    raise NotImplementedError("Calibration API not implemented")
+NotImplementedError: Calibration API not implemented
+
+======================================================================
+ERROR: test_task_public_no_mode (test_data.DataAndCalibrationTests.test_task_public_no_mode)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r5_work/R5_Research_Kit/tests/test_data.py", line 23, in test_task_public_no_mode
+    rows=data.make_rows(11)
+         ^^^^^^^^^^^^^^
+  File "/mnt/data/r5_work/R5_Research_Kit/r5lib/data.py", line 2, in __getattr__
+    raise NotImplementedError("Data API not implemented")
+NotImplementedError: Data API not implemented
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.003s
+
+FAILED (errors=11)

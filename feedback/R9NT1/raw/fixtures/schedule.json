@@ -1,0 +1,218 @@
+[
+  {
+    "episode_id": "primary_n06_verify_confirm",
+    "phase": "primary",
+    "case_id": "n06",
+    "arm": "verify_confirm"
+  },
+  {
+    "episode_id": "primary_n06_inherited",
+    "phase": "primary",
+    "case_id": "n06",
+    "arm": "inherited"
+  },
+  {
+    "episode_id": "primary_n15_verify_confirm",
+    "phase": "primary",
+    "case_id": "n15",
+    "arm": "verify_confirm"
+  },
+  {
+    "episode_id": "primary_n15_inherited",
+    "phase": "primary",
+    "case_id": "n15",
+    "arm": "inherited"
+  },
+  {
+    "episode_id": "primary_n05_inherited",
+    "phase": "primary",
+    "case_id": "n05",
+    "arm": "inherited"
+  },
+  {
+    "episode_id": "primary_n05_verify_confirm",
+    "phase": "primary",
+    "case_id": "n05",
+    "arm": "verify_confirm"
+  },
+  {
+    "episode_id": "primary_n09_verify_confirm",
+    "phase": "primary",
+    "case_id": "n09",
+    "arm": "verify_confirm"
+  },
+  {
+    "episode_id": "primary_n09_inherited",
+    "phase": "primary",
+    "case_id": "n09",
+    "arm": "inherited"
+  },
+  {
+    "episode_id": "primary_n13_verify_confirm",
+    "phase": "primary",
+    "case_id": "n13",
+    "arm": "verify_confirm"
+  },
+  {
+    "episode_id": "primary_n13_inherited",
+    "phase": "primary",
+    "case_id": "n13",
+    "arm": "inherited"
+  },
+  {
+    "episode_id": "primary_n00_inherited",
+    "phase": "primary",
+    "case_id": "n00",
+    "arm": "inherited"
+  },
+  {
+    "episode_id": "primary_n00_verify_confirm",
+    "phase": "primary",
+    "case_id": "n00",
+    "arm": "verify_confirm"
+  },
+  {
+    "episode_id": "primary_n12_inherited",
+    "phase": "primary",
+    "case_id": "n12",
+    "arm": "inherited"
+  },
+  {
+    "episode_id": "primary_n12_verify_confirm",
+    "phase": "primary",
+    "case_id": "n12",
+    "arm": "verify_confirm"
+  },
+  {
+    "episode_id": "primary_n10_verify_confirm",
+    "phase": "primary",
+    "case_id": "n10",
+    "arm": "verify_confirm"
+  },
+  {
+    "episode_id": "primary_n10_inherited",
+    "phase": "primary",
+    "case_id": "n10",
+    "arm": "inherited"
+  },
+  {
+    "episode_id": "primary_n02_inherited",
+    "phase": "primary",
+    "case_id": "n02",
+    "arm": "inherited"
+  },
+  {
+    "episode_id": "primary_n02_verify_confirm",
+    "phase": "primary",
+    "case_id": "n02",
+    "arm": "verify_confirm"
+  },
+  {
+    "episode_id": "primary_n08_verify_confirm",
+    "phase": "primary",
+    "case_id": "n08",
+    "arm": "verify_confirm"
+  },
+  {
+    "episode_id": "primary_n08_inherited",
+    "phase": "primary",
+    "case_id": "n08",
+    "arm": "inherited"
+  },
+  {
+    "episode_id": "primary_n11_verify_confirm",
+    "phase": "primary",
+    "case_id": "n11",
+    "arm": "verify_confirm"
+  },
+  {
+    "episode_id": "primary_n11_inherited",
+    "phase": "primary",
+    "case_id": "n11",
+    "arm": "inherited"
+  },
+  {
+    "episode_id": "primary_n14_inherited",
+    "phase": "primary",
+    "case_id": "n14",
+    "arm": "inherited"
+  },
+  {
+    "episode_id": "primary_n14_verify_confirm",
+    "phase": "primary",
+    "case_id": "n14",
+    "arm": "verify_confirm"
+  },
+  {
+    "episode_id": "primary_n07_inherited",
+    "phase": "primary",
+    "case_id": "n07",
+    "arm": "inherited"
+  },
+  {
+    "episode_id": "primary_n07_verify_confirm",
+    "phase": "primary",
+    "case_id": "n07",
+    "arm": "verify_confirm"
+  },
+  {
+    "episode_id": "primary_n04_inherited",
+    "phase": "primary",
+    "case_id": "n04",
+    "arm": "inherited"
+  },
+  {
+    "episode_id": "primary_n04_verify_confirm",
+    "phase": "primary",
+    "case_id": "n04",
+    "arm": "verify_confirm"
+  },
+  {
+    "episode_id": "primary_n01_verify_confirm",
+    "phase": "primary",
+    "case_id": "n01",
+    "arm": "verify_confirm"
+  },
+  {
+    "episode_id": "primary_n01_inherited",
+    "phase": "primary",
+    "case_id": "n01",
+    "arm": "inherited"
+  },
+  {
+    "episode_id": "primary_n03_inherited",
+    "phase": "primary",
+    "case_id": "n03",
+    "arm": "inherited"
+  },
+  {
+    "episode_id": "primary_n03_verify_confirm",
+    "phase": "primary",
+    "case_id": "n03",
+    "arm": "verify_confirm"
+  },
+  {
+    "episode_id": "repeat_n10_verify_confirm",
+    "phase": "repeat",
+    "case_id": "n10",
+    "arm": "verify_confirm"
+  },
+  {
+    "episode_id": "repeat_n10_inherited",
+    "phase": "repeat",
+    "case_id": "n10",
+    "arm": "inherited"
+  },
+  {
+    "episode_id": "repeat_n02_inherited",
+    "phase": "repeat",
+    "case_id": "n02",
+    "arm": "inherited"
+  },
+  {
+    "episode_id": "repeat_n02_verify_confirm",
+    "phase": "repeat",
+    "case_id": "n02",
+    "arm": "verify_confirm"
+  }
+]

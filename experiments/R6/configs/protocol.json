@@ -1,0 +1,187 @@
+{
+  "budget": 8,
+  "calibration_seed": 6100000,
+  "catalog_size": 23,
+  "conditions": [
+    {
+      "name": "matched",
+      "actual_hazard": 0.12,
+      "data_profile": "standard"
+    },
+    {
+      "name": "no_drift",
+      "actual_hazard": 0.0,
+      "data_profile": "standard"
+    },
+    {
+      "name": "fast_drift",
+      "actual_hazard": 0.24,
+      "data_profile": "standard"
+    },
+    {
+      "name": "data_shift",
+      "actual_hazard": 0.12,
+      "data_profile": "reservation_free_clustered"
+    }
+  ],
+  "credit_price": 0.05,
+  "date": "2026-09-13",
+  "evaluation_seeds": {
+    "data": 6300000,
+    "tasks": 6400000,
+    "modes": 6500000
+  },
+  "hazards": [
+    0.12,
+    0.12,
+    0.12
+  ],
+  "id": "R6_SELECTIVE_CALIBRATION_01",
+  "limits": [
+    "No network/LLM/API. Same R4 catalog API, not a public benchmark.",
+    "Known transition and relevance, finite state, exact initial and runtime calibration remain.",
+    "Only paid atomic labels are visible to calibration selectors. No dense hidden table in selector.",
+    "Training catalog reference answers are permitted supervision, separately counted; runtime gold never enters policy.",
+    "Diagonal/irrelevant-bit invariances use public implementation contracts and tested, not estimated.",
+    "All selectors pay equal marginal cost per acquired canonical interaction cell: 16 workflow executions.",
+    "Selection uses immediate decision stress sensitivity, not a general VOI optimum or new theorem.",
+    "Four separate training panels; nested budgets share acquisition prefixes explicitly.",
+    "No testing labels used for method or parameter selection; all conditions and seeds retained.",
+    "No retraining or wins-based tuning after results. Negative results remain.",
+    "User reproduction uses same data, adds no independent sample.",
+    "RepairLens has no new experiments in this round."
+  ],
+  "menus": [
+    "single",
+    "shared"
+  ],
+  "methods": [
+    "single_only",
+    "full_joint",
+    "random_16",
+    "random_32",
+    "occupancy_16",
+    "occupancy_32",
+    "decision_16",
+    "decision_32",
+    "any_exact",
+    "never"
+  ],
+  "persistence": 0.85,
+  "phase": "development_offline_not_confirmatory",
+  "remote_model_calls": 0,
+  "statistics": {
+    "bootstrap_repetitions": 2000,
+    "resample_seed": 6900000,
+    "confirmatory": false,
+    "unit": "paired independent evaluation stream conditional on calibration panel; do not claim population-training uncertainty"
+  },
+  "step_cap": 4,
+  "steps": 8,
+  "streams_per_condition": 8,
+  "tasks": [
+    "catalog_ids",
+    "stock_sum",
+    "available_low",
+    "available_middle",
+    "available_high"
+  ],
+  "thresholds": [
+    3,
+    12,
+    22
+  ],
+  "validation_catalogs": 0,
+  "version": "6.0.0",
+  "calibration_panels": 4,
+  "calibration_catalogs_per_panel": 16,
+  "selector_budgets": [
+    16,
+    32
+  ],
+  "selector_seed": 6600000,
+  "calibration_cost_sensitivity": {
+    "deployment_episodes": [
+      10,
+      100,
+      1000
+    ],
+    "price_per_workflow": [
+      0.0,
+      0.001,
+      0.01
+    ],
+    "unit": "hypothetical_task_loss_equivalent_NOT_money",
+    "formula": "runtime_J_per_episode + lambda_cal*paid_calibration_workflows/N"
+  },
+  "audit": {
+    "derived_probability_atol": 1e-14,
+    "derived_probability_rtol": 0,
+    "discrete_science": "strict values AND types; arrays ordered",
+    "probability_paths": [
+      "records.*.predicted_task_error_after_receipts"
+    ],
+    "time_fields": [
+      "planner_setup_seconds",
+      "execution_seconds",
+      "planning_seconds",
+      "probe_seconds",
+      "tool_seconds"
+    ],
+    "max_zip_bytes": 268435456
+  },
+  "selection": {
+    "rule": "two_extreme_myopic_decision_regret_per_equal_cost_cell",
+    "scenario_values": [
+      0.0,
+      1.0
+    ],
+    "recompute_after_each_acquisition": true,
+    "design_ages": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        2,
+        2,
+        2
+      ],
+      [
+        4,
+        4,
+        4
+      ],
+      [
+        8,
+        8,
+        8
+      ],
+      [
+        1,
+        4,
+        8
+      ],
+      [
+        8,
+        1,
+        4
+      ],
+      [
+        4,
+        8,
+        1
+      ]
+    ],
+    "design_budgets": [
+      2,
+      3,
+      4,
+      6,
+      8
+    ],
+    "quantize_digits_for_tie_break": 12,
+    "scope": "hypothetical public states; no evaluation catalogs, hidden states, gold labels or outcomes"
+  }
+}

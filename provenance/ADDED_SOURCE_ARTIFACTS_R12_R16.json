@@ -1,0 +1,432 @@
+[
+  {
+    "source": "R12_Claim_Evidence_Matrix_ZH.md",
+    "bytes": 1179,
+    "sha256": "61159907a4fafbbd0dab05fb905c4205d3baf4efa8e65b1ef809dc6b9b188649",
+    "destinations": [
+      "ReCheck/stages/R12/reports/R12_Claim_Evidence_Matrix_ZH.md"
+    ],
+    "status": "original_bytes_preserved",
+    "research_stage": "R12"
+  },
+  {
+    "source": "R12_Delivery_Verification.json",
+    "bytes": 6086,
+    "sha256": "f0f01f6c9281023fe334dfc8d55468d55f749b0cd324072684973a81c9a47865",
+    "destinations": [
+      "ReCheck/stages/R12/verification/R12_Delivery_Verification.json"
+    ],
+    "status": "original_bytes_preserved",
+    "research_stage": "R12"
+  },
+  {
+    "source": "R12_Feedback19_Factual_Corrections_ZH.md",
+    "bytes": 865,
+    "sha256": "e493728bda6985bc45c8d06ccff5c5d98276eac73836e13da9f3bdbab247e5db",
+    "destinations": [
+      "ReCheck/stages/R12/reports/R12_Feedback19_Factual_Corrections_ZH.md"
+    ],
+    "status": "original_bytes_preserved",
+    "research_stage": "R12"
+  },
+  {
+    "source": "R12_Feedback19_Recomputed_Summary.csv",
+    "bytes": 229,
+    "sha256": "f128dd61a5047145c17f3af828ea03a081ff6062f460e37f49308b9e2219a471",
+    "destinations": [
+      "ReCheck/stages/R12/results/R12_Feedback19_Recomputed_Summary.csv"
+    ],
+    "status": "original_bytes_preserved",
+    "research_stage": "R12"
+  },
+  {
+    "source": "R12_Feedback19_Review_Audit_Package.zip",
+    "bytes": 856904,
+    "sha256": "da7fae458e3c0f5706a9afd0ed8dfdde8e5ad1c3845cdd40835e84175a80ad82",
+    "destinations": [
+      "ReCheck/stages/R12/archives/R12_Feedback19_Review_Audit_Package.zip"
+    ],
+    "status": "original_bytes_preserved",
+    "research_stage": "R12"
+  },
+  {
+    "source": "R12_Feedback19_Review_Report_ZH.md",
+    "bytes": 6967,
+    "sha256": "b33a31851a63d99c07f48be49153ed9d9dda2b10a7263c4fe8f84b76e076cf93",
+    "destinations": [
+      "ReCheck/stages/R12/reports/R12_Feedback19_Review_Report_ZH.md"
+    ],
+    "status": "original_bytes_preserved",
+    "research_stage": "R12"
+  },
+  {
+    "source": "R12_Feedback19_Review_Verification.json",
+    "bytes": 3552,
+    "sha256": "4addb39846d38c7f3e0c4c3c3e2a7fb5d048b04894e7b1edb89dcbb8ece1f00b",
+    "destinations": [
+      "ReCheck/stages/R12/verification/R12_Feedback19_Review_Verification.json"
+    ],
+    "status": "original_bytes_preserved",
+    "research_stage": "R12"
+  },
+  {
+    "source": "R12_Maintainer_Reproduction_EN.md",
+    "bytes": 2344,
+    "sha256": "c50d3cbf23f1026f58e4fc85d89169322331c226b565da52656bf8d8afaac38a",
+    "destinations": [
+      "ReCheck/stages/R12/reports/R12_Maintainer_Reproduction_EN.md"
+    ],
+    "status": "original_bytes_preserved",
+    "research_stage": "R12"
+  },
+  {
+    "source": "R12_Public_Evaluator_Audit.zip",
+    "bytes": 878402,
+    "sha256": "eb53d1226e0a213d2a212fbc76f804cc6cc21f651a23b1765df57a9fe242ec7b",
+    "destinations": [
+      "ReCheck/stages/R12/archives/R12_Public_Evaluator_Audit.zip"
+    ],
+    "status": "original_bytes_preserved",
+    "research_stage": "R12"
+  },
+  {
+    "source": "R12_Public_Task_Results.csv",
+    "bytes": 8029,
+    "sha256": "f08cb8ae8ae52e2bc8b60eaf5c596527237ca0592f3cd7939a75e152caffc268",
+    "destinations": [
+      "ReCheck/stages/R12/results/R12_Public_Task_Results.csv"
+    ],
+    "status": "original_bytes_preserved",
+    "research_stage": "R12"
+  },
+  {
+    "source": "R12_Research_Report_ZH.md",
+    "bytes": 8546,
+    "sha256": "2670dbb35ebf21abcf3317193e1f268df6b96e1bd49a39d76e2f8685d1059bb1",
+    "destinations": [
+      "ReCheck/stages/R12/reports/R12_Research_Report_ZH.md"
+    ],
+    "status": "original_bytes_preserved",
+    "research_stage": "R12"
+  },
+  {
+    "source": "R12_Source_Audit_ZH.md",
+    "bytes": 3880,
+    "sha256": "e9f8c171adece1fed2520fc6eee37be28d4240bc873371b3551ae4ea59ca8c29",
+    "destinations": [
+      "ReCheck/stages/R12/reports/R12_Source_Audit_ZH.md"
+    ],
+    "status": "original_bytes_preserved",
+    "research_stage": "R12"
+  },
+  {
+    "source": "R13_Claim_Evidence_Matrix_ZH.md",
+    "bytes": 1269,
+    "sha256": "c24396622e248aeebe57e0c2442e2e032a70672fbd5510343b3437a6ba7488fb",
+    "destinations": [
+      "ReCheck/stages/R13/reports/R13_Claim_Evidence_Matrix_ZH.md"
+    ],
+    "status": "original_bytes_preserved",
+    "research_stage": "R13"
+  },
+  {
+    "source": "R13_Delivery_Verification.json",
+    "bytes": 7733,
+    "sha256": "86f3f2def190568bed1571b84a80a6f9256272df2189fb74c335c1a33e76a6fa",
+    "destinations": [
+      "ReCheck/stages/R13/verification/R13_Delivery_Verification.json"
+    ],
+    "status": "original_bytes_preserved",
+    "research_stage": "R13"
+  },
+  {
+    "source": "R13_Public_Task_Census.csv",
+    "bytes": 30505,
+    "sha256": "6eb4a3f2c486a731d2eb829b8e600f0c55f9e90e5503ff7d1381e5fbc0fd0952",
+    "destinations": [
+      "ReCheck/stages/R13/results/R13_Public_Task_Census.csv"
+    ],
+    "status": "original_bytes_preserved",
+    "research_stage": "R13"
+  },
+  {
+    "source": "R13_Public_Trajectory_Feasibility_ZH.md",
+    "bytes": 4868,
+    "sha256": "45a5fd7a82f5afcb84d1af3a12f17a295f8c8bcbe608a2be3b3ca8ec4099e8d5",
+    "destinations": [
+      "ReCheck/stages/R13/reports/R13_Public_Trajectory_Feasibility_ZH.md"
+    ],
+    "status": "original_bytes_preserved",
+    "research_stage": "R13"
+  },
+  {
+    "source": "R13_Research_Report_ZH.md",
+    "bytes": 8916,
+    "sha256": "5eaeff075bdfaca37a0ecec7fe5119bd1ccd728ac4c3ef67b9cd4c0cc712d1ee",
+    "destinations": [
+      "ReCheck/stages/R13/reports/R13_Research_Report_ZH.md"
+    ],
+    "status": "original_bytes_preserved",
+    "research_stage": "R13"
+  },
+  {
+    "source": "R13_Temporal_Control_Results.csv",
+    "bytes": 803,
+    "sha256": "f6b79e9c84030ea907fac043b79f8a29cbb8a75a5657dfcb7309e0f4478ece08",
+    "destinations": [
+      "ReCheck/stages/R13/results/R13_Temporal_Control_Results.csv"
+    ],
+    "status": "original_bytes_preserved",
+    "research_stage": "R13"
+  },
+  {
+    "source": "R13_Temporal_Scope_Audit.zip",
+    "bytes": 369458,
+    "sha256": "2a4fdc0b453f3455695234a2685f037faf5c36aa3ee22171e8444ce72f23738c",
+    "destinations": [
+      "ReCheck/stages/R13/archives/R13_Temporal_Scope_Audit.zip"
+    ],
+    "status": "original_bytes_preserved",
+    "research_stage": "R13"
+  },
+  {
+    "source": "R14_Analysis_and_Sprint_Plan_ZH.md",
+    "bytes": 3380,
+    "sha256": "2df3d57604ae21e2068d7ff9441d8dd8561f510ffa9cb79885033fa69e7cd28f",
+    "destinations": [
+      "ReCheck/stages/R14/reports/R14_Analysis_and_Sprint_Plan_ZH.md"
+    ],
+    "status": "original_bytes_preserved",
+    "research_stage": "R14"
+  },
+  {
+    "source": "R14_Execution_Prompt_ZH.md",
+    "bytes": 1323,
+    "sha256": "20155b907e78483c557dbf800f10b11b534aa70bdda06552ad2f39f76ce64f52",
+    "destinations": [
+      "ReCheck/stages/R14/handoff/R14_Execution_Prompt_ZH.md"
+    ],
+    "status": "original_bytes_preserved",
+    "research_stage": "R14"
+  },
+  {
+    "source": "R14_Key_Case_Review_ZH.md",
+    "bytes": 2889,
+    "sha256": "dc8cb44df4171d3b054b33407d862f9dc06f789b261922363594cf749d150dfd",
+    "destinations": [
+      "ReCheck/stages/R14/reports/R14_Key_Case_Review_ZH.md"
+    ],
+    "status": "original_bytes_preserved",
+    "research_stage": "R14"
+  },
+  {
+    "source": "R14_Public_Analysis_Verification.json",
+    "bytes": 3772,
+    "sha256": "32db23c9837392b11f6129802b558bba1749fc701b2712d63fa62e530ca6e10b",
+    "destinations": [
+      "ReCheck/stages/R14/verification/R14_Public_Analysis_Verification.json"
+    ],
+    "status": "original_bytes_preserved",
+    "research_stage": "R14"
+  },
+  {
+    "source": "R14_Public_Corpus_Analysis.zip",
+    "bytes": 19449608,
+    "sha256": "2bb15d73541df1254acc3e28d939d068d61b348243c3e055ad539b9d99361cfe",
+    "destinations": [
+      "ReCheck/stages/R14/archives/R14_Public_Corpus_Analysis.zip"
+    ],
+    "status": "original_bytes_preserved",
+    "research_stage": "R14"
+  },
+  {
+    "source": "R14_Public_Corpus_Analysis_Report_ZH.md",
+    "bytes": 8218,
+    "sha256": "85997fa26e87c2289cde15a512bd08e95ed983be4a6d7e1522116a8c874d7e3f",
+    "destinations": [
+      "ReCheck/stages/R14/reports/R14_Public_Corpus_Analysis_Report_ZH.md"
+    ],
+    "status": "original_bytes_preserved",
+    "research_stage": "R14"
+  },
+  {
+    "source": "R14_Public_Data_Download_Kit.zip",
+    "bytes": 16560,
+    "sha256": "dbf58aae241e37568f52060155f7346f41a2b5d64581ee411b85b6bd821d2713",
+    "destinations": [
+      "ReCheck/stages/R14/archives/R14_Public_Data_Download_Kit.zip"
+    ],
+    "status": "original_bytes_preserved",
+    "research_stage": "R14"
+  },
+  {
+    "source": "R14_Public_Record_Analysis.csv",
+    "bytes": 1013600,
+    "sha256": "82271ec668ee0df6326bc3dd8609079c53bae24176534ac16c7e4e785d7a1bf6",
+    "destinations": [
+      "ReCheck/stages/R14/results/R14_Public_Record_Analysis.csv"
+    ],
+    "status": "original_bytes_preserved",
+    "research_stage": "R14"
+  },
+  {
+    "source": "R14_Transfer_Delivery_Verification.json",
+    "bytes": 373,
+    "sha256": "d1f72fc1ff66395427441e1cd7a3e456c2906b4ba1218471243660d0431b5b82",
+    "destinations": [
+      "ReCheck/stages/R14/verification/R14_Transfer_Delivery_Verification.json"
+    ],
+    "status": "original_bytes_preserved",
+    "research_stage": "R14"
+  },
+  {
+    "source": "R15_Author_Evidence_Outline_ZH.md",
+    "bytes": 2262,
+    "sha256": "57e3f9dc571506bab9ddb33232f3de7ff7c5c018dc2a6869da742999a4eddee4",
+    "destinations": [
+      "ReCheck/stages/R15/reports/R15_Author_Evidence_Outline_ZH.md"
+    ],
+    "status": "original_bytes_preserved",
+    "research_stage": "R15"
+  },
+  {
+    "source": "R15_Confirmed_Conflicts.csv",
+    "bytes": 27378,
+    "sha256": "7e9659c418e3510f1cab41973452970ddcbae645920cb6ec660827cbefe84b15",
+    "destinations": [
+      "ReCheck/stages/R15/results/R15_Confirmed_Conflicts.csv"
+    ],
+    "status": "original_bytes_preserved",
+    "research_stage": "R15"
+  },
+  {
+    "source": "R15_Delivery_Verification.json",
+    "bytes": 3944,
+    "sha256": "9b63744779f6c29384bf29fc9e6733c10938b340551c96feecebff94d148bf4c",
+    "destinations": [
+      "ReCheck/stages/R15/verification/R15_Delivery_Verification.json"
+    ],
+    "status": "original_bytes_preserved",
+    "research_stage": "R15"
+  },
+  {
+    "source": "R15_Key_Cases_ZH.md",
+    "bytes": 2604,
+    "sha256": "184bd44f16e66d1c3fc8e0dca70a6b31bd3f51fc5d668b3cf3a533ab9bc486e3",
+    "destinations": [
+      "ReCheck/stages/R15/reports/R15_Key_Cases_ZH.md"
+    ],
+    "status": "original_bytes_preserved",
+    "research_stage": "R15"
+  },
+  {
+    "source": "R15_Public_Effect_Audit.zip",
+    "bytes": 20234542,
+    "sha256": "d7af1d62444d82864aac3ca2fc4ea341ae6ce98cdc5091553e5417759ca51d19",
+    "destinations": [
+      "ReCheck/stages/R15/archives/R15_Public_Effect_Audit.zip"
+    ],
+    "status": "original_bytes_preserved",
+    "research_stage": "R15"
+  },
+  {
+    "source": "R15_Public_Effect_Results.csv",
+    "bytes": 222889,
+    "sha256": "266fa3487dcd238cb9b81949d612162bc80d7979475ade81ba1da1b917ced170",
+    "destinations": [
+      "ReCheck/stages/R15/results/R15_Public_Effect_Results.csv"
+    ],
+    "status": "original_bytes_preserved",
+    "research_stage": "R15"
+  },
+  {
+    "source": "R15_Reminder_Effect_Conflicts.svg",
+    "bytes": 43655,
+    "sha256": "6202bb358e8e8e3d4740c4ed3b3a474dc6df9c6ed1b9bb3f6bbad40eed015391",
+    "destinations": [
+      "ReCheck/stages/R15/results/R15_Reminder_Effect_Conflicts.svg"
+    ],
+    "status": "original_bytes_preserved",
+    "research_stage": "R15"
+  },
+  {
+    "source": "R15_Research_Report_ZH.md",
+    "bytes": 10021,
+    "sha256": "62d8b4bbd2f9fd4a7e5ac839eed482039b03a7334c571b7f8223edee2f9d81e3",
+    "destinations": [
+      "ReCheck/stages/R15/reports/R15_Research_Report_ZH.md"
+    ],
+    "status": "original_bytes_preserved",
+    "research_stage": "R15"
+  },
+  {
+    "source": "ReCheck_ICASSP_Research_Draft_R16.pdf",
+    "bytes": 196711,
+    "sha256": "10f1f8746a9c8298e846477774298ac2a7b98ae9caae47901c74ae0d28550de2",
+    "destinations": [
+      "ReCheck/papers/R16/ReCheck_ICASSP_Research_Draft_R16.pdf"
+    ],
+    "status": "original_bytes_preserved",
+    "research_stage": "R16"
+  },
+  {
+    "source": "ReCheck_ICASSP_LaTeX_R16.zip",
+    "bytes": 82088,
+    "sha256": "a0f369b35d7f7def29e4755cb26de5e35f17aea41561016ae253918389d55a45",
+    "destinations": [
+      "ReCheck/papers/R16/ReCheck_ICASSP_LaTeX_R16.zip"
+    ],
+    "status": "original_bytes_preserved",
+    "research_stage": "R16"
+  },
+  {
+    "source": "ReCheck_R16_Completion_Report_ZH.md",
+    "bytes": 6678,
+    "sha256": "848d4e00d07118a6f36acf81174f29c39f48778ab7dfb2e6abf58b8f37a3db68",
+    "destinations": [
+      "ReCheck/stages/R16/reports/ReCheck_R16_Completion_Report_ZH.md"
+    ],
+    "status": "original_bytes_preserved",
+    "research_stage": "R16"
+  },
+  {
+    "source": "ReCheck_R16_Verification.json",
+    "bytes": 6680,
+    "sha256": "ca19d306b9230fe7bae29eee4c5556459994cceff93aca7c7f200fd227f9b806",
+    "destinations": [
+      "ReCheck/stages/R16/verification/ReCheck_R16_Verification.json"
+    ],
+    "status": "original_bytes_preserved",
+    "research_stage": "R16"
+  },
+  {
+    "source": "ReCheck_R16_Research_and_Evidence.zip",
+    "bytes": 42467826,
+    "sha256": "eb44e248e8a18064e82ba9b94bb884113296fd8a076ff7c7235fb6014bdda0dc",
+    "destinations": [
+      "ReCheck/stages/R16/archives/ReCheck_R16_Research_and_Evidence.zip"
+    ],
+    "status": "original_bytes_preserved",
+    "research_stage": "R16"
+  },
+  {
+    "source": "反馈19_R12公开评测器离线核查_无需运行_20260915.zip",
+    "bytes": 34856,
+    "sha256": "7cc3ffbe9c1113d9039fb391675733d7e1f02cf3eb87fe5a431d728d4bcb59df",
+    "destinations": [
+      "ReCheck/feedback/R12_receipt19/original_upload/反馈19_R12公开评测器离线核查_无需运行_20260915.zip"
+    ],
+    "status": "original_bytes_preserved",
+    "research_stage": "R12_receipt19"
+  },
+  {
+    "source": "反馈20_R14公开数据下载_完成_20260915.zip",
+    "bytes": 18306501,
+    "sha256": "006789cfa6935b4d8039660a46ce2636edc6a867007351cf494ac358a6033b8d",
+    "destinations": [
+      "ReCheck/feedback/R14_download20/original_upload/反馈20_R14公开数据下载_完成_20260915.zip"
+    ],
+    "status": "original_bytes_preserved",
+    "research_stage": "R14_download20"
+  }
+]

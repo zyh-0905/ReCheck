@@ -1,0 +1,80 @@
+test_exact_expectation_vs_all_paths (test_r3_boundaries.Boundaries.test_exact_expectation_vs_all_paths) ... ok
+test_future_cost_matters_two_steps (test_r3_boundaries.Boundaries.test_future_cost_matters_two_steps) ... ok
+test_isolated_score_not_online (test_r3_boundaries.Boundaries.test_isolated_score_not_online) ... ok
+test_live_endpoint_frozen (test_r3_boundaries.Boundaries.test_live_endpoint_frozen) ... ok
+test_live_model_frozen (test_r3_boundaries.Boundaries.test_live_model_frozen) ... ok
+test_main_paused_no_new_calls (test_r3_boundaries.Boundaries.test_main_paused_no_new_calls) ... ok
+test_no_drift_is_kept_when_recheck_loses (test_r3_boundaries.Boundaries.test_no_drift_is_kept_when_recheck_loses) ... ok
+test_precise_renderer_handles_tool_error (test_r3_boundaries.Boundaries.test_precise_renderer_handles_tool_error) ... ok
+test_renderer_type_bool_is_not_correct (test_r3_boundaries.Boundaries.test_renderer_type_bool_is_not_correct) ... ok
+test_six_r2_cases_are_not_relabelled (test_r3_boundaries.Boundaries.test_six_r2_cases_are_not_relabelled) ... ok
+test_snapshot_license_with_manifest (test_r3_boundaries.Boundaries.test_snapshot_license_with_manifest) ... ok
+test_actual_hazard_changes_loss_not_probes (test_r3_core.ExactTests.test_actual_hazard_changes_loss_not_probes) ... ok
+test_all_grid_cells_retained (test_r3_core.ExactTests.test_all_grid_cells_retained) ... ok
+test_always (test_r3_core.ExactTests.test_always) ... ok
+test_dp_matches_bellman (test_r3_core.ExactTests.test_dp_matches_bellman) ... ok
+test_never_no_drift (test_r3_core.ExactTests.test_never_no_drift) ... ok
+test_one_step_dp_myopic (test_r3_core.ExactTests.test_one_step_dp_myopic) ... ok
+test_opportunity_no_hidden_rng (test_r3_core.ExactTests.test_opportunity_no_hidden_rng) ... ok
+test_zero_drift_no_semantic_opportunity (test_r3_core.ExactTests.test_zero_drift_no_semantic_opportunity) ... ok
+test_case_deterministic (test_r3_core.ProtocolTests.test_case_deterministic) ... ok
+test_counts (test_r3_core.ProtocolTests.test_counts) ... ok
+test_initial_tasks_balanced (test_r3_core.ProtocolTests.test_initial_tasks_balanced) ... ok
+test_main_ids_unique (test_r3_core.ProtocolTests.test_main_ids_unique) ... ok
+test_policy_view_excludes_world (test_r3_core.ProtocolTests.test_policy_view_excludes_world) ... ok
+test_world_rng_does_not_change_public_tasks (test_r3_core.ProtocolTests.test_world_rng_does_not_change_public_tasks) ... ok
+test_all_schema_empty (test_r3_core.WorkerTests.test_all_schema_empty) ... ok
+test_amount (test_r3_core.WorkerTests.test_amount) ... ok
+test_bool_not_bound (test_r3_core.WorkerTests.test_bool_not_bound) ... ok
+test_count_render_never_reinterprets (test_r3_core.WorkerTests.test_count_render_never_reinterprets) ... ok
+test_count_schema_has_no_amount (test_r3_core.WorkerTests.test_count_schema_has_no_amount) ... ok
+test_counterfactual_is_not_used (test_r3_core.WorkerTests.test_counterfactual_is_not_used) ... ok
+test_irrelevant_stale_not_counted (test_r3_core.WorkerTests.test_irrelevant_stale_not_counted) ... ok
+test_normative_error_stays_wrong (test_r3_core.WorkerTests.test_normative_error_stays_wrong) ... ok
+test_stale_value_legal_but_not_fresh (test_r3_core.WorkerTests.test_stale_value_legal_but_not_fresh) ... ok
+test_total_render_selected_divisor (test_r3_core.WorkerTests.test_total_render_selected_divisor) ... ok
+test_unused_amount_is_invalid_not_silently_fixed (test_r3_core.WorkerTests.test_unused_amount_is_invalid_not_silently_fixed) ... ok
+test_valid_count (test_r3_core.WorkerTests.test_valid_count) ... ok
+test_audit_command_expected_total (test_r3_live.LiveTests.test_audit_command_expected_total) ... ok
+test_bundle (test_r3_live.LiveTests.test_bundle) ... ok
+test_calls (test_r3_live.LiveTests.test_calls) ... ok
+test_cli_completes (test_r3_live.LiveTests.test_cli_completes) ... ok
+test_consent_exact (test_r3_live.LiveTests.test_consent_exact) ... ok
+test_fixture_not_real_research (test_r3_live.LiveTests.test_fixture_not_real_research) ... ok
+test_no_grading_live_api (test_r3_live.LiveTests.test_no_grading_live_api) ... ok
+test_no_resampling (test_r3_live.LiveTests.test_no_resampling) ... ok
+test_prepare_cannot_rewrite_after_run (test_r3_live.LiveTests.test_prepare_cannot_rewrite_after_run) ... ok
+test_prices_unknown (test_r3_live.LiveTests.test_prices_unknown) ... ok
+test_record_counts (test_r3_live.LiveTests.test_record_counts) ... ok
+test_repeat_inputs_not_outputs_reused (test_r3_live.LiveTests.test_repeat_inputs_not_outputs_reused) ... ok
+test_replay (test_r3_live.LiveTests.test_replay) ... ok
+test_same_seed_no_result_cherry_pick (test_r3_live.LiveTests.test_same_seed_no_result_cherry_pick) ... ok
+test_smoke_required (test_r3_live.LiveTests.test_smoke_required) ... ok
+test_snapshot_complete (test_r3_live.LiveTests.test_snapshot_complete) ... ok
+test_identity_pause (test_r3_live.PauseTests.test_identity_pause) ... [R3 1/2] one | 0.00s | finish=stop
+[R3 2/2] two | 0.00s | finish=stop
+ok
+test_invalid_json_no_retry (test_r3_live.PauseTests.test_invalid_json_no_retry) ... [R3 1/1] one | 0.00s | finish=stop
+ok
+test_truncation_saved_no_retry (test_r3_live.PauseTests.test_truncation_saved_no_retry) ... [R3 1/1] one | 0.00s | finish=length
+ok
+test_uncertain_attempt_never_resent (test_r3_live.PauseTests.test_uncertain_attempt_never_resent) ... ok
+test_canonical_success_not_100 (test_r3_runtime.ExperimentTests.test_canonical_success_not_100) ... ok
+test_counts (test_r3_runtime.ExperimentTests.test_counts) ... ok
+test_distinct_ids (test_r3_runtime.ExperimentTests.test_distinct_ids) ... ok
+test_initial_evidence_from_receipts (test_r3_runtime.ExperimentTests.test_initial_evidence_from_receipts) ... ok
+test_offline_evaluator_not_called_in_online (test_r3_runtime.ExperimentTests.test_offline_evaluator_not_called_in_online) ... ok
+test_repeats_not_primary (test_r3_runtime.ExperimentTests.test_repeats_not_primary) ... ok
+test_replicates_payload_identical (test_r3_runtime.ExperimentTests.test_replicates_payload_identical) ... ok
+test_timestamp_not_in_worker (test_r3_runtime.ExperimentTests.test_timestamp_not_in_worker) ... ok
+test_export_snapshot_license (test_r3_runtime.SupportTests.test_export_snapshot_license) ... ok
+test_feedback_no_configs (test_r3_runtime.SupportTests.test_feedback_no_configs) ... ok
+test_no_cap_edit (test_r3_runtime.SupportTests.test_no_cap_edit) ... ok
+test_no_thinking_edit (test_r3_runtime.SupportTests.test_no_thinking_edit) ... ok
+test_r3_cap (test_r3_runtime.SupportTests.test_r3_cap) ... ok
+test_r3_cli_registered (test_r3_runtime.SupportTests.test_r3_cli_registered) ... ok
+
+----------------------------------------------------------------------
+Ran 71 tests in 27.861s
+
+OK

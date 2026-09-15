@@ -1,0 +1,69 @@
+WARNING: The directory '/home/oai/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+Looking in links: /mnt/data/r7b_work/materials/packages
+Processing ./mnt/data/r7b_work/materials/packages/Pint-0.23-py3-none-any.whl
+Processing ./mnt/data/r7b_work/materials/packages/PyYAML-6.0.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+Processing ./mnt/data/r7b_work/materials/packages/StrEnum-0.4.15-py3-none-any.whl
+Processing ./mnt/data/r7b_work/materials/packages/absl_py-2.1.0-py3-none-any.whl
+Processing ./mnt/data/r7b_work/materials/packages/annotated_types-0.7.0-py3-none-any.whl
+Processing ./mnt/data/r7b_work/materials/packages/anyio-4.4.0-py3-none-any.whl
+Processing ./mnt/data/r7b_work/materials/packages/attrs-23.2.0-py3-none-any.whl
+Processing ./mnt/data/r7b_work/materials/packages/ccy-1.3.1-py3-none-any.whl
+Processing ./mnt/data/r7b_work/materials/packages/certifi-2024.7.4-py3-none-any.whl
+Processing ./mnt/data/r7b_work/materials/packages/charset_normalizer-3.3.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+Processing ./mnt/data/r7b_work/materials/packages/click-8.1.7-py3-none-any.whl
+Processing ./mnt/data/r7b_work/materials/packages/decorator-5.1.1-py3-none-any.whl
+Processing ./mnt/data/r7b_work/materials/packages/dill-0.3.8-py3-none-any.whl
+Processing ./mnt/data/r7b_work/materials/packages/distro-1.9.0-py3-none-any.whl
+Processing ./mnt/data/r7b_work/materials/packages/geographiclib-2.0-py3-none-any.whl
+Processing ./mnt/data/r7b_work/materials/packages/geopy-2.4.1-py3-none-any.whl
+Processing ./mnt/data/r7b_work/materials/packages/h11-0.14.0-py3-none-any.whl
+Processing ./mnt/data/r7b_work/materials/packages/holidays-0.51-py3-none-any.whl
+Processing ./mnt/data/r7b_work/materials/packages/httpcore-1.0.5-py3-none-any.whl
+Processing ./mnt/data/r7b_work/materials/packages/httpx-0.27.0-py3-none-any.whl
+Processing ./mnt/data/r7b_work/materials/packages/idna-3.7-py3-none-any.whl
+Processing ./mnt/data/r7b_work/materials/packages/iniconfig-2.0.0-py3-none-any.whl
+Processing ./mnt/data/r7b_work/materials/packages/joblib-1.4.2-py3-none-any.whl
+Processing ./mnt/data/r7b_work/materials/packages/jsonpatch-1.33-py2.py3-none-any.whl
+Processing ./mnt/data/r7b_work/materials/packages/jsonpointer-2.4-py2.py3-none-any.whl
+Processing ./mnt/data/r7b_work/materials/packages/langchain_core-0.1.23-py3-none-any.whl
+Processing ./mnt/data/r7b_work/materials/packages/langsmith-0.0.87-py3-none-any.whl
+Processing ./mnt/data/r7b_work/materials/packages/networkx-3.2.1-py3-none-any.whl
+Processing ./mnt/data/r7b_work/materials/packages/nltk-3.8.1-py3-none-any.whl
+Processing ./mnt/data/r7b_work/materials/packages/numpy-1.26.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+Processing ./mnt/data/r7b_work/materials/packages/openai-1.17.0-py3-none-any.whl
+Processing ./mnt/data/r7b_work/materials/packages/packaging-23.2-py3-none-any.whl
+Processing ./mnt/data/r7b_work/materials/packages/phonenumbers-8.13.39-py2.py3-none-any.whl
+Processing ./mnt/data/r7b_work/materials/packages/pluggy-1.5.0-py3-none-any.whl
+Processing ./mnt/data/r7b_work/materials/packages/polars-0.20.31-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+Processing ./mnt/data/r7b_work/materials/packages/pydantic-2.7.4-py3-none-any.whl
+Processing ./mnt/data/r7b_work/materials/packages/pydantic_core-2.18.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+Processing ./mnt/data/r7b_work/materials/packages/pytest-8.2.2-py3-none-any.whl
+Processing ./mnt/data/r7b_work/materials/packages/python_dateutil-2.9.0.post0-py2.py3-none-any.whl
+Processing ./mnt/data/r7b_work/materials/packages/pytz-2024.1-py2.py3-none-any.whl
+Processing ./mnt/data/r7b_work/materials/packages/rapidfuzz-3.9.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+Processing ./mnt/data/r7b_work/materials/packages/regex-2024.5.15-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+Processing ./mnt/data/r7b_work/materials/packages/requests-2.32.3-py3-none-any.whl
+Processing ./mnt/data/r7b_work/materials/packages/scipy-1.13.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+Processing ./mnt/data/r7b_work/materials/packages/setuptools-70.3.0-py3-none-any.whl
+Processing ./mnt/data/r7b_work/materials/packages/six-1.16.0-py2.py3-none-any.whl
+Processing ./mnt/data/r7b_work/materials/packages/sniffio-1.3.1-py3-none-any.whl
+Processing ./mnt/data/r7b_work/materials/packages/tenacity-8.4.1-py3-none-any.whl
+Processing ./mnt/data/r7b_work/materials/packages/tqdm-4.66.4-py3-none-any.whl
+Processing ./mnt/data/r7b_work/materials/packages/typing_extensions-4.12.2-py3-none-any.whl
+Processing ./mnt/data/r7b_work/materials/packages/urllib3-2.2.2-py3-none-any.whl
+Processing ./mnt/data/r7b_work/materials/packages/wheel-0.43.0-py3-none-any.whl
+Processing ./mnt/data/r7b_work/materials/packages/rouge_score-0.1.2.tar.gz
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+setuptools is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.
+wheel is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.
+Building wheels for collected packages: rouge_score
+  Building wheel for rouge_score (pyproject.toml): started
+  Building wheel for rouge_score (pyproject.toml): finished with status 'done'
+  Created wheel for rouge_score: filename=rouge_score-0.1.2-py3-none-any.whl size=24934 sha256=c20f004d3805ab3b810be9c1a2b3fecce7165d818716281ea8f7f02f5f89d585
+  Stored in directory: /tmp/pip-ephem-wheel-cache-qvos1d7i/wheels/6f/8d/4d/43eb58709a585f1652796871d6894ad84b8c8064d6a72ba99b
+Successfully built rouge_score
+Installing collected packages: strenum, pytz, phonenumbers, urllib3, typing-extensions, tqdm, tenacity, sniffio, six, regex, rapidfuzz, pyyaml, polars, pluggy, packaging, numpy, networkx, jsonpointer, joblib, iniconfig, idna, h11, geographiclib, distro, dill, decorator, click, charset-normalizer, certifi, attrs, annotated-types, absl-py, scipy, requests, python-dateutil, pytest, pydantic-core, pint, nltk, jsonpatch, httpcore, geopy, anyio, rouge_score, pydantic, httpx, holidays, ccy, openai, langsmith, langchain-core
+
+Successfully installed absl-py-2.1.0 annotated-types-0.7.0 anyio-4.4.0 attrs-23.2.0 ccy-1.3.1 certifi-2024.7.4 charset-normalizer-3.3.2 click-8.1.7 decorator-5.1.1 dill-0.3.8 distro-1.9.0 geographiclib-2.0 geopy-2.4.1 h11-0.14.0 holidays-0.51 httpcore-1.0.5 httpx-0.27.0 idna-3.7 iniconfig-2.0.0 joblib-1.4.2 jsonpatch-1.33 jsonpointer-2.4 langchain-core-0.1.23 langsmith-0.0.87 networkx-3.2.1 nltk-3.8.1 numpy-1.26.4 openai-1.17.0 packaging-23.2 phonenumbers-8.13.39 pint-0.23 pluggy-1.5.0 polars-0.20.31 pydantic-2.7.4 pydantic-core-2.18.4 pytest-8.2.2 python-dateutil-2.9.0.post0 pytz-2024.1 pyyaml-6.0.1 rapidfuzz-3.9.3 regex-2024.5.15 requests-2.32.3 rouge_score-0.1.2 scipy-1.13.1 six-1.16.0 sniffio-1.3.1 strenum-0.4.15 tenacity-8.4.1 tqdm-4.66.4 typing-extensions-4.12.2 urllib3-2.2.2
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.

@@ -1,0 +1,70 @@
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 720, in _warm_feature_flows
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 704, in _warm_collaboration_flows
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/generated/interface/models.py", line 32317, in hydrate_crdt_from_proto
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/remote.py", line 749, in __call__
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/client.py", line 150, in call
+artifact_tool.rpc.client.RemoteError: hydrateCrdtFromProto requires an empty collaborative document.
+test_cap_consent_required (test_r2_cli.CLITests.test_cap_consent_required) ... FAIL
+test_exact_cap_consent (test_r2_cli.CLITests.test_exact_cap_consent) ... FAIL
+test_fixed_output_limit (test_r2_cli.CLITests.test_fixed_output_limit) ... ok
+test_freeze_config_cannot_be_changed (test_r2_cli.CLITests.test_freeze_config_cannot_be_changed) ... ok
+test_no_smoke_no_run (test_r2_cli.CLITests.test_no_smoke_no_run) ... FAIL
+test_smoke_profile_mismatch_no_run (test_r2_cli.CLITests.test_smoke_profile_mismatch_no_run) ... FAIL
+test_thinking_toggle_explicit_supported (test_r2_cli.CLITests.test_thinking_toggle_explicit_supported) ... ok
+
+======================================================================
+FAIL: test_cap_consent_required (test_r2_cli.CLITests.test_cap_consent_required)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_cli.py", line 12, in test_cap_consent_required
+    with self.assertRaises(ValueError):self.fn("require_call_consent")(0,484)
+                                       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_cli.py", line 10, in fn
+    self.assertTrue(callable(getattr(r2,name,None)),name+" missing");return getattr(r2,name)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : require_call_consent missing
+
+======================================================================
+FAIL: test_exact_cap_consent (test_r2_cli.CLITests.test_exact_cap_consent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_cli.py", line 14, in test_exact_cap_consent
+    self.fn("require_call_consent")(484,484)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_cli.py", line 10, in fn
+    self.assertTrue(callable(getattr(r2,name,None)),name+" missing");return getattr(r2,name)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : require_call_consent missing
+
+======================================================================
+FAIL: test_no_smoke_no_run (test_r2_cli.CLITests.test_no_smoke_no_run)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_cli.py", line 27, in test_no_smoke_no_run
+    with self.assertRaises(ValueError):self.fn("require_smoke")(Path(d),c)
+                                       ~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_cli.py", line 10, in fn
+    self.assertTrue(callable(getattr(r2,name,None)),name+" missing");return getattr(r2,name)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : require_smoke missing
+
+======================================================================
+FAIL: test_smoke_profile_mismatch_no_run (test_r2_cli.CLITests.test_smoke_profile_mismatch_no_run)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_cli.py", line 33, in test_smoke_profile_mismatch_no_run
+    with self.assertRaises(ValueError):self.fn("require_smoke")(Path(d),c)
+                                       ~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_cli.py", line 10, in fn
+    self.assertTrue(callable(getattr(r2,name,None)),name+" missing");return getattr(r2,name)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : require_smoke missing
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.011s
+
+FAILED (failures=4)

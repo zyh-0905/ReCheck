@@ -1,0 +1,246 @@
+test_churn_retry_exhaustion (test_boundary.Contracts.test_churn_retry_exhaustion) ... FAIL
+test_global_blocks_nonbinding (test_boundary.Contracts.test_global_blocks_nonbinding) ... FAIL
+test_global_blocks_unrelated (test_boundary.Contracts.test_global_blocks_unrelated) ... FAIL
+test_invalid_intent (test_boundary.Contracts.test_invalid_intent) ... FAIL
+test_invalid_policy (test_boundary.Contracts.test_invalid_policy) ... FAIL
+test_invalid_timing (test_boundary.Contracts.test_invalid_timing) ... FAIL
+test_literal_gap_is_not_wrong (test_boundary.Contracts.test_literal_gap_is_not_wrong) ... FAIL
+test_no_network (test_boundary.Contracts.test_no_network) ... ok
+test_person_after_commit_stays_valid (test_boundary.Contracts.test_person_after_commit_stays_valid) ... FAIL
+test_person_before_check_is_safe (test_boundary.Contracts.test_person_before_check_is_safe) ... FAIL
+test_person_gap_is_wrong (test_boundary.Contracts.test_person_gap_is_wrong) ... FAIL
+test_reminder_after_commit_stays_valid (test_boundary.Contracts.test_reminder_after_commit_stays_valid) ... FAIL
+test_reminder_before_check_is_safe (test_boundary.Contracts.test_reminder_before_check_is_safe) ... FAIL
+test_reminder_gap_is_wrong (test_boundary.Contracts.test_reminder_gap_is_wrong) ... FAIL
+test_retry_person (test_boundary.Contracts.test_retry_person) ... FAIL
+test_retry_reminder (test_boundary.Contracts.test_retry_reminder) ... FAIL
+test_scoped_allows_nonbinding (test_boundary.Contracts.test_scoped_allows_nonbinding) ... FAIL
+test_scoped_allows_unrelated (test_boundary.Contracts.test_scoped_allows_unrelated) ... FAIL
+test_scoped_blocks_person (test_boundary.Contracts.test_scoped_blocks_person) ... FAIL
+test_scoped_blocks_reminder (test_boundary.Contracts.test_scoped_blocks_reminder) ... FAIL
+test_stable_literal (test_boundary.Contracts.test_stable_literal) ... FAIL
+test_stable_no_irrelevant_writes (test_boundary.Contracts.test_stable_no_irrelevant_writes) ... ok
+test_stable_person (test_boundary.Contracts.test_stable_person) ... FAIL
+test_stable_reminder (test_boundary.Contracts.test_stable_reminder) ... FAIL
+
+======================================================================
+FAIL: test_churn_retry_exhaustion (test_boundary.Contracts.test_churn_retry_exhaustion)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R8_Research_Update/tests/test_boundary.py", line 28, in test_churn_retry_exhaustion
+    r=run_case('person','binding','after_resolve','scoped_retry1',True);self.assertEqual((r['safe_success'],r['wrong_write'],r['rejections']),(False,False,2))
+                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Tuples differ: (False, False, 0) != (False, False, 2)
+
+First differing element 2:
+0
+2
+
+- (False, False, 0)
+?                ^
+
++ (False, False, 2)
+?                ^
+
+
+======================================================================
+FAIL: test_global_blocks_nonbinding (test_boundary.Contracts.test_global_blocks_nonbinding)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R8_Research_Update/tests/test_boundary.py", line 19, in test_global_blocks_nonbinding
+    def test_global_blocks_nonbinding(self):self.assertEqual(run_case('reminder','nonbinding','after_resolve','global_guard')['rejections'],1)
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 0 != 1
+
+======================================================================
+FAIL: test_global_blocks_unrelated (test_boundary.Contracts.test_global_blocks_unrelated)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R8_Research_Update/tests/test_boundary.py", line 17, in test_global_blocks_unrelated
+    def test_global_blocks_unrelated(self):self.assertEqual(run_case('person','unrelated','after_resolve','global_guard')['rejections'],1)
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 0 != 1
+
+======================================================================
+FAIL: test_invalid_intent (test_boundary.Contracts.test_invalid_intent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R8_Research_Update/tests/test_boundary.py", line 32, in test_invalid_intent
+    with self.assertRaises(ValueError):run_case('not_an_intent')
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_invalid_policy (test_boundary.Contracts.test_invalid_policy)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R8_Research_Update/tests/test_boundary.py", line 34, in test_invalid_policy
+    with self.assertRaises(ValueError):run_case(policy='invented')
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_invalid_timing (test_boundary.Contracts.test_invalid_timing)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R8_Research_Update/tests/test_boundary.py", line 36, in test_invalid_timing
+    with self.assertRaises(ValueError):run_case('person','binding','none')
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_literal_gap_is_not_wrong (test_boundary.Contracts.test_literal_gap_is_not_wrong)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R8_Research_Update/tests/test_boundary.py", line 12, in test_literal_gap_is_not_wrong
+    def test_literal_gap_is_not_wrong(self):self.assertTrue(run_case('literal','binding','after_resolve')['safe_success'])
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_person_after_commit_stays_valid (test_boundary.Contracts.test_person_after_commit_stays_valid)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R8_Research_Update/tests/test_boundary.py", line 15, in test_person_after_commit_stays_valid
+    def test_person_after_commit_stays_valid(self):self.assertTrue(run_case('person','binding','after_use')['safe_success'])
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_person_before_check_is_safe (test_boundary.Contracts.test_person_before_check_is_safe)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R8_Research_Update/tests/test_boundary.py", line 13, in test_person_before_check_is_safe
+    def test_person_before_check_is_safe(self):self.assertTrue(run_case('person','binding','before_resolve')['safe_success'])
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_person_gap_is_wrong (test_boundary.Contracts.test_person_gap_is_wrong)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R8_Research_Update/tests/test_boundary.py", line 10, in test_person_gap_is_wrong
+    def test_person_gap_is_wrong(self):self.assertTrue(run_case('person','binding','after_resolve')['wrong_write'])
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_reminder_after_commit_stays_valid (test_boundary.Contracts.test_reminder_after_commit_stays_valid)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R8_Research_Update/tests/test_boundary.py", line 16, in test_reminder_after_commit_stays_valid
+    def test_reminder_after_commit_stays_valid(self):self.assertTrue(run_case('reminder','binding','after_use')['safe_success'])
+                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_reminder_before_check_is_safe (test_boundary.Contracts.test_reminder_before_check_is_safe)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R8_Research_Update/tests/test_boundary.py", line 14, in test_reminder_before_check_is_safe
+    def test_reminder_before_check_is_safe(self):self.assertTrue(run_case('reminder','binding','before_resolve')['safe_success'])
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_reminder_gap_is_wrong (test_boundary.Contracts.test_reminder_gap_is_wrong)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R8_Research_Update/tests/test_boundary.py", line 11, in test_reminder_gap_is_wrong
+    def test_reminder_gap_is_wrong(self):self.assertTrue(run_case('reminder','binding','after_resolve')['wrong_write'])
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_retry_person (test_boundary.Contracts.test_retry_person)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R8_Research_Update/tests/test_boundary.py", line 25, in test_retry_person
+    r=run_case('person','binding','after_resolve','scoped_retry1');self.assertTrue(r['safe_success']);self.assertEqual(r['rejections'],1)
+                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_retry_reminder (test_boundary.Contracts.test_retry_reminder)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R8_Research_Update/tests/test_boundary.py", line 26, in test_retry_reminder
+    def test_retry_reminder(self):self.assertTrue(run_case('reminder','binding','after_resolve','scoped_retry1')['safe_success'])
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_scoped_allows_nonbinding (test_boundary.Contracts.test_scoped_allows_nonbinding)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R8_Research_Update/tests/test_boundary.py", line 20, in test_scoped_allows_nonbinding
+    def test_scoped_allows_nonbinding(self):self.assertTrue(run_case('reminder','nonbinding','after_resolve','scoped_guard')['safe_success'])
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_scoped_allows_unrelated (test_boundary.Contracts.test_scoped_allows_unrelated)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R8_Research_Update/tests/test_boundary.py", line 18, in test_scoped_allows_unrelated
+    def test_scoped_allows_unrelated(self):self.assertTrue(run_case('person','unrelated','after_resolve','scoped_guard')['safe_success'])
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_scoped_blocks_person (test_boundary.Contracts.test_scoped_blocks_person)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R8_Research_Update/tests/test_boundary.py", line 22, in test_scoped_blocks_person
+    r=run_case('person','binding','after_resolve','scoped_guard');self.assertEqual((r['safe_success'],r['wrong_write'],r['rejections']),(False,False,1))
+                                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Tuples differ: (False, False, 0) != (False, False, 1)
+
+First differing element 2:
+0
+1
+
+- (False, False, 0)
+?                ^
+
++ (False, False, 1)
+?                ^
+
+
+======================================================================
+FAIL: test_scoped_blocks_reminder (test_boundary.Contracts.test_scoped_blocks_reminder)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R8_Research_Update/tests/test_boundary.py", line 23, in test_scoped_blocks_reminder
+    def test_scoped_blocks_reminder(self):self.assertEqual(run_case('reminder','binding','after_resolve','scoped_guard')['rejections'],1)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 0 != 1
+
+======================================================================
+FAIL: test_stable_literal (test_boundary.Contracts.test_stable_literal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R8_Research_Update/tests/test_boundary.py", line 8, in test_stable_literal
+    def test_stable_literal(self):self.assertTrue(run_case('literal')['safe_success'])
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_stable_person (test_boundary.Contracts.test_stable_person)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R8_Research_Update/tests/test_boundary.py", line 7, in test_stable_person
+    def test_stable_person(self):self.assertTrue(run_case()['safe_success'])
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_stable_reminder (test_boundary.Contracts.test_stable_reminder)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R8_Research_Update/tests/test_boundary.py", line 9, in test_stable_reminder
+    def test_stable_reminder(self):self.assertTrue(run_case('reminder')['safe_success'])
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 24 tests in 0.002s
+
+FAILED (failures=22)

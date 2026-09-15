@@ -1,0 +1,167 @@
+test_all_model_persona_trial_cells (test_download.CollectorTests.test_all_model_persona_trial_cells) ... FAIL
+test_changed_commit_rejected (test_download.CollectorTests.test_changed_commit_rejected) ... FAIL
+test_complete_raw_archive (test_download.CollectorTests.test_complete_raw_archive) ... ERROR
+test_file_byte_limit (test_download.CollectorTests.test_file_byte_limit) ... ERROR
+test_foreign_file_rejected (test_download.CollectorTests.test_foreign_file_rejected) ... FAIL
+test_html_not_json (test_download.CollectorTests.test_html_not_json) ... FAIL
+test_incomplete_json_rejected (test_download.CollectorTests.test_incomplete_json_rejected) ... FAIL
+test_manifest_detects_tamper (test_download.CollectorTests.test_manifest_detects_tamper) ... ERROR
+test_no_overwrite_no_fetch (test_download.CollectorTests.test_no_overwrite_no_fetch) ... FAIL
+test_no_pickle_or_model_weights (test_download.CollectorTests.test_no_pickle_or_model_weights) ... FAIL
+test_path_traversal_rejected (test_download.CollectorTests.test_path_traversal_rejected) ... FAIL
+test_pin_and_roster (test_download.CollectorTests.test_pin_and_roster) ... FAIL
+test_source_is_fixed_https (test_download.CollectorTests.test_source_is_fixed_https) ... FAIL
+test_transport_failure_partial_zip (test_download.CollectorTests.test_transport_failure_partial_zip) ... ERROR
+test_valid_json_metadata (test_download.CollectorTests.test_valid_json_metadata) ... ERROR
+test_wrong_trial_rejected (test_download.CollectorTests.test_wrong_trial_rejected) ... FAIL
+
+======================================================================
+ERROR: test_complete_raw_archive (test_download.CollectorTests.test_complete_raw_archive)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R14_Public_Data_Download_Kit/tests/test_download.py", line 65, in test_complete_raw_archive
+    self.assertEqual(result['status'],'COMPLETE')
+                     ~~~~~~^^^^^^^^^^
+KeyError: 'status'
+
+======================================================================
+ERROR: test_file_byte_limit (test_download.CollectorTests.test_file_byte_limit)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R14_Public_Data_Download_Kit/tests/test_download.py", line 99, in test_file_byte_limit
+    self.assertEqual(r['status'],'INCOMPLETE')
+                     ~^^^^^^^^^^
+KeyError: 'status'
+
+======================================================================
+ERROR: test_manifest_detects_tamper (test_download.CollectorTests.test_manifest_detects_tamper)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R14_Public_Data_Download_Kit/tests/test_download.py", line 105, in test_manifest_detects_tamper
+    src=Path(r['archive']); dst=Path(td)/'bad.zip'
+             ~^^^^^^^^^^^
+KeyError: 'archive'
+
+======================================================================
+ERROR: test_transport_failure_partial_zip (test_download.CollectorTests.test_transport_failure_partial_zip)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R14_Public_Data_Download_Kit/tests/test_download.py", line 89, in test_transport_failure_partial_zip
+    self.assertEqual(r['status'],'INCOMPLETE')
+                     ~^^^^^^^^^^
+KeyError: 'status'
+
+======================================================================
+ERROR: test_valid_json_metadata (test_download.CollectorTests.test_valid_json_metadata)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R14_Public_Data_Download_Kit/tests/test_download.py", line 50, in test_valid_json_metadata
+    self.assertEqual(m['sample_count'],0)
+                     ~^^^^^^^^^^^^^^^^
+KeyError: 'sample_count'
+
+======================================================================
+FAIL: test_all_model_persona_trial_cells (test_download.CollectorTests.test_all_model_persona_trial_cells)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R14_Public_Data_Download_Kit/tests/test_download.py", line 36, in test_all_model_persona_trial_cells
+    self.assertIn(f'toolsandbox/{model}/{persona}/trial_{n}_results.json',p)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'toolsandbox/gpt_4_1/expert/trial_0_results.json' not found in set()
+
+======================================================================
+FAIL: test_changed_commit_rejected (test_download.CollectorTests.test_changed_commit_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R14_Public_Data_Download_Kit/tests/test_download.py", line 60, in test_changed_commit_rejected
+    with self.assertRaises(ValueError): d.validate_commit({'x-repo-commit':'a'*40})
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_foreign_file_rejected (test_download.CollectorTests.test_foreign_file_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R14_Public_Data_Download_Kit/tests/test_download.py", line 46, in test_foreign_file_rejected
+    with self.assertRaises(ValueError): d.source_url('toolsandbox/model.pkl')
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_html_not_json (test_download.CollectorTests.test_html_not_json)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R14_Public_Data_Download_Kit/tests/test_download.py", line 53, in test_html_not_json
+    with self.assertRaises(ValueError): d.validate_payload('toolsandbox/gpt_4_1/expert/trial_0_results.json',b'<html>login</html>')
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_incomplete_json_rejected (test_download.CollectorTests.test_incomplete_json_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R14_Public_Data_Download_Kit/tests/test_download.py", line 58, in test_incomplete_json_rejected
+    with self.assertRaises(ValueError): d.validate_payload('toolsandbox/gpt_4_1/expert/trial_0_results.json',b'{')
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_no_overwrite_no_fetch (test_download.CollectorTests.test_no_overwrite_no_fetch)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R14_Public_Data_Download_Kit/tests/test_download.py", line 78, in test_no_overwrite_no_fetch
+    with self.assertRaises(FileExistsError):
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+AssertionError: FileExistsError not raised
+
+======================================================================
+FAIL: test_no_pickle_or_model_weights (test_download.CollectorTests.test_no_pickle_or_model_weights)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R14_Public_Data_Download_Kit/tests/test_download.py", line 38, in test_no_pickle_or_model_weights
+    self.assertTrue(d.planned_paths())
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+AssertionError: [] is not true
+
+======================================================================
+FAIL: test_path_traversal_rejected (test_download.CollectorTests.test_path_traversal_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R14_Public_Data_Download_Kit/tests/test_download.py", line 44, in test_path_traversal_rejected
+    with self.assertRaises(ValueError): d.source_url('../secret.json')
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_pin_and_roster (test_download.CollectorTests.test_pin_and_roster)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R14_Public_Data_Download_Kit/tests/test_download.py", line 28, in test_pin_and_roster
+    self.assertEqual(len(paths),109)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+AssertionError: 0 != 109
+
+======================================================================
+FAIL: test_source_is_fixed_https (test_download.CollectorTests.test_source_is_fixed_https)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R14_Public_Data_Download_Kit/tests/test_download.py", line 42, in test_source_is_fixed_https
+    self.assertEqual(u, 'https://huggingface.co/datasets/SAP/agent-quality-inspect/resolve/'+PIN+'/toolsandbox/gpt_4_1/expert/trial_0_results.json')
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: '' != 'https://huggingface.co/datasets/SAP/agent[109 chars]json'
++ https://huggingface.co/datasets/SAP/agent-quality-inspect/resolve/593e686f4d0c2e9fcae5ae664c16a7687907cf97/toolsandbox/gpt_4_1/expert/trial_0_results.json
+
+
+======================================================================
+FAIL: test_wrong_trial_rejected (test_download.CollectorTests.test_wrong_trial_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R14_Public_Data_Download_Kit/tests/test_download.py", line 55, in test_wrong_trial_rejected
+    with self.assertRaises(ValueError):
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.007s
+
+FAILED (failures=11, errors=5)

@@ -1,0 +1,145 @@
+{
+  "pass": true,
+  "new_llm_calls": 0,
+  "old_responses_changed": false,
+  "checks": [
+    {
+      "source_record": "records/rc_000_004_recheck.json",
+      "pass": true,
+      "observations": {
+        "amount_status": "fresh",
+        "endpoint_status": "fresh",
+        "stale_related": false,
+        "missing_related": false,
+        "plan_schema_valid_recomputed": false,
+        "answer_schema_valid": false,
+        "interface_failure": true,
+        "json_parse_failure": false,
+        "truncated": false,
+        "missing_call_records": 0,
+        "answer_value_correct": false,
+        "end_to_end_success": false,
+        "reference_executor_correct": true,
+        "plan_follows_supplied_memory": false,
+        "answer_follows_tool_and_plan": false,
+        "stale_propagation_consistent": false,
+        "diagnostic_note": "Axes are observational; coincident staleness and error do not by themselves prove causality."
+      }
+    },
+    {
+      "source_record": "records/rc_002_000_never.json",
+      "pass": true,
+      "observations": {
+        "amount_status": "fresh",
+        "endpoint_status": "fresh",
+        "stale_related": false,
+        "missing_related": false,
+        "plan_schema_valid_recomputed": false,
+        "answer_schema_valid": false,
+        "interface_failure": true,
+        "json_parse_failure": false,
+        "truncated": false,
+        "missing_call_records": 0,
+        "answer_value_correct": false,
+        "end_to_end_success": false,
+        "reference_executor_correct": true,
+        "plan_follows_supplied_memory": false,
+        "answer_follows_tool_and_plan": false,
+        "stale_propagation_consistent": false,
+        "diagnostic_note": "Axes are observational; coincident staleness and error do not by themselves prove causality."
+      }
+    },
+    {
+      "source_record": "records/rc_002_001_always.json",
+      "pass": true,
+      "observations": {
+        "amount_status": "fresh",
+        "endpoint_status": "fresh",
+        "stale_related": false,
+        "missing_related": false,
+        "plan_schema_valid_recomputed": false,
+        "answer_schema_valid": false,
+        "interface_failure": true,
+        "json_parse_failure": false,
+        "truncated": false,
+        "missing_call_records": 0,
+        "answer_value_correct": false,
+        "end_to_end_success": false,
+        "reference_executor_correct": true,
+        "plan_follows_supplied_memory": false,
+        "answer_follows_tool_and_plan": false,
+        "stale_propagation_consistent": false,
+        "diagnostic_note": "Axes are observational; coincident staleness and error do not by themselves prove causality."
+      }
+    },
+    {
+      "source_record": "records/rc_003_008_never.json",
+      "pass": true,
+      "observations": {
+        "amount_status": "fresh",
+        "endpoint_status": "fresh",
+        "stale_related": false,
+        "missing_related": false,
+        "plan_schema_valid_recomputed": false,
+        "answer_schema_valid": false,
+        "interface_failure": true,
+        "json_parse_failure": false,
+        "truncated": false,
+        "missing_call_records": 0,
+        "answer_value_correct": false,
+        "end_to_end_success": false,
+        "reference_executor_correct": true,
+        "plan_follows_supplied_memory": false,
+        "answer_follows_tool_and_plan": false,
+        "stale_propagation_consistent": false,
+        "diagnostic_note": "Axes are observational; coincident staleness and error do not by themselves prove causality."
+      }
+    },
+    {
+      "source_record": "records/rc_001_007_recheck.json",
+      "pass": true,
+      "observations": {
+        "amount_status": "fresh",
+        "endpoint_status": "fresh",
+        "stale_related": false,
+        "missing_related": false,
+        "plan_schema_valid_recomputed": true,
+        "answer_schema_valid": true,
+        "interface_failure": false,
+        "json_parse_failure": false,
+        "truncated": false,
+        "missing_call_records": 0,
+        "answer_value_correct": false,
+        "end_to_end_success": false,
+        "reference_executor_correct": true,
+        "plan_follows_supplied_memory": true,
+        "answer_follows_tool_and_plan": false,
+        "stale_propagation_consistent": false,
+        "diagnostic_note": "Axes are observational; coincident staleness and error do not by themselves prove causality."
+      }
+    },
+    {
+      "source_record": "records/rc_002_005_recheck.json",
+      "pass": true,
+      "observations": {
+        "amount_status": "fresh",
+        "endpoint_status": "fresh",
+        "stale_related": false,
+        "missing_related": false,
+        "plan_schema_valid_recomputed": true,
+        "answer_schema_valid": true,
+        "interface_failure": false,
+        "json_parse_failure": false,
+        "truncated": false,
+        "missing_call_records": 0,
+        "answer_value_correct": false,
+        "end_to_end_success": false,
+        "reference_executor_correct": true,
+        "plan_follows_supplied_memory": true,
+        "answer_follows_tool_and_plan": false,
+        "stale_propagation_consistent": false,
+        "diagnostic_note": "Axes are observational; coincident staleness and error do not by themselves prove causality."
+      }
+    }
+  ]
+}

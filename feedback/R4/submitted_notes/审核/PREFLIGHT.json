@@ -1,0 +1,245 @@
+{
+  "pass": true,
+  "worlds_constructed": false,
+  "new_model_calls": 0,
+  "conditions": [
+    {
+      "condition": "overlap_matched",
+      "assumed_model_expectation_NOT_CURRENCY": {
+        "recheck_joint": 2.3500561721826996,
+        "bundle_rollout": 2.381776589694772,
+        "bundle_myopic": 3.508793925337493,
+        "age_paced": 2.934420507750023,
+        "separable_projected": 3.508793925337493,
+        "never": 5.185794349360742
+      },
+      "declared_actual_model_expectation_NOT_LLM": {
+        "recheck_joint": 2.3500561721826996,
+        "bundle_rollout": 2.381776589694772,
+        "bundle_myopic": 3.508793925337493,
+        "age_paced": 2.934420507750023,
+        "separable_projected": 3.508793925337493,
+        "never": 5.185794349360742
+      },
+      "matched_exact_dominance": true,
+      "rollout_base_bound_check": true
+    },
+    {
+      "condition": "disjoint_matched",
+      "assumed_model_expectation_NOT_CURRENCY": {
+        "recheck_joint": 2.654035629487036,
+        "bundle_rollout": 2.682910972891323,
+        "bundle_myopic": 3.8591906820907838,
+        "age_paced": 3.2020837894006484,
+        "separable_projected": 3.8591906820907838,
+        "never": 5.185794349360742
+      },
+      "declared_actual_model_expectation_NOT_LLM": {
+        "recheck_joint": 2.654035629487036,
+        "bundle_rollout": 2.682910972891323,
+        "bundle_myopic": 3.8591906820907838,
+        "age_paced": 3.2020837894006484,
+        "separable_projected": 3.8591906820907838,
+        "never": 5.185794349360742
+      },
+      "matched_exact_dominance": true,
+      "rollout_base_bound_check": true
+    },
+    {
+      "condition": "overlap_no_drift",
+      "assumed_model_expectation_NOT_CURRENCY": {
+        "recheck_joint": 2.3500561721826996,
+        "bundle_rollout": 2.381776589694772,
+        "bundle_myopic": 3.508793925337493,
+        "age_paced": 2.934420507750023,
+        "separable_projected": 3.508793925337493,
+        "never": 5.185794349360742
+      },
+      "declared_actual_model_expectation_NOT_LLM": {
+        "recheck_joint": 0.39106458593750004,
+        "bundle_rollout": 0.39335824365234384,
+        "bundle_myopic": 0.39556250000000004,
+        "age_paced": 0.3855005208333334,
+        "separable_projected": 0.39556250000000004,
+        "never": 0.0
+      },
+      "matched_exact_dominance": true,
+      "rollout_base_bound_check": true
+    },
+    {
+      "condition": "overlap_underestimated",
+      "assumed_model_expectation_NOT_CURRENCY": {
+        "recheck_joint": 2.3500561721826996,
+        "bundle_rollout": 2.381776589694772,
+        "bundle_myopic": 3.508793925337493,
+        "age_paced": 2.934420507750023,
+        "separable_projected": 3.508793925337493,
+        "never": 5.185794349360742
+      },
+      "declared_actual_model_expectation_NOT_LLM": {
+        "recheck_joint": 3.8862444130294116,
+        "bundle_rollout": 3.8971472629390322,
+        "bundle_myopic": 4.904075491869282,
+        "age_paced": 4.5618021023547195,
+        "separable_projected": 4.904075491869282,
+        "never": 6.922458137257575
+      },
+      "matched_exact_dominance": true,
+      "rollout_base_bound_check": true
+    }
+  ],
+  "streams": [
+    {
+      "stream": 0,
+      "condition": "overlap_matched",
+      "action_differences": 5,
+      "credits_remaining": {
+        "recheck_joint": 0,
+        "bundle_rollout": 0,
+        "bundle_myopic": 0,
+        "age_paced": 0
+      }
+    },
+    {
+      "stream": 1,
+      "condition": "overlap_matched",
+      "action_differences": 4,
+      "credits_remaining": {
+        "recheck_joint": 1,
+        "bundle_rollout": 1,
+        "bundle_myopic": 0,
+        "age_paced": 1
+      }
+    },
+    {
+      "stream": 2,
+      "condition": "overlap_matched",
+      "action_differences": 5,
+      "credits_remaining": {
+        "recheck_joint": 0,
+        "bundle_rollout": 0,
+        "bundle_myopic": 0,
+        "age_paced": 0
+      }
+    },
+    {
+      "stream": 3,
+      "condition": "disjoint_matched",
+      "action_differences": 5,
+      "credits_remaining": {
+        "recheck_joint": 0,
+        "bundle_rollout": 0,
+        "bundle_myopic": 0,
+        "age_paced": 0
+      }
+    },
+    {
+      "stream": 4,
+      "condition": "disjoint_matched",
+      "action_differences": 4,
+      "credits_remaining": {
+        "recheck_joint": 0,
+        "bundle_rollout": 0,
+        "bundle_myopic": 0,
+        "age_paced": 0
+      }
+    },
+    {
+      "stream": 5,
+      "condition": "disjoint_matched",
+      "action_differences": 5,
+      "credits_remaining": {
+        "recheck_joint": 0,
+        "bundle_rollout": 0,
+        "bundle_myopic": 0,
+        "age_paced": 0
+      }
+    },
+    {
+      "stream": 6,
+      "condition": "overlap_no_drift",
+      "action_differences": 5,
+      "credits_remaining": {
+        "recheck_joint": 0,
+        "bundle_rollout": 0,
+        "bundle_myopic": 1,
+        "age_paced": 1
+      }
+    },
+    {
+      "stream": 7,
+      "condition": "overlap_no_drift",
+      "action_differences": 4,
+      "credits_remaining": {
+        "recheck_joint": 0,
+        "bundle_rollout": 0,
+        "bundle_myopic": 0,
+        "age_paced": 0
+      }
+    },
+    {
+      "stream": 8,
+      "condition": "overlap_no_drift",
+      "action_differences": 5,
+      "credits_remaining": {
+        "recheck_joint": 0,
+        "bundle_rollout": 0,
+        "bundle_myopic": 0,
+        "age_paced": 0
+      }
+    },
+    {
+      "stream": 9,
+      "condition": "overlap_underestimated",
+      "action_differences": 5,
+      "credits_remaining": {
+        "recheck_joint": 1,
+        "bundle_rollout": 1,
+        "bundle_myopic": 0,
+        "age_paced": 0
+      }
+    },
+    {
+      "stream": 10,
+      "condition": "overlap_underestimated",
+      "action_differences": 5,
+      "credits_remaining": {
+        "recheck_joint": 1,
+        "bundle_rollout": 0,
+        "bundle_myopic": 0,
+        "age_paced": 1
+      }
+    },
+    {
+      "stream": 11,
+      "condition": "overlap_underestimated",
+      "action_differences": 5,
+      "credits_remaining": {
+        "recheck_joint": 0,
+        "bundle_rollout": 0,
+        "bundle_myopic": 0,
+        "age_paced": 0
+      }
+    }
+  ],
+  "counterexample": {
+    "channels": [
+      0,
+      1,
+      2
+    ],
+    "independent_singleton_costs": [
+      2,
+      2,
+      2
+    ],
+    "independent_sum": 6,
+    "step_cap": 4,
+    "independent_all_is_feasible": false,
+    "pair_singletons_cost": 4,
+    "one_pair_packet_cost": 3,
+    "pass": true,
+    "claim": "Independent actions need a joint feasibility/coverage decision; all methods must receive the same packet catalogue."
+  },
+  "note": "Development chosen after R3; structural checks, not a win guarantee or public preregistration."
+}

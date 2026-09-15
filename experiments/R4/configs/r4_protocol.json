@@ -1,0 +1,225 @@
+{
+  "protocol_id": "R4_BUNDLE_BUDGET_01",
+  "version": "4.0.0",
+  "phase": "development_not_confirmatory",
+  "steps": 8,
+  "episode_budget": 8,
+  "step_cap": 4,
+  "assumed_hazards": [
+    0.12,
+    0.12,
+    0.12
+  ],
+  "weights": [
+    [
+      1,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      1,
+      1
+    ]
+  ],
+  "methods": [
+    "recheck_joint",
+    "bundle_rollout",
+    "bundle_myopic",
+    "age_paced"
+  ],
+  "repeat_methods": [
+    "recheck_joint",
+    "bundle_myopic"
+  ],
+  "repeat_step": 3,
+  "main_calls": 408,
+  "primary_records": 384,
+  "repeat_records": 24,
+  "total_with_smoke": 409,
+  "output_cap": 16384,
+  "order_seed": 4400700,
+  "streams": [
+    {
+      "stream": 0,
+      "condition": "overlap_matched",
+      "overlap": true,
+      "actual_hazard": 0.12,
+      "persistence": 0.85,
+      "price": 0.05,
+      "initial_task": 0,
+      "task_seed": 4410100,
+      "world_seed": 4420200,
+      "data_seed": 4430300
+    },
+    {
+      "stream": 1,
+      "condition": "overlap_matched",
+      "overlap": true,
+      "actual_hazard": 0.12,
+      "persistence": 0.85,
+      "price": 0.05,
+      "initial_task": 1,
+      "task_seed": 4410101,
+      "world_seed": 4420201,
+      "data_seed": 4430301
+    },
+    {
+      "stream": 2,
+      "condition": "overlap_matched",
+      "overlap": true,
+      "actual_hazard": 0.12,
+      "persistence": 0.85,
+      "price": 0.05,
+      "initial_task": 2,
+      "task_seed": 4410102,
+      "world_seed": 4420202,
+      "data_seed": 4430302
+    },
+    {
+      "stream": 3,
+      "condition": "disjoint_matched",
+      "overlap": false,
+      "actual_hazard": 0.12,
+      "persistence": 0.85,
+      "price": 0.05,
+      "initial_task": 0,
+      "task_seed": 4410103,
+      "world_seed": 4420203,
+      "data_seed": 4430303
+    },
+    {
+      "stream": 4,
+      "condition": "disjoint_matched",
+      "overlap": false,
+      "actual_hazard": 0.12,
+      "persistence": 0.85,
+      "price": 0.05,
+      "initial_task": 1,
+      "task_seed": 4410104,
+      "world_seed": 4420204,
+      "data_seed": 4430304
+    },
+    {
+      "stream": 5,
+      "condition": "disjoint_matched",
+      "overlap": false,
+      "actual_hazard": 0.12,
+      "persistence": 0.85,
+      "price": 0.05,
+      "initial_task": 2,
+      "task_seed": 4410105,
+      "world_seed": 4420205,
+      "data_seed": 4430305
+    },
+    {
+      "stream": 6,
+      "condition": "overlap_no_drift",
+      "overlap": true,
+      "actual_hazard": 0.0,
+      "persistence": 0.85,
+      "price": 0.05,
+      "initial_task": 0,
+      "task_seed": 4410106,
+      "world_seed": 4420206,
+      "data_seed": 4430306
+    },
+    {
+      "stream": 7,
+      "condition": "overlap_no_drift",
+      "overlap": true,
+      "actual_hazard": 0.0,
+      "persistence": 0.85,
+      "price": 0.05,
+      "initial_task": 1,
+      "task_seed": 4410107,
+      "world_seed": 4420207,
+      "data_seed": 4430307
+    },
+    {
+      "stream": 8,
+      "condition": "overlap_no_drift",
+      "overlap": true,
+      "actual_hazard": 0.0,
+      "persistence": 0.85,
+      "price": 0.05,
+      "initial_task": 2,
+      "task_seed": 4410108,
+      "world_seed": 4420208,
+      "data_seed": 4430308
+    },
+    {
+      "stream": 9,
+      "condition": "overlap_underestimated",
+      "overlap": true,
+      "actual_hazard": 0.24,
+      "persistence": 0.85,
+      "price": 0.05,
+      "initial_task": 0,
+      "task_seed": 4410109,
+      "world_seed": 4420209,
+      "data_seed": 4430309
+    },
+    {
+      "stream": 10,
+      "condition": "overlap_underestimated",
+      "overlap": true,
+      "actual_hazard": 0.24,
+      "persistence": 0.85,
+      "price": 0.05,
+      "initial_task": 1,
+      "task_seed": 4410110,
+      "world_seed": 4420210,
+      "data_seed": 4430310
+    },
+    {
+      "stream": 11,
+      "condition": "overlap_underestimated",
+      "overlap": true,
+      "actual_hazard": 0.24,
+      "persistence": 0.85,
+      "price": 0.05,
+      "initial_task": 2,
+      "task_seed": 4410111,
+      "world_seed": 4420211,
+      "data_seed": 4430311
+    }
+  ],
+  "offline_grid": {
+    "budgets": [
+      4,
+      8,
+      12
+    ],
+    "hazards": [
+      0.06,
+      0.12
+    ],
+    "persistence": [
+      0.5,
+      0.85
+    ],
+    "overlap": [
+      false,
+      true
+    ],
+    "actual_multipliers": [
+      0,
+      1,
+      2
+    ]
+  },
+  "limits": [
+    "Known finite semantics and hazards; exact deterministic probes; no open-world guarantee.",
+    "New reference API, not a public benchmark or production API.",
+    "Hard budget credits and loss price are not currency or model token budgets.",
+    "Rollout and coverage scheduling have prior art; this is a mechanistic increment over R3, not established publication novelty.",
+    "Rule compiler uses exactly the same public task and memory as the LLM; its cost is separately labelled, not additional model results.",
+    "All fixed cells and seeds retained; no selection by hidden losses or model outcomes."
+  ]
+}

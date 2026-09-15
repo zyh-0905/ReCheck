@@ -1,0 +1,148 @@
+F....F                                                                   [100%]
+=================================== FAILURES ===================================
+___________________ test_execution_environment_syntax_error ____________________
+
+execution_environment = <tool_sandbox.roles.execution_environment.ExecutionEnvironment object at 0x7f99a8f9d7d0>
+
+    def test_execution_environment_syntax_error(
+        execution_environment: ExecutionEnvironment,
+    ) -> None:
+        execution_environment.add_messages(
+            [
+                Message(
+                    sender=RoleType.AGENT,
+                    recipient=RoleType.EXECUTION_ENVIRONMENT,
+                    content="improt math",
+                )
+            ]
+        )
+        execution_environment.respond()
+        content = textwrap.dedent("""\
+          File "<input>", line 1
+            improt math
+                   ^
+        SyntaxError: invalid syntax
+        """)
+>       assert execution_environment.get_messages()[-1] == Message(
+            sender=RoleType.EXECUTION_ENVIRONMENT,
+            recipient=RoleType.AGENT,
+            content=content,
+            conversation_active=True,
+            tool_call_exception=content,
+        )
+E       assert Message(sende...NT', 'AGENT']) == Message(sende...NT: 'AGENT'>])
+E         
+E         Omitting 7 identical items, use -vv to show
+E         Differing attributes:
+E         ['content', 'tool_call_exception']
+E         
+E         Drill down into differing attribute content:
+E           content: '  File "<input>", line 1\n    improt math\n           ^^^^\nSyntaxError: invalid syntax\n' != '  File "<input>", line 1\n    improt math\n           ^\nSyntaxError: invalid syntax\n'...
+E         
+E         ...Full output truncated (13 lines hidden), use '-vv' to show
+
+tests/roles/execution_environment_test.py:63: AssertionError
+_______________________ test_invalid_parallel_tool_call ________________________
+
+execution_environment = <tool_sandbox.roles.execution_environment.ExecutionEnvironment object at 0x7f99a902c910>
+
+    def test_invalid_parallel_tool_call(
+        execution_environment: ExecutionEnvironment,
+    ) -> None:
+        # Set up the environment by adding a system message that specifies which tools to
+        # import.
+        execution_environment.add_messages(
+            [
+                Message(
+                    sender=RoleType.AGENT,
+                    recipient=RoleType.EXECUTION_ENVIRONMENT,
+                    content=(
+                        "import json\n"
+                        "from tool_sandbox.tools.setting import set_wifi_status\n"
+                        "from tool_sandbox.tools.rapid_api_search_tools import search_stock\n"
+                    ),
+                    conversation_active=True,
+                )
+            ]
+        )
+        execution_context = get_current_context()
+        settings_df = execution_context.get_database(DatabaseNamespace.SETTING)
+        execution_context.update_database(
+            DatabaseNamespace.SETTING, settings_df.with_columns(pl.lit(False).alias("wifi"))
+        )
+        execution_environment.respond()
+    
+        # Agents can issue parallel tool calls. The expectation is that these are
+        # independent and can thus be executed in any order. If that is not the case it
+        # means that the tool calls are not truly parallel, but have some dependency on each
+        # other. In the example below the tool calls depend on each other, but when executed
+        # sequentially in the given order they would succeed. Since the execution
+        # environment calls the tools in all order permutations the overall result should be
+        # a failure. More specifically, when calling the `search_stock` tool first it will
+        # fail with an exception saying that WiFi is not enabled.
+        execution_environment.add_messages(
+            [
+                Message(
+                    sender=RoleType.AGENT,
+                    recipient=RoleType.EXECUTION_ENVIRONMENT,
+                    content="call_ucWrTNIM4Prh1KlK77k1Zjeu_parameters = {'on': True}\ncall_ucWrTNIM4Prh1KlK77k1Zjeu_response = set_wifi_status(**call_ucWrTNIM4Prh1KlK77k1Zjeu_parameters)\nprint(repr(call_ucWrTNIM4Prh1KlK77k1Zjeu_response))",
+                    conversation_active=True,
+                    openai_tool_call_id="call_ucWrTNIM4Prh1KlK77k1Zjeu",
+                    openai_function_name="set_wifi_status",
+                ),
+                Message(
+                    sender=RoleType.AGENT,
+                    recipient=RoleType.EXECUTION_ENVIRONMENT,
+                    content="call_e60fwDpTW2yecfBg2BQPNy88_parameters = {'query': 'Apple'}\ncall_e60fwDpTW2yecfBg2BQPNy88_response = search_stock(**call_e60fwDpTW2yecfBg2BQPNy88_parameters)\nprint(repr(call_e60fwDpTW2yecfBg2BQPNy88_response))",
+                    conversation_active=True,
+                    openai_tool_call_id="call_e60fwDpTW2yecfBg2BQPNy88",
+                    openai_function_name="search_stock",
+                ),
+            ]
+        )
+    
+        execution_environment.respond()
+        # WiFi should still be off.
+        assert not execution_context.get_database(DatabaseNamespace.SETTING)["wifi"][0]
+    
+        # Without setting `get_all_history_snapshots` we only get the latest tool call back.
+        df = get_current_context().get_database(
+            DatabaseNamespace.SANDBOX, get_all_history_snapshots=True
+        )
+        # The response should be in the same order as the (potentially permutated) requests.
+        assert RoleType.EXECUTION_ENVIRONMENT == df[-2]["sender"][0]
+        assert RoleType.AGENT == df[-2]["recipient"][0]
+>       assert "search_stock" == df[-2]["openai_function_name"][0]
+E       AssertionError: assert 'search_stock' == 'set_wifi_status'
+E         
+E         - set_wifi_status
+E         + search_stock
+
+tests/roles/execution_environment_test.py:289: AssertionError
+=============================== warnings summary ===============================
+tests/roles/execution_environment_test.py::test_execution_environment_syntax_error
+  /mnt/data/r7b_work/native/runtime/python/lib/python3.11/site-packages/holidays/__init__.py:32: FutureIncompatibilityWarning: 
+  
+  This is a future version incompatibility warning from Python Holidays library v0.51
+  to inform you about an upcoming change in our API versioning strategy that may affect your
+  project's dependencies. Starting from version 1.0 onwards, we will be following a loose form of
+  Semantic Versioning (SemVer) to provide clearer communication regarding any potential breaking
+  changes.
+  
+  This means that while we strive to maintain backward compatibility, there might be occasional
+  updates that introduce breaking changes to our API. To ensure the stability of your projects,
+  we highly recommend pinning the version of our API that you rely on. You can pin your current
+  holidays v0.x dependency (e.g., holidays==0.51) or limit it (e.g., holidays<1.0) in order to
+  avoid potentially unwanted upgrade to the version 1.0 when it's released (ETA 2024Q4 - 2025Q1).
+  
+  If you have any questions or concerns regarding this change, please don't hesitate to reach out
+  to us via https://github.com/vacanza/python-holidays/discussions/1800.
+  
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+--- generated xml file: /mnt/data/r7b_work/logs/upstream_execution_tests.xml ---
+=========================== short test summary info ============================
+FAILED tests/roles/execution_environment_test.py::test_execution_environment_syntax_error
+FAILED tests/roles/execution_environment_test.py::test_invalid_parallel_tool_call
+2 failed, 4 passed, 1 warning in 1.01s

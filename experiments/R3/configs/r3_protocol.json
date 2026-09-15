@@ -1,0 +1,306 @@
+{
+  "protocol_id": "R3_FACTORED_REFRESH_01",
+  "version": "3.0.0",
+  "phase": "development_mechanism_not_confirmatory",
+  "steps": 12,
+  "methods": [
+    "recheck",
+    "myopic"
+  ],
+  "repeat_step": 5,
+  "streams": [
+    {
+      "stream": 0,
+      "condition": "matched_low",
+      "initial_task": 0,
+      "probe_price": [
+        0.22,
+        0.22
+      ],
+      "persistence": 0.7,
+      "actual_hazard": 0.12,
+      "task_seed": 1030101,
+      "world_seed": 1040101,
+      "data_seed": 1050101
+    },
+    {
+      "stream": 1,
+      "condition": "matched_low",
+      "initial_task": 1,
+      "probe_price": [
+        0.22,
+        0.22
+      ],
+      "persistence": 0.7,
+      "actual_hazard": 0.12,
+      "task_seed": 1030102,
+      "world_seed": 1040102,
+      "data_seed": 1050102
+    },
+    {
+      "stream": 2,
+      "condition": "matched_low",
+      "initial_task": 2,
+      "probe_price": [
+        0.22,
+        0.22
+      ],
+      "persistence": 0.7,
+      "actual_hazard": 0.12,
+      "task_seed": 1030103,
+      "world_seed": 1040103,
+      "data_seed": 1050103
+    },
+    {
+      "stream": 3,
+      "condition": "matched_low",
+      "initial_task": 3,
+      "probe_price": [
+        0.22,
+        0.22
+      ],
+      "persistence": 0.7,
+      "actual_hazard": 0.12,
+      "task_seed": 1030104,
+      "world_seed": 1040104,
+      "data_seed": 1050104
+    },
+    {
+      "stream": 4,
+      "condition": "matched_high",
+      "initial_task": 0,
+      "probe_price": [
+        0.4,
+        0.4
+      ],
+      "persistence": 0.95,
+      "actual_hazard": 0.12,
+      "task_seed": 1030105,
+      "world_seed": 1040105,
+      "data_seed": 1050105
+    },
+    {
+      "stream": 5,
+      "condition": "matched_high",
+      "initial_task": 1,
+      "probe_price": [
+        0.4,
+        0.4
+      ],
+      "persistence": 0.95,
+      "actual_hazard": 0.12,
+      "task_seed": 1030106,
+      "world_seed": 1040106,
+      "data_seed": 1050106
+    },
+    {
+      "stream": 6,
+      "condition": "matched_high",
+      "initial_task": 2,
+      "probe_price": [
+        0.4,
+        0.4
+      ],
+      "persistence": 0.95,
+      "actual_hazard": 0.12,
+      "task_seed": 1030107,
+      "world_seed": 1040107,
+      "data_seed": 1050107
+    },
+    {
+      "stream": 7,
+      "condition": "matched_high",
+      "initial_task": 3,
+      "probe_price": [
+        0.4,
+        0.4
+      ],
+      "persistence": 0.95,
+      "actual_hazard": 0.12,
+      "task_seed": 1030108,
+      "world_seed": 1040108,
+      "data_seed": 1050108
+    },
+    {
+      "stream": 8,
+      "condition": "no_drift",
+      "initial_task": 0,
+      "probe_price": [
+        0.4,
+        0.4
+      ],
+      "persistence": 0.95,
+      "actual_hazard": 0.0,
+      "task_seed": 1030109,
+      "world_seed": 1040109,
+      "data_seed": 1050109
+    },
+    {
+      "stream": 9,
+      "condition": "no_drift",
+      "initial_task": 1,
+      "probe_price": [
+        0.4,
+        0.4
+      ],
+      "persistence": 0.95,
+      "actual_hazard": 0.0,
+      "task_seed": 1030110,
+      "world_seed": 1040110,
+      "data_seed": 1050110
+    },
+    {
+      "stream": 10,
+      "condition": "no_drift",
+      "initial_task": 2,
+      "probe_price": [
+        0.4,
+        0.4
+      ],
+      "persistence": 0.95,
+      "actual_hazard": 0.0,
+      "task_seed": 1030111,
+      "world_seed": 1040111,
+      "data_seed": 1050111
+    },
+    {
+      "stream": 11,
+      "condition": "no_drift",
+      "initial_task": 3,
+      "probe_price": [
+        0.4,
+        0.4
+      ],
+      "persistence": 0.95,
+      "actual_hazard": 0.0,
+      "task_seed": 1030112,
+      "world_seed": 1040112,
+      "data_seed": 1050112
+    },
+    {
+      "stream": 12,
+      "condition": "underestimated_drift",
+      "initial_task": 0,
+      "probe_price": [
+        0.4,
+        0.4
+      ],
+      "persistence": 0.95,
+      "actual_hazard": 0.24,
+      "task_seed": 1030113,
+      "world_seed": 1040113,
+      "data_seed": 1050113
+    },
+    {
+      "stream": 13,
+      "condition": "underestimated_drift",
+      "initial_task": 1,
+      "probe_price": [
+        0.4,
+        0.4
+      ],
+      "persistence": 0.95,
+      "actual_hazard": 0.24,
+      "task_seed": 1030114,
+      "world_seed": 1040114,
+      "data_seed": 1050114
+    },
+    {
+      "stream": 14,
+      "condition": "underestimated_drift",
+      "initial_task": 2,
+      "probe_price": [
+        0.4,
+        0.4
+      ],
+      "persistence": 0.95,
+      "actual_hazard": 0.24,
+      "task_seed": 1030115,
+      "world_seed": 1040115,
+      "data_seed": 1050115
+    },
+    {
+      "stream": 15,
+      "condition": "underestimated_drift",
+      "initial_task": 3,
+      "probe_price": [
+        0.4,
+        0.4
+      ],
+      "persistence": 0.95,
+      "actual_hazard": 0.24,
+      "task_seed": 1030116,
+      "world_seed": 1040116,
+      "data_seed": 1050116
+    }
+  ],
+  "weights": [
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "assumed_hazards": [
+    0.12,
+    0.12
+  ],
+  "order_seed": 1060101,
+  "main_calls": 416,
+  "total_with_smoke": 417,
+  "primary_records": 384,
+  "replicate_records": 32,
+  "output_cap": 16384,
+  "offline_grid": {
+    "hazards": [
+      0.04,
+      0.12,
+      0.25
+    ],
+    "prices": [
+      0.18,
+      0.22,
+      0.3,
+      0.4
+    ],
+    "persistence": [
+      0.25,
+      0.7,
+      0.95
+    ],
+    "horizons": [
+      12,
+      40
+    ],
+    "actual_multipliers": [
+      0,
+      0.5,
+      1,
+      2
+    ]
+  },
+  "gate": {
+    "minimum_matched_relative_gain": 0.01,
+    "minimum_expected_relevant_differences": 1.0
+  },
+  "limitations": [
+    "Given finite model, exact calibration; no learned drift or novel general DP theorem.",
+    "All listed cells retained; live conditions selected after R2 diagnosis, not external preregistration.",
+    "Hybrid pipeline with deterministic renderer; not a prompt-only fix, not directly comparable to R2 free answer rates.",
+    "Synthetic SQLite tasks; no public benchmark or natural failure claim.",
+    "One midpoint replicate per method/stream estimates limited execution variability; never used to replace first answer.",
+    "Always, Never and TTL are offline reference executors only in this round.",
+    "Dimensionless probe price is a model loss trade-off, not a currency or real API cost."
+  ]
+}

@@ -1,0 +1,134 @@
+test_bad_cells_and_seed_reuse_rejected (test_acquisition.AcquisitionTests.test_bad_cells_and_seed_reuse_rejected) ... ok
+test_canonical_cell_counts (test_acquisition.AcquisitionTests.test_canonical_cell_counts) ... ok
+test_checkpoint_is_not_mutated_by_later_purchase (test_acquisition.AcquisitionTests.test_checkpoint_is_not_mutated_by_later_purchase) ... ok
+test_data_seed_sets_disjoint (test_acquisition.AcquisitionTests.test_data_seed_sets_disjoint) ... ok
+test_duplicate_label_purchase_is_not_reexecuted (test_acquisition.AcquisitionTests.test_duplicate_label_purchase_is_not_reexecuted) ... ok
+test_irrelevant_coordinates_are_publicly_invariant (test_acquisition.AcquisitionTests.test_irrelevant_coordinates_are_publicly_invariant) ... ok
+test_known_diagonal_zero_without_buying_labels (test_acquisition.AcquisitionTests.test_known_diagonal_zero_without_buying_labels) ... ok
+test_reference_answers_and_every_label_match_independent_math (test_acquisition.AcquisitionTests.test_reference_answers_and_every_label_match_independent_math) ... ok
+test_single_and_full_costs_include_reference_runs (test_acquisition.AcquisitionTests.test_single_and_full_costs_include_reference_runs) ... ok
+test_single_only_never_queries_interactions (test_acquisition.AcquisitionTests.test_single_only_never_queries_interactions) ... ok
+test_bad_protocol_price_rejected (test_audit_hardening.AuditHardeningTests.test_bad_protocol_price_rejected) ... ok
+test_boolean_not_integer_label (test_audit_hardening.AuditHardeningTests.test_boolean_not_integer_label) ... ok
+test_integer_not_float_count (test_audit_hardening.AuditHardeningTests.test_integer_not_float_count) ... ok
+test_layout_detects_missing_and_extra (test_audit_hardening.AuditHardeningTests.test_layout_detects_missing_and_extra) ... ok
+test_nan_not_equal_to_itself (test_audit_hardening.AuditHardeningTests.test_nan_not_equal_to_itself) ... ok
+test_valid_nested_receipt (test_audit_hardening.AuditHardeningTests.test_valid_nested_receipt) ... ok
+test_answer_tiny_difference_not_tolerated (test_equivalence.EquivalenceTests.test_answer_tiny_difference_not_tolerated) ... ok
+test_budget_bool_not_equal_to_int (test_equivalence.EquivalenceTests.test_budget_bool_not_equal_to_int) ... ok
+test_missing_record_fails (test_equivalence.EquivalenceTests.test_missing_record_fails) ... ok
+test_one_ulp_only_at_prediction_path_passes (test_equivalence.EquivalenceTests.test_one_ulp_only_at_prediction_path_passes) ... ok
+test_packet_change_not_tolerated (test_equivalence.EquivalenceTests.test_packet_change_not_tolerated) ... ok
+test_prediction_name_elsewhere_not_exempt (test_equivalence.EquivalenceTests.test_prediction_name_elsewhere_not_exempt) ... ok
+test_probability_delta_too_large_fails (test_equivalence.EquivalenceTests.test_probability_delta_too_large_fails) ... ok
+test_probability_integer_type_fails (test_equivalence.EquivalenceTests.test_probability_integer_type_fails) ... ok
+test_probability_nan_fails (test_equivalence.EquivalenceTests.test_probability_nan_fails) ... ok
+test_probability_outside_unit_interval_fails (test_equivalence.EquivalenceTests.test_probability_outside_unit_interval_fails) ... ok
+test_reference_digest_typed_strict_and_float_sidecar (test_equivalence.EquivalenceTests.test_reference_digest_typed_strict_and_float_sidecar) ... ok
+test_timing_not_compared_but_original_not_changed (test_equivalence.EquivalenceTests.test_timing_not_compared_but_original_not_changed) ... ok
+test_gold_does_not_change_selected_action (test_runtime.RuntimeTests.test_gold_does_not_change_selected_action) ... ok
+test_immutable_write (test_runtime.RuntimeTests.test_immutable_write) ... ok
+test_network_blocked (test_runtime.RuntimeTests.test_network_blocked) ... ok
+test_only_chosen_model_predicts_each_policy (test_runtime.RuntimeTests.test_only_chosen_model_predicts_each_policy) ... ok
+test_real_budget_and_outputs (test_runtime.RuntimeTests.test_real_budget_and_outputs) ... ok
+test_reference_mean_not_money (test_runtime.RuntimeTests.test_reference_mean_not_money) ... ok
+test_source_tamper_detected (test_runtime.RuntimeTests.test_source_tamper_detected) ... ok
+test_strict_state_has_no_true_mode_field (test_runtime.RuntimeTests.test_strict_state_has_no_true_mode_field) ... ok
+test_archive_tampering_rejected (test_safety.SafetyTests.test_archive_tampering_rejected) ... ok
+test_bad_windows_path_rejected (test_safety.SafetyTests.test_bad_windows_path_rejected) ... ok
+test_bundle_preserves_license_and_excludes_unrelated_files (test_safety.SafetyTests.test_bundle_preserves_license_and_excludes_unrelated_files) ... ok
+test_bundle_refuses_overwrite (test_safety.SafetyTests.test_bundle_refuses_overwrite) ... ok
+test_bundle_rejects_path_traversal (test_safety.SafetyTests.test_bundle_rejects_path_traversal) ... ok
+test_completed_run_no_sampling (test_safety.SafetyTests.test_completed_run_no_sampling) ... ok
+test_lock_has_no_implicit_unlock (test_safety.SafetyTests.test_lock_has_no_implicit_unlock) ... ok
+test_noncompleted_run_refuses_resample (test_safety.SafetyTests.test_noncompleted_run_refuses_resample) ... ok
+test_secret_in_export_is_blocked (test_safety.SafetyTests.test_secret_in_export_is_blocked) ... ok
+test_source_change_after_prepare_blocked (test_safety.SafetyTests.test_source_change_after_prepare_blocked) ... ok
+test_acquisition_scores_without_oracle_argument (test_selection.SelectionTests.test_acquisition_scores_without_oracle_argument) ... ok
+test_budgets_share_prefix_but_not_future_labels (test_selection.SelectionTests.test_budgets_share_prefix_but_not_future_labels) ... ok
+test_every_added_atom_has_equal_workflow_cost (test_selection.SelectionTests.test_every_added_atom_has_equal_workflow_cost) ... ok
+test_features_equal_exact_myopic_stage (test_selection.SelectionTests.test_features_equal_exact_myopic_stage) ... ok
+test_selection_deterministic_at_fixed_seed (test_selection.SelectionTests.test_selection_deterministic_at_fixed_seed) ... ok
+test_single_model_ignores_labels_of_future_unbought_cells (test_selection.SelectionTests.test_single_model_ignores_labels_of_future_unbought_cells) ... ok
+test_unknown_selector_rejected (test_selection.SelectionTests.test_unknown_selector_rejected) ... ok
+test_amortized_cost_has_explicit_units_and_startup (test_study.StudyTests.test_amortized_cost_has_explicit_units_and_startup) ... ok
+test_calibration_cost_accounting (test_study.StudyTests.test_calibration_cost_accounting) ... ok
+test_exact_integer_cost_units (test_study.StudyTests.test_exact_integer_cost_units) ... ok
+test_modified_budget_rejected (test_study.StudyTests.test_modified_budget_rejected) ... ok
+test_modified_raw_answer_rejected (test_study.StudyTests.test_modified_raw_answer_rejected) ... ok
+test_original_protocol_marked_development (test_study.StudyTests.test_original_protocol_marked_development) ... ok
+test_reference_and_runtime_labels_do_not_share_cases (test_study.StudyTests.test_reference_and_runtime_labels_do_not_share_cases) ... ok
+
+----------------------------------------------------------------------
+Ran 60 tests in 0.923s
+
+OK
+TEST_EXIT 0
+{
+  "prepared": true,
+  "protocol": "R6_SELECTIVE_CALIBRATION_01"
+}
+Calibration panel 1/4
+Calibration panel 2/4
+Calibration panel 3/4
+Calibration panel 4/4
+Frozen-policy evaluation panel 1/4
+Frozen-policy evaluation panel 2/4
+Frozen-policy evaluation panel 3/4
+Frozen-policy evaluation panel 4/4
+{
+  "started_at_utc": "2026-09-12T17:54:26.732902+00:00",
+  "finished_at_utc": "2026-09-12T17:55:18.065928+00:00",
+  "run_seconds": 51.33303815299996,
+  "training_and_design_seconds": 16.784330640999997,
+  "physical_training_workflows": 40384,
+  "base_streams": 128,
+  "trajectories": 2560,
+  "task_records": 20480,
+  "new_llm_api_calls": 0,
+  "network_allowed": false,
+  "independent_training_panels": 4,
+  "counts_note": "budgets16/32 are nested checkpoints, not independent training runs"
+}
+Audit calibration panel 1/4
+Audit calibration panel 2/4
+Audit calibration panel 3/4
+Audit calibration panel 4/4
+Audit frozen trajectories panel 1/4
+Audit frozen trajectories panel 2/4
+Audit frozen trajectories panel 3/4
+Audit frozen trajectories panel 4/4
+{
+  "mechanical_pass": true,
+  "issues": [],
+  "source": {
+    "pass": true,
+    "issues": [],
+    "files": 39,
+    "manifest_sha256": "f50e48d8fd36844d58cf18c12b21f7fcbdb6f16ce9faf6827c8bb6d285b7e632"
+  },
+  "calibration_workflow_events_checked": 40384,
+  "physical_calibration_workflows": 40384,
+  "runtime_task_records": 20480,
+  "trajectories": 2560,
+  "base_streams": 128,
+  "training_panels": 4,
+  "scoped_probability_atol": 1e-14,
+  "scoped_probability_rtol": 0,
+  "max_probability_delta": 0.0,
+  "reference_present": true,
+  "reference_science_match": true,
+  "hard_budget_violations": [],
+  "new_llm_api_calls": 0,
+  "scientific_gate": "PENDING_RESEARCHER_REVIEW",
+  "limits": "Conditional development experiment; same catalogs/API grammar; no public benchmark or general optimum proof."
+}
+{
+  "export": "/mnt/data/r6_work/fresh/R6_Research_Kit/uploads/R6_feedback_20260912T175628715936Z.zip",
+  "verification": {
+    "pass": true,
+    "entries": 2714,
+    "issues": []
+  }
+}
+EXECUTE_EXIT 0

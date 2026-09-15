@@ -1,0 +1,334 @@
+{
+  "evidence_type": "SOURCE_LEVEL_UNIT_TEST_WITH_TEST_DOUBLES",
+  "source": {
+    "commit": "c8571d7854316d2e1c5f288e59fe1e34e53f6dd1",
+    "git_blob_sha1": "9900cd2fbd4b88f25cf937776c4e185c0ab6339e",
+    "sha256": "d992831c735c44167b46f67ff45b11ad37fa70df951ebe9eac283c4b44e5607c",
+    "bytes": 7143
+  },
+  "native_toolsandbox_executed": false,
+  "new_llm_calls": 0,
+  "cases": [
+    {
+      "fixture": "stable",
+      "script": "reuse_cached",
+      "immediate_return": "test-message-0001",
+      "writes": [
+        {
+          "message_id": "test-message-0001",
+          "sender_person_id": "self",
+          "sender_phone_number": "+12025550110",
+          "recipient_person_id": "target",
+          "recipient_phone_number": "+12025550111",
+          "content": "synthetic fixture message",
+          "creation_timestamp": 1704067200.0
+        }
+      ],
+      "dependency_events": [
+        {
+          "dependency": "get_cellular_service_status"
+        },
+        {
+          "dependency": "search_contacts",
+          "arguments": {
+            "is_self": true
+          }
+        },
+        {
+          "dependency": "search_contacts",
+          "arguments": {
+            "phone_number": "+12025550111"
+          }
+        }
+      ],
+      "fixture_target_received": true,
+      "additional_contact_query": 0
+    },
+    {
+      "fixture": "stable",
+      "script": "read_then_send",
+      "immediate_return": "test-message-0001",
+      "writes": [
+        {
+          "message_id": "test-message-0001",
+          "sender_person_id": "self",
+          "sender_phone_number": "+12025550110",
+          "recipient_person_id": "target",
+          "recipient_phone_number": "+12025550111",
+          "content": "synthetic fixture message",
+          "creation_timestamp": 1704067200.0
+        }
+      ],
+      "dependency_events": [
+        {
+          "dependency": "search_contacts",
+          "arguments": {
+            "person_id": "target"
+          }
+        },
+        {
+          "dependency": "get_cellular_service_status"
+        },
+        {
+          "dependency": "search_contacts",
+          "arguments": {
+            "is_self": true
+          }
+        },
+        {
+          "dependency": "search_contacts",
+          "arguments": {
+            "phone_number": "+12025550111"
+          }
+        }
+      ],
+      "fixture_target_received": true,
+      "additional_contact_query": 1
+    },
+    {
+      "fixture": "unrelated_change",
+      "script": "reuse_cached",
+      "immediate_return": "test-message-0001",
+      "writes": [
+        {
+          "message_id": "test-message-0001",
+          "sender_person_id": "self",
+          "sender_phone_number": "+12025550110",
+          "recipient_person_id": "target",
+          "recipient_phone_number": "+12025550111",
+          "content": "synthetic fixture message",
+          "creation_timestamp": 1704067200.0
+        }
+      ],
+      "dependency_events": [
+        {
+          "dependency": "get_cellular_service_status"
+        },
+        {
+          "dependency": "search_contacts",
+          "arguments": {
+            "is_self": true
+          }
+        },
+        {
+          "dependency": "search_contacts",
+          "arguments": {
+            "phone_number": "+12025550111"
+          }
+        }
+      ],
+      "fixture_target_received": true,
+      "additional_contact_query": 0
+    },
+    {
+      "fixture": "unrelated_change",
+      "script": "read_then_send",
+      "immediate_return": "test-message-0001",
+      "writes": [
+        {
+          "message_id": "test-message-0001",
+          "sender_person_id": "self",
+          "sender_phone_number": "+12025550110",
+          "recipient_person_id": "target",
+          "recipient_phone_number": "+12025550111",
+          "content": "synthetic fixture message",
+          "creation_timestamp": 1704067200.0
+        }
+      ],
+      "dependency_events": [
+        {
+          "dependency": "search_contacts",
+          "arguments": {
+            "person_id": "target"
+          }
+        },
+        {
+          "dependency": "get_cellular_service_status"
+        },
+        {
+          "dependency": "search_contacts",
+          "arguments": {
+            "is_self": true
+          }
+        },
+        {
+          "dependency": "search_contacts",
+          "arguments": {
+            "phone_number": "+12025550111"
+          }
+        }
+      ],
+      "fixture_target_received": true,
+      "additional_contact_query": 1
+    },
+    {
+      "fixture": "retired_target_number",
+      "script": "reuse_cached",
+      "immediate_return": "test-message-0001",
+      "writes": [
+        {
+          "message_id": "test-message-0001",
+          "sender_person_id": "self",
+          "sender_phone_number": "+12025550110",
+          "recipient_person_id": null,
+          "recipient_phone_number": "+12025550111",
+          "content": "synthetic fixture message",
+          "creation_timestamp": 1704067200.0
+        }
+      ],
+      "dependency_events": [
+        {
+          "dependency": "get_cellular_service_status"
+        },
+        {
+          "dependency": "search_contacts",
+          "arguments": {
+            "is_self": true
+          }
+        },
+        {
+          "dependency": "search_contacts",
+          "arguments": {
+            "phone_number": "+12025550111"
+          }
+        }
+      ],
+      "fixture_target_received": false,
+      "additional_contact_query": 0
+    },
+    {
+      "fixture": "retired_target_number",
+      "script": "read_then_send",
+      "immediate_return": "test-message-0001",
+      "writes": [
+        {
+          "message_id": "test-message-0001",
+          "sender_person_id": "self",
+          "sender_phone_number": "+12025550110",
+          "recipient_person_id": "target",
+          "recipient_phone_number": "+12025550112",
+          "content": "synthetic fixture message",
+          "creation_timestamp": 1704067200.0
+        }
+      ],
+      "dependency_events": [
+        {
+          "dependency": "search_contacts",
+          "arguments": {
+            "person_id": "target"
+          }
+        },
+        {
+          "dependency": "get_cellular_service_status"
+        },
+        {
+          "dependency": "search_contacts",
+          "arguments": {
+            "is_self": true
+          }
+        },
+        {
+          "dependency": "search_contacts",
+          "arguments": {
+            "phone_number": "+12025550112"
+          }
+        }
+      ],
+      "fixture_target_received": true,
+      "additional_contact_query": 1
+    },
+    {
+      "fixture": "reassigned_target_number",
+      "script": "reuse_cached",
+      "immediate_return": "test-message-0001",
+      "writes": [
+        {
+          "message_id": "test-message-0001",
+          "sender_person_id": "self",
+          "sender_phone_number": "+12025550110",
+          "recipient_person_id": "other",
+          "recipient_phone_number": "+12025550111",
+          "content": "synthetic fixture message",
+          "creation_timestamp": 1704067200.0
+        }
+      ],
+      "dependency_events": [
+        {
+          "dependency": "get_cellular_service_status"
+        },
+        {
+          "dependency": "search_contacts",
+          "arguments": {
+            "is_self": true
+          }
+        },
+        {
+          "dependency": "search_contacts",
+          "arguments": {
+            "phone_number": "+12025550111"
+          }
+        }
+      ],
+      "fixture_target_received": false,
+      "additional_contact_query": 0
+    },
+    {
+      "fixture": "reassigned_target_number",
+      "script": "read_then_send",
+      "immediate_return": "test-message-0001",
+      "writes": [
+        {
+          "message_id": "test-message-0001",
+          "sender_person_id": "self",
+          "sender_phone_number": "+12025550110",
+          "recipient_person_id": "target",
+          "recipient_phone_number": "+12025550112",
+          "content": "synthetic fixture message",
+          "creation_timestamp": 1704067200.0
+        }
+      ],
+      "dependency_events": [
+        {
+          "dependency": "search_contacts",
+          "arguments": {
+            "person_id": "target"
+          }
+        },
+        {
+          "dependency": "get_cellular_service_status"
+        },
+        {
+          "dependency": "search_contacts",
+          "arguments": {
+            "is_self": true
+          }
+        },
+        {
+          "dependency": "search_contacts",
+          "arguments": {
+            "phone_number": "+12025550112"
+          }
+        }
+      ],
+      "fixture_target_received": true,
+      "additional_contact_query": 1
+    }
+  ],
+  "double_boundaries": [
+    "ExecutionContext/database storage",
+    "exact contact filtering",
+    "phone validator",
+    "registration/typecheck decorators removed",
+    "UUID generator",
+    "clock",
+    "DuplicateError type"
+  ],
+  "interpretation": "Software counterexamples, not empirical policy success rates.",
+  "elementary_information_boundary": {
+    "uniform_two_world_error_lower_bound": "1/2",
+    "tight_at_rational_randomization": "1/2",
+    "checked_randomizations": 101,
+    "novel_theorem_claim": false,
+    "qualification": "Elementary two-world construction, no dataset or LLM estimate; abstention removes wrong sends only by reducing completion."
+  }
+}

@@ -1,0 +1,226 @@
+{
+  "new_llm_calls": 0,
+  "missing_batch_not_reconstructed": true,
+  "results": [
+    {
+      "archive": "recheck_deepseek_v41_flash_cap16384.zip",
+      "status": "READY_FOR_REVIEW",
+      "ledger": {
+        "started_attempts": 260,
+        "finished_attempts": 260,
+        "pending_attempts": [],
+        "successful_results": 260,
+        "completed_call_files": 260,
+        "truncated_responses": 0,
+        "error_results": 0,
+        "missing_usage_results": 0,
+        "known_prompt_tokens_finished_attempts": 62436,
+        "known_completion_tokens_finished_attempts": 193474,
+        "task_record_files": 128,
+        "prefix_files": 4,
+        "returned_model_ids": [
+          "deepseek-flash"
+        ],
+        "cost_estimate_recomputed": false,
+        "provider_bill_reconciled": false
+      },
+      "issues": [],
+      "integrity": {
+        "ok": true,
+        "checked_files": 939,
+        "mismatches": []
+      },
+      "source_bytes_unchanged": true
+    },
+    {
+      "archive": "repair_readiness_deepseek_v41_flash_cap16384.zip",
+      "status": "READY_FOR_REVIEW",
+      "ledger": {
+        "started_attempts": 34,
+        "finished_attempts": 34,
+        "pending_attempts": [],
+        "successful_results": 34,
+        "completed_call_files": 34,
+        "truncated_responses": 0,
+        "error_results": 0,
+        "missing_usage_results": 0,
+        "known_prompt_tokens_finished_attempts": 7690,
+        "known_completion_tokens_finished_attempts": 4200,
+        "task_record_files": 12,
+        "prefix_files": 4,
+        "returned_model_ids": [
+          "deepseek-flash"
+        ],
+        "cost_estimate_recomputed": false,
+        "provider_bill_reconciled": false
+      },
+      "issues": [],
+      "integrity": {
+        "ok": true,
+        "checked_files": 144,
+        "mismatches": []
+      },
+      "source_bytes_unchanged": true
+    },
+    {
+      "archive": "smoke_deepseek_v41_flash.zip",
+      "status": "READY_FOR_REVIEW",
+      "ledger": {
+        "started_attempts": 1,
+        "finished_attempts": 1,
+        "pending_attempts": [],
+        "successful_results": 1,
+        "completed_call_files": 1,
+        "truncated_responses": 0,
+        "error_results": 0,
+        "missing_usage_results": 0,
+        "known_prompt_tokens_finished_attempts": 40,
+        "known_completion_tokens_finished_attempts": 24,
+        "task_record_files": 0,
+        "prefix_files": 0,
+        "returned_model_ids": [
+          "deepseek-flash"
+        ],
+        "cost_estimate_recomputed": false,
+        "provider_bill_reconciled": false
+      },
+      "issues": [
+        {
+          "code": "RAW_DIRECTORY_HAS_NO_FILES",
+          "path": "prefixes",
+          "severity": "warning"
+        },
+        {
+          "code": "RAW_DIRECTORY_HAS_NO_FILES",
+          "path": "private",
+          "severity": "warning"
+        }
+      ],
+      "integrity": {
+        "ok": true,
+        "checked_files": 25,
+        "mismatches": []
+      },
+      "source_bytes_unchanged": true
+    },
+    {
+      "archive": "previously supplied interrupted summary ONLY",
+      "status": "EVIDENCE_WITH_ISSUES",
+      "issues": [
+        {
+          "code": "SOURCE_SNAPSHOT_MISSING",
+          "path": "code_snapshot/run.py",
+          "severity": "error"
+        },
+        {
+          "code": "SOURCE_SNAPSHOT_MISSING",
+          "path": "code_snapshot/requirements.txt",
+          "severity": "error"
+        },
+        {
+          "code": "SOURCE_SNAPSHOT_MISSING",
+          "path": "code_snapshot/config.example.json",
+          "severity": "error"
+        },
+        {
+          "code": "SOURCE_SNAPSHOT_MISSING",
+          "path": "code_snapshot/pilot/__init__.py",
+          "severity": "error"
+        },
+        {
+          "code": "SOURCE_SNAPSHOT_MISSING",
+          "path": "code_snapshot/pilot/client.py",
+          "severity": "error"
+        },
+        {
+          "code": "SOURCE_SNAPSHOT_MISSING",
+          "path": "code_snapshot/pilot/common.py",
+          "severity": "error"
+        },
+        {
+          "code": "SOURCE_SNAPSHOT_MISSING",
+          "path": "code_snapshot/pilot/readiness.py",
+          "severity": "error"
+        },
+        {
+          "code": "SOURCE_SNAPSHOT_MISSING",
+          "path": "code_snapshot/pilot/recheck.py",
+          "severity": "error"
+        },
+        {
+          "code": "SOURCE_SNAPSHOT_MISSING",
+          "path": "code_snapshot/pilot/report.py",
+          "severity": "error"
+        },
+        {
+          "code": "SOURCE_SNAPSHOT_MISSING",
+          "path": "code_snapshot/vendor/__init__.py",
+          "severity": "error"
+        },
+        {
+          "code": "SOURCE_SNAPSHOT_MISSING",
+          "path": "code_snapshot/vendor/recheck_core.py",
+          "severity": "error"
+        },
+        {
+          "code": "SOURCE_SNAPSHOT_MISSING",
+          "path": "code_snapshot/docs/API_SOURCES.md",
+          "severity": "error"
+        },
+        {
+          "code": "SOURCE_SNAPSHOT_MISSING",
+          "path": "code_snapshot/docs/IMPLEMENTATION_PLAN.md",
+          "severity": "error"
+        },
+        {
+          "code": "SOURCE_SNAPSHOT_MISSING",
+          "path": "code_snapshot/docs/PROTOCOL.md",
+          "severity": "error"
+        },
+        {
+          "code": "SOURCE_SNAPSHOT_MISSING",
+          "path": "code_snapshot/docs/RETURN_REVIEW.md",
+          "severity": "error"
+        },
+        {
+          "code": "RAW_DIRECTORY_HAS_NO_FILES",
+          "path": "calls",
+          "severity": "warning"
+        },
+        {
+          "code": "RAW_DIRECTORY_HAS_NO_FILES",
+          "path": "attempts",
+          "severity": "warning"
+        },
+        {
+          "code": "RAW_DIRECTORY_HAS_NO_FILES",
+          "path": "prefixes",
+          "severity": "warning"
+        },
+        {
+          "code": "RAW_DIRECTORY_HAS_NO_FILES",
+          "path": "private",
+          "severity": "warning"
+        }
+      ],
+      "ledger": {
+        "started_attempts": 0,
+        "finished_attempts": 0,
+        "pending_attempts": [],
+        "successful_results": 0,
+        "completed_call_files": 0,
+        "truncated_responses": 0,
+        "error_results": 0,
+        "missing_usage_results": 0,
+        "known_prompt_tokens_finished_attempts": 0,
+        "known_completion_tokens_finished_attempts": 0,
+        "task_record_files": 0,
+        "prefix_files": 0,
+        "returned_model_ids": [],
+        "cost_estimate_recomputed": false,
+        "provider_bill_reconciled": false
+      },
+      "source_bytes_unchanged": true
+    }
+  ]
+}

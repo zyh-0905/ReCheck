@@ -1,0 +1,214 @@
+test_gold_does_not_change_selected_action (tests.test_runtime.RuntimeTests.test_gold_does_not_change_selected_action) ... FAIL
+test_immutable_write (tests.test_runtime.RuntimeTests.test_immutable_write) ... FAIL
+test_network_blocked (tests.test_runtime.RuntimeTests.test_network_blocked) ... FAIL
+test_only_chosen_model_predicts_each_policy (tests.test_runtime.RuntimeTests.test_only_chosen_model_predicts_each_policy) ... FAIL
+test_real_budget_and_outputs (tests.test_runtime.RuntimeTests.test_real_budget_and_outputs) ... FAIL
+test_reference_mean_not_money (tests.test_runtime.RuntimeTests.test_reference_mean_not_money) ... FAIL
+test_source_tamper_detected (tests.test_runtime.RuntimeTests.test_source_tamper_detected) ... FAIL
+test_strict_state_has_no_true_mode_field (tests.test_runtime.RuntimeTests.test_strict_state_has_no_true_mode_field) ... FAIL
+
+======================================================================
+FAIL: test_gold_does_not_change_selected_action (tests.test_runtime.RuntimeTests.test_gold_does_not_change_selected_action)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_runtime.py", line 5, in mod
+    try:return importlib.import_module('r6lib.'+name)
+               ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/importlib/__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'r6lib.runtime'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_runtime.py", line 47, in test_gold_does_not_change_selected_action
+    r=mod(self,'runtime');p,s,c=self.setup_run();sol=r.planner(p,'shared',s,'single_only')
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_runtime.py", line 6, in mod
+    except ImportError as e:t.fail(name+' not implemented: '+str(e))
+                            ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: runtime not implemented: No module named 'r6lib.runtime'
+
+======================================================================
+FAIL: test_immutable_write (tests.test_runtime.RuntimeTests.test_immutable_write)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_runtime.py", line 5, in mod
+    try:return importlib.import_module('r6lib.'+name)
+               ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/importlib/__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'r6lib.storage'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_runtime.py", line 29, in test_immutable_write
+    st=mod(self,'storage')
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_runtime.py", line 6, in mod
+    except ImportError as e:t.fail(name+' not implemented: '+str(e))
+                            ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: storage not implemented: No module named 'r6lib.storage'
+
+======================================================================
+FAIL: test_network_blocked (tests.test_runtime.RuntimeTests.test_network_blocked)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_runtime.py", line 5, in mod
+    try:return importlib.import_module('r6lib.'+name)
+               ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/importlib/__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'r6lib.storage'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_runtime.py", line 34, in test_network_blocked
+    st=mod(self,'storage')
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_runtime.py", line 6, in mod
+    except ImportError as e:t.fail(name+' not implemented: '+str(e))
+                            ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: storage not implemented: No module named 'r6lib.storage'
+
+======================================================================
+FAIL: test_only_chosen_model_predicts_each_policy (tests.test_runtime.RuntimeTests.test_only_chosen_model_predicts_each_policy)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_runtime.py", line 5, in mod
+    try:return importlib.import_module('r6lib.'+name)
+               ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/importlib/__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'r6lib.runtime'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_runtime.py", line 22, in test_only_chosen_model_predicts_each_policy
+    r=mod(self,'runtime');p,s,c=self.setup_run();sol=r.planner(p,'shared',s,'single_only');out=r.run_one(c,p,'shared','single_only',s,sol)
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_runtime.py", line 6, in mod
+    except ImportError as e:t.fail(name+' not implemented: '+str(e))
+                            ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: runtime not implemented: No module named 'r6lib.runtime'
+
+======================================================================
+FAIL: test_real_budget_and_outputs (tests.test_runtime.RuntimeTests.test_real_budget_and_outputs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_runtime.py", line 5, in mod
+    try:return importlib.import_module('r6lib.'+name)
+               ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/importlib/__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'r6lib.runtime'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_runtime.py", line 14, in test_real_budget_and_outputs
+    r=mod(self,'runtime');p,s,c=self.setup_run();sol=r.planner(p,'shared',s,'single_only');out=r.run_one(c,p,'shared','single_only',s,sol)
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_runtime.py", line 6, in mod
+    except ImportError as e:t.fail(name+' not implemented: '+str(e))
+                            ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: runtime not implemented: No module named 'r6lib.runtime'
+
+======================================================================
+FAIL: test_reference_mean_not_money (tests.test_runtime.RuntimeTests.test_reference_mean_not_money)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_runtime.py", line 5, in mod
+    try:return importlib.import_module('r6lib.'+name)
+               ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/importlib/__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'r6lib.runtime'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_runtime.py", line 44, in test_reference_mean_not_money
+    mod(self,'runtime');p=data.protocol()
+    ~~~^^^^^^^^^^^^^^^^
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_runtime.py", line 6, in mod
+    except ImportError as e:t.fail(name+' not implemented: '+str(e))
+                            ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: runtime not implemented: No module named 'r6lib.runtime'
+
+======================================================================
+FAIL: test_source_tamper_detected (tests.test_runtime.RuntimeTests.test_source_tamper_detected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_runtime.py", line 5, in mod
+    try:return importlib.import_module('r6lib.'+name)
+               ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/importlib/__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'r6lib.storage'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_runtime.py", line 38, in test_source_tamper_detected
+    st=mod(self,'storage')
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_runtime.py", line 6, in mod
+    except ImportError as e:t.fail(name+' not implemented: '+str(e))
+                            ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: storage not implemented: No module named 'r6lib.storage'
+
+======================================================================
+FAIL: test_strict_state_has_no_true_mode_field (tests.test_runtime.RuntimeTests.test_strict_state_has_no_true_mode_field)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_runtime.py", line 5, in mod
+    try:return importlib.import_module('r6lib.'+name)
+               ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/importlib/__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'r6lib.runtime'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_runtime.py", line 25, in test_strict_state_has_no_true_mode_field
+    r=mod(self,'runtime');p,s,c=self.setup_run()
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_runtime.py", line 6, in mod
+    except ImportError as e:t.fail(name+' not implemented: '+str(e))
+                            ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: runtime not implemented: No module named 'r6lib.runtime'
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.005s
+
+FAILED (failures=8)

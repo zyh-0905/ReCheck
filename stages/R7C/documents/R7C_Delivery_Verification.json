@@ -1,0 +1,146 @@
+{
+  "protocol": "R7C_NATIVE_AGENT_DIAGNOSIS_01",
+  "version": "r7c-1.0.0",
+  "fresh_unpacked_unit_tests": 51,
+  "test_failures": 0,
+  "native_offline_cases": 24,
+  "native_scripted_comparisons": 96,
+  "native_tools_upstream_unmodified": true,
+  "upstream_commit": "c8571d7854316d2e1c5f288e59fe1e34e53f6dd1",
+  "fresh_minimal_environment": "Linux x86_64 / CPython3.11.14 / NumPy1.26.4 / Polars0.20.31",
+  "minimal_pip_check_pass": true,
+  "fresh_extracted_software_flow": {
+    "audit": {
+      "attempts": 232,
+      "episodes": 72,
+      "evidence_kind": "SOFTWARE_TEST_NOT_RESEARCH",
+      "issues": [],
+      "mechanical_pass": true,
+      "method_summary": {
+        "memory_standard": {
+          "decisions": 77,
+          "effective_success": 24,
+          "episodes": 24,
+          "safe_goal_met": 24,
+          "side_effect_cases": 0,
+          "tool_calls": 53
+        },
+        "memory_verify": {
+          "decisions": 77,
+          "effective_success": 24,
+          "episodes": 24,
+          "safe_goal_met": 24,
+          "side_effect_cases": 0,
+          "tool_calls": 53
+        },
+        "no_memory": {
+          "decisions": 77,
+          "effective_success": 24,
+          "episodes": 24,
+          "safe_goal_met": 24,
+          "side_effect_cases": 0,
+          "tool_calls": 53
+        }
+      },
+      "money_cost": "UNKNOWN",
+      "new_audit_llm_calls": 0,
+      "notes": [],
+      "reconstructed_decisions": 231,
+      "response_records": 232,
+      "run_complete": true,
+      "scientific_gate": "PENDING_RESEARCHER_REVIEW",
+      "scope": "Internal consistency; not provider weight/billing authentication. Native-tool constructed task diagnosis; not official benchmark.",
+      "source": {
+        "files": 35,
+        "manifest_sha256": "b2772298ac833c5ff5210669ddd04a40f5dbabc4ac73890521d2a0db6cad5195",
+        "pass": true
+      }
+    },
+    "cap_test": false,
+    "export": {
+      "files": 1078,
+      "pass": true
+    },
+    "network_fixture_calls": 232,
+    "no_resampling": true,
+    "remote_calls": 0
+  },
+  "maximum_decision_cap_software_flow": {
+    "audit": {
+      "attempts": 433,
+      "episodes": 72,
+      "evidence_kind": "SOFTWARE_TEST_NOT_RESEARCH",
+      "issues": [],
+      "mechanical_pass": true,
+      "method_summary": {
+        "memory_standard": {
+          "decisions": 144,
+          "effective_success": 0,
+          "episodes": 24,
+          "safe_goal_met": 1,
+          "side_effect_cases": 0,
+          "tool_calls": 144
+        },
+        "memory_verify": {
+          "decisions": 144,
+          "effective_success": 0,
+          "episodes": 24,
+          "safe_goal_met": 1,
+          "side_effect_cases": 0,
+          "tool_calls": 144
+        },
+        "no_memory": {
+          "decisions": 144,
+          "effective_success": 0,
+          "episodes": 24,
+          "safe_goal_met": 1,
+          "side_effect_cases": 0,
+          "tool_calls": 144
+        }
+      },
+      "money_cost": "UNKNOWN",
+      "new_audit_llm_calls": 0,
+      "notes": [],
+      "reconstructed_decisions": 432,
+      "response_records": 433,
+      "run_complete": true,
+      "scientific_gate": "PENDING_RESEARCHER_REVIEW",
+      "scope": "Internal consistency; not provider weight/billing authentication. Native-tool constructed task diagnosis; not official benchmark.",
+      "source": {
+        "files": 35,
+        "manifest_sha256": "b2772298ac833c5ff5210669ddd04a40f5dbabc4ac73890521d2a0db6cad5195",
+        "pass": true
+      }
+    },
+    "cap_test": true,
+    "export": {
+      "files": 1882,
+      "pass": true
+    },
+    "network_fixture_calls": 433,
+    "no_resampling": true,
+    "remote_calls": 0
+  },
+  "main_before_smoke_blocked": true,
+  "completed_cli_no_resampling": true,
+  "planned_live_cases": 24,
+  "planned_live_arms": 3,
+  "planned_live_episodes": 72,
+  "max_live_decisions_per_episode": 6,
+  "max_live_main_attempts": 432,
+  "max_live_smoke_attempts": 1,
+  "max_live_total_attempts": 433,
+  "new_remote_llm_calls": 0,
+  "new_external_tool_service_calls": 0,
+  "native_dispatch": "Allowlisted direct native functions; not InteractiveConsole, official Scenario.play or full benchmark",
+  "upstream_tests_claim": "This delivery does not claim all upstream tests passed; R7B known failures remain separately documented.",
+  "scripted_results_label": "DETERMINISTIC_NATIVE_DIAGNOSTICS_NOT_LLM_RESULTS",
+  "scope": "Frozen development model-behavior diagnosis, not a new method efficacy claim or confirmatory evaluation",
+  "windows_macos_runtime_tested": false,
+  "independent_human_review": false,
+  "first_fixture_issue_retained": "Software-only helper name parameter collision at second HTTP request; regression test added and helper corrected. No remote call or research-data replacement.",
+  "source_files": 35,
+  "source_manifest_sha256": "b2772298ac833c5ff5210669ddd04a40f5dbabc4ac73890521d2a0db6cad5195",
+  "zip_sha256": "7b28a547ce4a11a72bb185780e6e1b9df28da9e4e38c73edd80d68a947449d1a",
+  "zip_bytes": 274814
+}

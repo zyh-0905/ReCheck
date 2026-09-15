@@ -1,0 +1,187 @@
+test_amortized_cost_has_explicit_units_and_startup (tests.test_study.StudyTests.test_amortized_cost_has_explicit_units_and_startup) ... FAIL
+test_calibration_cost_accounting (tests.test_study.StudyTests.test_calibration_cost_accounting) ... FAIL
+test_exact_integer_cost_units (tests.test_study.StudyTests.test_exact_integer_cost_units) ... FAIL
+test_modified_budget_rejected (tests.test_study.StudyTests.test_modified_budget_rejected) ... FAIL
+test_modified_raw_answer_rejected (tests.test_study.StudyTests.test_modified_raw_answer_rejected) ... FAIL
+test_original_protocol_marked_development (tests.test_study.StudyTests.test_original_protocol_marked_development) ... FAIL
+test_reference_and_runtime_labels_do_not_share_cases (tests.test_study.StudyTests.test_reference_and_runtime_labels_do_not_share_cases) ... FAIL
+
+======================================================================
+FAIL: test_amortized_cost_has_explicit_units_and_startup (tests.test_study.StudyTests.test_amortized_cost_has_explicit_units_and_startup)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_study.py", line 5, in mod
+    try:return importlib.import_module('r6lib.'+name)
+               ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/importlib/__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'r6lib.review'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_study.py", line 37, in test_amortized_cost_has_explicit_units_and_startup
+    review=mod(self,'review')
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_study.py", line 6, in mod
+    except ImportError as e:t.fail(name+' missing: '+str(e))
+                            ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: review missing: No module named 'r6lib.review'
+
+======================================================================
+FAIL: test_calibration_cost_accounting (tests.test_study.StudyTests.test_calibration_cost_accounting)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_study.py", line 5, in mod
+    try:return importlib.import_module('r6lib.'+name)
+               ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/importlib/__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'r6lib.review'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_study.py", line 10, in test_calibration_cost_accounting
+    review=mod(self,'review');p=data.protocol()
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_study.py", line 6, in mod
+    except ImportError as e:t.fail(name+' missing: '+str(e))
+                            ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: review missing: No module named 'r6lib.review'
+
+======================================================================
+FAIL: test_exact_integer_cost_units (tests.test_study.StudyTests.test_exact_integer_cost_units)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_study.py", line 5, in mod
+    try:return importlib.import_module('r6lib.'+name)
+               ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/importlib/__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'r6lib.review'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_study.py", line 17, in test_exact_integer_cost_units
+    review=mod(self,'review')
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_study.py", line 6, in mod
+    except ImportError as e:t.fail(name+' missing: '+str(e))
+                            ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: review missing: No module named 'r6lib.review'
+
+======================================================================
+FAIL: test_modified_budget_rejected (tests.test_study.StudyTests.test_modified_budget_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_study.py", line 5, in mod
+    try:return importlib.import_module('r6lib.'+name)
+               ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/importlib/__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'r6lib.review'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_study.py", line 29, in test_modified_budget_rejected
+    review=mod(self,'review');p=data.protocol();p['steps']=2;p['calibration_panels']=1;p['streams_per_condition']=1
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_study.py", line 6, in mod
+    except ImportError as e:t.fail(name+' missing: '+str(e))
+                            ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: review missing: No module named 'r6lib.review'
+
+======================================================================
+FAIL: test_modified_raw_answer_rejected (tests.test_study.StudyTests.test_modified_raw_answer_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_study.py", line 5, in mod
+    try:return importlib.import_module('r6lib.'+name)
+               ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/importlib/__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'r6lib.review'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_study.py", line 21, in test_modified_raw_answer_rejected
+    review=mod(self,'review');p=data.protocol();p['steps']=2;p['calibration_panels']=1;p['streams_per_condition']=1
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_study.py", line 6, in mod
+    except ImportError as e:t.fail(name+' missing: '+str(e))
+                            ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: review missing: No module named 'r6lib.review'
+
+======================================================================
+FAIL: test_original_protocol_marked_development (tests.test_study.StudyTests.test_original_protocol_marked_development)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_study.py", line 5, in mod
+    try:return importlib.import_module('r6lib.'+name)
+               ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/importlib/__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'r6lib.study'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_study.py", line 40, in test_original_protocol_marked_development
+    study=mod(self,'study');self.assertEqual(data.protocol()['phase'],'development_offline_not_confirmatory')
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_study.py", line 6, in mod
+    except ImportError as e:t.fail(name+' missing: '+str(e))
+                            ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: study missing: No module named 'r6lib.study'
+
+======================================================================
+FAIL: test_reference_and_runtime_labels_do_not_share_cases (tests.test_study.StudyTests.test_reference_and_runtime_labels_do_not_share_cases)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_study.py", line 5, in mod
+    try:return importlib.import_module('r6lib.'+name)
+               ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/importlib/__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'r6lib.study'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_study.py", line 34, in test_reference_and_runtime_labels_do_not_share_cases
+    study=mod(self,'study');p=data.protocol();ids=data.split_ids(p)
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_study.py", line 6, in mod
+    except ImportError as e:t.fail(name+' missing: '+str(e))
+                            ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: study missing: No module named 'r6lib.study'
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.005s
+
+FAILED (failures=7)

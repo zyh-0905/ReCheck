@@ -1,0 +1,119 @@
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 720, in _warm_feature_flows
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 704, in _warm_collaboration_flows
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/generated/interface/models.py", line 32317, in hydrate_crdt_from_proto
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/remote.py", line 749, in __call__
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/client.py", line 150, in call
+artifact_tool.rpc.client.RemoteError: hydrateCrdtFromProto requires an empty collaborative document.
+test_export_excludes_local_secrets (test_r2_boundary.BoundaryTests.test_export_excludes_local_secrets) ... FAIL
+test_export_key_pattern_blocked (test_r2_boundary.BoundaryTests.test_export_key_pattern_blocked) ... FAIL
+test_export_refuses_overwrite (test_r2_boundary.BoundaryTests.test_export_refuses_overwrite) ... FAIL
+test_export_symlink_rejected (test_r2_boundary.BoundaryTests.test_export_symlink_rejected) ... FAIL
+test_orphan_result_not_passed (test_r2_boundary.BoundaryTests.test_orphan_result_not_passed) ... FAIL
+test_prior_regression_reproduced (test_r2_boundary.BoundaryTests.test_prior_regression_reproduced) ... FAIL
+test_registered_not_claimed_sent (test_r2_boundary.BoundaryTests.test_registered_not_claimed_sent) ... FAIL
+test_repair_cost_not_call_count (test_r2_boundary.BoundaryTests.test_repair_cost_not_call_count) ... FAIL
+
+======================================================================
+FAIL: test_export_excludes_local_secrets (test_r2_boundary.BoundaryTests.test_export_excludes_local_secrets)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_boundary.py", line 20, in test_export_excludes_local_secrets
+    out=root/"uploads/x.zip";self.fn(storage,"export_bundle")(root,out)
+                             ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_boundary.py", line 8, in fn
+    self.assertTrue(callable(getattr(module,name,None)),name+" missing");return getattr(module,name)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : export_bundle missing
+
+======================================================================
+FAIL: test_export_key_pattern_blocked (test_r2_boundary.BoundaryTests.test_export_key_pattern_blocked)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_boundary.py", line 33, in test_export_key_pattern_blocked
+    with self.assertRaises(ValueError):self.fn(storage,"export_bundle")(root,root/"uploads/x.zip")
+                                       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_boundary.py", line 8, in fn
+    self.assertTrue(callable(getattr(module,name,None)),name+" missing");return getattr(module,name)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : export_bundle missing
+
+======================================================================
+FAIL: test_export_refuses_overwrite (test_r2_boundary.BoundaryTests.test_export_refuses_overwrite)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_boundary.py", line 14, in test_export_refuses_overwrite
+    self.fn(storage,"export_bundle")(root,out)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_boundary.py", line 8, in fn
+    self.assertTrue(callable(getattr(module,name,None)),name+" missing");return getattr(module,name)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : export_bundle missing
+
+======================================================================
+FAIL: test_export_symlink_rejected (test_r2_boundary.BoundaryTests.test_export_symlink_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_boundary.py", line 28, in test_export_symlink_rejected
+    with self.assertRaises(ValueError):self.fn(storage,"export_bundle")(root,root/"uploads/x.zip")
+                                       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_boundary.py", line 8, in fn
+    self.assertTrue(callable(getattr(module,name,None)),name+" missing");return getattr(module,name)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : export_bundle missing
+
+======================================================================
+FAIL: test_orphan_result_not_passed (test_r2_boundary.BoundaryTests.test_orphan_result_not_passed)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_boundary.py", line 47, in test_orphan_result_not_passed
+    q=self.fn(review,"ledger_check")(root)
+      ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_boundary.py", line 8, in fn
+    self.assertTrue(callable(getattr(module,name,None)),name+" missing");return getattr(module,name)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : ledger_check missing
+
+======================================================================
+FAIL: test_prior_regression_reproduced (test_r2_boundary.BoundaryTests.test_prior_regression_reproduced)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_boundary.py", line 35, in test_prior_regression_reproduced
+    q=self.fn(review,"regression_checks")()
+      ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_boundary.py", line 8, in fn
+    self.assertTrue(callable(getattr(module,name,None)),name+" missing");return getattr(module,name)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : regression_checks missing
+
+======================================================================
+FAIL: test_registered_not_claimed_sent (test_r2_boundary.BoundaryTests.test_registered_not_claimed_sent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_boundary.py", line 53, in test_registered_not_claimed_sent
+    q=self.fn(review,"ledger_check")(root)
+      ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_boundary.py", line 8, in fn
+    self.assertTrue(callable(getattr(module,name,None)),name+" missing");return getattr(module,name)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : ledger_check missing
+
+======================================================================
+FAIL: test_repair_cost_not_call_count (test_r2_boundary.BoundaryTests.test_repair_cost_not_call_count)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_boundary.py", line 38, in test_repair_cost_not_call_count
+    q=self.fn(review,"repair_cost_diagnostic")()
+      ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_boundary.py", line 8, in fn
+    self.assertTrue(callable(getattr(module,name,None)),name+" missing");return getattr(module,name)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : repair_cost_diagnostic missing
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.004s
+
+FAILED (failures=8)

@@ -1,0 +1,311 @@
+{
+  "attempt": 147,
+  "error_type": null,
+  "http_status": 200,
+  "latency_seconds": 1.8564959168434143,
+  "logical_id": "primary_x06_minimal/turn_01",
+  "metadata": {
+    "arm": "minimal",
+    "case_id": "x06",
+    "episode_id": "primary_x06_minimal",
+    "phase": "primary",
+    "turn": 1
+  },
+  "monetary_cost": "UNKNOWN",
+  "payload": {
+    "max_tokens": 16384,
+    "messages": [
+      {
+        "content": "You operate a local administrative database through the provided tools. Complete the user's request, preserving all other business fields and records. Historical observations may be outdated. Only actual tool responses are observations; do not invent executions or results. Use the documented optional preconditions as appropriate. Every offered tool and precondition is available to you. When finished use finish_task to record your own assessment, not as a substitute for checking the work. If uncertain or unable to complete, say so. There is a limit of eight model responses for this episode.\nBefore reporting completion, check that your update took effect.\nFor an update, submit only business fields that the user asked to change. Omitted business fields are preserved by the tool; do not resend old unrelated fields merely to copy a previous row.",
+        "role": "system"
+      },
+      {
+        "content": "{\"historical_observation\":{\"arguments\":{\"lane\":\"cedar-06\",\"min_units\":4},\"result\":{\"error\":null,\"ok\":true,\"value\":{\"lane\":\"cedar-06\",\"min_units\":4,\"record\":{\"carrier\":\"carrier-old\",\"id\":\"job-06-a\",\"lane\":\"cedar-06\",\"note\":\"keep-batch-0\",\"priority\":30,\"ready_after\":1800100000,\"state\":\"READY\",\"units\":8,\"version\":1},\"selection_token\":\"e4da13ac91fda6dba2c780153d3fe461507b6324399dd51d8e4a778604094dde\"}},\"timing\":\"Observed before this task; this is not a guarantee of current state.\",\"tool\":\"select_batch\"},\"task\":\"For lane cedar-06, select the READY batch with units at least 4 and highest priority (tie: ascending id), and set its ready_after to 1800120000. Preserve every other business field and every other record. Use the documented tools and report what you actually did.\"}",
+        "role": "user"
+      },
+      {
+        "content": "I'll start by reading the current eligible selection for the lane.",
+        "reasoning_content": "Let me start by reading the current batch selection for lane cedar-06 with min_units 4.",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": "{\"lane\": \"cedar-06\", \"min_units\": 4}",
+              "name": "select_batch"
+            },
+            "id": "call_00_pYkHyJQo60E7lJIS164u6115",
+            "index": 0,
+            "type": "function"
+          }
+        ]
+      },
+      {
+        "content": "{\"error\":null,\"ok\":true,\"value\":{\"lane\":\"cedar-06\",\"min_units\":4,\"record\":{\"carrier\":\"carrier-old\",\"id\":\"job-06-a\",\"lane\":\"cedar-06\",\"note\":\"keep-batch-0\",\"priority\":30,\"ready_after\":1800100000,\"state\":\"READY\",\"units\":8,\"version\":1},\"selection_token\":\"e4da13ac91fda6dba2c780153d3fe461507b6324399dd51d8e4a778604094dde\"}}",
+        "role": "tool",
+        "tool_call_id": "call_00_pYkHyJQo60E7lJIS164u6115"
+      }
+    ],
+    "model": "deepseek-flash",
+    "reasoning_effort": "high",
+    "stream": false,
+    "thinking": {
+      "type": "enabled"
+    },
+    "tool_choice": "auto",
+    "tools": [
+      {
+        "function": {
+          "description": "Read the CURRENT route for a service and join its current configuration. Returns record plus selection_token. The route is a separate resource; a configuration row version does not protect it.",
+          "name": "resolve_service",
+          "parameters": {
+            "additionalProperties": false,
+            "properties": {
+              "service": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "service"
+            ],
+            "type": "object"
+          }
+        },
+        "type": "function"
+      },
+      {
+        "function": {
+          "description": "Read one configuration by exact id. This does NOT resolve a service route.",
+          "name": "get_config",
+          "parameters": {
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id"
+            ],
+            "type": "object"
+          }
+        },
+        "type": "function"
+      },
+      {
+        "function": {
+          "description": "Update only supplied configuration business fields; omitted fields are preserved. No write occurs on a failed precondition. Optional expected_version checks only this row. Optional service+expected_selection_token atomically checks the route and target within the SAME SQLite transaction. It is available to every agent; do not invent tokens.",
+          "name": "update_config",
+          "parameters": {
+            "additionalProperties": false,
+            "properties": {
+              "expected_selection_token": {
+                "type": "string"
+              },
+              "expected_version": {
+                "type": "integer"
+              },
+              "id": {
+                "type": "string"
+              },
+              "label": {
+                "type": "string"
+              },
+              "max_attempts": {
+                "type": "integer"
+              },
+              "note": {
+                "type": "string"
+              },
+              "owner": {
+                "type": "string"
+              },
+              "service": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id"
+            ],
+            "type": "object"
+          }
+        },
+        "type": "function"
+      },
+      {
+        "function": {
+          "description": "Read the CURRENT READY batch for a lane with units >= min_units, highest priority then ascending id. Returns the chosen record plus selection_token. Selection depends on other rows; the chosen row version alone cannot protect ranking.",
+          "name": "select_batch",
+          "parameters": {
+            "additionalProperties": false,
+            "properties": {
+              "lane": {
+                "type": "string"
+              },
+              "min_units": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "lane",
+              "min_units"
+            ],
+            "type": "object"
+          }
+        },
+        "type": "function"
+      },
+      {
+        "function": {
+          "description": "Read a batch by exact id. This DOES NOT check if it is still the current eligible selection.",
+          "name": "get_batch",
+          "parameters": {
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id"
+            ],
+            "type": "object"
+          }
+        },
+        "type": "function"
+      },
+      {
+        "function": {
+          "description": "Update only supplied business fields; omitted fields are preserved. Optional expected_version checks only this row. Optional lane_query+min_units_query+expected_selection_token atomically checks the current ranked eligible selection and target in the SAME transaction. A failed precondition writes nothing. Query before retrying; no automatic retry.",
+          "name": "update_batch",
+          "parameters": {
+            "additionalProperties": false,
+            "properties": {
+              "carrier": {
+                "type": "string"
+              },
+              "expected_selection_token": {
+                "type": "string"
+              },
+              "expected_version": {
+                "type": "integer"
+              },
+              "id": {
+                "type": "string"
+              },
+              "lane": {
+                "type": "string"
+              },
+              "lane_query": {
+                "type": "string"
+              },
+              "min_units_query": {
+                "type": "integer"
+              },
+              "note": {
+                "type": "string"
+              },
+              "priority": {
+                "type": "integer"
+              },
+              "ready_after": {
+                "type": "integer"
+              },
+              "state": {
+                "type": "string"
+              },
+              "units": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "id"
+            ],
+            "type": "object"
+          }
+        },
+        "type": "function"
+      },
+      {
+        "function": {
+          "description": "Record your own completion assessment and end the episode. This tool does NOT verify the database, approve earlier writes, or reveal scores. Put it last if using a batch. Use completed only if you believe the whole request, including preservation of other fields, was met.",
+          "name": "finish_task",
+          "parameters": {
+            "additionalProperties": false,
+            "properties": {
+              "message": {
+                "type": "string"
+              },
+              "status": {
+                "enum": [
+                  "completed",
+                  "incomplete",
+                  "uncertain"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "status",
+              "message"
+            ],
+            "type": "object"
+          }
+        },
+        "type": "function"
+      }
+    ]
+  },
+  "payload_sha256": "4c87fa1bcb5e2279ed460465944c7c6ba8052150a1c437f2d6a4a83a19973f0f",
+  "raw_original_sha256": "e537e42bbf295e412797439a7c4fe9375df108c18b5843c66a90b77a34c6b15d",
+  "raw_stored_sha256": "e537e42bbf295e412797439a7c4fe9375df108c18b5843c66a90b77a34c6b15d",
+  "received_utc": "2026-09-14T13:51:14.397600+00:00",
+  "registered_utc": "2026-09-14T13:51:12.182886+00:00",
+  "registration_is_not_remote_receipt": true,
+  "request_sha256": "e99087c843199a68f4baaecec91a3d494cfffa5a242d72cb859d4eb4a37a1576",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "tool_calls",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "The current winner is `job-06-a` (priority 30). I'll update its `ready_after` using the atomic selection precondition so the write only succeeds if the ranking is unchanged.",
+          "reasoning_content": "The current selection is job-06-a, version 1, token e4da13ac... I need to update ready_after to 1800120000. I'll use the atomic precondition: lane_query, min_units_query, expected_selection_token.\n\nLet me update with id job-06-a, ready_after 1800120000, and expected_selection_token. Should I also use expected_version? The documented optional preconditions include lane_query+min_units_query+expected_selection_token. Let me use all to be safe. Actually let me use the selection token atomic check, which is the documented strong protection. I'll include lane_query, min_units_query, expected_selection_token.",
+          "role": "assistant",
+          "tool_calls": [
+            {
+              "function": {
+                "arguments": "{\"id\": \"job-06-a\", \"ready_after\": 1800120000, \"lane_query\": \"cedar-06\", \"min_units_query\": 4, \"expected_selection_token\": \"e4da13ac91fda6dba2c780153d3fe461507b6324399dd51d8e4a778604094dde\"}",
+                "name": "update_batch"
+              },
+              "id": "call_00_MvmsUYZ97hsSuPhGfsGg4599",
+              "index": 0,
+              "type": "function"
+            }
+          ]
+        }
+      }
+    ],
+    "created": 1789393872,
+    "id": "e3167498-a846-49db-a5de-2b8c6a0d73c8",
+    "model": "deepseek-flash",
+    "object": "chat.completion",
+    "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669",
+    "usage": {
+      "completion_tokens": 341,
+      "completion_tokens_details": {
+        "reasoning_tokens": 146
+      },
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 167,
+      "prompt_tokens": 1703,
+      "prompt_tokens_details": {
+        "cached_tokens": 1536
+      },
+      "total_tokens": 2044
+    }
+  },
+  "response_parse_error": null,
+  "secret_redacted": false,
+  "status": "received"
+}

@@ -1,0 +1,283 @@
+{
+  "after_world": {
+    "contact": [
+      {
+        "is_self": false,
+        "name": "Fredrik Thordendal",
+        "person_id": "9e137f06-916a-5310-8174-cf0b7e9f7054",
+        "phone_number": "+12025550117",
+        "relationship": "friend"
+      },
+      {
+        "is_self": false,
+        "name": "Homer S",
+        "person_id": "e3570ab6-0819-5032-be1e-2b366390c8ef",
+        "phone_number": "+10000000000",
+        "relationship": "boss"
+      },
+      {
+        "is_self": false,
+        "name": "John Petrucci",
+        "person_id": "a22e1984-6c6c-530c-8831-c3ea3b5138e7",
+        "phone_number": "+12025550119",
+        "relationship": "friend"
+      },
+      {
+        "is_self": true,
+        "name": "Tomas Haake",
+        "person_id": "3815cac9-3cab-5d75-89e2-fe12fe19779e",
+        "phone_number": "+11233344455",
+        "relationship": "self"
+      }
+    ],
+    "messaging": [
+      {
+        "content": "Good, keep me posted",
+        "creation_timestamp": 1789283830.253019,
+        "message_id": "0a0102dc-ceaf-5ebb-a665-63da99bf7c47",
+        "recipient_person_id": "3815cac9-3cab-5d75-89e2-fe12fe19779e",
+        "recipient_phone_number": "+11233344455",
+        "sender_person_id": "e3570ab6-0819-5032-be1e-2b366390c8ef",
+        "sender_phone_number": "+10000000000"
+      },
+      {
+        "content": "Hey kid, you want some GPU?",
+        "creation_timestamp": 1789009986.25296,
+        "message_id": "0d25dbb9-3737-5e0e-b0f0-7c1e359baccc",
+        "recipient_person_id": "3815cac9-3cab-5d75-89e2-fe12fe19779e",
+        "recipient_phone_number": "+11233344455",
+        "sender_person_id": null,
+        "sender_phone_number": "+18307976530"
+      },
+      {
+        "content": "How's it going",
+        "creation_timestamp": 1789280109.252997,
+        "message_id": "0a0102dc-ceaf-5ebb-a665-63da99bf7c47",
+        "recipient_person_id": "3815cac9-3cab-5d75-89e2-fe12fe19779e",
+        "recipient_phone_number": "+11233344455",
+        "sender_person_id": "e3570ab6-0819-5032-be1e-2b366390c8ef",
+        "sender_phone_number": "+10000000000"
+      },
+      {
+        "content": "No leave me alone",
+        "creation_timestamp": 1789013586.252984,
+        "message_id": "caaca9e8-7aa9-55a6-9d32-4b4aefed40d1",
+        "recipient_person_id": null,
+        "recipient_phone_number": "+18307976530",
+        "sender_person_id": "3815cac9-3cab-5d75-89e2-fe12fe19779e",
+        "sender_phone_number": "+11233344455"
+      },
+      {
+        "content": "The rehearsal has moved to 18:30. Please confirm when you can.",
+        "creation_timestamp": 1789295066.139977,
+        "message_id": "2a1c8367-1c2d-4a61-912e-deea894396fa",
+        "recipient_person_id": null,
+        "recipient_phone_number": "+12453344098",
+        "sender_person_id": "3815cac9-3cab-5d75-89e2-fe12fe19779e",
+        "sender_phone_number": "+11233344455"
+      },
+      {
+        "content": "Things are proceeding as expected",
+        "creation_timestamp": 1789280169.253008,
+        "message_id": "6c9382cb-720e-5f2c-8ac0-77e7ebdea446",
+        "recipient_person_id": "e3570ab6-0819-5032-be1e-2b366390c8ef",
+        "recipient_phone_number": "+10000000000",
+        "sender_person_id": "3815cac9-3cab-5d75-89e2-fe12fe19779e",
+        "sender_phone_number": "+11233344455"
+      }
+    ],
+    "reminder": [
+      {
+        "content": "Buy a nice rich navy bathing dress",
+        "creation_timestamp": 1789280292.255397,
+        "latitude": 37.3237926356735,
+        "longitude": -122.03961770355414,
+        "reminder_id": "54f20be9-eac3-5e76-8e57-724e48d3d477",
+        "reminder_timestamp": 1789287492.255398
+      },
+      {
+        "content": "Buy tickets for Merrily next week",
+        "creation_timestamp": 1789197492.25539,
+        "latitude": null,
+        "longitude": null,
+        "reminder_id": "da2b856e-9390-511f-bcbe-7005f72cbf5e",
+        "reminder_timestamp": 1789283832.255391
+      },
+      {
+        "content": "Look for Company SF tickets",
+        "creation_timestamp": 1789024692.255377,
+        "latitude": null,
+        "longitude": null,
+        "reminder_id": "8f5b6fc6-1c25-5467-91ba-d4d1e17c7129",
+        "reminder_timestamp": 1789197492.255383
+      }
+    ],
+    "setting": [
+      {
+        "cellular": true,
+        "device_id": "04640c30-ec89-5a3c-9fb4-4af3101c8e04",
+        "latitude": 37.334606,
+        "location_service": true,
+        "longitude": -122.009102,
+        "low_battery_mode": false,
+        "wifi": true
+      }
+    ]
+  },
+  "arm": "inherited",
+  "before_world": {
+    "contact": [
+      {
+        "is_self": false,
+        "name": "Fredrik Thordendal",
+        "person_id": "9e137f06-916a-5310-8174-cf0b7e9f7054",
+        "phone_number": "+12025550117",
+        "relationship": "friend"
+      },
+      {
+        "is_self": false,
+        "name": "Homer S",
+        "person_id": "e3570ab6-0819-5032-be1e-2b366390c8ef",
+        "phone_number": "+10000000000",
+        "relationship": "boss"
+      },
+      {
+        "is_self": false,
+        "name": "John Petrucci",
+        "person_id": "a22e1984-6c6c-530c-8831-c3ea3b5138e7",
+        "phone_number": "+12025550119",
+        "relationship": "friend"
+      },
+      {
+        "is_self": true,
+        "name": "Tomas Haake",
+        "person_id": "3815cac9-3cab-5d75-89e2-fe12fe19779e",
+        "phone_number": "+11233344455",
+        "relationship": "self"
+      }
+    ],
+    "messaging": [
+      {
+        "content": "Good, keep me posted",
+        "creation_timestamp": 1789283830.253019,
+        "message_id": "0a0102dc-ceaf-5ebb-a665-63da99bf7c47",
+        "recipient_person_id": "3815cac9-3cab-5d75-89e2-fe12fe19779e",
+        "recipient_phone_number": "+11233344455",
+        "sender_person_id": "e3570ab6-0819-5032-be1e-2b366390c8ef",
+        "sender_phone_number": "+10000000000"
+      },
+      {
+        "content": "Hey kid, you want some GPU?",
+        "creation_timestamp": 1789009986.25296,
+        "message_id": "0d25dbb9-3737-5e0e-b0f0-7c1e359baccc",
+        "recipient_person_id": "3815cac9-3cab-5d75-89e2-fe12fe19779e",
+        "recipient_phone_number": "+11233344455",
+        "sender_person_id": null,
+        "sender_phone_number": "+18307976530"
+      },
+      {
+        "content": "How's it going",
+        "creation_timestamp": 1789280109.252997,
+        "message_id": "0a0102dc-ceaf-5ebb-a665-63da99bf7c47",
+        "recipient_person_id": "3815cac9-3cab-5d75-89e2-fe12fe19779e",
+        "recipient_phone_number": "+11233344455",
+        "sender_person_id": "e3570ab6-0819-5032-be1e-2b366390c8ef",
+        "sender_phone_number": "+10000000000"
+      },
+      {
+        "content": "No leave me alone",
+        "creation_timestamp": 1789013586.252984,
+        "message_id": "caaca9e8-7aa9-55a6-9d32-4b4aefed40d1",
+        "recipient_person_id": null,
+        "recipient_phone_number": "+18307976530",
+        "sender_person_id": "3815cac9-3cab-5d75-89e2-fe12fe19779e",
+        "sender_phone_number": "+11233344455"
+      },
+      {
+        "content": "Things are proceeding as expected",
+        "creation_timestamp": 1789280169.253008,
+        "message_id": "6c9382cb-720e-5f2c-8ac0-77e7ebdea446",
+        "recipient_person_id": "e3570ab6-0819-5032-be1e-2b366390c8ef",
+        "recipient_phone_number": "+10000000000",
+        "sender_person_id": "3815cac9-3cab-5d75-89e2-fe12fe19779e",
+        "sender_phone_number": "+11233344455"
+      }
+    ],
+    "reminder": [
+      {
+        "content": "Buy a nice rich navy bathing dress",
+        "creation_timestamp": 1789280292.255397,
+        "latitude": 37.3237926356735,
+        "longitude": -122.03961770355414,
+        "reminder_id": "54f20be9-eac3-5e76-8e57-724e48d3d477",
+        "reminder_timestamp": 1789287492.255398
+      },
+      {
+        "content": "Buy tickets for Merrily next week",
+        "creation_timestamp": 1789197492.25539,
+        "latitude": null,
+        "longitude": null,
+        "reminder_id": "da2b856e-9390-511f-bcbe-7005f72cbf5e",
+        "reminder_timestamp": 1789283832.255391
+      },
+      {
+        "content": "Look for Company SF tickets",
+        "creation_timestamp": 1789024692.255377,
+        "latitude": null,
+        "longitude": null,
+        "reminder_id": "8f5b6fc6-1c25-5467-91ba-d4d1e17c7129",
+        "reminder_timestamp": 1789197492.255383
+      }
+    ],
+    "setting": [
+      {
+        "cellular": true,
+        "device_id": "04640c30-ec89-5a3c-9fb4-4af3101c8e04",
+        "latitude": 37.334606,
+        "location_service": true,
+        "longitude": -122.009102,
+        "low_battery_mode": false,
+        "wifi": true
+      }
+    ]
+  },
+  "case_id": "c06",
+  "correct_at_this_commit": true,
+  "episode_id": "primary_c06_inherited",
+  "external_operations": [
+    {
+      "arguments": {
+        "person_id": "9e137f06-916a-5310-8174-cf0b7e9f7054",
+        "phone_number": "+12025550117"
+      },
+      "tool": "modify_contact"
+    },
+    {
+      "arguments": {
+        "person_id": "a22e1984-6c6c-530c-8831-c3ea3b5138e7",
+        "phone_number": "+12025550119"
+      },
+      "tool": "modify_contact"
+    }
+  ],
+  "intent": "literal",
+  "intervention": "binding",
+  "kind": "FROZEN_ACTION_TRANSITION_NOT_AGENT_EPISODE",
+  "native_response": {
+    "error": null,
+    "ok": true,
+    "value": "2a1c8367-1c2d-4a61-912e-deea894396fa"
+  },
+  "new_llm_calls": 0,
+  "prefix_calls_replayed": 1,
+  "source_file_sha256": "a52277b1653f94e0dccc1ab5dbb774504ae4df4761d23751d2a2ac5bfcceb65f",
+  "source_turn": 1,
+  "unchanged_proposed_action": {
+    "arguments": {
+      "content": "The rehearsal has moved to 18:30. Please confirm when you can.",
+      "phone_number": "+12453344098"
+    },
+    "tool": "send_message_with_phone_number"
+  },
+  "wrong_write_at_this_commit": false
+}

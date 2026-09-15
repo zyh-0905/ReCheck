@@ -1,0 +1,77 @@
+test_bad_protocol_price_rejected (tests.test_audit_hardening.AuditHardeningTests.test_bad_protocol_price_rejected) ... FAIL
+test_boolean_not_integer_label (tests.test_audit_hardening.AuditHardeningTests.test_boolean_not_integer_label) ... FAIL
+test_integer_not_float_count (tests.test_audit_hardening.AuditHardeningTests.test_integer_not_float_count) ... FAIL
+test_layout_detects_missing_and_extra (tests.test_audit_hardening.AuditHardeningTests.test_layout_detects_missing_and_extra) ... FAIL
+test_nan_not_equal_to_itself (tests.test_audit_hardening.AuditHardeningTests.test_nan_not_equal_to_itself) ... FAIL
+test_valid_nested_receipt (tests.test_audit_hardening.AuditHardeningTests.test_valid_nested_receipt) ... FAIL
+
+======================================================================
+FAIL: test_bad_protocol_price_rejected (tests.test_audit_hardening.AuditHardeningTests.test_bad_protocol_price_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_audit_hardening.py", line 19, in test_bad_protocol_price_rejected
+    self.assertTrue(hasattr(review,'validate_cost_protocol'),'exact integer accounting must bind .05 protocol price')
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : exact integer accounting must bind .05 protocol price
+
+======================================================================
+FAIL: test_boolean_not_integer_label (tests.test_audit_hardening.AuditHardeningTests.test_boolean_not_integer_label)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_audit_hardening.py", line 8, in test_boolean_not_integer_label
+    def test_boolean_not_integer_label(self):self.assertFalse(self.strict()({'failure':1},{'failure':True}))
+                                                              ~~~~~~~~~~~^^
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_audit_hardening.py", line 6, in strict
+    self.assertTrue(hasattr(eq,'strict_equal'),'missing typed strict equality for calibration evidence')
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : missing typed strict equality for calibration evidence
+
+======================================================================
+FAIL: test_integer_not_float_count (tests.test_audit_hardening.AuditHardeningTests.test_integer_not_float_count)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_audit_hardening.py", line 9, in test_integer_not_float_count
+    def test_integer_not_float_count(self):self.assertFalse(self.strict()({'n':16},{'n':16.0}))
+                                                            ~~~~~~~~~~~^^
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_audit_hardening.py", line 6, in strict
+    self.assertTrue(hasattr(eq,'strict_equal'),'missing typed strict equality for calibration evidence')
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : missing typed strict equality for calibration evidence
+
+======================================================================
+FAIL: test_layout_detects_missing_and_extra (tests.test_audit_hardening.AuditHardeningTests.test_layout_detects_missing_and_extra)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_audit_hardening.py", line 13, in test_layout_detects_missing_and_extra
+    self.assertTrue(hasattr(review,'layout_issues'),'missing exact experimental layout check')
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : missing exact experimental layout check
+
+======================================================================
+FAIL: test_nan_not_equal_to_itself (tests.test_audit_hardening.AuditHardeningTests.test_nan_not_equal_to_itself)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_audit_hardening.py", line 11, in test_nan_not_equal_to_itself
+    def test_nan_not_equal_to_itself(self):self.assertFalse(self.strict()({'x':float('nan')},{'x':float('nan')}))
+                                                            ~~~~~~~~~~~^^
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_audit_hardening.py", line 6, in strict
+    self.assertTrue(hasattr(eq,'strict_equal'),'missing typed strict equality for calibration evidence')
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : missing typed strict equality for calibration evidence
+
+======================================================================
+FAIL: test_valid_nested_receipt (tests.test_audit_hardening.AuditHardeningTests.test_valid_nested_receipt)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_audit_hardening.py", line 10, in test_valid_nested_receipt
+    def test_valid_nested_receipt(self):self.assertTrue(self.strict()({'x':[1,True,0.]},{'x':[1,True,0.]}))
+                                                        ~~~~~~~~~~~^^
+  File "/mnt/data/r6_work/R6_Research_Kit/tests/test_audit_hardening.py", line 6, in strict
+    self.assertTrue(hasattr(eq,'strict_equal'),'missing typed strict equality for calibration evidence')
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : missing typed strict equality for calibration evidence
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.002s
+
+FAILED (failures=6)

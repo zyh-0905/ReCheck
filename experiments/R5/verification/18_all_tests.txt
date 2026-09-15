@@ -1,0 +1,49 @@
+test_calibration_diagonal_and_shape (test_data.DataAndCalibrationTests.test_calibration_diagonal_and_shape) ... ok
+test_catalog_deterministic (test_data.DataAndCalibrationTests.test_catalog_deterministic) ... ok
+test_directional_pagination_loss (test_data.DataAndCalibrationTests.test_directional_pagination_loss) ... ok
+test_empty_calibration_rejected (test_data.DataAndCalibrationTests.test_empty_calibration_rejected) ... ok
+test_evaluation_seeds_disjoint (test_data.DataAndCalibrationTests.test_evaluation_seeds_disjoint) ... ok
+test_invalid_modes (test_data.DataAndCalibrationTests.test_invalid_modes) ... ok
+test_modes_roundtrip (test_data.DataAndCalibrationTests.test_modes_roundtrip) ... ok
+test_predictor_does_not_receive_test_rows (test_data.DataAndCalibrationTests.test_predictor_does_not_receive_test_rows) ... ok
+test_profiles (test_data.DataAndCalibrationTests.test_profiles) ... ok
+test_single_effect_ablation_bounds (test_data.DataAndCalibrationTests.test_single_effect_ablation_bounds) ... ok
+test_task_public_no_mode (test_data.DataAndCalibrationTests.test_task_public_no_mode) ... ok
+test_fixed_tail_matches_fixed_policy_evaluator (test_model.FixedPolicyEfficiencyTests.test_fixed_tail_matches_fixed_policy_evaluator) ... ok
+test_never_tail_does_not_expand_unchosen_actions (test_model.FixedPolicyEfficiencyTests.test_never_tail_does_not_expand_unchosen_actions) ... ok
+test_actual_evaluation_equals_exact_value (test_model.PlannerTests.test_actual_evaluation_equals_exact_value) ... ok
+test_budget_rejection (test_model.PlannerTests.test_budget_rejection) ... ok
+test_cached_direction_can_change_choice (test_model.PlannerTests.test_cached_direction_can_change_choice) ... ok
+test_exact_matches_exhaustive (test_model.PlannerTests.test_exact_matches_exhaustive) ... ok
+test_free_observation_never_worse (test_model.PlannerTests.test_free_observation_never_worse) ... ok
+test_h1_myopic_exact (test_model.PlannerTests.test_h1_myopic_exact) ... ok
+test_invalid_posterior (test_model.PlannerTests.test_invalid_posterior) ... ok
+test_no_budget_never (test_model.PlannerTests.test_no_budget_never) ... ok
+test_no_probe_observation_identity (test_model.PlannerTests.test_no_probe_observation_identity) ... ok
+test_objective_validate (test_model.PlannerTests.test_objective_validate) ... ok
+test_observation_changes_memory (test_model.PlannerTests.test_observation_changes_memory) ... ok
+test_policy_only_public_state (test_model.PlannerTests.test_policy_only_public_state) ... ok
+test_probabilities (test_model.PlannerTests.test_probabilities) ... ok
+test_rollout_not_better_than_exact_in_model (test_model.PlannerTests.test_rollout_not_better_than_exact_in_model) ... ok
+test_shared_cost (test_model.PlannerTests.test_shared_cost) ... ok
+test_zero_loss_never (test_model.PlannerTests.test_zero_loss_never) ... ok
+test_archive_rejects_bad_paths (test_runtime.ExecutionTests.test_archive_rejects_bad_paths) ... ok
+test_budget_and_correct_replay (test_runtime.ExecutionTests.test_budget_and_correct_replay) ... ok
+test_independent_evaluator_all_modes (test_runtime.ExecutionTests.test_independent_evaluator_all_modes) ... ok
+test_lock_refuses_existing (test_runtime.ExecutionTests.test_lock_refuses_existing) ... ok
+test_no_network_guard (test_runtime.ExecutionTests.test_no_network_guard) ... ok
+test_run_has_no_test_scores (test_runtime.ExecutionTests.test_run_has_no_test_scores) ... ok
+test_same_world_menu_pairing (test_runtime.ExecutionTests.test_same_world_menu_pairing) ... ok
+test_source_hash_changed_blocks (test_runtime.ExecutionTests.test_source_hash_changed_blocks) ... ok
+test_write_once (test_runtime.ExecutionTests.test_write_once) ... ok
+test_export_contains_registered_trajectory_and_license (test_runtime.ExportPositiveTests.test_export_contains_registered_trajectory_and_license) ... ok
+test_current_hidden_rows_do_not_change_policy (test_runtime.IsolationRegressionTests.test_current_hidden_rows_do_not_change_policy) ... ok
+test_export_excludes_unregistered_local_config (test_runtime.IsolationRegressionTests.test_export_excludes_unregistered_local_config) ... ok
+test_future_tape_not_read_at_first_choice (test_runtime.IsolationRegressionTests.test_future_tape_not_read_at_first_choice) ... ok
+test_reject_negative_or_nonfinite_cost (test_runtime.IsolationRegressionTests.test_reject_negative_or_nonfinite_cost) ... ok
+test_sensitive_record_blocks_export (test_runtime.IsolationRegressionTests.test_sensitive_record_blocks_export) ... ok
+
+----------------------------------------------------------------------
+Ran 44 tests in 0.290s
+
+OK

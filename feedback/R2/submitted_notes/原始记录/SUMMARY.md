@@ -1,0 +1,520 @@
+# R2 offline summary
+
+Researcher review required. This is not an automatic scientific pass.
+
+```json
+{
+  "study": "r2_recheck",
+  "evidence_label": "REAL_ENDPOINT_CONTROLLED_DEVELOPMENT_NOT_CONFIRMATORY",
+  "phase": "development_mechanism_not_confirmatory",
+  "scientific_gate": "PENDING_RESEARCHER_REVIEW_NOT_AUTOMATIC_PASS",
+  "ledger": {
+    "pass": true,
+    "registered_attempts": 484,
+    "responses": 484,
+    "completed_call_records": 484,
+    "registered_without_result": 0,
+    "unconfirmed_remote_receipt": 0,
+    "orphan_results": [],
+    "issues": [],
+    "request_errors": 0,
+    "length_responses": 0,
+    "uncertain_logical_ids": [],
+    "interpretation": "Structural consistency only; open starts do not prove remote receipt or billing."
+  },
+  "methods": [
+    {
+      "method": "recheck",
+      "completed_records": 48,
+      "planned_records": 48,
+      "successes": 43,
+      "success_rate_completed_only": 0.8958333333333334,
+      "independent_streams": 4,
+      "probe_count": 30,
+      "stale_related": 2,
+      "stale_propagation_consistent": 2,
+      "interface_failures": 1,
+      "response_records": 96,
+      "output_tokens_known": 81187,
+      "output_tokens_missing": 0,
+      "llm_latency_seconds": 399.8590164221823,
+      "list_price_estimate_excluding_prefix": null,
+      "local_recorded_seconds": 0.010263536125421524
+    },
+    {
+      "method": "myopic",
+      "completed_records": 48,
+      "planned_records": 48,
+      "successes": 46,
+      "success_rate_completed_only": 0.9583333333333334,
+      "independent_streams": 4,
+      "probe_count": 25,
+      "stale_related": 2,
+      "stale_propagation_consistent": 2,
+      "interface_failures": 0,
+      "response_records": 96,
+      "output_tokens_known": 69876,
+      "output_tokens_missing": 0,
+      "llm_latency_seconds": 353.38844687258825,
+      "list_price_estimate_excluding_prefix": null,
+      "local_recorded_seconds": 0.008780124131590128
+    },
+    {
+      "method": "ttl",
+      "completed_records": 48,
+      "planned_records": 48,
+      "successes": 43,
+      "success_rate_completed_only": 0.8958333333333334,
+      "independent_streams": 4,
+      "probe_count": 32,
+      "stale_related": 5,
+      "stale_propagation_consistent": 5,
+      "interface_failures": 0,
+      "response_records": 96,
+      "output_tokens_known": 75452,
+      "output_tokens_missing": 0,
+      "llm_latency_seconds": 380.47460350301117,
+      "list_price_estimate_excluding_prefix": null,
+      "local_recorded_seconds": 0.005248586414381862
+    },
+    {
+      "method": "always",
+      "completed_records": 48,
+      "planned_records": 48,
+      "successes": 47,
+      "success_rate_completed_only": 0.9791666666666666,
+      "independent_streams": 4,
+      "probe_count": 96,
+      "stale_related": 0,
+      "stale_propagation_consistent": 0,
+      "interface_failures": 1,
+      "response_records": 96,
+      "output_tokens_known": 70979,
+      "output_tokens_missing": 0,
+      "llm_latency_seconds": 359.74167287233286,
+      "list_price_estimate_excluding_prefix": null,
+      "local_recorded_seconds": 0.008158334763720632
+    },
+    {
+      "method": "never",
+      "completed_records": 48,
+      "planned_records": 48,
+      "successes": 42,
+      "success_rate_completed_only": 0.875,
+      "independent_streams": 4,
+      "probe_count": 0,
+      "stale_related": 4,
+      "stale_propagation_consistent": 4,
+      "interface_failures": 2,
+      "response_records": 96,
+      "output_tokens_known": 52828,
+      "output_tokens_missing": 0,
+      "llm_latency_seconds": 285.15933112055063,
+      "list_price_estimate_excluding_prefix": null,
+      "local_recorded_seconds": 0.003484215820208192
+    }
+  ],
+  "completed_records": 240,
+  "planned_records": 240,
+  "source_snapshot_mismatches": [],
+  "dp_myopic_input_equality": [
+    {
+      "stream": 0,
+      "step": 0,
+      "same_probe_choice": true,
+      "same_worker_view": true,
+      "same_plan_request": true
+    },
+    {
+      "stream": 0,
+      "step": 1,
+      "same_probe_choice": true,
+      "same_worker_view": true,
+      "same_plan_request": true
+    },
+    {
+      "stream": 0,
+      "step": 2,
+      "same_probe_choice": true,
+      "same_worker_view": true,
+      "same_plan_request": true
+    },
+    {
+      "stream": 0,
+      "step": 3,
+      "same_probe_choice": true,
+      "same_worker_view": true,
+      "same_plan_request": true
+    },
+    {
+      "stream": 0,
+      "step": 4,
+      "same_probe_choice": true,
+      "same_worker_view": true,
+      "same_plan_request": true
+    },
+    {
+      "stream": 0,
+      "step": 5,
+      "same_probe_choice": true,
+      "same_worker_view": true,
+      "same_plan_request": true
+    },
+    {
+      "stream": 0,
+      "step": 6,
+      "same_probe_choice": true,
+      "same_worker_view": true,
+      "same_plan_request": true
+    },
+    {
+      "stream": 0,
+      "step": 7,
+      "same_probe_choice": true,
+      "same_worker_view": true,
+      "same_plan_request": true
+    },
+    {
+      "stream": 0,
+      "step": 8,
+      "same_probe_choice": true,
+      "same_worker_view": true,
+      "same_plan_request": true
+    },
+    {
+      "stream": 0,
+      "step": 9,
+      "same_probe_choice": true,
+      "same_worker_view": true,
+      "same_plan_request": true
+    },
+    {
+      "stream": 0,
+      "step": 10,
+      "same_probe_choice": true,
+      "same_worker_view": true,
+      "same_plan_request": true
+    },
+    {
+      "stream": 0,
+      "step": 11,
+      "same_probe_choice": true,
+      "same_worker_view": true,
+      "same_plan_request": true
+    },
+    {
+      "stream": 1,
+      "step": 0,
+      "same_probe_choice": true,
+      "same_worker_view": true,
+      "same_plan_request": true
+    },
+    {
+      "stream": 1,
+      "step": 1,
+      "same_probe_choice": true,
+      "same_worker_view": true,
+      "same_plan_request": true
+    },
+    {
+      "stream": 1,
+      "step": 2,
+      "same_probe_choice": true,
+      "same_worker_view": true,
+      "same_plan_request": true
+    },
+    {
+      "stream": 1,
+      "step": 3,
+      "same_probe_choice": true,
+      "same_worker_view": true,
+      "same_plan_request": true
+    },
+    {
+      "stream": 1,
+      "step": 4,
+      "same_probe_choice": true,
+      "same_worker_view": true,
+      "same_plan_request": true
+    },
+    {
+      "stream": 1,
+      "step": 5,
+      "same_probe_choice": true,
+      "same_worker_view": true,
+      "same_plan_request": true
+    },
+    {
+      "stream": 1,
+      "step": 6,
+      "same_probe_choice": true,
+      "same_worker_view": true,
+      "same_plan_request": true
+    },
+    {
+      "stream": 1,
+      "step": 7,
+      "same_probe_choice": true,
+      "same_worker_view": true,
+      "same_plan_request": true
+    },
+    {
+      "stream": 1,
+      "step": 8,
+      "same_probe_choice": true,
+      "same_worker_view": true,
+      "same_plan_request": true
+    },
+    {
+      "stream": 1,
+      "step": 9,
+      "same_probe_choice": true,
+      "same_worker_view": true,
+      "same_plan_request": true
+    },
+    {
+      "stream": 1,
+      "step": 10,
+      "same_probe_choice": true,
+      "same_worker_view": true,
+      "same_plan_request": true
+    },
+    {
+      "stream": 1,
+      "step": 11,
+      "same_probe_choice": true,
+      "same_worker_view": true,
+      "same_plan_request": true
+    },
+    {
+      "stream": 2,
+      "step": 0,
+      "same_probe_choice": true,
+      "same_worker_view": true,
+      "same_plan_request": true
+    },
+    {
+      "stream": 2,
+      "step": 1,
+      "same_probe_choice": false,
+      "same_worker_view": false,
+      "same_plan_request": false
+    },
+    {
+      "stream": 2,
+      "step": 2,
+      "same_probe_choice": true,
+      "same_worker_view": false,
+      "same_plan_request": false
+    },
+    {
+      "stream": 2,
+      "step": 3,
+      "same_probe_choice": true,
+      "same_worker_view": false,
+      "same_plan_request": false
+    },
+    {
+      "stream": 2,
+      "step": 4,
+      "same_probe_choice": false,
+      "same_worker_view": false,
+      "same_plan_request": false
+    },
+    {
+      "stream": 2,
+      "step": 5,
+      "same_probe_choice": true,
+      "same_worker_view": false,
+      "same_plan_request": false
+    },
+    {
+      "stream": 2,
+      "step": 6,
+      "same_probe_choice": true,
+      "same_worker_view": false,
+      "same_plan_request": false
+    },
+    {
+      "stream": 2,
+      "step": 7,
+      "same_probe_choice": true,
+      "same_worker_view": true,
+      "same_plan_request": true
+    },
+    {
+      "stream": 2,
+      "step": 8,
+      "same_probe_choice": true,
+      "same_worker_view": true,
+      "same_plan_request": true
+    },
+    {
+      "stream": 2,
+      "step": 9,
+      "same_probe_choice": false,
+      "same_worker_view": false,
+      "same_plan_request": false
+    },
+    {
+      "stream": 2,
+      "step": 10,
+      "same_probe_choice": false,
+      "same_worker_view": false,
+      "same_plan_request": false
+    },
+    {
+      "stream": 2,
+      "step": 11,
+      "same_probe_choice": true,
+      "same_worker_view": false,
+      "same_plan_request": false
+    },
+    {
+      "stream": 3,
+      "step": 0,
+      "same_probe_choice": true,
+      "same_worker_view": true,
+      "same_plan_request": true
+    },
+    {
+      "stream": 3,
+      "step": 1,
+      "same_probe_choice": false,
+      "same_worker_view": false,
+      "same_plan_request": false
+    },
+    {
+      "stream": 3,
+      "step": 2,
+      "same_probe_choice": false,
+      "same_worker_view": false,
+      "same_plan_request": false
+    },
+    {
+      "stream": 3,
+      "step": 3,
+      "same_probe_choice": false,
+      "same_worker_view": false,
+      "same_plan_request": false
+    },
+    {
+      "stream": 3,
+      "step": 4,
+      "same_probe_choice": true,
+      "same_worker_view": false,
+      "same_plan_request": false
+    },
+    {
+      "stream": 3,
+      "step": 5,
+      "same_probe_choice": true,
+      "same_worker_view": false,
+      "same_plan_request": false
+    },
+    {
+      "stream": 3,
+      "step": 6,
+      "same_probe_choice": true,
+      "same_worker_view": false,
+      "same_plan_request": false
+    },
+    {
+      "stream": 3,
+      "step": 7,
+      "same_probe_choice": true,
+      "same_worker_view": false,
+      "same_plan_request": false
+    },
+    {
+      "stream": 3,
+      "step": 8,
+      "same_probe_choice": true,
+      "same_worker_view": false,
+      "same_plan_request": false
+    },
+    {
+      "stream": 3,
+      "step": 9,
+      "same_probe_choice": false,
+      "same_worker_view": false,
+      "same_plan_request": false
+    },
+    {
+      "stream": 3,
+      "step": 10,
+      "same_probe_choice": true,
+      "same_worker_view": false,
+      "same_plan_request": false
+    },
+    {
+      "stream": 3,
+      "step": 11,
+      "same_probe_choice": true,
+      "same_worker_view": false,
+      "same_plan_request": false
+    }
+  ],
+  "shared_prefix": {
+    "calls": 4,
+    "prompt_tokens": {
+      "known_sum": 836,
+      "unknown_count": 0
+    },
+    "completion_tokens": {
+      "known_sum": 1318,
+      "unknown_count": 0
+    },
+    "llm_latency_seconds": 7.062244958709925,
+    "list_price_estimate": null
+  },
+  "totals": {
+    "prompt_tokens": {
+      "known_sum": 117707,
+      "unknown_count": 0
+    },
+    "completion_tokens": {
+      "known_sum": 351640,
+      "unknown_count": 0
+    },
+    "reasoning_tokens": {
+      "known_sum": 345640,
+      "unknown_count": 0
+    },
+    "price": {
+      "known_sum": 0,
+      "unknown_count": 484
+    },
+    "unknown_unfinished_attempts": 0
+  },
+  "limitations": [
+    "Prices unknown unless a model/date/currency scoped schedule was frozen; no invoices inferred.",
+    "Interrupted cohorts have incomplete denominators; completed-only rates are descriptive.",
+    "Four synthetic independent streams, not confirmatory evidence.",
+    "Prefix is paid once in actual experiment; per-strategy deployment costing must attribute it without double-counting invoice.",
+    "Latency sum excludes idle intervals; run_events.jsonl separately records whole invocation time.",
+    "Proxy probe price is not API currency; do not sum unlike units."
+  ],
+  "controller_setup": {
+    "dp_build": [
+      {
+        "probe_price": [
+          0.18,
+          0.18
+        ],
+        "dp_build_seconds": 0.00024808384478092194
+      },
+      {
+        "probe_price": [
+          0.22,
+          0.22
+        ],
+        "dp_build_seconds": 0.0001193750649690628
+      }
+    ],
+    "label": "local controller construction, not API cost"
+  },
+  "recorded_invocations_wall_seconds": 2030.5643417919055,
+  "invocations_without_end": 0
+}
+```

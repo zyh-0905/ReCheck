@@ -1,0 +1,162 @@
+test_actual_hazard_changes_loss_not_probes (test_r3_core.ExactTests.test_actual_hazard_changes_loss_not_probes) ... ok
+test_all_grid_cells_retained (test_r3_core.ExactTests.test_all_grid_cells_retained) ... ok
+test_always (test_r3_core.ExactTests.test_always) ... ok
+test_dp_matches_bellman (test_r3_core.ExactTests.test_dp_matches_bellman) ... ok
+test_never_no_drift (test_r3_core.ExactTests.test_never_no_drift) ... ok
+test_one_step_dp_myopic (test_r3_core.ExactTests.test_one_step_dp_myopic) ... ok
+test_opportunity_no_hidden_rng (test_r3_core.ExactTests.test_opportunity_no_hidden_rng) ... ok
+test_zero_drift_no_semantic_opportunity (test_r3_core.ExactTests.test_zero_drift_no_semantic_opportunity) ... ok
+test_case_deterministic (test_r3_core.ProtocolTests.test_case_deterministic) ... ok
+test_counts (test_r3_core.ProtocolTests.test_counts) ... ok
+test_initial_tasks_balanced (test_r3_core.ProtocolTests.test_initial_tasks_balanced) ... ok
+test_main_ids_unique (test_r3_core.ProtocolTests.test_main_ids_unique) ... ok
+test_policy_view_excludes_world (test_r3_core.ProtocolTests.test_policy_view_excludes_world) ... ok
+test_world_rng_does_not_change_public_tasks (test_r3_core.ProtocolTests.test_world_rng_does_not_change_public_tasks) ... ok
+test_all_schema_empty (test_r3_core.WorkerTests.test_all_schema_empty) ... ok
+test_amount (test_r3_core.WorkerTests.test_amount) ... ok
+test_bool_not_bound (test_r3_core.WorkerTests.test_bool_not_bound) ... ok
+test_count_render_never_reinterprets (test_r3_core.WorkerTests.test_count_render_never_reinterprets) ... ok
+test_count_schema_has_no_amount (test_r3_core.WorkerTests.test_count_schema_has_no_amount) ... ok
+test_counterfactual_is_not_used (test_r3_core.WorkerTests.test_counterfactual_is_not_used) ... ok
+test_irrelevant_stale_not_counted (test_r3_core.WorkerTests.test_irrelevant_stale_not_counted) ... ok
+test_normative_error_stays_wrong (test_r3_core.WorkerTests.test_normative_error_stays_wrong) ... ok
+test_stale_value_legal_but_not_fresh (test_r3_core.WorkerTests.test_stale_value_legal_but_not_fresh) ... ok
+test_total_render_selected_divisor (test_r3_core.WorkerTests.test_total_render_selected_divisor) ... ok
+test_unused_amount_is_invalid_not_silently_fixed (test_r3_core.WorkerTests.test_unused_amount_is_invalid_not_silently_fixed) ... ok
+test_valid_count (test_r3_core.WorkerTests.test_valid_count) ... ok
+test_canonical_success_not_100 (test_r3_runtime.ExperimentTests.test_canonical_success_not_100) ... FAIL
+test_counts (test_r3_runtime.ExperimentTests.test_counts) ... FAIL
+test_distinct_ids (test_r3_runtime.ExperimentTests.test_distinct_ids) ... FAIL
+test_initial_evidence_from_receipts (test_r3_runtime.ExperimentTests.test_initial_evidence_from_receipts) ... FAIL
+test_offline_evaluator_not_called_in_online (test_r3_runtime.ExperimentTests.test_offline_evaluator_not_called_in_online) ... FAIL
+test_repeats_not_primary (test_r3_runtime.ExperimentTests.test_repeats_not_primary) ... FAIL
+test_replicates_payload_identical (test_r3_runtime.ExperimentTests.test_replicates_payload_identical) ... FAIL
+test_timestamp_not_in_worker (test_r3_runtime.ExperimentTests.test_timestamp_not_in_worker) ... FAIL
+test_export_snapshot_license (test_r3_runtime.SupportTests.test_export_snapshot_license) ... FAIL
+test_feedback_no_configs (test_r3_runtime.SupportTests.test_feedback_no_configs) ... ok
+test_no_cap_edit (test_r3_runtime.SupportTests.test_no_cap_edit) ... FAIL
+test_no_thinking_edit (test_r3_runtime.SupportTests.test_no_thinking_edit) ... FAIL
+test_r3_cap (test_r3_runtime.SupportTests.test_r3_cap) ... FAIL
+test_r3_cli_registered (test_r3_runtime.SupportTests.test_r3_cli_registered) ... FAIL
+
+======================================================================
+FAIL: test_canonical_success_not_100 (test_r3_runtime.ExperimentTests.test_canonical_success_not_100)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r3_work/R3_Research_Kit/tests/test_r3_runtime.py", line 47, in setUp
+    def setUp(self):self.assertTrue(self.ready,'R3 experiment not implemented')
+                    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : R3 experiment not implemented
+
+======================================================================
+FAIL: test_counts (test_r3_runtime.ExperimentTests.test_counts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r3_work/R3_Research_Kit/tests/test_r3_runtime.py", line 47, in setUp
+    def setUp(self):self.assertTrue(self.ready,'R3 experiment not implemented')
+                    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : R3 experiment not implemented
+
+======================================================================
+FAIL: test_distinct_ids (test_r3_runtime.ExperimentTests.test_distinct_ids)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r3_work/R3_Research_Kit/tests/test_r3_runtime.py", line 47, in setUp
+    def setUp(self):self.assertTrue(self.ready,'R3 experiment not implemented')
+                    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : R3 experiment not implemented
+
+======================================================================
+FAIL: test_initial_evidence_from_receipts (test_r3_runtime.ExperimentTests.test_initial_evidence_from_receipts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r3_work/R3_Research_Kit/tests/test_r3_runtime.py", line 47, in setUp
+    def setUp(self):self.assertTrue(self.ready,'R3 experiment not implemented')
+                    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : R3 experiment not implemented
+
+======================================================================
+FAIL: test_offline_evaluator_not_called_in_online (test_r3_runtime.ExperimentTests.test_offline_evaluator_not_called_in_online)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r3_work/R3_Research_Kit/tests/test_r3_runtime.py", line 47, in setUp
+    def setUp(self):self.assertTrue(self.ready,'R3 experiment not implemented')
+                    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : R3 experiment not implemented
+
+======================================================================
+FAIL: test_repeats_not_primary (test_r3_runtime.ExperimentTests.test_repeats_not_primary)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r3_work/R3_Research_Kit/tests/test_r3_runtime.py", line 47, in setUp
+    def setUp(self):self.assertTrue(self.ready,'R3 experiment not implemented')
+                    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : R3 experiment not implemented
+
+======================================================================
+FAIL: test_replicates_payload_identical (test_r3_runtime.ExperimentTests.test_replicates_payload_identical)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r3_work/R3_Research_Kit/tests/test_r3_runtime.py", line 47, in setUp
+    def setUp(self):self.assertTrue(self.ready,'R3 experiment not implemented')
+                    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : R3 experiment not implemented
+
+======================================================================
+FAIL: test_timestamp_not_in_worker (test_r3_runtime.ExperimentTests.test_timestamp_not_in_worker)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r3_work/R3_Research_Kit/tests/test_r3_runtime.py", line 47, in setUp
+    def setUp(self):self.assertTrue(self.ready,'R3 experiment not implemented')
+                    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : R3 experiment not implemented
+
+======================================================================
+FAIL: test_export_snapshot_license (test_r3_runtime.SupportTests.test_export_snapshot_license)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r3_work/R3_Research_Kit/tests/test_r3_runtime.py", line 22, in test_export_snapshot_license
+    with zipfile.ZipFile(out) as z:self.assertIn('runs/R3_recheck/code_snapshot/LICENSE',z.namelist())
+                                   ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'runs/R3_recheck/code_snapshot/LICENSE' not found in ['BUNDLE_MANIFEST.json']
+
+======================================================================
+FAIL: test_no_cap_edit (test_r3_runtime.SupportTests.test_no_cap_edit)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r3_work/R3_Research_Kit/tests/test_r3_runtime.py", line 11, in test_no_cap_edit
+    self.assertTrue(hasattr(session,'validate_r3_config'));c=read_json(ROOT/'config.example.json');c['max_requests']=999
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_no_thinking_edit (test_r3_runtime.SupportTests.test_no_thinking_edit)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r3_work/R3_Research_Kit/tests/test_r3_runtime.py", line 14, in test_no_thinking_edit
+    self.assertTrue(hasattr(session,'validate_r3_config'));c=read_json(ROOT/'config.example.json');c['extra_body']={}
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_r3_cap (test_r3_runtime.SupportTests.test_r3_cap)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r3_work/R3_Research_Kit/tests/test_r3_runtime.py", line 9, in test_r3_cap
+    self.assertTrue(hasattr(session,'validate_r3_config'));c=read_json(ROOT/'config.example.json');self.assertEqual(session.validate_r3_config(c)['max_requests'],416)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_r3_cli_registered (test_r3_runtime.SupportTests.test_r3_cli_registered)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r3_work/R3_Research_Kit/tests/test_r3_runtime.py", line 16, in test_r3_cli_registered
+    def test_r3_cli_registered(self):self.assertIn('r3.py',[p.name for p in storage.source_paths(ROOT)])
+                                     ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'r3.py' not found in ['LICENSE', 'billing.example.json', 'config.example.json', 'r3_protocol.json', 'DESIGN.md', 'IMPLEMENTATION_PLAN.md', '__init__.py', 'client.py', 'common.py', 'recheck.py', 'requirements.txt', 'test_r3_core.py', 'test_r3_runtime.py', '__init__.py', 'recheck_core.py']
+
+----------------------------------------------------------------------
+Ran 40 tests in 0.233s
+
+FAILED (failures=13)

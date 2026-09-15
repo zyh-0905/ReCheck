@@ -1,0 +1,246 @@
+test_bad_hash (test_verify_archive.ArchiveTests.test_bad_hash) ... ERROR
+test_bad_size_type (test_verify_archive.ArchiveTests.test_bad_size_type) ... ERROR
+test_changed_bytes (test_verify_archive.ArchiveTests.test_changed_bytes) ... ERROR
+test_duplicate (test_verify_archive.ArchiveTests.test_duplicate) ... ERROR
+test_exact (test_verify_archive.ArchiveTests.test_exact) ... ERROR
+test_extra (test_verify_archive.ArchiveTests.test_extra) ... ERROR
+test_fonts_refused (test_verify_archive.ArchiveTests.test_fonts_refused) ... ERROR
+test_git_metadata_ignored (test_verify_archive.ArchiveTests.test_git_metadata_ignored) ... ERROR
+test_missing (test_verify_archive.ArchiveTests.test_missing) ... ERROR
+test_paths (test_verify_archive.ArchiveTests.test_paths) ... 
+  test_paths (test_verify_archive.ArchiveTests.test_paths) (p='../escape') ... ERROR
+  test_paths (test_verify_archive.ArchiveTests.test_paths) (p='/absolute') ... ERROR
+  test_paths (test_verify_archive.ArchiveTests.test_paths) (p='a/../b') ... ERROR
+  test_paths (test_verify_archive.ArchiveTests.test_paths) (p='C:/x') ... ERROR
+  test_paths (test_verify_archive.ArchiveTests.test_paths) (p='a\\b') ... ERROR
+  test_paths (test_verify_archive.ArchiveTests.test_paths) (p='./a') ... ERROR
+  test_paths (test_verify_archive.ArchiveTests.test_paths) (p='a//b') ... ERROR
+  test_paths (test_verify_archive.ArchiveTests.test_paths) (p='') ... ERROR
+test_paths (test_verify_archive.ArchiveTests.test_paths) ... ERROR
+test_secret_filename (test_verify_archive.ArchiveTests.test_secret_filename) ... ERROR
+test_symlink_refused (test_verify_archive.ArchiveTests.test_symlink_refused) ... ERROR
+
+======================================================================
+ERROR: test_bad_hash (test_verify_archive.ArchiveTests.test_bad_hash)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/archive_work/tooling/tests/test_verify_archive.py", line 51, in test_bad_hash
+    with self.assertRaises(ValueError): verify(self.root)
+                                        ~~~~~~^^^^^^^^^^^
+  File "/mnt/data/archive_work/tooling/verify_archive.py", line 7, in verify
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_bad_size_type (test_verify_archive.ArchiveTests.test_bad_size_type)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/archive_work/tooling/tests/test_verify_archive.py", line 48, in test_bad_size_type
+    with self.assertRaises(ValueError): verify(self.root)
+                                        ~~~~~~^^^^^^^^^^^
+  File "/mnt/data/archive_work/tooling/verify_archive.py", line 7, in verify
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_changed_bytes (test_verify_archive.ArchiveTests.test_changed_bytes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/archive_work/tooling/tests/test_verify_archive.py", line 22, in test_changed_bytes
+    with self.assertRaises(ValueError): verify(self.root)
+                                        ~~~~~~^^^^^^^^^^^
+  File "/mnt/data/archive_work/tooling/verify_archive.py", line 7, in verify
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_duplicate (test_verify_archive.ArchiveTests.test_duplicate)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/archive_work/tooling/tests/test_verify_archive.py", line 28, in test_duplicate
+    with self.assertRaises(ValueError): verify(self.root)
+                                        ~~~~~~^^^^^^^^^^^
+  File "/mnt/data/archive_work/tooling/verify_archive.py", line 7, in verify
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_exact (test_verify_archive.ArchiveTests.test_exact)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/archive_work/tooling/tests/test_verify_archive.py", line 19, in test_exact
+    self.assertEqual(verify(self.root)['verified_files'],1)
+                     ~~~~~~^^^^^^^^^^^
+  File "/mnt/data/archive_work/tooling/verify_archive.py", line 7, in verify
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_extra (test_verify_archive.ArchiveTests.test_extra)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/archive_work/tooling/tests/test_verify_archive.py", line 31, in test_extra
+    with self.assertRaises(ValueError): verify(self.root)
+                                        ~~~~~~^^^^^^^^^^^
+  File "/mnt/data/archive_work/tooling/verify_archive.py", line 7, in verify
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_fonts_refused (test_verify_archive.ArchiveTests.test_fonts_refused)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/archive_work/tooling/tests/test_verify_archive.py", line 37, in test_fonts_refused
+    with self.assertRaises(ValueError): verify(self.root)
+                                        ~~~~~~^^^^^^^^^^^
+  File "/mnt/data/archive_work/tooling/verify_archive.py", line 7, in verify
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_git_metadata_ignored (test_verify_archive.ArchiveTests.test_git_metadata_ignored)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/archive_work/tooling/tests/test_verify_archive.py", line 34, in test_git_metadata_ignored
+    self.assertEqual(verify(self.root)['verified_files'],1)
+                     ~~~~~~^^^^^^^^^^^
+  File "/mnt/data/archive_work/tooling/verify_archive.py", line 7, in verify
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_missing (test_verify_archive.ArchiveTests.test_missing)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/archive_work/tooling/tests/test_verify_archive.py", line 25, in test_missing
+    with self.assertRaises(ValueError): verify(self.root)
+                                        ~~~~~~^^^^^^^^^^^
+  File "/mnt/data/archive_work/tooling/verify_archive.py", line 7, in verify
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_paths (test_verify_archive.ArchiveTests.test_paths) (p='../escape')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/archive_work/tooling/tests/test_verify_archive.py", line 44, in test_paths
+    with self.assertRaises(ValueError): safe_relative(p)
+                                        ~~~~~~~~~~~~~^^^
+  File "/mnt/data/archive_work/tooling/verify_archive.py", line 4, in safe_relative
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_paths (test_verify_archive.ArchiveTests.test_paths) (p='/absolute')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/archive_work/tooling/tests/test_verify_archive.py", line 44, in test_paths
+    with self.assertRaises(ValueError): safe_relative(p)
+                                        ~~~~~~~~~~~~~^^^
+  File "/mnt/data/archive_work/tooling/verify_archive.py", line 4, in safe_relative
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_paths (test_verify_archive.ArchiveTests.test_paths) (p='a/../b')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/archive_work/tooling/tests/test_verify_archive.py", line 44, in test_paths
+    with self.assertRaises(ValueError): safe_relative(p)
+                                        ~~~~~~~~~~~~~^^^
+  File "/mnt/data/archive_work/tooling/verify_archive.py", line 4, in safe_relative
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_paths (test_verify_archive.ArchiveTests.test_paths) (p='C:/x')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/archive_work/tooling/tests/test_verify_archive.py", line 44, in test_paths
+    with self.assertRaises(ValueError): safe_relative(p)
+                                        ~~~~~~~~~~~~~^^^
+  File "/mnt/data/archive_work/tooling/verify_archive.py", line 4, in safe_relative
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_paths (test_verify_archive.ArchiveTests.test_paths) (p='a\\b')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/archive_work/tooling/tests/test_verify_archive.py", line 44, in test_paths
+    with self.assertRaises(ValueError): safe_relative(p)
+                                        ~~~~~~~~~~~~~^^^
+  File "/mnt/data/archive_work/tooling/verify_archive.py", line 4, in safe_relative
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_paths (test_verify_archive.ArchiveTests.test_paths) (p='./a')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/archive_work/tooling/tests/test_verify_archive.py", line 44, in test_paths
+    with self.assertRaises(ValueError): safe_relative(p)
+                                        ~~~~~~~~~~~~~^^^
+  File "/mnt/data/archive_work/tooling/verify_archive.py", line 4, in safe_relative
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_paths (test_verify_archive.ArchiveTests.test_paths) (p='a//b')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/archive_work/tooling/tests/test_verify_archive.py", line 44, in test_paths
+    with self.assertRaises(ValueError): safe_relative(p)
+                                        ~~~~~~~~~~~~~^^^
+  File "/mnt/data/archive_work/tooling/verify_archive.py", line 4, in safe_relative
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_paths (test_verify_archive.ArchiveTests.test_paths) (p='')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/archive_work/tooling/tests/test_verify_archive.py", line 44, in test_paths
+    with self.assertRaises(ValueError): safe_relative(p)
+                                        ~~~~~~~~~~~~~^^^
+  File "/mnt/data/archive_work/tooling/verify_archive.py", line 4, in safe_relative
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_paths (test_verify_archive.ArchiveTests.test_paths)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/archive_work/tooling/tests/test_verify_archive.py", line 45, in test_paths
+    self.assertEqual(str(safe_relative('feedback/数据.json')),'feedback/数据.json')
+                         ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/archive_work/tooling/verify_archive.py", line 4, in safe_relative
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_secret_filename (test_verify_archive.ArchiveTests.test_secret_filename)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/archive_work/tooling/tests/test_verify_archive.py", line 54, in test_secret_filename
+    with self.assertRaises(ValueError): verify(self.root)
+                                        ~~~~~~^^^^^^^^^^^
+  File "/mnt/data/archive_work/tooling/verify_archive.py", line 7, in verify
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_symlink_refused (test_verify_archive.ArchiveTests.test_symlink_refused)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/archive_work/tooling/tests/test_verify_archive.py", line 40, in test_symlink_refused
+    with self.assertRaises(ValueError): verify(self.root)
+                                        ~~~~~~^^^^^^^^^^^
+  File "/mnt/data/archive_work/tooling/verify_archive.py", line 7, in verify
+    raise NotImplementedError
+NotImplementedError
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.008s
+
+FAILED (errors=20)

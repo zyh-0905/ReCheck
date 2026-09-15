@@ -1,0 +1,290 @@
+[
+  {
+    "arm": "intent",
+    "case_id": "x06",
+    "episode_id": "primary_x06_intent",
+    "phase": "primary"
+  },
+  {
+    "arm": "both",
+    "case_id": "x10",
+    "episode_id": "primary_x10_both",
+    "phase": "primary"
+  },
+  {
+    "arm": "minimal",
+    "case_id": "x09",
+    "episode_id": "primary_x09_minimal",
+    "phase": "primary"
+  },
+  {
+    "arm": "both",
+    "case_id": "x06",
+    "episode_id": "primary_x06_both",
+    "phase": "primary"
+  },
+  {
+    "arm": "generic",
+    "case_id": "x05",
+    "episode_id": "primary_x05_generic",
+    "phase": "primary"
+  },
+  {
+    "arm": "intent",
+    "case_id": "x08",
+    "episode_id": "primary_x08_intent",
+    "phase": "primary"
+  },
+  {
+    "arm": "intent",
+    "case_id": "x07",
+    "episode_id": "primary_x07_intent",
+    "phase": "primary"
+  },
+  {
+    "arm": "both",
+    "case_id": "x00",
+    "episode_id": "primary_x00_both",
+    "phase": "primary"
+  },
+  {
+    "arm": "generic",
+    "case_id": "x06",
+    "episode_id": "primary_x06_generic",
+    "phase": "primary"
+  },
+  {
+    "arm": "minimal",
+    "case_id": "x11",
+    "episode_id": "primary_x11_minimal",
+    "phase": "primary"
+  },
+  {
+    "arm": "both",
+    "case_id": "x05",
+    "episode_id": "primary_x05_both",
+    "phase": "primary"
+  },
+  {
+    "arm": "both",
+    "case_id": "x11",
+    "episode_id": "primary_x11_both",
+    "phase": "primary"
+  },
+  {
+    "arm": "minimal",
+    "case_id": "x07",
+    "episode_id": "primary_x07_minimal",
+    "phase": "primary"
+  },
+  {
+    "arm": "minimal",
+    "case_id": "x00",
+    "episode_id": "primary_x00_minimal",
+    "phase": "primary"
+  },
+  {
+    "arm": "intent",
+    "case_id": "x03",
+    "episode_id": "primary_x03_intent",
+    "phase": "primary"
+  },
+  {
+    "arm": "both",
+    "case_id": "x08",
+    "episode_id": "primary_x08_both",
+    "phase": "primary"
+  },
+  {
+    "arm": "generic",
+    "case_id": "x11",
+    "episode_id": "primary_x11_generic",
+    "phase": "primary"
+  },
+  {
+    "arm": "both",
+    "case_id": "x09",
+    "episode_id": "primary_x09_both",
+    "phase": "primary"
+  },
+  {
+    "arm": "intent",
+    "case_id": "x11",
+    "episode_id": "primary_x11_intent",
+    "phase": "primary"
+  },
+  {
+    "arm": "intent",
+    "case_id": "x05",
+    "episode_id": "primary_x05_intent",
+    "phase": "primary"
+  },
+  {
+    "arm": "both",
+    "case_id": "x03",
+    "episode_id": "primary_x03_both",
+    "phase": "primary"
+  },
+  {
+    "arm": "both",
+    "case_id": "x07",
+    "episode_id": "primary_x07_both",
+    "phase": "primary"
+  },
+  {
+    "arm": "generic",
+    "case_id": "x07",
+    "episode_id": "primary_x07_generic",
+    "phase": "primary"
+  },
+  {
+    "arm": "generic",
+    "case_id": "x02",
+    "episode_id": "primary_x02_generic",
+    "phase": "primary"
+  },
+  {
+    "arm": "minimal",
+    "case_id": "x05",
+    "episode_id": "primary_x05_minimal",
+    "phase": "primary"
+  },
+  {
+    "arm": "generic",
+    "case_id": "x01",
+    "episode_id": "primary_x01_generic",
+    "phase": "primary"
+  },
+  {
+    "arm": "generic",
+    "case_id": "x04",
+    "episode_id": "primary_x04_generic",
+    "phase": "primary"
+  },
+  {
+    "arm": "generic",
+    "case_id": "x00",
+    "episode_id": "primary_x00_generic",
+    "phase": "primary"
+  },
+  {
+    "arm": "intent",
+    "case_id": "x10",
+    "episode_id": "primary_x10_intent",
+    "phase": "primary"
+  },
+  {
+    "arm": "minimal",
+    "case_id": "x06",
+    "episode_id": "primary_x06_minimal",
+    "phase": "primary"
+  },
+  {
+    "arm": "minimal",
+    "case_id": "x01",
+    "episode_id": "primary_x01_minimal",
+    "phase": "primary"
+  },
+  {
+    "arm": "minimal",
+    "case_id": "x02",
+    "episode_id": "primary_x02_minimal",
+    "phase": "primary"
+  },
+  {
+    "arm": "minimal",
+    "case_id": "x08",
+    "episode_id": "primary_x08_minimal",
+    "phase": "primary"
+  },
+  {
+    "arm": "generic",
+    "case_id": "x10",
+    "episode_id": "primary_x10_generic",
+    "phase": "primary"
+  },
+  {
+    "arm": "minimal",
+    "case_id": "x03",
+    "episode_id": "primary_x03_minimal",
+    "phase": "primary"
+  },
+  {
+    "arm": "intent",
+    "case_id": "x00",
+    "episode_id": "primary_x00_intent",
+    "phase": "primary"
+  },
+  {
+    "arm": "intent",
+    "case_id": "x02",
+    "episode_id": "primary_x02_intent",
+    "phase": "primary"
+  },
+  {
+    "arm": "both",
+    "case_id": "x02",
+    "episode_id": "primary_x02_both",
+    "phase": "primary"
+  },
+  {
+    "arm": "generic",
+    "case_id": "x08",
+    "episode_id": "primary_x08_generic",
+    "phase": "primary"
+  },
+  {
+    "arm": "minimal",
+    "case_id": "x10",
+    "episode_id": "primary_x10_minimal",
+    "phase": "primary"
+  },
+  {
+    "arm": "intent",
+    "case_id": "x09",
+    "episode_id": "primary_x09_intent",
+    "phase": "primary"
+  },
+  {
+    "arm": "both",
+    "case_id": "x04",
+    "episode_id": "primary_x04_both",
+    "phase": "primary"
+  },
+  {
+    "arm": "generic",
+    "case_id": "x09",
+    "episode_id": "primary_x09_generic",
+    "phase": "primary"
+  },
+  {
+    "arm": "both",
+    "case_id": "x01",
+    "episode_id": "primary_x01_both",
+    "phase": "primary"
+  },
+  {
+    "arm": "intent",
+    "case_id": "x01",
+    "episode_id": "primary_x01_intent",
+    "phase": "primary"
+  },
+  {
+    "arm": "intent",
+    "case_id": "x04",
+    "episode_id": "primary_x04_intent",
+    "phase": "primary"
+  },
+  {
+    "arm": "minimal",
+    "case_id": "x04",
+    "episode_id": "primary_x04_minimal",
+    "phase": "primary"
+  },
+  {
+    "arm": "generic",
+    "case_id": "x03",
+    "episode_id": "primary_x03_generic",
+    "phase": "primary"
+  }
+]

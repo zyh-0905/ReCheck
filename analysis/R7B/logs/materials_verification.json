@@ -1,0 +1,394 @@
+{
+  "pass": true,
+  "input_sha256": "d2afe3ee01d58122844e7b7fc67ca1c8a32ace0f72ff87b47dd641e7c161aa53",
+  "manifest_files": 111,
+  "total_bundle_files": 112,
+  "collector_matches_original": true,
+  "source": {
+    "tree_sha1": "64ccd1694a91f2029844434d5995a2c0945cd6b2",
+    "file_count": 77,
+    "uncompressed_bytes": 1340475,
+    "sha256": "99a7806104c1e3cbcf9d8d1c790bb5bcde96ca06785626cb8e1f6beb9c3ee241"
+  },
+  "runtime_sha256": "e5696efed11346d8c53ec89587bbd3e4bce79cabdd67a62e7af60af62f01159c",
+  "packages": [
+    {
+      "name": "polars",
+      "version": "0.20.31",
+      "filename": "polars-0.20.31-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "24b82441f93409e0e8abd6f427b029db102f02b8de328cee9a680f84b84e3736",
+      "type": "bdist_wheel"
+    },
+    {
+      "name": "dill",
+      "version": "0.3.8",
+      "filename": "dill-0.3.8-py3-none-any.whl",
+      "sha256": "c36ca9ffb54365bdd2f8eb3eff7d2a21237f8452b57ace88b1ac615b7e815bd7",
+      "type": "bdist_wheel"
+    },
+    {
+      "name": "phonenumbers",
+      "version": "8.13.39",
+      "filename": "phonenumbers-8.13.39-py2.py3-none-any.whl",
+      "sha256": "3ad2d086fa71e7eef409001b9195ac54bebb0c6e3e752209b558ca192c9229a0",
+      "type": "bdist_wheel"
+    },
+    {
+      "name": "StrEnum",
+      "version": "0.4.15",
+      "filename": "StrEnum-0.4.15-py3-none-any.whl",
+      "sha256": "a30cda4af7cc6b5bf52c8055bc4bf4b2b6b14a93b574626da33df53cf7740659",
+      "type": "bdist_wheel"
+    },
+    {
+      "name": "ccy",
+      "version": "1.3.1",
+      "filename": "ccy-1.3.1-py3-none-any.whl",
+      "sha256": "361d240d06bfcc5c5e08b75af220fa5a10b8b7c1f5f2886821694bff48815cfe",
+      "type": "bdist_wheel"
+    },
+    {
+      "name": "decorator",
+      "version": "5.1.1",
+      "filename": "decorator-5.1.1-py3-none-any.whl",
+      "sha256": "b8c3f85900b9dc423225913c5aace94729fe1fa9763b38939a95226f02d37186",
+      "type": "bdist_wheel"
+    },
+    {
+      "name": "rapidfuzz",
+      "version": "3.9.3",
+      "filename": "rapidfuzz-3.9.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "fd84b7f652a5610733400307dc732f57c4a907080bef9520412e6d9b55bc9adc",
+      "type": "bdist_wheel"
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.12.2",
+      "filename": "typing_extensions-4.12.2-py3-none-any.whl",
+      "sha256": "04e5ca0351e0f3f85c6853954072df659d0d13fac324d0072316b67d7794700d",
+      "type": "bdist_wheel"
+    },
+    {
+      "name": "python-dateutil",
+      "version": "2.9.0.post0",
+      "filename": "python_dateutil-2.9.0.post0-py2.py3-none-any.whl",
+      "sha256": "a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427",
+      "type": "bdist_wheel"
+    },
+    {
+      "name": "pytz",
+      "version": "2024.1",
+      "filename": "pytz-2024.1-py2.py3-none-any.whl",
+      "sha256": "328171f4e3623139da4983451950b28e95ac706e13f3f2630a879749e7a8b319",
+      "type": "bdist_wheel"
+    },
+    {
+      "name": "six",
+      "version": "1.16.0",
+      "filename": "six-1.16.0-py2.py3-none-any.whl",
+      "sha256": "8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254",
+      "type": "bdist_wheel"
+    },
+    {
+      "name": "geopy",
+      "version": "2.4.1",
+      "filename": "geopy-2.4.1-py3-none-any.whl",
+      "sha256": "ae8b4bc5c1131820f4d75fce9d4aaaca0c85189b3aa5d64c3dcaf5e3b7b882a7",
+      "type": "bdist_wheel"
+    },
+    {
+      "name": "geographiclib",
+      "version": "2.0",
+      "filename": "geographiclib-2.0-py3-none-any.whl",
+      "sha256": "6b7225248e45ff7edcee32becc4e0a1504c606ac5ee163a5656d482e0cd38734",
+      "type": "bdist_wheel"
+    },
+    {
+      "name": "holidays",
+      "version": "0.51",
+      "filename": "holidays-0.51-py3-none-any.whl",
+      "sha256": "c894d61d62a16a05a92ab21534ceb00489f57df07ea34ad3ca96064673314c45",
+      "type": "bdist_wheel"
+    },
+    {
+      "name": "pint",
+      "version": "0.23",
+      "filename": "Pint-0.23-py3-none-any.whl",
+      "sha256": "df79b6b5f1beb7ed0cd55d91a0766fc55f972f757a9364e844958c05e8eb66f9",
+      "type": "bdist_wheel"
+    },
+    {
+      "name": "requests",
+      "version": "2.32.3",
+      "filename": "requests-2.32.3-py3-none-any.whl",
+      "sha256": "70761cfe03c773ceb22aa2f671b4757976145175cdfca038c02654d061d6dcc6",
+      "type": "bdist_wheel"
+    },
+    {
+      "name": "urllib3",
+      "version": "2.2.2",
+      "filename": "urllib3-2.2.2-py3-none-any.whl",
+      "sha256": "a448b2f64d686155468037e1ace9f2d2199776e17f0a46610480d311f73e3472",
+      "type": "bdist_wheel"
+    },
+    {
+      "name": "idna",
+      "version": "3.7",
+      "filename": "idna-3.7-py3-none-any.whl",
+      "sha256": "82fee1fc78add43492d3a1898bfa6d8a904cc97d8427f683ed8e798d07761aa0",
+      "type": "bdist_wheel"
+    },
+    {
+      "name": "charset-normalizer",
+      "version": "3.3.2",
+      "filename": "charset_normalizer-3.3.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "753f10e867343b4511128c6ed8c82f7bec3bd026875576dfd88483c5c73b2fd8",
+      "type": "bdist_wheel"
+    },
+    {
+      "name": "certifi",
+      "version": "2024.7.4",
+      "filename": "certifi-2024.7.4-py3-none-any.whl",
+      "sha256": "c198e21b1289c2ab85ee4e67bb4b4ef3ead0892059901a8d5b622f24a1101e90",
+      "type": "bdist_wheel"
+    },
+    {
+      "name": "numpy",
+      "version": "1.26.4",
+      "filename": "numpy-1.26.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "666dbfb6ec68962c033a450943ded891bed2d54e6755e35e5835d63f4f6931d5",
+      "type": "bdist_wheel"
+    },
+    {
+      "name": "networkx",
+      "version": "3.2.1",
+      "filename": "networkx-3.2.1-py3-none-any.whl",
+      "sha256": "f18c69adc97877c42332c170849c96cefa91881c99a7cb3e95b7c659ebdc1ec2",
+      "type": "bdist_wheel"
+    },
+    {
+      "name": "scipy",
+      "version": "1.13.1",
+      "filename": "scipy-1.13.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "a78b4b3345f1b6f68a763c6e25c0c9a23a9fd0f39f5f3d200efe8feda560a5fa",
+      "type": "bdist_wheel"
+    },
+    {
+      "name": "attrs",
+      "version": "23.2.0",
+      "filename": "attrs-23.2.0-py3-none-any.whl",
+      "sha256": "99b87a485a5820b23b879f04c2305b44b951b502fd64be915879d77a7e8fc6f1",
+      "type": "bdist_wheel"
+    },
+    {
+      "name": "rouge-score",
+      "version": "0.1.2",
+      "filename": "rouge_score-0.1.2.tar.gz",
+      "sha256": "c7d4da2683e68c9abf0135ef915d63a46643666f848e558a1b9f7ead17ff0f04",
+      "type": "sdist"
+    },
+    {
+      "name": "nltk",
+      "version": "3.8.1",
+      "filename": "nltk-3.8.1-py3-none-any.whl",
+      "sha256": "fd5c9109f976fa86bcadba8f91e47f5e9293bd034474752e92a520f81c93dda5",
+      "type": "bdist_wheel"
+    },
+    {
+      "name": "absl-py",
+      "version": "2.1.0",
+      "filename": "absl_py-2.1.0-py3-none-any.whl",
+      "sha256": "526a04eadab8b4ee719ce68f204172ead1027549089702d99b9059f129ff1308",
+      "type": "bdist_wheel"
+    },
+    {
+      "name": "click",
+      "version": "8.1.7",
+      "filename": "click-8.1.7-py3-none-any.whl",
+      "sha256": "ae74fb96c20a0277a1d615f1e4d73c8414f5a98db8b799a7931d1582f3390c28",
+      "type": "bdist_wheel"
+    },
+    {
+      "name": "joblib",
+      "version": "1.4.2",
+      "filename": "joblib-1.4.2-py3-none-any.whl",
+      "sha256": "06d478d5674cbc267e7496a410ee875abd68e4340feff4490bcb7afb88060ae6",
+      "type": "bdist_wheel"
+    },
+    {
+      "name": "regex",
+      "version": "2024.5.15",
+      "filename": "regex-2024.5.15-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "3e507ff1e74373c4d3038195fdd2af30d297b4f0950eeda6f515ae3d84a1770f",
+      "type": "bdist_wheel"
+    },
+    {
+      "name": "tqdm",
+      "version": "4.66.4",
+      "filename": "tqdm-4.66.4-py3-none-any.whl",
+      "sha256": "b75ca56b413b030bc3f00af51fd2c1a1a5eac6a0c1cca83cbb37a5c52abce644",
+      "type": "bdist_wheel"
+    },
+    {
+      "name": "pydantic",
+      "version": "2.7.4",
+      "filename": "pydantic-2.7.4-py3-none-any.whl",
+      "sha256": "ee8538d41ccb9c0a9ad3e0e5f07bf15ed8015b481ced539a1759d8cc89ae90d0",
+      "type": "bdist_wheel"
+    },
+    {
+      "name": "pydantic_core",
+      "version": "2.18.4",
+      "filename": "pydantic_core-2.18.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "0fbbdc827fe5e42e4d196c746b890b3d72876bdbf160b0eafe9f0334525119c8",
+      "type": "bdist_wheel"
+    },
+    {
+      "name": "annotated-types",
+      "version": "0.7.0",
+      "filename": "annotated_types-0.7.0-py3-none-any.whl",
+      "sha256": "1f02e8b43a8fbbc3f3e0d4f0f4bfc8131bcb4eebe8849b8e5c773f3a1c582a53",
+      "type": "bdist_wheel"
+    },
+    {
+      "name": "PyYAML",
+      "version": "6.0.1",
+      "filename": "PyYAML-6.0.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "d2b04aac4d386b172d5b9692e2d2da8de7bfb6c387fa4f801fbf6fb2e6ba4673",
+      "type": "bdist_wheel"
+    },
+    {
+      "name": "pytest",
+      "version": "8.2.2",
+      "filename": "pytest-8.2.2-py3-none-any.whl",
+      "sha256": "c434598117762e2bd304e526244f67bf66bbd7b5d6cf22138be51ff661980343",
+      "type": "bdist_wheel"
+    },
+    {
+      "name": "pluggy",
+      "version": "1.5.0",
+      "filename": "pluggy-1.5.0-py3-none-any.whl",
+      "sha256": "44e1ad92c8ca002de6377e165f3e0f1be63266ab4d554740532335b9d75ea669",
+      "type": "bdist_wheel"
+    },
+    {
+      "name": "iniconfig",
+      "version": "2.0.0",
+      "filename": "iniconfig-2.0.0-py3-none-any.whl",
+      "sha256": "b6a85871a79d2e3b22d2d1b94ac2824226a63c6b741c88f7ae975f18b6778374",
+      "type": "bdist_wheel"
+    },
+    {
+      "name": "packaging",
+      "version": "23.2",
+      "filename": "packaging-23.2-py3-none-any.whl",
+      "sha256": "8c491190033a9af7e1d931d0b5dacc2ef47509b34dd0de67ed209b5203fc88c7",
+      "type": "bdist_wheel"
+    },
+    {
+      "name": "setuptools",
+      "version": "70.3.0",
+      "filename": "setuptools-70.3.0-py3-none-any.whl",
+      "sha256": "fe384da74336c398e0d956d1cae0669bc02eed936cdb1d49b57de1990dc11ffc",
+      "type": "bdist_wheel"
+    },
+    {
+      "name": "wheel",
+      "version": "0.43.0",
+      "filename": "wheel-0.43.0-py3-none-any.whl",
+      "sha256": "55c570405f142630c6b9f72fe09d9b67cf1477fcf543ae5b8dcb1f5b7377da81",
+      "type": "bdist_wheel"
+    },
+    {
+      "name": "openai",
+      "version": "1.17.0",
+      "filename": "openai-1.17.0-py3-none-any.whl",
+      "sha256": "72464cdb0602a57af87acb4888b1a48a1c02182cc9f09d2f2f3200b185223d5f",
+      "type": "bdist_wheel"
+    },
+    {
+      "name": "langchain-core",
+      "version": "0.1.23",
+      "filename": "langchain_core-0.1.23-py3-none-any.whl",
+      "sha256": "d42fac013c39a8b0bcd7e337a4cb6c17c16046c60d768f89df582ad73ec3c5cb",
+      "type": "bdist_wheel"
+    },
+    {
+      "name": "langsmith",
+      "version": "0.0.87",
+      "filename": "langsmith-0.0.87-py3-none-any.whl",
+      "sha256": "8903d3811b9fc89eb18f5961c8e6935fbd2d0f119884fbf30dc70b8f8f4121fc",
+      "type": "bdist_wheel"
+    },
+    {
+      "name": "tenacity",
+      "version": "8.4.1",
+      "filename": "tenacity-8.4.1-py3-none-any.whl",
+      "sha256": "28522e692eda3e1b8f5e99c51464efcc0b9fc86933da92415168bc1c4e2308fa",
+      "type": "bdist_wheel"
+    },
+    {
+      "name": "jsonpatch",
+      "version": "1.33",
+      "filename": "jsonpatch-1.33-py2.py3-none-any.whl",
+      "sha256": "0ae28c0cd062bbd8b8ecc26d7d164fbbea9652a1a3693f3b956c1eae5145dade",
+      "type": "bdist_wheel"
+    },
+    {
+      "name": "jsonpointer",
+      "version": "2.4",
+      "filename": "jsonpointer-2.4-py2.py3-none-any.whl",
+      "sha256": "15d51bba20eea3165644553647711d150376234112651b4f1811022aecad7d7a",
+      "type": "bdist_wheel"
+    },
+    {
+      "name": "anyio",
+      "version": "4.4.0",
+      "filename": "anyio-4.4.0-py3-none-any.whl",
+      "sha256": "c1b2d8f46a8a812513012e1107cb0e68c17159a7a594208005a57dc776e1bdc7",
+      "type": "bdist_wheel"
+    },
+    {
+      "name": "httpx",
+      "version": "0.27.0",
+      "filename": "httpx-0.27.0-py3-none-any.whl",
+      "sha256": "71d5465162c13681bff01ad59b2cc68dd838ea1f10e51574bac27103f00c91a5",
+      "type": "bdist_wheel"
+    },
+    {
+      "name": "httpcore",
+      "version": "1.0.5",
+      "filename": "httpcore-1.0.5-py3-none-any.whl",
+      "sha256": "421f18bac248b25d310f3cacd198d55b8e6125c107797b609ff9b7a6ba7991b5",
+      "type": "bdist_wheel"
+    },
+    {
+      "name": "h11",
+      "version": "0.14.0",
+      "filename": "h11-0.14.0-py3-none-any.whl",
+      "sha256": "e3fe4ac4b851c468cc8363d500db52c2ead036020723024a109d37346efaa761",
+      "type": "bdist_wheel"
+    },
+    {
+      "name": "distro",
+      "version": "1.9.0",
+      "filename": "distro-1.9.0-py3-none-any.whl",
+      "sha256": "7bffd925d65168f85027d8da9af6bddab658135b840670a223589bc0c8ef02b2",
+      "type": "bdist_wheel"
+    },
+    {
+      "name": "sniffio",
+      "version": "1.3.1",
+      "filename": "sniffio-1.3.1-py3-none-any.whl",
+      "sha256": "2f6da418d1f1e0fddd844478f41680e794e6051915791a034ff65e5f100525a2",
+      "type": "bdist_wheel"
+    }
+  ],
+  "wheels": 52,
+  "sdists": 1,
+  "metadata_source": "supplied official release metadata; not independently refetched",
+  "warnings": [
+    "README: Python 3.9.6 does not meet documented >=3.10, but valid collected artifacts accepted.",
+    "Distributions are 52 wheels plus one sdist, not 53 wheels."
+  ]
+}

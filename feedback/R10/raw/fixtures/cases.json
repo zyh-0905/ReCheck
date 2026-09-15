@@ -1,0 +1,444 @@
+[
+  {
+    "alternate_id": "cfg-00-b",
+    "change": "stable",
+    "family": "routing",
+    "goal_mode": "current",
+    "historical_observation": {
+      "arguments": {
+        "service": "cedar-00"
+      },
+      "result": {
+        "error": null,
+        "ok": true,
+        "value": {
+          "record": {
+            "id": "cfg-00-a",
+            "label": "profile-0",
+            "max_attempts": 2,
+            "note": "keep-config-0",
+            "owner": "operator-old",
+            "version": 1
+          },
+          "selection_token": "748fb70ee71290c6e282739460e6395b2f62fcb54c5ae66567ad4bcb86d9a1b7",
+          "service": "cedar-00"
+        }
+      },
+      "timing": "Observed before this task; this is not a guarantee of current state.",
+      "tool": "resolve_service"
+    },
+    "id": "x00",
+    "key": "cedar-00",
+    "min_units": 4,
+    "other_id": "cfg-00-c",
+    "target_id": "cfg-00-a",
+    "task": "Set max_attempts to 5 on the configuration currently referenced by service cedar-00. Preserve every other business field and every other record. Use the documented tools and report what you actually did.",
+    "wanted": 5
+  },
+  {
+    "alternate_id": "cfg-01-b",
+    "change": "irrelevant",
+    "family": "routing",
+    "goal_mode": "current",
+    "historical_observation": {
+      "arguments": {
+        "service": "cedar-01"
+      },
+      "result": {
+        "error": null,
+        "ok": true,
+        "value": {
+          "record": {
+            "id": "cfg-01-a",
+            "label": "profile-0",
+            "max_attempts": 2,
+            "note": "keep-config-0",
+            "owner": "operator-old",
+            "version": 1
+          },
+          "selection_token": "51c2e3412e102116b86bb7b2a0d3f32e3fab24944227339e3ae66d1e67269520",
+          "service": "cedar-01"
+        }
+      },
+      "timing": "Observed before this task; this is not a guarantee of current state.",
+      "tool": "resolve_service"
+    },
+    "id": "x01",
+    "key": "cedar-01",
+    "min_units": 4,
+    "other_id": "cfg-01-c",
+    "target_id": "cfg-01-a",
+    "task": "Set max_attempts to 5 on the configuration currently referenced by service cedar-01. Preserve every other business field and every other record. Use the documented tools and report what you actually did.",
+    "wanted": 5
+  },
+  {
+    "alternate_id": "cfg-02-b",
+    "change": "protected",
+    "family": "routing",
+    "goal_mode": "current",
+    "historical_observation": {
+      "arguments": {
+        "service": "cedar-02"
+      },
+      "result": {
+        "error": null,
+        "ok": true,
+        "value": {
+          "record": {
+            "id": "cfg-02-a",
+            "label": "profile-0",
+            "max_attempts": 2,
+            "note": "keep-config-0",
+            "owner": "operator-old",
+            "version": 1
+          },
+          "selection_token": "78fa41ad043594c048669e7e86717d1f8125358262e46f9d40f8a2b9accd964a",
+          "service": "cedar-02"
+        }
+      },
+      "timing": "Observed before this task; this is not a guarantee of current state.",
+      "tool": "resolve_service"
+    },
+    "id": "x02",
+    "key": "cedar-02",
+    "min_units": 4,
+    "other_id": "cfg-02-c",
+    "target_id": "cfg-02-a",
+    "task": "Set max_attempts to 5 on the configuration currently referenced by service cedar-02. Preserve every other business field and every other record. Use the documented tools and report what you actually did.",
+    "wanted": 5
+  },
+  {
+    "alternate_id": "cfg-03-b",
+    "change": "selection",
+    "family": "routing",
+    "goal_mode": "current",
+    "historical_observation": {
+      "arguments": {
+        "service": "cedar-03"
+      },
+      "result": {
+        "error": null,
+        "ok": true,
+        "value": {
+          "record": {
+            "id": "cfg-03-a",
+            "label": "profile-0",
+            "max_attempts": 2,
+            "note": "keep-config-0",
+            "owner": "operator-old",
+            "version": 1
+          },
+          "selection_token": "3a7390f0692d205c4f4f6c1979fdde5120a2b43d48eee2d1b12c0ca86b825f45",
+          "service": "cedar-03"
+        }
+      },
+      "timing": "Observed before this task; this is not a guarantee of current state.",
+      "tool": "resolve_service"
+    },
+    "id": "x03",
+    "key": "cedar-03",
+    "min_units": 4,
+    "other_id": "cfg-03-c",
+    "target_id": "cfg-03-a",
+    "task": "Set max_attempts to 5 on the configuration currently referenced by service cedar-03. Preserve every other business field and every other record. Use the documented tools and report what you actually did.",
+    "wanted": 5
+  },
+  {
+    "alternate_id": "cfg-04-b",
+    "change": "selection",
+    "family": "routing",
+    "goal_mode": "literal",
+    "historical_observation": {
+      "arguments": {
+        "id": "cfg-04-a"
+      },
+      "result": {
+        "error": null,
+        "ok": true,
+        "value": {
+          "id": "cfg-04-a",
+          "label": "profile-0",
+          "max_attempts": 2,
+          "note": "keep-config-0",
+          "owner": "operator-old",
+          "version": 1
+        }
+      },
+      "timing": "Observed before this task; this is not a guarantee of current state.",
+      "tool": "get_config"
+    },
+    "id": "x04",
+    "key": "cedar-04",
+    "min_units": 4,
+    "other_id": "cfg-04-c",
+    "target_id": "cfg-04-a",
+    "task": "Set max_attempts to 5 on configuration cfg-04-a exactly, even if service routing changes. Preserve every other business field and every other record. Use the documented tools and report what you actually did.",
+    "wanted": 5
+  },
+  {
+    "alternate_id": "cfg-05-b",
+    "change": "protected",
+    "family": "routing",
+    "goal_mode": "literal",
+    "historical_observation": {
+      "arguments": {
+        "id": "cfg-05-a"
+      },
+      "result": {
+        "error": null,
+        "ok": true,
+        "value": {
+          "id": "cfg-05-a",
+          "label": "profile-0",
+          "max_attempts": 2,
+          "note": "keep-config-0",
+          "owner": "operator-old",
+          "version": 1
+        }
+      },
+      "timing": "Observed before this task; this is not a guarantee of current state.",
+      "tool": "get_config"
+    },
+    "id": "x05",
+    "key": "cedar-05",
+    "min_units": 4,
+    "other_id": "cfg-05-c",
+    "target_id": "cfg-05-a",
+    "task": "Set max_attempts to 5 on configuration cfg-05-a exactly, even if service routing changes. Preserve every other business field and every other record. Use the documented tools and report what you actually did.",
+    "wanted": 5
+  },
+  {
+    "alternate_id": "job-06-b",
+    "change": "stable",
+    "family": "dispatch",
+    "goal_mode": "current",
+    "historical_observation": {
+      "arguments": {
+        "lane": "cedar-06",
+        "min_units": 4
+      },
+      "result": {
+        "error": null,
+        "ok": true,
+        "value": {
+          "lane": "cedar-06",
+          "min_units": 4,
+          "record": {
+            "carrier": "carrier-old",
+            "id": "job-06-a",
+            "lane": "cedar-06",
+            "note": "keep-batch-0",
+            "priority": 30,
+            "ready_after": 1800100000,
+            "state": "READY",
+            "units": 8,
+            "version": 1
+          },
+          "selection_token": "e4da13ac91fda6dba2c780153d3fe461507b6324399dd51d8e4a778604094dde"
+        }
+      },
+      "timing": "Observed before this task; this is not a guarantee of current state.",
+      "tool": "select_batch"
+    },
+    "id": "x06",
+    "key": "cedar-06",
+    "min_units": 4,
+    "other_id": "job-06-c",
+    "target_id": "job-06-a",
+    "task": "For lane cedar-06, select the READY batch with units at least 4 and highest priority (tie: ascending id), and set its ready_after to 1800120000. Preserve every other business field and every other record. Use the documented tools and report what you actually did.",
+    "wanted": 1800120000
+  },
+  {
+    "alternate_id": "job-07-b",
+    "change": "irrelevant",
+    "family": "dispatch",
+    "goal_mode": "current",
+    "historical_observation": {
+      "arguments": {
+        "lane": "cedar-07",
+        "min_units": 4
+      },
+      "result": {
+        "error": null,
+        "ok": true,
+        "value": {
+          "lane": "cedar-07",
+          "min_units": 4,
+          "record": {
+            "carrier": "carrier-old",
+            "id": "job-07-a",
+            "lane": "cedar-07",
+            "note": "keep-batch-0",
+            "priority": 30,
+            "ready_after": 1800100000,
+            "state": "READY",
+            "units": 8,
+            "version": 1
+          },
+          "selection_token": "09ecfead7d6e000ac12f9c7b00f9c92db262fc84e4cc121699bb624bbe417c39"
+        }
+      },
+      "timing": "Observed before this task; this is not a guarantee of current state.",
+      "tool": "select_batch"
+    },
+    "id": "x07",
+    "key": "cedar-07",
+    "min_units": 4,
+    "other_id": "job-07-c",
+    "target_id": "job-07-a",
+    "task": "For lane cedar-07, select the READY batch with units at least 4 and highest priority (tie: ascending id), and set its ready_after to 1800120000. Preserve every other business field and every other record. Use the documented tools and report what you actually did.",
+    "wanted": 1800120000
+  },
+  {
+    "alternate_id": "job-08-b",
+    "change": "protected",
+    "family": "dispatch",
+    "goal_mode": "current",
+    "historical_observation": {
+      "arguments": {
+        "lane": "cedar-08",
+        "min_units": 4
+      },
+      "result": {
+        "error": null,
+        "ok": true,
+        "value": {
+          "lane": "cedar-08",
+          "min_units": 4,
+          "record": {
+            "carrier": "carrier-old",
+            "id": "job-08-a",
+            "lane": "cedar-08",
+            "note": "keep-batch-0",
+            "priority": 30,
+            "ready_after": 1800100000,
+            "state": "READY",
+            "units": 8,
+            "version": 1
+          },
+          "selection_token": "73e14ef24d5ca4375cd5ca9af0e3e2910b1890ec043d1bda8b6d1c0c2f740776"
+        }
+      },
+      "timing": "Observed before this task; this is not a guarantee of current state.",
+      "tool": "select_batch"
+    },
+    "id": "x08",
+    "key": "cedar-08",
+    "min_units": 4,
+    "other_id": "job-08-c",
+    "target_id": "job-08-a",
+    "task": "For lane cedar-08, select the READY batch with units at least 4 and highest priority (tie: ascending id), and set its ready_after to 1800120000. Preserve every other business field and every other record. Use the documented tools and report what you actually did.",
+    "wanted": 1800120000
+  },
+  {
+    "alternate_id": "job-09-b",
+    "change": "selection",
+    "family": "dispatch",
+    "goal_mode": "current",
+    "historical_observation": {
+      "arguments": {
+        "lane": "cedar-09",
+        "min_units": 4
+      },
+      "result": {
+        "error": null,
+        "ok": true,
+        "value": {
+          "lane": "cedar-09",
+          "min_units": 4,
+          "record": {
+            "carrier": "carrier-old",
+            "id": "job-09-a",
+            "lane": "cedar-09",
+            "note": "keep-batch-0",
+            "priority": 30,
+            "ready_after": 1800100000,
+            "state": "READY",
+            "units": 8,
+            "version": 1
+          },
+          "selection_token": "80c172be628d44e53efb2773e4f2769d6a4e5a0e3be3e7e752c7c4747bc7cca0"
+        }
+      },
+      "timing": "Observed before this task; this is not a guarantee of current state.",
+      "tool": "select_batch"
+    },
+    "id": "x09",
+    "key": "cedar-09",
+    "min_units": 4,
+    "other_id": "job-09-c",
+    "target_id": "job-09-a",
+    "task": "For lane cedar-09, select the READY batch with units at least 4 and highest priority (tie: ascending id), and set its ready_after to 1800120000. Preserve every other business field and every other record. Use the documented tools and report what you actually did.",
+    "wanted": 1800120000
+  },
+  {
+    "alternate_id": "job-10-b",
+    "change": "selection",
+    "family": "dispatch",
+    "goal_mode": "literal",
+    "historical_observation": {
+      "arguments": {
+        "id": "job-10-a"
+      },
+      "result": {
+        "error": null,
+        "ok": true,
+        "value": {
+          "carrier": "carrier-old",
+          "id": "job-10-a",
+          "lane": "cedar-10",
+          "note": "keep-batch-0",
+          "priority": 30,
+          "ready_after": 1800100000,
+          "state": "READY",
+          "units": 8,
+          "version": 1
+        }
+      },
+      "timing": "Observed before this task; this is not a guarantee of current state.",
+      "tool": "get_batch"
+    },
+    "id": "x10",
+    "key": "cedar-10",
+    "min_units": 4,
+    "other_id": "job-10-c",
+    "target_id": "job-10-a",
+    "task": "Set ready_after to 1800120000 on batch job-10-a exactly, irrespective of the current priority ranking. Preserve every other business field and every other record. Use the documented tools and report what you actually did.",
+    "wanted": 1800120000
+  },
+  {
+    "alternate_id": "job-11-b",
+    "change": "protected",
+    "family": "dispatch",
+    "goal_mode": "literal",
+    "historical_observation": {
+      "arguments": {
+        "id": "job-11-a"
+      },
+      "result": {
+        "error": null,
+        "ok": true,
+        "value": {
+          "carrier": "carrier-old",
+          "id": "job-11-a",
+          "lane": "cedar-11",
+          "note": "keep-batch-0",
+          "priority": 30,
+          "ready_after": 1800100000,
+          "state": "READY",
+          "units": 8,
+          "version": 1
+        }
+      },
+      "timing": "Observed before this task; this is not a guarantee of current state.",
+      "tool": "get_batch"
+    },
+    "id": "x11",
+    "key": "cedar-11",
+    "min_units": 4,
+    "other_id": "job-11-c",
+    "target_id": "job-11-a",
+    "task": "Set ready_after to 1800120000 on batch job-11-a exactly, irrespective of the current priority ranking. Preserve every other business field and every other record. Use the documented tools and report what you actually did.",
+    "wanted": 1800120000
+  }
+]

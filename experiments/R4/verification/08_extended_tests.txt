@@ -1,0 +1,61 @@
+test_budget_step_cap_even_with_large_episode_budget (test_audit_boundaries.BoundaryTests.test_budget_step_cap_even_with_large_episode_budget) ... ok
+test_duplicate_json_keys_rejected (test_audit_boundaries.BoundaryTests.test_duplicate_json_keys_rejected) ... ok
+test_empty_action_does_not_query (test_audit_boundaries.BoundaryTests.test_empty_action_does_not_query) ... ok
+test_legacy_freshness_regressions (test_audit_boundaries.BoundaryTests.test_legacy_freshness_regressions) ... ok
+test_no_private_modes_or_names_in_model_payloads (test_audit_boundaries.BoundaryTests.test_no_private_modes_or_names_in_model_payloads) ... ok
+test_nonfinite_json_rejected (test_audit_boundaries.BoundaryTests.test_nonfinite_json_rejected) ... ok
+test_rule_not_gold (test_audit_boundaries.BoundaryTests.test_rule_not_gold) ... ok
+test_scientific_judgement_never_automatic (test_audit_boundaries.BoundaryTests.test_scientific_judgement_never_automatic) ... ok
+test_secret_not_payload (test_audit_boundaries.BoundaryTests.test_secret_not_payload) ... ok
+test_unapproved_remote_fixture_rejected (test_audit_boundaries.BoundaryTests.test_unapproved_remote_fixture_rejected) ... ok
+test_all_modes_rule_matches_independent_truth (test_environment.EnvironmentTests.test_all_modes_rule_matches_independent_truth) ... ok
+test_bad_unused_field_is_not_silently_fixed (test_environment.EnvironmentTests.test_bad_unused_field_is_not_silently_fixed) ... ok
+test_bool_page_rejected (test_environment.EnvironmentTests.test_bool_page_rejected) ... ok
+test_budget_rejects_before_query (test_environment.EnvironmentTests.test_budget_rejects_before_query) ... ok
+test_bundle_charged_once_and_scoped (test_environment.EnvironmentTests.test_bundle_charged_once_and_scoped) ... ok
+test_counterexample_stale_not_always_wrong (test_environment.EnvironmentTests.test_counterexample_stale_not_always_wrong) ... ok
+test_invalid_packet_never_executes (test_environment.EnvironmentTests.test_invalid_packet_never_executes) ... ok
+test_pagination_really_fetches_multiple_pages (test_environment.EnvironmentTests.test_pagination_really_fetches_multiple_pages) ... ok
+test_private_state_not_in_view (test_environment.EnvironmentTests.test_private_state_not_in_view) ... ok
+test_public_contract (test_environment.EnvironmentTests.test_public_contract) ... ok
+test_public_probability_contract (test_model.CoreContract.test_public_probability_contract) ... ok
+test_public_solver_contract (test_model.CoreContract.test_public_solver_contract) ... ok
+test_budget_and_overlap (test_model.ModelBehavior.test_budget_and_overlap) ... ok
+test_duplicate_packets_rejected (test_model.ModelBehavior.test_duplicate_packets_rejected) ... ok
+test_exhaustive_small (test_model.ModelBehavior.test_exhaustive_small) ... ok
+test_invalid_probability (test_model.ModelBehavior.test_invalid_probability) ... ok
+test_joint_model_not_worse_than_baselines (test_model.ModelBehavior.test_joint_model_not_worse_than_baselines) ... ok
+test_joint_one_step_equals_myopic (test_model.ModelBehavior.test_joint_one_step_equals_myopic) ... ok
+test_no_budget_loss_accumulates (test_model.ModelBehavior.test_no_budget_loss_accumulates) ... ok
+test_no_independent_double_refresh_charge (test_model.ModelBehavior.test_no_independent_double_refresh_charge) ... ok
+test_probability (test_model.ModelBehavior.test_probability) ... ok
+test_rollout_not_worse_than_its_base_model (test_model.ModelBehavior.test_rollout_not_worse_than_its_base_model) ... ok
+test_rules_are_feasible (test_model.ModelBehavior.test_rules_are_feasible) ... ok
+test_all_cases_retained (test_protocol.ProtocolTests.test_all_cases_retained) ... ok
+test_call_count (test_protocol.ProtocolTests.test_call_count) ... ok
+test_counterexample_available (test_protocol.ProtocolTests.test_counterexample_available) ... ok
+test_distinct_seed_streams (test_protocol.ProtocolTests.test_distinct_seed_streams) ... ok
+test_executable_experiment (test_protocol.ProtocolTests.test_executable_experiment) ... ok
+test_preflight_excludes_private_world (test_protocol.ProtocolTests.test_preflight_excludes_private_world) ... ok
+test_audit_command_expected_total (test_runtime.LiveTests.test_audit_command_expected_total) ... ok
+test_bundle (test_runtime.LiveTests.test_bundle) ... ok
+test_calls (test_runtime.LiveTests.test_calls) ... ok
+test_cli_completes (test_runtime.LiveTests.test_cli_completes) ... ok
+test_consent_exact (test_runtime.LiveTests.test_consent_exact) ... ok
+test_fixture_not_real_research (test_runtime.LiveTests.test_fixture_not_real_research) ... ok
+test_no_grading_live_api (test_runtime.LiveTests.test_no_grading_live_api) ... ok
+test_no_resampling (test_runtime.LiveTests.test_no_resampling) ... ok
+test_prepare_cannot_rewrite_after_run (test_runtime.LiveTests.test_prepare_cannot_rewrite_after_run) ... ok
+test_prices_unknown (test_runtime.LiveTests.test_prices_unknown) ... ok
+test_record_counts (test_runtime.LiveTests.test_record_counts) ... ok
+test_repeat_inputs_not_outputs_reused (test_runtime.LiveTests.test_repeat_inputs_not_outputs_reused) ... ok
+test_replay (test_runtime.LiveTests.test_replay) ... ok
+test_same_seed_no_result_cherry_pick (test_runtime.LiveTests.test_same_seed_no_result_cherry_pick) ... ok
+test_smoke_required (test_runtime.LiveTests.test_smoke_required) ... ok
+test_snapshot_complete (test_runtime.LiveTests.test_snapshot_complete) ... ok
+test_identity_pause (test_runtime.PauseTests.test_identity_pause) ... [R4 1/2] one | 0.00s | finish=stop
+[R4 2/2] two | 0.00s | finish=stop
+ok
+test_invalid_json_no_retry (test_runtime.PauseTests.test_invalid_json_no_retry) ... [R4 1/1] one | 0.00s | finish=stop
+ok
+test_truncation_saved_no_retry (test_runtime.PauseTests.test_truncation_saved_no_retry) ... [R4 1/1] one | 0.00s | finish=length

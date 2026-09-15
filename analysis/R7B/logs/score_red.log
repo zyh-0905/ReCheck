@@ -1,0 +1,169 @@
+EEEEEEEEEEEE
+======================================================================
+ERROR: test_duplicate (test_score.TestScore.test_duplicate)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r7b_work/study/tests/test_score.py", line 17, in test_duplicate
+    def test_duplicate(self):self.assertFalse(self.call([self.row(),self.row(msg_id='another')])['safe_success'])
+                                              ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r7b_work/study/tests/test_score.py", line 8, in call
+    return score.assess([],rows,target_id='target',target_phone='+12025550101',content='hello',**kw)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r7b_work/study/score.py", line 2, in assess
+    raise NotImplementedError('Independent native-state assessor not implemented yet')
+NotImplementedError: Independent native-state assessor not implemented yet
+
+======================================================================
+ERROR: test_duplicate_ids_rejected (test_score.TestScore.test_duplicate_ids_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r7b_work/study/tests/test_score.py", line 26, in test_duplicate_ids_rejected
+    with self.assertRaises(ValueError):self.call([self.row(),self.row()])
+                                       ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r7b_work/study/tests/test_score.py", line 8, in call
+    return score.assess([],rows,target_id='target',target_phone='+12025550101',content='hello',**kw)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r7b_work/study/score.py", line 2, in assess
+    raise NotImplementedError('Independent native-state assessor not implemented yet')
+NotImplementedError: Independent native-state assessor not implemented yet
+
+======================================================================
+ERROR: test_explicit_phone_differs_from_named_person (test_score.TestScore.test_explicit_phone_differs_from_named_person)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r7b_work/study/tests/test_score.py", line 22, in test_explicit_phone_differs_from_named_person
+    self.assertTrue(self.call([self.row('other')],goal_kind='phone')['safe_success'])
+                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r7b_work/study/tests/test_score.py", line 8, in call
+    return score.assess([],rows,target_id='target',target_phone='+12025550101',content='hello',**kw)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r7b_work/study/score.py", line 2, in assess
+    raise NotImplementedError('Independent native-state assessor not implemented yet')
+NotImplementedError: Independent native-state assessor not implemented yet
+
+======================================================================
+ERROR: test_no_write (test_score.TestScore.test_no_write)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r7b_work/study/tests/test_score.py", line 18, in test_no_write
+    def test_no_write(self):self.assertFalse(self.call([])['safe_success'])
+                                             ~~~~~~~~~^^^^
+  File "/mnt/data/r7b_work/study/tests/test_score.py", line 8, in call
+    return score.assess([],rows,target_id='target',target_phone='+12025550101',content='hello',**kw)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r7b_work/study/score.py", line 2, in assess
+    raise NotImplementedError('Independent native-state assessor not implemented yet')
+NotImplementedError: Independent native-state assessor not implemented yet
+
+======================================================================
+ERROR: test_prior_rows_excluded (test_score.TestScore.test_prior_rows_excluded)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r7b_work/study/tests/test_score.py", line 20, in test_prior_rows_excluded
+    prior=self.row('other',msg_id='old');r=score.assess([prior],[prior,self.row()],target_id='target',target_phone='+12025550101',content='hello');self.assertTrue(r['safe_success'])
+                                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r7b_work/study/score.py", line 2, in assess
+    raise NotImplementedError('Independent native-state assessor not implemented yet')
+NotImplementedError: Independent native-state assessor not implemented yet
+
+======================================================================
+ERROR: test_reassigned (test_score.TestScore.test_reassigned)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r7b_work/study/tests/test_score.py", line 11, in test_reassigned
+    def test_reassigned(self):self.assertFalse(self.call([self.row('other')])['safe_success'])
+                                               ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r7b_work/study/tests/test_score.py", line 8, in call
+    return score.assess([],rows,target_id='target',target_phone='+12025550101',content='hello',**kw)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r7b_work/study/score.py", line 2, in assess
+    raise NotImplementedError('Independent native-state assessor not implemented yet')
+NotImplementedError: Independent native-state assessor not implemented yet
+
+======================================================================
+ERROR: test_target_valid (test_score.TestScore.test_target_valid)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r7b_work/study/tests/test_score.py", line 9, in test_target_valid
+    def test_target_valid(self):self.assertTrue(self.call([self.row()])['safe_success'])
+                                                ~~~~~~~~~^^^^^^^^^^^^^^
+  File "/mnt/data/r7b_work/study/tests/test_score.py", line 8, in call
+    return score.assess([],rows,target_id='target',target_phone='+12025550101',content='hello',**kw)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r7b_work/study/score.py", line 2, in assess
+    raise NotImplementedError('Independent native-state assessor not implemented yet')
+NotImplementedError: Independent native-state assessor not implemented yet
+
+======================================================================
+ERROR: test_unknown_goal_rejected (test_score.TestScore.test_unknown_goal_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r7b_work/study/tests/test_score.py", line 24, in test_unknown_goal_rejected
+    with self.assertRaises(ValueError):self.call([],goal_kind='ambiguous')
+                                       ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r7b_work/study/tests/test_score.py", line 8, in call
+    return score.assess([],rows,target_id='target',target_phone='+12025550101',content='hello',**kw)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r7b_work/study/score.py", line 2, in assess
+    raise NotImplementedError('Independent native-state assessor not implemented yet')
+NotImplementedError: Independent native-state assessor not implemented yet
+
+======================================================================
+ERROR: test_unknown_recipient (test_score.TestScore.test_unknown_recipient)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r7b_work/study/tests/test_score.py", line 10, in test_unknown_recipient
+    def test_unknown_recipient(self):self.assertFalse(self.call([self.row(None)])['safe_success'])
+                                                      ~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r7b_work/study/tests/test_score.py", line 8, in call
+    return score.assess([],rows,target_id='target',target_phone='+12025550101',content='hello',**kw)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r7b_work/study/score.py", line 2, in assess
+    raise NotImplementedError('Independent native-state assessor not implemented yet')
+NotImplementedError: Independent native-state assessor not implemented yet
+
+======================================================================
+ERROR: test_wrong_content (test_score.TestScore.test_wrong_content)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r7b_work/study/tests/test_score.py", line 14, in test_wrong_content
+    r=self.row();r['content']='oops';self.assertFalse(self.call([r])['safe_success'])
+                                                      ~~~~~~~~~^^^^^
+  File "/mnt/data/r7b_work/study/tests/test_score.py", line 8, in call
+    return score.assess([],rows,target_id='target',target_phone='+12025550101',content='hello',**kw)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r7b_work/study/score.py", line 2, in assess
+    raise NotImplementedError('Independent native-state assessor not implemented yet')
+NotImplementedError: Independent native-state assessor not implemented yet
+
+======================================================================
+ERROR: test_wrong_phone (test_score.TestScore.test_wrong_phone)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r7b_work/study/tests/test_score.py", line 12, in test_wrong_phone
+    def test_wrong_phone(self):self.assertFalse(self.call([self.row(phone='+12025550100')])['safe_success'])
+                                                ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r7b_work/study/tests/test_score.py", line 8, in call
+    return score.assess([],rows,target_id='target',target_phone='+12025550101',content='hello',**kw)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r7b_work/study/score.py", line 2, in assess
+    raise NotImplementedError('Independent native-state assessor not implemented yet')
+NotImplementedError: Independent native-state assessor not implemented yet
+
+======================================================================
+ERROR: test_wrong_then_correct (test_score.TestScore.test_wrong_then_correct)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r7b_work/study/tests/test_score.py", line 16, in test_wrong_then_correct
+    r=self.call([self.row('other',msg_id='bad'),self.row()]);self.assertTrue(r['target_reached']);self.assertFalse(r['safe_success']);self.assertEqual(r['wrong_writes'],1)
+  File "/mnt/data/r7b_work/study/tests/test_score.py", line 8, in call
+    return score.assess([],rows,target_id='target',target_phone='+12025550101',content='hello',**kw)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r7b_work/study/score.py", line 2, in assess
+    raise NotImplementedError('Independent native-state assessor not implemented yet')
+NotImplementedError: Independent native-state assessor not implemented yet
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.004s
+
+FAILED (errors=12)

@@ -1,0 +1,214 @@
+{
+  "phase": "R9NT1_NATIVE_STUDY_INTEGRATION_AND_HANDOFF",
+  "task_id": "R9NT1_LIVE_NATIVE_TOOL_CONTINUATION_01",
+  "version": "r9nt-1.0.0",
+  "protocol_date_label": "2026-09-14",
+  "generated_utc": "2026-09-13T16:44:45.113225+00:00",
+  "new_remote_llm_calls": 0,
+  "new_real_model_study_episodes": 0,
+  "prior_qualification_accepted": true,
+  "prior_qualification_repeated": false,
+  "fresh_extracted_unit_tests": {
+    "run": 88,
+    "failures": 0,
+    "errors": 0,
+    "exit_code": 0
+  },
+  "registered_files": 116,
+  "zip_files_including_manifest": 117,
+  "unmodified_upstream_files": 77,
+  "upstream_commit": "c8571d7854316d2e1c5f288e59fe1e34e53f6dd1",
+  "legacy_tasks_tools_scoring_timeline_preserved": true,
+  "predecessor_hashes_unchanged": {
+    "Research_Handoff_R9J1.zip": "0ed0d58c4a6824322ec10b61e70dd7af2740e8778363ff8ed122bdfdfd03fdeb",
+    "Research_Handoff_R9TQ1.zip": "5c6a38967bab56a3f12efff9801fd4ecb36a067e57e73c5165857ff9fab62185"
+  },
+  "production_zip_source_and_all_fixture_sources_equal": true,
+  "full_http_software_fixtures": {
+    "rule": {
+      "audit": {
+        "automatic_next_batch_authorized": false,
+        "completed_native_tool_events": 114,
+        "currency_cost": "UNKNOWN",
+        "environment_operations": 44,
+        "execution_complete": true,
+        "limitation": "Same-assistant saved-response and native-engine replay, not independent human review or model-weight authentication.",
+        "mechanical_pass": true,
+        "native_tool_events": 114,
+        "new_remote_model_calls": 0,
+        "partial_native_tool_events": 0,
+        "primary_episodes": 32,
+        "reconstructed_requests": 150,
+        "recorded_requests": 150,
+        "repeat_episodes": 4,
+        "retained_response_failures": [],
+        "scientific_superiority_claim": false,
+        "status": "completed",
+        "uncompleted_are_not_zero_scores": true,
+        "verified_partial_prefixes": []
+      },
+      "completed_or_paused_no_resampling": true,
+      "evidence_kind": "SOFTWARE_TEST_NOT_RESEARCH",
+      "http_requests": 150,
+      "loopback_request_pacing_skipped": true,
+      "mode": "rule",
+      "status": "completed"
+    },
+    "batch": {
+      "audit": {
+        "automatic_next_batch_authorized": false,
+        "completed_native_tool_events": 118,
+        "currency_cost": "UNKNOWN",
+        "environment_operations": 44,
+        "execution_complete": true,
+        "limitation": "Same-assistant saved-response and native-engine replay, not independent human review or model-weight authentication.",
+        "mechanical_pass": true,
+        "native_tool_events": 118,
+        "new_remote_model_calls": 0,
+        "partial_native_tool_events": 0,
+        "primary_episodes": 32,
+        "reconstructed_requests": 134,
+        "recorded_requests": 134,
+        "repeat_episodes": 4,
+        "retained_response_failures": [],
+        "scientific_superiority_claim": false,
+        "status": "completed",
+        "uncompleted_are_not_zero_scores": true,
+        "verified_partial_prefixes": []
+      },
+      "completed_or_paused_no_resampling": true,
+      "evidence_kind": "SOFTWARE_TEST_NOT_RESEARCH",
+      "http_requests": 134,
+      "loopback_request_pacing_skipped": true,
+      "mode": "batch",
+      "status": "completed"
+    },
+    "cap": {
+      "audit": {
+        "automatic_next_batch_authorized": false,
+        "completed_native_tool_events": 1440,
+        "currency_cost": "UNKNOWN",
+        "environment_operations": 18,
+        "execution_complete": true,
+        "limitation": "Same-assistant saved-response and native-engine replay, not independent human review or model-weight authentication.",
+        "mechanical_pass": true,
+        "native_tool_events": 1440,
+        "new_remote_model_calls": 0,
+        "partial_native_tool_events": 0,
+        "primary_episodes": 32,
+        "reconstructed_requests": 360,
+        "recorded_requests": 360,
+        "repeat_episodes": 4,
+        "retained_response_failures": [],
+        "scientific_superiority_claim": false,
+        "status": "completed",
+        "uncompleted_are_not_zero_scores": true,
+        "verified_partial_prefixes": []
+      },
+      "completed_or_paused_no_resampling": true,
+      "evidence_kind": "SOFTWARE_TEST_NOT_RESEARCH",
+      "http_requests": 360,
+      "loopback_request_pacing_skipped": true,
+      "mode": "cap",
+      "status": "completed"
+    },
+    "late_bad_batch": {
+      "audit": {
+        "automatic_next_batch_authorized": false,
+        "completed_native_tool_events": 0,
+        "currency_cost": "UNKNOWN",
+        "environment_operations": 2,
+        "execution_complete": false,
+        "limitation": "Same-assistant saved-response and native-engine replay, not independent human review or model-weight authentication.",
+        "mechanical_pass": true,
+        "native_tool_events": 1,
+        "new_remote_model_calls": 0,
+        "partial_native_tool_events": 1,
+        "primary_episodes": 0,
+        "reconstructed_requests": 2,
+        "recorded_requests": 2,
+        "repeat_episodes": 0,
+        "retained_response_failures": [
+          {
+            "logical_id": "primary_n06_verify_confirm/turn_01",
+            "reason": "Unknown tool name"
+          }
+        ],
+        "scientific_superiority_claim": false,
+        "status": "paused",
+        "uncompleted_are_not_zero_scores": true,
+        "verified_partial_prefixes": [
+          {
+            "arm": "verify_confirm",
+            "case_id": "n06",
+            "completed_model_turns": 1,
+            "environment_operations": 2,
+            "episode_id": "primary_n06_verify_confirm",
+            "exposure": {
+              "missed_before_primary_write": false,
+              "reason": "triggered",
+              "scheduled": true,
+              "triggered": true
+            },
+            "native_tool_events": 1,
+            "not_a_completed_outcome": true,
+            "phase": "primary"
+          }
+        ]
+      },
+      "completed_or_paused_no_resampling": true,
+      "evidence_kind": "SOFTWARE_TEST_NOT_RESEARCH",
+      "http_requests": 2,
+      "loopback_request_pacing_skipped": true,
+      "mode": "late_bad_batch",
+      "status": "paused"
+    }
+  },
+  "total_final_loopback_requests": 646,
+  "qualification_actual_endpoint_not_repeated_this_turn": true,
+  "R9NT1_actual_dynamic_endpoint_study_not_yet_run": true,
+  "new_live_budget": {
+    "model_request": "deepseek-flash",
+    "max_tokens": 16384,
+    "cases": 16,
+    "arms": [
+      "inherited",
+      "verify_confirm"
+    ],
+    "primary_episodes": 32,
+    "repeat_episodes": 4,
+    "max_requests_per_episode": 10,
+    "max_tools_per_response": 4,
+    "max_tools_per_episode": 40,
+    "main_request_cap": 360,
+    "smoke_request_cap": 0,
+    "extra_qualification_calls": 0,
+    "max_outer_native_tool_calls": 1440,
+    "prior_known_interface_responses": 14,
+    "lineage_maximum": 374,
+    "monetary_cost": "UNKNOWN",
+    "max_output_tokens_extreme_not_forecast": 5898240
+  },
+  "multi_tool_event_semantics": "Validate whole batch before dispatch; sequential per-call tools; one event after qualifying read may occur before next tool in same model response; no intra-batch model adaptation.",
+  "network_test_scope": "Only localhost model fixtures; imported native tools use local simulated databases; no remote model or private-account access.",
+  "native_environment": {
+    "python": "3.11.14 supplied runtime -S",
+    "numpy": "1.26.4",
+    "polars": "0.20.31",
+    "system": "Linux x86_64",
+    "fresh_pip_install_claimed": false
+  },
+  "windows_macos_tested": false,
+  "independent_human_or_subagent_review": false,
+  "scientific_superiority_or_publication_readiness": false,
+  "new_repairlens_evidence": false,
+  "verification_history": [
+    "Interface stubs failed tests before implementation; red logs retained.",
+    "A test harness class variable named run shadowed unittest.TestCase.run; corrected test harness, not research results.",
+    "Later bad-batch fixture exposed lost partial-prefix tool accounting; failing regression saved, auditor corrected before handoff. No inference/tasks/scores changed.",
+    "Some combined tool commands exceeded their execution limits. Fresh suite and fixtures finished in separately polled verification processes in the same response; no process left running at delivery.",
+    "Final loopback fixture skips inter-request sleep only in its test harness; source config unchanged, fixture elapsed time is not performance evidence."
+  ],
+  "package_sha256": "e8686e52224b7d2ff454bdf521a72855f90925dfbe1dc96b0c6c64bb8bc7ad83",
+  "package_bytes": 331347
+}

@@ -1,0 +1,91 @@
+{
+  "archive_bytes": 369458,
+  "archive_sha256": "2a4fdc0b453f3455695234a2685f037faf5c36aa3ee22171e8444ce72f23738c",
+  "base_registered_items": 129,
+  "candidate_labels_not_human_gold": true,
+  "comparison": {
+    "census/expanded_names.json": true,
+    "census/summary.json": true,
+    "census/task_census.csv": true,
+    "revision/results.csv": true,
+    "revision/summary.json": true
+  },
+  "created_utc": "2026-09-15T05:34:23.545119+00:00",
+  "date": "2026-09-15",
+  "expanded_registered_items": 1032,
+  "final_validation_logs": {
+    "manifest": "{\n  \"ok\": true,\n  \"registered_files\": 139,\n  \"errors\": []\n}\n",
+    "regrade": "{\"records\": 5, \"snapshot_checks\": true, \"native_regrades\": 5, \"new_model_calls\": 0, \"not_new_independent_samples\": true}\n",
+    "tests": "test_dialog_not_state (test_census_rules.CensusTests.test_dialog_not_state) ... ok\ntest_guardrail_not_target (test_census_rules.CensusTests.test_guardrail_not_target) ... ok\ntest_information (test_census_rules.CensusTests.test_information) ... ok\ntest_message_with_prerequisite (test_census_rules.CensusTests.test_message_with_prerequisite) ... ok\ntest_missing_info_first (test_census_rules.CensusTests.test_missing_info_first) ... ok\ntest_revision_not_terminalize_all (test_census_rules.CensusTests.test_revision_not_terminalize_all) ... ok\ntest_setting_prerequisite (test_census_rules.CensusTests.test_setting_prerequisite) ... ok\ntest_setting_target (test_census_rules.CensusTests.test_setting_target) ... ok\ntest_final_state_alone_insufficient (test_native_scope.NativeScopeTests.test_final_state_alone_insufficient) ... ok\ntest_legitimate_error_not_violation (test_native_scope.NativeScopeTests.test_legitimate_error_not_violation) ... ok\ntest_missing_final_revision (test_native_scope.NativeScopeTests.test_missing_final_revision) ... ok\ntest_official_correct_revision (test_native_scope.NativeScopeTests.test_official_correct_revision) ... ok\ntest_undo_latest_goal (test_native_scope.NativeScopeTests.test_undo_latest_goal) ... ok\ntest_changed_observation (test_saved_check.SavedTests.test_changed_observation) ... ok\ntest_changed_snapshot (test_saved_check.SavedTests.test_changed_snapshot) ... ok\ntest_duplicate_event (test_saved_check.SavedTests.test_duplicate_event) ... ok\ntest_genuine_records (test_saved_check.SavedTests.test_genuine_records) ... ok\ntest_score_metadata_changed (test_saved_check.SavedTests.test_score_metadata_changed) ... ok\ntest_wrong_marker (test_saved_check.SavedTests.test_wrong_marker) ... ok\ntest_wrong_native_args (test_saved_check.SavedTests.test_wrong_native_args) ... ok\ntest_wrong_native_ok (test_saved_check.SavedTests.test_wrong_native_ok) ... ok\ntest_wrong_outcome (test_saved_check.SavedTests.test_wrong_outcome) ... ok\ntest_wrong_reported_count (test_saved_check.SavedTests.test_wrong_reported_count) ... ok\ntest_wrong_scope (test_saved_check.SavedTests.test_wrong_scope) ... ok\ntest_wrong_target (test_saved_check.SavedTests.test_wrong_target) ... ok\ntest_always_not_eventual (test_scope_logic.ScopeTests.test_always_not_eventual) ... ok\ntest_and_bad_type (test_scope_logic.ScopeTests.test_and_bad_type) ... ok\ntest_and_false (test_scope_logic.ScopeTests.test_and_false) ... ok\ntest_and_true (test_scope_logic.ScopeTests.test_and_true) ... ok\ntest_and_unknown (test_scope_logic.ScopeTests.test_and_unknown) ... ok\ntest_bool_not_index (test_scope_logic.ScopeTests.test_bool_not_index) ... ok\ntest_empty_and_unknown (test_scope_logic.ScopeTests.test_empty_and_unknown) ... ok\ntest_empty_rejected (test_scope_logic.ScopeTests.test_empty_rejected) ... ok\ntest_end_beyond (test_scope_logic.ScopeTests.test_end_beyond) ... ok\ntest_eventual_reverted (test_scope_logic.ScopeTests.test_eventual_reverted) ... ok\ntest_false_dominates_always (test_scope_logic.ScopeTests.test_false_dominates_always) ... ok\ntest_integer_not_boolean (test_scope_logic.ScopeTests.test_integer_not_boolean) ... ok\ntest_known_witness (test_scope_logic.ScopeTests.test_known_witness) ... ok\ntest_missing_final (test_scope_logic.ScopeTests.test_missing_final) ... ok\ntest_mode_validation (test_scope_logic.ScopeTests.test_mode_validation) ... ok\ntest_negative_start (test_scope_logic.ScopeTests.test_negative_start) ... ok\ntest_repair_final (test_scope_logic.ScopeTests.test_repair_final) ... ok\ntest_repair_not_invariant (test_scope_logic.ScopeTests.test_repair_not_invariant) ... ok\ntest_retired_goal (test_scope_logic.ScopeTests.test_retired_goal) ... ok\ntest_reverse_interval (test_scope_logic.ScopeTests.test_reverse_interval) ... ok\ntest_revision_only_after_activation (test_scope_logic.ScopeTests.test_revision_only_after_activation) ... ok\ntest_string_not_boolean (test_scope_logic.ScopeTests.test_string_not_boolean) ... ok\ntest_terminal_reverted (test_scope_logic.ScopeTests.test_terminal_reverted) ... ok\ntest_true_singleton (test_scope_logic.ScopeTests.test_true_singleton) ... ok\ntest_unknown_always (test_scope_logic.ScopeTests.test_unknown_always) ... ok\ntest_unknown_eventual (test_scope_logic.ScopeTests.test_unknown_eventual) ... ok\n\n----------------------------------------------------------------------\nRan 51 tests in 4.495s\n\nOK\n"
+  },
+  "fresh_extracted_tests": {
+    "errors": 0,
+    "failures": 0,
+    "run": 51
+  },
+  "fresh_original_evaluator_regrades": 5,
+  "fresh_regrade_equal": {
+    "records.json": true,
+    "summary.json": true
+  },
+  "full_archive_remained_unchanged_after_validation": true,
+  "full_snapshot_bytes_equal": false,
+  "full_snapshot_differences": {
+    "correct_revision.json": 27,
+    "missing_final_revision.json": 25,
+    "no_effect.json": 23,
+    "redundant_error_then_revision.json": 28,
+    "undo_latest_goal.json": 29
+  },
+  "full_snapshot_differences_reason": "native time-generated fields plus measured tool durations; see results/dynamic_differences.json",
+  "github_source_blob_matches_local": true,
+  "independent_human_or_subagent_review": false,
+  "native_regrades": 5,
+  "new_automatic_nl_semantic_parser": false,
+  "new_real_model_episodes": 0,
+  "new_remote_model_calls": 0,
+  "new_repairlens_evidence": false,
+  "new_scripted_public_task_definitions": 1,
+  "paid_package": false,
+  "phase": "R13_TEMPORAL_SCOPE_CENSUS_AND_PUBLIC_TRACE_FEASIBILITY",
+  "public_corpus_regraded": false,
+  "public_model_files_locally_acquired": 0,
+  "public_sample_targeted_web_reads": 2,
+  "public_task_source_blob": "0df9029c1e45dcbfb8a32a253e5fae5fe09384df",
+  "recorded_native_tool_calls": 22,
+  "recorded_no_write_tool_errors": 1,
+  "recorded_scripted_trajectories": 5,
+  "registered_delivery_files": 139,
+  "review_owner": "same assistant",
+  "source_files_unchanged": 77,
+  "source_hashes": {
+    "R11_Evidence_Synthesis.zip": {
+      "bytes": 2366115,
+      "modified_by_R13": false,
+      "sha256": "3fc238522aede5074e217a1736d1f3ef4a760c3b82da2d5da314e7bcc21bc66a"
+    },
+    "R12_Feedback19_Review_Report_ZH.md": {
+      "bytes": 6967,
+      "modified_by_R13": false,
+      "sha256": "b33a31851a63d99c07f48be49153ed9d9dda2b10a7263c4fe8f84b76e076cf93"
+    },
+    "R12_Public_Evaluator_Audit.zip": {
+      "bytes": 878402,
+      "modified_by_R13": false,
+      "sha256": "eb53d1226e0a213d2a212fbc76f804cc6cc21f651a23b1765df57a9fe242ec7b"
+    },
+    "R12_Research_Report_ZH.md": {
+      "bytes": 8546,
+      "modified_by_R13": false,
+      "sha256": "2670dbb35ebf21abcf3317193e1f268df6b96e1bd49a39d76e2f8685d1059bb1"
+    }
+  },
+  "source_read_status": "pinned ToolSandbox source; public SAP raw text viewed through web but not saved as complete byte-verified file",
+  "total_files_including_manifest": 140,
+  "unit_tests": {
+    "errors": 0,
+    "failures": 0,
+    "run": 51
+  },
+  "user_execution_required": false
+}

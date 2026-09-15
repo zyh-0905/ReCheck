@@ -1,0 +1,104 @@
+{
+  "version": "r3-3.0.0",
+  "config": {
+    "model": "deepseek-flash",
+    "provider_label": "User previously verified DeepSeek endpoint; returned ID recorded, version not independently attested",
+    "key_env": "LLM_API_KEY",
+    "local_no_auth": false,
+    "backend_kind": "live",
+    "max_tokens_field": "max_tokens",
+    "max_output_tokens": 16384,
+    "temperature": null,
+    "extra_body": {
+      "reasoning_effort": "high",
+      "thinking": {
+        "type": "enabled"
+      }
+    },
+    "instruction_role": "system",
+    "timeout_seconds": 300,
+    "min_interval_seconds": 0.5,
+    "max_requests": 416,
+    "max_estimated_spend": null,
+    "prices": {
+      "currency": "UNKNOWN",
+      "input_per_million": null,
+      "output_per_million": null,
+      "cached_input_per_million": null
+    },
+    "base_url_sha256": "5abe20d7d3d56ed5cd86f95d28d3e712ce59ab9161922170c78a4cfc18eaaf0f"
+  },
+  "study": "r3_smoke",
+  "spec": {
+    "phase": "connectivity_only",
+    "logical_calls": 1
+  },
+  "billing_schedule": {
+    "enabled": false,
+    "currency": "UNKNOWN",
+    "source": "",
+    "model_ids": [],
+    "valid_from_utc": "",
+    "valid_until_utc": "",
+    "off_peak": {
+      "input_per_million": null,
+      "cached_input_per_million": null,
+      "output_per_million": null
+    },
+    "peak": {
+      "input_per_million": null,
+      "cached_input_per_million": null,
+      "output_per_million": null
+    },
+    "peak_windows_utc": []
+  },
+  "source_hashes": {
+    "EXECUTION_PROMPT_ZH.md": "16d70a54986c4dea17f2923d1efa2cc52fe7446fca0fdafacdaad73359f2421b",
+    "LICENSE": "748f17c6499a0c1c087c85ae2b1cd1090ad2063d9eaeb55e52511a1b7f2f9370",
+    "README_ZH.md": "9390ff80fe572f8552d90c38a6bd110c00e400abd1d55114b3dfe42ea7791022",
+    "billing.example.json": "98eea6dee20e8ba4d9459ac7e0f98bd7ba52344e4dea40d17a916a47cac2aef8",
+    "config.example.json": "a93383fd2372427be545d95b769ad025e5bebb658f26ed6e3a803bcf8ee09ed6",
+    "configs/r3_protocol.json": "663a04f600ff7f9ca32212cdbe2fced1b81b7f116077aafd73740fd97dc67007",
+    "docs/API_PROFILE.md": "81ad138c19759a48c0e9b8c075e2e9a722a888713df3af27e82c4eaa2ee285fd",
+    "docs/DESIGN.md": "cd7c86b0ba349d669f069b504a040459c7bdf7329f3d5ea3dee60b29e79513ae",
+    "docs/IMPLEMENTATION_PLAN.md": "4a3c2cb8092a666c5f7b516930b05dd7f9448aa57b8ff2ecc8affc407e1233f3",
+    "docs/OFFLINE_FINDINGS_ZH.md": "347cf07559484d0ac041284c18cbdd1c44a703195ace464568e5058c68e03f3c",
+    "docs/PROVENANCE.json": "3d724768f7ada544414f2e0c66e5098aa530e68d5aee11d84dfe7ca17f2c7447",
+    "docs/REVIEW_LIMITATIONS_ZH.md": "df5402407ebbef971ddf913c758a1f0c3485c8fb665c96bb6c20fe3e760b9320",
+    "pilot/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "pilot/client.py": "2ca3fa9ee567762efa403c8052017f45d64adfc74a8e0da91355cc06530a92ae",
+    "pilot/common.py": "cd23f107baa5313baa2308cacedb3c64ee5ed57e16f811b0707d722fc9e90b1e",
+    "pilot/recheck.py": "06f235dd60f371b6280ae164981a9570811c292c3e16df2221fafae55068d5e8",
+    "r3.py": "58beaac1df5a4c9ccbf05f9a3d4839ddf23ae5753a5373634c333e48aa5e8d8f",
+    "r3lib/__init__.py": "ae72b0af74ea29fcd8f98f3142e5c3a9f1e946f77d5a347dc529849378f12443",
+    "r3lib/accounting.py": "d89f82f41e0d82ef3474bd8495f1b5277ac7acd4d2cd4f529eebdf1a3ea644f2",
+    "r3lib/audit.py": "57183514e695b144c2309905be2db1c692be5a3c9a99a2fd82ca857470e60392",
+    "r3lib/experiment.py": "28500f5d89ff54f7f6892d9d5b432fe3f5df90c384ad020a91b51f6743ba07b7",
+    "r3lib/offline.py": "8c8a226c5fc6a6cfb28a28b02523efde3dd2762a6786e16709d1f2a75eb077f0",
+    "r3lib/protocol.py": "fcdac61de765cdde3a8f5c4df04d112cf13bd6e4605e7db6215ab47841cd478a",
+    "r3lib/repair_guard.py": "658b2fcb0f17b58827fbdad521fd6bb0643f4d6be9e29ea7f5e4a82ea1d27d02",
+    "r3lib/review.py": "2e24bbcdc40415dd44a536adc287b9bd1e09860cf47cce2acab8df0fc75f1e72",
+    "r3lib/session.py": "d204965a97b8aa769da391d5d86045598b2424aad3c5e66c83e4a641e18904e1",
+    "r3lib/storage.py": "890599ce6b18677cfe0502e73073c8e2a9b15d973388fea421c1b10fcadac310",
+    "r3lib/worker.py": "40b2a626ea64e55c2efb5ee62667bff761de1ec8eb7d3872cc034464c7662791",
+    "regression/r2_failures.json": "f76dd84acaeee31960e65d348e37659638a03fd0be02751518406d5f9ae9155c",
+    "regression/repair_cost_inputs.json": "a1d105d2554735d3742a08750b9e66bca9be7fe13c90e1d7abfde21a0712ee37",
+    "requirements.txt": "7bd6b8946940b79948c548c8048e545684b91c8edc9444d8dfc0c8f76a97c0a7",
+    "tests/test_r3_boundaries.py": "f4b5ccb0a4ae408bfed45c084959a36254f54a926a38f40508b07873cb87ca2c",
+    "tests/test_r3_core.py": "15ffb20c8097e3b255fcff423b80c0a87d0b79b1c6f3efab9a5e4d1c52e95b75",
+    "tests/test_r3_live.py": "f748d093a8af11c085bbad0662bae22d133a1ede3af35206ae4247e6efc28072",
+    "tests/test_r3_runtime.py": "d9db2d172683201c9ce0519c15a1d85c667abb875857d92cfc21c3add2a95f50",
+    "tests/test_repair_guard.py": "d62c9935f60c1fd68e3699d479fa86bbc633d1b528c08311b21687a76b8dae8d",
+    "vendor/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "vendor/recheck_core.py": "df2a275361d74155007335a84299331a1780b13a73ab9e5abd5f078fe42d4310"
+  },
+  "fingerprint": "5f0bbe123a6b2aeb5a7703628adffff735435a9763c42f855d96c4c2019311c5",
+  "created_utc": "2026-09-12T14:03:18.452335+00:00",
+  "profile_sha256": "af542d06b25b5b59c9e40510526297c494e84400920cdb71faddcd32765b33ba",
+  "runtime": {
+    "python": "3.11.15",
+    "numpy": "2.3.5",
+    "os": "Darwin"
+  },
+  "evidence_label": "REAL_ENDPOINT_CONTROLLED_DEVELOPMENT_NOT_CONFIRMATORY"
+}

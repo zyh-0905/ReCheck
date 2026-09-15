@@ -1,0 +1,132 @@
+{
+  "frozen_policy_source_hashes_unchanged": {
+    "src/__init__.py": true,
+    "src/common/__init__.py": true,
+    "src/recheck/__init__.py": true,
+    "src/recheck/core.py": true,
+    "src/recheck/experiment.py": true,
+    "src/recheck/sql_environment.py": true,
+    "src/repairlens/__init__.py": true,
+    "src/repairlens/artifacts.py": true,
+    "src/repairlens/core.py": true,
+    "src/repairlens/experiment.py": true
+  },
+  "papers": {
+    "recheck": {
+      "path": "papers/recheck/main.pdf",
+      "pages": 4,
+      "geometry": [
+        {
+          "page": 1,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text_characters": 4663
+        },
+        {
+          "page": 2,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text_characters": 4309
+        },
+        {
+          "page": 3,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text_characters": 4119
+        },
+        {
+          "page": 4,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text_characters": 3348
+        }
+      ],
+      "bytes": 213797,
+      "size_under_5MB": true,
+      "letter_size": true,
+      "all_fonts_embedded": true,
+      "no_type3": true,
+      "font_report": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nPDANND+NimbusRomNo9L-Medi            Type 1            Custom           yes yes yes      4  0\nQAZNNU+NimbusRomNo9L-ReguItal        Type 1            Custom           yes yes yes      5  0\nIMKJKR+NimbusRomNo9L-Regu            Type 1            Custom           yes yes yes      6  0\nSJISBO+NimbusRomNo9L-MediItal        Type 1            Custom           yes yes yes      7  0\nXOAKQU+CMMI10                        Type 1            Builtin          yes yes yes      8  0\nDVJORU+CMMI7                         Type 1            Builtin          yes yes yes      9  0\nXVBELQ+CMSY10                        Type 1            Builtin          yes yes yes     10  0\nFDAEBD+CMR10                         Type 1            Builtin          yes yes yes     11  0\nHLBMOC+CMEX10                        Type 1            Builtin          yes yes yes     12  0\nJULMZD+CMR7                          Type 1            Builtin          yes yes yes     13  0\nUAGOMC+CMBX10                        Type 1            Builtin          yes yes yes     14  0\nRAZVEJ+MSBM10                        Type 1            Builtin          yes yes yes     20  0\nFTLNUL+CMSY7                         Type 1            Builtin          yes yes yes     21  0\nCYFJJF+CMMI5                         Type 1            Builtin          yes yes yes     22  0\nTMHVPV+MSAM10                        Type 1            Builtin          yes yes yes     23  0\nDIGOGO+CMMI9                         Type 1            Builtin          yes yes yes     29  0\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     31  0\nGCWXDV+DejaVuSans-Oblique            CID TrueType      Identity-H       yes yes yes     46  0\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     47  0\n",
+      "ordinary_text_min_pdf_pt": 8.966400146484375,
+      "ordinary_text_at_least_9_TeX_pt": true,
+      "font_note": "9 TeX pt = 8.966 PDF pt. Math scripts and operator extensions are excluded from ordinary text audit.",
+      "text_outside_toleranced_print_area": [],
+      "fifth_page_starts_references": true,
+      "no_footer_text": true,
+      "unresolved_references": false,
+      "ai_disclosure": true,
+      "authorship_complete": false,
+      "sha256": "220652906340ca41bf90b703485a0082e1694fdfc83bef2883f21e0cec5727c7",
+      "latex_overfull_count": 0,
+      "latex_undefined_reference_warning": false,
+      "abstract_word_count_approx": 133,
+      "mechanical_format_checks_pass": true
+    },
+    "repairlens": {
+      "path": "papers/repairlens/main.pdf",
+      "pages": 5,
+      "geometry": [
+        {
+          "page": 1,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text_characters": 4654
+        },
+        {
+          "page": 2,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text_characters": 5014
+        },
+        {
+          "page": 3,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text_characters": 5078
+        },
+        {
+          "page": 4,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text_characters": 3665
+        },
+        {
+          "page": 5,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text_characters": 1086
+        }
+      ],
+      "bytes": 206642,
+      "size_under_5MB": true,
+      "letter_size": true,
+      "all_fonts_embedded": true,
+      "no_type3": true,
+      "font_report": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nFRFDVD+NimbusRomNo9L-Medi            Type 1            Custom           yes yes yes      4  0\nVXJCJR+NimbusRomNo9L-ReguItal        Type 1            Custom           yes yes yes      5  0\nMDLNVL+NimbusRomNo9L-Regu            Type 1            Custom           yes yes yes      6  0\nSJISBO+NimbusRomNo9L-MediItal        Type 1            Custom           yes yes yes      7  0\nRMABFR+CMSY10                        Type 1            Builtin          yes yes yes      8  0\nLZHHJK+CMMI10                        Type 1            Builtin          yes yes yes      9  0\nRRXYWD+CMR10                         Type 1            Builtin          yes yes yes     10  0\nGCMOFX+CMMI7                         Type 1            Builtin          yes yes yes     11  0\nZATABH+CMSY7                         Type 1            Builtin          yes yes yes     12  0\nIXNPPI+CMEX10                        Type 1            Builtin          yes yes yes     18  0\nJXXLVC+CMR7                          Type 1            Builtin          yes yes yes     19  0\nNLOEJQ+CMEX7                         Type 1            Builtin          yes yes yes     20  0\nNGDIFD+CMMI5                         Type 1            Builtin          yes yes yes     21  0\nPZJEAG+CMSY5                         Type 1            Builtin          yes yes yes     22  0\nTMHVPV+MSAM10                        Type 1            Builtin          yes yes yes     23  0\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     33  0\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     45  0\n",
+      "ordinary_text_min_pdf_pt": 8.966400146484375,
+      "ordinary_text_at_least_9_TeX_pt": true,
+      "font_note": "9 TeX pt = 8.966 PDF pt. Math scripts and operator extensions are excluded from ordinary text audit.",
+      "text_outside_toleranced_print_area": [],
+      "fifth_page_starts_references": true,
+      "no_footer_text": true,
+      "unresolved_references": false,
+      "ai_disclosure": true,
+      "authorship_complete": false,
+      "sha256": "c5990afd07d78cc10738f9fa9f7abeff83d10ecb02f6661f627a55d881896d21",
+      "latex_overfull_count": 0,
+      "latex_undefined_reference_warning": false,
+      "abstract_word_count_approx": 139,
+      "mechanical_format_checks_pass": true
+    }
+  },
+  "submission_ready": false,
+  "blockers": [
+    "Real author names, affiliations and ORCiD not supplied",
+    "No real LLM/public benchmark/natural-failure experiments",
+    "Known-model theoretical results do not establish broad novelty",
+    "No independent human scientific/code review",
+    "RepairLens assigned-operation savings do not translate into measured local speedup"
+  ],
+  "template": "Official 2027 spconf executable definitions transcribed through web text; not a byte-identical downloaded archive. See upstream/provenance.json.",
+  "visual_review": "Every manuscript page rendered and inspected; visual review is by the same assistant, not an independent reviewer."
+}
