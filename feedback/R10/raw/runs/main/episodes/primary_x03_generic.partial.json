@@ -1,0 +1,1068 @@
+{
+  "arm": "generic",
+  "case_id": "x03",
+  "completion_claim": "completed",
+  "database_tool_calls": 6,
+  "episode_binding": "1892fb00611823def179f13480aa7a79b2cae7a03de63d2eb9cd484faff18cd1",
+  "episode_id": "primary_x03_generic",
+  "events": [
+    {
+      "after": {
+        "batches": [],
+        "configs": [
+          {
+            "id": "cfg-03-a",
+            "label": "profile-0",
+            "max_attempts": 2,
+            "note": "keep-config-0",
+            "owner": "operator-old",
+            "version": 1
+          },
+          {
+            "id": "cfg-03-b",
+            "label": "profile-1",
+            "max_attempts": 3,
+            "note": "keep-config-1",
+            "owner": "operator-old",
+            "version": 1
+          },
+          {
+            "id": "cfg-03-c",
+            "label": "profile-2",
+            "max_attempts": 4,
+            "note": "keep-config-2",
+            "owner": "operator-old",
+            "version": 1
+          }
+        ],
+        "routes": [
+          {
+            "config_id": "cfg-03-a",
+            "service": "cedar-03",
+            "version": 1
+          }
+        ]
+      },
+      "arguments": {
+        "service": "cedar-03"
+      },
+      "batch_index": 0,
+      "before": {
+        "batches": [],
+        "configs": [
+          {
+            "id": "cfg-03-a",
+            "label": "profile-0",
+            "max_attempts": 2,
+            "note": "keep-config-0",
+            "owner": "operator-old",
+            "version": 1
+          },
+          {
+            "id": "cfg-03-b",
+            "label": "profile-1",
+            "max_attempts": 3,
+            "note": "keep-config-1",
+            "owner": "operator-old",
+            "version": 1
+          },
+          {
+            "id": "cfg-03-c",
+            "label": "profile-2",
+            "max_attempts": 4,
+            "note": "keep-config-2",
+            "owner": "operator-old",
+            "version": 1
+          }
+        ],
+        "routes": [
+          {
+            "config_id": "cfg-03-a",
+            "service": "cedar-03",
+            "version": 1
+          }
+        ]
+      },
+      "elapsed_seconds": 0.00017833290621638298,
+      "index": 0,
+      "kind": "tool",
+      "model_turn": 0,
+      "name": "resolve_service",
+      "result": {
+        "error": null,
+        "ok": true,
+        "value": {
+          "record": {
+            "id": "cfg-03-a",
+            "label": "profile-0",
+            "max_attempts": 2,
+            "note": "keep-config-0",
+            "owner": "operator-old",
+            "version": 1
+          },
+          "selection_token": "3a7390f0692d205c4f4f6c1979fdde5120a2b43d48eee2d1b12c0ca86b825f45",
+          "service": "cedar-03"
+        }
+      },
+      "tool_call_id": "call_00_vUoNXkIWmcX4u3bLgDpc2062"
+    },
+    {
+      "after": {
+        "batches": [],
+        "configs": [
+          {
+            "id": "cfg-03-a",
+            "label": "profile-0",
+            "max_attempts": 2,
+            "note": "keep-config-0",
+            "owner": "operator-old",
+            "version": 1
+          },
+          {
+            "id": "cfg-03-b",
+            "label": "profile-1",
+            "max_attempts": 3,
+            "note": "keep-config-1",
+            "owner": "operator-old",
+            "version": 1
+          },
+          {
+            "id": "cfg-03-c",
+            "label": "profile-2",
+            "max_attempts": 4,
+            "note": "keep-config-2",
+            "owner": "operator-old",
+            "version": 1
+          }
+        ],
+        "routes": [
+          {
+            "config_id": "cfg-03-b",
+            "service": "cedar-03",
+            "version": 2
+          }
+        ]
+      },
+      "after_read_index": 0,
+      "batch_index": 0,
+      "before": {
+        "batches": [],
+        "configs": [
+          {
+            "id": "cfg-03-a",
+            "label": "profile-0",
+            "max_attempts": 2,
+            "note": "keep-config-0",
+            "owner": "operator-old",
+            "version": 1
+          },
+          {
+            "id": "cfg-03-b",
+            "label": "profile-1",
+            "max_attempts": 3,
+            "note": "keep-config-1",
+            "owner": "operator-old",
+            "version": 1
+          },
+          {
+            "id": "cfg-03-c",
+            "label": "profile-2",
+            "max_attempts": 4,
+            "note": "keep-config-2",
+            "owner": "operator-old",
+            "version": 1
+          }
+        ],
+        "routes": [
+          {
+            "config_id": "cfg-03-a",
+            "service": "cedar-03",
+            "version": 1
+          }
+        ]
+      },
+      "change": "selection",
+      "index": 1,
+      "kind": "environment",
+      "model_turn": 0,
+      "tool_call_id": "call_00_vUoNXkIWmcX4u3bLgDpc2062"
+    },
+    {
+      "after": {
+        "batches": [],
+        "configs": [
+          {
+            "id": "cfg-03-a",
+            "label": "profile-0",
+            "max_attempts": 2,
+            "note": "keep-config-0",
+            "owner": "operator-old",
+            "version": 1
+          },
+          {
+            "id": "cfg-03-b",
+            "label": "profile-1",
+            "max_attempts": 3,
+            "note": "keep-config-1",
+            "owner": "operator-old",
+            "version": 1
+          },
+          {
+            "id": "cfg-03-c",
+            "label": "profile-2",
+            "max_attempts": 4,
+            "note": "keep-config-2",
+            "owner": "operator-old",
+            "version": 1
+          }
+        ],
+        "routes": [
+          {
+            "config_id": "cfg-03-b",
+            "service": "cedar-03",
+            "version": 2
+          }
+        ]
+      },
+      "arguments": {
+        "expected_selection_token": "3a7390f0692d205c4f4f6c1979fdde5120a2b43d48eee2d1b12c0ca86b825f45",
+        "expected_version": 1,
+        "id": "cfg-03-a",
+        "max_attempts": 5,
+        "service": "cedar-03"
+      },
+      "batch_index": 0,
+      "before": {
+        "batches": [],
+        "configs": [
+          {
+            "id": "cfg-03-a",
+            "label": "profile-0",
+            "max_attempts": 2,
+            "note": "keep-config-0",
+            "owner": "operator-old",
+            "version": 1
+          },
+          {
+            "id": "cfg-03-b",
+            "label": "profile-1",
+            "max_attempts": 3,
+            "note": "keep-config-1",
+            "owner": "operator-old",
+            "version": 1
+          },
+          {
+            "id": "cfg-03-c",
+            "label": "profile-2",
+            "max_attempts": 4,
+            "note": "keep-config-2",
+            "owner": "operator-old",
+            "version": 1
+          }
+        ],
+        "routes": [
+          {
+            "config_id": "cfg-03-b",
+            "service": "cedar-03",
+            "version": 2
+          }
+        ]
+      },
+      "elapsed_seconds": 0.00010145921260118484,
+      "index": 2,
+      "kind": "tool",
+      "model_turn": 1,
+      "name": "update_config",
+      "result": {
+        "error": "SELECTION_CONFLICT",
+        "ok": false,
+        "value": null
+      },
+      "tool_call_id": "call_00_A2bcNny93wYP8CP1DWUG2801"
+    },
+    {
+      "after": {
+        "batches": [],
+        "configs": [
+          {
+            "id": "cfg-03-a",
+            "label": "profile-0",
+            "max_attempts": 2,
+            "note": "keep-config-0",
+            "owner": "operator-old",
+            "version": 1
+          },
+          {
+            "id": "cfg-03-b",
+            "label": "profile-1",
+            "max_attempts": 3,
+            "note": "keep-config-1",
+            "owner": "operator-old",
+            "version": 1
+          },
+          {
+            "id": "cfg-03-c",
+            "label": "profile-2",
+            "max_attempts": 4,
+            "note": "keep-config-2",
+            "owner": "operator-old",
+            "version": 1
+          }
+        ],
+        "routes": [
+          {
+            "config_id": "cfg-03-b",
+            "service": "cedar-03",
+            "version": 2
+          }
+        ]
+      },
+      "arguments": {
+        "service": "cedar-03"
+      },
+      "batch_index": 0,
+      "before": {
+        "batches": [],
+        "configs": [
+          {
+            "id": "cfg-03-a",
+            "label": "profile-0",
+            "max_attempts": 2,
+            "note": "keep-config-0",
+            "owner": "operator-old",
+            "version": 1
+          },
+          {
+            "id": "cfg-03-b",
+            "label": "profile-1",
+            "max_attempts": 3,
+            "note": "keep-config-1",
+            "owner": "operator-old",
+            "version": 1
+          },
+          {
+            "id": "cfg-03-c",
+            "label": "profile-2",
+            "max_attempts": 4,
+            "note": "keep-config-2",
+            "owner": "operator-old",
+            "version": 1
+          }
+        ],
+        "routes": [
+          {
+            "config_id": "cfg-03-b",
+            "service": "cedar-03",
+            "version": 2
+          }
+        ]
+      },
+      "elapsed_seconds": 8.829217404127121e-05,
+      "index": 3,
+      "kind": "tool",
+      "model_turn": 2,
+      "name": "resolve_service",
+      "result": {
+        "error": null,
+        "ok": true,
+        "value": {
+          "record": {
+            "id": "cfg-03-b",
+            "label": "profile-1",
+            "max_attempts": 3,
+            "note": "keep-config-1",
+            "owner": "operator-old",
+            "version": 1
+          },
+          "selection_token": "7c13ca7ec58376d245a235f123ff15b76308926187251fb4b25c281414306037",
+          "service": "cedar-03"
+        }
+      },
+      "tool_call_id": "call_00_oTrOml2FcJwvTbLSmUge8162"
+    },
+    {
+      "after": {
+        "batches": [],
+        "configs": [
+          {
+            "id": "cfg-03-a",
+            "label": "profile-0",
+            "max_attempts": 2,
+            "note": "keep-config-0",
+            "owner": "operator-old",
+            "version": 1
+          },
+          {
+            "id": "cfg-03-b",
+            "label": "profile-1",
+            "max_attempts": 5,
+            "note": "keep-config-1",
+            "owner": "operator-old",
+            "version": 2
+          },
+          {
+            "id": "cfg-03-c",
+            "label": "profile-2",
+            "max_attempts": 4,
+            "note": "keep-config-2",
+            "owner": "operator-old",
+            "version": 1
+          }
+        ],
+        "routes": [
+          {
+            "config_id": "cfg-03-b",
+            "service": "cedar-03",
+            "version": 2
+          }
+        ]
+      },
+      "arguments": {
+        "expected_selection_token": "7c13ca7ec58376d245a235f123ff15b76308926187251fb4b25c281414306037",
+        "expected_version": 1,
+        "id": "cfg-03-b",
+        "max_attempts": 5,
+        "service": "cedar-03"
+      },
+      "batch_index": 0,
+      "before": {
+        "batches": [],
+        "configs": [
+          {
+            "id": "cfg-03-a",
+            "label": "profile-0",
+            "max_attempts": 2,
+            "note": "keep-config-0",
+            "owner": "operator-old",
+            "version": 1
+          },
+          {
+            "id": "cfg-03-b",
+            "label": "profile-1",
+            "max_attempts": 3,
+            "note": "keep-config-1",
+            "owner": "operator-old",
+            "version": 1
+          },
+          {
+            "id": "cfg-03-c",
+            "label": "profile-2",
+            "max_attempts": 4,
+            "note": "keep-config-2",
+            "owner": "operator-old",
+            "version": 1
+          }
+        ],
+        "routes": [
+          {
+            "config_id": "cfg-03-b",
+            "service": "cedar-03",
+            "version": 2
+          }
+        ]
+      },
+      "elapsed_seconds": 0.0007580001838505268,
+      "index": 4,
+      "kind": "tool",
+      "model_turn": 3,
+      "name": "update_config",
+      "result": {
+        "error": null,
+        "ok": true,
+        "value": {
+          "id": "cfg-03-b",
+          "updated_fields": [
+            "max_attempts"
+          ],
+          "version": 2
+        }
+      },
+      "tool_call_id": "call_00_VdouXyknDafbE59B6MAy7681"
+    },
+    {
+      "after": {
+        "batches": [],
+        "configs": [
+          {
+            "id": "cfg-03-a",
+            "label": "profile-0",
+            "max_attempts": 2,
+            "note": "keep-config-0",
+            "owner": "operator-old",
+            "version": 1
+          },
+          {
+            "id": "cfg-03-b",
+            "label": "profile-1",
+            "max_attempts": 5,
+            "note": "keep-config-1",
+            "owner": "operator-old",
+            "version": 2
+          },
+          {
+            "id": "cfg-03-c",
+            "label": "profile-2",
+            "max_attempts": 4,
+            "note": "keep-config-2",
+            "owner": "operator-old",
+            "version": 1
+          }
+        ],
+        "routes": [
+          {
+            "config_id": "cfg-03-b",
+            "service": "cedar-03",
+            "version": 2
+          }
+        ]
+      },
+      "arguments": {
+        "service": "cedar-03"
+      },
+      "batch_index": 0,
+      "before": {
+        "batches": [],
+        "configs": [
+          {
+            "id": "cfg-03-a",
+            "label": "profile-0",
+            "max_attempts": 2,
+            "note": "keep-config-0",
+            "owner": "operator-old",
+            "version": 1
+          },
+          {
+            "id": "cfg-03-b",
+            "label": "profile-1",
+            "max_attempts": 5,
+            "note": "keep-config-1",
+            "owner": "operator-old",
+            "version": 2
+          },
+          {
+            "id": "cfg-03-c",
+            "label": "profile-2",
+            "max_attempts": 4,
+            "note": "keep-config-2",
+            "owner": "operator-old",
+            "version": 1
+          }
+        ],
+        "routes": [
+          {
+            "config_id": "cfg-03-b",
+            "service": "cedar-03",
+            "version": 2
+          }
+        ]
+      },
+      "elapsed_seconds": 8.904188871383667e-05,
+      "index": 5,
+      "kind": "tool",
+      "model_turn": 4,
+      "name": "resolve_service",
+      "result": {
+        "error": null,
+        "ok": true,
+        "value": {
+          "record": {
+            "id": "cfg-03-b",
+            "label": "profile-1",
+            "max_attempts": 5,
+            "note": "keep-config-1",
+            "owner": "operator-old",
+            "version": 2
+          },
+          "selection_token": "7c13ca7ec58376d245a235f123ff15b76308926187251fb4b25c281414306037",
+          "service": "cedar-03"
+        }
+      },
+      "tool_call_id": "call_00_ru8Tb6GHcNOW9ugbWyLB5217"
+    },
+    {
+      "after": {
+        "batches": [],
+        "configs": [
+          {
+            "id": "cfg-03-a",
+            "label": "profile-0",
+            "max_attempts": 2,
+            "note": "keep-config-0",
+            "owner": "operator-old",
+            "version": 1
+          },
+          {
+            "id": "cfg-03-b",
+            "label": "profile-1",
+            "max_attempts": 5,
+            "note": "keep-config-1",
+            "owner": "operator-old",
+            "version": 2
+          },
+          {
+            "id": "cfg-03-c",
+            "label": "profile-2",
+            "max_attempts": 4,
+            "note": "keep-config-2",
+            "owner": "operator-old",
+            "version": 1
+          }
+        ],
+        "routes": [
+          {
+            "config_id": "cfg-03-b",
+            "service": "cedar-03",
+            "version": 2
+          }
+        ]
+      },
+      "arguments": {
+        "id": "cfg-03-b"
+      },
+      "batch_index": 1,
+      "before": {
+        "batches": [],
+        "configs": [
+          {
+            "id": "cfg-03-a",
+            "label": "profile-0",
+            "max_attempts": 2,
+            "note": "keep-config-0",
+            "owner": "operator-old",
+            "version": 1
+          },
+          {
+            "id": "cfg-03-b",
+            "label": "profile-1",
+            "max_attempts": 5,
+            "note": "keep-config-1",
+            "owner": "operator-old",
+            "version": 2
+          },
+          {
+            "id": "cfg-03-c",
+            "label": "profile-2",
+            "max_attempts": 4,
+            "note": "keep-config-2",
+            "owner": "operator-old",
+            "version": 1
+          }
+        ],
+        "routes": [
+          {
+            "config_id": "cfg-03-b",
+            "service": "cedar-03",
+            "version": 2
+          }
+        ]
+      },
+      "elapsed_seconds": 4.016607999801636e-05,
+      "index": 6,
+      "kind": "tool",
+      "model_turn": 4,
+      "name": "get_config",
+      "result": {
+        "error": null,
+        "ok": true,
+        "value": {
+          "id": "cfg-03-b",
+          "label": "profile-1",
+          "max_attempts": 5,
+          "note": "keep-config-1",
+          "owner": "operator-old",
+          "version": 2
+        }
+      },
+      "tool_call_id": "call_01_7E4DjMjZdiNpTHQFyT232822"
+    }
+  ],
+  "exposure": {
+    "opportunity_closed": true,
+    "scheduled": true,
+    "triggered": true
+  },
+  "final": {
+    "batches": [],
+    "configs": [
+      {
+        "id": "cfg-03-a",
+        "label": "profile-0",
+        "max_attempts": 2,
+        "note": "keep-config-0",
+        "owner": "operator-old",
+        "version": 1
+      },
+      {
+        "id": "cfg-03-b",
+        "label": "profile-1",
+        "max_attempts": 5,
+        "note": "keep-config-1",
+        "owner": "operator-old",
+        "version": 2
+      },
+      {
+        "id": "cfg-03-c",
+        "label": "profile-2",
+        "max_attempts": 4,
+        "note": "keep-config-2",
+        "owner": "operator-old",
+        "version": 1
+      }
+    ],
+    "routes": [
+      {
+        "config_id": "cfg-03-b",
+        "service": "cedar-03",
+        "version": 2
+      }
+    ]
+  },
+  "final_text": "Resolved cedar-03's route, hit a SELECTION_CONFLICT on the first attempt (route had moved from cfg-03-a to cfg-03-b), re-resolved, and then updated the currently-referenced config cfg-03-b with max_attempts=5 using expected_version=1 plus the fresh route selection_token. Update succeeded (version 2), verified by re-resolving the route and reading the row: max_attempts=5 while label/note/owner were preserved and no other record was touched.",
+  "frames": [
+    {
+      "attempt": 232,
+      "logical_id": "primary_x03_generic/turn_00",
+      "message": {
+        "content": "I'll start by reading the current route for `cedar-03` to get the current configuration and selection token.",
+        "reasoning_content": "Let me start by resolving the current route for cedar-03.",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": "{\"service\": \"cedar-03\"}",
+              "name": "resolve_service"
+            },
+            "id": "call_00_vUoNXkIWmcX4u3bLgDpc2062",
+            "index": 0,
+            "type": "function"
+          }
+        ]
+      },
+      "receipts": [
+        {
+          "arguments": {
+            "service": "cedar-03"
+          },
+          "event_indices": [
+            0,
+            1
+          ],
+          "id": "call_00_vUoNXkIWmcX4u3bLgDpc2062",
+          "name": "resolve_service",
+          "result": {
+            "error": null,
+            "ok": true,
+            "value": {
+              "record": {
+                "id": "cfg-03-a",
+                "label": "profile-0",
+                "max_attempts": 2,
+                "note": "keep-config-0",
+                "owner": "operator-old",
+                "version": 1
+              },
+              "selection_token": "3a7390f0692d205c4f4f6c1979fdde5120a2b43d48eee2d1b12c0ca86b825f45",
+              "service": "cedar-03"
+            }
+          }
+        }
+      ],
+      "turn": 0
+    },
+    {
+      "attempt": 233,
+      "logical_id": "primary_x03_generic/turn_01",
+      "message": {
+        "content": "The current route points to `cfg-03-a` (version 1). I'll update `max_attempts` to 5, using both the row version and the route selection token as preconditions so the write only lands if the route and target are unchanged.",
+        "reasoning_content": "Now I have the current route: cfg-03-a, version 1, selection_token 3a7390.... I'll update max_attempts to 5, using the route precondition (service + expected_selection_token) to atomically check route+target. I'll also pass expected_version=1.\n\nLet me do the update with all preconditions.",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": "{\"id\": \"cfg-03-a\", \"max_attempts\": 5, \"expected_version\": 1, \"service\": \"cedar-03\", \"expected_selection_token\": \"3a7390f0692d205c4f4f6c1979fdde5120a2b43d48eee2d1b12c0ca86b825f45\"}",
+              "name": "update_config"
+            },
+            "id": "call_00_A2bcNny93wYP8CP1DWUG2801",
+            "index": 0,
+            "type": "function"
+          }
+        ]
+      },
+      "receipts": [
+        {
+          "arguments": {
+            "expected_selection_token": "3a7390f0692d205c4f4f6c1979fdde5120a2b43d48eee2d1b12c0ca86b825f45",
+            "expected_version": 1,
+            "id": "cfg-03-a",
+            "max_attempts": 5,
+            "service": "cedar-03"
+          },
+          "event_indices": [
+            2
+          ],
+          "id": "call_00_A2bcNny93wYP8CP1DWUG2801",
+          "name": "update_config",
+          "result": {
+            "error": "SELECTION_CONFLICT",
+            "ok": false,
+            "value": null
+          }
+        }
+      ],
+      "turn": 1
+    },
+    {
+      "attempt": 234,
+      "logical_id": "primary_x03_generic/turn_02",
+      "message": {
+        "content": "The precondition failed — the route changed since my read. Let me re-resolve the current route before retrying.",
+        "reasoning_content": "The write failed with SELECTION_CONFLICT, meaning the route changed. I should re-query before retrying. Let me resolve_service again.",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": "{\"service\": \"cedar-03\"}",
+              "name": "resolve_service"
+            },
+            "id": "call_00_oTrOml2FcJwvTbLSmUge8162",
+            "index": 0,
+            "type": "function"
+          }
+        ]
+      },
+      "receipts": [
+        {
+          "arguments": {
+            "service": "cedar-03"
+          },
+          "event_indices": [
+            3
+          ],
+          "id": "call_00_oTrOml2FcJwvTbLSmUge8162",
+          "name": "resolve_service",
+          "result": {
+            "error": null,
+            "ok": true,
+            "value": {
+              "record": {
+                "id": "cfg-03-b",
+                "label": "profile-1",
+                "max_attempts": 3,
+                "note": "keep-config-1",
+                "owner": "operator-old",
+                "version": 1
+              },
+              "selection_token": "7c13ca7ec58376d245a235f123ff15b76308926187251fb4b25c281414306037",
+              "service": "cedar-03"
+            }
+          }
+        }
+      ],
+      "turn": 2
+    },
+    {
+      "attempt": 235,
+      "logical_id": "primary_x03_generic/turn_03",
+      "message": {
+        "content": "The route now references `cfg-03-b` (version 1). I'll set `max_attempts` to 5 on that record, again using both preconditions.",
+        "reasoning_content": "The route now points to cfg-03-b, version 1, token 7c13ca.... I should update cfg-03-b's max_attempts to 5, preserving others.\n\nLet me do the update with the new token and version.",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": "{\"expected_selection_token\": \"7c13ca7ec58376d245a235f123ff15b76308926187251fb4b25c281414306037\", \"expected_version\": 1, \"id\": \"cfg-03-b\", \"max_attempts\": 5, \"service\": \"cedar-03\"}",
+              "name": "update_config"
+            },
+            "id": "call_00_VdouXyknDafbE59B6MAy7681",
+            "index": 0,
+            "type": "function"
+          }
+        ]
+      },
+      "receipts": [
+        {
+          "arguments": {
+            "expected_selection_token": "7c13ca7ec58376d245a235f123ff15b76308926187251fb4b25c281414306037",
+            "expected_version": 1,
+            "id": "cfg-03-b",
+            "max_attempts": 5,
+            "service": "cedar-03"
+          },
+          "event_indices": [
+            4
+          ],
+          "id": "call_00_VdouXyknDafbE59B6MAy7681",
+          "name": "update_config",
+          "result": {
+            "error": null,
+            "ok": true,
+            "value": {
+              "id": "cfg-03-b",
+              "updated_fields": [
+                "max_attempts"
+              ],
+              "version": 2
+            }
+          }
+        }
+      ],
+      "turn": 3
+    },
+    {
+      "attempt": 236,
+      "logical_id": "primary_x03_generic/turn_04",
+      "message": {
+        "content": "The update succeeded. Let me verify the change took effect and the route is intact.",
+        "reasoning_content": "The update succeeded. Now let me verify by resolving the service again and checking the record.",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": "{\"service\": \"cedar-03\"}",
+              "name": "resolve_service"
+            },
+            "id": "call_00_ru8Tb6GHcNOW9ugbWyLB5217",
+            "index": 0,
+            "type": "function"
+          },
+          {
+            "function": {
+              "arguments": "{\"id\": \"cfg-03-b\"}",
+              "name": "get_config"
+            },
+            "id": "call_01_7E4DjMjZdiNpTHQFyT232822",
+            "index": 1,
+            "type": "function"
+          }
+        ]
+      },
+      "receipts": [
+        {
+          "arguments": {
+            "service": "cedar-03"
+          },
+          "event_indices": [
+            5
+          ],
+          "id": "call_00_ru8Tb6GHcNOW9ugbWyLB5217",
+          "name": "resolve_service",
+          "result": {
+            "error": null,
+            "ok": true,
+            "value": {
+              "record": {
+                "id": "cfg-03-b",
+                "label": "profile-1",
+                "max_attempts": 5,
+                "note": "keep-config-1",
+                "owner": "operator-old",
+                "version": 2
+              },
+              "selection_token": "7c13ca7ec58376d245a235f123ff15b76308926187251fb4b25c281414306037",
+              "service": "cedar-03"
+            }
+          }
+        },
+        {
+          "arguments": {
+            "id": "cfg-03-b"
+          },
+          "event_indices": [
+            6
+          ],
+          "id": "call_01_7E4DjMjZdiNpTHQFyT232822",
+          "name": "get_config",
+          "result": {
+            "error": null,
+            "ok": true,
+            "value": {
+              "id": "cfg-03-b",
+              "label": "profile-1",
+              "max_attempts": 5,
+              "note": "keep-config-1",
+              "owner": "operator-old",
+              "version": 2
+            }
+          }
+        }
+      ],
+      "turn": 4
+    },
+    {
+      "attempt": 237,
+      "logical_id": "primary_x03_generic/turn_05",
+      "message": {
+        "content": "Verified. Here's what actually happened:\n\n**What I did:**\n1. Read the current route for `cedar-03` → it referenced `cfg-03-a` (v1) with a selection token.\n2. Attempted to set `max_attempts` to 5 on `cfg-03-a` with both `expected_version` and route `expected_selection_token` preconditions → **failed with `SELECTION_CONFLICT`** (no write occurred, because the route had changed).\n3. Re-resolved the route → it now referenced `cfg-03-b` (v1, token `7c13ca…`).\n4. Updated `cfg-03-b` setting `max_attempts=5`, guarded by both `expected_version=1` and the fresh route `expected_selection_token` → **success** (`updated_fields: [\"max_attempts\"]`, version bumped to 2).\n5. Verified via both `resolve_service` and `get_config`.\n\n**Result:** The configuration *currently referenced* by `cedar-03` is `cfg-03-b`, now with `max_attempts: 5`. All other business fields preserved (`label: profile-1`, `note: keep-config-1`, `owner: operator-old`), the route still points to `cfg-03-b`, and no other record was modified (`cfg-03-a` was never written to).\n\nThe initial attempt did not write anything, so the only change made is the one requested.",
+        "reasoning_content": "Verified. cfg-03-b now has max_attempts=5, other fields preserved (label profile-1, note keep-config-1, owner operator-old, version 2). The route still points to cfg-03-b.\n\nRecord cfg-03-a untouched (we never wrote to it).\n\nDone. Report.",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": "{\"status\": \"completed\", \"message\": \"Resolved cedar-03's route, hit a SELECTION_CONFLICT on the first attempt (route had moved from cfg-03-a to cfg-03-b), re-resolved, and then updated the currently-referenced config cfg-03-b with max_attempts=5 using expected_version=1 plus the fresh route selection_token. Update succeeded (version 2), verified by re-resolving the route and reading the row: max_attempts=5 while label/note/owner were preserved and no other record was touched.\"}",
+              "name": "finish_task"
+            },
+            "id": "call_00_bWHDU2dYnaoHGVsqSVXW5382",
+            "index": 0,
+            "type": "function"
+          }
+        ]
+      },
+      "receipts": [
+        {
+          "arguments": {
+            "message": "Resolved cedar-03's route, hit a SELECTION_CONFLICT on the first attempt (route had moved from cfg-03-a to cfg-03-b), re-resolved, and then updated the currently-referenced config cfg-03-b with max_attempts=5 using expected_version=1 plus the fresh route selection_token. Update succeeded (version 2), verified by re-resolving the route and reading the row: max_attempts=5 while label/note/owner were preserved and no other record was touched.",
+            "status": "completed"
+          },
+          "event_indices": [],
+          "id": "call_00_bWHDU2dYnaoHGVsqSVXW5382",
+          "name": "finish_task",
+          "result": {
+            "ok": true,
+            "recorded_only": true
+          }
+        }
+      ],
+      "turn": 5
+    }
+  ],
+  "initial": {
+    "batches": [],
+    "configs": [
+      {
+        "id": "cfg-03-a",
+        "label": "profile-0",
+        "max_attempts": 2,
+        "note": "keep-config-0",
+        "owner": "operator-old",
+        "version": 1
+      },
+      {
+        "id": "cfg-03-b",
+        "label": "profile-1",
+        "max_attempts": 3,
+        "note": "keep-config-1",
+        "owner": "operator-old",
+        "version": 1
+      },
+      {
+        "id": "cfg-03-c",
+        "label": "profile-2",
+        "max_attempts": 4,
+        "note": "keep-config-2",
+        "owner": "operator-old",
+        "version": 1
+      }
+    ],
+    "routes": [
+      {
+        "config_id": "cfg-03-a",
+        "service": "cedar-03",
+        "version": 1
+      }
+    ]
+  },
+  "model_calls": 6,
+  "phase": "primary",
+  "terminated": true,
+  "visible_tool_calls": 7
+}

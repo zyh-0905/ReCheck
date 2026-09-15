@@ -1,0 +1,678 @@
+{
+  "events": [
+    {
+      "arguments": {
+        "on": false
+      },
+      "elapsed_seconds": 0.009085766999987754,
+      "native_response": {
+        "content": "None",
+        "conversation_active": true,
+        "openai_function_name": null,
+        "openai_tool_call_id": null,
+        "recipient": "AGENT",
+        "sender": "EXECUTION_ENVIRONMENT",
+        "tool_call_exception": null,
+        "tool_trace": [
+          "{\"tool_name\": \"set_low_battery_mode_status\", \"arguments\": {\"on\": false}, \"result\": null}"
+        ],
+        "visible_to": [
+          "EXECUTION_ENVIRONMENT",
+          "AGENT"
+        ]
+      },
+      "response": {
+        "error": null,
+        "ok": true,
+        "value": null
+      },
+      "scope": "runtime",
+      "snapshot_index": 17,
+      "tool": "set_low_battery_mode_status"
+    },
+    {
+      "arguments": {
+        "on": true
+      },
+      "elapsed_seconds": 0.011616296999932274,
+      "native_response": {
+        "content": "None",
+        "conversation_active": true,
+        "openai_function_name": null,
+        "openai_tool_call_id": null,
+        "recipient": "AGENT",
+        "sender": "EXECUTION_ENVIRONMENT",
+        "tool_call_exception": null,
+        "tool_trace": [
+          "{\"tool_name\": \"set_wifi_status\", \"arguments\": {\"on\": true}, \"result\": null}"
+        ],
+        "visible_to": [
+          "EXECUTION_ENVIRONMENT",
+          "AGENT"
+        ]
+      },
+      "response": {
+        "error": null,
+        "ok": true,
+        "value": null
+      },
+      "scope": "runtime",
+      "snapshot_index": 19,
+      "tool": "set_wifi_status"
+    }
+  ],
+  "evidence_kind": "SCRIPTED_ORIGINAL_SCENARIO_INTEGRATION_NOT_LLM_RESULT",
+  "official_evaluation": {
+    "milestone_mapping": {
+      "0": [
+        17,
+        1.0
+      ],
+      "1": [
+        19,
+        1.0
+      ],
+      "2": [
+        20,
+        1.0
+      ]
+    },
+    "milestone_similarity": 1.0,
+    "minefield_mapping": {},
+    "minefield_similarity": 0,
+    "similarity": 1.0,
+    "turn_count": 6
+  },
+  "scenario": "turn_on_wifi_low_battery_mode",
+  "state": {
+    "_dbs": {
+      "CONTACT": [
+        {
+          "is_self": null,
+          "name": null,
+          "person_id": null,
+          "phone_number": null,
+          "relationship": null,
+          "sandbox_message_index": 0
+        },
+        {
+          "is_self": true,
+          "name": "Tomas Haake",
+          "person_id": "3815cac9-3cab-5d75-89e2-fe12fe19779e",
+          "phone_number": "+11233344455",
+          "relationship": "self",
+          "sandbox_message_index": 14
+        },
+        {
+          "is_self": false,
+          "name": "Fredrik Thordendal",
+          "person_id": "9e137f06-916a-5310-8174-cf0b7e9f7054",
+          "phone_number": "+12453344098",
+          "relationship": "friend",
+          "sandbox_message_index": 14
+        },
+        {
+          "is_self": false,
+          "name": "John Petrucci",
+          "person_id": "a22e1984-6c6c-530c-8831-c3ea3b5138e7",
+          "phone_number": "+1234560987",
+          "relationship": "friend",
+          "sandbox_message_index": 14
+        },
+        {
+          "is_self": false,
+          "name": "Homer S",
+          "person_id": "e3570ab6-0819-5032-be1e-2b366390c8ef",
+          "phone_number": "+10000000000",
+          "relationship": "boss",
+          "sandbox_message_index": 14
+        }
+      ],
+      "MESSAGING": [
+        {
+          "content": null,
+          "creation_timestamp": null,
+          "message_id": null,
+          "recipient_person_id": null,
+          "recipient_phone_number": null,
+          "sandbox_message_index": 0,
+          "sender_person_id": null,
+          "sender_phone_number": null
+        },
+        {
+          "content": "Hey kid, you want some GPU?",
+          "creation_timestamp": 1789008096.225635,
+          "message_id": "0d25dbb9-3737-5e0e-b0f0-7c1e359baccc",
+          "recipient_person_id": "3815cac9-3cab-5d75-89e2-fe12fe19779e",
+          "recipient_phone_number": "+11233344455",
+          "sandbox_message_index": 14,
+          "sender_person_id": null,
+          "sender_phone_number": "+18307976530"
+        },
+        {
+          "content": "No leave me alone",
+          "creation_timestamp": 1789011696.225653,
+          "message_id": "caaca9e8-7aa9-55a6-9d32-4b4aefed40d1",
+          "recipient_person_id": null,
+          "recipient_phone_number": "+18307976530",
+          "sandbox_message_index": 14,
+          "sender_person_id": "3815cac9-3cab-5d75-89e2-fe12fe19779e",
+          "sender_phone_number": "+11233344455"
+        },
+        {
+          "content": "How's it going",
+          "creation_timestamp": 1789278219.225663,
+          "message_id": "0a0102dc-ceaf-5ebb-a665-63da99bf7c47",
+          "recipient_person_id": "3815cac9-3cab-5d75-89e2-fe12fe19779e",
+          "recipient_phone_number": "+11233344455",
+          "sandbox_message_index": 14,
+          "sender_person_id": "e3570ab6-0819-5032-be1e-2b366390c8ef",
+          "sender_phone_number": "+10000000000"
+        },
+        {
+          "content": "Things are proceeding as expected",
+          "creation_timestamp": 1789278279.225674,
+          "message_id": "6c9382cb-720e-5f2c-8ac0-77e7ebdea446",
+          "recipient_person_id": "e3570ab6-0819-5032-be1e-2b366390c8ef",
+          "recipient_phone_number": "+10000000000",
+          "sandbox_message_index": 14,
+          "sender_person_id": "3815cac9-3cab-5d75-89e2-fe12fe19779e",
+          "sender_phone_number": "+11233344455"
+        },
+        {
+          "content": "Good, keep me posted",
+          "creation_timestamp": 1789281940.225682,
+          "message_id": "0a0102dc-ceaf-5ebb-a665-63da99bf7c47",
+          "recipient_person_id": "3815cac9-3cab-5d75-89e2-fe12fe19779e",
+          "recipient_phone_number": "+11233344455",
+          "sandbox_message_index": 14,
+          "sender_person_id": "e3570ab6-0819-5032-be1e-2b366390c8ef",
+          "sender_phone_number": "+10000000000"
+        }
+      ],
+      "REMINDER": [
+        {
+          "content": null,
+          "creation_timestamp": null,
+          "latitude": null,
+          "longitude": null,
+          "reminder_id": null,
+          "reminder_timestamp": null,
+          "sandbox_message_index": 0
+        },
+        {
+          "content": "Look for Company SF tickets",
+          "creation_timestamp": 1789022802.227002,
+          "latitude": null,
+          "longitude": null,
+          "reminder_id": "8f5b6fc6-1c25-5467-91ba-d4d1e17c7129",
+          "reminder_timestamp": 1789195602.227005,
+          "sandbox_message_index": 14
+        },
+        {
+          "content": "Buy tickets for Merrily next week",
+          "creation_timestamp": 1789195602.227011,
+          "latitude": null,
+          "longitude": null,
+          "reminder_id": "da2b856e-9390-511f-bcbe-7005f72cbf5e",
+          "reminder_timestamp": 1789281942.227011,
+          "sandbox_message_index": 14
+        },
+        {
+          "content": "Buy a nice rich navy bathing dress",
+          "creation_timestamp": 1789278402.227016,
+          "latitude": 37.3237926356735,
+          "longitude": -122.03961770355414,
+          "reminder_id": "54f20be9-eac3-5e76-8e57-724e48d3d477",
+          "reminder_timestamp": 1789285602.227017,
+          "sandbox_message_index": 14
+        }
+      ],
+      "SANDBOX": [
+        {
+          "content": null,
+          "conversation_active": null,
+          "openai_function_name": null,
+          "openai_tool_call_id": null,
+          "recipient": null,
+          "sandbox_message_index": 0,
+          "sender": null,
+          "tool_call_exception": null,
+          "tool_trace": null,
+          "visible_to": null
+        },
+        {
+          "content": "import json\nfrom tool_sandbox.tools.contact import add_contact, modify_contact, remove_contact, search_contacts\nfrom tool_sandbox.tools.setting import get_cellular_service_status, get_current_location, get_location_service_status, get_wifi_status, get_low_battery_mode_status, set_cellular_service_status, set_location_service_status, set_low_battery_mode_status, set_wifi_status\nfrom tool_sandbox.tools.messaging import search_messages, send_message_with_phone_number\nfrom tool_sandbox.tools.rapid_api_search_tools import convert_currency, search_lat_lon, search_location_around_lat_lon, search_stock, search_weather_around_lat_lon\nfrom tool_sandbox.tools.reminder import add_reminder, modify_reminder, remove_reminder, search_reminder\nfrom tool_sandbox.tools.user_tools import end_conversation\nfrom tool_sandbox.tools.utilities import calculate_lat_lon_distance, datetime_info_to_timestamp, get_current_timestamp, search_holiday, seconds_to_hours_minutes_seconds, shift_timestamp, timestamp_diff, timestamp_to_datetime_info, unit_conversion\n",
+          "conversation_active": true,
+          "openai_function_name": null,
+          "openai_tool_call_id": null,
+          "recipient": "EXECUTION_ENVIRONMENT",
+          "sandbox_message_index": 0,
+          "sender": "SYSTEM",
+          "tool_call_exception": null,
+          "tool_trace": null,
+          "visible_to": null
+        },
+        {
+          "content": "Don't make assumptions about what values to plug into functions. Ask for clarification if a user request is ambiguous.",
+          "conversation_active": true,
+          "openai_function_name": null,
+          "openai_tool_call_id": null,
+          "recipient": "AGENT",
+          "sandbox_message_index": 1,
+          "sender": "SYSTEM",
+          "tool_call_exception": null,
+          "tool_trace": null,
+          "visible_to": null
+        },
+        {
+          "content": "You are no longer an assistant. From now on role play as a user (User A) talking to another user (User B).\nMake sure you follow these instructions:\n\n0. DO NOT act as if you (User A) are an assistant. ALWAYS treat yourself as a user (User A).\n    Do not ask questions to the other user (User B).\n1. Answer any question User B asks you (User A) accurately. Use only the information provided.\n    Do not make up false information.\n2.  Use natural, short, casual language.\n3.  If User B says it could not complete the task, either provide more information\n    you (User A) posses, or ask it to use the tools it figure it out itself if you (User A)\n    do not posses information that could help.\n4.  Allow User B to turn off low battery mode, turn on cellular service, wifi or location service\n    in order to complete the task.\n5.  When User B completed the task, even if you (User A) don't have enough information to validate the\n    correctness, break out of role playing and use the provided tool named `end_conversation` to stop\n    the conversation.\n6.  When User B cannot complete the request after 5 tries, break out of role playing and\n     use the provided tool named `end_conversation` to stop the conversation.\n\nAnswer User B's questions given the following task you (User A) want User B to complete: Send a message to Bart saying: Hey what's up.",
+          "conversation_active": true,
+          "openai_function_name": null,
+          "openai_tool_call_id": null,
+          "recipient": "USER",
+          "sandbox_message_index": 2,
+          "sender": "SYSTEM",
+          "tool_call_exception": null,
+          "tool_trace": null,
+          "visible_to": [
+            "USER"
+          ]
+        },
+        {
+          "content": "I want to send a message to someone.",
+          "conversation_active": true,
+          "openai_function_name": null,
+          "openai_tool_call_id": null,
+          "recipient": "AGENT",
+          "sandbox_message_index": 3,
+          "sender": "USER",
+          "tool_call_exception": null,
+          "tool_trace": null,
+          "visible_to": [
+            "USER"
+          ]
+        },
+        {
+          "content": "Certainly! I can help you with sending a message. Could you please provide the following details: 1. The phone number of the recipient. 2. The content of the message you'd like to send.",
+          "conversation_active": true,
+          "openai_function_name": null,
+          "openai_tool_call_id": null,
+          "recipient": "USER",
+          "sandbox_message_index": 4,
+          "sender": "AGENT",
+          "tool_call_exception": null,
+          "tool_trace": null,
+          "visible_to": [
+            "USER"
+          ]
+        },
+        {
+          "content": "I don't know the phone number.",
+          "conversation_active": true,
+          "openai_function_name": null,
+          "openai_tool_call_id": null,
+          "recipient": "AGENT",
+          "sandbox_message_index": 5,
+          "sender": "USER",
+          "tool_call_exception": null,
+          "tool_trace": null,
+          "visible_to": [
+            "USER"
+          ]
+        },
+        {
+          "content": "OK, could you provide some more information about the contact you'd like to send message to?",
+          "conversation_active": true,
+          "openai_function_name": null,
+          "openai_tool_call_id": null,
+          "recipient": "USER",
+          "sandbox_message_index": 6,
+          "sender": "AGENT",
+          "tool_call_exception": null,
+          "tool_trace": null,
+          "visible_to": [
+            "USER"
+          ]
+        },
+        {
+          "content": "It's Bart",
+          "conversation_active": true,
+          "openai_function_name": null,
+          "openai_tool_call_id": null,
+          "recipient": "AGENT",
+          "sandbox_message_index": 7,
+          "sender": "USER",
+          "tool_call_exception": null,
+          "tool_trace": null,
+          "visible_to": [
+            "USER"
+          ]
+        },
+        {
+          "content": "What would you like to say to Bart?",
+          "conversation_active": true,
+          "openai_function_name": null,
+          "openai_tool_call_id": null,
+          "recipient": "USER",
+          "sandbox_message_index": 8,
+          "sender": "AGENT",
+          "tool_call_exception": null,
+          "tool_trace": null,
+          "visible_to": [
+            "USER"
+          ]
+        },
+        {
+          "content": "Hey what's up",
+          "conversation_active": true,
+          "openai_function_name": null,
+          "openai_tool_call_id": null,
+          "recipient": "AGENT",
+          "sandbox_message_index": 9,
+          "sender": "USER",
+          "tool_call_exception": null,
+          "tool_trace": null,
+          "visible_to": [
+            "USER"
+          ]
+        },
+        {
+          "content": "I'm about to send a message saying 'Hey what's up.' to Bart. Does this look good?",
+          "conversation_active": true,
+          "openai_function_name": null,
+          "openai_tool_call_id": null,
+          "recipient": "USER",
+          "sandbox_message_index": 10,
+          "sender": "AGENT",
+          "tool_call_exception": null,
+          "tool_trace": null,
+          "visible_to": [
+            "USER"
+          ]
+        },
+        {
+          "content": "Yep",
+          "conversation_active": true,
+          "openai_function_name": null,
+          "openai_tool_call_id": null,
+          "recipient": "AGENT",
+          "sandbox_message_index": 11,
+          "sender": "USER",
+          "tool_call_exception": null,
+          "tool_trace": null,
+          "visible_to": [
+            "USER"
+          ]
+        },
+        {
+          "content": "Your message has been successfully sent.",
+          "conversation_active": true,
+          "openai_function_name": null,
+          "openai_tool_call_id": null,
+          "recipient": "USER",
+          "sandbox_message_index": 12,
+          "sender": "AGENT",
+          "tool_call_exception": null,
+          "tool_trace": null,
+          "visible_to": [
+            "USER"
+          ]
+        },
+        {
+          "content": "end_conversation()",
+          "conversation_active": true,
+          "openai_function_name": null,
+          "openai_tool_call_id": null,
+          "recipient": "EXECUTION_ENVIRONMENT",
+          "sandbox_message_index": 13,
+          "sender": "USER",
+          "tool_call_exception": null,
+          "tool_trace": null,
+          "visible_to": [
+            "USER"
+          ]
+        },
+        {
+          "content": "You are no longer an assistant. From now on role play as a user (User A) talking to another user (User B).\nMake sure you follow these instructions:\n\n0. DO NOT act as if you (User A) are an assistant. ALWAYS treat yourself as a user (User A).\n    Do not ask questions to the other user (User B).\n1. Answer any question User B asks you (User A) accurately. Use only the information provided.\n    Do not make up false information.\n2.  Use natural, short, casual language.\n3.  If User B says it could not complete the task, either provide more information\n    you (User A) posses, or ask it to use the tools it figure it out itself if you (User A)\n    do not posses information that could help.\n4.  Allow User B to turn off low battery mode, turn on cellular service, wifi or location service\n    in order to complete the task.\n5.  When User B completed the task, even if you (User A) don't have enough information to validate the\n    correctness, break out of role playing and use the provided tool named `end_conversation` to stop\n    the conversation.\n6.  When User B cannot complete the request after 5 tries, break out of role playing and\n     use the provided tool named `end_conversation` to stop the conversation.\n\nAnswer User B's questions given the following task you (User A) want User B to complete: Turn on wifi",
+          "conversation_active": true,
+          "openai_function_name": null,
+          "openai_tool_call_id": null,
+          "recipient": "USER",
+          "sandbox_message_index": 14,
+          "sender": "SYSTEM",
+          "tool_call_exception": null,
+          "tool_trace": null,
+          "visible_to": null
+        },
+        {
+          "content": "Turn on wifi",
+          "conversation_active": true,
+          "openai_function_name": null,
+          "openai_tool_call_id": null,
+          "recipient": "AGENT",
+          "sandbox_message_index": 15,
+          "sender": "USER",
+          "tool_call_exception": null,
+          "tool_trace": null,
+          "visible_to": null
+        },
+        {
+          "content": null,
+          "conversation_active": null,
+          "openai_function_name": null,
+          "openai_tool_call_id": null,
+          "recipient": null,
+          "sandbox_message_index": 16,
+          "sender": null,
+          "tool_call_exception": null,
+          "tool_trace": null,
+          "visible_to": null
+        },
+        {
+          "content": "print(repr(set_low_battery_mode_status(**{'on': False})))",
+          "conversation_active": true,
+          "openai_function_name": null,
+          "openai_tool_call_id": null,
+          "recipient": "EXECUTION_ENVIRONMENT",
+          "sandbox_message_index": 16,
+          "sender": "AGENT",
+          "tool_call_exception": null,
+          "tool_trace": null,
+          "visible_to": [
+            "AGENT",
+            "EXECUTION_ENVIRONMENT"
+          ]
+        },
+        {
+          "content": "None",
+          "conversation_active": true,
+          "openai_function_name": null,
+          "openai_tool_call_id": null,
+          "recipient": "AGENT",
+          "sandbox_message_index": 17,
+          "sender": "EXECUTION_ENVIRONMENT",
+          "tool_call_exception": null,
+          "tool_trace": [
+            "{\"tool_name\": \"set_low_battery_mode_status\", \"arguments\": {\"on\": false}, \"result\": null}"
+          ],
+          "visible_to": [
+            "EXECUTION_ENVIRONMENT",
+            "AGENT"
+          ]
+        },
+        {
+          "content": null,
+          "conversation_active": null,
+          "openai_function_name": null,
+          "openai_tool_call_id": null,
+          "recipient": null,
+          "sandbox_message_index": 18,
+          "sender": null,
+          "tool_call_exception": null,
+          "tool_trace": null,
+          "visible_to": null
+        },
+        {
+          "content": "print(repr(set_wifi_status(**{'on': True})))",
+          "conversation_active": true,
+          "openai_function_name": null,
+          "openai_tool_call_id": null,
+          "recipient": "EXECUTION_ENVIRONMENT",
+          "sandbox_message_index": 18,
+          "sender": "AGENT",
+          "tool_call_exception": null,
+          "tool_trace": null,
+          "visible_to": [
+            "AGENT",
+            "EXECUTION_ENVIRONMENT"
+          ]
+        },
+        {
+          "content": "None",
+          "conversation_active": true,
+          "openai_function_name": null,
+          "openai_tool_call_id": null,
+          "recipient": "AGENT",
+          "sandbox_message_index": 19,
+          "sender": "EXECUTION_ENVIRONMENT",
+          "tool_call_exception": null,
+          "tool_trace": [
+            "{\"tool_name\": \"set_wifi_status\", \"arguments\": {\"on\": true}, \"result\": null}"
+          ],
+          "visible_to": [
+            "EXECUTION_ENVIRONMENT",
+            "AGENT"
+          ]
+        },
+        {
+          "content": "Wifi has been turned on.",
+          "conversation_active": true,
+          "openai_function_name": null,
+          "openai_tool_call_id": null,
+          "recipient": "USER",
+          "sandbox_message_index": 20,
+          "sender": "AGENT",
+          "tool_call_exception": null,
+          "tool_trace": null,
+          "visible_to": [
+            "AGENT",
+            "USER"
+          ]
+        },
+        {
+          "content": "Done.",
+          "conversation_active": false,
+          "openai_function_name": null,
+          "openai_tool_call_id": null,
+          "recipient": "AGENT",
+          "sandbox_message_index": 21,
+          "sender": "USER",
+          "tool_call_exception": null,
+          "tool_trace": null,
+          "visible_to": [
+            "USER",
+            "AGENT"
+          ]
+        }
+      ],
+      "SETTING": [
+        {
+          "cellular": null,
+          "device_id": null,
+          "latitude": null,
+          "location_service": null,
+          "longitude": null,
+          "low_battery_mode": null,
+          "sandbox_message_index": 0,
+          "wifi": null
+        },
+        {
+          "cellular": true,
+          "device_id": "04640c30-ec89-5a3c-9fb4-4af3101c8e04",
+          "latitude": 37.334606,
+          "location_service": true,
+          "longitude": -122.009102,
+          "low_battery_mode": false,
+          "sandbox_message_index": 0,
+          "wifi": true
+        },
+        {
+          "cellular": null,
+          "device_id": null,
+          "latitude": null,
+          "location_service": null,
+          "longitude": null,
+          "low_battery_mode": null,
+          "sandbox_message_index": 14,
+          "wifi": null
+        },
+        {
+          "cellular": false,
+          "device_id": "04640c30-ec89-5a3c-9fb4-4af3101c8e04",
+          "latitude": 37.334606,
+          "location_service": false,
+          "longitude": -122.009102,
+          "low_battery_mode": true,
+          "sandbox_message_index": 14,
+          "wifi": false
+        },
+        {
+          "cellular": null,
+          "device_id": null,
+          "latitude": null,
+          "location_service": null,
+          "longitude": null,
+          "low_battery_mode": null,
+          "sandbox_message_index": 17,
+          "wifi": null
+        },
+        {
+          "cellular": false,
+          "device_id": "04640c30-ec89-5a3c-9fb4-4af3101c8e04",
+          "latitude": 37.334606,
+          "location_service": false,
+          "longitude": -122.009102,
+          "low_battery_mode": false,
+          "sandbox_message_index": 17,
+          "wifi": false
+        },
+        {
+          "cellular": null,
+          "device_id": null,
+          "latitude": null,
+          "location_service": null,
+          "longitude": null,
+          "low_battery_mode": null,
+          "sandbox_message_index": 19,
+          "wifi": null
+        },
+        {
+          "cellular": false,
+          "device_id": "04640c30-ec89-5a3c-9fb4-4af3101c8e04",
+          "latitude": 37.334606,
+          "location_service": false,
+          "longitude": -122.009102,
+          "low_battery_mode": false,
+          "sandbox_message_index": 19,
+          "wifi": true
+        }
+      ]
+    },
+    "interactive_console": null,
+    "preferred_tool_backend": "DEFAULT",
+    "tool_allow_list": [
+      "end_conversation",
+      "set_wifi_status",
+      "set_low_battery_mode_status",
+      "get_wifi_status",
+      "get_low_battery_mode_status"
+    ],
+    "tool_augmentation_list": [],
+    "tool_deny_list": null,
+    "trace_tool": true
+  },
+  "uses_native_evaluation": true,
+  "uses_native_execution_environment": true,
+  "uses_native_scenario_state": true
+}

@@ -1,0 +1,1452 @@
+{
+  "pass": true,
+  "conditions": [
+    {
+      "condition": "matched_low",
+      "metrics": {
+        "recheck": {
+          "semantic_loss": 0.7649873230233599,
+          "probe_count": 5.950752153600002,
+          "probe_cost": 1.3091654737919993,
+          "objective": 2.0741527968153592
+        },
+        "myopic": {
+          "semantic_loss": 1.2238495604735997,
+          "probe_count": 4.420953088,
+          "probe_cost": 0.9726096793600001,
+          "objective": 2.1964592398336
+        },
+        "ttl": {
+          "semantic_loss": 1.3247999999999995,
+          "probe_count": 7.999999999999999,
+          "probe_cost": 1.759999999999999,
+          "objective": 3.0847999999999987
+        },
+        "always": {
+          "semantic_loss": 0.0,
+          "probe_count": 24.0,
+          "probe_cost": 5.279999999999998,
+          "objective": 5.279999999999998
+        },
+        "never": {
+          "semantic_loss": 4.47546099891589,
+          "probe_count": 0.0,
+          "probe_cost": 0.0,
+          "objective": 4.47546099891589
+        }
+      },
+      "relative_reduction": 0.055683456719873625
+    },
+    {
+      "condition": "matched_high",
+      "metrics": {
+        "recheck": {
+          "semantic_loss": 1.537754932128287,
+          "probe_count": 3.21886848680806,
+          "probe_cost": 1.2875473947232234,
+          "objective": 2.8253023268515105
+        },
+        "myopic": {
+          "semantic_loss": 2.5953636475450823,
+          "probe_count": 2.014570412894376,
+          "probe_cost": 0.8058281651577502,
+          "objective": 3.4011918127028324
+        },
+        "ttl": {
+          "semantic_loss": 1.3247999999999998,
+          "probe_count": 8.0,
+          "probe_cost": 3.2000000000000015,
+          "objective": 4.524800000000001
+        },
+        "always": {
+          "semantic_loss": 0.0,
+          "probe_count": 24.0,
+          "probe_cost": 9.599999999999982,
+          "objective": 9.599999999999982
+        },
+        "never": {
+          "semantic_loss": 4.475460998915891,
+          "probe_count": 0.0,
+          "probe_cost": 0.0,
+          "objective": 4.475460998915891
+        }
+      },
+      "relative_reduction": 0.16931990830404786
+    },
+    {
+      "condition": "no_drift",
+      "metrics": {
+        "recheck": {
+          "semantic_loss": 0.0,
+          "probe_count": 3.21886848680806,
+          "probe_cost": 1.2875473947232234,
+          "objective": 1.2875473947232234
+        },
+        "myopic": {
+          "semantic_loss": 0.0,
+          "probe_count": 2.014570412894376,
+          "probe_cost": 0.8058281651577502,
+          "objective": 0.8058281651577502
+        },
+        "ttl": {
+          "semantic_loss": 0.0,
+          "probe_count": 8.0,
+          "probe_cost": 3.2000000000000015,
+          "objective": 3.2000000000000015
+        },
+        "always": {
+          "semantic_loss": 0.0,
+          "probe_count": 24.0,
+          "probe_cost": 9.599999999999982,
+          "objective": 9.599999999999982
+        },
+        "never": {
+          "semantic_loss": 0.0,
+          "probe_count": 0.0,
+          "probe_cost": 0.0,
+          "objective": 0.0
+        }
+      },
+      "relative_reduction": -0.5977939843678348
+    },
+    {
+      "condition": "underestimated_drift",
+      "metrics": {
+        "recheck": {
+          "semantic_loss": 2.745852288997672,
+          "probe_count": 3.21886848680806,
+          "probe_cost": 1.2875473947232234,
+          "objective": 4.033399683720896
+        },
+        "myopic": {
+          "semantic_loss": 3.9176632685286648,
+          "probe_count": 2.014570412894376,
+          "probe_cost": 0.8058281651577502,
+          "objective": 4.723491433686415
+        },
+        "ttl": {
+          "semantic_loss": 2.419200000000001,
+          "probe_count": 8.0,
+          "probe_cost": 3.2000000000000015,
+          "objective": 5.619200000000003
+        },
+        "always": {
+          "semantic_loss": 0.0,
+          "probe_count": 24.0,
+          "probe_cost": 9.599999999999982,
+          "objective": 9.599999999999982
+        },
+        "never": {
+          "semantic_loss": 5.4585450583785144,
+          "probe_count": 0.0,
+          "probe_cost": 0.0,
+          "objective": 5.4585450583785144
+        }
+      },
+      "relative_reduction": 0.1460978091426201
+    }
+  ],
+  "streams": [
+    {
+      "stream": 0,
+      "condition": "matched_low",
+      "action_differences": 3,
+      "expected_relevant_semantic_differences": 0.5424000000000001,
+      "hidden_worlds_generated": 0,
+      "rows": [
+        {
+          "step": 0,
+          "task_type": 0,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 1,
+          "task_type": 0,
+          "probe_diff": true,
+          "expected_relevant_bit_difference": 0.21120000000000005
+        },
+        {
+          "step": 2,
+          "task_type": 1,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 3,
+          "task_type": 0,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 4,
+          "task_type": 0,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 5,
+          "task_type": 0,
+          "probe_diff": true,
+          "expected_relevant_bit_difference": 0.21120000000000005
+        },
+        {
+          "step": 6,
+          "task_type": 0,
+          "probe_diff": true,
+          "expected_relevant_bit_difference": 0.12
+        },
+        {
+          "step": 7,
+          "task_type": 3,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 8,
+          "task_type": 3,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 9,
+          "task_type": 0,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 10,
+          "task_type": 1,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 11,
+          "task_type": 1,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        }
+      ]
+    },
+    {
+      "stream": 1,
+      "condition": "matched_low",
+      "action_differences": 7,
+      "expected_relevant_semantic_differences": 1.3536000000000004,
+      "hidden_worlds_generated": 0,
+      "rows": [
+        {
+          "step": 0,
+          "task_type": 1,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 1,
+          "task_type": 1,
+          "probe_diff": true,
+          "expected_relevant_bit_difference": 0.21120000000000005
+        },
+        {
+          "step": 2,
+          "task_type": 1,
+          "probe_diff": true,
+          "expected_relevant_bit_difference": 0.12
+        },
+        {
+          "step": 3,
+          "task_type": 1,
+          "probe_diff": true,
+          "expected_relevant_bit_difference": 0.12
+        },
+        {
+          "step": 4,
+          "task_type": 1,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.12
+        },
+        {
+          "step": 5,
+          "task_type": 1,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 6,
+          "task_type": 1,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 7,
+          "task_type": 1,
+          "probe_diff": true,
+          "expected_relevant_bit_difference": 0.21120000000000005
+        },
+        {
+          "step": 8,
+          "task_type": 1,
+          "probe_diff": true,
+          "expected_relevant_bit_difference": 0.12
+        },
+        {
+          "step": 9,
+          "task_type": 2,
+          "probe_diff": true,
+          "expected_relevant_bit_difference": 0.12
+        },
+        {
+          "step": 10,
+          "task_type": 2,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.12
+        },
+        {
+          "step": 11,
+          "task_type": 2,
+          "probe_diff": true,
+          "expected_relevant_bit_difference": 0.21120000000000005
+        }
+      ]
+    },
+    {
+      "stream": 2,
+      "condition": "matched_low",
+      "action_differences": 4,
+      "expected_relevant_semantic_differences": 0.7824000000000001,
+      "hidden_worlds_generated": 0,
+      "rows": [
+        {
+          "step": 0,
+          "task_type": 2,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 1,
+          "task_type": 0,
+          "probe_diff": true,
+          "expected_relevant_bit_difference": 0.21120000000000005
+        },
+        {
+          "step": 2,
+          "task_type": 3,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 3,
+          "task_type": 1,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 4,
+          "task_type": 1,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 5,
+          "task_type": 1,
+          "probe_diff": true,
+          "expected_relevant_bit_difference": 0.21120000000000005
+        },
+        {
+          "step": 6,
+          "task_type": 1,
+          "probe_diff": true,
+          "expected_relevant_bit_difference": 0.12
+        },
+        {
+          "step": 7,
+          "task_type": 1,
+          "probe_diff": true,
+          "expected_relevant_bit_difference": 0.12
+        },
+        {
+          "step": 8,
+          "task_type": 1,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.12
+        },
+        {
+          "step": 9,
+          "task_type": 2,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 10,
+          "task_type": 2,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 11,
+          "task_type": 2,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        }
+      ]
+    },
+    {
+      "stream": 3,
+      "condition": "matched_low",
+      "action_differences": 3,
+      "expected_relevant_semantic_differences": 0.7377945600000001,
+      "hidden_worlds_generated": 0,
+      "rows": [
+        {
+          "step": 0,
+          "task_type": 3,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 1,
+          "task_type": 3,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 2,
+          "task_type": 2,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 3,
+          "task_type": 2,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 4,
+          "task_type": 2,
+          "probe_diff": true,
+          "expected_relevant_bit_difference": 0.3777945600000001
+        },
+        {
+          "step": 5,
+          "task_type": 0,
+          "probe_diff": true,
+          "expected_relevant_bit_difference": 0.12
+        },
+        {
+          "step": 6,
+          "task_type": 0,
+          "probe_diff": true,
+          "expected_relevant_bit_difference": 0.12
+        },
+        {
+          "step": 7,
+          "task_type": 0,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.12
+        },
+        {
+          "step": 8,
+          "task_type": 3,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 9,
+          "task_type": 0,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 10,
+          "task_type": 0,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 11,
+          "task_type": 0,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        }
+      ]
+    },
+    {
+      "stream": 4,
+      "condition": "matched_high",
+      "action_differences": 3,
+      "expected_relevant_semantic_differences": 1.9635839999999996,
+      "hidden_worlds_generated": 0,
+      "rows": [
+        {
+          "step": 0,
+          "task_type": 0,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 1,
+          "task_type": 0,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 2,
+          "task_type": 0,
+          "probe_diff": true,
+          "expected_relevant_bit_difference": 0.280512
+        },
+        {
+          "step": 3,
+          "task_type": 0,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.280512
+        },
+        {
+          "step": 4,
+          "task_type": 0,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.280512
+        },
+        {
+          "step": 5,
+          "task_type": 0,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 6,
+          "task_type": 0,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 7,
+          "task_type": 0,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 8,
+          "task_type": 0,
+          "probe_diff": true,
+          "expected_relevant_bit_difference": 0.280512
+        },
+        {
+          "step": 9,
+          "task_type": 0,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.280512
+        },
+        {
+          "step": 10,
+          "task_type": 0,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.280512
+        },
+        {
+          "step": 11,
+          "task_type": 0,
+          "probe_diff": true,
+          "expected_relevant_bit_difference": 0.280512
+        }
+      ]
+    },
+    {
+      "stream": 5,
+      "condition": "matched_high",
+      "action_differences": 3,
+      "expected_relevant_semantic_differences": 1.9635839999999996,
+      "hidden_worlds_generated": 0,
+      "rows": [
+        {
+          "step": 0,
+          "task_type": 1,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 1,
+          "task_type": 1,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 2,
+          "task_type": 1,
+          "probe_diff": true,
+          "expected_relevant_bit_difference": 0.280512
+        },
+        {
+          "step": 3,
+          "task_type": 1,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.280512
+        },
+        {
+          "step": 4,
+          "task_type": 1,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.280512
+        },
+        {
+          "step": 5,
+          "task_type": 1,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 6,
+          "task_type": 1,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 7,
+          "task_type": 1,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 8,
+          "task_type": 1,
+          "probe_diff": true,
+          "expected_relevant_bit_difference": 0.280512
+        },
+        {
+          "step": 9,
+          "task_type": 1,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.280512
+        },
+        {
+          "step": 10,
+          "task_type": 1,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.280512
+        },
+        {
+          "step": 11,
+          "task_type": 1,
+          "probe_diff": true,
+          "expected_relevant_bit_difference": 0.280512
+        }
+      ]
+    },
+    {
+      "stream": 6,
+      "condition": "matched_high",
+      "action_differences": 3,
+      "expected_relevant_semantic_differences": 3.376359124992,
+      "hidden_worlds_generated": 0,
+      "rows": [
+        {
+          "step": 0,
+          "task_type": 2,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 1,
+          "task_type": 2,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 2,
+          "task_type": 2,
+          "probe_diff": true,
+          "expected_relevant_bit_difference": 0.482337017856
+        },
+        {
+          "step": 3,
+          "task_type": 2,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.482337017856
+        },
+        {
+          "step": 4,
+          "task_type": 2,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.482337017856
+        },
+        {
+          "step": 5,
+          "task_type": 2,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 6,
+          "task_type": 2,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 7,
+          "task_type": 2,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 8,
+          "task_type": 2,
+          "probe_diff": true,
+          "expected_relevant_bit_difference": 0.482337017856
+        },
+        {
+          "step": 9,
+          "task_type": 2,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.482337017856
+        },
+        {
+          "step": 10,
+          "task_type": 2,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.482337017856
+        },
+        {
+          "step": 11,
+          "task_type": 2,
+          "probe_diff": true,
+          "expected_relevant_bit_difference": 0.482337017856
+        }
+      ]
+    },
+    {
+      "stream": 7,
+      "condition": "matched_high",
+      "action_differences": 1,
+      "expected_relevant_semantic_differences": 1.447011053568,
+      "hidden_worlds_generated": 0,
+      "rows": [
+        {
+          "step": 0,
+          "task_type": 3,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 1,
+          "task_type": 3,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 2,
+          "task_type": 3,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 3,
+          "task_type": 3,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 4,
+          "task_type": 3,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 5,
+          "task_type": 3,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 6,
+          "task_type": 2,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 7,
+          "task_type": 2,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 8,
+          "task_type": 2,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 9,
+          "task_type": 2,
+          "probe_diff": true,
+          "expected_relevant_bit_difference": 0.482337017856
+        },
+        {
+          "step": 10,
+          "task_type": 2,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.482337017856
+        },
+        {
+          "step": 11,
+          "task_type": 2,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.482337017856
+        }
+      ]
+    },
+    {
+      "stream": 8,
+      "condition": "no_drift",
+      "action_differences": 3,
+      "expected_relevant_semantic_differences": 0.0,
+      "hidden_worlds_generated": 0,
+      "rows": [
+        {
+          "step": 0,
+          "task_type": 0,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 1,
+          "task_type": 0,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 2,
+          "task_type": 0,
+          "probe_diff": true,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 3,
+          "task_type": 0,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 4,
+          "task_type": 0,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 5,
+          "task_type": 0,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 6,
+          "task_type": 0,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 7,
+          "task_type": 0,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 8,
+          "task_type": 0,
+          "probe_diff": true,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 9,
+          "task_type": 0,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 10,
+          "task_type": 0,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 11,
+          "task_type": 0,
+          "probe_diff": true,
+          "expected_relevant_bit_difference": 0.0
+        }
+      ]
+    },
+    {
+      "stream": 9,
+      "condition": "no_drift",
+      "action_differences": 5,
+      "expected_relevant_semantic_differences": 0.0,
+      "hidden_worlds_generated": 0,
+      "rows": [
+        {
+          "step": 0,
+          "task_type": 1,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 1,
+          "task_type": 1,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 2,
+          "task_type": 1,
+          "probe_diff": true,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 3,
+          "task_type": 1,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 4,
+          "task_type": 2,
+          "probe_diff": true,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 5,
+          "task_type": 2,
+          "probe_diff": true,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 6,
+          "task_type": 2,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 7,
+          "task_type": 2,
+          "probe_diff": true,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 8,
+          "task_type": 2,
+          "probe_diff": true,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 9,
+          "task_type": 3,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 10,
+          "task_type": 3,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 11,
+          "task_type": 3,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        }
+      ]
+    },
+    {
+      "stream": 10,
+      "condition": "no_drift",
+      "action_differences": 3,
+      "expected_relevant_semantic_differences": 0.0,
+      "hidden_worlds_generated": 0,
+      "rows": [
+        {
+          "step": 0,
+          "task_type": 2,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 1,
+          "task_type": 2,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 2,
+          "task_type": 2,
+          "probe_diff": true,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 3,
+          "task_type": 2,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 4,
+          "task_type": 2,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 5,
+          "task_type": 2,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 6,
+          "task_type": 2,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 7,
+          "task_type": 2,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 8,
+          "task_type": 2,
+          "probe_diff": true,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 9,
+          "task_type": 2,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 10,
+          "task_type": 2,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 11,
+          "task_type": 2,
+          "probe_diff": true,
+          "expected_relevant_bit_difference": 0.0
+        }
+      ]
+    },
+    {
+      "stream": 11,
+      "condition": "no_drift",
+      "action_differences": 0,
+      "expected_relevant_semantic_differences": 0.0,
+      "hidden_worlds_generated": 0,
+      "rows": [
+        {
+          "step": 0,
+          "task_type": 3,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 1,
+          "task_type": 3,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 2,
+          "task_type": 3,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 3,
+          "task_type": 3,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 4,
+          "task_type": 3,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 5,
+          "task_type": 3,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 6,
+          "task_type": 3,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 7,
+          "task_type": 3,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 8,
+          "task_type": 3,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 9,
+          "task_type": 3,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 10,
+          "task_type": 3,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 11,
+          "task_type": 3,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        }
+      ]
+    },
+    {
+      "stream": 12,
+      "condition": "underestimated_drift",
+      "action_differences": 1,
+      "expected_relevant_semantic_differences": 0.8593919999999999,
+      "hidden_worlds_generated": 0,
+      "rows": [
+        {
+          "step": 0,
+          "task_type": 0,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 1,
+          "task_type": 0,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 2,
+          "task_type": 0,
+          "probe_diff": true,
+          "expected_relevant_bit_difference": 0.42969599999999997
+        },
+        {
+          "step": 3,
+          "task_type": 0,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.42969599999999997
+        },
+        {
+          "step": 4,
+          "task_type": 3,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 5,
+          "task_type": 3,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 6,
+          "task_type": 3,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 7,
+          "task_type": 3,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 8,
+          "task_type": 3,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 9,
+          "task_type": 1,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 10,
+          "task_type": 1,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 11,
+          "task_type": 1,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        }
+      ]
+    },
+    {
+      "stream": 13,
+      "condition": "underestimated_drift",
+      "action_differences": 3,
+      "expected_relevant_semantic_differences": 3.0078719999999994,
+      "hidden_worlds_generated": 0,
+      "rows": [
+        {
+          "step": 0,
+          "task_type": 1,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 1,
+          "task_type": 1,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 2,
+          "task_type": 1,
+          "probe_diff": true,
+          "expected_relevant_bit_difference": 0.42969599999999997
+        },
+        {
+          "step": 3,
+          "task_type": 1,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.42969599999999997
+        },
+        {
+          "step": 4,
+          "task_type": 1,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.42969599999999997
+        },
+        {
+          "step": 5,
+          "task_type": 1,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 6,
+          "task_type": 1,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 7,
+          "task_type": 1,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 8,
+          "task_type": 1,
+          "probe_diff": true,
+          "expected_relevant_bit_difference": 0.42969599999999997
+        },
+        {
+          "step": 9,
+          "task_type": 1,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.42969599999999997
+        },
+        {
+          "step": 10,
+          "task_type": 1,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.42969599999999997
+        },
+        {
+          "step": 11,
+          "task_type": 1,
+          "probe_diff": true,
+          "expected_relevant_bit_difference": 0.42969599999999997
+        }
+      ]
+    },
+    {
+      "stream": 14,
+      "condition": "underestimated_drift",
+      "action_differences": 3,
+      "expected_relevant_semantic_differences": 4.723273433087999,
+      "hidden_worlds_generated": 0,
+      "rows": [
+        {
+          "step": 0,
+          "task_type": 2,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 1,
+          "task_type": 2,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 2,
+          "task_type": 2,
+          "probe_diff": true,
+          "expected_relevant_bit_difference": 0.674753347584
+        },
+        {
+          "step": 3,
+          "task_type": 2,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.674753347584
+        },
+        {
+          "step": 4,
+          "task_type": 2,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.674753347584
+        },
+        {
+          "step": 5,
+          "task_type": 2,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 6,
+          "task_type": 2,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 7,
+          "task_type": 2,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 8,
+          "task_type": 2,
+          "probe_diff": true,
+          "expected_relevant_bit_difference": 0.674753347584
+        },
+        {
+          "step": 9,
+          "task_type": 2,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.674753347584
+        },
+        {
+          "step": 10,
+          "task_type": 2,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.674753347584
+        },
+        {
+          "step": 11,
+          "task_type": 2,
+          "probe_diff": true,
+          "expected_relevant_bit_difference": 0.674753347584
+        }
+      ]
+    },
+    {
+      "stream": 15,
+      "condition": "underestimated_drift",
+      "action_differences": 0,
+      "expected_relevant_semantic_differences": 0.0,
+      "hidden_worlds_generated": 0,
+      "rows": [
+        {
+          "step": 0,
+          "task_type": 3,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 1,
+          "task_type": 3,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 2,
+          "task_type": 3,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 3,
+          "task_type": 3,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 4,
+          "task_type": 3,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 5,
+          "task_type": 3,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 6,
+          "task_type": 3,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 7,
+          "task_type": 3,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 8,
+          "task_type": 3,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 9,
+          "task_type": 3,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 10,
+          "task_type": 0,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        },
+        {
+          "step": 11,
+          "task_type": 0,
+          "probe_diff": false,
+          "expected_relevant_bit_difference": 0.0
+        }
+      ]
+    }
+  ],
+  "expected_relevant_differences_total": 20.757270171648,
+  "gate_uses_realized_hidden_modes": false,
+  "gate_uses_llm_results": false,
+  "new_remote_calls": 0,
+  "gate_scope": "Feasibility under model assumptions only. Misspecification and no-drift losses do not veto or remove negative controls."
+}

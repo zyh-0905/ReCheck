@@ -1,0 +1,1390 @@
+{
+  "source_zip_sha256": "d1c29ade16d9babb3e833d7ce32fe66984b37ecaff3f6504e5520e974f958d95",
+  "label": "Previously observed real R2 cases used for audit regression, never new R3 results",
+  "examples": [
+    {
+      "source_record": "records/rc_000_004_recheck.json",
+      "source_sha256": "61a2bc9da6f13d847b4c116a89fa54036e884cf9f81240ef45f41c763a14a538",
+      "record": {
+        "study": "r2_recheck",
+        "stream": 0,
+        "step": 4,
+        "method": "recheck",
+        "order_index": 3,
+        "task_type": 1,
+        "prefix_sha256": "46a0df70b3efcaa6a089da56ee339286d646cae273306eeec78e645d5b5a8208",
+        "worker_view": {
+          "task": {
+            "request": "Return the number of orders with integer event_time at most 6, including 6.",
+            "requested_fields": [
+              "count"
+            ],
+            "cutoff": 6
+          },
+          "memory": {
+            "amount_divisor": 1,
+            "endpoint_inclusive": false,
+            "checked_at": [
+              0,
+              5
+            ]
+          },
+          "current_round": 5,
+          "tool_descriptions": {
+            "sum_amount": "Returns raw sum; divide by the remembered amount_divisor to obtain major units.",
+            "count_before": "Counts rows relative to integer bound. Use remembered endpoint_inclusive. Desired cutoff is inclusive.",
+            "count_all": "Counts all orders. No argument."
+          },
+          "instructions": "Return {\"amount_divisor\":1 or 100 or null,\"time_bound\":integer or null}. Use null for unused fields. Do not request extra probes."
+        },
+        "worker_view_sha256": "cf854c4b90209e9d634f7d56d9e0f7ccc887294d74d31743fd1dcd1e9adace83",
+        "ages_before": [
+          5,
+          5
+        ],
+        "probed_channels": [
+          1
+        ],
+        "probe_receipts": [
+          {
+            "channel": "time_endpoint",
+            "returned_count": 0,
+            "known_event_time": 0,
+            "requested_bound": 0
+          }
+        ],
+        "probe_count": 1,
+        "model_probe_cost": 0.18,
+        "planning_seconds": 0.00019199983216822147,
+        "probe_seconds": 5.679205060005188e-05,
+        "tool_seconds": 7.875030860304832e-06,
+        "task_tool_calls": 0,
+        "plan": {
+          "amount_divisor": 1,
+          "time_bound": 7
+        },
+        "plan_json_error": null,
+        "plan_schema_valid": false,
+        "tool_result": {
+          "error": "INVALID_TOOL_PLAN"
+        },
+        "answer": {
+          "total": null,
+          "count": null
+        },
+        "answer_json_error": null,
+        "logical_calls": [
+          "r2/rc/0/4/recheck/plan",
+          "r2/rc/0/4/recheck/answer"
+        ]
+      },
+      "case": {
+        "stream": 0,
+        "seed": 920101,
+        "regime": "no_drift",
+        "cents": [
+          4604,
+          3563,
+          4677,
+          7688,
+          6347,
+          6720,
+          5617,
+          9578,
+          1906,
+          2706,
+          6143,
+          5924,
+          991,
+          9730,
+          7043,
+          5574,
+          6843,
+          5881,
+          1742,
+          608
+        ],
+        "initial_modes": [
+          0,
+          0
+        ],
+        "tasks": [
+          {
+            "type": 3,
+            "cutoff": 7,
+            "modes": [
+              0,
+              0
+            ]
+          },
+          {
+            "type": 3,
+            "cutoff": 7,
+            "modes": [
+              0,
+              0
+            ]
+          },
+          {
+            "type": 3,
+            "cutoff": 9,
+            "modes": [
+              0,
+              0
+            ]
+          },
+          {
+            "type": 3,
+            "cutoff": 8,
+            "modes": [
+              0,
+              0
+            ]
+          },
+          {
+            "type": 1,
+            "cutoff": 6,
+            "modes": [
+              0,
+              0
+            ]
+          },
+          {
+            "type": 1,
+            "cutoff": 12,
+            "modes": [
+              0,
+              0
+            ]
+          },
+          {
+            "type": 3,
+            "cutoff": 6,
+            "modes": [
+              0,
+              0
+            ]
+          },
+          {
+            "type": 0,
+            "cutoff": 14,
+            "modes": [
+              0,
+              0
+            ]
+          },
+          {
+            "type": 2,
+            "cutoff": 8,
+            "modes": [
+              0,
+              0
+            ]
+          },
+          {
+            "type": 2,
+            "cutoff": 7,
+            "modes": [
+              0,
+              0
+            ]
+          },
+          {
+            "type": 2,
+            "cutoff": 9,
+            "modes": [
+              0,
+              0
+            ]
+          },
+          {
+            "type": 2,
+            "cutoff": 13,
+            "modes": [
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      "calls_finish_only": {
+        "r2/rc/0/4/recheck/plan": {
+          "response": {
+            "choices": [
+              {
+                "finish_reason": "stop"
+              }
+            ]
+          }
+        },
+        "r2/rc/0/4/recheck/answer": {
+          "response": {
+            "choices": [
+              {
+                "finish_reason": "stop"
+              }
+            ]
+          }
+        }
+      },
+      "expected": {
+        "interface_failure": true,
+        "stale_related": false,
+        "end_to_end_success": false
+      }
+    },
+    {
+      "source_record": "records/rc_002_000_never.json",
+      "source_sha256": "203d57385fa876a956da34c5f0239d6eac4626329061199ee62bbb2057f1bb9b",
+      "record": {
+        "study": "r2_recheck",
+        "stream": 2,
+        "step": 0,
+        "method": "never",
+        "order_index": 1,
+        "task_type": 1,
+        "prefix_sha256": "402087dbc8af6d1a3cc8bec15465ffbd3847225620c4cf3e642b8df4e7a8c755",
+        "worker_view": {
+          "task": {
+            "request": "Return the number of orders with integer event_time at most 8, including 8.",
+            "requested_fields": [
+              "count"
+            ],
+            "cutoff": 8
+          },
+          "memory": {
+            "amount_divisor": 1,
+            "endpoint_inclusive": true,
+            "checked_at": [
+              0,
+              0
+            ]
+          },
+          "current_round": 1,
+          "tool_descriptions": {
+            "sum_amount": "Returns raw sum; divide by the remembered amount_divisor to obtain major units.",
+            "count_before": "Counts rows relative to integer bound. Use remembered endpoint_inclusive. Desired cutoff is inclusive.",
+            "count_all": "Counts all orders. No argument."
+          },
+          "instructions": "Return {\"amount_divisor\":1 or 100 or null,\"time_bound\":integer or null}. Use null for unused fields. Do not request extra probes."
+        },
+        "worker_view_sha256": "83847546df2377596d90d1b9537c4a0a3cc9d9aa1927b56150a80d6ab41c7023",
+        "ages_before": [
+          1,
+          1
+        ],
+        "probed_channels": [],
+        "probe_receipts": [],
+        "probe_count": 0,
+        "model_probe_cost": 0.0,
+        "planning_seconds": 1.1625001206994057e-05,
+        "probe_seconds": 2.3957807570695877e-05,
+        "tool_seconds": 1.0334188118577003e-05,
+        "task_tool_calls": 0,
+        "plan": {
+          "amount_divisor": 1,
+          "time_bound": 8
+        },
+        "plan_json_error": null,
+        "plan_schema_valid": false,
+        "tool_result": {
+          "error": "INVALID_TOOL_PLAN"
+        },
+        "answer": {
+          "total": null,
+          "count": null
+        },
+        "answer_json_error": null,
+        "logical_calls": [
+          "r2/rc/2/0/never/plan",
+          "r2/rc/2/0/never/answer"
+        ]
+      },
+      "case": {
+        "stream": 2,
+        "seed": 920103,
+        "regime": "no_drift",
+        "cents": [
+          8725,
+          6140,
+          2521,
+          8807,
+          4386,
+          9341,
+          9230,
+          882,
+          8639,
+          459,
+          9430,
+          9082,
+          6005,
+          7882,
+          9099,
+          7703,
+          4969,
+          4704,
+          3104,
+          2877
+        ],
+        "initial_modes": [
+          0,
+          1
+        ],
+        "tasks": [
+          {
+            "type": 1,
+            "cutoff": 8,
+            "modes": [
+              0,
+              1
+            ]
+          },
+          {
+            "type": 1,
+            "cutoff": 13,
+            "modes": [
+              0,
+              1
+            ]
+          },
+          {
+            "type": 0,
+            "cutoff": 5,
+            "modes": [
+              0,
+              1
+            ]
+          },
+          {
+            "type": 0,
+            "cutoff": 14,
+            "modes": [
+              0,
+              1
+            ]
+          },
+          {
+            "type": 0,
+            "cutoff": 6,
+            "modes": [
+              0,
+              1
+            ]
+          },
+          {
+            "type": 1,
+            "cutoff": 10,
+            "modes": [
+              0,
+              1
+            ]
+          },
+          {
+            "type": 1,
+            "cutoff": 13,
+            "modes": [
+              0,
+              1
+            ]
+          },
+          {
+            "type": 0,
+            "cutoff": 7,
+            "modes": [
+              0,
+              1
+            ]
+          },
+          {
+            "type": 3,
+            "cutoff": 9,
+            "modes": [
+              0,
+              1
+            ]
+          },
+          {
+            "type": 2,
+            "cutoff": 14,
+            "modes": [
+              0,
+              1
+            ]
+          },
+          {
+            "type": 2,
+            "cutoff": 13,
+            "modes": [
+              0,
+              1
+            ]
+          },
+          {
+            "type": 2,
+            "cutoff": 8,
+            "modes": [
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      "calls_finish_only": {
+        "r2/rc/2/0/never/plan": {
+          "response": {
+            "choices": [
+              {
+                "finish_reason": "stop"
+              }
+            ]
+          }
+        },
+        "r2/rc/2/0/never/answer": {
+          "response": {
+            "choices": [
+              {
+                "finish_reason": "stop"
+              }
+            ]
+          }
+        }
+      },
+      "expected": {
+        "interface_failure": true,
+        "stale_related": false,
+        "end_to_end_success": false
+      }
+    },
+    {
+      "source_record": "records/rc_002_001_always.json",
+      "source_sha256": "ac0c6c336376b82bfef581ae3de00c1106af28a0b0d7f783bf6b98b5a6ad0b7e",
+      "record": {
+        "study": "r2_recheck",
+        "stream": 2,
+        "step": 1,
+        "method": "always",
+        "order_index": 4,
+        "task_type": 1,
+        "prefix_sha256": "402087dbc8af6d1a3cc8bec15465ffbd3847225620c4cf3e642b8df4e7a8c755",
+        "worker_view": {
+          "task": {
+            "request": "Return the number of orders with integer event_time at most 13, including 13.",
+            "requested_fields": [
+              "count"
+            ],
+            "cutoff": 13
+          },
+          "memory": {
+            "amount_divisor": 1,
+            "endpoint_inclusive": true,
+            "checked_at": [
+              2,
+              2
+            ]
+          },
+          "current_round": 2,
+          "tool_descriptions": {
+            "sum_amount": "Returns raw sum; divide by the remembered amount_divisor to obtain major units.",
+            "count_before": "Counts rows relative to integer bound. Use remembered endpoint_inclusive. Desired cutoff is inclusive.",
+            "count_all": "Counts all orders. No argument."
+          },
+          "instructions": "Return {\"amount_divisor\":1 or 100 or null,\"time_bound\":integer or null}. Use null for unused fields. Do not request extra probes."
+        },
+        "worker_view_sha256": "f19f7fe6316098c735fb96911ce3b65c14ca113ffeb59a4af6f4a86e8f359579",
+        "ages_before": [
+          1,
+          1
+        ],
+        "probed_channels": [
+          0,
+          1
+        ],
+        "probe_receipts": [
+          {
+            "channel": "amount_unit",
+            "raw_amount": 1.0,
+            "known_invoice_major_units": 1
+          },
+          {
+            "channel": "time_endpoint",
+            "returned_count": 1,
+            "known_event_time": 0,
+            "requested_bound": 0
+          }
+        ],
+        "probe_count": 2,
+        "model_probe_cost": 0.44,
+        "planning_seconds": 6.512505933642387e-05,
+        "probe_seconds": 0.00011499994434416294,
+        "tool_seconds": 1.1084135621786118e-05,
+        "task_tool_calls": 0,
+        "plan": {
+          "amount_divisor": 1,
+          "time_bound": 13
+        },
+        "plan_json_error": null,
+        "plan_schema_valid": false,
+        "tool_result": {
+          "error": "INVALID_TOOL_PLAN"
+        },
+        "answer": {
+          "total": null,
+          "count": null
+        },
+        "answer_json_error": null,
+        "logical_calls": [
+          "r2/rc/2/1/always/plan",
+          "r2/rc/2/1/always/answer"
+        ]
+      },
+      "case": {
+        "stream": 2,
+        "seed": 920103,
+        "regime": "no_drift",
+        "cents": [
+          8725,
+          6140,
+          2521,
+          8807,
+          4386,
+          9341,
+          9230,
+          882,
+          8639,
+          459,
+          9430,
+          9082,
+          6005,
+          7882,
+          9099,
+          7703,
+          4969,
+          4704,
+          3104,
+          2877
+        ],
+        "initial_modes": [
+          0,
+          1
+        ],
+        "tasks": [
+          {
+            "type": 1,
+            "cutoff": 8,
+            "modes": [
+              0,
+              1
+            ]
+          },
+          {
+            "type": 1,
+            "cutoff": 13,
+            "modes": [
+              0,
+              1
+            ]
+          },
+          {
+            "type": 0,
+            "cutoff": 5,
+            "modes": [
+              0,
+              1
+            ]
+          },
+          {
+            "type": 0,
+            "cutoff": 14,
+            "modes": [
+              0,
+              1
+            ]
+          },
+          {
+            "type": 0,
+            "cutoff": 6,
+            "modes": [
+              0,
+              1
+            ]
+          },
+          {
+            "type": 1,
+            "cutoff": 10,
+            "modes": [
+              0,
+              1
+            ]
+          },
+          {
+            "type": 1,
+            "cutoff": 13,
+            "modes": [
+              0,
+              1
+            ]
+          },
+          {
+            "type": 0,
+            "cutoff": 7,
+            "modes": [
+              0,
+              1
+            ]
+          },
+          {
+            "type": 3,
+            "cutoff": 9,
+            "modes": [
+              0,
+              1
+            ]
+          },
+          {
+            "type": 2,
+            "cutoff": 14,
+            "modes": [
+              0,
+              1
+            ]
+          },
+          {
+            "type": 2,
+            "cutoff": 13,
+            "modes": [
+              0,
+              1
+            ]
+          },
+          {
+            "type": 2,
+            "cutoff": 8,
+            "modes": [
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      "calls_finish_only": {
+        "r2/rc/2/1/always/plan": {
+          "response": {
+            "choices": [
+              {
+                "finish_reason": "stop"
+              }
+            ]
+          }
+        },
+        "r2/rc/2/1/always/answer": {
+          "response": {
+            "choices": [
+              {
+                "finish_reason": "stop"
+              }
+            ]
+          }
+        }
+      },
+      "expected": {
+        "interface_failure": true,
+        "stale_related": false,
+        "end_to_end_success": false
+      }
+    },
+    {
+      "source_record": "records/rc_003_008_never.json",
+      "source_sha256": "bce1737e0543f2eb6a739dde0a038fd55e28ffe850fbf2255ecf8dbb298cd89c",
+      "record": {
+        "study": "r2_recheck",
+        "stream": 3,
+        "step": 8,
+        "method": "never",
+        "order_index": 0,
+        "task_type": 1,
+        "prefix_sha256": "ad8cce6b9d96fbda0d8125fa6278875944a1f1ab303d145ff3eae5c360731177",
+        "worker_view": {
+          "task": {
+            "request": "Return the number of orders with integer event_time at most 9, including 9.",
+            "requested_fields": [
+              "count"
+            ],
+            "cutoff": 9
+          },
+          "memory": {
+            "amount_divisor": 1,
+            "endpoint_inclusive": true,
+            "checked_at": [
+              0,
+              0
+            ]
+          },
+          "current_round": 9,
+          "tool_descriptions": {
+            "sum_amount": "Returns raw sum; divide by the remembered amount_divisor to obtain major units.",
+            "count_before": "Counts rows relative to integer bound. Use remembered endpoint_inclusive. Desired cutoff is inclusive.",
+            "count_all": "Counts all orders. No argument."
+          },
+          "instructions": "Return {\"amount_divisor\":1 or 100 or null,\"time_bound\":integer or null}. Use null for unused fields. Do not request extra probes."
+        },
+        "worker_view_sha256": "b5220e744ee214d113b4bfaa9121484dbf820ede68c5915e5e194c2d8ae33a7a",
+        "ages_before": [
+          9,
+          9
+        ],
+        "probed_channels": [],
+        "probe_receipts": [],
+        "probe_count": 0,
+        "model_probe_cost": 0.0,
+        "planning_seconds": 8.95909033715725e-06,
+        "probe_seconds": 1.0584015399217606e-05,
+        "tool_seconds": 5.583977326750755e-06,
+        "task_tool_calls": 0,
+        "plan": {
+          "amount_divisor": 1,
+          "time_bound": 9
+        },
+        "plan_json_error": null,
+        "plan_schema_valid": false,
+        "tool_result": {
+          "error": "INVALID_TOOL_PLAN"
+        },
+        "answer": {
+          "total": null,
+          "count": null
+        },
+        "answer_json_error": null,
+        "logical_calls": [
+          "r2/rc/3/8/never/plan",
+          "r2/rc/3/8/never/answer"
+        ]
+      },
+      "case": {
+        "stream": 3,
+        "seed": 920104,
+        "regime": "hidden_drift",
+        "cents": [
+          253,
+          3521,
+          1059,
+          2180,
+          7425,
+          5522,
+          8279,
+          5270,
+          2779,
+          1500,
+          1807,
+          5235,
+          5764,
+          9190,
+          1240,
+          3965,
+          6467,
+          8098,
+          8297,
+          9573
+        ],
+        "initial_modes": [
+          0,
+          1
+        ],
+        "tasks": [
+          {
+            "type": 2,
+            "cutoff": 7,
+            "modes": [
+              0,
+              1
+            ]
+          },
+          {
+            "type": 2,
+            "cutoff": 6,
+            "modes": [
+              0,
+              1
+            ]
+          },
+          {
+            "type": 2,
+            "cutoff": 13,
+            "modes": [
+              0,
+              0
+            ]
+          },
+          {
+            "type": 2,
+            "cutoff": 7,
+            "modes": [
+              0,
+              1
+            ]
+          },
+          {
+            "type": 3,
+            "cutoff": 8,
+            "modes": [
+              1,
+              0
+            ]
+          },
+          {
+            "type": 3,
+            "cutoff": 9,
+            "modes": [
+              0,
+              1
+            ]
+          },
+          {
+            "type": 3,
+            "cutoff": 9,
+            "modes": [
+              0,
+              1
+            ]
+          },
+          {
+            "type": 1,
+            "cutoff": 10,
+            "modes": [
+              0,
+              1
+            ]
+          },
+          {
+            "type": 1,
+            "cutoff": 9,
+            "modes": [
+              0,
+              1
+            ]
+          },
+          {
+            "type": 1,
+            "cutoff": 14,
+            "modes": [
+              0,
+              1
+            ]
+          },
+          {
+            "type": 0,
+            "cutoff": 11,
+            "modes": [
+              0,
+              1
+            ]
+          },
+          {
+            "type": 0,
+            "cutoff": 11,
+            "modes": [
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      "calls_finish_only": {
+        "r2/rc/3/8/never/plan": {
+          "response": {
+            "choices": [
+              {
+                "finish_reason": "stop"
+              }
+            ]
+          }
+        },
+        "r2/rc/3/8/never/answer": {
+          "response": {
+            "choices": [
+              {
+                "finish_reason": "stop"
+              }
+            ]
+          }
+        }
+      },
+      "expected": {
+        "interface_failure": true,
+        "stale_related": false,
+        "end_to_end_success": false
+      }
+    },
+    {
+      "source_record": "records/rc_001_007_recheck.json",
+      "source_sha256": "9336d8584e6b9d177e903bde3495c77c88a6c353e72f2c4c6ca4fe9cde5bcdd8",
+      "record": {
+        "study": "r2_recheck",
+        "stream": 1,
+        "step": 7,
+        "method": "recheck",
+        "order_index": 1,
+        "task_type": 2,
+        "prefix_sha256": "04a89661474ec51e9a7dbc6dba3c0ec7459024e966d3f07b97b693064d44ffc4",
+        "worker_view": {
+          "task": {
+            "request": "Return both the total amount of ALL orders in major currency units and the number of orders with integer event_time at most 8, including 8.",
+            "requested_fields": [
+              "total",
+              "count"
+            ],
+            "cutoff": 8
+          },
+          "memory": {
+            "amount_divisor": 1,
+            "endpoint_inclusive": true,
+            "checked_at": [
+              8,
+              8
+            ]
+          },
+          "current_round": 8,
+          "tool_descriptions": {
+            "sum_amount": "Returns raw sum; divide by the remembered amount_divisor to obtain major units.",
+            "count_before": "Counts rows relative to integer bound. Use remembered endpoint_inclusive. Desired cutoff is inclusive.",
+            "count_all": "Counts all orders. No argument."
+          },
+          "instructions": "Return {\"amount_divisor\":1 or 100 or null,\"time_bound\":integer or null}. Use null for unused fields. Do not request extra probes."
+        },
+        "worker_view_sha256": "86231734b8b16e8f8335fe0fb4d005cdcd476220712962f52120a0b0a6fb06f5",
+        "ages_before": [
+          2,
+          2
+        ],
+        "probed_channels": [
+          0,
+          1
+        ],
+        "probe_receipts": [
+          {
+            "channel": "amount_unit",
+            "raw_amount": 1.0,
+            "known_invoice_major_units": 1
+          },
+          {
+            "channel": "time_endpoint",
+            "returned_count": 1,
+            "known_event_time": 0,
+            "requested_bound": 0
+          }
+        ],
+        "probe_count": 2,
+        "model_probe_cost": 0.36,
+        "planning_seconds": 5.0208065658807755e-05,
+        "probe_seconds": 5.675014108419418e-05,
+        "tool_seconds": 5.1791081205010414e-05,
+        "task_tool_calls": 2,
+        "plan": {
+          "amount_divisor": 1,
+          "time_bound": 8
+        },
+        "plan_json_error": null,
+        "plan_schema_valid": true,
+        "tool_result": {
+          "sum_amount_raw": 1013.97,
+          "count_before": 9
+        },
+        "answer": {
+          "total": 1013.97,
+          "count": 11
+        },
+        "answer_json_error": null,
+        "logical_calls": [
+          "r2/rc/1/7/recheck/plan",
+          "r2/rc/1/7/recheck/answer"
+        ]
+      },
+      "case": {
+        "stream": 1,
+        "seed": 920102,
+        "regime": "hidden_drift",
+        "cents": [
+          7655,
+          8397,
+          3023,
+          1555,
+          6634,
+          1656,
+          9933,
+          243,
+          7292,
+          8238,
+          2126,
+          1150,
+          6851,
+          8450,
+          8950,
+          4077,
+          394,
+          7191,
+          138,
+          7444
+        ],
+        "initial_modes": [
+          0,
+          0
+        ],
+        "tasks": [
+          {
+            "type": 2,
+            "cutoff": 11,
+            "modes": [
+              0,
+              0
+            ]
+          },
+          {
+            "type": 2,
+            "cutoff": 14,
+            "modes": [
+              0,
+              0
+            ]
+          },
+          {
+            "type": 2,
+            "cutoff": 12,
+            "modes": [
+              0,
+              0
+            ]
+          },
+          {
+            "type": 2,
+            "cutoff": 9,
+            "modes": [
+              0,
+              0
+            ]
+          },
+          {
+            "type": 2,
+            "cutoff": 14,
+            "modes": [
+              0,
+              0
+            ]
+          },
+          {
+            "type": 2,
+            "cutoff": 11,
+            "modes": [
+              0,
+              0
+            ]
+          },
+          {
+            "type": 2,
+            "cutoff": 8,
+            "modes": [
+              0,
+              1
+            ]
+          },
+          {
+            "type": 2,
+            "cutoff": 8,
+            "modes": [
+              0,
+              1
+            ]
+          },
+          {
+            "type": 2,
+            "cutoff": 14,
+            "modes": [
+              0,
+              1
+            ]
+          },
+          {
+            "type": 1,
+            "cutoff": 11,
+            "modes": [
+              0,
+              0
+            ]
+          },
+          {
+            "type": 1,
+            "cutoff": 13,
+            "modes": [
+              0,
+              0
+            ]
+          },
+          {
+            "type": 1,
+            "cutoff": 9,
+            "modes": [
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      "calls_finish_only": {
+        "r2/rc/1/7/recheck/plan": {
+          "response": {
+            "choices": [
+              {
+                "finish_reason": "stop"
+              }
+            ]
+          }
+        },
+        "r2/rc/1/7/recheck/answer": {
+          "response": {
+            "choices": [
+              {
+                "finish_reason": "stop"
+              }
+            ]
+          }
+        }
+      },
+      "expected": {
+        "interface_failure": false,
+        "stale_related": false,
+        "end_to_end_success": false,
+        "answer_follows_tool_and_plan": false
+      }
+    },
+    {
+      "source_record": "records/rc_002_005_recheck.json",
+      "source_sha256": "23b67b6c83b257c066ab6972eae17f929c21e41593457d33751048fed080f5c4",
+      "record": {
+        "study": "r2_recheck",
+        "stream": 2,
+        "step": 5,
+        "method": "recheck",
+        "order_index": 2,
+        "task_type": 1,
+        "prefix_sha256": "402087dbc8af6d1a3cc8bec15465ffbd3847225620c4cf3e642b8df4e7a8c755",
+        "worker_view": {
+          "task": {
+            "request": "Return the number of orders with integer event_time at most 10, including 10.",
+            "requested_fields": [
+              "count"
+            ],
+            "cutoff": 10
+          },
+          "memory": {
+            "amount_divisor": 1,
+            "endpoint_inclusive": true,
+            "checked_at": [
+              5,
+              6
+            ]
+          },
+          "current_round": 6,
+          "tool_descriptions": {
+            "sum_amount": "Returns raw sum; divide by the remembered amount_divisor to obtain major units.",
+            "count_before": "Counts rows relative to integer bound. Use remembered endpoint_inclusive. Desired cutoff is inclusive.",
+            "count_all": "Counts all orders. No argument."
+          },
+          "instructions": "Return {\"amount_divisor\":1 or 100 or null,\"time_bound\":integer or null}. Use null for unused fields. Do not request extra probes."
+        },
+        "worker_view_sha256": "110f1a4e679a3ba604ff5100550b09694e0769cc6b39a74435c8b9b50cddd1f2",
+        "ages_before": [
+          1,
+          4
+        ],
+        "probed_channels": [
+          1
+        ],
+        "probe_receipts": [
+          {
+            "channel": "time_endpoint",
+            "returned_count": 1,
+            "known_event_time": 0,
+            "requested_bound": 0
+          }
+        ],
+        "probe_count": 1,
+        "model_probe_cost": 0.22,
+        "planning_seconds": 9.079091250896454e-05,
+        "probe_seconds": 2.2791093215346336e-05,
+        "tool_seconds": 4.354189150035381e-05,
+        "task_tool_calls": 1,
+        "plan": {
+          "amount_divisor": null,
+          "time_bound": 10
+        },
+        "plan_json_error": null,
+        "plan_schema_valid": true,
+        "tool_result": {
+          "count_before": 11
+        },
+        "answer": {
+          "total": null,
+          "count": 12
+        },
+        "answer_json_error": null,
+        "logical_calls": [
+          "r2/rc/2/5/recheck/plan",
+          "r2/rc/2/5/recheck/answer"
+        ]
+      },
+      "case": {
+        "stream": 2,
+        "seed": 920103,
+        "regime": "no_drift",
+        "cents": [
+          8725,
+          6140,
+          2521,
+          8807,
+          4386,
+          9341,
+          9230,
+          882,
+          8639,
+          459,
+          9430,
+          9082,
+          6005,
+          7882,
+          9099,
+          7703,
+          4969,
+          4704,
+          3104,
+          2877
+        ],
+        "initial_modes": [
+          0,
+          1
+        ],
+        "tasks": [
+          {
+            "type": 1,
+            "cutoff": 8,
+            "modes": [
+              0,
+              1
+            ]
+          },
+          {
+            "type": 1,
+            "cutoff": 13,
+            "modes": [
+              0,
+              1
+            ]
+          },
+          {
+            "type": 0,
+            "cutoff": 5,
+            "modes": [
+              0,
+              1
+            ]
+          },
+          {
+            "type": 0,
+            "cutoff": 14,
+            "modes": [
+              0,
+              1
+            ]
+          },
+          {
+            "type": 0,
+            "cutoff": 6,
+            "modes": [
+              0,
+              1
+            ]
+          },
+          {
+            "type": 1,
+            "cutoff": 10,
+            "modes": [
+              0,
+              1
+            ]
+          },
+          {
+            "type": 1,
+            "cutoff": 13,
+            "modes": [
+              0,
+              1
+            ]
+          },
+          {
+            "type": 0,
+            "cutoff": 7,
+            "modes": [
+              0,
+              1
+            ]
+          },
+          {
+            "type": 3,
+            "cutoff": 9,
+            "modes": [
+              0,
+              1
+            ]
+          },
+          {
+            "type": 2,
+            "cutoff": 14,
+            "modes": [
+              0,
+              1
+            ]
+          },
+          {
+            "type": 2,
+            "cutoff": 13,
+            "modes": [
+              0,
+              1
+            ]
+          },
+          {
+            "type": 2,
+            "cutoff": 8,
+            "modes": [
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      "calls_finish_only": {
+        "r2/rc/2/5/recheck/plan": {
+          "response": {
+            "choices": [
+              {
+                "finish_reason": "stop"
+              }
+            ]
+          }
+        },
+        "r2/rc/2/5/recheck/answer": {
+          "response": {
+            "choices": [
+              {
+                "finish_reason": "stop"
+              }
+            ]
+          }
+        }
+      },
+      "expected": {
+        "interface_failure": false,
+        "stale_related": false,
+        "end_to_end_success": false,
+        "answer_follows_tool_and_plan": false
+      }
+    }
+  ]
+}

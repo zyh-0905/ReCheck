@@ -1,0 +1,700 @@
+{
+  "files": {
+    "DELIVERY_VERIFICATION.json": {
+      "bytes": 3737,
+      "sha256": "0289343c0267a111f9fa6ffcbe1fef71cbfeeb16d34f75ba644430098f6d85a1"
+    },
+    "README.md": {
+      "bytes": 2853,
+      "sha256": "c7dcb144d023846cff00e4f354c55e395327365f0c729cbdadaad95ce45c1bdb"
+    },
+    "docs/CLAIM_EVIDENCE_MATRIX_ZH.md": {
+      "bytes": 1179,
+      "sha256": "61159907a4fafbbd0dab05fb905c4205d3baf4efa8e65b1ef809dc6b9b188649"
+    },
+    "docs/MAINTAINER_REPRODUCTION_EN.md": {
+      "bytes": 2344,
+      "sha256": "c50d3cbf23f1026f58e4fc85d89169322331c226b565da52656bf8d8afaac38a"
+    },
+    "docs/PREVIOUS_GATE_ZH.md": {
+      "bytes": 4333,
+      "sha256": "ddb88aed735f817b57da637b1b5b7fc8a7e7bf59d28b7c7b9ae7124dc92ccde8"
+    },
+    "docs/PROTOCOL.json": {
+      "bytes": 1619,
+      "sha256": "e2ed6c5e2644e187d52157504f6684775dbdc15f787963904333c53d6c805276"
+    },
+    "docs/R12_Research_Report_ZH.md": {
+      "bytes": 8546,
+      "sha256": "2670dbb35ebf21abcf3317193e1f268df6b96e1bd49a39d76e2f8685d1059bb1"
+    },
+    "docs/SOURCE_AUDIT_ZH.md": {
+      "bytes": 3880,
+      "sha256": "e9f8c171adece1fed2520fc6eee37be28d4240bc873371b3551ae4ea59ca8c29"
+    },
+    "docs/SUPPLEMENT_PROTOCOL.json": {
+      "bytes": 819,
+      "sha256": "1086e887be73aa52465687fd0415b9284c5c1c6792751376c683714c75dea5ed"
+    },
+    "launch.py": {
+      "bytes": 1472,
+      "sha256": "69fa36d0286a207520bafe10fbecf606202e70008eccbd8b41ad49744f6a9e7c"
+    },
+    "logs/archive_red.log": {
+      "bytes": 4887,
+      "sha256": "da705a9cdca908a5e1091200de59d05df50dd3db3891ab42f1937e6b1d011f5e"
+    },
+    "logs/contract_green.log": {
+      "bytes": 1002,
+      "sha256": "7abc2791d075849732ae67b3a994935537b6f3abdbdd72b2805e473a16668ea3"
+    },
+    "logs/contract_red.log": {
+      "bytes": 6148,
+      "sha256": "1d1630bf7d17603856d0b74de958a6d6ea79cdcb8ceff4e9aea3590b5b3edbff"
+    },
+    "logs/evidence_green.log": {
+      "bytes": 2365,
+      "sha256": "5b573e1024526af5cfc9a95996372e7cb74d7eebb59a1339d5a76dcb82fed793"
+    },
+    "logs/evidence_red.log": {
+      "bytes": 10767,
+      "sha256": "b2aae94acf278fdff332814d0445171f1b40f1ea829c5996ac9de937d14c19a6"
+    },
+    "logs/final_tests.log": {
+      "bytes": 3612,
+      "sha256": "b0fef93ac606dc7642513ce210f1c5d3bba6c6ee07e8e5559a6f29734bde2d31"
+    },
+    "logs/material_verification.json": {
+      "bytes": 34,
+      "sha256": "5719b805617cb117ebae8b50bad5533083779ee04143f92faec63e2e5100c21b"
+    },
+    "logs/minimal_repro.json": {
+      "bytes": 1056,
+      "sha256": "687cc7e50c6adf7a31bf9ef99eacf86ea3df7e71094f0486f62dd8fb310e7f44"
+    },
+    "logs/native_run1.log": {
+      "bytes": 1066,
+      "sha256": "32da809e4b8f6390de7e2b8288d39f8cc1a17e9f742254e55c76057877d950e2"
+    },
+    "logs/native_run2.log": {
+      "bytes": 1066,
+      "sha256": "32da809e4b8f6390de7e2b8288d39f8cc1a17e9f742254e55c76057877d950e2"
+    },
+    "logs/reference_clock_red.log": {
+      "bytes": 4842,
+      "sha256": "007029e761446567cf1026432755e89e77cf9df188fa90e41cb3fc3cfc95d6f9"
+    },
+    "logs/regrade_final.log": {
+      "bytes": 330,
+      "sha256": "2ce89ed0f6f38e28b0105e9d24d5a20d3d5cb491d2144b8e7274662840ec6bde"
+    },
+    "logs/regrade_run1.log": {
+      "bytes": 330,
+      "sha256": "2ce89ed0f6f38e28b0105e9d24d5a20d3d5cb491d2144b8e7274662840ec6bde"
+    },
+    "logs/regrade_run2.log": {
+      "bytes": 330,
+      "sha256": "2ce89ed0f6f38e28b0105e9d24d5a20d3d5cb491d2144b8e7274662840ec6bde"
+    },
+    "logs/reminder_diagnosis.json": {
+      "bytes": 6870,
+      "sha256": "b4ad38ff35a4ad25c4c237040f7923171bad9690c3c267d9948481bde4b08402"
+    },
+    "logs/reminder_regression_green.log": {
+      "bytes": 1166,
+      "sha256": "c2d3c3ed7e111ddcc2f75811d7a073a6d231b164764a00b97ef530c502bd8be8"
+    },
+    "logs/reminder_regression_red.log": {
+      "bytes": 2168,
+      "sha256": "f28a9651fffc5b22077c5cdf34fca833422e59b452d5ec5a247e531ffd2abf75"
+    },
+    "logs/supplement_pre_fix.py.txt": {
+      "bytes": 5776,
+      "sha256": "ab2ff7ec9e97866a1cfba65b139a80387c733fe1444b052fc5b2bec4376b2cf5"
+    },
+    "logs/supplement_run1.log": {
+      "bytes": 699,
+      "sha256": "64e694bd8579fcb8f679683467909fdd69b9f4a973aa0a8e6f5c992b9906750f"
+    },
+    "logs/supplement_run2.log": {
+      "bytes": 683,
+      "sha256": "00d809a9593f5f791499d2da5decbf02113bcb27bb3162d28cc90672491ab0cc"
+    },
+    "logs/supplement_run3.log": {
+      "bytes": 683,
+      "sha256": "00d809a9593f5f791499d2da5decbf02113bcb27bb3162d28cc90672491ab0cc"
+    },
+    "results/native_run1/results.csv": {
+      "bytes": 2874,
+      "sha256": "9c7e23c7d56c8f7d40d7c113ecf05db4640188794f309c0fd2a22dfda5d20941"
+    },
+    "results/native_run1/scientific_projection.json": {
+      "bytes": 1377621,
+      "sha256": "dd0dfdb42c23238841ad707b32787e2e0ec8569292b8c633cd1ed0a6e6563b43"
+    },
+    "results/native_run1/summary.json": {
+      "bytes": 1066,
+      "sha256": "64926401796e68c16ec8b59e84eabca0adcc076069b2abc7f10ad6953d7cc898"
+    },
+    "results/native_run1/trajectories/cellular_off__achieve_revert_repair.json": {
+      "bytes": 45776,
+      "sha256": "a347e866a20dadc28dd85ef7c3e3d0e5799b8c0e65f3674ed010a948ad94f24d"
+    },
+    "results/native_run1/trajectories/cellular_off__achieve_then_revert.json": {
+      "bytes": 42637,
+      "sha256": "835554e01f1de81c76edf2651fc61a62243575bb1ec01ebb30fddd3c97d66dfd"
+    },
+    "results/native_run1/trajectories/cellular_off__claim_only.json": {
+      "bytes": 36352,
+      "sha256": "a0ace02a55eb51fe433d17f2e8ae38314c53f2bdafbeaadc2cffe1d2c9bbc6e9"
+    },
+    "results/native_run1/trajectories/cellular_off__correct.json": {
+      "bytes": 39488,
+      "sha256": "777762472c3d38f11688f77532cc0863bd292621dacb5633dd2e158544788727"
+    },
+    "results/native_run1/trajectories/cellular_off__correct_then_redundant_error.json": {
+      "bytes": 41636,
+      "sha256": "858127289ac125559e3fee4d16f7b956d5c2e9d6fa8d1214ec73c194f6c5893e"
+    },
+    "results/native_run1/trajectories/cellular_off__error_then_correct.json": {
+      "bytes": 41618,
+      "sha256": "ed621055436ea6efb884aa94e3e52d141d1baeb41cf2e02554eaef263eeb19c8"
+    },
+    "results/native_run1/trajectories/turn_on_cellular_low_battery_mode__achieve_revert_repair.json": {
+      "bytes": 50484,
+      "sha256": "981b0f09e170bed788b458652d205fa169f57d8cb58523223472ef6f6fd53ff0"
+    },
+    "results/native_run1/trajectories/turn_on_cellular_low_battery_mode__achieve_then_revert.json": {
+      "bytes": 47349,
+      "sha256": "b2d05ff2b990bda2bce844737d878e572b107f24c4c9819054ed6cbe924b214c"
+    },
+    "results/native_run1/trajectories/turn_on_cellular_low_battery_mode__claim_only.json": {
+      "bytes": 37940,
+      "sha256": "2563e39b1b5cd0d8c5f3529e08311d6e6343e9d288be100957732f8a34d8e9b0"
+    },
+    "results/native_run1/trajectories/turn_on_cellular_low_battery_mode__correct.json": {
+      "bytes": 44186,
+      "sha256": "2e8da05648e52cbe84cfe452fe400c9b422f2b50347eb96b89104e7ca9b7999d"
+    },
+    "results/native_run1/trajectories/turn_on_cellular_low_battery_mode__correct_then_redundant_error.json": {
+      "bytes": 46328,
+      "sha256": "e340cd47c1885eb0ca39402b40f8924dd23cb6900caa4ce41e2be3b33d89b14b"
+    },
+    "results/native_run1/trajectories/turn_on_cellular_low_battery_mode__error_then_correct.json": {
+      "bytes": 46504,
+      "sha256": "d00bf80e70381bfdac26abe9808727fca441e036ed47c5f20853a3b77a142fd0"
+    },
+    "results/native_run1/trajectories/turn_on_location_low_battery_mode__achieve_revert_repair.json": {
+      "bytes": 50530,
+      "sha256": "7d56a2b0bac25500091fac5927ca303dd31aba28b6f49a9dc986e85ccbca2efd"
+    },
+    "results/native_run1/trajectories/turn_on_location_low_battery_mode__achieve_then_revert.json": {
+      "bytes": 47397,
+      "sha256": "43ef080af7e5e92ebabb223412ad85604fc08138629a8ffe1b74cf96e898e1ef"
+    },
+    "results/native_run1/trajectories/turn_on_location_low_battery_mode__claim_only.json": {
+      "bytes": 37988,
+      "sha256": "a6a667b799932bfee58a253c03d6ff383d1a4ed54bd87e116579fb6d9c8010ef"
+    },
+    "results/native_run1/trajectories/turn_on_location_low_battery_mode__correct.json": {
+      "bytes": 44234,
+      "sha256": "eaf368a995df98e3f9d4624d11654cba92284bafe345e12a4956aaab50ba952e"
+    },
+    "results/native_run1/trajectories/turn_on_location_low_battery_mode__correct_then_redundant_error.json": {
+      "bytes": 46418,
+      "sha256": "f36b5ae6b06e02282b11feedb7d49cfcf4a77680c90cd8fc261b77e47b5f6bd9"
+    },
+    "results/native_run1/trajectories/turn_on_location_low_battery_mode__error_then_correct.json": {
+      "bytes": 46552,
+      "sha256": "53d1bc12d18bc17acb4790eb2e8af57f9de7d3bc50bdd038e9b3d2f42e47accc"
+    },
+    "results/native_run1/trajectories/turn_on_wifi_low_battery_mode__achieve_revert_repair.json": {
+      "bytes": 50228,
+      "sha256": "7c4e25bcefad8919429b2df553d71566d3094f6fb2008f6abacfa839bb080eaf"
+    },
+    "results/native_run1/trajectories/turn_on_wifi_low_battery_mode__achieve_then_revert.json": {
+      "bytes": 47141,
+      "sha256": "8fea9d55b30d260cf9ba9a8688546db90280b9c0efee82c3ac20ce247e0dbef6"
+    },
+    "results/native_run1/trajectories/turn_on_wifi_low_battery_mode__claim_only.json": {
+      "bytes": 37828,
+      "sha256": "6e02c29cd1292c526da430305e501316a31ccb1a72d8e293b326295d8a6286d3"
+    },
+    "results/native_run1/trajectories/turn_on_wifi_low_battery_mode__correct.json": {
+      "bytes": 44026,
+      "sha256": "536e2cce9d3304f40de5be085ec6a2309c83fb60e5b5fa3cdf1fda2b0b328f6a"
+    },
+    "results/native_run1/trajectories/turn_on_wifi_low_battery_mode__correct_then_redundant_error.json": {
+      "bytes": 46125,
+      "sha256": "2f149e65a7bbacb132a1e66b17275c6553589fe2f8a48242ebd4bcb732de4969"
+    },
+    "results/native_run1/trajectories/turn_on_wifi_low_battery_mode__error_then_correct.json": {
+      "bytes": 46261,
+      "sha256": "01ba5b357322c9dc6cd6feea602878b277a50b3d01f5a11efd769981596d7944"
+    },
+    "results/native_run1/trajectories/wifi_off__achieve_revert_repair.json": {
+      "bytes": 45540,
+      "sha256": "2cade2024836a5fc2bd5acd0d43b3fd30a7796872cebf3ab057fa395b5ae0486"
+    },
+    "results/native_run1/trajectories/wifi_off__achieve_then_revert.json": {
+      "bytes": 42450,
+      "sha256": "d0163b13dd67234f7fcd7cd48923eb76fdd0bfc0049c8a8771a3bff413a77b55"
+    },
+    "results/native_run1/trajectories/wifi_off__claim_only.json": {
+      "bytes": 36260,
+      "sha256": "9adba13149a38599d8c29133aff73797f8b9a7b1eb937dac8f55a78dd9082ac1"
+    },
+    "results/native_run1/trajectories/wifi_off__correct.json": {
+      "bytes": 39347,
+      "sha256": "969a78bd333e8329b45a0bf24ae9925ca43df757bd082cf4fff1f07472760ea6"
+    },
+    "results/native_run1/trajectories/wifi_off__correct_then_redundant_error.json": {
+      "bytes": 41452,
+      "sha256": "ecadde56b2c9441fc1ad20dd9918f748bf0a9d25e84bbdffb03d074344e7e829"
+    },
+    "results/native_run1/trajectories/wifi_off__error_then_correct.json": {
+      "bytes": 41435,
+      "sha256": "bd6d8c8368aef3b832ffce632f7a46f14424cb3422857293db6be2312652fe62"
+    },
+    "results/native_run2/results.csv": {
+      "bytes": 2874,
+      "sha256": "9c7e23c7d56c8f7d40d7c113ecf05db4640188794f309c0fd2a22dfda5d20941"
+    },
+    "results/native_run2/scientific_projection.json": {
+      "bytes": 1377621,
+      "sha256": "394f98fc302c3f6ff2b6a5ac9cc45d2ae58c546112fb2c7b867ce5c4e723c73b"
+    },
+    "results/native_run2/summary.json": {
+      "bytes": 1066,
+      "sha256": "64926401796e68c16ec8b59e84eabca0adcc076069b2abc7f10ad6953d7cc898"
+    },
+    "results/native_run2/trajectories/cellular_off__achieve_revert_repair.json": {
+      "bytes": 45776,
+      "sha256": "2ce482fbac71d17197ddf215884267c205b517fa75b5f49c98ba10588b73c2f6"
+    },
+    "results/native_run2/trajectories/cellular_off__achieve_then_revert.json": {
+      "bytes": 42637,
+      "sha256": "dabc596d59e6178dbb3267010feadf3179ff0b488da0b0996ec006661e3db8ad"
+    },
+    "results/native_run2/trajectories/cellular_off__claim_only.json": {
+      "bytes": 36352,
+      "sha256": "3b781f5a33defb4ad13eea0db78e7ac4173a6f0460b464c4c8021c49ac6db0f9"
+    },
+    "results/native_run2/trajectories/cellular_off__correct.json": {
+      "bytes": 39488,
+      "sha256": "6dc82487c75639578dfee8140f3142b6503f52f9c0e9b51d0bacaf33784a03b8"
+    },
+    "results/native_run2/trajectories/cellular_off__correct_then_redundant_error.json": {
+      "bytes": 41636,
+      "sha256": "47f97ec5eac2593ad9400f5a0dcb2de201a84d171e83f726cec83157051b3c07"
+    },
+    "results/native_run2/trajectories/cellular_off__error_then_correct.json": {
+      "bytes": 41618,
+      "sha256": "b59b2eb0cdf27329eda39ce1d25b3a78481895aabc44285c1b1041ac29ba7d13"
+    },
+    "results/native_run2/trajectories/turn_on_cellular_low_battery_mode__achieve_revert_repair.json": {
+      "bytes": 50484,
+      "sha256": "6056ffb4c3072be378763b0e3d3eb2783aa0b0fe560dcf339ac6440c690f313c"
+    },
+    "results/native_run2/trajectories/turn_on_cellular_low_battery_mode__achieve_then_revert.json": {
+      "bytes": 47348,
+      "sha256": "2750a4b77863f09fa71b5fc95255d84853da030d1a77a03e70b1dc834284910e"
+    },
+    "results/native_run2/trajectories/turn_on_cellular_low_battery_mode__claim_only.json": {
+      "bytes": 37940,
+      "sha256": "fbb1eeb37296bf74275e30aa24ae73001ffc5438a7eec2536611bceeaac189e8"
+    },
+    "results/native_run2/trajectories/turn_on_cellular_low_battery_mode__correct.json": {
+      "bytes": 44186,
+      "sha256": "a7bd0d2b6603a32bf8a884d26995a7ffa935a793ce6f0641d7ab22bf4785e7c9"
+    },
+    "results/native_run2/trajectories/turn_on_cellular_low_battery_mode__correct_then_redundant_error.json": {
+      "bytes": 46327,
+      "sha256": "a4a9941afb0cac4d6ddf1aff7ac34ee3d6b194d20b7c06610c985a911ccb69cc"
+    },
+    "results/native_run2/trajectories/turn_on_cellular_low_battery_mode__error_then_correct.json": {
+      "bytes": 46504,
+      "sha256": "fe8d0ded9de7150a6ef0e4278c6496da54c2c6647fd54634974271c370e25605"
+    },
+    "results/native_run2/trajectories/turn_on_location_low_battery_mode__achieve_revert_repair.json": {
+      "bytes": 50532,
+      "sha256": "7de63e1c86419ebbfa6ef4fddee5194be0c70b96e6679ed6efd554932ccd2b16"
+    },
+    "results/native_run2/trajectories/turn_on_location_low_battery_mode__achieve_then_revert.json": {
+      "bytes": 47397,
+      "sha256": "423f756470f7a2da95e1675d001bb94a0d9ea794b9da5f819a111a421d89a7b0"
+    },
+    "results/native_run2/trajectories/turn_on_location_low_battery_mode__claim_only.json": {
+      "bytes": 37988,
+      "sha256": "c52ecf79d1945db6790c4a153a45e2b31474782fcb92afac447171ab05f297d0"
+    },
+    "results/native_run2/trajectories/turn_on_location_low_battery_mode__correct.json": {
+      "bytes": 44234,
+      "sha256": "b5f9d1d236af27b5540518e7321e96b108540cfd58836211b7edad54deddf722"
+    },
+    "results/native_run2/trajectories/turn_on_location_low_battery_mode__correct_then_redundant_error.json": {
+      "bytes": 46417,
+      "sha256": "5f2f9740bb24f898796daeb757ba86104fa81119c5138b043ad1ecb4e8cb2f44"
+    },
+    "results/native_run2/trajectories/turn_on_location_low_battery_mode__error_then_correct.json": {
+      "bytes": 46553,
+      "sha256": "a2ad772986b90890c767c89d2b936e0adcc7b9afdb04c08e53f85fb30e1fc9aa"
+    },
+    "results/native_run2/trajectories/turn_on_wifi_low_battery_mode__achieve_revert_repair.json": {
+      "bytes": 50227,
+      "sha256": "e6f1fc712b8bc068ca28e9c7cf924579006cf582d209614629d41b41a7ca17a8"
+    },
+    "results/native_run2/trajectories/turn_on_wifi_low_battery_mode__achieve_then_revert.json": {
+      "bytes": 47141,
+      "sha256": "4543c89a77a8929007a53352ac7f1fa6c2c7ed90b40e386bab16b34ec2d05964"
+    },
+    "results/native_run2/trajectories/turn_on_wifi_low_battery_mode__claim_only.json": {
+      "bytes": 37828,
+      "sha256": "05340a13c5796815ec00cef42eb7d47cdae8bc501dde0d526145122dd9d5ec94"
+    },
+    "results/native_run2/trajectories/turn_on_wifi_low_battery_mode__correct.json": {
+      "bytes": 44026,
+      "sha256": "53e024b74b9001042d87e3e4b2c526d4c09a04b7642ca9aea5cd567f3fbf2b77"
+    },
+    "results/native_run2/trajectories/turn_on_wifi_low_battery_mode__correct_then_redundant_error.json": {
+      "bytes": 46125,
+      "sha256": "36d435e33691105bc13951c8e4f5fd93d43d4b96bb549d0c714cb9d7c19e0101"
+    },
+    "results/native_run2/trajectories/turn_on_wifi_low_battery_mode__error_then_correct.json": {
+      "bytes": 46262,
+      "sha256": "cd0640d2cbe89872000f0dcbc61c94b74c4ac9e52561d1453fe72487c379e6cf"
+    },
+    "results/native_run2/trajectories/wifi_off__achieve_revert_repair.json": {
+      "bytes": 45540,
+      "sha256": "daef5a7ccf3325211a045f53b57d4f1f634767d3670738d1d21b6e0d28fdaccd"
+    },
+    "results/native_run2/trajectories/wifi_off__achieve_then_revert.json": {
+      "bytes": 42450,
+      "sha256": "f52a40d1f4457b7708b570a1e51feb07d614b94be05be63236d6700b817978ec"
+    },
+    "results/native_run2/trajectories/wifi_off__claim_only.json": {
+      "bytes": 36260,
+      "sha256": "fbda471d4d816617bf71417125bdea2cbb5515410e36bef236913a670915ab9d"
+    },
+    "results/native_run2/trajectories/wifi_off__correct.json": {
+      "bytes": 39348,
+      "sha256": "ff79bae504be4e53202c0bb1497ce91898436b5f19b4f003f28f56b9b1f1c8d4"
+    },
+    "results/native_run2/trajectories/wifi_off__correct_then_redundant_error.json": {
+      "bytes": 41452,
+      "sha256": "501abfac45b3e1167029598dc55fb1c2f9663c10be95a7cb0aa525748d9e4649"
+    },
+    "results/native_run2/trajectories/wifi_off__error_then_correct.json": {
+      "bytes": 41434,
+      "sha256": "c5d468a99bec1d014eb4587704ba37f6453ac6113f91ed3f4e7c8b50fa75e62b"
+    },
+    "results/regrade_final/records.csv": {
+      "bytes": 8029,
+      "sha256": "f08cb8ae8ae52e2bc8b60eaf5c596527237ca0592f3cd7939a75e152caffc268"
+    },
+    "results/regrade_final/records.json": {
+      "bytes": 19302,
+      "sha256": "a968d977de5afecf6b84d6c2b7d976b51a76b1d202ce0cfaef60ca653467ec8d"
+    },
+    "results/regrade_final/summary.json": {
+      "bytes": 330,
+      "sha256": "131fe165c8e5ccfeb46ce6db11a23e86114592dfb251d0fb914083e219387a8b"
+    },
+    "results/regrade_run1/records.csv": {
+      "bytes": 8029,
+      "sha256": "f08cb8ae8ae52e2bc8b60eaf5c596527237ca0592f3cd7939a75e152caffc268"
+    },
+    "results/regrade_run1/records.json": {
+      "bytes": 19302,
+      "sha256": "a968d977de5afecf6b84d6c2b7d976b51a76b1d202ce0cfaef60ca653467ec8d"
+    },
+    "results/regrade_run1/summary.json": {
+      "bytes": 330,
+      "sha256": "131fe165c8e5ccfeb46ce6db11a23e86114592dfb251d0fb914083e219387a8b"
+    },
+    "results/regrade_run2/records.csv": {
+      "bytes": 8029,
+      "sha256": "f08cb8ae8ae52e2bc8b60eaf5c596527237ca0592f3cd7939a75e152caffc268"
+    },
+    "results/regrade_run2/records.json": {
+      "bytes": 19302,
+      "sha256": "a968d977de5afecf6b84d6c2b7d976b51a76b1d202ce0cfaef60ca653467ec8d"
+    },
+    "results/regrade_run2/summary.json": {
+      "bytes": 330,
+      "sha256": "131fe165c8e5ccfeb46ce6db11a23e86114592dfb251d0fb914083e219387a8b"
+    },
+    "results/replication_comparison.json": {
+      "bytes": 331,
+      "sha256": "c0891762609689842a45818d6bb7528e48c810fe9c4ec079ebf65629ab246d85"
+    },
+    "results/replication_differences.json": {
+      "bytes": 4321,
+      "sha256": "dea579b27c532f399726d1d82847e359ffec3488b471ba8935ffdc894a3f1455"
+    },
+    "results/supplement_run1/trajectories/update_contact_relationship_with_relationship__achieve_revert_repair.json": {
+      "bytes": 69607,
+      "sha256": "f924a3d4a754bc84f9efd812837cbb26e2d9ce2b02b21b2c4ebccb175746c410"
+    },
+    "results/supplement_run1/trajectories/update_contact_relationship_with_relationship__achieve_then_revert.json": {
+      "bytes": 60685,
+      "sha256": "4d23ce28ccaac460e24b7515d39a30f73018db5a11708477ab8f76b865814636"
+    },
+    "results/supplement_run1/trajectories/update_contact_relationship_with_relationship__claim_only.json": {
+      "bytes": 37827,
+      "sha256": "86d42201f0b1c427d64a9b8bdae17af939b2a0051b52b58f70b0919fc2598844"
+    },
+    "results/supplement_run1/trajectories/update_contact_relationship_with_relationship__correct.json": {
+      "bytes": 51726,
+      "sha256": "33bff5a6b9b8a025c4dc9ac2cb545fe4327449a38dfefab0b21ca29ff9e72dce"
+    },
+    "results/supplement_run1/trajectories/update_contact_relationship_with_relationship__error_then_correct.json": {
+      "bytes": 54967,
+      "sha256": "a980e41ef7fbe2936dd8d29f7ce3f091dee5c47a4555ad7ad34754b57233d18d"
+    },
+    "results/supplement_run1/trajectories/update_contact_with_id_and_phone_number__achieve_revert_repair.json": {
+      "bytes": 51354,
+      "sha256": "a630b02ed5b7d994e8b4b3d2435f2f90243038d6f87d227079e2b9b9a5d2ba41"
+    },
+    "results/supplement_run1/trajectories/update_contact_with_id_and_phone_number__achieve_then_revert.json": {
+      "bytes": 46862,
+      "sha256": "f11b3dd81e865da64572cd7b3ef78100e85e85b1ca5d66a4b6c8a56c94cf6413"
+    },
+    "results/supplement_run1/trajectories/update_contact_with_id_and_phone_number__claim_only.json": {
+      "bytes": 37860,
+      "sha256": "23d7feb9e3761f71bf7c1e950850b77823545145ca13b7268b2cdcf9a12765ca"
+    },
+    "results/supplement_run1/trajectories/update_contact_with_id_and_phone_number__correct.json": {
+      "bytes": 42350,
+      "sha256": "29286a03b036edfe4e1b035a9fbf3e7782d3338d76984feb0160127d71fa2dd2"
+    },
+    "results/supplement_run1/trajectories/update_contact_with_id_and_phone_number__error_then_correct.json": {
+      "bytes": 45601,
+      "sha256": "e310b28b1a947fe8cc28da350a754bf67ef1e6c8453c96dc7fe2f7619124c591"
+    },
+    "results/supplement_run2/results.csv": {
+      "bytes": 1679,
+      "sha256": "a19e9994becafe4527b890f7cc80475c6ab450878f897157a2241d98c29a18ea"
+    },
+    "results/supplement_run2/scientific_projection.json": {
+      "bytes": 804191,
+      "sha256": "fd35e8cc336204c167b944c604f00ca87862c39fb6e4224f9003161091248c4a"
+    },
+    "results/supplement_run2/summary.json": {
+      "bytes": 683,
+      "sha256": "72d03fbe1ee8604a2010f4875a0c51f155b2e3a1664b62a1f7b4006e11b2c9cd"
+    },
+    "results/supplement_run2/trajectories/modify_reminder_with_recency_latest__achieve_revert_repair.json": {
+      "bytes": 62296,
+      "sha256": "bb3fe46b3eb4076da88314cb58251c2b63065853ba45c3bd21085d1cc22a0ca0"
+    },
+    "results/supplement_run2/trajectories/modify_reminder_with_recency_latest__achieve_then_revert.json": {
+      "bytes": 57753,
+      "sha256": "ec0ef66c1b5fd4ac999d62526f97171daf15bd6bc2a58c0b6914a255a4b9b229"
+    },
+    "results/supplement_run2/trajectories/modify_reminder_with_recency_latest__claim_only.json": {
+      "bytes": 38221,
+      "sha256": "38807da00ad19e1cb00ddc280b4baac94b2f5cb309bf653cb850065536ff6a08"
+    },
+    "results/supplement_run2/trajectories/modify_reminder_with_recency_latest__correct.json": {
+      "bytes": 53140,
+      "sha256": "fc5cef2cb56c7d62191f8e1a6be14da7d5fdddc5add623506d495e0b67990918"
+    },
+    "results/supplement_run2/trajectories/modify_reminder_with_recency_latest__error_then_correct.json": {
+      "bytes": 56462,
+      "sha256": "486d0aebdd81befb4059e580839970472ac27a55095fbdb3b17432c8baad5f0b"
+    },
+    "results/supplement_run2/trajectories/update_contact_relationship_with_relationship__achieve_revert_repair.json": {
+      "bytes": 69610,
+      "sha256": "9a241ebfdbff6109202cf811d253e1b96b033b9969c75529feadb921fce25007"
+    },
+    "results/supplement_run2/trajectories/update_contact_relationship_with_relationship__achieve_then_revert.json": {
+      "bytes": 60688,
+      "sha256": "49e896b3782488b4576feec7cb28a64b30cefa40ccf574b274af053d90ba2d44"
+    },
+    "results/supplement_run2/trajectories/update_contact_relationship_with_relationship__claim_only.json": {
+      "bytes": 37829,
+      "sha256": "05855c8fc52bdd895112a12c08d196c60d0443146854f4ceac727b1a13613422"
+    },
+    "results/supplement_run2/trajectories/update_contact_relationship_with_relationship__correct.json": {
+      "bytes": 51730,
+      "sha256": "b6b2ff4aef02575b4bb92d22c118c0740178d89ca4011ce6fab89e1e3f93cdfe"
+    },
+    "results/supplement_run2/trajectories/update_contact_relationship_with_relationship__error_then_correct.json": {
+      "bytes": 54966,
+      "sha256": "98d18887089602952867cbaaf478fa3b9b2a159097de50913874c7f9480528f0"
+    },
+    "results/supplement_run2/trajectories/update_contact_with_id_and_phone_number__achieve_revert_repair.json": {
+      "bytes": 51350,
+      "sha256": "ffce7743a40e256c6ec94706b886ca0df61a95bde9b981656e306995ea33291b"
+    },
+    "results/supplement_run2/trajectories/update_contact_with_id_and_phone_number__achieve_then_revert.json": {
+      "bytes": 46857,
+      "sha256": "d03d7e3133c60b3e2a056db72dab2c805dcc8594959beb56128227609895ed03"
+    },
+    "results/supplement_run2/trajectories/update_contact_with_id_and_phone_number__claim_only.json": {
+      "bytes": 37856,
+      "sha256": "fd0ed4b1abacac749fb373ae5504f3913f3e69c93c7d2b2470f74f6a976b7fd4"
+    },
+    "results/supplement_run2/trajectories/update_contact_with_id_and_phone_number__correct.json": {
+      "bytes": 42346,
+      "sha256": "814d0deca318e79cb185699c72e7ce11b721f345cc7dd43e8ae5ddca8ccdd49e"
+    },
+    "results/supplement_run2/trajectories/update_contact_with_id_and_phone_number__error_then_correct.json": {
+      "bytes": 45597,
+      "sha256": "cff654c2b03a6d942b308f49f5c921bdcfb5b9e05676e8100d3a42f4fe75726a"
+    },
+    "results/supplement_run3/results.csv": {
+      "bytes": 1679,
+      "sha256": "a19e9994becafe4527b890f7cc80475c6ab450878f897157a2241d98c29a18ea"
+    },
+    "results/supplement_run3/scientific_projection.json": {
+      "bytes": 804227,
+      "sha256": "e307bdf2dbe993c908deb349ad5e7961c4c984b504367e5f6a627bd33b0aa399"
+    },
+    "results/supplement_run3/summary.json": {
+      "bytes": 683,
+      "sha256": "72d03fbe1ee8604a2010f4875a0c51f155b2e3a1664b62a1f7b4006e11b2c9cd"
+    },
+    "results/supplement_run3/trajectories/modify_reminder_with_recency_latest__achieve_revert_repair.json": {
+      "bytes": 62296,
+      "sha256": "746889d781ae5b209f48f14e501ab4079b4fe28d4f30fa280ef4ad52cd706d5c"
+    },
+    "results/supplement_run3/trajectories/modify_reminder_with_recency_latest__achieve_then_revert.json": {
+      "bytes": 57751,
+      "sha256": "97fdb14c44b5708fd2dce5cb62753432f6eba5f78511be51b1158f1149193135"
+    },
+    "results/supplement_run3/trajectories/modify_reminder_with_recency_latest__claim_only.json": {
+      "bytes": 38223,
+      "sha256": "71209e2493afebd315e3351002855a01efb5fc1afed25449007aee5fe0a2fa9a"
+    },
+    "results/supplement_run3/trajectories/modify_reminder_with_recency_latest__correct.json": {
+      "bytes": 53151,
+      "sha256": "5f16849f86dc11c07b50f8db3a0c1cad0e1c5f535318bfb73339c1f26385a28f"
+    },
+    "results/supplement_run3/trajectories/modify_reminder_with_recency_latest__error_then_correct.json": {
+      "bytes": 56464,
+      "sha256": "4f2999ddddc3df3548a630bddc0d1908dd9d259bd6858d23ff8279857bbfcebf"
+    },
+    "results/supplement_run3/trajectories/update_contact_relationship_with_relationship__achieve_revert_repair.json": {
+      "bytes": 69612,
+      "sha256": "bebfeec5347dd7a823576e0bbdf57291e14b9b2050e5e54dfb50af581404966f"
+    },
+    "results/supplement_run3/trajectories/update_contact_relationship_with_relationship__achieve_then_revert.json": {
+      "bytes": 60688,
+      "sha256": "93569ddd42a0e15622b81cdb49f41bf374de389240bc18f25a9cf7063841e96a"
+    },
+    "results/supplement_run3/trajectories/update_contact_relationship_with_relationship__claim_only.json": {
+      "bytes": 37831,
+      "sha256": "b6ff646ca2619a10aea67827cbf5f3b8a82bd0083d7f3e8e71f7ddcc6f17ced1"
+    },
+    "results/supplement_run3/trajectories/update_contact_relationship_with_relationship__correct.json": {
+      "bytes": 51732,
+      "sha256": "3ee4e79effb93c7ecbbe4bdc7dd34989da7b51422313c5bab218d00f7d218bc3"
+    },
+    "results/supplement_run3/trajectories/update_contact_relationship_with_relationship__error_then_correct.json": {
+      "bytes": 54971,
+      "sha256": "143876933063305fe6f415718ba50a8d57c94b69b281869a336f7f37b671ae0d"
+    },
+    "results/supplement_run3/trajectories/update_contact_with_id_and_phone_number__achieve_revert_repair.json": {
+      "bytes": 51351,
+      "sha256": "45bcd28a1285a851324acfab1a4a70e1afdb81d2e55509e1eecb9e3c6ef5e24d"
+    },
+    "results/supplement_run3/trajectories/update_contact_with_id_and_phone_number__achieve_then_revert.json": {
+      "bytes": 46859,
+      "sha256": "f0fa8dc6bbaa18a0d1f5a30ed1eb61da661bf2dadc4f94facfb25f92f7be4ce9"
+    },
+    "results/supplement_run3/trajectories/update_contact_with_id_and_phone_number__claim_only.json": {
+      "bytes": 37858,
+      "sha256": "e09dfa9c226c9d6c257ed6352a2a9f02518d46e9459d776ea5873b1cb6a2947f"
+    },
+    "results/supplement_run3/trajectories/update_contact_with_id_and_phone_number__correct.json": {
+      "bytes": 42348,
+      "sha256": "58f324bdabba35b89cb62bc8f716b97959baedd82f4d21402999c21b98ac2c42"
+    },
+    "results/supplement_run3/trajectories/update_contact_with_id_and_phone_number__error_then_correct.json": {
+      "bytes": 45599,
+      "sha256": "76103d2852dede8a6e3c3958c8f2a6f5ae399d0377615c695adcd2f43ae336fa"
+    },
+    "sources/native_code_excerpts.txt": {
+      "bytes": 34652,
+      "sha256": "d9f16c89a1a3ffa1a3dbd337fc9318f47396637890d6fbd709240942d2eb74fe"
+    },
+    "sources/source_verification.json": {
+      "bytes": 383,
+      "sha256": "7f2ef840221c34ab49563f4d8ac59225033ce6d0bfc41d6ca688253e88059e9a"
+    },
+    "src/contract.py": {
+      "bytes": 648,
+      "sha256": "045bfc9e7b3492f506b2636e5aa034066d88e5eb711d2707574ad1b8354a5601"
+    },
+    "src/evidence_check.py": {
+      "bytes": 5094,
+      "sha256": "78ee5ee91bb4145e5ea18a4190f4d75f711ec4555799656aec0a26d77b25f443"
+    },
+    "src/minimal_repro.py": {
+      "bytes": 2215,
+      "sha256": "c5cd8d609cadb0a61fabcecf17cfde5818b2b55811429b238d72cac7eaa1292b"
+    },
+    "src/native_audit.py": {
+      "bytes": 6138,
+      "sha256": "66f859680ccb334c072f795ff05993e0abbc8ec89eb76363b2bd4a811f2a3133"
+    },
+    "src/regrade.py": {
+      "bytes": 3033,
+      "sha256": "93cddf344b7cf59ca131b1f9451923e395792322aadd4e78f98a72733d8e1ccf"
+    },
+    "src/supplement.py": {
+      "bytes": 5882,
+      "sha256": "6db730d17f1364e7093b97d7479b3fb003a902e39655a2e6cf02028829d30505"
+    },
+    "tests/test_archive.py": {
+      "bytes": 823,
+      "sha256": "a52c26274e02f5d5130833db98e7a1af9d0acf66545b243329b3d57e0e79e3ac"
+    },
+    "tests/test_contract.py": {
+      "bytes": 1283,
+      "sha256": "116b32d5b4a32ac892f3c51f916d29b2d577f37654841e18c4708faeea8421a8"
+    },
+    "tests/test_evidence.py": {
+      "bytes": 2806,
+      "sha256": "bdff7175bf99394071bdb4709c0dad10d48cf5b55a4516edac89b4b57bd878ea"
+    },
+    "tests/test_native_controls.py": {
+      "bytes": 1717,
+      "sha256": "7e4b9b38f83c64daf2388100b0767972d00441bcaa1d064530cd8a16ac5402bc"
+    },
+    "tests/test_reference_clock.py": {
+      "bytes": 1019,
+      "sha256": "84aa0069720d3b95f397aeebe41cea69193ffabb9bfff573a881fb6b60510bf8"
+    },
+    "tests/test_reminder_regression.py": {
+      "bytes": 443,
+      "sha256": "ef123b29720d6878b38e799baea397a14f93a9538c1c4b17776ad54562608a36"
+    },
+    "vendor/ToolSandbox-LICENSE": {
+      "bytes": 2668,
+      "sha256": "2283d5566b38210fbfb9fcb06619f1d0a8101bff9df974ea8afc3393508e9015"
+    },
+    "vendor/ToolSandbox-c8571d7854316d2e1c5f288e59fe1e34e53f6dd1.zip": {
+      "bytes": 218989,
+      "sha256": "99a7806104c1e3cbcf9d8d1c790bb5bcde96ca06785626cb8e1f6beb9c3ee241"
+    },
+    "vendor/UPSTREAM_MANIFEST.json": {
+      "bytes": 8587,
+      "sha256": "7f706d2f8c453dfd90a8ce65edd8009c8de9263ade0cf3d2b81eb8cbead94e97"
+    },
+    "vendor/legacy_bridge/native_study.py": {
+      "bytes": 17747,
+      "sha256": "29524e8342abcac9e3d75edc57f489488da04b294bc16db6e6bed7208a8403f9"
+    },
+    "vendor/legacy_bridge/score.py": {
+      "bytes": 1831,
+      "sha256": "688ba97791d0e75d448b6d52b9e1de837e436054170e396b5ef88de1a664fc69"
+    },
+    "verify_archive.py": {
+      "bytes": 1035,
+      "sha256": "a38e270a8b90c0d90cf3d0af83e6aaa8b74cbd9507fba6aa854805447b91b3fb"
+    }
+  }
+}

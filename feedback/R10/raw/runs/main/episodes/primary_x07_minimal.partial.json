@@ -1,0 +1,695 @@
+{
+  "arm": "minimal",
+  "case_id": "x07",
+  "completion_claim": "completed",
+  "database_tool_calls": 3,
+  "episode_binding": "7238343839a2ae7f877dd3e0520b2fa8e169f1b179b625d10e2eafa3f28de9c5",
+  "episode_id": "primary_x07_minimal",
+  "events": [
+    {
+      "after": {
+        "batches": [
+          {
+            "carrier": "carrier-old",
+            "id": "job-07-a",
+            "lane": "cedar-07",
+            "note": "keep-batch-0",
+            "priority": 30,
+            "ready_after": 1800100000,
+            "state": "READY",
+            "units": 8,
+            "version": 1
+          },
+          {
+            "carrier": "carrier-old",
+            "id": "job-07-b",
+            "lane": "cedar-07",
+            "note": "keep-batch-1",
+            "priority": 20,
+            "ready_after": 1800100060,
+            "state": "READY",
+            "units": 8,
+            "version": 1
+          },
+          {
+            "carrier": "carrier-old",
+            "id": "job-07-c",
+            "lane": "cedar-07",
+            "note": "keep-batch-2",
+            "priority": 100,
+            "ready_after": 1800100120,
+            "state": "HELD",
+            "units": 8,
+            "version": 1
+          }
+        ],
+        "configs": [],
+        "routes": []
+      },
+      "arguments": {
+        "lane": "cedar-07",
+        "min_units": 4
+      },
+      "batch_index": 0,
+      "before": {
+        "batches": [
+          {
+            "carrier": "carrier-old",
+            "id": "job-07-a",
+            "lane": "cedar-07",
+            "note": "keep-batch-0",
+            "priority": 30,
+            "ready_after": 1800100000,
+            "state": "READY",
+            "units": 8,
+            "version": 1
+          },
+          {
+            "carrier": "carrier-old",
+            "id": "job-07-b",
+            "lane": "cedar-07",
+            "note": "keep-batch-1",
+            "priority": 20,
+            "ready_after": 1800100060,
+            "state": "READY",
+            "units": 8,
+            "version": 1
+          },
+          {
+            "carrier": "carrier-old",
+            "id": "job-07-c",
+            "lane": "cedar-07",
+            "note": "keep-batch-2",
+            "priority": 100,
+            "ready_after": 1800100120,
+            "state": "HELD",
+            "units": 8,
+            "version": 1
+          }
+        ],
+        "configs": [],
+        "routes": []
+      },
+      "elapsed_seconds": 0.0002508750185370445,
+      "index": 0,
+      "kind": "tool",
+      "model_turn": 0,
+      "name": "select_batch",
+      "result": {
+        "error": null,
+        "ok": true,
+        "value": {
+          "lane": "cedar-07",
+          "min_units": 4,
+          "record": {
+            "carrier": "carrier-old",
+            "id": "job-07-a",
+            "lane": "cedar-07",
+            "note": "keep-batch-0",
+            "priority": 30,
+            "ready_after": 1800100000,
+            "state": "READY",
+            "units": 8,
+            "version": 1
+          },
+          "selection_token": "09ecfead7d6e000ac12f9c7b00f9c92db262fc84e4cc121699bb624bbe417c39"
+        }
+      },
+      "tool_call_id": "call_00_hvs1xtCRst5TdCqFJaxS5913"
+    },
+    {
+      "after": {
+        "batches": [
+          {
+            "carrier": "carrier-old",
+            "id": "job-07-a",
+            "lane": "cedar-07",
+            "note": "keep-batch-0",
+            "priority": 30,
+            "ready_after": 1800100000,
+            "state": "READY",
+            "units": 8,
+            "version": 1
+          },
+          {
+            "carrier": "carrier-old",
+            "id": "job-07-b",
+            "lane": "cedar-07",
+            "note": "keep-batch-1",
+            "priority": 20,
+            "ready_after": 1800100060,
+            "state": "READY",
+            "units": 8,
+            "version": 1
+          },
+          {
+            "carrier": "carrier-old",
+            "id": "job-07-c",
+            "lane": "cedar-07",
+            "note": "unrelated-new-note",
+            "priority": 100,
+            "ready_after": 1800100120,
+            "state": "HELD",
+            "units": 8,
+            "version": 2
+          }
+        ],
+        "configs": [],
+        "routes": []
+      },
+      "after_read_index": 0,
+      "batch_index": 0,
+      "before": {
+        "batches": [
+          {
+            "carrier": "carrier-old",
+            "id": "job-07-a",
+            "lane": "cedar-07",
+            "note": "keep-batch-0",
+            "priority": 30,
+            "ready_after": 1800100000,
+            "state": "READY",
+            "units": 8,
+            "version": 1
+          },
+          {
+            "carrier": "carrier-old",
+            "id": "job-07-b",
+            "lane": "cedar-07",
+            "note": "keep-batch-1",
+            "priority": 20,
+            "ready_after": 1800100060,
+            "state": "READY",
+            "units": 8,
+            "version": 1
+          },
+          {
+            "carrier": "carrier-old",
+            "id": "job-07-c",
+            "lane": "cedar-07",
+            "note": "keep-batch-2",
+            "priority": 100,
+            "ready_after": 1800100120,
+            "state": "HELD",
+            "units": 8,
+            "version": 1
+          }
+        ],
+        "configs": [],
+        "routes": []
+      },
+      "change": "irrelevant",
+      "index": 1,
+      "kind": "environment",
+      "model_turn": 0,
+      "tool_call_id": "call_00_hvs1xtCRst5TdCqFJaxS5913"
+    },
+    {
+      "after": {
+        "batches": [
+          {
+            "carrier": "carrier-old",
+            "id": "job-07-a",
+            "lane": "cedar-07",
+            "note": "keep-batch-0",
+            "priority": 30,
+            "ready_after": 1800120000,
+            "state": "READY",
+            "units": 8,
+            "version": 2
+          },
+          {
+            "carrier": "carrier-old",
+            "id": "job-07-b",
+            "lane": "cedar-07",
+            "note": "keep-batch-1",
+            "priority": 20,
+            "ready_after": 1800100060,
+            "state": "READY",
+            "units": 8,
+            "version": 1
+          },
+          {
+            "carrier": "carrier-old",
+            "id": "job-07-c",
+            "lane": "cedar-07",
+            "note": "unrelated-new-note",
+            "priority": 100,
+            "ready_after": 1800100120,
+            "state": "HELD",
+            "units": 8,
+            "version": 2
+          }
+        ],
+        "configs": [],
+        "routes": []
+      },
+      "arguments": {
+        "expected_selection_token": "09ecfead7d6e000ac12f9c7b00f9c92db262fc84e4cc121699bb624bbe417c39",
+        "id": "job-07-a",
+        "lane_query": "cedar-07",
+        "min_units_query": 4,
+        "ready_after": 1800120000
+      },
+      "batch_index": 0,
+      "before": {
+        "batches": [
+          {
+            "carrier": "carrier-old",
+            "id": "job-07-a",
+            "lane": "cedar-07",
+            "note": "keep-batch-0",
+            "priority": 30,
+            "ready_after": 1800100000,
+            "state": "READY",
+            "units": 8,
+            "version": 1
+          },
+          {
+            "carrier": "carrier-old",
+            "id": "job-07-b",
+            "lane": "cedar-07",
+            "note": "keep-batch-1",
+            "priority": 20,
+            "ready_after": 1800100060,
+            "state": "READY",
+            "units": 8,
+            "version": 1
+          },
+          {
+            "carrier": "carrier-old",
+            "id": "job-07-c",
+            "lane": "cedar-07",
+            "note": "unrelated-new-note",
+            "priority": 100,
+            "ready_after": 1800100120,
+            "state": "HELD",
+            "units": 8,
+            "version": 2
+          }
+        ],
+        "configs": [],
+        "routes": []
+      },
+      "elapsed_seconds": 0.0008813748136162758,
+      "index": 2,
+      "kind": "tool",
+      "model_turn": 1,
+      "name": "update_batch",
+      "result": {
+        "error": null,
+        "ok": true,
+        "value": {
+          "id": "job-07-a",
+          "updated_fields": [
+            "ready_after"
+          ],
+          "version": 2
+        }
+      },
+      "tool_call_id": "call_00_2l3Uyt0V4NkE2g38hhgP5944"
+    },
+    {
+      "after": {
+        "batches": [
+          {
+            "carrier": "carrier-old",
+            "id": "job-07-a",
+            "lane": "cedar-07",
+            "note": "keep-batch-0",
+            "priority": 30,
+            "ready_after": 1800120000,
+            "state": "READY",
+            "units": 8,
+            "version": 2
+          },
+          {
+            "carrier": "carrier-old",
+            "id": "job-07-b",
+            "lane": "cedar-07",
+            "note": "keep-batch-1",
+            "priority": 20,
+            "ready_after": 1800100060,
+            "state": "READY",
+            "units": 8,
+            "version": 1
+          },
+          {
+            "carrier": "carrier-old",
+            "id": "job-07-c",
+            "lane": "cedar-07",
+            "note": "unrelated-new-note",
+            "priority": 100,
+            "ready_after": 1800100120,
+            "state": "HELD",
+            "units": 8,
+            "version": 2
+          }
+        ],
+        "configs": [],
+        "routes": []
+      },
+      "arguments": {
+        "id": "job-07-a"
+      },
+      "batch_index": 0,
+      "before": {
+        "batches": [
+          {
+            "carrier": "carrier-old",
+            "id": "job-07-a",
+            "lane": "cedar-07",
+            "note": "keep-batch-0",
+            "priority": 30,
+            "ready_after": 1800120000,
+            "state": "READY",
+            "units": 8,
+            "version": 2
+          },
+          {
+            "carrier": "carrier-old",
+            "id": "job-07-b",
+            "lane": "cedar-07",
+            "note": "keep-batch-1",
+            "priority": 20,
+            "ready_after": 1800100060,
+            "state": "READY",
+            "units": 8,
+            "version": 1
+          },
+          {
+            "carrier": "carrier-old",
+            "id": "job-07-c",
+            "lane": "cedar-07",
+            "note": "unrelated-new-note",
+            "priority": 100,
+            "ready_after": 1800100120,
+            "state": "HELD",
+            "units": 8,
+            "version": 2
+          }
+        ],
+        "configs": [],
+        "routes": []
+      },
+      "elapsed_seconds": 7.562502287328243e-05,
+      "index": 3,
+      "kind": "tool",
+      "model_turn": 2,
+      "name": "get_batch",
+      "result": {
+        "error": null,
+        "ok": true,
+        "value": {
+          "carrier": "carrier-old",
+          "id": "job-07-a",
+          "lane": "cedar-07",
+          "note": "keep-batch-0",
+          "priority": 30,
+          "ready_after": 1800120000,
+          "state": "READY",
+          "units": 8,
+          "version": 2
+        }
+      },
+      "tool_call_id": "call_00_dFFH4jaWFnKjobYx0tyh4927"
+    }
+  ],
+  "exposure": {
+    "opportunity_closed": true,
+    "scheduled": true,
+    "triggered": true
+  },
+  "final": {
+    "batches": [
+      {
+        "carrier": "carrier-old",
+        "id": "job-07-a",
+        "lane": "cedar-07",
+        "note": "keep-batch-0",
+        "priority": 30,
+        "ready_after": 1800120000,
+        "state": "READY",
+        "units": 8,
+        "version": 2
+      },
+      {
+        "carrier": "carrier-old",
+        "id": "job-07-b",
+        "lane": "cedar-07",
+        "note": "keep-batch-1",
+        "priority": 20,
+        "ready_after": 1800100060,
+        "state": "READY",
+        "units": 8,
+        "version": 1
+      },
+      {
+        "carrier": "carrier-old",
+        "id": "job-07-c",
+        "lane": "cedar-07",
+        "note": "unrelated-new-note",
+        "priority": 100,
+        "ready_after": 1800100120,
+        "state": "HELD",
+        "units": 8,
+        "version": 2
+      }
+    ],
+    "configs": [],
+    "routes": []
+  },
+  "final_text": "Selected job-07-a as the current highest-priority (priority 30) READY batch in lane cedar-07 with units>=4, and set its ready_after to 1800120000 using the selection token plus lane/min_units guard for an atomic check. Verified via re-read: only ready_after changed (carrier, lane, note, priority, state, units preserved; version bumped 1->2). No other records affected.",
+  "frames": [
+    {
+      "attempt": 59,
+      "logical_id": "primary_x07_minimal/turn_00",
+      "message": {
+        "content": "I'll start by reading the current eligible selection for lane cedar-07 with the documented parameters.",
+        "reasoning_content": "Let me start by resolving the current batch selection for lane cedar-07 with min_units 4.",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": "{\"lane\": \"cedar-07\", \"min_units\": 4}",
+              "name": "select_batch"
+            },
+            "id": "call_00_hvs1xtCRst5TdCqFJaxS5913",
+            "index": 0,
+            "type": "function"
+          }
+        ]
+      },
+      "receipts": [
+        {
+          "arguments": {
+            "lane": "cedar-07",
+            "min_units": 4
+          },
+          "event_indices": [
+            0,
+            1
+          ],
+          "id": "call_00_hvs1xtCRst5TdCqFJaxS5913",
+          "name": "select_batch",
+          "result": {
+            "error": null,
+            "ok": true,
+            "value": {
+              "lane": "cedar-07",
+              "min_units": 4,
+              "record": {
+                "carrier": "carrier-old",
+                "id": "job-07-a",
+                "lane": "cedar-07",
+                "note": "keep-batch-0",
+                "priority": 30,
+                "ready_after": 1800100000,
+                "state": "READY",
+                "units": 8,
+                "version": 1
+              },
+              "selection_token": "09ecfead7d6e000ac12f9c7b00f9c92db262fc84e4cc121699bb624bbe417c39"
+            }
+          }
+        }
+      ],
+      "turn": 0
+    },
+    {
+      "attempt": 60,
+      "logical_id": "primary_x07_minimal/turn_01",
+      "message": {
+        "content": "The current selection is `job-07-a`. Now I'll update its `ready_after` while atomically verifying it's still the current ranked eligible selection.",
+        "reasoning_content": "The current selection is job-07-a with priority 30, version 1, token 09ecfead....\n\nNow I update ready_after to 1800120000, with the selection token and lane_query/min_units_query to atomically check.\n\nLet me do the update with the expected_selection_token, lane_query, min_units_query.",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": "{\"id\": \"job-07-a\", \"ready_after\": 1800120000, \"lane_query\": \"cedar-07\", \"min_units_query\": 4, \"expected_selection_token\": \"09ecfead7d6e000ac12f9c7b00f9c92db262fc84e4cc121699bb624bbe417c39\"}",
+              "name": "update_batch"
+            },
+            "id": "call_00_2l3Uyt0V4NkE2g38hhgP5944",
+            "index": 0,
+            "type": "function"
+          }
+        ]
+      },
+      "receipts": [
+        {
+          "arguments": {
+            "expected_selection_token": "09ecfead7d6e000ac12f9c7b00f9c92db262fc84e4cc121699bb624bbe417c39",
+            "id": "job-07-a",
+            "lane_query": "cedar-07",
+            "min_units_query": 4,
+            "ready_after": 1800120000
+          },
+          "event_indices": [
+            2
+          ],
+          "id": "call_00_2l3Uyt0V4NkE2g38hhgP5944",
+          "name": "update_batch",
+          "result": {
+            "error": null,
+            "ok": true,
+            "value": {
+              "id": "job-07-a",
+              "updated_fields": [
+                "ready_after"
+              ],
+              "version": 2
+            }
+          }
+        }
+      ],
+      "turn": 1
+    },
+    {
+      "attempt": 61,
+      "logical_id": "primary_x07_minimal/turn_02",
+      "message": {
+        "content": "The update succeeded. Let me verify the change took effect and other fields were preserved.",
+        "reasoning_content": "The update succeeded, version 2, only ready_after updated. Let me verify by reading the batch.",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": "{\"id\": \"job-07-a\"}",
+              "name": "get_batch"
+            },
+            "id": "call_00_dFFH4jaWFnKjobYx0tyh4927",
+            "index": 0,
+            "type": "function"
+          }
+        ]
+      },
+      "receipts": [
+        {
+          "arguments": {
+            "id": "job-07-a"
+          },
+          "event_indices": [
+            3
+          ],
+          "id": "call_00_dFFH4jaWFnKjobYx0tyh4927",
+          "name": "get_batch",
+          "result": {
+            "error": null,
+            "ok": true,
+            "value": {
+              "carrier": "carrier-old",
+              "id": "job-07-a",
+              "lane": "cedar-07",
+              "note": "keep-batch-0",
+              "priority": 30,
+              "ready_after": 1800120000,
+              "state": "READY",
+              "units": 8,
+              "version": 2
+            }
+          }
+        }
+      ],
+      "turn": 2
+    },
+    {
+      "attempt": 62,
+      "logical_id": "primary_x07_minimal/turn_03",
+      "message": {
+        "content": "Verified. The update took effect exactly as intended.\n\n**What I did:**\n1. Queried the current READY batch selection for lane `cedar-07` with `min_units >= 4`. The tool returned `job-07-a` (priority 30, ascending-id tiebreak) with a selection token.\n2. Updated `job-07-a` with `ready_after = 1800120000`, passing the selection token plus the lane/min_units query so the write was atomically checked against the current ranked eligible selection. The tool confirmed only `ready_after` was updated (version 1 → 2).\n3. Re-read `job-07-a` to confirm.\n\n**Result:** `job-07-a` now has `ready_after = 1800120000`. All other business fields are preserved: `carrier=carrier-old`, `lane=cedar-07`, `note=keep-batch-0`, `priority=30`, `state=READY`, `units=8`. No other records were touched. (The earlier historical observation matched, but I re-queried for the current state rather than trusting it.)",
+        "reasoning_content": "Verified: ready_after is now 1800120000, all other fields preserved (carrier carrier-old, note keep-batch-0, priority 30, state READY, units 8). Version bumped to 2.\n\nReport and finish.",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": "{\"status\": \"completed\", \"message\": \"Selected job-07-a as the current highest-priority (priority 30) READY batch in lane cedar-07 with units>=4, and set its ready_after to 1800120000 using the selection token plus lane/min_units guard for an atomic check. Verified via re-read: only ready_after changed (carrier, lane, note, priority, state, units preserved; version bumped 1->2). No other records affected.\"}",
+              "name": "finish_task"
+            },
+            "id": "call_00_Ixgkz1TCsliEHSeTrtFf9533",
+            "index": 0,
+            "type": "function"
+          }
+        ]
+      },
+      "receipts": [
+        {
+          "arguments": {
+            "message": "Selected job-07-a as the current highest-priority (priority 30) READY batch in lane cedar-07 with units>=4, and set its ready_after to 1800120000 using the selection token plus lane/min_units guard for an atomic check. Verified via re-read: only ready_after changed (carrier, lane, note, priority, state, units preserved; version bumped 1->2). No other records affected.",
+            "status": "completed"
+          },
+          "event_indices": [],
+          "id": "call_00_Ixgkz1TCsliEHSeTrtFf9533",
+          "name": "finish_task",
+          "result": {
+            "ok": true,
+            "recorded_only": true
+          }
+        }
+      ],
+      "turn": 3
+    }
+  ],
+  "initial": {
+    "batches": [
+      {
+        "carrier": "carrier-old",
+        "id": "job-07-a",
+        "lane": "cedar-07",
+        "note": "keep-batch-0",
+        "priority": 30,
+        "ready_after": 1800100000,
+        "state": "READY",
+        "units": 8,
+        "version": 1
+      },
+      {
+        "carrier": "carrier-old",
+        "id": "job-07-b",
+        "lane": "cedar-07",
+        "note": "keep-batch-1",
+        "priority": 20,
+        "ready_after": 1800100060,
+        "state": "READY",
+        "units": 8,
+        "version": 1
+      },
+      {
+        "carrier": "carrier-old",
+        "id": "job-07-c",
+        "lane": "cedar-07",
+        "note": "keep-batch-2",
+        "priority": 100,
+        "ready_after": 1800100120,
+        "state": "HELD",
+        "units": 8,
+        "version": 1
+      }
+    ],
+    "configs": [],
+    "routes": []
+  },
+  "model_calls": 4,
+  "phase": "primary",
+  "terminated": true,
+  "visible_tool_calls": 4
+}

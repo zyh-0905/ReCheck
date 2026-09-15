@@ -1,0 +1,265 @@
+test_actual_hazard_changes_loss_not_probes (test_r3_core.ExactTests.test_actual_hazard_changes_loss_not_probes) ... FAIL
+test_all_grid_cells_retained (test_r3_core.ExactTests.test_all_grid_cells_retained) ... FAIL
+test_always (test_r3_core.ExactTests.test_always) ... FAIL
+test_dp_matches_bellman (test_r3_core.ExactTests.test_dp_matches_bellman) ... FAIL
+test_never_no_drift (test_r3_core.ExactTests.test_never_no_drift) ... FAIL
+test_one_step_dp_myopic (test_r3_core.ExactTests.test_one_step_dp_myopic) ... FAIL
+test_opportunity_no_hidden_rng (test_r3_core.ExactTests.test_opportunity_no_hidden_rng) ... FAIL
+test_zero_drift_no_semantic_opportunity (test_r3_core.ExactTests.test_zero_drift_no_semantic_opportunity) ... FAIL
+test_case_deterministic (test_r3_core.ProtocolTests.test_case_deterministic) ... FAIL
+test_counts (test_r3_core.ProtocolTests.test_counts) ... FAIL
+test_initial_tasks_balanced (test_r3_core.ProtocolTests.test_initial_tasks_balanced) ... FAIL
+test_main_ids_unique (test_r3_core.ProtocolTests.test_main_ids_unique) ... FAIL
+test_policy_view_excludes_world (test_r3_core.ProtocolTests.test_policy_view_excludes_world) ... FAIL
+test_world_rng_does_not_change_public_tasks (test_r3_core.ProtocolTests.test_world_rng_does_not_change_public_tasks) ... FAIL
+test_all_schema_empty (test_r3_core.WorkerTests.test_all_schema_empty) ... FAIL
+test_amount (test_r3_core.WorkerTests.test_amount) ... FAIL
+test_bool_not_bound (test_r3_core.WorkerTests.test_bool_not_bound) ... FAIL
+test_count_render_never_reinterprets (test_r3_core.WorkerTests.test_count_render_never_reinterprets) ... FAIL
+test_count_schema_has_no_amount (test_r3_core.WorkerTests.test_count_schema_has_no_amount) ... FAIL
+test_counterfactual_is_not_used (test_r3_core.WorkerTests.test_counterfactual_is_not_used) ... FAIL
+test_irrelevant_stale_not_counted (test_r3_core.WorkerTests.test_irrelevant_stale_not_counted) ... FAIL
+test_normative_error_stays_wrong (test_r3_core.WorkerTests.test_normative_error_stays_wrong) ... FAIL
+test_stale_value_legal_but_not_fresh (test_r3_core.WorkerTests.test_stale_value_legal_but_not_fresh) ... FAIL
+test_total_render_selected_divisor (test_r3_core.WorkerTests.test_total_render_selected_divisor) ... FAIL
+test_unused_amount_is_invalid_not_silently_fixed (test_r3_core.WorkerTests.test_unused_amount_is_invalid_not_silently_fixed) ... FAIL
+test_valid_count (test_r3_core.WorkerTests.test_valid_count) ... FAIL
+
+======================================================================
+FAIL: test_actual_hazard_changes_loss_not_probes (test_r3_core.ExactTests.test_actual_hazard_changes_loss_not_probes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r3_work/R3_Research_Kit/tests/test_r3_core.py", line 27, in setUp
+    def setUp(self):self.assertTrue(hasattr(offline,'expected_policy'),'Exact evaluator missing')
+                    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : Exact evaluator missing
+
+======================================================================
+FAIL: test_all_grid_cells_retained (test_r3_core.ExactTests.test_all_grid_cells_retained)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r3_work/R3_Research_Kit/tests/test_r3_core.py", line 27, in setUp
+    def setUp(self):self.assertTrue(hasattr(offline,'expected_policy'),'Exact evaluator missing')
+                    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : Exact evaluator missing
+
+======================================================================
+FAIL: test_always (test_r3_core.ExactTests.test_always)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r3_work/R3_Research_Kit/tests/test_r3_core.py", line 27, in setUp
+    def setUp(self):self.assertTrue(hasattr(offline,'expected_policy'),'Exact evaluator missing')
+                    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : Exact evaluator missing
+
+======================================================================
+FAIL: test_dp_matches_bellman (test_r3_core.ExactTests.test_dp_matches_bellman)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r3_work/R3_Research_Kit/tests/test_r3_core.py", line 27, in setUp
+    def setUp(self):self.assertTrue(hasattr(offline,'expected_policy'),'Exact evaluator missing')
+                    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : Exact evaluator missing
+
+======================================================================
+FAIL: test_never_no_drift (test_r3_core.ExactTests.test_never_no_drift)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r3_work/R3_Research_Kit/tests/test_r3_core.py", line 27, in setUp
+    def setUp(self):self.assertTrue(hasattr(offline,'expected_policy'),'Exact evaluator missing')
+                    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : Exact evaluator missing
+
+======================================================================
+FAIL: test_one_step_dp_myopic (test_r3_core.ExactTests.test_one_step_dp_myopic)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r3_work/R3_Research_Kit/tests/test_r3_core.py", line 27, in setUp
+    def setUp(self):self.assertTrue(hasattr(offline,'expected_policy'),'Exact evaluator missing')
+                    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : Exact evaluator missing
+
+======================================================================
+FAIL: test_opportunity_no_hidden_rng (test_r3_core.ExactTests.test_opportunity_no_hidden_rng)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r3_work/R3_Research_Kit/tests/test_r3_core.py", line 27, in setUp
+    def setUp(self):self.assertTrue(hasattr(offline,'expected_policy'),'Exact evaluator missing')
+                    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : Exact evaluator missing
+
+======================================================================
+FAIL: test_zero_drift_no_semantic_opportunity (test_r3_core.ExactTests.test_zero_drift_no_semantic_opportunity)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r3_work/R3_Research_Kit/tests/test_r3_core.py", line 27, in setUp
+    def setUp(self):self.assertTrue(hasattr(offline,'expected_policy'),'Exact evaluator missing')
+                    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : Exact evaluator missing
+
+======================================================================
+FAIL: test_case_deterministic (test_r3_core.ProtocolTests.test_case_deterministic)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r3_work/R3_Research_Kit/tests/test_r3_core.py", line 8, in setUp
+    def setUp(self): self.assertTrue(hasattr(protocol,'load_protocol'),'R3 frozen protocol not implemented')
+                     ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : R3 frozen protocol not implemented
+
+======================================================================
+FAIL: test_counts (test_r3_core.ProtocolTests.test_counts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r3_work/R3_Research_Kit/tests/test_r3_core.py", line 8, in setUp
+    def setUp(self): self.assertTrue(hasattr(protocol,'load_protocol'),'R3 frozen protocol not implemented')
+                     ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : R3 frozen protocol not implemented
+
+======================================================================
+FAIL: test_initial_tasks_balanced (test_r3_core.ProtocolTests.test_initial_tasks_balanced)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r3_work/R3_Research_Kit/tests/test_r3_core.py", line 8, in setUp
+    def setUp(self): self.assertTrue(hasattr(protocol,'load_protocol'),'R3 frozen protocol not implemented')
+                     ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : R3 frozen protocol not implemented
+
+======================================================================
+FAIL: test_main_ids_unique (test_r3_core.ProtocolTests.test_main_ids_unique)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r3_work/R3_Research_Kit/tests/test_r3_core.py", line 8, in setUp
+    def setUp(self): self.assertTrue(hasattr(protocol,'load_protocol'),'R3 frozen protocol not implemented')
+                     ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : R3 frozen protocol not implemented
+
+======================================================================
+FAIL: test_policy_view_excludes_world (test_r3_core.ProtocolTests.test_policy_view_excludes_world)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r3_work/R3_Research_Kit/tests/test_r3_core.py", line 8, in setUp
+    def setUp(self): self.assertTrue(hasattr(protocol,'load_protocol'),'R3 frozen protocol not implemented')
+                     ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : R3 frozen protocol not implemented
+
+======================================================================
+FAIL: test_world_rng_does_not_change_public_tasks (test_r3_core.ProtocolTests.test_world_rng_does_not_change_public_tasks)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r3_work/R3_Research_Kit/tests/test_r3_core.py", line 8, in setUp
+    def setUp(self): self.assertTrue(hasattr(protocol,'load_protocol'),'R3 frozen protocol not implemented')
+                     ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : R3 frozen protocol not implemented
+
+======================================================================
+FAIL: test_all_schema_empty (test_r3_core.WorkerTests.test_all_schema_empty)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r3_work/R3_Research_Kit/tests/test_r3_core.py", line 53, in setUp
+    def setUp(self):self.assertTrue(hasattr(worker,'make_view'),'Hybrid worker missing')
+                    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : Hybrid worker missing
+
+======================================================================
+FAIL: test_amount (test_r3_core.WorkerTests.test_amount)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r3_work/R3_Research_Kit/tests/test_r3_core.py", line 53, in setUp
+    def setUp(self):self.assertTrue(hasattr(worker,'make_view'),'Hybrid worker missing')
+                    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : Hybrid worker missing
+
+======================================================================
+FAIL: test_bool_not_bound (test_r3_core.WorkerTests.test_bool_not_bound)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r3_work/R3_Research_Kit/tests/test_r3_core.py", line 53, in setUp
+    def setUp(self):self.assertTrue(hasattr(worker,'make_view'),'Hybrid worker missing')
+                    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : Hybrid worker missing
+
+======================================================================
+FAIL: test_count_render_never_reinterprets (test_r3_core.WorkerTests.test_count_render_never_reinterprets)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r3_work/R3_Research_Kit/tests/test_r3_core.py", line 53, in setUp
+    def setUp(self):self.assertTrue(hasattr(worker,'make_view'),'Hybrid worker missing')
+                    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : Hybrid worker missing
+
+======================================================================
+FAIL: test_count_schema_has_no_amount (test_r3_core.WorkerTests.test_count_schema_has_no_amount)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r3_work/R3_Research_Kit/tests/test_r3_core.py", line 53, in setUp
+    def setUp(self):self.assertTrue(hasattr(worker,'make_view'),'Hybrid worker missing')
+                    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : Hybrid worker missing
+
+======================================================================
+FAIL: test_counterfactual_is_not_used (test_r3_core.WorkerTests.test_counterfactual_is_not_used)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r3_work/R3_Research_Kit/tests/test_r3_core.py", line 53, in setUp
+    def setUp(self):self.assertTrue(hasattr(worker,'make_view'),'Hybrid worker missing')
+                    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : Hybrid worker missing
+
+======================================================================
+FAIL: test_irrelevant_stale_not_counted (test_r3_core.WorkerTests.test_irrelevant_stale_not_counted)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r3_work/R3_Research_Kit/tests/test_r3_core.py", line 53, in setUp
+    def setUp(self):self.assertTrue(hasattr(worker,'make_view'),'Hybrid worker missing')
+                    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : Hybrid worker missing
+
+======================================================================
+FAIL: test_normative_error_stays_wrong (test_r3_core.WorkerTests.test_normative_error_stays_wrong)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r3_work/R3_Research_Kit/tests/test_r3_core.py", line 53, in setUp
+    def setUp(self):self.assertTrue(hasattr(worker,'make_view'),'Hybrid worker missing')
+                    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : Hybrid worker missing
+
+======================================================================
+FAIL: test_stale_value_legal_but_not_fresh (test_r3_core.WorkerTests.test_stale_value_legal_but_not_fresh)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r3_work/R3_Research_Kit/tests/test_r3_core.py", line 53, in setUp
+    def setUp(self):self.assertTrue(hasattr(worker,'make_view'),'Hybrid worker missing')
+                    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : Hybrid worker missing
+
+======================================================================
+FAIL: test_total_render_selected_divisor (test_r3_core.WorkerTests.test_total_render_selected_divisor)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r3_work/R3_Research_Kit/tests/test_r3_core.py", line 53, in setUp
+    def setUp(self):self.assertTrue(hasattr(worker,'make_view'),'Hybrid worker missing')
+                    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : Hybrid worker missing
+
+======================================================================
+FAIL: test_unused_amount_is_invalid_not_silently_fixed (test_r3_core.WorkerTests.test_unused_amount_is_invalid_not_silently_fixed)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r3_work/R3_Research_Kit/tests/test_r3_core.py", line 53, in setUp
+    def setUp(self):self.assertTrue(hasattr(worker,'make_view'),'Hybrid worker missing')
+                    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : Hybrid worker missing
+
+======================================================================
+FAIL: test_valid_count (test_r3_core.WorkerTests.test_valid_count)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r3_work/R3_Research_Kit/tests/test_r3_core.py", line 53, in setUp
+    def setUp(self):self.assertTrue(hasattr(worker,'make_view'),'Hybrid worker missing')
+                    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : Hybrid worker missing
+
+----------------------------------------------------------------------
+Ran 26 tests in 0.004s
+
+FAILED (failures=26)

@@ -1,0 +1,121 @@
+episode_id,phase,case_id,family,arm,turn,tool,arguments,ok
+primary_c03_stateless,primary,c03,person_message,stateless,0,search_contacts,"{""name"":""Fredrik Thordendal""}",True
+primary_c03_stateless,primary,c03,person_message,stateless,1,get_cellular_service_status,{},True
+primary_c03_stateless,primary,c03,person_message,stateless,2,send_message_with_phone_number,"{""content"":""The rehearsal has moved to 18:30. Please confirm when you can."",""phone_number"":""+12025550119""}",True
+primary_c03_inherited,primary,c03,person_message,inherited,0,search_contacts,"{""name"":""Fredrik Thordendal""}",True
+primary_c03_inherited,primary,c03,person_message,inherited,1,get_cellular_service_status,{},True
+primary_c03_inherited,primary,c03,person_message,inherited,2,send_message_with_phone_number,"{""content"":""The rehearsal has moved to 18:30. Please confirm when you can."",""phone_number"":""+12025550119""}",True
+primary_c03_resolve_rule,primary,c03,person_message,resolve_rule,0,search_contacts,"{""name"":""Fredrik Thordendal""}",True
+primary_c03_resolve_rule,primary,c03,person_message,resolve_rule,1,get_cellular_service_status,{},True
+primary_c03_resolve_rule,primary,c03,person_message,resolve_rule,2,send_message_with_phone_number,"{""content"":""The rehearsal has moved to 18:30. Please confirm when you can."",""phone_number"":""+12025550119""}",True
+primary_c09_resolve_rule,primary,c09,reminder_label,resolve_rule,0,search_reminder,"{""content"":""Submit the cobalt expense report""}",True
+primary_c09_resolve_rule,primary,c09,reminder_label,resolve_rule,1,modify_reminder,"{""reminder_id"":""54f20be9-eac3-5e76-8e57-724e48d3d477"",""reminder_timestamp"":1800003600}",True
+primary_c09_stateless,primary,c09,reminder_label,stateless,0,search_reminder,"{""content"":""Submit the cobalt expense report""}",True
+primary_c09_stateless,primary,c09,reminder_label,stateless,1,modify_reminder,"{""reminder_id"":""54f20be9-eac3-5e76-8e57-724e48d3d477"",""reminder_timestamp"":1800003600}",True
+primary_c09_inherited,primary,c09,reminder_label,inherited,0,search_reminder,"{""content"":""Submit the cobalt expense report""}",True
+primary_c09_inherited,primary,c09,reminder_label,inherited,1,modify_reminder,"{""reminder_id"":""54f20be9-eac3-5e76-8e57-724e48d3d477"",""reminder_timestamp"":1800003600}",True
+primary_c09_inherited,primary,c09,reminder_label,inherited,2,search_reminder,"{""reminder_id"":""54f20be9-eac3-5e76-8e57-724e48d3d477""}",True
+primary_c04_resolve_rule,primary,c04,literal_message,resolve_rule,0,get_cellular_service_status,{},True
+primary_c04_resolve_rule,primary,c04,literal_message,resolve_rule,1,send_message_with_phone_number,"{""content"":""The rehearsal has moved to 18:30. Please confirm when you can."",""phone_number"":""+12453344098""}",True
+primary_c04_stateless,primary,c04,literal_message,stateless,0,get_cellular_service_status,{},True
+primary_c04_stateless,primary,c04,literal_message,stateless,1,send_message_with_phone_number,"{""content"":""The rehearsal has moved to 18:30. Please confirm when you can."",""phone_number"":""+12453344098""}",True
+primary_c04_inherited,primary,c04,literal_message,inherited,0,get_cellular_service_status,{},True
+primary_c04_inherited,primary,c04,literal_message,inherited,1,send_message_with_phone_number,"{""content"":""The rehearsal has moved to 18:30. Please confirm when you can."",""phone_number"":""+12453344098""}",True
+primary_c02_resolve_rule,primary,c02,person_message,resolve_rule,0,search_contacts,"{""name"":""Fredrik Thordendal""}",True
+primary_c02_resolve_rule,primary,c02,person_message,resolve_rule,1,get_cellular_service_status,{},True
+primary_c02_resolve_rule,primary,c02,person_message,resolve_rule,2,send_message_with_phone_number,"{""content"":""The rehearsal has moved to 18:30. Please confirm when you can."",""phone_number"":""+12025550119""}",True
+primary_c02_inherited,primary,c02,person_message,inherited,0,search_contacts,"{""name"":""Fredrik Thordendal""}",True
+primary_c02_inherited,primary,c02,person_message,inherited,1,send_message_with_phone_number,"{""content"":""The rehearsal has moved to 18:30. Please confirm when you can."",""phone_number"":""+12025550119""}",True
+primary_c02_stateless,primary,c02,person_message,stateless,0,search_contacts,"{""name"":""Fredrik Thordendal""}",True
+primary_c02_stateless,primary,c02,person_message,stateless,1,get_cellular_service_status,{},True
+primary_c02_stateless,primary,c02,person_message,stateless,2,send_message_with_phone_number,"{""content"":""The rehearsal has moved to 18:30. Please confirm when you can."",""phone_number"":""+12025550119""}",True
+primary_c11_stateless,primary,c11,reminder_label,stateless,0,search_reminder,"{""content"":""Submit the cobalt expense report""}",True
+primary_c11_stateless,primary,c11,reminder_label,stateless,1,modify_reminder,"{""reminder_id"":""da2b856e-9390-511f-bcbe-7005f72cbf5e"",""reminder_timestamp"":1800003600}",True
+primary_c11_stateless,primary,c11,reminder_label,stateless,2,search_reminder,"{""reminder_id"":""da2b856e-9390-511f-bcbe-7005f72cbf5e""}",True
+primary_c11_resolve_rule,primary,c11,reminder_label,resolve_rule,0,search_reminder,"{""content"":""Submit the cobalt expense report""}",True
+primary_c11_resolve_rule,primary,c11,reminder_label,resolve_rule,1,modify_reminder,"{""reminder_id"":""da2b856e-9390-511f-bcbe-7005f72cbf5e"",""reminder_timestamp"":1800003600}",True
+primary_c11_inherited,primary,c11,reminder_label,inherited,0,search_reminder,"{""content"":""Submit the cobalt expense report""}",True
+primary_c11_inherited,primary,c11,reminder_label,inherited,1,modify_reminder,"{""reminder_id"":""da2b856e-9390-511f-bcbe-7005f72cbf5e"",""reminder_timestamp"":1800003600}",True
+primary_c13_inherited,primary,c13,literal_message,inherited,0,get_cellular_service_status,{},True
+primary_c13_inherited,primary,c13,literal_message,inherited,1,set_cellular_service_status,"{""on"":true}",True
+primary_c13_inherited,primary,c13,literal_message,inherited,2,send_message_with_phone_number,"{""content"":""The rehearsal has moved to 18:30. Please confirm when you can."",""phone_number"":""+12453344098""}",True
+primary_c13_resolve_rule,primary,c13,literal_message,resolve_rule,0,get_cellular_service_status,{},True
+primary_c13_resolve_rule,primary,c13,literal_message,resolve_rule,1,set_cellular_service_status,"{""on"":true}",True
+primary_c13_resolve_rule,primary,c13,literal_message,resolve_rule,2,send_message_with_phone_number,"{""content"":""The rehearsal has moved to 18:30. Please confirm when you can."",""phone_number"":""+12453344098""}",True
+primary_c13_stateless,primary,c13,literal_message,stateless,0,get_cellular_service_status,{},True
+primary_c13_stateless,primary,c13,literal_message,stateless,1,set_cellular_service_status,"{""on"":true}",True
+primary_c13_stateless,primary,c13,literal_message,stateless,2,send_message_with_phone_number,"{""content"":""The rehearsal has moved to 18:30. Please confirm when you can."",""phone_number"":""+12453344098""}",True
+primary_c10_resolve_rule,primary,c10,reminder_label,resolve_rule,0,search_reminder,"{""content"":""Submit the cobalt expense report""}",True
+primary_c10_resolve_rule,primary,c10,reminder_label,resolve_rule,1,modify_reminder,"{""reminder_id"":""da2b856e-9390-511f-bcbe-7005f72cbf5e"",""reminder_timestamp"":1800003600}",True
+primary_c10_stateless,primary,c10,reminder_label,stateless,0,search_reminder,"{""content"":""Submit the cobalt expense report""}",True
+primary_c10_stateless,primary,c10,reminder_label,stateless,1,modify_reminder,"{""reminder_id"":""da2b856e-9390-511f-bcbe-7005f72cbf5e"",""reminder_timestamp"":1800003600}",True
+primary_c10_stateless,primary,c10,reminder_label,stateless,2,search_reminder,"{""reminder_id"":""da2b856e-9390-511f-bcbe-7005f72cbf5e""}",True
+primary_c10_inherited,primary,c10,reminder_label,inherited,0,search_reminder,"{""content"":""Submit the cobalt expense report""}",True
+primary_c10_inherited,primary,c10,reminder_label,inherited,1,modify_reminder,"{""content"":""Submit the cobalt expense report"",""reminder_id"":""da2b856e-9390-511f-bcbe-7005f72cbf5e"",""reminder_timestamp"":1800003600}",True
+primary_c10_inherited,primary,c10,reminder_label,inherited,2,search_reminder,"{""reminder_id"":""da2b856e-9390-511f-bcbe-7005f72cbf5e""}",True
+primary_c08_inherited,primary,c08,reminder_label,inherited,0,search_reminder,"{""content"":""Submit the cobalt expense report""}",True
+primary_c08_inherited,primary,c08,reminder_label,inherited,1,modify_reminder,"{""content"":""Submit the cobalt expense report"",""latitude"":37.3237926356735,""longitude"":-122.03961770355414,""reminder_id"":""54f20be9-eac3-5e76-8e57-724e48d3d477"",""reminder_timestamp"":1800003600}",True
+primary_c08_stateless,primary,c08,reminder_label,stateless,0,search_reminder,"{""content"":""Submit the cobalt expense report""}",True
+primary_c08_stateless,primary,c08,reminder_label,stateless,1,modify_reminder,"{""reminder_id"":""54f20be9-eac3-5e76-8e57-724e48d3d477"",""reminder_timestamp"":1800003600}",True
+primary_c08_resolve_rule,primary,c08,reminder_label,resolve_rule,0,search_reminder,"{""content"":""Submit the cobalt expense report""}",True
+primary_c08_resolve_rule,primary,c08,reminder_label,resolve_rule,1,modify_reminder,"{""reminder_id"":""54f20be9-eac3-5e76-8e57-724e48d3d477"",""reminder_timestamp"":1800003600}",True
+primary_c01_resolve_rule,primary,c01,person_message,resolve_rule,0,search_contacts,"{""name"":""Fredrik Thordendal""}",True
+primary_c01_resolve_rule,primary,c01,person_message,resolve_rule,1,get_cellular_service_status,{},True
+primary_c01_resolve_rule,primary,c01,person_message,resolve_rule,2,send_message_with_phone_number,"{""content"":""The rehearsal has moved to 18:30. Please confirm when you can."",""phone_number"":""+12453344098""}",True
+primary_c01_inherited,primary,c01,person_message,inherited,0,search_contacts,"{""name"":""Fredrik Thordendal""}",True
+primary_c01_inherited,primary,c01,person_message,inherited,1,get_cellular_service_status,{},True
+primary_c01_inherited,primary,c01,person_message,inherited,2,send_message_with_phone_number,"{""content"":""The rehearsal has moved to 18:30. Please confirm when you can."",""phone_number"":""+12453344098""}",True
+primary_c01_stateless,primary,c01,person_message,stateless,0,search_contacts,"{""name"":""Fredrik Thordendal""}",True
+primary_c01_stateless,primary,c01,person_message,stateless,1,get_cellular_service_status,{},True
+primary_c01_stateless,primary,c01,person_message,stateless,2,send_message_with_phone_number,"{""content"":""The rehearsal has moved to 18:30. Please confirm when you can."",""phone_number"":""+12453344098""}",True
+primary_c07_stateless,primary,c07,literal_message,stateless,0,get_cellular_service_status,{},True
+primary_c07_stateless,primary,c07,literal_message,stateless,1,send_message_with_phone_number,"{""content"":""The rehearsal has moved to 18:30. Please confirm when you can."",""phone_number"":""+12453344098""}",True
+primary_c07_inherited,primary,c07,literal_message,inherited,0,get_cellular_service_status,{},True
+primary_c07_inherited,primary,c07,literal_message,inherited,1,send_message_with_phone_number,"{""content"":""The rehearsal has moved to 18:30. Please confirm when you can."",""phone_number"":""+12453344098""}",True
+primary_c07_resolve_rule,primary,c07,literal_message,resolve_rule,0,get_cellular_service_status,{},True
+primary_c07_resolve_rule,primary,c07,literal_message,resolve_rule,1,send_message_with_phone_number,"{""content"":""The rehearsal has moved to 18:30. Please confirm when you can."",""phone_number"":""+12453344098""}",True
+primary_c06_inherited,primary,c06,literal_message,inherited,0,get_cellular_service_status,{},True
+primary_c06_inherited,primary,c06,literal_message,inherited,1,send_message_with_phone_number,"{""content"":""The rehearsal has moved to 18:30. Please confirm when you can."",""phone_number"":""+12453344098""}",True
+primary_c06_stateless,primary,c06,literal_message,stateless,0,get_cellular_service_status,{},True
+primary_c06_stateless,primary,c06,literal_message,stateless,1,send_message_with_phone_number,"{""content"":""The rehearsal has moved to 18:30. Please confirm when you can."",""phone_number"":""+12453344098""}",True
+primary_c06_resolve_rule,primary,c06,literal_message,resolve_rule,0,get_cellular_service_status,{},True
+primary_c06_resolve_rule,primary,c06,literal_message,resolve_rule,1,send_message_with_phone_number,"{""content"":""The rehearsal has moved to 18:30. Please confirm when you can."",""phone_number"":""+12453344098""}",True
+primary_c12_resolve_rule,primary,c12,person_message,resolve_rule,0,search_contacts,"{""name"":""Fredrik Thordendal""}",True
+primary_c12_resolve_rule,primary,c12,person_message,resolve_rule,1,get_cellular_service_status,{},True
+primary_c12_resolve_rule,primary,c12,person_message,resolve_rule,2,set_cellular_service_status,"{""on"":true}",True
+primary_c12_resolve_rule,primary,c12,person_message,resolve_rule,3,send_message_with_phone_number,"{""content"":""The rehearsal has moved to 18:30. Please confirm when you can."",""phone_number"":""+12025550119""}",True
+primary_c12_stateless,primary,c12,person_message,stateless,0,search_contacts,"{""name"":""Fredrik Thordendal""}",True
+primary_c12_stateless,primary,c12,person_message,stateless,1,get_cellular_service_status,{},True
+primary_c12_stateless,primary,c12,person_message,stateless,2,set_cellular_service_status,"{""on"":true}",True
+primary_c12_stateless,primary,c12,person_message,stateless,3,send_message_with_phone_number,"{""content"":""The rehearsal has moved to 18:30. Please confirm when you can."",""phone_number"":""+12025550119""}",True
+primary_c12_inherited,primary,c12,person_message,inherited,0,search_contacts,"{""name"":""Fredrik Thordendal""}",True
+primary_c12_inherited,primary,c12,person_message,inherited,1,get_cellular_service_status,{},True
+primary_c12_inherited,primary,c12,person_message,inherited,2,set_cellular_service_status,"{""on"":true}",True
+primary_c12_inherited,primary,c12,person_message,inherited,3,send_message_with_phone_number,"{""content"":""The rehearsal has moved to 18:30. Please confirm when you can."",""phone_number"":""+12025550119""}",True
+primary_c05_stateless,primary,c05,literal_message,stateless,0,get_cellular_service_status,{},True
+primary_c05_stateless,primary,c05,literal_message,stateless,1,send_message_with_phone_number,"{""content"":""The rehearsal has moved to 18:30. Please confirm when you can."",""phone_number"":""+12453344098""}",True
+primary_c05_resolve_rule,primary,c05,literal_message,resolve_rule,0,get_cellular_service_status,{},True
+primary_c05_resolve_rule,primary,c05,literal_message,resolve_rule,1,send_message_with_phone_number,"{""content"":""The rehearsal has moved to 18:30. Please confirm when you can."",""phone_number"":""+12453344098""}",True
+primary_c05_inherited,primary,c05,literal_message,inherited,0,get_cellular_service_status,{},True
+primary_c05_inherited,primary,c05,literal_message,inherited,1,send_message_with_phone_number,"{""content"":""The rehearsal has moved to 18:30. Please confirm when you can."",""phone_number"":""+12453344098""}",True
+primary_c00_inherited,primary,c00,person_message,inherited,0,search_contacts,"{""name"":""Fredrik Thordendal""}",True
+primary_c00_inherited,primary,c00,person_message,inherited,1,send_message_with_phone_number,"{""content"":""The rehearsal has moved to 18:30. Please confirm when you can."",""phone_number"":""+12453344098""}",True
+primary_c00_resolve_rule,primary,c00,person_message,resolve_rule,0,search_contacts,"{""name"":""Fredrik Thordendal""}",True
+primary_c00_resolve_rule,primary,c00,person_message,resolve_rule,1,get_cellular_service_status,{},True
+primary_c00_resolve_rule,primary,c00,person_message,resolve_rule,2,send_message_with_phone_number,"{""content"":""The rehearsal has moved to 18:30. Please confirm when you can."",""phone_number"":""+12453344098""}",True
+primary_c00_stateless,primary,c00,person_message,stateless,0,search_contacts,"{""name"":""Fredrik Thordendal""}",True
+primary_c00_stateless,primary,c00,person_message,stateless,1,get_cellular_service_status,{},True
+primary_c00_stateless,primary,c00,person_message,stateless,2,send_message_with_phone_number,"{""content"":""The rehearsal has moved to 18:30. Please confirm when you can."",""phone_number"":""+12453344098""}",True
+repeat_c10_inherited,repeat,c10,reminder_label,inherited,0,search_reminder,"{""content"":""Submit the cobalt expense report""}",True
+repeat_c10_inherited,repeat,c10,reminder_label,inherited,1,modify_reminder,"{""reminder_id"":""da2b856e-9390-511f-bcbe-7005f72cbf5e"",""reminder_timestamp"":1800003600}",True
+repeat_c02_stateless,repeat,c02,person_message,stateless,0,search_contacts,"{""name"":""Fredrik Thordendal""}",True
+repeat_c02_stateless,repeat,c02,person_message,stateless,1,get_cellular_service_status,{},True
+repeat_c02_stateless,repeat,c02,person_message,stateless,2,send_message_with_phone_number,"{""content"":""The rehearsal has moved to 18:30. Please confirm when you can."",""phone_number"":""+12025550119""}",True
+repeat_c02_inherited,repeat,c02,person_message,inherited,0,search_contacts,"{""name"":""Fredrik Thordendal""}",True
+repeat_c02_inherited,repeat,c02,person_message,inherited,1,send_message_with_phone_number,"{""content"":""The rehearsal has moved to 18:30. Please confirm when you can."",""phone_number"":""+12025550119""}",True
+repeat_c02_resolve_rule,repeat,c02,person_message,resolve_rule,0,search_contacts,"{""name"":""Fredrik Thordendal""}",True
+repeat_c02_resolve_rule,repeat,c02,person_message,resolve_rule,1,send_message_with_phone_number,"{""content"":""The rehearsal has moved to 18:30. Please confirm when you can."",""phone_number"":""+12025550119""}",True
+repeat_c10_resolve_rule,repeat,c10,reminder_label,resolve_rule,0,search_reminder,"{""content"":""Submit the cobalt expense report""}",True
+repeat_c10_resolve_rule,repeat,c10,reminder_label,resolve_rule,1,modify_reminder,"{""reminder_id"":""da2b856e-9390-511f-bcbe-7005f72cbf5e"",""reminder_timestamp"":1800003600}",True
+repeat_c10_stateless,repeat,c10,reminder_label,stateless,0,search_reminder,"{""content"":""Submit the cobalt expense report""}",True
+repeat_c10_stateless,repeat,c10,reminder_label,stateless,1,modify_reminder,"{""reminder_id"":""da2b856e-9390-511f-bcbe-7005f72cbf5e"",""reminder_timestamp"":1800003600}",True

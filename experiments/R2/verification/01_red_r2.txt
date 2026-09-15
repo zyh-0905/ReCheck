@@ -1,0 +1,277 @@
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 720, in _warm_feature_flows
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 704, in _warm_collaboration_flows
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/generated/interface/models.py", line 32317, in hydrate_crdt_from_proto
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/remote.py", line 749, in __call__
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/client.py", line 150, in call
+artifact_tool.rpc.client.RemoteError: hydrateCrdtFromProto requires an empty collaborative document.
+test_conflicting_cache_uses_unknown_not_guess (test_r2_accounting.AccountingTests.test_conflicting_cache_uses_unknown_not_guess) ... FAIL
+test_crossing_period_unknown (test_r2_accounting.AccountingTests.test_crossing_period_unknown) ... FAIL
+test_expired_schedule_not_priced (test_r2_accounting.AccountingTests.test_expired_schedule_not_priced) ... FAIL
+test_invalid_reasoning_flagged (test_r2_accounting.AccountingTests.test_invalid_reasoning_flagged) ... FAIL
+test_missing_usage_never_zero (test_r2_accounting.AccountingTests.test_missing_usage_never_zero) ... FAIL
+test_other_model_not_priced (test_r2_accounting.AccountingTests.test_other_model_not_priced) ... FAIL
+test_saturday_is_not_weekday_peak (test_r2_accounting.AccountingTests.test_saturday_is_not_weekday_peak) ... FAIL
+test_unknown_price_not_zero (test_r2_accounting.AccountingTests.test_unknown_price_not_zero) ... FAIL
+test_correct_fresh_memory (test_r2_audit.AuditTests.test_correct_fresh_memory) ... FAIL
+test_count_unused_field_is_contract_error (test_r2_audit.AuditTests.test_count_unused_field_is_contract_error) ... FAIL
+test_float_count_contract_violation (test_r2_audit.AuditTests.test_float_count_contract_violation) ... FAIL
+test_irrelevant_stale_value_not_an_exposure (test_r2_audit.AuditTests.test_irrelevant_stale_value_not_an_exposure) ... FAIL
+test_legal_old_value_is_stale_not_fresh (test_r2_audit.AuditTests.test_legal_old_value_is_stale_not_fresh) ... FAIL
+test_missing_call_not_silently_success (test_r2_audit.AuditTests.test_missing_call_not_silently_success) ... FAIL
+test_missing_memory_not_stale (test_r2_audit.AuditTests.test_missing_memory_not_stale) ... FAIL
+test_truncated_and_json_error_are_separate_axes (test_r2_audit.AuditTests.test_truncated_and_json_error_are_separate_axes) ... FAIL
+test_call_cap_cannot_diverge (test_r2_protocol.ProtocolTests.test_call_cap_cannot_diverge) ... FAIL
+test_fixed_calls_and_methods (test_r2_protocol.ProtocolTests.test_fixed_calls_and_methods) ... FAIL
+test_outcome_blind_preflight (test_r2_protocol.ProtocolTests.test_outcome_blind_preflight) ... FAIL
+test_public_task_sequence_not_affected_by_world_seed (test_r2_protocol.ProtocolTests.test_public_task_sequence_not_affected_by_world_seed) ... FAIL
+test_seeds_new_and_fixed (test_r2_protocol.ProtocolTests.test_seeds_new_and_fixed) ... FAIL
+
+======================================================================
+FAIL: test_conflicting_cache_uses_unknown_not_guess (test_r2_accounting.AccountingTests.test_conflicting_cache_uses_unknown_not_guess)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_accounting.py", line 23, in test_conflicting_cache_uses_unknown_not_guess
+    q=self.fn("price_call")(c,self.rates());self.assertIsNone(q["estimate"])
+      ~~~~~~~^^^^^^^^^^^^^^
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_accounting.py", line 6, in fn
+    self.assertTrue(callable(getattr(a,name,None)),name+" missing");return getattr(a,name)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : price_call missing
+
+======================================================================
+FAIL: test_crossing_period_unknown (test_r2_accounting.AccountingTests.test_crossing_period_unknown)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_accounting.py", line 26, in test_crossing_period_unknown
+    q=self.fn("price_call")(c,self.rates());self.assertIsNone(q["estimate"]);self.assertEqual(q["reason"],"crosses_rate_boundary")
+      ~~~~~~~^^^^^^^^^^^^^^
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_accounting.py", line 6, in fn
+    self.assertTrue(callable(getattr(a,name,None)),name+" missing");return getattr(a,name)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : price_call missing
+
+======================================================================
+FAIL: test_expired_schedule_not_priced (test_r2_accounting.AccountingTests.test_expired_schedule_not_priced)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_accounting.py", line 37, in test_expired_schedule_not_priced
+    self.assertIsNone(self.fn("price_call")(c,self.rates())["estimate"])
+                      ~~~~~~~^^^^^^^^^^^^^^
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_accounting.py", line 6, in fn
+    self.assertTrue(callable(getattr(a,name,None)),name+" missing");return getattr(a,name)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : price_call missing
+
+======================================================================
+FAIL: test_invalid_reasoning_flagged (test_r2_accounting.AccountingTests.test_invalid_reasoning_flagged)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_accounting.py", line 30, in test_invalid_reasoning_flagged
+    n=self.fn("normalize_usage")({"prompt_tokens":10,"completion_tokens":5,"completion_tokens_details":{"reasoning_tokens":6}})
+      ~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_accounting.py", line 6, in fn
+    self.assertTrue(callable(getattr(a,name,None)),name+" missing");return getattr(a,name)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : normalize_usage missing
+
+======================================================================
+FAIL: test_missing_usage_never_zero (test_r2_accounting.AccountingTests.test_missing_usage_never_zero)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_accounting.py", line 28, in test_missing_usage_never_zero
+    n=self.fn("normalize_usage")({});self.assertIsNone(n["prompt_tokens"]);self.assertIsNone(n["completion_tokens"])
+      ~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_accounting.py", line 6, in fn
+    self.assertTrue(callable(getattr(a,name,None)),name+" missing");return getattr(a,name)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : normalize_usage missing
+
+======================================================================
+FAIL: test_other_model_not_priced (test_r2_accounting.AccountingTests.test_other_model_not_priced)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_accounting.py", line 34, in test_other_model_not_priced
+    self.assertIsNone(self.fn("price_call")(c,self.rates())["estimate"])
+                      ~~~~~~~^^^^^^^^^^^^^^
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_accounting.py", line 6, in fn
+    self.assertTrue(callable(getattr(a,name,None)),name+" missing");return getattr(a,name)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : price_call missing
+
+======================================================================
+FAIL: test_saturday_is_not_weekday_peak (test_r2_accounting.AccountingTests.test_saturday_is_not_weekday_peak)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_accounting.py", line 17, in test_saturday_is_not_weekday_peak
+    q=self.fn("price_call")(self.call(),self.rates());self.assertEqual(q["rate_period"],"off_peak")
+      ~~~~~~~^^^^^^^^^^^^^^
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_accounting.py", line 6, in fn
+    self.assertTrue(callable(getattr(a,name,None)),name+" missing");return getattr(a,name)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : price_call missing
+
+======================================================================
+FAIL: test_unknown_price_not_zero (test_r2_accounting.AccountingTests.test_unknown_price_not_zero)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_accounting.py", line 20, in test_unknown_price_not_zero
+    self.assertIsNone(self.fn("price_call")(self.call(),{"enabled":False})["estimate"])
+                      ~~~~~~~^^^^^^^^^^^^^^
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_accounting.py", line 6, in fn
+    self.assertTrue(callable(getattr(a,name,None)),name+" missing");return getattr(a,name)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : price_call missing
+
+======================================================================
+FAIL: test_correct_fresh_memory (test_r2_audit.AuditTests.test_correct_fresh_memory)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_audit.py", line 23, in test_correct_fresh_memory
+    e=self.ev(r,c,b);self.assertTrue(e["end_to_end_success"]);self.assertFalse(e["stale_related"])
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_audit.py", line 14, in ev
+    self.assertTrue(callable(getattr(audit,"evaluate_record",None)),"evaluate_record missing")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : evaluate_record missing
+
+======================================================================
+FAIL: test_count_unused_field_is_contract_error (test_r2_audit.AuditTests.test_count_unused_field_is_contract_error)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_audit.py", line 32, in test_count_unused_field_is_contract_error
+    e=self.ev(r,c,b);self.assertTrue(e["interface_failure"]);self.assertFalse(e["json_parse_failure"])
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_audit.py", line 14, in ev
+    self.assertTrue(callable(getattr(audit,"evaluate_record",None)),"evaluate_record missing")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : evaluate_record missing
+
+======================================================================
+FAIL: test_float_count_contract_violation (test_r2_audit.AuditTests.test_float_count_contract_violation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_audit.py", line 43, in test_float_count_contract_violation
+    e=self.ev(r,c,b);self.assertFalse(e["answer_schema_valid"]);self.assertFalse(e["end_to_end_success"])
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_audit.py", line 14, in ev
+    self.assertTrue(callable(getattr(audit,"evaluate_record",None)),"evaluate_record missing")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : evaluate_record missing
+
+======================================================================
+FAIL: test_irrelevant_stale_value_not_an_exposure (test_r2_audit.AuditTests.test_irrelevant_stale_value_not_an_exposure)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_audit.py", line 27, in test_irrelevant_stale_value_not_an_exposure
+    e=self.ev(r,c,b);self.assertFalse(e["stale_related"]);self.assertTrue(e["end_to_end_success"])
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_audit.py", line 14, in ev
+    self.assertTrue(callable(getattr(audit,"evaluate_record",None)),"evaluate_record missing")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : evaluate_record missing
+
+======================================================================
+FAIL: test_legal_old_value_is_stale_not_fresh (test_r2_audit.AuditTests.test_legal_old_value_is_stale_not_fresh)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_audit.py", line 17, in test_legal_old_value_is_stale_not_fresh
+    r,c,b=self.base();e=self.ev(r,c,b)
+                        ~~~~~~~^^^^^^^
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_audit.py", line 14, in ev
+    self.assertTrue(callable(getattr(audit,"evaluate_record",None)),"evaluate_record missing")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : evaluate_record missing
+
+======================================================================
+FAIL: test_missing_call_not_silently_success (test_r2_audit.AuditTests.test_missing_call_not_silently_success)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_audit.py", line 45, in test_missing_call_not_silently_success
+    r,c,b=self.base();b.pop("a");e=self.ev(r,c,b);self.assertEqual(e["missing_call_records"],1)
+                                   ~~~~~~~^^^^^^^
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_audit.py", line 14, in ev
+    self.assertTrue(callable(getattr(audit,"evaluate_record",None)),"evaluate_record missing")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : evaluate_record missing
+
+======================================================================
+FAIL: test_missing_memory_not_stale (test_r2_audit.AuditTests.test_missing_memory_not_stale)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_audit.py", line 39, in test_missing_memory_not_stale
+    e=self.ev(r,c,b);self.assertTrue(e["missing_related"]);self.assertFalse(e["stale_related"])
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_audit.py", line 14, in ev
+    self.assertTrue(callable(getattr(audit,"evaluate_record",None)),"evaluate_record missing")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : evaluate_record missing
+
+======================================================================
+FAIL: test_truncated_and_json_error_are_separate_axes (test_r2_audit.AuditTests.test_truncated_and_json_error_are_separate_axes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_audit.py", line 36, in test_truncated_and_json_error_are_separate_axes
+    e=self.ev(r,c,b);self.assertTrue(e["truncated"]);self.assertTrue(e["json_parse_failure"])
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_audit.py", line 14, in ev
+    self.assertTrue(callable(getattr(audit,"evaluate_record",None)),"evaluate_record missing")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : evaluate_record missing
+
+======================================================================
+FAIL: test_call_cap_cannot_diverge (test_r2_protocol.ProtocolTests.test_call_cap_cannot_diverge)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_protocol.py", line 27, in test_call_cap_cannot_diverge
+    s=self.spec();s["logical_calls"]-=1
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_protocol.py", line 6, in spec
+    self.assertTrue(callable(getattr(p,"load_protocol",None)),"load_protocol missing")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : load_protocol missing
+
+======================================================================
+FAIL: test_fixed_calls_and_methods (test_r2_protocol.ProtocolTests.test_fixed_calls_and_methods)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_protocol.py", line 9, in test_fixed_calls_and_methods
+    s=self.spec();self.assertEqual(s["logical_calls"],484)
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_protocol.py", line 6, in spec
+    self.assertTrue(callable(getattr(p,"load_protocol",None)),"load_protocol missing")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : load_protocol missing
+
+======================================================================
+FAIL: test_outcome_blind_preflight (test_r2_protocol.ProtocolTests.test_outcome_blind_preflight)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_protocol.py", line 12, in test_outcome_blind_preflight
+    s=self.spec();r=p.preflight(s)
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_protocol.py", line 6, in spec
+    self.assertTrue(callable(getattr(p,"load_protocol",None)),"load_protocol missing")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : load_protocol missing
+
+======================================================================
+FAIL: test_public_task_sequence_not_affected_by_world_seed (test_r2_protocol.ProtocolTests.test_public_task_sequence_not_affected_by_world_seed)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_protocol.py", line 22, in test_public_task_sequence_not_affected_by_world_seed
+    s=self.spec();alt=copy.deepcopy(s)
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_protocol.py", line 6, in spec
+    self.assertTrue(callable(getattr(p,"load_protocol",None)),"load_protocol missing")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : load_protocol missing
+
+======================================================================
+FAIL: test_seeds_new_and_fixed (test_r2_protocol.ProtocolTests.test_seeds_new_and_fixed)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_protocol.py", line 18, in test_seeds_new_and_fixed
+    s=self.spec();c=p.make_cases(s)
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_protocol.py", line 6, in spec
+    self.assertTrue(callable(getattr(p,"load_protocol",None)),"load_protocol missing")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : load_protocol missing
+
+----------------------------------------------------------------------
+Ran 21 tests in 0.005s
+
+FAILED (failures=21)
