@@ -1,0 +1,115 @@
+{
+  "overall": {
+    "records": 576,
+    "tasks": 6,
+    "source_full": 349,
+    "conflicts": 64,
+    "calendar": 62,
+    "no_commit": 2
+  },
+  "reminders": {
+    "records": 288,
+    "tasks": 3,
+    "source_full": 212,
+    "conflicts": 64,
+    "calendar": 62,
+    "no_commit": 2
+  },
+  "by_model": [
+    {
+      "model": "gpt_4_1",
+      "records": 48,
+      "tasks": 3,
+      "source_full": 43,
+      "conflicts": 1,
+      "calendar": 1,
+      "no_commit": 0
+    },
+    {
+      "model": "gpt_4o",
+      "records": 48,
+      "tasks": 3,
+      "source_full": 48,
+      "conflicts": 18,
+      "calendar": 18,
+      "no_commit": 0
+    },
+    {
+      "model": "gpt_4o_mini",
+      "records": 48,
+      "tasks": 3,
+      "source_full": 42,
+      "conflicts": 20,
+      "calendar": 20,
+      "no_commit": 0
+    },
+    {
+      "model": "gpt_5",
+      "records": 48,
+      "tasks": 3,
+      "source_full": 19,
+      "conflicts": 0,
+      "calendar": 0,
+      "no_commit": 0
+    },
+    {
+      "model": "mistral_large_2411",
+      "records": 48,
+      "tasks": 3,
+      "source_full": 40,
+      "conflicts": 17,
+      "calendar": 15,
+      "no_commit": 2
+    },
+    {
+      "model": "mistral_nemo",
+      "records": 48,
+      "tasks": 3,
+      "source_full": 20,
+      "conflicts": 8,
+      "calendar": 8,
+      "no_commit": 0
+    }
+  ],
+  "by_persona": [
+    {
+      "persona": "expert",
+      "records": 144,
+      "tasks": 3,
+      "source_full": 116,
+      "conflicts": 26,
+      "calendar": 26,
+      "no_commit": 0
+    },
+    {
+      "persona": "nonexpert",
+      "records": 144,
+      "tasks": 3,
+      "source_full": 96,
+      "conflicts": 38,
+      "calendar": 36,
+      "no_commit": 2
+    }
+  ],
+  "by_split": [
+    {
+      "split": "dev",
+      "records": 144,
+      "tasks": 6,
+      "source_full": 81,
+      "conflicts": 14,
+      "calendar": 13,
+      "no_commit": 1
+    },
+    {
+      "split": "later",
+      "records": 432,
+      "tasks": 6,
+      "source_full": 268,
+      "conflicts": 50,
+      "calendar": 49,
+      "no_commit": 1
+    }
+  ],
+  "scope": "Descriptive fixed-corpus counts, not independent task samples, new evaluations, or causal effects."
+}

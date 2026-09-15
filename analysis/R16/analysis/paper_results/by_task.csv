@@ -1,0 +1,7 @@
+task,records,tasks,source_full,conflicts,calendar,no_commit
+add_reminder_content_and_date_and_time,96,1,68,1,0,1
+add_reminder_content_and_week_delta_and_time,96,1,80,26,25,1
+add_reminder_content_and_weekday_delta_and_time,96,1,64,37,37,0
+modify_contact_with_message_recency,96,1,13,0,0,0
+send_message_with_contact_content_cellular_off,96,1,81,0,0,0
+send_message_with_phone_number_and_content,96,1,43,0,0,0

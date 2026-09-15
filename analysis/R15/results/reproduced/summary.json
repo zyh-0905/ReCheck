@@ -1,0 +1,169 @@
+{
+  "total": {
+    "records": 576,
+    "effect_true": 336,
+    "effect_false": 168,
+    "effect_unknown": 72,
+    "source_full": 349,
+    "source_full_known": 339,
+    "source_full_effect_false_candidates": 72,
+    "observed_goal_regressions": 0,
+    "ever_true_final_false": 0,
+    "initial_preservation_false": 30,
+    "source_full_initial_preservation_false": 0,
+    "extra_new_object_candidates": 13,
+    "new_llm_calls": 0
+  },
+  "by_task": {
+    "add_reminder_content_and_date_and_time": {
+      "records": 96,
+      "effect_true": 63,
+      "effect_false": 29,
+      "effect_unknown": 4,
+      "source_full": 68,
+      "source_full_known": 66,
+      "source_full_effect_false_candidates": 5,
+      "observed_goal_regressions": 0,
+      "ever_true_final_false": 0,
+      "initial_preservation_false": 0,
+      "source_full_initial_preservation_false": 0,
+      "extra_new_object_candidates": 13,
+      "new_llm_calls": 0
+    },
+    "add_reminder_content_and_week_delta_and_time": {
+      "records": 96,
+      "effect_true": 45,
+      "effect_false": 31,
+      "effect_unknown": 20,
+      "source_full": 80,
+      "source_full_known": 74,
+      "source_full_effect_false_candidates": 29,
+      "observed_goal_regressions": 0,
+      "ever_true_final_false": 0,
+      "initial_preservation_false": 0,
+      "source_full_initial_preservation_false": 0,
+      "extra_new_object_candidates": 0,
+      "new_llm_calls": 0
+    },
+    "add_reminder_content_and_weekday_delta_and_time": {
+      "records": 96,
+      "effect_true": 25,
+      "effect_false": 40,
+      "effect_unknown": 31,
+      "source_full": 64,
+      "source_full_known": 63,
+      "source_full_effect_false_candidates": 38,
+      "observed_goal_regressions": 0,
+      "ever_true_final_false": 0,
+      "initial_preservation_false": 0,
+      "source_full_initial_preservation_false": 0,
+      "extra_new_object_candidates": 0,
+      "new_llm_calls": 0
+    },
+    "modify_contact_with_message_recency": {
+      "records": 96,
+      "effect_true": 31,
+      "effect_false": 51,
+      "effect_unknown": 14,
+      "source_full": 13,
+      "source_full_known": 13,
+      "source_full_effect_false_candidates": 0,
+      "observed_goal_regressions": 0,
+      "ever_true_final_false": 0,
+      "initial_preservation_false": 30,
+      "source_full_initial_preservation_false": 0,
+      "extra_new_object_candidates": 0,
+      "new_llm_calls": 0
+    },
+    "send_message_with_contact_content_cellular_off": {
+      "records": 96,
+      "effect_true": 81,
+      "effect_false": 12,
+      "effect_unknown": 3,
+      "source_full": 81,
+      "source_full_known": 80,
+      "source_full_effect_false_candidates": 0,
+      "observed_goal_regressions": 0,
+      "ever_true_final_false": 0,
+      "initial_preservation_false": 0,
+      "source_full_initial_preservation_false": 0,
+      "extra_new_object_candidates": 0,
+      "new_llm_calls": 0
+    },
+    "send_message_with_phone_number_and_content": {
+      "records": 96,
+      "effect_true": 91,
+      "effect_false": 5,
+      "effect_unknown": 0,
+      "source_full": 43,
+      "source_full_known": 43,
+      "source_full_effect_false_candidates": 0,
+      "observed_goal_regressions": 0,
+      "ever_true_final_false": 0,
+      "initial_preservation_false": 0,
+      "source_full_initial_preservation_false": 0,
+      "extra_new_object_candidates": 0,
+      "new_llm_calls": 0
+    }
+  },
+  "by_split": {
+    "dev": {
+      "records": 144,
+      "effect_true": 84,
+      "effect_false": 43,
+      "effect_unknown": 17,
+      "source_full": 81,
+      "source_full_known": 80,
+      "source_full_effect_false_candidates": 16,
+      "observed_goal_regressions": 0,
+      "ever_true_final_false": 0,
+      "initial_preservation_false": 8,
+      "source_full_initial_preservation_false": 0,
+      "extra_new_object_candidates": 3,
+      "new_llm_calls": 0
+    },
+    "later": {
+      "records": 432,
+      "effect_true": 252,
+      "effect_false": 125,
+      "effect_unknown": 55,
+      "source_full": 268,
+      "source_full_known": 259,
+      "source_full_effect_false_candidates": 56,
+      "observed_goal_regressions": 0,
+      "ever_true_final_false": 0,
+      "initial_preservation_false": 22,
+      "source_full_initial_preservation_false": 0,
+      "extra_new_object_candidates": 10,
+      "new_llm_calls": 0
+    }
+  },
+  "review_counts": {
+    "CALENDAR_EFFECT_CONFLICT": 62,
+    "TIME_OF_DAY_ONLY": 2,
+    "USER_TIMEZONE_UNRESOLVED": 2,
+    "NO_COMMIT_EXECUTOR_SYNTAX_ERROR": 1,
+    "EXPLICIT_USER_DATE_REVISION": 4,
+    "NO_NATIVE_ADD_TEXT_ONLY": 1
+  },
+  "review_conservative_by_split": {
+    "dev": 14,
+    "later": 50
+  },
+  "full_score_reminder_records": 212,
+  "calendar_conflict_by_model": {
+    "gpt_4o": 18,
+    "gpt_4o_mini": 20,
+    "mistral_large_2411": 15,
+    "mistral_nemo": 8,
+    "gpt_4_1": 1
+  },
+  "raw_record_source": "Third-party public SAP/TED records, not newly generated LLM trials or original ToolSandbox leaderboard scores.",
+  "scope_notes": [
+    "sourcefull+false candidates are not all errors; explicit user revisions and timezone context were reviewed separately",
+    "no new temporal regressions in the six added goal predicates",
+    "counts are clustered repeats of six task IDs, not576 independent tasks",
+    "annotation is by same assistant, not independent human gold",
+    "all source scores and original R14 outputs remain unchanged"
+  ]
+}
