@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/mnt/data/R12_Public_Evaluator_Audit/launch.py", line 24, in <module>
+    supplement.run(sys.argv[2])
+  File "/mnt/data/R12_Public_Evaluator_Audit/src/supplement.py", line 72, in run
+    r=run_case(case,v);records.append(r);write_json(out/'trajectories'/f'{case}__{v}.json',r)
+      ^^^^^^^^^^^^^^^^
+  File "/mnt/data/R12_Public_Evaluator_Audit/src/supplement.py", line 43, in run_case
+    rows=call('search_reminder',{})['value'];assert max(rows,key=lambda r:r['creation_timestamp'])['reminder_id']==targets[0]
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not iterable

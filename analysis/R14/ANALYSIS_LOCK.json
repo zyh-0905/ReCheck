@@ -1,0 +1,30 @@
+{
+  "phase": "R14_PUBLIC_CORPUS_ANALYSIS_01",
+  "created_utc": "2026-09-15T08:53:50.764694+00:00",
+  "scope": "10 static task effect predicates + 1 sequential task; all other tasks unscored",
+  "development_trials": [
+    0,
+    1
+  ],
+  "heldout_trials": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "source_data_revision": "593e686f4d0c2e9fcae5ae664c16a7687907cf97",
+  "goal_semantics": "observed full namespace snapshots, batch boundaries; casefold names/relationship; exact E164 field; no replay or score rewriting",
+  "source_freeze": {
+    "src/corpus_audit.py": "fef7b764f03b5b2944f14fc5308d81ce829b27acef71c99311e21bce25e9752d",
+    "src/phase_audit.py": "9d40b3e5e7e7bca9dd8f2cc667846681090c2c676e4ecf93d558325ca26874f9"
+  },
+  "limitations": [
+    "not every task",
+    "not every individual tool state",
+    "new natural-language cancellations/revisions require manual candidate review",
+    "phase rule is conservative boundary detector, not general NLU",
+    "known emitters attach full snapshots but exact SAP emitting runtime not authenticated"
+  ]
+}

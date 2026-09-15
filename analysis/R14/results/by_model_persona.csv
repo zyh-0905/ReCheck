@@ -1,0 +1,13 @@
+model,persona,records,static_in_scope,static_known,static_effect_true,static_effect_false,static_effect_unknown,static_lost_goal_candidates,static_original_full_but_effect_false,source_final_full_all_tasks
+gpt_4_1,expert,296,80,80,77,3,0,0,0,236
+gpt_4_1,nonexpert,295,80,80,75,5,0,0,0,228
+gpt_4o,expert,296,80,80,80,0,0,0,0,260
+gpt_4o,nonexpert,296,80,80,79,1,0,0,0,257
+gpt_4o_mini,expert,296,80,80,76,4,0,0,0,243
+gpt_4o_mini,nonexpert,296,80,80,75,5,0,0,0,213
+gpt_5,expert,296,80,80,76,4,0,1,0,199
+gpt_5,nonexpert,296,80,79,79,0,1,0,0,196
+mistral_large_2411,expert,296,80,79,72,7,1,0,0,199
+mistral_large_2411,nonexpert,296,80,77,68,9,3,0,0,188
+mistral_nemo,expert,296,80,78,64,14,2,0,0,162
+mistral_nemo,nonexpert,296,80,72,59,13,8,0,0,151

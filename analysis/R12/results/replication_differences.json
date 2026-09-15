@@ -1,0 +1,144 @@
+{
+  "native_run1__native_run2": {
+    "count": 660,
+    "leaf_counts": {
+      "creation_timestamp": 480,
+      "reminder_timestamp": 180
+    },
+    "examples": [
+      {
+        "path": "/0/final_snapshot/_dbs/MESSAGING/1/creation_timestamp",
+        "first": 1789168402.52859,
+        "second": 1789168982.620147
+      },
+      {
+        "path": "/0/final_snapshot/_dbs/MESSAGING/2/creation_timestamp",
+        "first": 1789172002.528607,
+        "second": 1789172582.620165
+      },
+      {
+        "path": "/0/final_snapshot/_dbs/MESSAGING/3/creation_timestamp",
+        "first": 1789438525.52862,
+        "second": 1789439105.620177
+      },
+      {
+        "path": "/0/final_snapshot/_dbs/MESSAGING/4/creation_timestamp",
+        "first": 1789438585.528632,
+        "second": 1789439165.620188
+      },
+      {
+        "path": "/0/final_snapshot/_dbs/MESSAGING/5/creation_timestamp",
+        "first": 1789442246.528642,
+        "second": 1789442826.620198
+      },
+      {
+        "path": "/0/final_snapshot/_dbs/REMINDER/1/creation_timestamp",
+        "first": 1789183108.530223,
+        "second": 1789183688.622781
+      },
+      {
+        "path": "/0/final_snapshot/_dbs/REMINDER/1/reminder_timestamp",
+        "first": 1789355908.530226,
+        "second": 1789356488.622787
+      },
+      {
+        "path": "/0/final_snapshot/_dbs/REMINDER/2/creation_timestamp",
+        "first": 1789355908.530233,
+        "second": 1789356488.622794
+      },
+      {
+        "path": "/0/final_snapshot/_dbs/REMINDER/2/reminder_timestamp",
+        "first": 1789442248.530234,
+        "second": 1789442828.622795
+      },
+      {
+        "path": "/0/final_snapshot/_dbs/REMINDER/3/creation_timestamp",
+        "first": 1789438708.530258,
+        "second": 1789439288.6228
+      },
+      {
+        "path": "/0/final_snapshot/_dbs/REMINDER/3/reminder_timestamp",
+        "first": 1789445908.530261,
+        "second": 1789446488.622802
+      },
+      {
+        "path": "/0/initial_snapshot/_dbs/MESSAGING/1/creation_timestamp",
+        "first": 1789168402.52859,
+        "second": 1789168982.620147
+      }
+    ]
+  },
+  "supplement_run2__supplement_run3": {
+    "count": 591,
+    "leaf_counts": {
+      "creation_timestamp": 351,
+      "reminder_timestamp": 190,
+      "content": 22,
+      "0": 20,
+      "value": 4,
+      "creation_timestamp_upperbound": 4
+    },
+    "examples": [
+      {
+        "path": "/0/final_snapshot/_dbs/MESSAGING/1/creation_timestamp",
+        "first": 1789168755.061828,
+        "second": 1789168990.063161
+      },
+      {
+        "path": "/0/final_snapshot/_dbs/MESSAGING/2/creation_timestamp",
+        "first": 1789172355.061845,
+        "second": 1789172590.063185
+      },
+      {
+        "path": "/0/final_snapshot/_dbs/MESSAGING/3/creation_timestamp",
+        "first": 1789438878.061858,
+        "second": 1789439113.063204
+      },
+      {
+        "path": "/0/final_snapshot/_dbs/MESSAGING/4/creation_timestamp",
+        "first": 1789438938.06187,
+        "second": 1789439173.063221
+      },
+      {
+        "path": "/0/final_snapshot/_dbs/MESSAGING/5/creation_timestamp",
+        "first": 1789442599.061881,
+        "second": 1789442834.063236
+      },
+      {
+        "path": "/0/final_snapshot/_dbs/REMINDER/1/creation_timestamp",
+        "first": 1789183461.065755,
+        "second": 1789183696.066411
+      },
+      {
+        "path": "/0/final_snapshot/_dbs/REMINDER/1/reminder_timestamp",
+        "first": 1789356261.065761,
+        "second": 1789356496.066418
+      },
+      {
+        "path": "/0/final_snapshot/_dbs/REMINDER/2/creation_timestamp",
+        "first": 1789356261.065768,
+        "second": 1789356496.06643
+      },
+      {
+        "path": "/0/final_snapshot/_dbs/REMINDER/2/reminder_timestamp",
+        "first": 1789442601.06577,
+        "second": 1789442836.066432
+      },
+      {
+        "path": "/0/final_snapshot/_dbs/REMINDER/3/creation_timestamp",
+        "first": 1789439061.065776,
+        "second": 1789439296.066443
+      },
+      {
+        "path": "/0/final_snapshot/_dbs/REMINDER/3/reminder_timestamp",
+        "first": 1789446261.065778,
+        "second": 1789446496.066446
+      },
+      {
+        "path": "/0/initial_snapshot/_dbs/MESSAGING/1/creation_timestamp",
+        "first": 1789168755.061828,
+        "second": 1789168990.063161
+      }
+    ]
+  }
+}

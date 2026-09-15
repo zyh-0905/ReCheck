@@ -1,0 +1,11 @@
+name                                 type              encoding         emb sub uni object ID
+------------------------------------ ----------------- ---------------- --- --- --- ---------
+LETTME+NimbusRomNo9L-Medi            Type 1            Custom           yes yes yes      4  0
+IXEORM+NimbusRomNo9L-ReguItal        Type 1            Custom           yes yes yes      5  0
+ZFCNZG+NimbusRomNo9L-Regu            Type 1            Custom           yes yes yes      6  0
+SJISBO+NimbusRomNo9L-MediItal        Type 1            Custom           yes yes yes      7  0
+QVGSWP+CMMI10                        Type 1            Builtin          yes yes yes      8  0
+VCQHQW+CMMI7                         Type 1            Builtin          yes yes yes      9  0
+XCZBCL+CMR10                         Type 1            Builtin          yes yes yes     10  0
+LHRDPA+CMEX10                        Type 1            Builtin          yes yes yes     11  0
+JZCAMV+NimbusMonL-Regu               Type 1            Custom           yes yes yes     17  0

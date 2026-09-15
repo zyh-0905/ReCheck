@@ -1,0 +1,19 @@
+{
+  "target_repository": "zyh-0905/ReCheck",
+  "archive_through": "R16",
+  "remote_visibility_observed": "public",
+  "remote_contents_observed": "empty",
+  "connection_permissions_observed": {
+    "pull": true,
+    "push": false
+  },
+  "operations_this_turn": [
+    "get_repo",
+    "read_contents"
+  ],
+  "remote_write_attempts_this_turn": 0,
+  "remote_commits_created": 0,
+  "pushed": false,
+  "local_archive_ready": true,
+  "notes": "Historical write failures are preserved separately; this consolidation did not attempt remote mutation."
+}

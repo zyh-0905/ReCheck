@@ -1,0 +1,1 @@
+The first packaging preflight reached the font check after successful fresh tests, audit and TeX compilation. It inspected pdffonts token -6 (encoding) instead of -5 (embedded flag). Actual output listed embedded=yes for all fonts. Only the packaging checker index was corrected; no analysis code, original data, paper content or scores changed. Final verification was then rerun.

@@ -1,0 +1,69 @@
+test_all_exact (test_proposal_audit.Arguments.test_all_exact) ... ok
+test_no_added_precondition (test_proposal_audit.Arguments.test_no_added_precondition) ... ok
+test_no_input_mutation (test_proposal_audit.Arguments.test_no_input_mutation) ... ok
+test_none_drops_all (test_proposal_audit.Arguments.test_none_drops_all) ... ok
+test_partial_selection_rejected (test_proposal_audit.Arguments.test_partial_selection_rejected) ... ok
+test_row_keeps_only_row (test_proposal_audit.Arguments.test_row_keeps_only_row) ... ok
+test_selection_drops_row (test_proposal_audit.Arguments.test_selection_drops_row) ... ok
+test_unknown_mode (test_proposal_audit.Arguments.test_unknown_mode) ... ok
+test_altered_feedback (test_proposal_audit.InputGate.test_altered_feedback) ... FAIL
+test_altered_source (test_proposal_audit.InputGate.test_altered_source) ... FAIL
+test_existing_results_refused (test_proposal_audit.InputGate.test_existing_results_refused) ... ok
+test_fixed_inputs (test_proposal_audit.InputGate.test_fixed_inputs) ... ok
+test_socket_block (test_proposal_audit.InputGate.test_socket_block) ... ok
+test_swapped_inputs (test_proposal_audit.InputGate.test_swapped_inputs) ... FAIL
+test_batch (test_proposal_audit.Intent.test_batch) ... ok
+test_batch_literal (test_proposal_audit.Intent.test_batch_literal) ... ok
+test_literal (test_proposal_audit.Intent.test_literal) ... ok
+test_routing (test_proposal_audit.Intent.test_routing) ... ok
+test_unsupported (test_proposal_audit.Intent.test_unsupported) ... ok
+test_batch_literal (test_proposal_audit.Transition.test_batch_literal) ... ok
+test_batch_rank (test_proposal_audit.Transition.test_batch_rank) ... ok
+test_batch_wrong (test_proposal_audit.Transition.test_batch_wrong) ... ok
+test_boolean_not_int (test_proposal_audit.Transition.test_boolean_not_int) ... ok
+test_deleted_record (test_proposal_audit.Transition.test_deleted_record) ... ok
+test_duplicate_id (test_proposal_audit.Transition.test_duplicate_id) ... ok
+test_ineligible_high_priority (test_proposal_audit.Transition.test_ineligible_high_priority) ... ok
+test_literal_id_respected (test_proposal_audit.Transition.test_literal_id_respected) ... ok
+test_no_change_not_completion (test_proposal_audit.Transition.test_no_change_not_completion) ... ok
+test_non_target_table (test_proposal_audit.Transition.test_non_target_table) ... ok
+test_protected_field (test_proposal_audit.Transition.test_protected_field) ... ok
+test_route_safe (test_proposal_audit.Transition.test_route_safe) ... ok
+test_source_world_unchanged (test_proposal_audit.Transition.test_source_world_unchanged) ... ok
+test_tiebreak (test_proposal_audit.Transition.test_tiebreak) ... ok
+test_units_threshold (test_proposal_audit.Transition.test_units_threshold) ... ok
+test_unknown_tool (test_proposal_audit.Transition.test_unknown_tool) ... ok
+test_versions_not_business (test_proposal_audit.Transition.test_versions_not_business) ... ok
+test_wrong_target (test_proposal_audit.Transition.test_wrong_target) ... ok
+
+======================================================================
+FAIL: test_altered_feedback (test_proposal_audit.InputGate.test_altered_feedback)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R11_Evidence_Synthesis/tests/test_proposal_audit.py", line 75, in test_altered_feedback
+    with self.assertRaises(ValueError):verify_inputs(self.feedback+b'X',self.source)
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_altered_source (test_proposal_audit.InputGate.test_altered_source)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R11_Evidence_Synthesis/tests/test_proposal_audit.py", line 77, in test_altered_source
+    with self.assertRaises(ValueError):verify_inputs(self.feedback,self.source+b'X')
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_swapped_inputs (test_proposal_audit.InputGate.test_swapped_inputs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R11_Evidence_Synthesis/tests/test_proposal_audit.py", line 79, in test_swapped_inputs
+    with self.assertRaises(ValueError):verify_inputs(self.source,self.feedback)
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+----------------------------------------------------------------------
+Ran 37 tests in 0.009s
+
+FAILED (failures=3)

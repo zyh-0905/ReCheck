@@ -1,0 +1,6 @@
+scenario,variant,first_scoped_goal,latest_terminal_only,protected_invariant,scoped_contract,blanket_all_goals_terminal,native_tool_calls,tool_errors,official_similarity
+update_contact_relationship_with_relationship_twice_multiple_user_turn,correct_revision,True,True,True,True,False,5,0,1.0
+update_contact_relationship_with_relationship_twice_multiple_user_turn,missing_final_revision,True,False,True,False,False,3,0,0.8
+update_contact_relationship_with_relationship_twice_multiple_user_turn,undo_latest_goal,True,False,True,False,False,7,0,1.0
+update_contact_relationship_with_relationship_twice_multiple_user_turn,no_effect,False,True,True,False,False,1,0,0.6
+update_contact_relationship_with_relationship_twice_multiple_user_turn,redundant_error_then_revision,True,True,True,True,False,6,1,1.0

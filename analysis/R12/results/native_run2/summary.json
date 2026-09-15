@@ -1,0 +1,50 @@
+[
+  {
+    "cases": 5,
+    "full_score_terminal_mismatch": 0,
+    "official_full_scores": 5,
+    "terminal_valid": 5,
+    "tool_errors": 0,
+    "variant": "correct"
+  },
+  {
+    "cases": 5,
+    "full_score_terminal_mismatch": 0,
+    "official_full_scores": 5,
+    "terminal_valid": 5,
+    "tool_errors": 5,
+    "variant": "error_then_correct"
+  },
+  {
+    "cases": 5,
+    "full_score_terminal_mismatch": 0,
+    "official_full_scores": 5,
+    "terminal_valid": 5,
+    "tool_errors": 5,
+    "variant": "correct_then_redundant_error"
+  },
+  {
+    "cases": 5,
+    "full_score_terminal_mismatch": 0,
+    "official_full_scores": 0,
+    "terminal_valid": 0,
+    "tool_errors": 0,
+    "variant": "claim_only"
+  },
+  {
+    "cases": 5,
+    "full_score_terminal_mismatch": 5,
+    "official_full_scores": 5,
+    "terminal_valid": 0,
+    "tool_errors": 0,
+    "variant": "achieve_then_revert"
+  },
+  {
+    "cases": 5,
+    "full_score_terminal_mismatch": 0,
+    "official_full_scores": 5,
+    "terminal_valid": 5,
+    "tool_errors": 0,
+    "variant": "achieve_revert_repair"
+  }
+]

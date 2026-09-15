@@ -1,0 +1,16 @@
+scenario,variant,terminal_valid,score_terminal_relation,native_tool_calls,native_tool_errors,milestones,minefields,official_similarity
+update_contact_with_id_and_phone_number,correct,True,full_score_terminal_true,1,0,2,0,1.0
+update_contact_with_id_and_phone_number,error_then_correct,True,full_score_terminal_true,2,1,2,0,1.0
+update_contact_with_id_and_phone_number,claim_only,False,not_full_score_terminal_false,0,0,2,0,0.5
+update_contact_with_id_and_phone_number,achieve_then_revert,False,full_score_terminal_mismatch,2,0,2,0,1.0
+update_contact_with_id_and_phone_number,achieve_revert_repair,True,full_score_terminal_true,3,0,2,0,1.0
+update_contact_relationship_with_relationship,correct,True,full_score_terminal_true,3,0,3,0,1.0
+update_contact_relationship_with_relationship,error_then_correct,True,full_score_terminal_true,4,1,3,0,1.0
+update_contact_relationship_with_relationship,claim_only,False,not_full_score_terminal_false,0,0,3,0,0.3333333333333333
+update_contact_relationship_with_relationship,achieve_then_revert,False,full_score_terminal_mismatch,5,0,3,0,1.0
+update_contact_relationship_with_relationship,achieve_revert_repair,True,full_score_terminal_true,7,0,3,0,1.0
+modify_reminder_with_recency_latest,correct,True,full_score_terminal_true,3,0,3,0,1.0
+modify_reminder_with_recency_latest,error_then_correct,True,full_score_terminal_true,4,1,3,0,1.0
+modify_reminder_with_recency_latest,claim_only,False,not_full_score_terminal_false,0,0,3,0,0.0
+modify_reminder_with_recency_latest,achieve_then_revert,False,full_score_terminal_mismatch,4,0,3,0,1.0
+modify_reminder_with_recency_latest,achieve_revert_repair,True,full_score_terminal_true,5,0,3,0,1.0

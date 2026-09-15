@@ -1,0 +1,10 @@
+{
+  "python_used": "3.11.14",
+  "numpy": "1.26.4",
+  "polars": "0.20.31",
+  "scipy": "1.13.1",
+  "platform": "Linux x86_64",
+  "dependency_source": "previously supplied R7 public materials reused, no new installation",
+  "user_run_required": false,
+  "paid_budget": 0
+}

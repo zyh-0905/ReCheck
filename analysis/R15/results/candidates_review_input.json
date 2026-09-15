@@ -1,0 +1,2124 @@
+[
+  {
+    "key": "gpt_4o/expert/0/add_reminder_content_and_weekday_delta_and_time",
+    "users": [
+      "Please create a reminder for me to buy chocolate milk next Friday at 5PM."
+    ],
+    "expected": [
+      "2025-09-19T17:00:00+00:00",
+      "2025-09-26T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "Buy chocolate milk",
+        "epoch": 1758358800.0,
+        "local": "2025-09-20T17:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-16T17:45:25.928436+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current date and time\",",
+        "completed": true
+      },
+      {
+        "details": "\"Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM next Friday \",",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "gpt_4o/expert/1/add_reminder_content_and_weekday_delta_and_time",
+    "users": [
+      "Please create a reminder for me to buy chocolate milk next Friday at 5PM.",
+      "Thank you, that's all I needed."
+    ],
+    "expected": [
+      "2025-09-19T17:00:00+00:00",
+      "2025-09-26T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "Buy chocolate milk",
+        "epoch": 1758358800.0,
+        "local": "2025-09-20T17:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-16T18:00:27.524511+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current date and time\",",
+        "completed": true
+      },
+      {
+        "details": "\"Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM next Friday \",",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "gpt_4o/nonexpert/0/add_reminder_content_and_week_delta_and_time",
+    "users": [
+      "Hey, can you remind me to get some chocolate milk?",
+      "Uh, could you set it for tomorrow?",
+      "Oh, can you make it for like 5 in the evening?",
+      "Alright, cool, thanks!"
+    ],
+    "expected": [
+      "2025-09-17T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "Get chocolate milk",
+        "epoch": 1758100800.0,
+        "local": "2025-09-17T17:20:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-16T14:12:45.503190+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current time\",",
+        "completed": true
+      },
+      {
+        "details": "Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM tomorrow after retrieving the current timestamp",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "gpt_4o/nonexpert/0/add_reminder_content_and_weekday_delta_and_time",
+    "users": [
+      "Hey, can you remind me to get some chocolate milk?",
+      "Uh, like, next Friday?",
+      "Oh, can you make it like, around 5pm?",
+      "Alright, cool, thanks!"
+    ],
+    "expected": [
+      "2025-09-19T17:00:00+00:00",
+      "2025-09-26T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "Get some chocolate milk",
+        "epoch": 1758358800.0,
+        "local": "2025-09-20T17:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-16T14:13:20.780229+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current date and time\",",
+        "completed": true
+      },
+      {
+        "details": "\"Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM next Friday \",",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "gpt_4o/nonexpert/1/add_reminder_content_and_weekday_delta_and_time",
+    "users": [
+      "Hey, can you remind me to get some chocolate milk?",
+      "Uh, just remind me on Friday.",
+      "Oh, can you make it for 5pm instead?",
+      "Alright, cool, thanks!"
+    ],
+    "expected": [
+      "2025-09-19T17:00:00+00:00",
+      "2025-09-26T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "Get some chocolate milk",
+        "epoch": 1758358800.0,
+        "local": "2025-09-20T17:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-16T14:31:17.114523+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current date and time\",",
+        "completed": true
+      },
+      {
+        "details": "\"Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM next Friday \",",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "gpt_4o_mini/expert/0/add_reminder_content_and_weekday_delta_and_time",
+    "users": [
+      "Please create a reminder for me to buy chocolate milk next Friday at 5PM.",
+      "Thank you, that's all I needed."
+    ],
+    "expected": [
+      "2025-09-19T17:00:00+00:00",
+      "2025-09-26T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "Buy chocolate milk",
+        "epoch": 1758531600.0,
+        "local": "2025-09-22T17:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-15T21:19:55.846902+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current date and time\",",
+        "completed": true
+      },
+      {
+        "details": "\"Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM next Friday \",",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "gpt_4o_mini/expert/1/add_reminder_content_and_weekday_delta_and_time",
+    "users": [
+      "Please create a reminder for me to buy chocolate milk next Friday at 5PM.",
+      "Thank you, that's all I needed."
+    ],
+    "expected": [
+      "2025-09-19T17:00:00+00:00",
+      "2025-09-26T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "Buy chocolate milk",
+        "epoch": 1758531600.0,
+        "local": "2025-09-22T17:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-15T21:31:52.956673+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current date and time\",",
+        "completed": true
+      },
+      {
+        "details": "\"Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM next Friday \",",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "gpt_4o_mini/nonexpert/1/add_reminder_content_and_week_delta_and_time",
+    "users": [
+      "Hey, can you remind me about something tomorrow?",
+      "Oh, yeah, I just need to remember to get some chocolate milk.",
+      "Uh, can you make it for like 5 in the afternoon?",
+      "Alright, cool, thanks!"
+    ],
+    "expected": [
+      "2025-09-17T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "Get some chocolate milk",
+        "epoch": 1698483600.0,
+        "local": "2023-10-28T17:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-16T00:32:32.795925+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current time\",",
+        "completed": true
+      },
+      {
+        "details": "Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM tomorrow after retrieving the current timestamp",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "gpt_5/nonexpert/0/add_reminder_content_and_week_delta_and_time",
+    "users": [
+      "Hey, um, can you remind me about something tomorrow?",
+      "Oh, uh, it’s just to remind me to get some chocolate milk.",
+      "Oh, um, can you make it for like 5 in the afternoon?",
+      "Uh, I’m not really sure about the time zone thing. I think I’m just in, like, the regular one? I’m in California, if that helps.",
+      "Okay, cool, thanks! That’s all I needed."
+    ],
+    "expected": [
+      "2025-09-18T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "Get some chocolate milk",
+        "epoch": 1758124800.0,
+        "local": "2025-09-18T00:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-17T03:16:26.174739+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current time\",",
+        "completed": true
+      },
+      {
+        "details": "Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM tomorrow after retrieving the current timestamp",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "mistral_large_2411/expert/0/add_reminder_content_and_week_delta_and_time",
+    "users": [
+      "Please create a reminder for me to buy chocolate milk tomorrow at 5PM."
+    ],
+    "expected": [
+      "2025-09-20T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "Buy chocolate milk",
+        "epoch": 1762678800.0,
+        "local": "2025-11-09T17:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-19T00:13:26.684726+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current time\",",
+        "completed": true
+      },
+      {
+        "details": "Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM tomorrow after retrieving the current timestamp",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "mistral_large_2411/expert/1/add_reminder_content_and_weekday_delta_and_time",
+    "users": [
+      "Please create a reminder for me to buy chocolate milk next Friday at 5PM.",
+      "Thank you, that's all I needed."
+    ],
+    "expected": [
+      "2025-09-26T17:00:00+00:00",
+      "2025-10-03T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "buy chocolate milk",
+        "epoch": 1759050000.0,
+        "local": "2025-09-28T17:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-19T00:38:17.693205+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current date and time\",",
+        "completed": true
+      },
+      {
+        "details": "\"Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM next Friday \",",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "mistral_large_2411/nonexpert/0/add_reminder_content_and_week_delta_and_time",
+    "users": [
+      "Hey, um, can you remind me about something tomorrow?",
+      "Oh, yeah, it’s to buy chocolate milk.",
+      "Uh, yeah, like around 5 in the afternoon, I guess?",
+      "Alright, cool, thanks!"
+    ],
+    "expected": [
+      "2025-09-19T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "buy chocolate milk",
+        "epoch": 1704272400.0003643,
+        "local": "2024-01-03T17:00:00.000364+00:00"
+      }
+    ],
+    "clock_local": "2025-09-18T11:27:39.513851+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current time\",",
+        "completed": true
+      },
+      {
+        "details": "Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM tomorrow after retrieving the current timestamp",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "mistral_large_2411/nonexpert/0/add_reminder_content_and_weekday_delta_and_time",
+    "users": [
+      "Hey, can you help me set a reminder?",
+      "Oh, it’s just to remind me to buy chocolate milk.",
+      "Um, just remind me on Friday, I guess.",
+      "Uh, like around 5 in the evening?",
+      "Alright, cool, thanks!"
+    ],
+    "expected": [
+      "2025-09-19T17:00:00+00:00",
+      "2025-09-26T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "buy chocolate milk",
+        "epoch": 1722589200.0,
+        "local": "2024-08-02T17:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-18T11:28:06.022829+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current date and time\",",
+        "completed": true
+      },
+      {
+        "details": "\"Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM next Friday \",",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "mistral_large_2411/nonexpert/1/add_reminder_content_and_week_delta_and_time",
+    "users": [
+      "Hey, um, can you remind me about something tomorrow?",
+      "Oh, uh, it’s for buying chocolate milk.",
+      "Um, like, around 5 in the afternoon, I guess?",
+      "Alright, cool, thanks!"
+    ],
+    "expected": [
+      "2025-09-19T17:00:00+00:00"
+    ],
+    "actual": [],
+    "clock_local": "2025-09-18T12:03:07.767811+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current time\",",
+        "completed": true
+      },
+      {
+        "details": "Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM tomorrow after retrieving the current timestamp",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "mistral_nemo/expert/0/add_reminder_content_and_week_delta_and_time",
+    "users": [
+      "Please create a reminder for me to buy chocolate milk tomorrow at 5PM.",
+      "Could you please try again to set the reminder for me to buy chocolate milk tomorrow at 5PM?"
+    ],
+    "expected": [
+      "2025-09-20T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "Reminder to buy some chocolate milk",
+        "epoch": 1704186000.0,
+        "local": "2024-01-02T17:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-19T16:00:36.419769+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current time\",",
+        "completed": true
+      },
+      {
+        "details": "Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM tomorrow after retrieving the current timestamp",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "mistral_nemo/nonexpert/1/add_reminder_content_and_week_delta_and_time",
+    "users": [
+      "Hey, can you remind me about something tomorrow?",
+      "Oh, I just need a reminder to buy chocolate milk.",
+      "Oh, at 5pm.",
+      "Uh, okay. Just let me know when it’s set, I guess?",
+      "Alright, cool. Thanks!"
+    ],
+    "expected": [
+      "2025-09-20T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "Buy chocolate milk",
+        "epoch": 1718182800.0,
+        "local": "2024-06-12T17:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-19T11:10:09.564973+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current time\",",
+        "completed": true
+      },
+      {
+        "details": "Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM tomorrow after retrieving the current timestamp",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "gpt_4_1/nonexpert/3/add_reminder_content_and_weekday_delta_and_time",
+    "users": [
+      "Hey, can you help me set a reminder?",
+      "Oh, um, I just need a reminder to buy chocolate milk.",
+      "Uh, yeah, just remind me next Friday, I guess.",
+      "Um, maybe sometime in the afternoon?",
+      "Uh, yeah, like 5 or so would be good."
+    ],
+    "expected": [
+      "2025-09-19T17:00:00+00:00",
+      "2025-09-26T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "Buy chocolate milk",
+        "epoch": 1758358800.0,
+        "local": "2025-09-20T17:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-16T05:41:28.279336+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current date and time\",",
+        "completed": true
+      },
+      {
+        "details": "\"Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM next Friday \",",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "gpt_4o/expert/2/add_reminder_content_and_week_delta_and_time",
+    "users": [
+      "Please create a reminder for me to buy chocolate milk tomorrow at 5PM.",
+      "Thank you, that's all I needed."
+    ],
+    "expected": [
+      "2025-09-17T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "Buy chocolate milk",
+        "epoch": 1697446800.0,
+        "local": "2023-10-16T17:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-16T18:14:31.957964+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current time\",",
+        "completed": true
+      },
+      {
+        "details": "Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM tomorrow after retrieving the current timestamp",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "gpt_4o/expert/2/add_reminder_content_and_weekday_delta_and_time",
+    "users": [
+      "Please create a reminder for me to buy chocolate milk next Friday at 5PM."
+    ],
+    "expected": [
+      "2025-09-19T17:00:00+00:00",
+      "2025-09-26T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "Buy chocolate milk",
+        "epoch": 1758358800.0,
+        "local": "2025-09-20T17:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-16T18:14:44.319934+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current date and time\",",
+        "completed": true
+      },
+      {
+        "details": "\"Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM next Friday \",",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "gpt_4o/expert/3/add_reminder_content_and_weekday_delta_and_time",
+    "users": [
+      "Please create a reminder for me to buy chocolate milk next Friday at 5PM."
+    ],
+    "expected": [
+      "2025-09-19T17:00:00+00:00",
+      "2025-09-26T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "Buy chocolate milk",
+        "epoch": 1758358800.0,
+        "local": "2025-09-20T17:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-16T18:27:08.724189+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current date and time\",",
+        "completed": true
+      },
+      {
+        "details": "\"Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM next Friday \",",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "gpt_4o/expert/4/add_reminder_content_and_weekday_delta_and_time",
+    "users": [
+      "Please create a reminder for me to buy chocolate milk next Friday at 5PM."
+    ],
+    "expected": [
+      "2025-09-19T17:00:00+00:00",
+      "2025-09-26T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "Buy chocolate milk",
+        "epoch": 1758358800.0,
+        "local": "2025-09-20T17:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-16T18:40:43.064458+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current date and time\",",
+        "completed": true
+      },
+      {
+        "details": "\"Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM next Friday \",",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "gpt_4o/expert/5/add_reminder_content_and_weekday_delta_and_time",
+    "users": [
+      "Please create a reminder for me to buy chocolate milk next Friday at 5PM."
+    ],
+    "expected": [
+      "2025-09-19T17:00:00+00:00",
+      "2025-09-26T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "Buy chocolate milk",
+        "epoch": 1758358800.0,
+        "local": "2025-09-20T17:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-16T19:16:24.009305+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current date and time\",",
+        "completed": true
+      },
+      {
+        "details": "\"Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM next Friday \",",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "gpt_4o/expert/6/add_reminder_content_and_week_delta_and_time",
+    "users": [
+      "Please create a reminder for me to buy chocolate milk tomorrow at 5PM."
+    ],
+    "expected": [
+      "2025-09-17T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "Buy chocolate milk",
+        "epoch": 1697533200.0,
+        "local": "2023-10-17T17:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-16T19:29:27.731176+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current time\",",
+        "completed": true
+      },
+      {
+        "details": "Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM tomorrow after retrieving the current timestamp",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "gpt_4o/expert/6/add_reminder_content_and_weekday_delta_and_time",
+    "users": [
+      "Please create a reminder for me to buy chocolate milk next Friday at 5PM."
+    ],
+    "expected": [
+      "2025-09-19T17:00:00+00:00",
+      "2025-09-26T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "Buy chocolate milk",
+        "epoch": 1758358800.0,
+        "local": "2025-09-20T17:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-16T19:29:38.080222+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current date and time\",",
+        "completed": true
+      },
+      {
+        "details": "\"Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM next Friday \",",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "gpt_4o/expert/7/add_reminder_content_and_week_delta_and_time",
+    "users": [
+      "Please create a reminder for me to buy chocolate milk tomorrow at 5PM."
+    ],
+    "expected": [
+      "2025-09-17T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "Buy chocolate milk",
+        "epoch": 1697533200.0,
+        "local": "2023-10-17T17:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-16T19:42:27.406232+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current time\",",
+        "completed": true
+      },
+      {
+        "details": "Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM tomorrow after retrieving the current timestamp",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "gpt_4o/expert/7/add_reminder_content_and_weekday_delta_and_time",
+    "users": [
+      "Please create a reminder for me to buy chocolate milk next Friday at 5PM."
+    ],
+    "expected": [
+      "2025-09-19T17:00:00+00:00",
+      "2025-09-26T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "buy chocolate milk",
+        "epoch": 1758358800.0,
+        "local": "2025-09-20T17:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-16T19:42:36.228154+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current date and time\",",
+        "completed": true
+      },
+      {
+        "details": "\"Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM next Friday \",",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "gpt_4o/nonexpert/2/add_reminder_content_and_weekday_delta_and_time",
+    "users": [
+      "Hey, can you remind me to get some chocolate milk?",
+      "Uh, just remind me on Friday, I guess.",
+      "Oh, um, like around 5 in the evening?",
+      "Alright, cool, thanks!"
+    ],
+    "expected": [
+      "2025-09-19T17:00:00+00:00",
+      "2025-09-26T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "Get some chocolate milk",
+        "epoch": 1697792400.0,
+        "local": "2023-10-20T17:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-16T14:51:28.826165+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current date and time\",",
+        "completed": true
+      },
+      {
+        "details": "\"Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM next Friday \",",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "gpt_4o/nonexpert/3/add_reminder_content_and_weekday_delta_and_time",
+    "users": [
+      "Hey, can you remind me to get some chocolate milk?",
+      "Oh, um, next Friday I think.",
+      "Oh, actually, can you make it later in the day? Like, in the evening?",
+      "Oh, could you do it around 5?",
+      "Alright, cool, thanks!"
+    ],
+    "expected": [
+      "2025-09-19T17:00:00+00:00",
+      "2025-09-26T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "Get some chocolate milk",
+        "epoch": 1758358800.0,
+        "local": "2025-09-20T17:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-16T15:12:07.178371+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current date and time\",",
+        "completed": true
+      },
+      {
+        "details": "\"Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM next Friday \",",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "gpt_4o/nonexpert/4/add_reminder_content_and_weekday_delta_and_time",
+    "users": [
+      "Hey, can you remind me to get some chocolate milk?",
+      "Uh, can you do it for next Friday?",
+      "Oh, um, maybe like in the evening?",
+      "Uh, let’s do 5 PM."
+    ],
+    "expected": [
+      "2025-09-19T17:00:00+00:00",
+      "2025-09-26T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "Get some chocolate milk",
+        "epoch": 1758358800.0,
+        "local": "2025-09-20T17:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-16T15:32:31.990468+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current date and time\",",
+        "completed": true
+      },
+      {
+        "details": "\"Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM next Friday \",",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "gpt_4o/nonexpert/5/add_reminder_content_and_weekday_delta_and_time",
+    "users": [
+      "Hey, can you remind me to get some chocolate milk?",
+      "Uh, just remind me on Friday, I guess.",
+      "Um, maybe like in the evening?",
+      "Hmm, maybe a little earlier? Like 5 or something?",
+      "Cool, thanks!"
+    ],
+    "expected": [
+      "2025-09-19T17:00:00+00:00",
+      "2025-09-26T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "Get chocolate milk",
+        "epoch": 1697792400.0,
+        "local": "2023-10-20T17:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-16T15:51:11.608652+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current date and time\",",
+        "completed": true
+      },
+      {
+        "details": "\"Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM next Friday \",",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "gpt_4o/nonexpert/7/add_reminder_content_and_weekday_delta_and_time",
+    "users": [
+      "Hey, can you remind me to get some chocolate milk?",
+      "Uh, just remind me on Friday, I guess.",
+      "Oh, can you make it for like 5 in the afternoon?",
+      "Oh, actually, I meant next Friday, not this Friday. Is that okay?",
+      "Alright, cool, thanks!"
+    ],
+    "expected": [
+      "2025-09-19T17:00:00+00:00",
+      "2025-09-26T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "Get some chocolate milk.",
+        "epoch": 1758963600.0,
+        "local": "2025-09-27T17:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-16T17:15:07.738245+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current date and time\",",
+        "completed": true
+      },
+      {
+        "details": "\"Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM next Friday \",",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "gpt_4o_mini/expert/2/add_reminder_content_and_weekday_delta_and_time",
+    "users": [
+      "Please create a reminder for me to buy chocolate milk next Friday at 5PM.",
+      "Thank you, that's all I needed."
+    ],
+    "expected": [
+      "2025-09-19T17:00:00+00:00",
+      "2025-09-26T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "Buy chocolate milk",
+        "epoch": 1758531600.0,
+        "local": "2025-09-22T17:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-15T21:47:04.725195+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current date and time\",",
+        "completed": true
+      },
+      {
+        "details": "\"Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM next Friday \",",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "gpt_4o_mini/expert/3/add_reminder_content_and_weekday_delta_and_time",
+    "users": [
+      "Please create a reminder for me to buy chocolate milk next Friday at 5PM.",
+      "Thank you, that's all I needed."
+    ],
+    "expected": [
+      "2025-09-19T17:00:00+00:00",
+      "2025-09-26T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "Buy chocolate milk",
+        "epoch": 1758531600.0,
+        "local": "2025-09-22T17:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-15T22:01:09.196072+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current date and time\",",
+        "completed": true
+      },
+      {
+        "details": "\"Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM next Friday \",",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "gpt_4o_mini/expert/4/add_reminder_content_and_weekday_delta_and_time",
+    "users": [
+      "Please create a reminder for me to buy chocolate milk next Friday at 5PM."
+    ],
+    "expected": [
+      "2025-09-19T17:00:00+00:00",
+      "2025-09-26T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "Buy chocolate milk",
+        "epoch": 1758531600.0,
+        "local": "2025-09-22T17:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-15T22:13:32.378953+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current date and time\",",
+        "completed": true
+      },
+      {
+        "details": "\"Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM next Friday \",",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "gpt_4o_mini/expert/5/add_reminder_content_and_weekday_delta_and_time",
+    "users": [
+      "Please create a reminder for me to buy chocolate milk next Friday at 5PM.",
+      "Thank you, that's all I needed."
+    ],
+    "expected": [
+      "2025-09-19T17:00:00+00:00",
+      "2025-09-26T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "Buy chocolate milk",
+        "epoch": 1758531600.0,
+        "local": "2025-09-22T17:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-15T22:26:18.363638+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current date and time\",",
+        "completed": true
+      },
+      {
+        "details": "\"Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM next Friday \",",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "gpt_4o_mini/expert/6/add_reminder_content_and_weekday_delta_and_time",
+    "users": [
+      "Please create a reminder for me to buy chocolate milk next Friday at 5PM."
+    ],
+    "expected": [
+      "2025-09-19T17:00:00+00:00",
+      "2025-09-26T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "Buy chocolate milk",
+        "epoch": 1758531600.0,
+        "local": "2025-09-22T17:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-15T22:38:09.483552+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current date and time\",",
+        "completed": true
+      },
+      {
+        "details": "\"Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM next Friday \",",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "gpt_4o_mini/expert/7/add_reminder_content_and_weekday_delta_and_time",
+    "users": [
+      "Please create a reminder for me to buy chocolate milk next Friday at 5PM."
+    ],
+    "expected": [
+      "2025-09-19T17:00:00+00:00",
+      "2025-09-26T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "Buy chocolate milk",
+        "epoch": 1758531600.0,
+        "local": "2025-09-22T17:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-15T22:51:58.519062+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current date and time\",",
+        "completed": true
+      },
+      {
+        "details": "\"Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM next Friday \",",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "gpt_4o_mini/nonexpert/2/add_reminder_content_and_week_delta_and_time",
+    "users": [
+      "Hey, can you remind me about something tomorrow?",
+      "Oh, yeah, I just need to remember to buy chocolate milk.",
+      "Uh, I think around 5 in the afternoon would be good.",
+      "Alright, cool, thanks!"
+    ],
+    "expected": [
+      "2025-09-17T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "Buy chocolate milk",
+        "epoch": 1697878800.0,
+        "local": "2023-10-21T17:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-16T00:54:49.647852+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current time\",",
+        "completed": true
+      },
+      {
+        "details": "Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM tomorrow after retrieving the current timestamp",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "gpt_4o_mini/nonexpert/2/add_reminder_content_and_weekday_delta_and_time",
+    "users": [
+      "Hey, can you remind me to get some chocolate milk?",
+      "Oh, um, next Friday I think?",
+      "Oh, can you make it for 5PM?",
+      "Alright, cool, thanks!"
+    ],
+    "expected": [
+      "2025-09-19T17:00:00+00:00",
+      "2025-09-26T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "Get some chocolate milk",
+        "epoch": 1758548400.0,
+        "local": "2025-09-22T21:40:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-16T00:55:00.760145+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current date and time\",",
+        "completed": true
+      },
+      {
+        "details": "\"Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM next Friday \",",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "gpt_4o_mini/nonexpert/3/add_reminder_content_and_week_delta_and_time",
+    "users": [
+      "Hey, can you remind me about something tomorrow?",
+      "Oh, it's just for buying chocolate milk.",
+      "Uh, yeah, like around 5 in the afternoon."
+    ],
+    "expected": [
+      "2025-09-17T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "Buy chocolate milk",
+        "epoch": 1698656400.0,
+        "local": "2023-10-30T17:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-16T01:16:42.437779+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current time\",",
+        "completed": true
+      },
+      {
+        "details": "Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM tomorrow after retrieving the current timestamp",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "gpt_4o_mini/nonexpert/3/add_reminder_content_and_weekday_delta_and_time",
+    "users": [
+      "Hey, can you remind me to get some chocolate milk?",
+      "Oh, um, next Friday I think?",
+      "Oh, can you make it for 5PM?",
+      "Alright, cool, thanks!"
+    ],
+    "expected": [
+      "2025-09-19T17:00:00+00:00",
+      "2025-09-26T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "Get some chocolate milk",
+        "epoch": 1758548400.0,
+        "local": "2025-09-22T21:40:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-16T01:16:51.848200+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current date and time\",",
+        "completed": true
+      },
+      {
+        "details": "\"Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM next Friday \",",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "gpt_4o_mini/nonexpert/4/add_reminder_content_and_week_delta_and_time",
+    "users": [
+      "Hey, can you remind me about something tomorrow?",
+      "Oh, I just need a reminder to buy chocolate milk.",
+      "Uh, yeah, like around 5 in the evening I guess?"
+    ],
+    "expected": [
+      "2025-09-17T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "Buy chocolate milk",
+        "epoch": 1697101200.0,
+        "local": "2023-10-12T17:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-16T01:39:54.568538+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current time\",",
+        "completed": true
+      },
+      {
+        "details": "Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM tomorrow after retrieving the current timestamp",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "gpt_4o_mini/nonexpert/4/add_reminder_content_and_weekday_delta_and_time",
+    "users": [
+      "Hey, can you remind me to get some chocolate milk?",
+      "Oh, um, next Friday I think?",
+      "Oh, could you make it for like 5 in the evening?"
+    ],
+    "expected": [
+      "2025-09-19T17:00:00+00:00",
+      "2025-09-26T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "Get some chocolate milk",
+        "epoch": 1758531600.0,
+        "local": "2025-09-22T17:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-16T01:40:03.169982+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current date and time\",",
+        "completed": true
+      },
+      {
+        "details": "\"Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM next Friday \",",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "gpt_4o_mini/nonexpert/5/add_reminder_content_and_week_delta_and_time",
+    "users": [
+      "Hey, can you remind me about something tomorrow?",
+      "Oh, uh, it's for chocolate milk.",
+      "Uh, I think around 5 in the afternoon?",
+      "Alright, cool, thanks!"
+    ],
+    "expected": [
+      "2025-09-17T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "Reminder to get chocolate milk",
+        "epoch": 1698483600.0,
+        "local": "2023-10-28T17:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-16T02:08:29.554396+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current time\",",
+        "completed": true
+      },
+      {
+        "details": "Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM tomorrow after retrieving the current timestamp",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "gpt_4o_mini/nonexpert/6/add_reminder_content_and_week_delta_and_time",
+    "users": [
+      "Hey, can you remind me about something tomorrow?",
+      "Oh, yeah, I just need to remember to get some chocolate milk.",
+      "Oh, 5PM would be good.",
+      "Alright, cool, thanks!"
+    ],
+    "expected": [
+      "2025-09-17T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "Get chocolate milk",
+        "epoch": 1698742800.0,
+        "local": "2023-10-31T17:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-16T02:37:10.808013+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current time\",",
+        "completed": true
+      },
+      {
+        "details": "Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM tomorrow after retrieving the current timestamp",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "gpt_4o_mini/nonexpert/6/add_reminder_content_and_weekday_delta_and_time",
+    "users": [
+      "Hey, can you remind me to get some chocolate milk?",
+      "Oh, um, next Friday I think?",
+      "Oh, actually, could you make it for 5PM instead?",
+      "Alright, cool, thanks!"
+    ],
+    "expected": [
+      "2025-09-19T17:00:00+00:00",
+      "2025-09-26T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "Get some chocolate milk",
+        "epoch": 1758531600.0,
+        "local": "2025-09-22T17:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-16T02:37:22.173681+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current date and time\",",
+        "completed": true
+      },
+      {
+        "details": "\"Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM next Friday \",",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "gpt_4o_mini/nonexpert/7/add_reminder_content_and_week_delta_and_time",
+    "users": [
+      "Hey, can you remind me about something tomorrow?",
+      "Oh, I just need a reminder to buy chocolate milk.",
+      "Uh, can you do it for like 5 in the evening?",
+      "Alright, cool, thanks!"
+    ],
+    "expected": [
+      "2025-09-17T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "Buy chocolate milk",
+        "epoch": 1697360400.0,
+        "local": "2023-10-15T17:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-16T02:58:08.675531+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current time\",",
+        "completed": true
+      },
+      {
+        "details": "Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM tomorrow after retrieving the current timestamp",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "gpt_4o_mini/nonexpert/7/add_reminder_content_and_weekday_delta_and_time",
+    "users": [
+      "Hey, can you remind me to get some chocolate milk?",
+      "Uh, next Friday would be good.",
+      "Oh, actually, can you make it for like 5 in the afternoon instead?"
+    ],
+    "expected": [
+      "2025-09-19T17:00:00+00:00",
+      "2025-09-26T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "Get some chocolate milk",
+        "epoch": 1758531600.0,
+        "local": "2025-09-22T17:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-16T02:58:24.443825+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current date and time\",",
+        "completed": true
+      },
+      {
+        "details": "\"Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM next Friday \",",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "gpt_5/expert/3/add_reminder_content_and_date_and_time",
+    "users": [
+      "Please create a reminder for me to buy chocolate milk on March 22, 2024, at 5PM.",
+      "Please schedule the reminder for March 22, 2026, at 5PM. You can use my local time zone."
+    ],
+    "expected": [
+      "2024-03-22T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "Buy chocolate milk",
+        "epoch": 1774170000.0,
+        "local": "2026-03-22T17:00:00+00:00"
+      }
+    ],
+    "clock_local": null,
+    "subgoals": [
+      {
+        "details": "\"Agent should call datetime_info_to_timestamp to convert the provided date and time (3/22/2024 5PM) into a timestamp\",",
+        "completed": true
+      },
+      {
+        "details": "\"Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' and the timestamp 1711098000.0\",",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "gpt_5/expert/4/add_reminder_content_and_date_and_time",
+    "users": [
+      "Please create a reminder for me to buy chocolate milk on March 22, 2024, at 5PM.",
+      "Please schedule the reminder for the next available date at 5PM. Use my local time zone.",
+      "My local time zone is America/New_York.",
+      "Please go ahead and schedule the reminder for tomorrow at 5 PM ET.",
+      "Thank you, that’s all I needed."
+    ],
+    "expected": [
+      "2024-03-22T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "Buy chocolate milk",
+        "epoch": 1758358800.0,
+        "local": "2025-09-20T17:00:00+00:00"
+      }
+    ],
+    "clock_local": null,
+    "subgoals": [
+      {
+        "details": "\"Agent should call datetime_info_to_timestamp to convert the provided date and time (3/22/2024 5PM) into a timestamp\",",
+        "completed": true
+      },
+      {
+        "details": "\"Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' and the timestamp 1711098000.0\",",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "gpt_5/expert/4/add_reminder_content_and_week_delta_and_time",
+    "users": [
+      "Please create a reminder for me to buy chocolate milk tomorrow at 5PM.",
+      "I'm in the Eastern Time zone."
+    ],
+    "expected": [
+      "2025-09-21T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "Buy chocolate milk",
+        "epoch": 1758459600.0,
+        "local": "2025-09-21T21:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-20T02:27:30.315907+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current time\",",
+        "completed": true
+      },
+      {
+        "details": "Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM tomorrow after retrieving the current timestamp",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "gpt_5/expert/6/add_reminder_content_and_date_and_time",
+    "users": [
+      "Please create a reminder for me to buy chocolate milk on March 22, 2024, at 5PM.",
+      "Could you please create a reminder for me to buy chocolate milk on March 22, 2024, at 5PM?",
+      "Please go ahead and schedule the reminder for March 22, 2026, at 5 PM in my current time zone."
+    ],
+    "expected": [
+      "2024-03-22T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "Buy chocolate milk",
+        "epoch": 1774170000.0,
+        "local": "2026-03-22T17:00:00+00:00"
+      }
+    ],
+    "clock_local": null,
+    "subgoals": [
+      {
+        "details": "\"Agent should call datetime_info_to_timestamp to convert the provided date and time (3/22/2024 5PM) into a timestamp\",",
+        "completed": true
+      },
+      {
+        "details": "\"Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' and the timestamp 1711098000.0\",",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "gpt_5/expert/7/add_reminder_content_and_date_and_time",
+    "users": [
+      "Please create a reminder for me to buy chocolate milk on March 22, 2024, at 5PM.",
+      "Please set the reminder for March 22, 2026, at 5:00 PM. The time zone does not matter."
+    ],
+    "expected": [
+      "2024-03-22T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "Buy chocolate milk",
+        "epoch": 1774170000.0,
+        "local": "2026-03-22T17:00:00+00:00"
+      }
+    ],
+    "clock_local": null,
+    "subgoals": [
+      {
+        "details": "\"Agent should call datetime_info_to_timestamp to convert the provided date and time (3/22/2024 5PM) into a timestamp\",",
+        "completed": true
+      },
+      {
+        "details": "\"Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' and the timestamp 1711098000.0\",",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "mistral_large_2411/expert/2/add_reminder_content_and_week_delta_and_time",
+    "users": [
+      "Please create a reminder for me to buy chocolate milk tomorrow at 5PM."
+    ],
+    "expected": [
+      "2025-09-20T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "buy chocolate milk",
+        "epoch": 1768899600.0,
+        "local": "2026-01-20T17:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-19T01:13:05.954115+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current time\",",
+        "completed": true
+      },
+      {
+        "details": "Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM tomorrow after retrieving the current timestamp",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "mistral_large_2411/expert/2/add_reminder_content_and_weekday_delta_and_time",
+    "users": [
+      "Please create a reminder for me to buy chocolate milk next Friday at 5PM."
+    ],
+    "expected": [
+      "2025-09-26T17:00:00+00:00",
+      "2025-10-03T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "Buy chocolate milk",
+        "epoch": 1700816400.0,
+        "local": "2023-11-24T17:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-19T01:13:16.543520+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current date and time\",",
+        "completed": true
+      },
+      {
+        "details": "\"Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM next Friday \",",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "mistral_large_2411/expert/5/add_reminder_content_and_week_delta_and_time",
+    "users": [
+      "Please create a reminder for me to buy chocolate milk tomorrow at 5PM."
+    ],
+    "expected": [
+      "2025-09-20T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "Buy chocolate milk",
+        "epoch": 1760691600.0,
+        "local": "2025-10-17T17:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-19T09:15:33.366976+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current time\",",
+        "completed": true
+      },
+      {
+        "details": "Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM tomorrow after retrieving the current timestamp",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "mistral_large_2411/expert/6/add_reminder_content_and_week_delta_and_time",
+    "users": [
+      "Please create a reminder for me to buy chocolate milk tomorrow at 5PM."
+    ],
+    "expected": [
+      "2025-09-20T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "buy chocolate milk",
+        "epoch": 1729069200.0,
+        "local": "2024-10-16T17:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-19T09:37:55.161840+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current time\",",
+        "completed": true
+      },
+      {
+        "details": "Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM tomorrow after retrieving the current timestamp",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "mistral_large_2411/nonexpert/2/add_reminder_content_and_weekday_delta_and_time",
+    "users": [
+      "Hey, can you help me set a reminder?",
+      "Oh, it’s just to remind me to buy chocolate milk.",
+      "Uh, just remind me on Friday.",
+      "Um, maybe like in the evening?",
+      "Oh, actually, could you make it a bit earlier? Like around 5?"
+    ],
+    "expected": [
+      "2025-09-19T17:00:00+00:00",
+      "2025-09-26T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "buy chocolate milk",
+        "epoch": 1750496400.0,
+        "local": "2025-06-21T17:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-18T12:38:01.651747+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current date and time\",",
+        "completed": true
+      },
+      {
+        "details": "\"Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM next Friday \",",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "mistral_large_2411/nonexpert/3/add_reminder_content_and_date_and_time",
+    "users": [
+      "Hey, can you remind me to buy something later?",
+      "Oh, I just need to buy chocolate milk.",
+      "Uh, I think it’s for like, March 22nd? Around 5 in the evening.",
+      "Yeah, that sounds about right.",
+      "Alright, cool, thanks!"
+    ],
+    "expected": [
+      "2024-03-22T17:00:00+00:00"
+    ],
+    "actual": [],
+    "clock_local": null,
+    "subgoals": [
+      {
+        "details": "\"Agent should call datetime_info_to_timestamp to convert the provided date and time (3/22/2024 5PM) into a timestamp\",",
+        "completed": true
+      },
+      {
+        "details": "\"Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' and the timestamp 1711098000.0\",",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "mistral_large_2411/nonexpert/3/add_reminder_content_and_week_delta_and_time",
+    "users": [
+      "Hey, um, can you remind me about something tomorrow?",
+      "Oh, yeah, it’s to buy chocolate milk.",
+      "Oh, uh, 5PM tomorrow."
+    ],
+    "expected": [
+      "2025-09-19T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "buy chocolate milk",
+        "epoch": 1721379600.0,
+        "local": "2024-07-19T17:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-18T13:00:33.360459+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current time\",",
+        "completed": true
+      },
+      {
+        "details": "Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM tomorrow after retrieving the current timestamp",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "mistral_large_2411/nonexpert/4/add_reminder_content_and_weekday_delta_and_time",
+    "users": [
+      "Hey, can you help me set a reminder?",
+      "Oh, I just want a reminder to buy chocolate milk.",
+      "Um, I think just next Friday in the afternoon? Like around 5, I guess.",
+      "Alright, cool, thanks!"
+    ],
+    "expected": [
+      "2025-09-19T17:00:00+00:00",
+      "2025-09-26T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "buy chocolate milk",
+        "epoch": 1729414800.0,
+        "local": "2024-10-20T17:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-18T13:53:01.961939+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current date and time\",",
+        "completed": true
+      },
+      {
+        "details": "\"Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM next Friday \",",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "mistral_large_2411/nonexpert/5/add_reminder_content_and_week_delta_and_time",
+    "users": [
+      "Hey, um, can you remind me about something tomorrow?",
+      "Oh, uh, it’s for chocolate milk.",
+      "Uh, yeah, like around 5 in the afternoon, I think?",
+      "Um, yeah, just remind me tomorrow at 5 to get chocolate milk, please?"
+    ],
+    "expected": [
+      "2025-09-19T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "Chocolate Milk",
+        "epoch": 1704358800.0,
+        "local": "2024-01-04T17:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-18T14:21:11.791907+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current time\",",
+        "completed": true
+      },
+      {
+        "details": "Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM tomorrow after retrieving the current timestamp",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "mistral_large_2411/nonexpert/6/add_reminder_content_and_week_delta_and_time",
+    "users": [
+      "Hey, um, can you remind me about something tomorrow?",
+      "Oh, uh, it’s for chocolate milk.",
+      "Uh, yeah, like around 5 in the afternoon, I think?",
+      "Um, just like, 5-ish? I don’t really care about the exact minute.",
+      "Yeah, 5:00 PM is cool.",
+      "Alright, thanks! That’s all I needed."
+    ],
+    "expected": [
+      "2025-09-19T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "chocolate milk",
+        "epoch": 1704099600.0,
+        "local": "2024-01-01T17:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-18T14:51:38.920530+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current time\",",
+        "completed": true
+      },
+      {
+        "details": "Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM tomorrow after retrieving the current timestamp",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "mistral_large_2411/nonexpert/6/add_reminder_content_and_weekday_delta_and_time",
+    "users": [
+      "Hey, can you help me set a reminder?",
+      "Oh, yeah, I just want to remember to buy chocolate milk.",
+      "Um, I think next Friday? In the evening, like around 5 or so.",
+      "Alright, cool, thanks!"
+    ],
+    "expected": [
+      "2025-09-19T17:00:00+00:00",
+      "2025-09-26T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "Remember to buy chocolate milk",
+        "epoch": 1700816400.0,
+        "local": "2023-11-24T17:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-18T14:52:03.087212+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current date and time\",",
+        "completed": true
+      },
+      {
+        "details": "\"Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM next Friday \",",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "mistral_large_2411/nonexpert/7/add_reminder_content_and_week_delta_and_time",
+    "users": [
+      "Hey, um, can you remind me about something tomorrow?",
+      "Oh, yeah, I just need to remember to buy chocolate milk.",
+      "Uh, just like, 5 PM I think?"
+    ],
+    "expected": [
+      "2025-09-19T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "buy chocolate milk",
+        "epoch": 1759741200.0,
+        "local": "2025-10-06T17:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-18T15:38:09.459308+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current time\",",
+        "completed": true
+      },
+      {
+        "details": "Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM tomorrow after retrieving the current timestamp",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "mistral_large_2411/nonexpert/7/add_reminder_content_and_weekday_delta_and_time",
+    "users": [
+      "Hey, can you help me set a reminder?",
+      "Oh, um, I just need a reminder to buy chocolate milk.",
+      "Uh, yeah, I think it’s for next Friday at like 5 in the evening?",
+      "Alright, cool, thanks!"
+    ],
+    "expected": [
+      "2025-09-19T17:00:00+00:00",
+      "2025-09-26T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "buy chocolate milk",
+        "epoch": 1758260400.0,
+        "local": "2025-09-19T13:40:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-18T15:38:32.029524+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current date and time\",",
+        "completed": true
+      },
+      {
+        "details": "\"Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM next Friday \",",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "mistral_nemo/nonexpert/2/add_reminder_content_and_weekday_delta_and_time",
+    "users": [
+      "Hey, can you remind me to get some chocolate milk?",
+      "Uh, just remind me on Friday, I guess.",
+      "Uh, maybe like in the evening?",
+      "Um, maybe around 5 or so?",
+      "Cool, thanks!"
+    ],
+    "expected": [
+      "2025-09-26T17:00:00+00:00",
+      "2025-10-03T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "Get chocolate milk",
+        "epoch": 1706778000.0,
+        "local": "2024-02-01T17:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-19T11:39:49.439519+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current date and time\",",
+        "completed": true
+      },
+      {
+        "details": "\"Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM next Friday \",",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "mistral_nemo/nonexpert/4/add_reminder_content_and_week_delta_and_time",
+    "users": [
+      "Hey, can you remind me about something tomorrow?",
+      "Oh, just remind me to buy chocolate milk.",
+      "Oh, um, can you do it at like 5 in the evening?",
+      "Uh, I’m not really sure, I think it’s just regular time here?",
+      "Uh, yeah, I guess that’s fine? I’m not really sure what that means though.",
+      "Oh, okay. Um, just as long as I get the reminder tomorrow at 5, that’s fine.",
+      "Yeah, sure, go ahead and make a new one.",
+      "Just remind me to buy chocolate milk."
+    ],
+    "expected": [
+      "2025-09-20T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "buy chocolate milk",
+        "epoch": 1695158400.0,
+        "local": "2023-09-20T05:20:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-19T12:43:17.010727+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current time\",",
+        "completed": true
+      },
+      {
+        "details": "Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM tomorrow after retrieving the current timestamp",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "mistral_nemo/nonexpert/5/add_reminder_content_and_week_delta_and_time",
+    "users": [
+      "Hey, can you remind me about something tomorrow?",
+      "Oh, it's just for buying chocolate milk.",
+      "Oh, actually, could you make it for 5PM instead?",
+      "Alright, cool, thanks. I think that's all I needed."
+    ],
+    "expected": [
+      "2025-09-20T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "Buy chocolate milk",
+        "epoch": 1723712400.0,
+        "local": "2024-08-15T17:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-19T13:16:16.598788+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current time\",",
+        "completed": true
+      },
+      {
+        "details": "Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM tomorrow after retrieving the current timestamp",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "mistral_nemo/nonexpert/6/add_reminder_content_and_week_delta_and_time",
+    "users": [
+      "Hey, can you remind me about something tomorrow?",
+      "Oh, just remind me to get some chocolate milk.",
+      "Uh, yeah, 5 o’clock should be good."
+    ],
+    "expected": [
+      "2025-09-20T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "Get chocolate milk",
+        "epoch": 1717491600.0,
+        "local": "2024-06-04T17:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-19T13:46:32.282456+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current time\",",
+        "completed": true
+      },
+      {
+        "details": "Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM tomorrow after retrieving the current timestamp",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "mistral_nemo/nonexpert/7/add_reminder_content_and_week_delta_and_time",
+    "users": [
+      "Hey, can you remind me about something tomorrow?",
+      "Oh, I just need to remember to buy some chocolate milk.",
+      "Oh, um, around 5 in the evening, I think.",
+      "Alright, cool, thanks!"
+    ],
+    "expected": [
+      "2025-09-20T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "buy some chocolate milk",
+        "epoch": 1704099600.0,
+        "local": "2024-01-01T17:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-19T14:23:26.240073+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current time\",",
+        "completed": true
+      },
+      {
+        "details": "Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM tomorrow after retrieving the current timestamp",
+        "completed": true
+      }
+    ]
+  },
+  {
+    "key": "mistral_nemo/nonexpert/7/add_reminder_content_and_weekday_delta_and_time",
+    "users": [
+      "Hey, can you remind me to get some chocolate milk?",
+      "Uh, next Friday I think.",
+      "Oh, um, around 5 I guess.",
+      "Yeah, that’s right.",
+      "Yeah, that’s what I want.",
+      "Alright, cool, thanks!"
+    ],
+    "expected": [
+      "2025-09-26T17:00:00+00:00",
+      "2025-10-03T17:00:00+00:00"
+    ],
+    "actual": [
+      {
+        "content": "Get chocolate milk",
+        "epoch": 1726218000.0,
+        "local": "2024-09-13T17:00:00+00:00"
+      }
+    ],
+    "clock_local": "2025-09-19T14:24:09.744843+00:00",
+    "subgoals": [
+      {
+        "details": "\"Agent should call get_current_timestamp to retrieve the current date and time\",",
+        "completed": true
+      },
+      {
+        "details": "\"Agent should call add_reminder to create a reminder with the content 'Buy chocolate milk' at 5PM next Friday \",",
+        "completed": true
+      }
+    ]
+  }
+]

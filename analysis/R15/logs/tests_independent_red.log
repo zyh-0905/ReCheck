@@ -1,0 +1,38 @@
+test_following_friday_allowed (test_independent_numeric.IndependentNumericTests.test_following_friday_allowed) ... ok
+test_imprecise_minutes_not_calendar_error (test_independent_numeric.IndependentNumericTests.test_imprecise_minutes_not_calendar_error) ... ok
+test_near_friday_allowed (test_independent_numeric.IndependentNumericTests.test_near_friday_allowed) ... ok
+test_no_user_target_claim (test_independent_numeric.IndependentNumericTests.test_no_user_target_claim) ... FAIL
+test_past_not_tomorrow (test_independent_numeric.IndependentNumericTests.test_past_not_tomorrow) ... FAIL
+test_saturday_not_friday (test_independent_numeric.IndependentNumericTests.test_saturday_not_friday) ... FAIL
+
+======================================================================
+FAIL: test_no_user_target_claim (test_independent_numeric.IndependentNumericTests.test_no_user_target_claim)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R15_Effect_Coverage/tests/test_independent_numeric.py", line 14, in test_no_user_target_claim
+    def test_no_user_target_claim(self):self.assertIsNone(calendar_violation(epoch(2025,9,16),epoch(2025,9,20),28800,'unsupported'))
+                                        ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not None
+
+======================================================================
+FAIL: test_past_not_tomorrow (test_independent_numeric.IndependentNumericTests.test_past_not_tomorrow)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R15_Effect_Coverage/tests/test_independent_numeric.py", line 9, in test_past_not_tomorrow
+    def test_past_not_tomorrow(self):self.assertTrue(calendar_violation(epoch(2025,9,16),epoch(2023,10,17),28800,'tomorrow'))
+                                     ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_saturday_not_friday (test_independent_numeric.IndependentNumericTests.test_saturday_not_friday)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R15_Effect_Coverage/tests/test_independent_numeric.py", line 10, in test_saturday_not_friday
+    def test_saturday_not_friday(self):self.assertTrue(calendar_violation(epoch(2025,9,16),epoch(2025,9,20),28800,'friday'))
+                                       ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+FAILED (failures=3)

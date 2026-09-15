@@ -1,0 +1,23 @@
+{
+  "base_registered_items": 129,
+  "expanded_registered_items": 1032,
+  "factory_counts": {
+    "named_single_tool_call_scenarios": 19,
+    "named_multiple_tool_call_scenarios": 54,
+    "named_multiple_user_turn_scenarios": 28,
+    "named_insufficient_information_scenarios": 28
+  },
+  "candidate_class_counts": {
+    "terminal_effect_candidate": 42,
+    "terminal_setting_candidate": 8,
+    "information_only": 36,
+    "information_with_transient_prerequisites": 14,
+    "ordered_revised_effects": 1,
+    "insufficient_information_policy": 28
+  },
+  "has_explicit_state_constraint": 65,
+  "with_setting_prerequisite_candidates": 19,
+  "independent_human_semantic_labels": 0,
+  "executed_model_episodes": 0,
+  "counts_are_not_independent_task_families": true
+}

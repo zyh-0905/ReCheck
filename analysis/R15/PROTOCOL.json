@@ -1,0 +1,33 @@
+{
+  "phase": "R15_PUBLIC_EFFECT_COVERAGE_EXTENSION_01",
+  "input_sha256": "22eae5e31183ca4e109bd13ed5f6b79f082a6e81511f1ae0dfd38f83499a6dd6",
+  "tasks": [
+    "add_reminder_content_and_date_and_time",
+    "add_reminder_content_and_week_delta_and_time",
+    "add_reminder_content_and_weekday_delta_and_time",
+    "send_message_with_phone_number_and_content",
+    "send_message_with_contact_content_cellular_off",
+    "modify_contact_with_message_recency"
+  ],
+  "development_trials": [
+    0,
+    1
+  ],
+  "frozen_application_trials": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "partition_note": "Same previously ingested corpus and task families; not independent held-out tasks or external preregistration. R14 already read structural and source-score metadata for all records.",
+  "primary": "Record-observed local effects and temporal regression, source score kept separate. No LLM-judge outputs used to determine correct state.",
+  "reminder_time": "Only derive wall-clock mapping from paired native conversion receipts; anchor relative dates to first paired get_current_timestamp. Without adequate clock evidence use UNKNOWN. Next Friday accepts the next strictly future Friday and the following Friday as an ambiguity-tolerant compatibility check.",
+  "send_semantics": "New outgoing matching message relative to initial table; sending is an event, not an unbounded persistence invariant. Terminal message presence is separately reported.",
+  "contact_recency": "Target selected from initial latest outgoing message from the unique self contact, not from an incoming message and not from evaluator label.",
+  "secondary": "Protected initial records unchanged; unexpected newly-created objects and target-reversion candidates are for source-level review, not automatic misconduct labels.",
+  "stop": "No new paid sampling, no source-score replacement, no task selection based on results, do not convert unknowns into failures.",
+  "content_note": "After trial0–1 development, use documented limited paraphrase recognition. Unrecognized wording becomes UNKNOWN, not an error; strict text-normalized dev_v1 results are retained as superseded development outputs.",
+  "source_full_mismatch_note": "Automatic candidates require raw user/date/call/snapshot review; a local false predicate alone is not a certified entire-task error. Correct content topic does not certify every part of communication."
+}

@@ -1,0 +1,30 @@
+test_friend_set_case (test_corpus_audit.SemanticTests.test_friend_set_case) ... ok
+test_name_case_whitespace (test_corpus_audit.SemanticTests.test_name_case_whitespace) ... ok
+test_relationship_case_is_not_semantic_failure (test_corpus_audit.SemanticTests.test_relationship_case_is_not_semantic_failure) ... ok
+test_authorized_final_friend_separate (test_corpus_audit.Tests.test_authorized_final_friend_separate) ... ok
+test_bool_type_str (test_corpus_audit.Tests.test_bool_type_str) ... ok
+test_conflicting_batch_snapshots_unknown (test_corpus_audit.Tests.test_conflicting_batch_snapshots_unknown) ... ok
+test_duplicate_call (test_corpus_audit.Tests.test_duplicate_call) ... ok
+test_final_loss (test_corpus_audit.Tests.test_final_loss) ... ok
+test_final_unknown (test_corpus_audit.Tests.test_final_unknown) ... ok
+test_missing_receipt (test_corpus_audit.Tests.test_missing_receipt) ... ok
+test_missing_setting_not_false (test_corpus_audit.Tests.test_missing_setting_not_false) ... ok
+test_missing_target_is_false (test_corpus_audit.Tests.test_missing_target_is_false) ... ok
+test_mutation_without_snapshot_unknown (test_corpus_audit.Tests.test_mutation_without_snapshot_unknown) ... ok
+test_never_true (test_corpus_audit.Tests.test_never_true) ... ok
+test_no_infer_across_unknown (test_corpus_audit.Tests.test_no_infer_across_unknown) ... ok
+test_no_vacuous_empty_friends (test_corpus_audit.Tests.test_no_vacuous_empty_friends) ... ok
+test_non_goal_low_battery (test_corpus_audit.Tests.test_non_goal_low_battery) ... ok
+test_orphan_receipt (test_corpus_audit.Tests.test_orphan_receipt) ... ok
+test_receipt_order_batch (test_corpus_audit.Tests.test_receipt_order_batch) ... ok
+test_regression_repaired (test_corpus_audit.Tests.test_regression_repaired) ... ok
+test_replace_not_merge (test_corpus_audit.Tests.test_replace_not_merge) ... ok
+test_retreat (test_corpus_audit.Tests.test_retreat) ... ok
+test_tool_error_preserves_known (test_corpus_audit.Tests.test_tool_error_preserves_known) ... ok
+test_wifi_false (test_corpus_audit.Tests.test_wifi_false) ... ok
+test_wifi_true (test_corpus_audit.Tests.test_wifi_true) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 0.001s
+
+OK

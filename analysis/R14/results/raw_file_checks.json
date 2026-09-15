@@ -1,0 +1,765 @@
+[
+  {
+    "path": "README.md",
+    "bytes": 4633,
+    "sha256": "5731a6b5bc0d3156f45854904bdf85f97c33f3bca649f5a738d5f58ab351a619",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_4_1/expert/trial_0_results.json",
+    "bytes": 1697332,
+    "sha256": "2285faadb44c01986d2fb12aa17585ef6ca5507a9889a689adc1ae3522ab505c",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_4_1/expert/trial_1_results.json",
+    "bytes": 1710469,
+    "sha256": "0a4203aed0a4a2b99d3b354716e517d473846bfc494bf68048af1bb9cd6282eb",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_4_1/expert/trial_2_results.json",
+    "bytes": 1725120,
+    "sha256": "0394593e076a10655f820edc706d3a71cd051aee0f8c8ab06b4b3c6c81059b57",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_4_1/expert/trial_3_results.json",
+    "bytes": 1681487,
+    "sha256": "042fc72e504db109eab3e483485da7d849d8d545975880e923fb602b628cc68e",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_4_1/expert/trial_4_results.json",
+    "bytes": 1739565,
+    "sha256": "416bcd845152c3a4b572f2edc7efbe20813401bae1ba760423d47ab12e18e0db",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_4_1/expert/trial_5_results.json",
+    "bytes": 1780425,
+    "sha256": "ab4e5d5e289cb55c5121542b4feaa7e369dc9b25d0ce1e4bfbee7f3e1a7f2bbb",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_4_1/expert/trial_6_results.json",
+    "bytes": 1660712,
+    "sha256": "07ca94ce3541a1198f0a183360fa1645fdb1547fb02cad30f6d9873f352478d9",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_4_1/expert/trial_7_results.json",
+    "bytes": 1707534,
+    "sha256": "577b002e66465f4fa53e79e619faa28c60f7eebe5251be1f886cbf0a341b7aa9",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_4_1/expert/aggregate_metrics_results.json",
+    "bytes": 12476,
+    "sha256": "0f07dc9b54f653db96ac495503993c3fa198d4ab9a8c140518adebf4470502b5",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_4_1/nonexpert/trial_0_results.json",
+    "bytes": 1777610,
+    "sha256": "9716a20c47381cd9878452c49886063bc8456aeec49070f3612dcc000e097d1f",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_4_1/nonexpert/trial_1_results.json",
+    "bytes": 1858286,
+    "sha256": "c7480abb58bf9b7a597b3ebcf7a324d27a6ec7e21b3dd2593ea234c83da7c7ee",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_4_1/nonexpert/trial_2_results.json",
+    "bytes": 1821680,
+    "sha256": "3d9acf04c19fb9d5a153efaa447b609b40a317efb1ad999c52da8f921311d074",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_4_1/nonexpert/trial_3_results.json",
+    "bytes": 1771838,
+    "sha256": "c3519fa609a830d4e3572eca01535ab58952c3181143bbb4254a163d698a850e",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_4_1/nonexpert/trial_4_results.json",
+    "bytes": 1882962,
+    "sha256": "bedc8847a295af52181612013275d557142c7bf8b4693d58dcfc3ac26471f48e",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_4_1/nonexpert/trial_5_results.json",
+    "bytes": 1888670,
+    "sha256": "48153bc687aa260e4a871b17fbfefe43b97e2398eafac50a0e1bc025610cf64f",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_4_1/nonexpert/trial_6_results.json",
+    "bytes": 1935434,
+    "sha256": "7d59e1257b58503068abb0fe1a072168324dbed0cb7048d361e5d9bfc2c52055",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_4_1/nonexpert/trial_7_results.json",
+    "bytes": 1901558,
+    "sha256": "bc26063714086a629219fa9f9d566427825ee18c306e9a3f54b1ab6be21f7a0c",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_4_1/nonexpert/aggregate_metrics_results.json",
+    "bytes": 12601,
+    "sha256": "c7de2b603dfe9f579943a618baab04608e5b24c931a6882c68433fb2726f7614",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_4o/expert/trial_0_results.json",
+    "bytes": 1594924,
+    "sha256": "4d22949c53b60ea23e62137276f11ba4338bd16799a05c831bbf37fa000a0945",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_4o/expert/trial_1_results.json",
+    "bytes": 1612364,
+    "sha256": "0992517a01d4e16bb6dad77e1c066db86da07adf70ac4c836ac8b3e17480a5e2",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_4o/expert/trial_2_results.json",
+    "bytes": 1597996,
+    "sha256": "fcbeca75972c9758a0998927d363c8c3cf6aebea15873e931b0f0f6149fc4f39",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_4o/expert/trial_3_results.json",
+    "bytes": 1612702,
+    "sha256": "e7e3303d0979f8bf0c93fe5e780ace7a86ff10a31feb106285dab49da6daeaa8",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_4o/expert/trial_4_results.json",
+    "bytes": 1654105,
+    "sha256": "92d7d12e7160cf540be8c245375830d051cf355660cba0a764fe846f0bd6231b",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_4o/expert/trial_5_results.json",
+    "bytes": 1626110,
+    "sha256": "30cfb0141c8c60562f3a6b07cda194cd9ddd19e1d92da99c5ef1a952b6d2acb4",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_4o/expert/trial_6_results.json",
+    "bytes": 1605858,
+    "sha256": "5d6d4ca21efc1fe12e9744101f691198b87f2af575d0effaa9b3a5f07c7094b5",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_4o/expert/trial_7_results.json",
+    "bytes": 1648246,
+    "sha256": "4e7382cf0896aa1aa22b9de16a974ad1d9ce1cf07ebd67de04a5cd82e1da9aa8",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_4o/expert/aggregate_metrics_results.json",
+    "bytes": 12332,
+    "sha256": "2d0de5bf73550e77625a10311fd9ed2ef533452c427b7f75b9d18a14d36d4155",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_4o/nonexpert/trial_0_results.json",
+    "bytes": 1686005,
+    "sha256": "2389cba9d0fcf58e34e547ca07dfdf35d38907ee7cd59fe36f29252cce204d4a",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_4o/nonexpert/trial_1_results.json",
+    "bytes": 1721365,
+    "sha256": "5dcae55423b843826caf7a3a86df459f47524cd9765891d345ab505b39262664",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_4o/nonexpert/trial_2_results.json",
+    "bytes": 1737399,
+    "sha256": "1c9e5f5851de6805ba73975c8838291447acaeff5e5a5cad76e99e45f4de05a5",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_4o/nonexpert/trial_3_results.json",
+    "bytes": 1732449,
+    "sha256": "5dffa40d36a5d22f3295b59ccbe942066747411d64ea417aa08f4508cc153dc5",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_4o/nonexpert/trial_4_results.json",
+    "bytes": 1717987,
+    "sha256": "0fa8666303ff9b4e203b4302d9f5b4845b52a2e54dc1d2afca7e02d56e881af4",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_4o/nonexpert/trial_5_results.json",
+    "bytes": 1854114,
+    "sha256": "94f0da2a827e594de2399399c9e2c0b3911f1bc456d2069e12e48fb8488cf152",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_4o/nonexpert/trial_6_results.json",
+    "bytes": 1764633,
+    "sha256": "0fc957b390bbc50ef27199510efc4cf7cf1ca2442a0b61dd1181c22069b215ea",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_4o/nonexpert/trial_7_results.json",
+    "bytes": 1733787,
+    "sha256": "27c09dbe740a7da9bd7622c76aea2e1ac64901186cf9857b07bdbef26d014073",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_4o/nonexpert/aggregate_metrics_results.json",
+    "bytes": 12455,
+    "sha256": "60e7fa0a4d982886f34282b22331bae584c322f6a6caf9514d83405b6d10202c",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_4o_mini/expert/trial_0_results.json",
+    "bytes": 1541353,
+    "sha256": "cc57d3d0f7318ce34b6f13858111a9a41c98de830075e5d4fa9b00d8278faf11",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_4o_mini/expert/trial_1_results.json",
+    "bytes": 1588072,
+    "sha256": "021bdb5d70221d27905d986dcab218688542ab41bef591dba453826b4828f82e",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_4o_mini/expert/trial_2_results.json",
+    "bytes": 1577343,
+    "sha256": "34602509652e70ac9b57c4c70b127610fee608e61e370ef6458990c6f0b15c7b",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_4o_mini/expert/trial_3_results.json",
+    "bytes": 1576985,
+    "sha256": "88efcf5bd3802bf1e6b6f25d87e8c4cdabfe945d4f695f8d25645b912e7c132f",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_4o_mini/expert/trial_4_results.json",
+    "bytes": 1588572,
+    "sha256": "369a7ab0d090ed4b701ded02c0aaaa62bccad30adb7b76ee91da8bbcf6551297",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_4o_mini/expert/trial_5_results.json",
+    "bytes": 1571652,
+    "sha256": "3f5d6bdb2dd1dd421fb8d7de5aecf6c1f90d3d1677883b33ab235f2bd3d4b3e8",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_4o_mini/expert/trial_6_results.json",
+    "bytes": 1576612,
+    "sha256": "f11229774b748d9b7e48c0f9e904528a7ceabf39ca01b5fbcf74b6b52591a6b9",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_4o_mini/expert/trial_7_results.json",
+    "bytes": 1575256,
+    "sha256": "1883e6dafb4a891597271c11becfa8620d5f2bad0cab2e67e99bad467e962ca3",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_4o_mini/expert/aggregate_metrics_results.json",
+    "bytes": 12359,
+    "sha256": "ecd2c0e1117e6c91a634b713e062d85e3cc45d10668d6c90ce179b0e8129cc7a",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_4o_mini/nonexpert/trial_0_results.json",
+    "bytes": 1699385,
+    "sha256": "bfefc0661b3ddf5d857c66aaf6347845a9af96ce8a24f8d81e0384b0773a2125",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_4o_mini/nonexpert/trial_1_results.json",
+    "bytes": 1760039,
+    "sha256": "5ea3401d013d0e268493ba9b538336cdc6b869fd8327c93cc7bad1719e2282fd",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_4o_mini/nonexpert/trial_2_results.json",
+    "bytes": 1702118,
+    "sha256": "4c9bbd1fe059313aa85d5e0398f13daf81eed86cce952440b0f1399ae0be89f7",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_4o_mini/nonexpert/trial_3_results.json",
+    "bytes": 1678766,
+    "sha256": "1df3d096e0da184756c29bf4e3aaf5b62ed83ac38a01e6e6ea75f340fe259a15",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_4o_mini/nonexpert/trial_4_results.json",
+    "bytes": 1763985,
+    "sha256": "7f23cfda8a0084d4603f8a5b7dfc1db84f85d955a62fe34d8cf4a586c5779deb",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_4o_mini/nonexpert/trial_5_results.json",
+    "bytes": 1709237,
+    "sha256": "ae3a0300afbefbe1c43395eb7107694e73263c39cd35ee1ee0a3d8d9039f3062",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_4o_mini/nonexpert/trial_6_results.json",
+    "bytes": 1694700,
+    "sha256": "176e3175cfc8b9273e2024925d6e75f346529e9bd30514f109f2f8007257d757",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_4o_mini/nonexpert/trial_7_results.json",
+    "bytes": 1800727,
+    "sha256": "f8bd8a37b4e3d7cb8938cf3ed5fdac00d081c59676b2d45dbbfa9261fd2e206c",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_4o_mini/nonexpert/aggregate_metrics_results.json",
+    "bytes": 12502,
+    "sha256": "5703173853853203e6f97ec002c73ac6e9b28ac5597a0548731575bce6b1a455",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_5/expert/trial_0_results.json",
+    "bytes": 1788391,
+    "sha256": "e2c46b7738ef435a5707018ab85711441908d25d9a0efeee458496c5a800ee95",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_5/expert/trial_1_results.json",
+    "bytes": 1705146,
+    "sha256": "7826a4457e200375e51bf5fd3be3bb4196539b028262b45f56df392a72de07b7",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_5/expert/trial_2_results.json",
+    "bytes": 1634546,
+    "sha256": "e778f831bad73ddf253d3391e0a3daf16faa7328a494a5f1d4140c1af143e939",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_5/expert/trial_3_results.json",
+    "bytes": 1709447,
+    "sha256": "403e26a1e60300e387e962899e9750d8fc0e05d3987fb00d4afabebc106bbc62",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_5/expert/trial_4_results.json",
+    "bytes": 1701767,
+    "sha256": "05f836baafea6cd3e956844b30b0e2b5f36e6acfc8468baeaad825427b9687d7",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_5/expert/trial_5_results.json",
+    "bytes": 1719587,
+    "sha256": "6336206d311e869575104a86bdf421f1ebf6167a676b23bbc93c2ef6a6e778ca",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_5/expert/trial_6_results.json",
+    "bytes": 1856940,
+    "sha256": "34673a15bf9a9b284f46b7186957027e678400f4282d7990e4fc591f40769dce",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_5/expert/trial_7_results.json",
+    "bytes": 1574684,
+    "sha256": "176cc8ceea8a4fef5ac5af2e84ae00a0826091f68ff3be8811834b5dd4a79e28",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_5/expert/aggregate_metrics_results.json",
+    "bytes": 12520,
+    "sha256": "1c188267f4cea5146d33c87e0df7e92e98465256dcdee53a22bac4441799e3d5",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_5/nonexpert/trial_0_results.json",
+    "bytes": 2147451,
+    "sha256": "e7b92605fc325c32b7cb988ce2ad81a9f4764587e6a9f0dc0f73c0e19ffdf174",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_5/nonexpert/trial_1_results.json",
+    "bytes": 2119611,
+    "sha256": "f747c5ece47dd8f7530490a7e93c0ebd771da66b26ee13e42b22ad9f933c65d6",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_5/nonexpert/trial_2_results.json",
+    "bytes": 1992708,
+    "sha256": "55130d5678401de2ed933b9619b1f52da78e916ac7f49f8877f69677f208b7a6",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_5/nonexpert/trial_3_results.json",
+    "bytes": 2106655,
+    "sha256": "0e7fb7ba38f14398f1e1e3f5263dd81f5db86f3f60aad204f8c727c8389fc9ec",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_5/nonexpert/trial_4_results.json",
+    "bytes": 1999879,
+    "sha256": "3c9c6abdedcf19193381583cd88e5101bb7f3899518f4ff9e98dd6c71e8f322b",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_5/nonexpert/trial_5_results.json",
+    "bytes": 2162982,
+    "sha256": "94247b7bfb22f67c02ce7a9742454081360d8b170e63301b7113a57701778190",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_5/nonexpert/trial_6_results.json",
+    "bytes": 1962451,
+    "sha256": "ba69e1bc66519e3607c9778bb7c2c755a80055aaa7c9ea76267e994aa8c8016f",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_5/nonexpert/trial_7_results.json",
+    "bytes": 2059814,
+    "sha256": "a070ca9535877d59c92fc1a34414f6718194dbb6bdd8739825982040d197b91e",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/gpt_5/nonexpert/aggregate_metrics_results.json",
+    "bytes": 12554,
+    "sha256": "b0ece8bdfb275ee592bc00a7c6f74cc26ca897316012a81c375cc3d91ba0c47e",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/mistral_large_2411/expert/trial_0_results.json",
+    "bytes": 1676870,
+    "sha256": "b298ece1784c1f1b0dd9188e03caa9013ea1626e342e73f1abab10faabaaf9c4",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/mistral_large_2411/expert/trial_1_results.json",
+    "bytes": 1568277,
+    "sha256": "4cf63b49956e3fca61970571ccd58747a3b7546ea2e28c0bd8d64e00701dcd7b",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/mistral_large_2411/expert/trial_2_results.json",
+    "bytes": 1627761,
+    "sha256": "ac7864e5fc98df38b77e087ed0ce8f4d895f95762588a319940026287f957d7d",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/mistral_large_2411/expert/trial_3_results.json",
+    "bytes": 1692175,
+    "sha256": "fc0d8d87811fe863fd1cb0685673d15af6a982d609426cffd8a90cde263e12b5",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/mistral_large_2411/expert/trial_4_results.json",
+    "bytes": 1670232,
+    "sha256": "ef3485699033baf93d2ebcab30213905079eef09c70b2698ee75dde8ec4e8c8f",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/mistral_large_2411/expert/trial_5_results.json",
+    "bytes": 1602333,
+    "sha256": "575469c75188c9d3c5207fac400d4040b279e720ad4bbab5e5894852b64b0ab3",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/mistral_large_2411/expert/trial_6_results.json",
+    "bytes": 1626094,
+    "sha256": "fb6a13b11924b44728f393b2fdf41ebf184def8b0998382cc058b302f425face",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/mistral_large_2411/expert/trial_7_results.json",
+    "bytes": 1579852,
+    "sha256": "34a7d195e139b81e7fbb041d5afc2ec952e5e76c46d19d9fdd995aa2bec469a1",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/mistral_large_2411/expert/aggregate_metrics_results.json",
+    "bytes": 12447,
+    "sha256": "d0eb91dd3c8751e5f16075166bc903ff64ed02568f317aedb86f33c3c1bd4bdd",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/mistral_large_2411/nonexpert/trial_0_results.json",
+    "bytes": 1695243,
+    "sha256": "e738ebc99b107ef16e6683dc2418f67df5e6c4d0a4bbca8cb61eee2d8b362400",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/mistral_large_2411/nonexpert/trial_1_results.json",
+    "bytes": 1722091,
+    "sha256": "4a3206198be342eb2f1f990ab1da8e51ab3bee92daae25a050afd09424ddd113",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/mistral_large_2411/nonexpert/trial_2_results.json",
+    "bytes": 1662782,
+    "sha256": "29d7f640ebe920f7a84e4d439d4eb001b7f93b77c3ee58554374563befc40878",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/mistral_large_2411/nonexpert/trial_3_results.json",
+    "bytes": 1655645,
+    "sha256": "4e66bbd4f63dc5a949422dc434159980973e3d101d6c9331f37a93a94a0dec3b",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/mistral_large_2411/nonexpert/trial_4_results.json",
+    "bytes": 1759169,
+    "sha256": "d017712181d519a2f42866b4f5c9df15a66a0ad80b1655b1b18cda49c3a5008e",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/mistral_large_2411/nonexpert/trial_5_results.json",
+    "bytes": 1764816,
+    "sha256": "725d1343ab12d4299350fc9a615d409287a70bce3fedde35755baa58f9c1f685",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/mistral_large_2411/nonexpert/trial_6_results.json",
+    "bytes": 1831534,
+    "sha256": "0ec5fa13c8d63e3db1a28eced11becf54c9a69e1ac6249468254c72bdb3f36ae",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/mistral_large_2411/nonexpert/trial_7_results.json",
+    "bytes": 1762247,
+    "sha256": "2997d9934113a17f0c9c12c27b2db0cc21c2ee62a931b60d4d9d0e7f209865c1",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/mistral_large_2411/nonexpert/aggregate_metrics_results.json",
+    "bytes": 12579,
+    "sha256": "99e8cc1d3cb4f39e72254f1fc7a808f352012e4681e632ce8c767814d133e2ff",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/mistral_nemo/expert/trial_0_results.json",
+    "bytes": 1733484,
+    "sha256": "82cad4d2f15f6a22bc35bebecd25d12e94cf8d6f5382fddf21148d5df9fe3f11",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/mistral_nemo/expert/trial_1_results.json",
+    "bytes": 1738524,
+    "sha256": "dc7071b0c19a4fbe565462f2460517452d396d54c59501ef68cebb7b0f96e7aa",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/mistral_nemo/expert/trial_2_results.json",
+    "bytes": 1717120,
+    "sha256": "5e9f55df8107ab7e536efa0adacda299a4cd81351cf1edafa3c826235b96de12",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/mistral_nemo/expert/trial_3_results.json",
+    "bytes": 1754162,
+    "sha256": "d294f1661a37d3fc473b374e0c589c09aaca988482e22a34e3766cab54d91d3b",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/mistral_nemo/expert/trial_4_results.json",
+    "bytes": 1844994,
+    "sha256": "3fb7fa71640c87e4b27cf9c4710555930ca202164e4265e01bf7ca238adb4e6e",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/mistral_nemo/expert/trial_5_results.json",
+    "bytes": 1742567,
+    "sha256": "f608691ea8d510d73fd48ea9b2ea47f9b91a30574936c70fe76b4021f035b896",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/mistral_nemo/expert/trial_6_results.json",
+    "bytes": 1754574,
+    "sha256": "1f8e35fd34501053985db7a31227f773d62f32237fa34b713353f49b432f6edf",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/mistral_nemo/expert/trial_7_results.json",
+    "bytes": 1726128,
+    "sha256": "707b791c40203f044691826fe797b9af93d207ac121f1e9592fede5389db11fb",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/mistral_nemo/expert/aggregate_metrics_results.json",
+    "bytes": 12567,
+    "sha256": "7436ffcfdfabf12e86e9e040fa6ca34ce63127a9d395dc658e919c2f8d8f2be6",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/mistral_nemo/nonexpert/trial_0_results.json",
+    "bytes": 1756521,
+    "sha256": "d938218b6bf9d420125e8fcd5d1b03b4bb884e8c25f7c0354945d844bf2c8c0e",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/mistral_nemo/nonexpert/trial_1_results.json",
+    "bytes": 1846032,
+    "sha256": "a35fdf33650f6a02331ba499633cf78c9151bcf51c48dcedc07bf7c7134ef2b1",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/mistral_nemo/nonexpert/trial_2_results.json",
+    "bytes": 1787769,
+    "sha256": "5eb7a86d1c2993e38822dec32dd00750cbdfb3ac2940c31e466475159e4bae28",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/mistral_nemo/nonexpert/trial_3_results.json",
+    "bytes": 1761306,
+    "sha256": "a6155da8a2c54f8e9960c2ae3dfe838707be7676f51d926e4bb87a0e4dda7119",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/mistral_nemo/nonexpert/trial_4_results.json",
+    "bytes": 1803902,
+    "sha256": "06a3210e65d39e94c968a2e1333962ecf628d8cf2cbb6a99db638480175b8aff",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/mistral_nemo/nonexpert/trial_5_results.json",
+    "bytes": 1750906,
+    "sha256": "225f0e7cfaced70fd4f41c88b82d866ddc790de13c42b26ccd115468417bd8a0",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/mistral_nemo/nonexpert/trial_6_results.json",
+    "bytes": 1851573,
+    "sha256": "dcf4f55320085b856c4fd68668187216ad5e5dbbe9bb33ec8b6acb350fa7719c",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/mistral_nemo/nonexpert/trial_7_results.json",
+    "bytes": 1743920,
+    "sha256": "1ab9b506ea9d9a6229d49969b3fdb6bb24876b2f1afbbcfbc58bf154b20e7ec5",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  },
+  {
+    "path": "toolsandbox/mistral_nemo/nonexpert/aggregate_metrics_results.json",
+    "bytes": 12723,
+    "sha256": "5109be9aa972af6ab25a937fee2e56cd5b32437c2a8c8135a1d1a5aeecc94d76",
+    "etag_equals_git_blob_sha1": true,
+    "response_commit_matches": true
+  }
+]

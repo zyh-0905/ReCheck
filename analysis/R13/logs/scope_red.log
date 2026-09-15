@@ -1,0 +1,317 @@
+test_always_not_eventual (test_scope_logic.ScopeTests.test_always_not_eventual) ... ERROR
+test_and_bad_type (test_scope_logic.ScopeTests.test_and_bad_type) ... ERROR
+test_and_false (test_scope_logic.ScopeTests.test_and_false) ... ERROR
+test_and_true (test_scope_logic.ScopeTests.test_and_true) ... ERROR
+test_and_unknown (test_scope_logic.ScopeTests.test_and_unknown) ... ERROR
+test_bool_not_index (test_scope_logic.ScopeTests.test_bool_not_index) ... ERROR
+test_empty_and_unknown (test_scope_logic.ScopeTests.test_empty_and_unknown) ... ERROR
+test_empty_rejected (test_scope_logic.ScopeTests.test_empty_rejected) ... ERROR
+test_end_beyond (test_scope_logic.ScopeTests.test_end_beyond) ... ERROR
+test_eventual_reverted (test_scope_logic.ScopeTests.test_eventual_reverted) ... ERROR
+test_false_dominates_always (test_scope_logic.ScopeTests.test_false_dominates_always) ... ERROR
+test_integer_not_boolean (test_scope_logic.ScopeTests.test_integer_not_boolean) ... ERROR
+test_known_witness (test_scope_logic.ScopeTests.test_known_witness) ... ERROR
+test_missing_final (test_scope_logic.ScopeTests.test_missing_final) ... ERROR
+test_mode_validation (test_scope_logic.ScopeTests.test_mode_validation) ... ERROR
+test_negative_start (test_scope_logic.ScopeTests.test_negative_start) ... ERROR
+test_repair_final (test_scope_logic.ScopeTests.test_repair_final) ... ERROR
+test_repair_not_invariant (test_scope_logic.ScopeTests.test_repair_not_invariant) ... ERROR
+test_retired_goal (test_scope_logic.ScopeTests.test_retired_goal) ... ERROR
+test_reverse_interval (test_scope_logic.ScopeTests.test_reverse_interval) ... ERROR
+test_revision_only_after_activation (test_scope_logic.ScopeTests.test_revision_only_after_activation) ... ERROR
+test_string_not_boolean (test_scope_logic.ScopeTests.test_string_not_boolean) ... ERROR
+test_terminal_reverted (test_scope_logic.ScopeTests.test_terminal_reverted) ... ERROR
+test_true_singleton (test_scope_logic.ScopeTests.test_true_singleton) ... ERROR
+test_unknown_always (test_scope_logic.ScopeTests.test_unknown_always) ... ERROR
+test_unknown_eventual (test_scope_logic.ScopeTests.test_unknown_eventual) ... ERROR
+
+======================================================================
+ERROR: test_always_not_eventual (test_scope_logic.ScopeTests.test_always_not_eventual)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/tests/test_scope_logic.py", line 6, in test_always_not_eventual
+    def test_always_not_eventual(self):self.assertIs(verdict([False,True,True],'always'),False)
+                                                     ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/src/scope_logic.py", line 3, in verdict
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_and_bad_type (test_scope_logic.ScopeTests.test_and_bad_type)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/tests/test_scope_logic.py", line 38, in test_and_bad_type
+    with self.assertRaises(TypeError):combine([1])
+                                      ~~~~~~~^^^^^
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/src/scope_logic.py", line 6, in combine
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_and_false (test_scope_logic.ScopeTests.test_and_false)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/tests/test_scope_logic.py", line 34, in test_and_false
+    def test_and_false(self):self.assertIs(combine([None,False]),False)
+                                           ~~~~~~~^^^^^^^^^^^^^^
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/src/scope_logic.py", line 6, in combine
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_and_true (test_scope_logic.ScopeTests.test_and_true)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/tests/test_scope_logic.py", line 33, in test_and_true
+    def test_and_true(self):self.assertIs(combine([True,True]),True)
+                                          ~~~~~~~^^^^^^^^^^^^^
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/src/scope_logic.py", line 6, in combine
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_and_unknown (test_scope_logic.ScopeTests.test_and_unknown)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/tests/test_scope_logic.py", line 35, in test_and_unknown
+    def test_and_unknown(self):self.assertIsNone(combine([None,True]))
+                                                 ~~~~~~~^^^^^^^^^^^^^
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/src/scope_logic.py", line 6, in combine
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_bool_not_index (test_scope_logic.ScopeTests.test_bool_not_index)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/tests/test_scope_logic.py", line 32, in test_bool_not_index
+    with self.assertRaises(TypeError):verdict([True],'terminal',False)
+                                      ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/src/scope_logic.py", line 3, in verdict
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_empty_and_unknown (test_scope_logic.ScopeTests.test_empty_and_unknown)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/tests/test_scope_logic.py", line 36, in test_empty_and_unknown
+    def test_empty_and_unknown(self):self.assertIsNone(combine([]))
+                                                       ~~~~~~~^^^^
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/src/scope_logic.py", line 6, in combine
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_empty_rejected (test_scope_logic.ScopeTests.test_empty_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/tests/test_scope_logic.py", line 18, in test_empty_rejected
+    with self.assertRaises(ValueError):verdict([],'terminal')
+                                       ~~~~~~~^^^^^^^^^^^^^^^
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/src/scope_logic.py", line 3, in verdict
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_end_beyond (test_scope_logic.ScopeTests.test_end_beyond)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/tests/test_scope_logic.py", line 30, in test_end_beyond
+    with self.assertRaises(ValueError):verdict([True],'terminal',0,1)
+                                       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/src/scope_logic.py", line 3, in verdict
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_eventual_reverted (test_scope_logic.ScopeTests.test_eventual_reverted)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/tests/test_scope_logic.py", line 4, in test_eventual_reverted
+    def test_eventual_reverted(self):self.assertIs(verdict([False,True,False],'eventually'),True)
+                                                   ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/src/scope_logic.py", line 3, in verdict
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_false_dominates_always (test_scope_logic.ScopeTests.test_false_dominates_always)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/tests/test_scope_logic.py", line 15, in test_false_dominates_always
+    def test_false_dominates_always(self):self.assertIs(verdict([None,False],'always'),False)
+                                                        ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/src/scope_logic.py", line 3, in verdict
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_integer_not_boolean (test_scope_logic.ScopeTests.test_integer_not_boolean)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/tests/test_scope_logic.py", line 20, in test_integer_not_boolean
+    with self.assertRaises(TypeError):verdict([0,1],'eventually')
+                                      ~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/src/scope_logic.py", line 3, in verdict
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_known_witness (test_scope_logic.ScopeTests.test_known_witness)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/tests/test_scope_logic.py", line 13, in test_known_witness
+    def test_known_witness(self):self.assertIs(verdict([None,True],'eventually'),True)
+                                               ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/src/scope_logic.py", line 3, in verdict
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_missing_final (test_scope_logic.ScopeTests.test_missing_final)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/tests/test_scope_logic.py", line 11, in test_missing_final
+    def test_missing_final(self):self.assertIsNone(verdict([True,None],'terminal'))
+                                                   ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/src/scope_logic.py", line 3, in verdict
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_mode_validation (test_scope_logic.ScopeTests.test_mode_validation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/tests/test_scope_logic.py", line 24, in test_mode_validation
+    with self.assertRaises(ValueError):verdict([True],'sometimes')
+                                       ~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/src/scope_logic.py", line 3, in verdict
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_negative_start (test_scope_logic.ScopeTests.test_negative_start)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/tests/test_scope_logic.py", line 26, in test_negative_start
+    with self.assertRaises(ValueError):verdict([True],'always',-1)
+                                       ~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/src/scope_logic.py", line 3, in verdict
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_repair_final (test_scope_logic.ScopeTests.test_repair_final)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/tests/test_scope_logic.py", line 7, in test_repair_final
+    def test_repair_final(self):self.assertIs(verdict([False,True,False,True],'terminal'),True)
+                                              ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/src/scope_logic.py", line 3, in verdict
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_repair_not_invariant (test_scope_logic.ScopeTests.test_repair_not_invariant)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/tests/test_scope_logic.py", line 8, in test_repair_not_invariant
+    def test_repair_not_invariant(self):self.assertIs(verdict([False,True,False,True],'always'),False)
+                                                      ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/src/scope_logic.py", line 3, in verdict
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_retired_goal (test_scope_logic.ScopeTests.test_retired_goal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/tests/test_scope_logic.py", line 9, in test_retired_goal
+    def test_retired_goal(self):self.assertIs(verdict([False,True,False],'terminal',0,1),True)
+                                              ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/src/scope_logic.py", line 3, in verdict
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_reverse_interval (test_scope_logic.ScopeTests.test_reverse_interval)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/tests/test_scope_logic.py", line 28, in test_reverse_interval
+    with self.assertRaises(ValueError):verdict([True,False],'always',1,0)
+                                       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/src/scope_logic.py", line 3, in verdict
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_revision_only_after_activation (test_scope_logic.ScopeTests.test_revision_only_after_activation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/tests/test_scope_logic.py", line 10, in test_revision_only_after_activation
+    def test_revision_only_after_activation(self):self.assertIs(verdict([True,False,True],'always',2,2),True)
+                                                                ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/src/scope_logic.py", line 3, in verdict
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_string_not_boolean (test_scope_logic.ScopeTests.test_string_not_boolean)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/tests/test_scope_logic.py", line 22, in test_string_not_boolean
+    with self.assertRaises(TypeError):verdict(['true'],'terminal')
+                                      ~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/src/scope_logic.py", line 3, in verdict
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_terminal_reverted (test_scope_logic.ScopeTests.test_terminal_reverted)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/tests/test_scope_logic.py", line 5, in test_terminal_reverted
+    def test_terminal_reverted(self):self.assertIs(verdict([False,True,False],'terminal'),False)
+                                                   ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/src/scope_logic.py", line 3, in verdict
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_true_singleton (test_scope_logic.ScopeTests.test_true_singleton)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/tests/test_scope_logic.py", line 16, in test_true_singleton
+    def test_true_singleton(self):self.assertIs(verdict([True],'terminal'),True)
+                                                ~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/src/scope_logic.py", line 3, in verdict
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_unknown_always (test_scope_logic.ScopeTests.test_unknown_always)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/tests/test_scope_logic.py", line 14, in test_unknown_always
+    def test_unknown_always(self):self.assertIsNone(verdict([True,None],'always'))
+                                                    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/src/scope_logic.py", line 3, in verdict
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_unknown_eventual (test_scope_logic.ScopeTests.test_unknown_eventual)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/tests/test_scope_logic.py", line 12, in test_unknown_eventual
+    def test_unknown_eventual(self):self.assertIsNone(verdict([False,None],'eventually'))
+                                                      ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/src/scope_logic.py", line 3, in verdict
+    raise NotImplementedError
+NotImplementedError
+
+----------------------------------------------------------------------
+Ran 26 tests in 0.004s
+
+FAILED (errors=26)

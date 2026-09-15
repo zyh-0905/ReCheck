@@ -1,0 +1,11 @@
+{
+  "raw_files_checked": 109,
+  "raw_bytes": 167452938,
+  "etag_git_blobs_match": 109,
+  "response_revision_matches": 109,
+  "selected_known_predicates_checked": 945,
+  "matches": 945,
+  "true": 880,
+  "false": 65,
+  "not_claimed": "Not independent human review, not native tool replay, not full benchmark regrading; missing/ambiguous states excluded by published main-checker scope."
+}

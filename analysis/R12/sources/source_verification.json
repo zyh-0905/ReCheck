@@ -1,0 +1,9 @@
+{
+  "upstream_commit": "c8571d7854316d2e1c5f288e59fe1e34e53f6dd1",
+  "upstream_tree": "64ccd1694a91f2029844434d5995a2c0945cd6b2",
+  "source_files_verified": 77,
+  "errors": [],
+  "evaluation_git_blob": "af9faacc65c0e700a52093fb0c5d77ac6c36c449",
+  "material_entries_verified": 111,
+  "restored_runtime": "CPython3.11.14, unpacked previously supplied wheels; not fresh pip install"
+}

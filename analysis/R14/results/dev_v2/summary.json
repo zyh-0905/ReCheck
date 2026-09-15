@@ -1,0 +1,33 @@
+{
+  "split": "dev",
+  "source_files": 24,
+  "episodes": 887,
+  "task_ids": 37,
+  "status_counts": {
+    "success": 887
+  },
+  "calls": 2764,
+  "receipts": 2763,
+  "batches": 2489,
+  "multi_batches": 211,
+  "reordered_batches": 20,
+  "structural_issue_episodes": 1,
+  "supported": 240,
+  "known": 236,
+  "effect_true": 222,
+  "effect_false": 14,
+  "regression_candidates": 0,
+  "lost_goal_candidates": 0,
+  "full_effect_false_candidates": 0,
+  "all_ted_full": 625,
+  "missing": [
+    {
+      "source": "toolsandbox/gpt_4_1/nonexpert/trial_0_results.json",
+      "missing": [
+        "convert_currency"
+      ],
+      "extra": []
+    }
+  ],
+  "new_llm_calls": 0
+}

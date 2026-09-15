@@ -1,0 +1,710 @@
+# tool_sandbox/common/evaluation.py
+
+
+162: def column_tool_trace_exact_match_similarity(
+163:     dataframe: pl.DataFrame,
+164:     column_name: str,
+165:     value: Any,
+166:     atol_dict: Optional[dict[str, float]] = None,
+167: ) -> pl.DataFrame:
+168:     """A 0/1 similarity whether a tool trace matches a provided trace.
+169: 
+170:     Function name and argument in provided trace is always matched. Arguments not provided are ignored
+171: 
+172:     Provided trace can be a list of possible traces, in which case a match is found
+173:     if any of the provided traces matches.
+174: 
+175:     Args:
+176:         dataframe:      Dataframe to calculate similarity on
+177:         column_name:    Column name to compare, must contain string
+178:         value:          Json dumped 1 or a list of tool traces.
+179:         atol_dict:      Absolute tolerance for each argument
+180: 
+181:     Returns:
+182:         A Dataframe containing similarity score. 0 if the column value do not contain target value, 1 if it does
+183:     """
+184:     trace: Union[dict[str, Any], list[dict[str, Any]]] = json.loads(value)
+185:     # Normalize into a list of possible golden traces
+186:     golden_traces: list[dict[str, Any]] = (
+187:         [trace] if not isinstance(trace, Sequence) else list(trace)
+188:     )
+189: 
+190:     def match_trace(x: tuple[Optional[str]]) -> float:
+191:         """UDF calculating trace matching score
+192: 
+193:         Args:
+194:             x:  single value tuple containing a tool trace
+195: 
+196:         Returns:
+197:             0 / 1 match score
+198:         """
+199:         if x[0] is None:
+200:             return 0
+201:         # If any trace matches any golden trace, return 1
+202:         for golden_trace in golden_traces:
+203:             for tool_trace_json in x[0]:
+204:                 tool_trace = json.loads(tool_trace_json)
+205:                 if tool_trace["tool_name"] == golden_trace["tool_name"] and all(
+206:                     is_close(
+207:                         tool_trace["arguments"].get(argument_name, NOT_GIVEN),
+208:                         golden_trace["arguments"][argument_name],
+209:                         atol=atol_dict.get(argument_name, None)
+210:                         if atol_dict is not None
+211:                         else None,
+212:                     )
+213:                     for argument_name in golden_trace["arguments"]
+214:                 ):
+215:                     return 1
+216:         return 0
+
+955:         int,
+956:         filtered_df.with_columns(pl.len())["len"][0],
+957:     )
+958: 
+959: 
+960: @define
+961: class EvaluationResult:
+962:     """Contains results about milestone mapping, coarse / finegrained similarity"""
+963: 
+964:     # ith object in this list contains (snapshot_index, similarity score) for ith milestone
+965:     milestone_mapping: OrderedDict[int, Tuple[int, float]] = Factory(OrderedDict)
+966:     # ith object in this list contains (snapshot_index, similarity score) for ith minefield
+967:     minefield_mapping: OrderedDict[int, Tuple[int, float]] = Factory(OrderedDict)
+968:     # The arithmetic mean similarity score across all milestones
+969:     milestone_similarity: float = 0
+970:     # The arithmetic mean similarity score across all minefields
+971:     minefield_similarity: float = 0
+972:     # Similarity combining minefield_similarity and milestone_similarity.
+973:     # It is set in __attrs_post_init__
+974:     similarity: float = field(init=False)
+975:     # Total turn count, excluding system messages
+976:     turn_count: int = 0
+977: 
+978:     def __attrs_post_init__(self) -> None:
+979:         # Combine milestone and minefield. If minefield_similarity != 0, nullify everything.
+980:         self.similarity = (
+981:             int(self.minefield_similarity == 0) * self.milestone_similarity
+982:         )
+983: 
+
+1070:         Args:
+1071:             assigned_mapping:               Current already assigned mappings.
+1072:             similarity_calculators:         Similarity calculator which computes milestone similarity.
+1073:                                             against trajectory. Automatically caches seen similarities.
+1074:             assigned_similarity_sum:        Sum of similarity scores across already assigned milestones.
+1075:             remaining_graph:                Remaining milestones dag.
+1076:             current_best_similarity_sum:    Currently known best similarity sum. Used to prune branches.
+1077:             min_snapshot_index:             Minimum snapshot index to match to
+1078:             max_snapshot_index:             Maximum snapshot index to match to
+1079: 
+1080:         Returns:
+1081:             Best assigned mapping and best sum similarity score across milestones
+1082:         """
+1083:         # DFS end, return
+1084:         if networkx.number_of_nodes(remaining_graph) == 0:  # type: ignore[no-untyped-call]
+1085:             return assigned_mapping, assigned_similarity_sum
+1086:         # The most recent assignment. Next assignment must larger than this
+1087:         last_assigned_snapshot_index = (
+1088:             assigned_mapping[next(reversed(assigned_mapping))][0]
+1089:             if assigned_mapping
+1090:             else min_snapshot_index
+1091:         )
+1092:         # Best mapping and best similarity sum across all possible next mappings
+1093:         best_assigned_mapping: OrderedDict[int, Tuple[int, float]] = OrderedDict()
+1094:         best_assigned_similarity_sum: float = -1
+1095:         # Max heap for milestone / snapshot pairs.
+1096:         # Each element is (-similarity, milestone_index, snapshot_index) to ensure similarity is maximized
+1097:         max_heap: List[Tuple[float, int, int]] = []
+1098:         # Take the next milestone with 0 in degree
+1099:         for current_milestone_index, in_degree in remaining_graph.in_degree():
+1100:             if in_degree > 0:
+1101:                 continue
+1102:             # Iterate through possible assignments
+1103:             # Going from the back ensures that when multiple index have the same current similarity,
+1104:             # latter ones gets prioritized.
+1105:             for current_snapshot_index in reversed(
+1106:                 range(last_assigned_snapshot_index, max_snapshot_index + 1)
+1107:             ):
+1108:                 # Get similarity
+1109:                 current_similarity: float = similarity_calculators[
+1110:                     current_milestone_index
+1111:                 ].calculate_similarity(
+1112:                     current_snapshot_index=current_snapshot_index,
+1113:                     milestone_snapshot_mapping=assigned_mapping,
+1114:                 )
+1115:                 # Push heap, again elements are (-similarity, milestone_index, snapshot_index)
+1116:                 heapq.heappush(
+1117:                     max_heap,
+1118:                     (
+1119:                         -current_similarity,
+1120:                         current_milestone_index,
+1121:                         current_snapshot_index,
+1122:                     ),
+1123:                 )
+1124:         # Start popping heap, again elements are (-similarity, milestone_index, snapshot_index)
+1125:         while max_heap:
+1126:             (
+1127:                 negative_current_similarity,
+1128:                 current_milestone_index,
+1129:                 current_snapshot_index,
+1130:             ) = heapq.heappop(max_heap)
+1131:             current_similarity = -negative_current_similarity
+1132:             # Prune branches. If it is impossible for this branch to beat current_best_similarity_sum, prune
+1133:             if (
+1134:                 assigned_similarity_sum
+1135:                 + current_similarity
+1136:                 + remaining_graph.number_of_nodes()
+1137:                 - 1
+1138:                 <= best_assigned_similarity_sum
+1139:             ):
+1140:                 continue
+1141:             # If we couldn't prune this, Prepare input for next level
+1142:             current_assigned_mapping = deepcopy(assigned_mapping)
+1143:             current_assigned_mapping[current_milestone_index] = (
+1144:                 current_snapshot_index,
+1145:                 current_similarity,
+1146:             )
+1147:             current_remaining_graph = remaining_graph.copy()
+1148:             current_remaining_graph.remove_node(current_milestone_index)
+1149:             # Get best result from next level
+1150:             current_assigned_mapping, current_similarity_sum = self._dfs(
+1151:                 current_assigned_mapping,
+1152:                 similarity_calculators,
+1153:                 assigned_similarity_sum + current_similarity,
+1154:                 current_remaining_graph,
+1155:                 max(current_best_similarity_sum, best_assigned_similarity_sum),
+1156:                 min_snapshot_index,
+1157:                 max_snapshot_index,
+1158:             )
+1159:             # Update best results
+1160:             if current_similarity_sum > best_assigned_similarity_sum:
+1161:                 best_assigned_mapping = current_assigned_mapping
+1162:                 best_assigned_similarity_sum = current_similarity_sum
+1163:         return best_assigned_mapping, best_assigned_similarity_sum
+1164: 
+1165:     def compute_mapping_and_similarity(
+1166:         self, execution_context: ExecutionContext
+1167:     ) -> Tuple[OrderedDict[int, Tuple[int, float]], Optional[float]]:
+1168:         """Calculate milestone / minefield mapping and similarity against a trajectory.
+1169: 
+1170:         The best matches between milestones and execution_context
+1171:         are found by maximizing the total arithmatic mean of similarity score, under the constraint that milestones
+1172:         sorted based on sandbox_message_index should be one of the possible topological sorts of milestone_dag
+1173:         Milestone and snapshots form a 1:1 mapping.
+1174: 
+1175:         Since many Milestones (like guardrail) depends on the matching snapshot of other milestones,
+1176:         I couldn't think of a very quick solution to this. Here we implement a brute force solution
+1177:         with an adequate amount of pruning + memorization. Should revisit this if this is too slow.
+1178: 
+1179:         Args:
+1180:             execution_context:      ExecutionContext containing the trajectory to be evaluated.
+1181: 
+1182: 
+1183:         Returns:
+1184:             An EvaluationResult object containing the mean similarity, as well as milestone mapping and finegrained
+1185:             similarity. When no milestones are found, return None as similarity and an empty dict.
+1186: 
+1187:         """
+1188:         # When milestone_dag is empty, default to perfect score
+1189:         if networkx.number_of_nodes(self.milestone_dag) == 0:  # type: ignore[no-untyped-call]
+1190:             return OrderedDict(), None
+1191:         # Construct similarity calculators. These calculators have caching built in
+1192:         milestone_similarity_calculators: List[CachedSimilarityCalculator] = [
+1193:             CachedSimilarityCalculator(
+1194:                 execution_context=execution_context, milestone=milestone
+1195:             )
+1196:             for milestone in self.milestones
+1197:         ]
+1198:         # Minimum / Maximum snapshot index to match to
+1199:         min_snapshot_index: int = execution_context.first_user_sandbox_message_index
+1200:         max_snapshot_index: int = execution_context.max_sandbox_message_index
+1201:         # Brute force DFS
+1202:         milestone_mapping, milestone_similarity_sum = self._dfs(
+1203:             assigned_mapping=OrderedDict(),
+1204:             similarity_calculators=milestone_similarity_calculators,
+1205:             assigned_similarity_sum=0,
+1206:             remaining_graph=self.milestone_dag,
+1207:             current_best_similarity_sum=0,
+1208:             min_snapshot_index=min_snapshot_index,
+1209:             max_snapshot_index=max_snapshot_index,
+1210:         )
+1211:         milestone_similarity = milestone_similarity_sum / len(self.milestones)
+
+1216: class Evaluation:
+1217:     """Defining the process needed for evaluating a completed ExecutionContext"""
+1218: 
+1219:     # A Milestone Matcher. Contains milestone definition for this Evaluation, as well as utilities for matching
+1220:     # milestones against a trajectory
+1221:     milestone_matcher: MilestoneMatcher = Factory(MilestoneMatcher)
+1222:     # A Minefield Matcher. Contains minefield definition for this Evaluation, as well as utilities for matching
+1223:     # minefields against a trajectory
+1224:     minefield_matcher: MilestoneMatcher = Factory(MilestoneMatcher)
+1225: 
+1226:     def evaluate(
+1227:         self, execution_context: ExecutionContext, max_turn_count: int
+1228:     ) -> EvaluationResult:
+1229:         """Evaluate a completed ExecutionContext
+1230: 
+1231:         Calculate Milestone and Minefield similarities, combine them.
+1232:         Calculate effective turn count.
+1233: 
+1234:         Args:
+1235:             execution_context:      ExecutionContext to be evaluated
+1236:             max_turn_count:         Maximum number of turns allowed. Overrides turn count when the session ended
+1237:                                     with an exception
+1238: 
+1239:         Returns:
+1240:             An EvaluationResult object containing the mean similarity, as well as milestone mapping and finegrained
+1241:             similarity
+1242: 
+1243:         Raises:
+1244:             IndexError: No Milestone found
+1245:         """
+1246:         milestone_mapping, milestone_similarity = (
+1247:             self.milestone_matcher.compute_mapping_and_similarity(
+1248:                 execution_context=execution_context
+1249:             )
+1250:         )
+1251:         # If no milestones are found, the default milestone_similarity is 1
+1252:         milestone_similarity = (
+1253:             1 if milestone_similarity is None else milestone_similarity
+1254:         )
+1255: 
+1256:         minefield_mapping, minefield_similarity = (
+1257:             self.minefield_matcher.compute_mapping_and_similarity(
+1258:                 execution_context=execution_context
+1259:             )
+1260:         )
+1261:         # If no minefields are found, the default minefield_similarity is 0
+1262:         minefield_similarity = (
+1263:             0 if minefield_similarity is None else minefield_similarity
+1264:         )
+1265: 
+1266:         # Calculate turn count
+1267:         turn_count = get_effective_turn_count(
+1268:             execution_context.get_database(
+1269:                 DatabaseNamespace.SANDBOX, get_all_history_snapshots=True
+1270:             )
+1271:         )
+1272:         # Sort mapping according to milestone index
+1273:         return EvaluationResult(
+1274:             milestone_mapping=OrderedDict(sorted(milestone_mapping.items())),
+1275:             minefield_mapping=minefield_mapping,
+1276:             milestone_similarity=milestone_similarity,
+1277:             minefield_similarity=minefield_similarity,
+1278:             turn_count=turn_count,
+1279:         )
+
+# tool_sandbox/scenarios/single_tool_call_scenarios.py
+
+
+38: def get_extensions(base_scenarios: Dict[str, Scenario]) -> List[ScenarioExtension]:
+39:     """Specify test scenario as extensions over a base scenario
+40: 
+41:     Returns:
+42:         A List of ScenarioExtensions
+43:     """
+44:     return [
+45:         ScenarioExtension(
+46:             name="cellular_off",
+47:             base_scenario=base_scenarios["base"],
+48:             messages=[
+49:                 {
+50:                     "sender": RoleType.SYSTEM,
+51:                     "recipient": RoleType.USER,
+52:                     "content": USER_INSTRUCTION + "Turn off cellular service",
+53:                 },
+54:                 {
+55:                     "sender": RoleType.USER,
+56:                     "recipient": RoleType.AGENT,
+57:                     "content": "Turn off cellular",
+58:                 },
+59:             ],
+60:             tool_allow_list=["set_cellular_service_status"],
+61:             milestones=[
+62:                 Milestone(
+63:                     snapshot_constraints=[
+64:                         SnapshotConstraint(
+65:                             database_namespace=DatabaseNamespace.SETTING,
+66:                             snapshot_constraint=snapshot_similarity,
+67:                             target_dataframe=pl.DataFrame(
+68:                                 {
+69:                                     "cellular": False,
+70:                                 }
+71:                             ),
+72:                         )
+73:                     ]
+74:                 ),
+75:                 Milestone(
+76:                     snapshot_constraints=[
+77:                         SnapshotConstraint(
+78:                             database_namespace=DatabaseNamespace.SANDBOX,
+79:                             snapshot_constraint=snapshot_similarity,
+80:                             target_dataframe=pl.DataFrame(
+81:                                 {
+82:                                     "sender": RoleType.AGENT,
+83:                                     "recipient": RoleType.USER,
+84:                                     "content": "Cellular service is turned off",
+85:                                 }
+86:                             ),
+87:                         )
+88:                     ]
+89:                 ),
+90:             ],
+91:         ),
+92:         ScenarioExtension(
+93:             name="get_cellular",
+94:             base_scenario=base_scenarios["base"],
+95:             messages=[
+96:                 {
+97:                     "sender": RoleType.SYSTEM,
+98:                     "recipient": RoleType.USER,
+99:                     "content": USER_INSTRUCTION + "Check cellular service",
+100:                 },
+
+143:                     ]
+144:                 ),
+145:             ],
+146:         ),
+147:         ScenarioExtension(
+148:             name="wifi_off",
+149:             base_scenario=base_scenarios["base"],
+150:             messages=[
+151:                 {
+152:                     "sender": RoleType.SYSTEM,
+153:                     "recipient": RoleType.USER,
+154:                     "content": USER_INSTRUCTION + "Turn off wifi",
+155:                 },
+156:                 {
+157:                     "sender": RoleType.USER,
+158:                     "recipient": RoleType.AGENT,
+159:                     "content": "Turn off wifi",
+160:                 },
+161:             ],
+162:             tool_allow_list=["set_wifi_status"],
+163:             milestones=[
+164:                 Milestone(
+165:                     snapshot_constraints=[
+166:                         SnapshotConstraint(
+167:                             database_namespace=DatabaseNamespace.SETTING,
+168:                             snapshot_constraint=snapshot_similarity,
+169:                             target_dataframe=pl.DataFrame(
+170:                                 {
+171:                                     "wifi": False,
+172:                                 }
+173:                             ),
+174:                         )
+175:                     ]
+176:                 ),
+177:                 Milestone(
+178:                     snapshot_constraints=[
+179:                         SnapshotConstraint(
+180:                             database_namespace=DatabaseNamespace.SANDBOX,
+181:                             snapshot_constraint=snapshot_similarity,
+182:                             target_dataframe=pl.DataFrame(
+183:                                 {
+184:                                     "sender": RoleType.AGENT,
+185:                                     "recipient": RoleType.USER,
+186:                                     "content": "Wifi is turned off",
+187:                                 }
+188:                             ),
+189:                         )
+190:                     ]
+191:                 ),
+192:             ],
+193:         ),
+194:         ScenarioExtension(
+195:             name="get_wifi",
+196:             base_scenario=base_scenarios["base"],
+197:             messages=[
+198:                 {
+199:                     "sender": RoleType.SYSTEM,
+200:                     "recipient": RoleType.USER,
+201:                     "content": USER_INSTRUCTION + "Check wifi status",
+202:                 },
+203:                 {
+204:                     "sender": RoleType.USER,
+205:                     "recipient": RoleType.AGENT,
+206:                     "content": "Is my wifi on?",
+207:                 },
+208:             ],
+
+546:                             ),
+547:                         )
+548:                     ]
+549:                 ),
+550:             ],
+551:         ),
+552:         ScenarioExtension(
+553:             name="update_contact_with_id_and_phone_number",
+554:             base_scenario=base_scenarios["base"],
+555:             messages=[
+556:                 {
+557:                     "sender": RoleType.SYSTEM,
+558:                     "recipient": RoleType.USER,
+559:                     "content": USER_INSTRUCTION
+560:                     + "Update the phone number of contact by id "
+561:                     + deterministic_uuid(payload="Fredrik Thordendal")
+562:                     + " to +19876543210. "
+563:                     "You do not have more information.",
+564:                 },
+565:                 {
+566:                     "sender": RoleType.USER,
+567:                     "recipient": RoleType.AGENT,
+568:                     "content": f"Update phone number of the person with id "
+569:                     f"{deterministic_uuid(payload='Fredrik Thordendal')} "
+570:                     f" to +19876543210",
+571:                 },
+572:             ],
+573:             tool_allow_list=["modify_contact"],
+574:             milestones=[
+575:                 Milestone(
+576:                     snapshot_constraints=[
+577:                         SnapshotConstraint(
+578:                             database_namespace=DatabaseNamespace.CONTACT,
+579:                             snapshot_constraint=update_similarity,
+580:                             target_dataframe=pl.DataFrame(
+581:                                 {
+582:                                     "person_id": deterministic_uuid(
+583:                                         payload="Fredrik Thordendal",
+584:                                     ),
+585:                                     "name": "Fredrik Thordendal",
+586:                                     "phone_number": "+19876543210",
+587:                                     "relationship": "friend",
+588:                                     "is_self": False,
+589:                                 },
+590:                             ),
+591:                             reference_milestone_node_index=-1,
+592:                         )
+593:                     ]
+594:                 ),
+595:                 Milestone(
+596:                     snapshot_constraints=[
+597:                         SnapshotConstraint(
+598:                             database_namespace=DatabaseNamespace.SANDBOX,
+599:                             snapshot_constraint=snapshot_similarity,
+600:                             target_dataframe=pl.DataFrame(
+601:                                 {
+602:                                     "sender": RoleType.AGENT,
+603:                                     "recipient": RoleType.USER,
+604:                                     "content": f"{deterministic_uuid(payload='Fredrik Thordendal')}'s "
+605:                                     f" phone number have been updated to +19876543210",
+606:                                 }
+607:                             ),
+608:                         )
+609:                     ]
+610:                 ),
+611:             ],
+612:         ),
+613:         ScenarioExtension(
+
+# tool_sandbox/scenarios/multiple_tool_call_scenarios.py
+
+
+1542:                 ),
+1543:             ],
+1544:             # search_contacts and set_cellular_service_status can happen in any order
+1545:             milestone_edge_list=[(0, 2), (1, 2), (2, 3)],
+1546:             categories=[ScenarioCategories.STATE_DEPENDENCY],
+1547:         ),
+1548:         ScenarioExtension(
+1549:             name="update_contact_relationship_with_relationship",
+1550:             base_scenario=base_scenarios["base"],
+1551:             messages=[
+1552:                 {
+1553:                     "sender": RoleType.SYSTEM,
+1554:                     "recipient": RoleType.USER,
+1555:                     "content": USER_INSTRUCTION
+1556:                     + "Update the all friends in your (User A's) contact book as your enemy. "
+1557:                     "You do not have any more information.",
+1558:                 },
+1559:                 {
+1560:                     "sender": RoleType.USER,
+1561:                     "recipient": RoleType.AGENT,
+1562:                     "content": "Make all of my friends my enemy",
+1563:                 },
+1564:             ],
+1565:             tool_allow_list=[
+1566:                 "search_contacts",
+1567:                 "modify_contact",
+1568:             ],
+1569:             milestones=[
+1570:                 Milestone(
+1571:                     snapshot_constraints=[
+1572:                         SnapshotConstraint(
+1573:                             database_namespace=DatabaseNamespace.SANDBOX,
+1574:                             snapshot_constraint=snapshot_similarity,
+1575:                             target_dataframe=pl.DataFrame(
+1576:                                 {
+1577:                                     "sender": RoleType.EXECUTION_ENVIRONMENT,
+1578:                                     "recipient": RoleType.AGENT,
+1579:                                     "tool_trace": json.dumps(
+1580:                                         {
+1581:                                             "tool_name": "search_contacts",
+1582:                                             "arguments": {"relationship": "friend"},
+1583:                                         },
+1584:                                         ensure_ascii=False,
+1585:                                     ),
+1586:                                 }
+1587:                             ),
+1588:                         )
+1589:                     ]
+1590:                 ),
+1591:                 Milestone(
+1592:                     snapshot_constraints=[
+1593:                         SnapshotConstraint(
+1594:                             database_namespace=DatabaseNamespace.CONTACT,
+1595:                             snapshot_constraint=update_similarity,
+1596:                             target_dataframe=pl.DataFrame(
+1597:                                 [
+1598:                                     {
+1599:                                         "person_id": deterministic_uuid(
+1600:                                             payload="Fredrik Thordendal",
+1601:                                         ),
+1602:                                         "name": "Fredrik Thordendal",
+1603:                                         "phone_number": "+12453344098",
+1604:                                         "relationship": "enemy",
+1605:                                         "is_self": False,
+1606:                                     },
+1607:                                     {
+1608:                                         "person_id": deterministic_uuid(
+1609:                                             payload="John Petrucci",
+1610:                                         ),
+1611:                                         "name": "John Petrucci",
+1612:                                         "phone_number": "+1234560987",
+1613:                                         "relationship": "enemy",
+1614:                                         "is_self": False,
+1615:                                     },
+1616:                                 ],
+1617:                             ),
+1618:                             reference_milestone_node_index=0,
+1619:                         )
+1620:                     ]
+1621:                 ),
+1622:                 Milestone(
+1623:                     snapshot_constraints=[
+1624:                         SnapshotConstraint(
+1625:                             database_namespace=DatabaseNamespace.SANDBOX,
+1626:                             snapshot_constraint=snapshot_similarity,
+1627:                             target_dataframe=pl.DataFrame(
+1628:                                 {
+1629:                                     "sender": RoleType.AGENT,
+1630:                                     "recipient": RoleType.USER,
+1631:                                     "content": "All your friends are now your enemies",
+1632:                                 }
+1633:                             ),
+1634:                         )
+1635:                     ]
+1636:                 ),
+1637:             ],
+1638:         ),
+1639:         ScenarioExtension(
+1640:             name="update_contact_relationship_with_relationship_alt",
+
+5337:             categories=[ScenarioCategories.CANONICALIZATION],
+5338:         ),
+5339:         ScenarioExtension(
+5340:             name="modify_reminder_with_recency_latest",
+5341:             base_scenario=base_scenarios["base"],
+5342:             messages=[
+5343:                 {
+5344:                     "sender": RoleType.SYSTEM,
+5345:                     "recipient": RoleType.USER,
+5346:                     "content": USER_INSTRUCTION
+5347:                     + "Ask User B to postpone your most recent reminder to tomorrow 5PM."
+5348:                     "You do not have any more information.",
+5349:                 },
+5350:                 {
+5351:                     "sender": RoleType.USER,
+5352:                     "recipient": RoleType.AGENT,
+5353:                     "content": "Postpone my most recent reminder to tomorrow 5PM.",
+5354:                 },
+5355:             ],
+5356:             tool_allow_list=[
+5357:                 "search_reminder",
+5358:                 "modify_reminder",
+5359:                 "get_current_timestamp",
+5360:                 "timestamp_to_datetime_info",
+5361:                 "datetime_info_to_timestamp",
+5362:             ],
+5363:             milestones=[
+5364:                 Milestone(
+5365:                     snapshot_constraints=[
+5366:                         SnapshotConstraint(
+5367:                             database_namespace=DatabaseNamespace.SANDBOX,
+5368:                             snapshot_constraint=snapshot_similarity,
+5369:                             target_dataframe=pl.DataFrame(
+5370:                                 {
+5371:                                     "sender": RoleType.EXECUTION_ENVIRONMENT,
+5372:                                     "recipient": RoleType.AGENT,
+5373:                                     "tool_trace": json.dumps(
+5374:                                         [
+5375:                                             {
+5376:                                                 "tool_name": "search_reminder",
+5377:                                                 "arguments": {},
+5378:                                             },
+5379:                                         ],
+5380:                                         ensure_ascii=False,
+5381:                                     ),
+5382:                                 }
+5383:                             ),
+5384:                         ),
+5385:                     ]
+5386:                 ),
+5387:                 Milestone(
+5388:                     snapshot_constraints=[
+5389:                         SnapshotConstraint(
+5390:                             database_namespace=DatabaseNamespace.SANDBOX,
+5391:                             snapshot_constraint=snapshot_similarity,
+5392:                             target_dataframe=pl.DataFrame(
+5393:                                 {
+5394:                                     "sender": RoleType.EXECUTION_ENVIRONMENT,
+5395:                                     "recipient": RoleType.AGENT,
+5396:                                     "tool_trace": json.dumps(
+5397:                                         [
+5398:                                             {
+5399:                                                 "tool_name": "get_current_timestamp",
+5400:                                                 "arguments": {},
+5401:                                             },
+5402:                                         ],
+5403:                                         ensure_ascii=False,
+5404:                                     ),
+5405:                                 }
+5406:                             ),
+5407:                         ),
+5408:                     ]
+5409:                 ),
+5410:                 Milestone(
+5411:                     snapshot_constraints=[
+5412:                         SnapshotConstraint(
+5413:                             database_namespace=DatabaseNamespace.REMINDER,
+5414:                             snapshot_constraint=update_similarity,
+5415:                             target_dataframe=pl.DataFrame(
+5416:                                 {
+5417:                                     "reminder_id": deterministic_uuid(
+5418:                                         payload="reminder_2"
+5419:                                     ),
+5420:                                     "reminder_timestamp": datetime.datetime(
+5421:                                         year=get_tomorrow_datetime().year,
+5422:                                         month=get_tomorrow_datetime().month,
+5423:                                         day=get_tomorrow_datetime().day,
+5424:                                         hour=17,
+5425:                                     ).timestamp(),
+5426:                                 }
+5427:                             ),
+5428:                             reference_milestone_node_index=0,
+5429:                         ),
+5430:                     ]
+5431:                 ),
+5432:             ],
+5433:             milestone_edge_list=[(0, 2), (1, 2)],
+5434:             categories=[ScenarioCategories.CANONICALIZATION],
+5435:         ),
+5436:         ScenarioExtension(
+5437:             name="modify_reminder_with_recency_latest_alt",
+5438:             base_scenario=base_scenarios["base"],
+5439:             messages=[
+5440:                 {
+5441:                     "sender": RoleType.SYSTEM,
+5442:                     "recipient": RoleType.USER,
+5443:                     "content": USER_INSTRUCTION

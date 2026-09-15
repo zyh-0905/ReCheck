@@ -1,0 +1,540 @@
+{
+  "correct_revision.json": [
+    {
+      "path": "/events/0/elapsed_seconds",
+      "kind": "value"
+    },
+    {
+      "path": "/events/1/elapsed_seconds",
+      "kind": "value"
+    },
+    {
+      "path": "/events/2/elapsed_seconds",
+      "kind": "value"
+    },
+    {
+      "path": "/events/3/elapsed_seconds",
+      "kind": "value"
+    },
+    {
+      "path": "/events/4/elapsed_seconds",
+      "kind": "value"
+    },
+    {
+      "path": "/final_snapshot/_dbs/MESSAGING/1/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/final_snapshot/_dbs/MESSAGING/2/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/final_snapshot/_dbs/MESSAGING/3/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/final_snapshot/_dbs/MESSAGING/4/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/final_snapshot/_dbs/MESSAGING/5/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/final_snapshot/_dbs/REMINDER/1/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/final_snapshot/_dbs/REMINDER/1/reminder_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/final_snapshot/_dbs/REMINDER/2/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/final_snapshot/_dbs/REMINDER/2/reminder_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/final_snapshot/_dbs/REMINDER/3/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/final_snapshot/_dbs/REMINDER/3/reminder_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/initial_snapshot/_dbs/MESSAGING/1/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/initial_snapshot/_dbs/MESSAGING/2/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/initial_snapshot/_dbs/MESSAGING/3/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/initial_snapshot/_dbs/MESSAGING/4/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/initial_snapshot/_dbs/MESSAGING/5/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/initial_snapshot/_dbs/REMINDER/1/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/initial_snapshot/_dbs/REMINDER/1/reminder_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/initial_snapshot/_dbs/REMINDER/2/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/initial_snapshot/_dbs/REMINDER/2/reminder_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/initial_snapshot/_dbs/REMINDER/3/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/initial_snapshot/_dbs/REMINDER/3/reminder_timestamp",
+      "kind": "value"
+    }
+  ],
+  "missing_final_revision.json": [
+    {
+      "path": "/events/0/elapsed_seconds",
+      "kind": "value"
+    },
+    {
+      "path": "/events/1/elapsed_seconds",
+      "kind": "value"
+    },
+    {
+      "path": "/events/2/elapsed_seconds",
+      "kind": "value"
+    },
+    {
+      "path": "/final_snapshot/_dbs/MESSAGING/1/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/final_snapshot/_dbs/MESSAGING/2/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/final_snapshot/_dbs/MESSAGING/3/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/final_snapshot/_dbs/MESSAGING/4/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/final_snapshot/_dbs/MESSAGING/5/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/final_snapshot/_dbs/REMINDER/1/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/final_snapshot/_dbs/REMINDER/1/reminder_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/final_snapshot/_dbs/REMINDER/2/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/final_snapshot/_dbs/REMINDER/2/reminder_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/final_snapshot/_dbs/REMINDER/3/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/final_snapshot/_dbs/REMINDER/3/reminder_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/initial_snapshot/_dbs/MESSAGING/1/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/initial_snapshot/_dbs/MESSAGING/2/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/initial_snapshot/_dbs/MESSAGING/3/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/initial_snapshot/_dbs/MESSAGING/4/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/initial_snapshot/_dbs/MESSAGING/5/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/initial_snapshot/_dbs/REMINDER/1/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/initial_snapshot/_dbs/REMINDER/1/reminder_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/initial_snapshot/_dbs/REMINDER/2/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/initial_snapshot/_dbs/REMINDER/2/reminder_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/initial_snapshot/_dbs/REMINDER/3/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/initial_snapshot/_dbs/REMINDER/3/reminder_timestamp",
+      "kind": "value"
+    }
+  ],
+  "no_effect.json": [
+    {
+      "path": "/events/0/elapsed_seconds",
+      "kind": "value"
+    },
+    {
+      "path": "/final_snapshot/_dbs/MESSAGING/1/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/final_snapshot/_dbs/MESSAGING/2/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/final_snapshot/_dbs/MESSAGING/3/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/final_snapshot/_dbs/MESSAGING/4/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/final_snapshot/_dbs/MESSAGING/5/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/final_snapshot/_dbs/REMINDER/1/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/final_snapshot/_dbs/REMINDER/1/reminder_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/final_snapshot/_dbs/REMINDER/2/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/final_snapshot/_dbs/REMINDER/2/reminder_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/final_snapshot/_dbs/REMINDER/3/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/final_snapshot/_dbs/REMINDER/3/reminder_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/initial_snapshot/_dbs/MESSAGING/1/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/initial_snapshot/_dbs/MESSAGING/2/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/initial_snapshot/_dbs/MESSAGING/3/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/initial_snapshot/_dbs/MESSAGING/4/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/initial_snapshot/_dbs/MESSAGING/5/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/initial_snapshot/_dbs/REMINDER/1/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/initial_snapshot/_dbs/REMINDER/1/reminder_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/initial_snapshot/_dbs/REMINDER/2/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/initial_snapshot/_dbs/REMINDER/2/reminder_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/initial_snapshot/_dbs/REMINDER/3/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/initial_snapshot/_dbs/REMINDER/3/reminder_timestamp",
+      "kind": "value"
+    }
+  ],
+  "redundant_error_then_revision.json": [
+    {
+      "path": "/events/0/elapsed_seconds",
+      "kind": "value"
+    },
+    {
+      "path": "/events/1/elapsed_seconds",
+      "kind": "value"
+    },
+    {
+      "path": "/events/2/elapsed_seconds",
+      "kind": "value"
+    },
+    {
+      "path": "/events/3/elapsed_seconds",
+      "kind": "value"
+    },
+    {
+      "path": "/events/4/elapsed_seconds",
+      "kind": "value"
+    },
+    {
+      "path": "/events/5/elapsed_seconds",
+      "kind": "value"
+    },
+    {
+      "path": "/final_snapshot/_dbs/MESSAGING/1/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/final_snapshot/_dbs/MESSAGING/2/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/final_snapshot/_dbs/MESSAGING/3/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/final_snapshot/_dbs/MESSAGING/4/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/final_snapshot/_dbs/MESSAGING/5/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/final_snapshot/_dbs/REMINDER/1/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/final_snapshot/_dbs/REMINDER/1/reminder_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/final_snapshot/_dbs/REMINDER/2/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/final_snapshot/_dbs/REMINDER/2/reminder_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/final_snapshot/_dbs/REMINDER/3/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/final_snapshot/_dbs/REMINDER/3/reminder_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/initial_snapshot/_dbs/MESSAGING/1/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/initial_snapshot/_dbs/MESSAGING/2/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/initial_snapshot/_dbs/MESSAGING/3/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/initial_snapshot/_dbs/MESSAGING/4/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/initial_snapshot/_dbs/MESSAGING/5/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/initial_snapshot/_dbs/REMINDER/1/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/initial_snapshot/_dbs/REMINDER/1/reminder_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/initial_snapshot/_dbs/REMINDER/2/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/initial_snapshot/_dbs/REMINDER/2/reminder_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/initial_snapshot/_dbs/REMINDER/3/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/initial_snapshot/_dbs/REMINDER/3/reminder_timestamp",
+      "kind": "value"
+    }
+  ],
+  "undo_latest_goal.json": [
+    {
+      "path": "/events/0/elapsed_seconds",
+      "kind": "value"
+    },
+    {
+      "path": "/events/1/elapsed_seconds",
+      "kind": "value"
+    },
+    {
+      "path": "/events/2/elapsed_seconds",
+      "kind": "value"
+    },
+    {
+      "path": "/events/3/elapsed_seconds",
+      "kind": "value"
+    },
+    {
+      "path": "/events/4/elapsed_seconds",
+      "kind": "value"
+    },
+    {
+      "path": "/events/5/elapsed_seconds",
+      "kind": "value"
+    },
+    {
+      "path": "/events/6/elapsed_seconds",
+      "kind": "value"
+    },
+    {
+      "path": "/final_snapshot/_dbs/MESSAGING/1/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/final_snapshot/_dbs/MESSAGING/2/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/final_snapshot/_dbs/MESSAGING/3/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/final_snapshot/_dbs/MESSAGING/4/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/final_snapshot/_dbs/MESSAGING/5/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/final_snapshot/_dbs/REMINDER/1/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/final_snapshot/_dbs/REMINDER/1/reminder_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/final_snapshot/_dbs/REMINDER/2/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/final_snapshot/_dbs/REMINDER/2/reminder_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/final_snapshot/_dbs/REMINDER/3/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/final_snapshot/_dbs/REMINDER/3/reminder_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/initial_snapshot/_dbs/MESSAGING/1/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/initial_snapshot/_dbs/MESSAGING/2/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/initial_snapshot/_dbs/MESSAGING/3/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/initial_snapshot/_dbs/MESSAGING/4/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/initial_snapshot/_dbs/MESSAGING/5/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/initial_snapshot/_dbs/REMINDER/1/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/initial_snapshot/_dbs/REMINDER/1/reminder_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/initial_snapshot/_dbs/REMINDER/2/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/initial_snapshot/_dbs/REMINDER/2/reminder_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/initial_snapshot/_dbs/REMINDER/3/creation_timestamp",
+      "kind": "value"
+    },
+    {
+      "path": "/initial_snapshot/_dbs/REMINDER/3/reminder_timestamp",
+      "kind": "value"
+    }
+  ]
+}

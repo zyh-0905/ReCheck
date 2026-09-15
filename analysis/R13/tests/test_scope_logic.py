@@ -1,0 +1,39 @@
+import unittest
+from scope_logic import verdict,combine
+class ScopeTests(unittest.TestCase):
+ def test_eventual_reverted(self):self.assertIs(verdict([False,True,False],'eventually'),True)
+ def test_terminal_reverted(self):self.assertIs(verdict([False,True,False],'terminal'),False)
+ def test_always_not_eventual(self):self.assertIs(verdict([False,True,True],'always'),False)
+ def test_repair_final(self):self.assertIs(verdict([False,True,False,True],'terminal'),True)
+ def test_repair_not_invariant(self):self.assertIs(verdict([False,True,False,True],'always'),False)
+ def test_retired_goal(self):self.assertIs(verdict([False,True,False],'terminal',0,1),True)
+ def test_revision_only_after_activation(self):self.assertIs(verdict([True,False,True],'always',2,2),True)
+ def test_missing_final(self):self.assertIsNone(verdict([True,None],'terminal'))
+ def test_unknown_eventual(self):self.assertIsNone(verdict([False,None],'eventually'))
+ def test_known_witness(self):self.assertIs(verdict([None,True],'eventually'),True)
+ def test_unknown_always(self):self.assertIsNone(verdict([True,None],'always'))
+ def test_false_dominates_always(self):self.assertIs(verdict([None,False],'always'),False)
+ def test_true_singleton(self):self.assertIs(verdict([True],'terminal'),True)
+ def test_empty_rejected(self):
+  with self.assertRaises(ValueError):verdict([],'terminal')
+ def test_integer_not_boolean(self):
+  with self.assertRaises(TypeError):verdict([0,1],'eventually')
+ def test_string_not_boolean(self):
+  with self.assertRaises(TypeError):verdict(['true'],'terminal')
+ def test_mode_validation(self):
+  with self.assertRaises(ValueError):verdict([True],'sometimes')
+ def test_negative_start(self):
+  with self.assertRaises(ValueError):verdict([True],'always',-1)
+ def test_reverse_interval(self):
+  with self.assertRaises(ValueError):verdict([True,False],'always',1,0)
+ def test_end_beyond(self):
+  with self.assertRaises(ValueError):verdict([True],'terminal',0,1)
+ def test_bool_not_index(self):
+  with self.assertRaises(TypeError):verdict([True],'terminal',False)
+ def test_and_true(self):self.assertIs(combine([True,True]),True)
+ def test_and_false(self):self.assertIs(combine([None,False]),False)
+ def test_and_unknown(self):self.assertIsNone(combine([None,True]))
+ def test_empty_and_unknown(self):self.assertIsNone(combine([]))
+ def test_and_bad_type(self):
+  with self.assertRaises(TypeError):combine([1])
+if __name__=='__main__':unittest.main()

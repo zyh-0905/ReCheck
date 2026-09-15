@@ -1,0 +1,170 @@
+test_absolute_without_conversion_unknown (test_effects.EffectTests.test_absolute_without_conversion_unknown) ... ok
+test_apostrophe_punctuation (test_effects.EffectTests.test_apostrophe_punctuation) ... FAIL
+test_clock_paired_offsets (test_effects.EffectTests.test_clock_paired_offsets) ... FAIL
+test_contact_unknown_target (test_effects.EffectTests.test_contact_unknown_target) ... ok
+test_contact_wrong_self (test_effects.EffectTests.test_contact_wrong_self) ... FAIL
+test_content_exists_time_unknown (test_effects.EffectTests.test_content_exists_time_unknown) ... ok
+test_exact_date_conversion (test_effects.EffectTests.test_exact_date_conversion) ... FAIL
+test_existing_not_new_reminder (test_effects.EffectTests.test_existing_not_new_reminder) ... FAIL
+test_false_dominates_unknown (test_effects.EffectTests.test_false_dominates_unknown) ... FAIL
+test_friday_ambiguity (test_effects.EffectTests.test_friday_ambiguity) ... ERROR
+test_inconsistent_offsets_unknown (test_effects.EffectTests.test_inconsistent_offsets_unknown) ... ok
+test_latest_outgoing_not_incoming (test_effects.EffectTests.test_latest_outgoing_not_incoming) ... FAIL
+test_latest_tie_unknown (test_effects.EffectTests.test_latest_tie_unknown) ... ok
+test_literal_dict (test_effects.EffectTests.test_literal_dict) ... FAIL
+test_literal_no_exec (test_effects.EffectTests.test_literal_no_exec) ... ok
+test_message_recipient_and_self (test_effects.EffectTests.test_message_recipient_and_self) ... FAIL
+test_message_wrong_recipient (test_effects.EffectTests.test_message_wrong_recipient) ... FAIL
+test_missing_clock_unknown (test_effects.EffectTests.test_missing_clock_unknown) ... ok
+test_new_correct_reminder (test_effects.EffectTests.test_new_correct_reminder) ... FAIL
+test_new_rows_missing_initial_unknown (test_effects.EffectTests.test_new_rows_missing_initial_unknown) ... ok
+test_new_rows_not_initial_ids (test_effects.EffectTests.test_new_rows_not_initial_ids) ... FAIL
+test_not_remove_words (test_effects.EffectTests.test_not_remove_words) ... ok
+test_true_and_true (test_effects.EffectTests.test_true_and_true) ... FAIL
+test_unknown_does_not_become_false (test_effects.EffectTests.test_unknown_does_not_become_false) ... ok
+test_wrong_reminder_time (test_effects.EffectTests.test_wrong_reminder_time) ... FAIL
+
+======================================================================
+ERROR: test_friday_ambiguity (test_effects.EffectTests.test_friday_ambiguity)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R15_Effect_Coverage/tests/test_effects.py", line 46, in test_friday_ambiguity
+    self.assertEqual(len(c['target_epochs']),2)
+                     ~~~^^^^^^^^^^^^^^^^^^^^
+TypeError: object of type 'NoneType' has no len()
+
+======================================================================
+FAIL: test_apostrophe_punctuation (test_effects.EffectTests.test_apostrophe_punctuation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R15_Effect_Coverage/tests/test_effects.py", line 14, in test_apostrophe_punctuation
+    def test_apostrophe_punctuation(self):self.assertEqual(normalized(' How’s the new album coming along? '),normalized("How's the new album coming along."))
+                                          ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ' How’s the new album coming along? ' != "How's the new album coming along."
+-  How’s the new album coming along? 
+? -   ^                            ^^
++ How's the new album coming along.
+?    ^                            ^
+
+
+======================================================================
+FAIL: test_clock_paired_offsets (test_effects.EffectTests.test_clock_paired_offsets)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R15_Effect_Coverage/tests/test_effects.py", line 33, in test_clock_paired_offsets
+    self.assertEqual(c['offset_seconds'],28800)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: None != 28800
+
+======================================================================
+FAIL: test_contact_wrong_self (test_effects.EffectTests.test_contact_wrong_self)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R15_Effect_Coverage/tests/test_effects.py", line 70, in test_contact_wrong_self
+    self.assertIs(effect_at('modify_contact_with_message_recency',s,{}, {},'A')['effect'],False)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: None is not False
+
+======================================================================
+FAIL: test_exact_date_conversion (test_effects.EffectTests.test_exact_date_conversion)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R15_Effect_Coverage/tests/test_effects.py", line 39, in test_exact_date_conversion
+    self.assertEqual(c['target_epochs'],[1711098000.0])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: None != [1711098000.0]
+
+======================================================================
+FAIL: test_existing_not_new_reminder (test_effects.EffectTests.test_existing_not_new_reminder)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R15_Effect_Coverage/tests/test_effects.py", line 56, in test_existing_not_new_reminder
+    self.assertIs(effect_at('add_reminder_content_and_date_and_time',{'REMINDER':r},{'REMINDER':r},{'target_epochs':[42]},None)['effect'],False)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: None is not False
+
+======================================================================
+FAIL: test_false_dominates_unknown (test_effects.EffectTests.test_false_dominates_unknown)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R15_Effect_Coverage/tests/test_effects.py", line 16, in test_false_dominates_unknown
+    def test_false_dominates_unknown(self):self.assertIs(combine(False,None),False)
+                                           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: None is not False
+
+======================================================================
+FAIL: test_latest_outgoing_not_incoming (test_effects.EffectTests.test_latest_outgoing_not_incoming)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R15_Effect_Coverage/tests/test_effects.py", line 25, in test_latest_outgoing_not_incoming
+    self.assertEqual(latest_outgoing_target(init),'A')
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: None != 'A'
+
+======================================================================
+FAIL: test_literal_dict (test_effects.EffectTests.test_literal_dict)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R15_Effect_Coverage/tests/test_effects.py", line 20, in test_literal_dict
+    def test_literal_dict(self):self.assertEqual(literal("{'year': 2025}"),{'year':2025})
+                                ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: None != {'year': 2025}
+
+======================================================================
+FAIL: test_message_recipient_and_self (test_effects.EffectTests.test_message_recipient_and_self)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R15_Effect_Coverage/tests/test_effects.py", line 63, in test_message_recipient_and_self
+    self.assertIs(effect_at('send_message_with_phone_number_and_content',s,init,{},None)['effect'],True)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: None is not True
+
+======================================================================
+FAIL: test_message_wrong_recipient (test_effects.EffectTests.test_message_wrong_recipient)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R15_Effect_Coverage/tests/test_effects.py", line 67, in test_message_wrong_recipient
+    self.assertIs(effect_at('send_message_with_phone_number_and_content',s,init,{},None)['effect'],False)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: None is not False
+
+======================================================================
+FAIL: test_new_correct_reminder (test_effects.EffectTests.test_new_correct_reminder)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R15_Effect_Coverage/tests/test_effects.py", line 53, in test_new_correct_reminder
+    self.assertIs(v['effect'],True)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+AssertionError: None is not True
+
+======================================================================
+FAIL: test_new_rows_not_initial_ids (test_effects.EffectTests.test_new_rows_not_initial_ids)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R15_Effect_Coverage/tests/test_effects.py", line 21, in test_new_rows_not_initial_ids
+    def test_new_rows_not_initial_ids(self):self.assertEqual(new_rows([{'id':'a'}],[{'id':'a'},{'id':'b'}],'id'),[{'id':'b'}])
+                                            ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: None != [{'id': 'b'}]
+
+======================================================================
+FAIL: test_true_and_true (test_effects.EffectTests.test_true_and_true)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R15_Effect_Coverage/tests/test_effects.py", line 18, in test_true_and_true
+    def test_true_and_true(self):self.assertIs(combine(True,True),True)
+                                 ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: None is not True
+
+======================================================================
+FAIL: test_wrong_reminder_time (test_effects.EffectTests.test_wrong_reminder_time)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R15_Effect_Coverage/tests/test_effects.py", line 50, in test_wrong_reminder_time
+    self.assertIs(v['effect'],False);self.assertIs(v['content'],True);self.assertIs(v['time'],False)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+AssertionError: None is not False
+
+----------------------------------------------------------------------
+Ran 25 tests in 0.003s
+
+FAILED (failures=14, errors=1)

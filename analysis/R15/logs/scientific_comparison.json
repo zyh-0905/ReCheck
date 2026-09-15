@@ -1,0 +1,10 @@
+{
+  "dev_v2/episodes.csv": true,
+  "dev_v2/episodes.json": true,
+  "dev_v2/evidence.json": true,
+  "dev_v2/summary.json": true,
+  "later_v1/episodes.csv": true,
+  "later_v1/episodes.json": true,
+  "later_v1/evidence.json": true,
+  "later_v1/summary.json": true
+}

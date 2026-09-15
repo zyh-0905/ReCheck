@@ -1,0 +1,9 @@
+subset,mode,proposals,committed_safe,committed_unsafe,rejected_safe_patch,rejected_unsafe_patch
+first,none,48,40,8,0,0
+first,row,48,26,8,14,0
+first,selection,48,40,0,0,8
+first,all,48,26,0,14,8
+all,none,70,62,8,0,0
+all,row,70,48,8,14,0
+all,selection,70,62,0,0,8
+all,all,70,48,0,14,8

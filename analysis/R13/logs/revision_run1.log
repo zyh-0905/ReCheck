@@ -1,0 +1,62 @@
+[
+  {
+    "scenario": "update_contact_relationship_with_relationship_twice_multiple_user_turn",
+    "variant": "correct_revision",
+    "first_scoped_goal": true,
+    "latest_terminal_only": true,
+    "protected_invariant": true,
+    "scoped_contract": true,
+    "blanket_all_goals_terminal": false,
+    "native_tool_calls": 5,
+    "tool_errors": 0,
+    "official_similarity": 1.0
+  },
+  {
+    "scenario": "update_contact_relationship_with_relationship_twice_multiple_user_turn",
+    "variant": "missing_final_revision",
+    "first_scoped_goal": true,
+    "latest_terminal_only": false,
+    "protected_invariant": true,
+    "scoped_contract": false,
+    "blanket_all_goals_terminal": false,
+    "native_tool_calls": 3,
+    "tool_errors": 0,
+    "official_similarity": 0.8
+  },
+  {
+    "scenario": "update_contact_relationship_with_relationship_twice_multiple_user_turn",
+    "variant": "undo_latest_goal",
+    "first_scoped_goal": true,
+    "latest_terminal_only": false,
+    "protected_invariant": true,
+    "scoped_contract": false,
+    "blanket_all_goals_terminal": false,
+    "native_tool_calls": 7,
+    "tool_errors": 0,
+    "official_similarity": 1.0
+  },
+  {
+    "scenario": "update_contact_relationship_with_relationship_twice_multiple_user_turn",
+    "variant": "no_effect",
+    "first_scoped_goal": false,
+    "latest_terminal_only": true,
+    "protected_invariant": true,
+    "scoped_contract": false,
+    "blanket_all_goals_terminal": false,
+    "native_tool_calls": 1,
+    "tool_errors": 0,
+    "official_similarity": 0.6
+  },
+  {
+    "scenario": "update_contact_relationship_with_relationship_twice_multiple_user_turn",
+    "variant": "redundant_error_then_revision",
+    "first_scoped_goal": true,
+    "latest_terminal_only": true,
+    "protected_invariant": true,
+    "scoped_contract": true,
+    "blanket_all_goals_terminal": false,
+    "native_tool_calls": 6,
+    "tool_errors": 1,
+    "official_similarity": 1.0
+  }
+]

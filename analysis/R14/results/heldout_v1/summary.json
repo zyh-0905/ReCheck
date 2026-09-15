@@ -1,0 +1,25 @@
+{
+  "split": "heldout",
+  "source_files": 72,
+  "episodes": 2664,
+  "task_ids": 37,
+  "status_counts": {
+    "success": 2664
+  },
+  "calls": 8318,
+  "receipts": 8305,
+  "batches": 7530,
+  "multi_batches": 621,
+  "reordered_batches": 82,
+  "structural_issue_episodes": 9,
+  "supported": 720,
+  "known": 709,
+  "effect_true": 658,
+  "effect_false": 51,
+  "regression_candidates": 1,
+  "lost_goal_candidates": 1,
+  "full_effect_false_candidates": 0,
+  "all_ted_full": 1907,
+  "missing": [],
+  "new_llm_calls": 0
+}

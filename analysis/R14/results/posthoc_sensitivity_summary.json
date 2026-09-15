@@ -1,0 +1,13 @@
+{
+  "label": "POSTHOC_SENSITIVITY_NOT_INDEPENDENT_CONFIRMATION",
+  "static_n": 960,
+  "static_true": 880,
+  "static_false": 65,
+  "static_unknown": 15,
+  "static_lost": 1,
+  "full_but_false": 0,
+  "phase_n": 96,
+  "phase_true": 85,
+  "phase_false": 6,
+  "phase_unknown": 5
+}

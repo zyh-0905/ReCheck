@@ -1,0 +1,48 @@
+{
+  "kind": "SCRIPTED_REPRO_NOT_MODEL",
+  "official_evaluation": {
+    "milestone_mapping": {
+      "0": [
+        17,
+        1.0
+      ],
+      "1": [
+        20,
+        1.0
+      ]
+    },
+    "minefield_mapping": {},
+    "milestone_similarity": 1.0,
+    "minefield_similarity": 0,
+    "similarity": 1.0,
+    "turn_count": 6
+  },
+  "final_wifi": true,
+  "terminal_goal_holds": false,
+  "events": [
+    {
+      "code": "set_wifi_status(on=False)",
+      "setting": {
+        "device_id": "04640c30-ec89-5a3c-9fb4-4af3101c8e04",
+        "cellular": true,
+        "wifi": false,
+        "location_service": true,
+        "low_battery_mode": false,
+        "latitude": 37.334606,
+        "longitude": -122.009102
+      }
+    },
+    {
+      "code": "set_wifi_status(on=True)",
+      "setting": {
+        "device_id": "04640c30-ec89-5a3c-9fb4-4af3101c8e04",
+        "cellular": true,
+        "wifi": true,
+        "location_service": true,
+        "low_battery_mode": false,
+        "latitude": 37.334606,
+        "longitude": -122.009102
+      }
+    }
+  ]
+}

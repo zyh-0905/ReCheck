@@ -1,0 +1,37 @@
+[
+  {
+    "variant": "correct",
+    "cases": 3,
+    "official_full_scores": 3,
+    "terminal_valid": 3,
+    "tool_errors": 0
+  },
+  {
+    "variant": "error_then_correct",
+    "cases": 3,
+    "official_full_scores": 3,
+    "terminal_valid": 3,
+    "tool_errors": 3
+  },
+  {
+    "variant": "claim_only",
+    "cases": 3,
+    "official_full_scores": 0,
+    "terminal_valid": 0,
+    "tool_errors": 0
+  },
+  {
+    "variant": "achieve_then_revert",
+    "cases": 3,
+    "official_full_scores": 3,
+    "terminal_valid": 0,
+    "tool_errors": 0
+  },
+  {
+    "variant": "achieve_revert_repair",
+    "cases": 3,
+    "official_full_scores": 3,
+    "terminal_valid": 3,
+    "tool_errors": 0
+  }
+]

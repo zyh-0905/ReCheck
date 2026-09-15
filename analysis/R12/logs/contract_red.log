@@ -1,0 +1,88 @@
+test_agreement (test_contract.ContractTests.test_agreement) ... FAIL
+test_exact_false (test_contract.ContractTests.test_exact_false) ... FAIL
+test_exact_true (test_contract.ContractTests.test_exact_true) ... FAIL
+test_false_accept (test_contract.ContractTests.test_false_accept) ... FAIL
+test_missing (test_contract.ContractTests.test_missing) ... ok
+test_no_integer_coercion (test_contract.ContractTests.test_no_integer_coercion) ... ok
+test_not_drop_uuid_or_error (test_contract.ContractTests.test_not_drop_uuid_or_error) ... FAIL
+test_other_fields_do_not_change_target (test_contract.ContractTests.test_other_fields_do_not_change_target) ... FAIL
+test_partial_is_not_full (test_contract.ContractTests.test_partial_is_not_full) ... FAIL
+test_projection_only_drops_elapsed (test_contract.ContractTests.test_projection_only_drops_elapsed) ... FAIL
+test_wrong_value (test_contract.ContractTests.test_wrong_value) ... ok
+
+======================================================================
+FAIL: test_agreement (test_contract.ContractTests.test_agreement)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R12_Public_Evaluator_Audit/tests/test_contract.py", line 12, in test_agreement
+    def test_agreement(self):self.assertEqual(classify(1.0,True),'full_score_terminal_true')
+                             ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: None != 'full_score_terminal_true'
+
+======================================================================
+FAIL: test_exact_false (test_contract.ContractTests.test_exact_false)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R12_Public_Evaluator_Audit/tests/test_contract.py", line 5, in test_exact_false
+    def test_exact_false(self):self.assertTrue(terminal_valid({'wifi':False},'wifi',False))
+                               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: None is not true
+
+======================================================================
+FAIL: test_exact_true (test_contract.ContractTests.test_exact_true)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R12_Public_Evaluator_Audit/tests/test_contract.py", line 4, in test_exact_true
+    def test_exact_true(self):self.assertTrue(terminal_valid({'wifi':True},'wifi',True))
+                              ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: None is not true
+
+======================================================================
+FAIL: test_false_accept (test_contract.ContractTests.test_false_accept)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R12_Public_Evaluator_Audit/tests/test_contract.py", line 10, in test_false_accept
+    def test_false_accept(self):self.assertEqual(classify(1.0,False),'full_score_terminal_mismatch')
+                                ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: None != 'full_score_terminal_mismatch'
+
+======================================================================
+FAIL: test_not_drop_uuid_or_error (test_contract.ContractTests.test_not_drop_uuid_or_error)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R12_Public_Evaluator_Audit/tests/test_contract.py", line 15, in test_not_drop_uuid_or_error
+    def test_not_drop_uuid_or_error(self):self.assertEqual(project({'error':'ValueError','id':'abc'}),{'error':'ValueError','id':'abc'})
+                                          ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: None != {'error': 'ValueError', 'id': 'abc'}
+
+======================================================================
+FAIL: test_other_fields_do_not_change_target (test_contract.ContractTests.test_other_fields_do_not_change_target)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R12_Public_Evaluator_Audit/tests/test_contract.py", line 9, in test_other_fields_do_not_change_target
+    def test_other_fields_do_not_change_target(self):self.assertTrue(terminal_valid({'wifi':False,'cellular':True},'wifi',False))
+                                                     ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: None is not true
+
+======================================================================
+FAIL: test_partial_is_not_full (test_contract.ContractTests.test_partial_is_not_full)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R12_Public_Evaluator_Audit/tests/test_contract.py", line 11, in test_partial_is_not_full
+    def test_partial_is_not_full(self):self.assertEqual(classify(0.5,False),'not_full_score_terminal_false')
+                                       ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: None != 'not_full_score_terminal_false'
+
+======================================================================
+FAIL: test_projection_only_drops_elapsed (test_contract.ContractTests.test_projection_only_drops_elapsed)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R12_Public_Evaluator_Audit/tests/test_contract.py", line 14, in test_projection_only_drops_elapsed
+    self.assertEqual(project({'elapsed_seconds':1,'value':3,'nested':[{'elapsed_seconds':2,'x':False}]}),{'value':3,'nested':[{'x':False}]})
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: None != {'value': 3, 'nested': [{'x': False}]}
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.003s
+
+FAILED (failures=8)

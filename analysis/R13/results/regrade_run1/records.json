@@ -1,0 +1,72 @@
+[
+  {
+    "blanket_all_goals_terminal": false,
+    "checked_events": 5,
+    "checked_observations": 11,
+    "first_scoped_goal": true,
+    "latest_terminal_only": true,
+    "native_regrade_equal": true,
+    "native_tool_calls": 5,
+    "original_similarity_recorded_not_reoptimized": 1.0,
+    "protected_invariant": true,
+    "scoped_contract": true,
+    "tool_errors": 0,
+    "variant": "correct_revision"
+  },
+  {
+    "blanket_all_goals_terminal": false,
+    "checked_events": 3,
+    "checked_observations": 9,
+    "first_scoped_goal": true,
+    "latest_terminal_only": false,
+    "native_regrade_equal": true,
+    "native_tool_calls": 3,
+    "original_similarity_recorded_not_reoptimized": 0.8,
+    "protected_invariant": true,
+    "scoped_contract": false,
+    "tool_errors": 0,
+    "variant": "missing_final_revision"
+  },
+  {
+    "blanket_all_goals_terminal": false,
+    "checked_events": 1,
+    "checked_observations": 7,
+    "first_scoped_goal": false,
+    "latest_terminal_only": true,
+    "native_regrade_equal": true,
+    "native_tool_calls": 1,
+    "original_similarity_recorded_not_reoptimized": 0.6,
+    "protected_invariant": true,
+    "scoped_contract": false,
+    "tool_errors": 0,
+    "variant": "no_effect"
+  },
+  {
+    "blanket_all_goals_terminal": false,
+    "checked_events": 6,
+    "checked_observations": 12,
+    "first_scoped_goal": true,
+    "latest_terminal_only": true,
+    "native_regrade_equal": true,
+    "native_tool_calls": 6,
+    "original_similarity_recorded_not_reoptimized": 1.0,
+    "protected_invariant": true,
+    "scoped_contract": true,
+    "tool_errors": 1,
+    "variant": "redundant_error_then_revision"
+  },
+  {
+    "blanket_all_goals_terminal": false,
+    "checked_events": 7,
+    "checked_observations": 13,
+    "first_scoped_goal": true,
+    "latest_terminal_only": false,
+    "native_regrade_equal": true,
+    "native_tool_calls": 7,
+    "original_similarity_recorded_not_reoptimized": 1.0,
+    "protected_invariant": true,
+    "scoped_contract": false,
+    "tool_errors": 0,
+    "variant": "undo_latest_goal"
+  }
+]

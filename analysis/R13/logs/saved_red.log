@@ -1,0 +1,221 @@
+test_dialog_not_state (test_census_rules.CensusTests.test_dialog_not_state) ... ok
+test_guardrail_not_target (test_census_rules.CensusTests.test_guardrail_not_target) ... ok
+test_information (test_census_rules.CensusTests.test_information) ... ok
+test_message_with_prerequisite (test_census_rules.CensusTests.test_message_with_prerequisite) ... ok
+test_missing_info_first (test_census_rules.CensusTests.test_missing_info_first) ... ok
+test_revision_not_terminalize_all (test_census_rules.CensusTests.test_revision_not_terminalize_all) ... ok
+test_setting_prerequisite (test_census_rules.CensusTests.test_setting_prerequisite) ... ok
+test_setting_target (test_census_rules.CensusTests.test_setting_target) ... ok
+test_final_state_alone_insufficient (test_native_scope.NativeScopeTests.test_final_state_alone_insufficient) ... ok
+test_legitimate_error_not_violation (test_native_scope.NativeScopeTests.test_legitimate_error_not_violation) ... ok
+test_missing_final_revision (test_native_scope.NativeScopeTests.test_missing_final_revision) ... ok
+test_official_correct_revision (test_native_scope.NativeScopeTests.test_official_correct_revision) ... ok
+test_undo_latest_goal (test_native_scope.NativeScopeTests.test_undo_latest_goal) ... ok
+test_changed_observation (test_saved_check.SavedTests.test_changed_observation) ... ERROR
+test_changed_snapshot (test_saved_check.SavedTests.test_changed_snapshot) ... ERROR
+test_duplicate_event (test_saved_check.SavedTests.test_duplicate_event) ... ERROR
+test_genuine_records (test_saved_check.SavedTests.test_genuine_records) ... ERROR
+test_score_metadata_changed (test_saved_check.SavedTests.test_score_metadata_changed) ... ERROR
+test_wrong_marker (test_saved_check.SavedTests.test_wrong_marker) ... ERROR
+test_wrong_native_args (test_saved_check.SavedTests.test_wrong_native_args) ... ERROR
+test_wrong_native_ok (test_saved_check.SavedTests.test_wrong_native_ok) ... ERROR
+test_wrong_outcome (test_saved_check.SavedTests.test_wrong_outcome) ... ERROR
+test_wrong_reported_count (test_saved_check.SavedTests.test_wrong_reported_count) ... ERROR
+test_wrong_scope (test_saved_check.SavedTests.test_wrong_scope) ... ERROR
+test_wrong_target (test_saved_check.SavedTests.test_wrong_target) ... ERROR
+test_always_not_eventual (test_scope_logic.ScopeTests.test_always_not_eventual) ... ok
+test_and_bad_type (test_scope_logic.ScopeTests.test_and_bad_type) ... ok
+test_and_false (test_scope_logic.ScopeTests.test_and_false) ... ok
+test_and_true (test_scope_logic.ScopeTests.test_and_true) ... ok
+test_and_unknown (test_scope_logic.ScopeTests.test_and_unknown) ... ok
+test_bool_not_index (test_scope_logic.ScopeTests.test_bool_not_index) ... ok
+test_empty_and_unknown (test_scope_logic.ScopeTests.test_empty_and_unknown) ... ok
+test_empty_rejected (test_scope_logic.ScopeTests.test_empty_rejected) ... ok
+test_end_beyond (test_scope_logic.ScopeTests.test_end_beyond) ... ok
+test_eventual_reverted (test_scope_logic.ScopeTests.test_eventual_reverted) ... ok
+test_false_dominates_always (test_scope_logic.ScopeTests.test_false_dominates_always) ... ok
+test_integer_not_boolean (test_scope_logic.ScopeTests.test_integer_not_boolean) ... ok
+test_known_witness (test_scope_logic.ScopeTests.test_known_witness) ... ok
+test_missing_final (test_scope_logic.ScopeTests.test_missing_final) ... ok
+test_mode_validation (test_scope_logic.ScopeTests.test_mode_validation) ... ok
+test_negative_start (test_scope_logic.ScopeTests.test_negative_start) ... ok
+test_repair_final (test_scope_logic.ScopeTests.test_repair_final) ... ok
+test_repair_not_invariant (test_scope_logic.ScopeTests.test_repair_not_invariant) ... ok
+test_retired_goal (test_scope_logic.ScopeTests.test_retired_goal) ... ok
+test_reverse_interval (test_scope_logic.ScopeTests.test_reverse_interval) ... ok
+test_revision_only_after_activation (test_scope_logic.ScopeTests.test_revision_only_after_activation) ... ok
+test_string_not_boolean (test_scope_logic.ScopeTests.test_string_not_boolean) ... ok
+test_terminal_reverted (test_scope_logic.ScopeTests.test_terminal_reverted) ... ok
+test_true_singleton (test_scope_logic.ScopeTests.test_true_singleton) ... ok
+test_unknown_always (test_scope_logic.ScopeTests.test_unknown_always) ... ok
+test_unknown_eventual (test_scope_logic.ScopeTests.test_unknown_eventual) ... ok
+
+======================================================================
+ERROR: test_changed_observation (test_saved_check.SavedTests.test_changed_observation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/tests/test_saved_check.py", line 16, in test_changed_observation
+    def test_changed_observation(self):self.rejects(lambda d:d['states'][-1]['contacts'][0].__setitem__('relationship','friend'))
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/tests/test_saved_check.py", line 13, in rejects
+    with self.assertRaises(ValueError):check(r)
+                                       ^^^^^^^^
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/src/saved_check.py", line 3, in check
+    raise NotImplementedError('R13 independent snapshot checks pending')
+NotImplementedError: R13 independent snapshot checks pending
+
+======================================================================
+ERROR: test_changed_snapshot (test_saved_check.SavedTests.test_changed_snapshot)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/tests/test_saved_check.py", line 21, in test_changed_snapshot
+    def test_changed_snapshot(self):self.rejects(lambda d:d['final_snapshot']['_dbs']['CONTACT'][-1].__setitem__('phone_number','wrong'))
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/tests/test_saved_check.py", line 13, in rejects
+    with self.assertRaises(ValueError):check(r)
+                                       ^^^^^^^^
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/src/saved_check.py", line 3, in check
+    raise NotImplementedError('R13 independent snapshot checks pending')
+NotImplementedError: R13 independent snapshot checks pending
+
+======================================================================
+ERROR: test_duplicate_event (test_saved_check.SavedTests.test_duplicate_event)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/tests/test_saved_check.py", line 22, in test_duplicate_event
+    def test_duplicate_event(self):self.rejects(lambda d:d['events'].append(copy.deepcopy(d['events'][0])))
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/tests/test_saved_check.py", line 13, in rejects
+    with self.assertRaises(ValueError):check(r)
+                                       ^^^^^^^^
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/src/saved_check.py", line 3, in check
+    raise NotImplementedError('R13 independent snapshot checks pending')
+NotImplementedError: R13 independent snapshot checks pending
+
+======================================================================
+ERROR: test_genuine_records (test_saved_check.SavedTests.test_genuine_records)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/tests/test_saved_check.py", line 10, in test_genuine_records
+    d=json.loads(f.read_text());self.assertEqual(check(d)['scoped_contract'],d['scoped_contract'])
+                                                 ^^^^^^^^
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/src/saved_check.py", line 3, in check
+    raise NotImplementedError('R13 independent snapshot checks pending')
+NotImplementedError: R13 independent snapshot checks pending
+
+======================================================================
+ERROR: test_score_metadata_changed (test_saved_check.SavedTests.test_score_metadata_changed)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/tests/test_saved_check.py", line 24, in test_score_metadata_changed
+    def test_score_metadata_changed(self):self.rejects(lambda d:d['official_evaluation'].__setitem__('similarity',-1))
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/tests/test_saved_check.py", line 13, in rejects
+    with self.assertRaises(ValueError):check(r)
+                                       ^^^^^^^^
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/src/saved_check.py", line 3, in check
+    raise NotImplementedError('R13 independent snapshot checks pending')
+NotImplementedError: R13 independent snapshot checks pending
+
+======================================================================
+ERROR: test_wrong_marker (test_saved_check.SavedTests.test_wrong_marker)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/tests/test_saved_check.py", line 23, in test_wrong_marker
+    def test_wrong_marker(self):self.rejects(lambda d:d.__setitem__('evidence_kind','LLM_RESULT'))
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/tests/test_saved_check.py", line 13, in rejects
+    with self.assertRaises(ValueError):check(r)
+                                       ^^^^^^^^
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/src/saved_check.py", line 3, in check
+    raise NotImplementedError('R13 independent snapshot checks pending')
+NotImplementedError: R13 independent snapshot checks pending
+
+======================================================================
+ERROR: test_wrong_native_args (test_saved_check.SavedTests.test_wrong_native_args)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/tests/test_saved_check.py", line 17, in test_wrong_native_args
+    def test_wrong_native_args(self):self.rejects(lambda d:d['events'][1]['arguments'].__setitem__('relationship','boss'))
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/tests/test_saved_check.py", line 13, in rejects
+    with self.assertRaises(ValueError):check(r)
+                                       ^^^^^^^^
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/src/saved_check.py", line 3, in check
+    raise NotImplementedError('R13 independent snapshot checks pending')
+NotImplementedError: R13 independent snapshot checks pending
+
+======================================================================
+ERROR: test_wrong_native_ok (test_saved_check.SavedTests.test_wrong_native_ok)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/tests/test_saved_check.py", line 18, in test_wrong_native_ok
+    def test_wrong_native_ok(self):self.rejects(lambda d:d['events'][1]['response'].__setitem__('ok',False))
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/tests/test_saved_check.py", line 13, in rejects
+    with self.assertRaises(ValueError):check(r)
+                                       ^^^^^^^^
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/src/saved_check.py", line 3, in check
+    raise NotImplementedError('R13 independent snapshot checks pending')
+NotImplementedError: R13 independent snapshot checks pending
+
+======================================================================
+ERROR: test_wrong_outcome (test_saved_check.SavedTests.test_wrong_outcome)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/tests/test_saved_check.py", line 20, in test_wrong_outcome
+    def test_wrong_outcome(self):self.rejects(lambda d:d.__setitem__('scoped_contract',False))
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/tests/test_saved_check.py", line 13, in rejects
+    with self.assertRaises(ValueError):check(r)
+                                       ^^^^^^^^
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/src/saved_check.py", line 3, in check
+    raise NotImplementedError('R13 independent snapshot checks pending')
+NotImplementedError: R13 independent snapshot checks pending
+
+======================================================================
+ERROR: test_wrong_reported_count (test_saved_check.SavedTests.test_wrong_reported_count)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/tests/test_saved_check.py", line 19, in test_wrong_reported_count
+    def test_wrong_reported_count(self):self.rejects(lambda d:d.__setitem__('native_tool_calls',999))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/tests/test_saved_check.py", line 13, in rejects
+    with self.assertRaises(ValueError):check(r)
+                                       ^^^^^^^^
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/src/saved_check.py", line 3, in check
+    raise NotImplementedError('R13 independent snapshot checks pending')
+NotImplementedError: R13 independent snapshot checks pending
+
+======================================================================
+ERROR: test_wrong_scope (test_saved_check.SavedTests.test_wrong_scope)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/tests/test_saved_check.py", line 15, in test_wrong_scope
+    def test_wrong_scope(self):self.rejects(lambda d:d['first_goal_active_interval'].__setitem__(1,len(d['states'])-1))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/tests/test_saved_check.py", line 13, in rejects
+    with self.assertRaises(ValueError):check(r)
+                                       ^^^^^^^^
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/src/saved_check.py", line 3, in check
+    raise NotImplementedError('R13 independent snapshot checks pending')
+NotImplementedError: R13 independent snapshot checks pending
+
+======================================================================
+ERROR: test_wrong_target (test_saved_check.SavedTests.test_wrong_target)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/tests/test_saved_check.py", line 14, in test_wrong_target
+    def test_wrong_target(self):self.rejects(lambda d:d['target_ids_bound_at_initial_friend_query'].pop())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/tests/test_saved_check.py", line 13, in rejects
+    with self.assertRaises(ValueError):check(r)
+                                       ^^^^^^^^
+  File "/mnt/data/r13_work/R13_Temporal_Scope_Audit/src/saved_check.py", line 3, in check
+    raise NotImplementedError('R13 independent snapshot checks pending')
+NotImplementedError: R13 independent snapshot checks pending
+
+----------------------------------------------------------------------
+Ran 51 tests in 4.248s
+
+FAILED (errors=12)

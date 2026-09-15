@@ -1,0 +1,31 @@
+test_always_not_eventual (test_scope_logic.ScopeTests.test_always_not_eventual) ... ok
+test_and_bad_type (test_scope_logic.ScopeTests.test_and_bad_type) ... ok
+test_and_false (test_scope_logic.ScopeTests.test_and_false) ... ok
+test_and_true (test_scope_logic.ScopeTests.test_and_true) ... ok
+test_and_unknown (test_scope_logic.ScopeTests.test_and_unknown) ... ok
+test_bool_not_index (test_scope_logic.ScopeTests.test_bool_not_index) ... ok
+test_empty_and_unknown (test_scope_logic.ScopeTests.test_empty_and_unknown) ... ok
+test_empty_rejected (test_scope_logic.ScopeTests.test_empty_rejected) ... ok
+test_end_beyond (test_scope_logic.ScopeTests.test_end_beyond) ... ok
+test_eventual_reverted (test_scope_logic.ScopeTests.test_eventual_reverted) ... ok
+test_false_dominates_always (test_scope_logic.ScopeTests.test_false_dominates_always) ... ok
+test_integer_not_boolean (test_scope_logic.ScopeTests.test_integer_not_boolean) ... ok
+test_known_witness (test_scope_logic.ScopeTests.test_known_witness) ... ok
+test_missing_final (test_scope_logic.ScopeTests.test_missing_final) ... ok
+test_mode_validation (test_scope_logic.ScopeTests.test_mode_validation) ... ok
+test_negative_start (test_scope_logic.ScopeTests.test_negative_start) ... ok
+test_repair_final (test_scope_logic.ScopeTests.test_repair_final) ... ok
+test_repair_not_invariant (test_scope_logic.ScopeTests.test_repair_not_invariant) ... ok
+test_retired_goal (test_scope_logic.ScopeTests.test_retired_goal) ... ok
+test_reverse_interval (test_scope_logic.ScopeTests.test_reverse_interval) ... ok
+test_revision_only_after_activation (test_scope_logic.ScopeTests.test_revision_only_after_activation) ... ok
+test_string_not_boolean (test_scope_logic.ScopeTests.test_string_not_boolean) ... ok
+test_terminal_reverted (test_scope_logic.ScopeTests.test_terminal_reverted) ... ok
+test_true_singleton (test_scope_logic.ScopeTests.test_true_singleton) ... ok
+test_unknown_always (test_scope_logic.ScopeTests.test_unknown_always) ... ok
+test_unknown_eventual (test_scope_logic.ScopeTests.test_unknown_eventual) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 0.001s
+
+OK

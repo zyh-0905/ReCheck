@@ -1,0 +1,180 @@
+test_authorized_final_friend_separate (test_corpus_audit.Tests.test_authorized_final_friend_separate) ... FAIL
+test_bool_type_str (test_corpus_audit.Tests.test_bool_type_str) ... ok
+test_conflicting_batch_snapshots_unknown (test_corpus_audit.Tests.test_conflicting_batch_snapshots_unknown) ... ERROR
+test_duplicate_call (test_corpus_audit.Tests.test_duplicate_call) ... FAIL
+test_final_loss (test_corpus_audit.Tests.test_final_loss) ... ERROR
+test_final_unknown (test_corpus_audit.Tests.test_final_unknown) ... ERROR
+test_missing_receipt (test_corpus_audit.Tests.test_missing_receipt) ... FAIL
+test_missing_setting_not_false (test_corpus_audit.Tests.test_missing_setting_not_false) ... ok
+test_missing_target_is_false (test_corpus_audit.Tests.test_missing_target_is_false) ... ok
+test_mutation_without_snapshot_unknown (test_corpus_audit.Tests.test_mutation_without_snapshot_unknown) ... ERROR
+test_never_true (test_corpus_audit.Tests.test_never_true) ... ERROR
+test_no_infer_across_unknown (test_corpus_audit.Tests.test_no_infer_across_unknown) ... ERROR
+test_no_vacuous_empty_friends (test_corpus_audit.Tests.test_no_vacuous_empty_friends) ... ok
+test_non_goal_low_battery (test_corpus_audit.Tests.test_non_goal_low_battery) ... FAIL
+test_orphan_receipt (test_corpus_audit.Tests.test_orphan_receipt) ... FAIL
+test_receipt_order_batch (test_corpus_audit.Tests.test_receipt_order_batch) ... FAIL
+test_regression_repaired (test_corpus_audit.Tests.test_regression_repaired) ... ERROR
+test_replace_not_merge (test_corpus_audit.Tests.test_replace_not_merge) ... ERROR
+test_retreat (test_corpus_audit.Tests.test_retreat) ... ERROR
+test_tool_error_preserves_known (test_corpus_audit.Tests.test_tool_error_preserves_known) ... ERROR
+test_wifi_false (test_corpus_audit.Tests.test_wifi_false) ... FAIL
+test_wifi_true (test_corpus_audit.Tests.test_wifi_true) ... ok
+
+======================================================================
+ERROR: test_conflicting_batch_snapshots_unknown (test_corpus_audit.Tests.test_conflicting_batch_snapshots_unknown)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R14_Public_Corpus_Analysis/tests/test_corpus_audit.py", line 48, in test_conflicting_batch_snapshots_unknown
+    self.assertNotIn('SETTING',r['points'][-1]['state'])
+                               ~~~~~~~~~~~^^^^
+IndexError: list index out of range
+
+======================================================================
+ERROR: test_final_loss (test_corpus_audit.Tests.test_final_loss)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R14_Public_Corpus_Analysis/tests/test_corpus_audit.py", line 52, in test_final_loss
+    def test_final_loss(self):self.assertTrue(temporal([None,True,False])['ever_true_final_false'])
+                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'ever_true_final_false'
+
+======================================================================
+ERROR: test_final_unknown (test_corpus_audit.Tests.test_final_unknown)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R14_Public_Corpus_Analysis/tests/test_corpus_audit.py", line 53, in test_final_unknown
+    def test_final_unknown(self):self.assertIsNone(temporal([True,None])['ever_true_final_false'])
+                                                   ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'ever_true_final_false'
+
+======================================================================
+ERROR: test_mutation_without_snapshot_unknown (test_corpus_audit.Tests.test_mutation_without_snapshot_unknown)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R14_Public_Corpus_Analysis/tests/test_corpus_audit.py", line 42, in test_mutation_without_snapshot_unknown
+    self.assertNotIn('SETTING',r['points'][-1]['state'])
+                               ~~~~~~~~~~~^^^^
+IndexError: list index out of range
+
+======================================================================
+ERROR: test_never_true (test_corpus_audit.Tests.test_never_true)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R14_Public_Corpus_Analysis/tests/test_corpus_audit.py", line 54, in test_never_true
+    def test_never_true(self):self.assertFalse(temporal([False,False])['ever_true_final_false'])
+                                               ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'ever_true_final_false'
+
+======================================================================
+ERROR: test_no_infer_across_unknown (test_corpus_audit.Tests.test_no_infer_across_unknown)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R14_Public_Corpus_Analysis/tests/test_corpus_audit.py", line 55, in test_no_infer_across_unknown
+    def test_no_infer_across_unknown(self):self.assertFalse(temporal([True,None,False])['observed_regression'])
+                                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'observed_regression'
+
+======================================================================
+ERROR: test_regression_repaired (test_corpus_audit.Tests.test_regression_repaired)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R14_Public_Corpus_Analysis/tests/test_corpus_audit.py", line 51, in test_regression_repaired
+    r=temporal([False,True,False,True]);self.assertTrue(r['observed_regression']);self.assertFalse(r['ever_true_final_false'])
+                                                        ~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'observed_regression'
+
+======================================================================
+ERROR: test_replace_not_merge (test_corpus_audit.Tests.test_replace_not_merge)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R14_Public_Corpus_Analysis/tests/test_corpus_audit.py", line 17, in test_replace_not_merge
+    self.assertEqual(rebuild(s)['points'][-1]['state']['CONTACT'],[{'person_id':'b'}])
+                     ~~~~~~~~~~~~~~~~~~~~^^^^
+IndexError: list index out of range
+
+======================================================================
+ERROR: test_retreat (test_corpus_audit.Tests.test_retreat)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R14_Public_Corpus_Analysis/tests/test_corpus_audit.py", line 49, in test_retreat
+    def test_retreat(self):self.assertTrue(temporal([False,True,False])['observed_regression'])
+                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'observed_regression'
+
+======================================================================
+ERROR: test_tool_error_preserves_known (test_corpus_audit.Tests.test_tool_error_preserves_known)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R14_Public_Corpus_Analysis/tests/test_corpus_audit.py", line 45, in test_tool_error_preserves_known
+    self.assertTrue(r['points'][-1]['state']['SETTING'][0]['wifi'])
+                    ~~~~~~~~~~~^^^^
+IndexError: list index out of range
+
+======================================================================
+FAIL: test_authorized_final_friend_separate (test_corpus_audit.Tests.test_authorized_final_friend_separate)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R14_Public_Corpus_Analysis/tests/test_corpus_audit.py", line 27, in test_authorized_final_friend_separate
+    self.assertTrue(goal('phase_friend',fin,ini))
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: None is not true
+
+======================================================================
+FAIL: test_duplicate_call (test_corpus_audit.Tests.test_duplicate_call)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R14_Public_Corpus_Analysis/tests/test_corpus_audit.py", line 39, in test_duplicate_call
+    self.assertIn('duplicate_call:x',rebuild(s)['issues'])
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'duplicate_call:x' not found in []
+
+======================================================================
+FAIL: test_missing_receipt (test_corpus_audit.Tests.test_missing_receipt)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R14_Public_Corpus_Analysis/tests/test_corpus_audit.py", line 36, in test_missing_receipt
+    def test_missing_receipt(self):self.assertIn('missing_receipt:x',rebuild(sample({'role':'assistant','tool_calls':[call('x')]}))['issues'])
+                                   ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'missing_receipt:x' not found in []
+
+======================================================================
+FAIL: test_non_goal_low_battery (test_corpus_audit.Tests.test_non_goal_low_battery)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R14_Public_Corpus_Analysis/tests/test_corpus_audit.py", line 22, in test_non_goal_low_battery
+    def test_non_goal_low_battery(self):self.assertTrue(goal('turn_on_wifi_low_battery_mode',{'SETTING':[{'wifi':True,'low_battery_mode':True}]},{}))
+                                        ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: None is not true
+
+======================================================================
+FAIL: test_orphan_receipt (test_corpus_audit.Tests.test_orphan_receipt)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R14_Public_Corpus_Analysis/tests/test_corpus_audit.py", line 35, in test_orphan_receipt
+    def test_orphan_receipt(self):self.assertIn('orphan_receipt:x',rebuild(sample(receipt('x')))['issues'])
+                                  ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'orphan_receipt:x' not found in []
+
+======================================================================
+FAIL: test_receipt_order_batch (test_corpus_audit.Tests.test_receipt_order_batch)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R14_Public_Corpus_Analysis/tests/test_corpus_audit.py", line 34, in test_receipt_order_batch
+    r=rebuild(s);self.assertEqual(len(r['batches']),1);self.assertEqual(r['batches'][0]['receipt_order'],['b','a']);self.assertEqual(len([p for p in r['points'] if p['kind']=='batch_end']),1)
+                 ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 0 != 1
+
+======================================================================
+FAIL: test_wifi_false (test_corpus_audit.Tests.test_wifi_false)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R14_Public_Corpus_Analysis/tests/test_corpus_audit.py", line 19, in test_wifi_false
+    def test_wifi_false(self):self.assertTrue(goal('wifi_off',{'SETTING':[{'wifi':False}]},{}))
+                              ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: None is not true
+
+----------------------------------------------------------------------
+Ran 22 tests in 0.004s
+
+FAILED (failures=7, errors=10)

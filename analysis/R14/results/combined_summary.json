@@ -1,0 +1,32 @@
+{
+  "all_records": 3551,
+  "unique_run_ids": 310,
+  "receipt_name_anomalies": 0,
+  "static_in_scope": 960,
+  "static_known": 945,
+  "static_effect_true": 880,
+  "static_effect_false": 65,
+  "static_effect_unknown": 15,
+  "static_lost_goal_candidates": 1,
+  "static_original_full_but_effect_false": 0,
+  "unscored_task_records": 2495,
+  "phase_checks": {
+    "dev": {
+      "n": 24,
+      "scoped_complete": 23,
+      "scoped_not_complete": 1,
+      "unknown": 0,
+      "original_full": 6,
+      "complete_but_not_original_full": 17
+    },
+    "heldout": {
+      "n": 72,
+      "scoped_complete": 60,
+      "scoped_not_complete": 7,
+      "unknown": 5,
+      "original_full": 13,
+      "complete_but_not_original_full": 47
+    }
+  },
+  "interpretation": "The predicates check selected task effects, not all safety/communication requirements. Candidate regression requires manual user-intent review; source TED scores retained."
+}

@@ -1,0 +1,80 @@
+"""Explicitly exploratory extension to contact and reminder tasks after setting results."""
+import copy, json, csv, datetime, sys
+from pathlib import Path
+import attrs
+from native_study import NativeSession, definitions
+from tool_sandbox.common.execution_context import DatabaseNamespace as DB,RoleType
+from tool_sandbox.common.utils import deterministic_uuid
+from tool_sandbox.tools import contact,reminder,utilities
+from contract import classify, project
+from native_audit import write_json
+CASES=('update_contact_with_id_and_phone_number','update_contact_relationship_with_relationship','modify_reminder_with_recency_latest')
+VARIANTS=('correct','error_then_correct','claim_only','achieve_then_revert','achieve_revert_repair')
+
+def run_case(name,v):
+ sdef=copy.deepcopy({**definitions()['single'],**definitions()['multi']}[name])
+ allowed={n:next(getattr(m,n) for m in [contact,reminder,utilities] if hasattr(m,n)) for n in sdef.starting_context.tool_allow_list if any(hasattr(m,n) for m in [contact,reminder,utilities])}
+ session=NativeSession(sdef,allowed)
+ initial=session.snapshot();states=[]
+ namespace=DB.REMINDER if 'reminder' in name else DB.CONTACT
+ before=session.rows(namespace)
+ def call(n,a):
+  res=session.call(n,a);states.append({'event_index':len(states),'rows':session.rows(namespace)})
+  return res
+ if name=='update_contact_with_id_and_phone_number':
+  target=deterministic_uuid(payload='Fredrik Thordendal');old=next(r['phone_number'] for r in before if r['person_id']==target);field='phone_number';desired='+19876543210'
+  tool='modify_contact';id_field='person_id';targets=[target];previous={target:old}
+  text=f"{target}'s  phone number have been updated to +19876543210"
+ elif name=='update_contact_relationship_with_relationship':
+  tool='modify_contact';id_field='person_id';field='relationship';desired='enemy'
+  targets=[r['person_id'] for r in before if r['relationship']=='friend'];previous={i:'friend' for i in targets};text='All your friends are now your enemies'
+ else:
+  tool='modify_reminder';id_field='reminder_id';field='reminder_timestamp'
+  row=max(before,key=lambda r:r['creation_timestamp']);targets=[row['reminder_id']];previous={targets[0]:row[field]}
+  # Public deterministic scripting: call the actual clock and derive requested tomorrow.
+  desired=None;text='Your most recent reminder is postponed to tomorrow at 5PM.'
+ if v=='error_then_correct':
+  bad={id_field:'00000000-0000-0000-0000-000000000000',field:(1800000000 if field=='reminder_timestamp' else desired)}
+  res=call(tool,bad);assert not res['ok'];assert session.rows(namespace)==before
+ if v!='claim_only':
+  if name=='update_contact_relationship_with_relationship':
+   rows=call('search_contacts',{'relationship':'friend'})['value'];assert {r['person_id'] for r in rows}==set(targets)
+  if 'reminder' in name:
+   clock=call('get_current_timestamp',{});assert clock['ok'];now=clock['value']
+   found=call('search_reminder',{'creation_timestamp_upperbound':now});assert found['ok'],found
+   rows=found['value'];assert max(rows,key=lambda r:r['creation_timestamp'])['reminder_id']==targets[0]
+   tomorrow=datetime.datetime.fromtimestamp(now)+datetime.timedelta(days=1)
+   desired=tomorrow.replace(hour=17,minute=0,second=0,microsecond=0).timestamp()
+  for i in targets:assert call(tool,{id_field:i,field:desired})['ok']
+  if v in ('achieve_then_revert','achieve_revert_repair'):
+   for i in targets:assert call(tool,{id_field:i,field:previous[i]})['ok']
+  if v=='achieve_revert_repair':
+   for i in targets:assert call(tool,{id_field:i,field:desired})['ok']
+ else:
+  if 'reminder' in name:
+   tomorrow=datetime.datetime.now()+datetime.timedelta(days=1)
+   desired=tomorrow.replace(hour=17,minute=0,second=0,microsecond=0).timestamp()
+ session.finish(text)
+ evaluation=attrs.asdict(sdef.evaluation.evaluate(session.ctx,max_turn_count=sdef.max_messages))
+ after=session.rows(namespace)
+ terminal=all(next(r[field] for r in after if r[id_field]==i)==desired for i in targets)
+ return {'evidence_kind':'EXPLORATORY_SCRIPTED_PUBLIC_TASK_NOT_LLM','scenario':name,'variant':v,
+  'target_ids':targets,'field':field,'desired':desired,'initial_rows':before,'final_rows':after,
+  'tool_allow_list':sdef.starting_context.tool_allow_list,'events':session.events,'states_after_calls':states,
+  'official_evaluation':evaluation,'terminal_valid':terminal,'score_terminal_relation':classify(evaluation['similarity'],terminal),
+  'milestones':len(sdef.evaluation.milestone_matcher.milestones),'minefields':len(sdef.evaluation.minefield_matcher.milestones),
+  'native_tool_calls':len(session.events),'native_tool_errors':sum(not e['response']['ok'] for e in session.events),
+  'initial_snapshot':initial,'final_snapshot':session.snapshot()}
+
+def run(out):
+ out=Path(out);out.mkdir(parents=True,exist_ok=False);(out/'trajectories').mkdir();records=[]
+ for case in CASES:
+  for v in VARIANTS:
+   r=run_case(case,v);records.append(r);write_json(out/'trajectories'/f'{case}__{v}.json',r)
+ rows=[{k:r[k] for k in ['scenario','variant','terminal_valid','score_terminal_relation','native_tool_calls','native_tool_errors','milestones','minefields']} | {'official_similarity':r['official_evaluation']['similarity']} for r in records]
+ with (out/'results.csv').open('w',newline='') as f:
+  w=csv.DictWriter(f,fieldnames=rows[0]);w.writeheader();w.writerows(rows)
+ write_json(out/'scientific_projection.json',project(records))
+ summary=[{'variant':v,'cases':len([r for r in records if r['variant']==v]),'official_full_scores':sum(r['official_evaluation']['similarity']==1 for r in records if r['variant']==v),'terminal_valid':sum(r['terminal_valid'] for r in records if r['variant']==v),'tool_errors':sum(r['native_tool_errors'] for r in records if r['variant']==v)} for v in VARIANTS]
+ write_json(out/'summary.json',summary);print(json.dumps(summary,indent=2))
+if __name__=='__main__':run(sys.argv[1])

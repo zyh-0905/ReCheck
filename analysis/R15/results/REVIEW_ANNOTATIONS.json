@@ -1,0 +1,722 @@
+[
+  {
+    "candidate_index": 0,
+    "key": "gpt_4o/expert/0/add_reminder_content_and_weekday_delta_and_time",
+    "split": "dev",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 1,
+    "key": "gpt_4o/expert/1/add_reminder_content_and_weekday_delta_and_time",
+    "split": "dev",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 2,
+    "key": "gpt_4o/nonexpert/0/add_reminder_content_and_week_delta_and_time",
+    "split": "dev",
+    "review_class": "TIME_OF_DAY_ONLY",
+    "count_in_conservative_set": false,
+    "reason": "Date is tomorrow; vague like5 and a20-minute difference. Not included in conservative calendar count.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 3,
+    "key": "gpt_4o/nonexpert/0/add_reminder_content_and_weekday_delta_and_time",
+    "split": "dev",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 4,
+    "key": "gpt_4o/nonexpert/1/add_reminder_content_and_weekday_delta_and_time",
+    "split": "dev",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 5,
+    "key": "gpt_4o_mini/expert/0/add_reminder_content_and_weekday_delta_and_time",
+    "split": "dev",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 6,
+    "key": "gpt_4o_mini/expert/1/add_reminder_content_and_weekday_delta_and_time",
+    "split": "dev",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 7,
+    "key": "gpt_4o_mini/nonexpert/1/add_reminder_content_and_week_delta_and_time",
+    "split": "dev",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 8,
+    "key": "gpt_5/nonexpert/0/add_reminder_content_and_week_delta_and_time",
+    "split": "dev",
+    "review_class": "USER_TIMEZONE_UNRESOLVED",
+    "count_in_conservative_set": false,
+    "reason": "User specifies California; native clock offset is not automatically user timezone.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 9,
+    "key": "mistral_large_2411/expert/0/add_reminder_content_and_week_delta_and_time",
+    "split": "dev",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 10,
+    "key": "mistral_large_2411/expert/1/add_reminder_content_and_weekday_delta_and_time",
+    "split": "dev",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 11,
+    "key": "mistral_large_2411/nonexpert/0/add_reminder_content_and_week_delta_and_time",
+    "split": "dev",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 12,
+    "key": "mistral_large_2411/nonexpert/0/add_reminder_content_and_weekday_delta_and_time",
+    "split": "dev",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 13,
+    "key": "mistral_large_2411/nonexpert/1/add_reminder_content_and_week_delta_and_time",
+    "split": "dev",
+    "review_class": "NO_COMMIT_EXECUTOR_SYNTAX_ERROR",
+    "count_in_conservative_set": true,
+    "reason": "Native add attempt has SyntaxError before function execution; no created row. This is not automatically the model's fault.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 14,
+    "key": "mistral_nemo/expert/0/add_reminder_content_and_week_delta_and_time",
+    "split": "dev",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 15,
+    "key": "mistral_nemo/nonexpert/1/add_reminder_content_and_week_delta_and_time",
+    "split": "dev",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 16,
+    "key": "gpt_4_1/nonexpert/3/add_reminder_content_and_weekday_delta_and_time",
+    "split": "later",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 17,
+    "key": "gpt_4o/expert/2/add_reminder_content_and_week_delta_and_time",
+    "split": "later",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 18,
+    "key": "gpt_4o/expert/2/add_reminder_content_and_weekday_delta_and_time",
+    "split": "later",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 19,
+    "key": "gpt_4o/expert/3/add_reminder_content_and_weekday_delta_and_time",
+    "split": "later",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 20,
+    "key": "gpt_4o/expert/4/add_reminder_content_and_weekday_delta_and_time",
+    "split": "later",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 21,
+    "key": "gpt_4o/expert/5/add_reminder_content_and_weekday_delta_and_time",
+    "split": "later",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 22,
+    "key": "gpt_4o/expert/6/add_reminder_content_and_week_delta_and_time",
+    "split": "later",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 23,
+    "key": "gpt_4o/expert/6/add_reminder_content_and_weekday_delta_and_time",
+    "split": "later",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 24,
+    "key": "gpt_4o/expert/7/add_reminder_content_and_week_delta_and_time",
+    "split": "later",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 25,
+    "key": "gpt_4o/expert/7/add_reminder_content_and_weekday_delta_and_time",
+    "split": "later",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 26,
+    "key": "gpt_4o/nonexpert/2/add_reminder_content_and_weekday_delta_and_time",
+    "split": "later",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 27,
+    "key": "gpt_4o/nonexpert/3/add_reminder_content_and_weekday_delta_and_time",
+    "split": "later",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 28,
+    "key": "gpt_4o/nonexpert/4/add_reminder_content_and_weekday_delta_and_time",
+    "split": "later",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 29,
+    "key": "gpt_4o/nonexpert/5/add_reminder_content_and_weekday_delta_and_time",
+    "split": "later",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 30,
+    "key": "gpt_4o/nonexpert/7/add_reminder_content_and_weekday_delta_and_time",
+    "split": "later",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision. User selects the later next Friday; final date is Saturday27, so neither interpretation accepts it.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 31,
+    "key": "gpt_4o_mini/expert/2/add_reminder_content_and_weekday_delta_and_time",
+    "split": "later",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 32,
+    "key": "gpt_4o_mini/expert/3/add_reminder_content_and_weekday_delta_and_time",
+    "split": "later",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 33,
+    "key": "gpt_4o_mini/expert/4/add_reminder_content_and_weekday_delta_and_time",
+    "split": "later",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 34,
+    "key": "gpt_4o_mini/expert/5/add_reminder_content_and_weekday_delta_and_time",
+    "split": "later",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 35,
+    "key": "gpt_4o_mini/expert/6/add_reminder_content_and_weekday_delta_and_time",
+    "split": "later",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 36,
+    "key": "gpt_4o_mini/expert/7/add_reminder_content_and_weekday_delta_and_time",
+    "split": "later",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 37,
+    "key": "gpt_4o_mini/nonexpert/2/add_reminder_content_and_week_delta_and_time",
+    "split": "later",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 38,
+    "key": "gpt_4o_mini/nonexpert/2/add_reminder_content_and_weekday_delta_and_time",
+    "split": "later",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 39,
+    "key": "gpt_4o_mini/nonexpert/3/add_reminder_content_and_week_delta_and_time",
+    "split": "later",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 40,
+    "key": "gpt_4o_mini/nonexpert/3/add_reminder_content_and_weekday_delta_and_time",
+    "split": "later",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 41,
+    "key": "gpt_4o_mini/nonexpert/4/add_reminder_content_and_week_delta_and_time",
+    "split": "later",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 42,
+    "key": "gpt_4o_mini/nonexpert/4/add_reminder_content_and_weekday_delta_and_time",
+    "split": "later",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 43,
+    "key": "gpt_4o_mini/nonexpert/5/add_reminder_content_and_week_delta_and_time",
+    "split": "later",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 44,
+    "key": "gpt_4o_mini/nonexpert/6/add_reminder_content_and_week_delta_and_time",
+    "split": "later",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 45,
+    "key": "gpt_4o_mini/nonexpert/6/add_reminder_content_and_weekday_delta_and_time",
+    "split": "later",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 46,
+    "key": "gpt_4o_mini/nonexpert/7/add_reminder_content_and_week_delta_and_time",
+    "split": "later",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 47,
+    "key": "gpt_4o_mini/nonexpert/7/add_reminder_content_and_weekday_delta_and_time",
+    "split": "later",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 48,
+    "key": "gpt_5/expert/3/add_reminder_content_and_date_and_time",
+    "split": "later",
+    "review_class": "EXPLICIT_USER_DATE_REVISION",
+    "count_in_conservative_set": false,
+    "reason": "User explicitly reschedules to March22 2026.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 49,
+    "key": "gpt_5/expert/4/add_reminder_content_and_date_and_time",
+    "split": "later",
+    "review_class": "EXPLICIT_USER_DATE_REVISION",
+    "count_in_conservative_set": false,
+    "reason": "User explicitly changes past date to tomorrow and specifies America/New_York.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 50,
+    "key": "gpt_5/expert/4/add_reminder_content_and_week_delta_and_time",
+    "split": "later",
+    "review_class": "USER_TIMEZONE_UNRESOLVED",
+    "count_in_conservative_set": false,
+    "reason": "User specifies Eastern Time; native-clock target is insufficient.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 51,
+    "key": "gpt_5/expert/6/add_reminder_content_and_date_and_time",
+    "split": "later",
+    "review_class": "EXPLICIT_USER_DATE_REVISION",
+    "count_in_conservative_set": false,
+    "reason": "User explicitly reschedules to March22 2026.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 52,
+    "key": "gpt_5/expert/7/add_reminder_content_and_date_and_time",
+    "split": "later",
+    "review_class": "EXPLICIT_USER_DATE_REVISION",
+    "count_in_conservative_set": false,
+    "reason": "User explicitly reschedules to March22 2026.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 53,
+    "key": "mistral_large_2411/expert/2/add_reminder_content_and_week_delta_and_time",
+    "split": "later",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 54,
+    "key": "mistral_large_2411/expert/2/add_reminder_content_and_weekday_delta_and_time",
+    "split": "later",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 55,
+    "key": "mistral_large_2411/expert/5/add_reminder_content_and_week_delta_and_time",
+    "split": "later",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 56,
+    "key": "mistral_large_2411/expert/6/add_reminder_content_and_week_delta_and_time",
+    "split": "later",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 57,
+    "key": "mistral_large_2411/nonexpert/2/add_reminder_content_and_weekday_delta_and_time",
+    "split": "later",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 58,
+    "key": "mistral_large_2411/nonexpert/3/add_reminder_content_and_date_and_time",
+    "split": "later",
+    "review_class": "NO_NATIVE_ADD_TEXT_ONLY",
+    "count_in_conservative_set": true,
+    "reason": "Assistant body contains tool-looking JSON but no native add call or new row.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 59,
+    "key": "mistral_large_2411/nonexpert/3/add_reminder_content_and_week_delta_and_time",
+    "split": "later",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 60,
+    "key": "mistral_large_2411/nonexpert/4/add_reminder_content_and_weekday_delta_and_time",
+    "split": "later",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 61,
+    "key": "mistral_large_2411/nonexpert/5/add_reminder_content_and_week_delta_and_time",
+    "split": "later",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 62,
+    "key": "mistral_large_2411/nonexpert/6/add_reminder_content_and_week_delta_and_time",
+    "split": "later",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 63,
+    "key": "mistral_large_2411/nonexpert/6/add_reminder_content_and_weekday_delta_and_time",
+    "split": "later",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 64,
+    "key": "mistral_large_2411/nonexpert/7/add_reminder_content_and_week_delta_and_time",
+    "split": "later",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 65,
+    "key": "mistral_large_2411/nonexpert/7/add_reminder_content_and_weekday_delta_and_time",
+    "split": "later",
+    "review_class": "TIME_OF_DAY_ONLY",
+    "count_in_conservative_set": false,
+    "reason": "Friday date compatible; exclude time-of-day disagreement from calendar-only conservative count.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 66,
+    "key": "mistral_nemo/nonexpert/2/add_reminder_content_and_weekday_delta_and_time",
+    "split": "later",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 67,
+    "key": "mistral_nemo/nonexpert/4/add_reminder_content_and_week_delta_and_time",
+    "split": "later",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision. Timezone discussion is ambiguous, but stored year2023 versus live year2025 cannot be repaired by timezone interpretation; user reiterates tomorrow.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 68,
+    "key": "mistral_nemo/nonexpert/5/add_reminder_content_and_week_delta_and_time",
+    "split": "later",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 69,
+    "key": "mistral_nemo/nonexpert/6/add_reminder_content_and_week_delta_and_time",
+    "split": "later",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 70,
+    "key": "mistral_nemo/nonexpert/7/add_reminder_content_and_week_delta_and_time",
+    "split": "later",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  },
+  {
+    "candidate_index": 71,
+    "key": "mistral_nemo/nonexpert/7/add_reminder_content_and_weekday_delta_and_time",
+    "split": "later",
+    "review_class": "CALENDAR_EFFECT_CONFLICT",
+    "count_in_conservative_set": true,
+    "reason": "Actual stored date conflicts with live clock and active tomorrow/Friday request; no explicit user change to a different calendar date. Gratitude is not treated as a date revision.",
+    "reviewer": "same research assistant, no independent human reviewer",
+    "posthoc_raw_dialogue_review": true
+  }
+]

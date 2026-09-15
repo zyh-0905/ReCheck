@@ -1,0 +1,44 @@
+test_dialog_not_state (test_census_rules.CensusTests.test_dialog_not_state) ... ok
+test_guardrail_not_target (test_census_rules.CensusTests.test_guardrail_not_target) ... ok
+test_information (test_census_rules.CensusTests.test_information) ... ok
+test_message_with_prerequisite (test_census_rules.CensusTests.test_message_with_prerequisite) ... ok
+test_missing_info_first (test_census_rules.CensusTests.test_missing_info_first) ... ok
+test_revision_not_terminalize_all (test_census_rules.CensusTests.test_revision_not_terminalize_all) ... ok
+test_setting_prerequisite (test_census_rules.CensusTests.test_setting_prerequisite) ... ok
+test_setting_target (test_census_rules.CensusTests.test_setting_target) ... ok
+test_final_state_alone_insufficient (test_native_scope.NativeScopeTests.test_final_state_alone_insufficient) ... ok
+test_legitimate_error_not_violation (test_native_scope.NativeScopeTests.test_legitimate_error_not_violation) ... ok
+test_missing_final_revision (test_native_scope.NativeScopeTests.test_missing_final_revision) ... ok
+test_official_correct_revision (test_native_scope.NativeScopeTests.test_official_correct_revision) ... ok
+test_undo_latest_goal (test_native_scope.NativeScopeTests.test_undo_latest_goal) ... ok
+test_always_not_eventual (test_scope_logic.ScopeTests.test_always_not_eventual) ... ok
+test_and_bad_type (test_scope_logic.ScopeTests.test_and_bad_type) ... ok
+test_and_false (test_scope_logic.ScopeTests.test_and_false) ... ok
+test_and_true (test_scope_logic.ScopeTests.test_and_true) ... ok
+test_and_unknown (test_scope_logic.ScopeTests.test_and_unknown) ... ok
+test_bool_not_index (test_scope_logic.ScopeTests.test_bool_not_index) ... ok
+test_empty_and_unknown (test_scope_logic.ScopeTests.test_empty_and_unknown) ... ok
+test_empty_rejected (test_scope_logic.ScopeTests.test_empty_rejected) ... ok
+test_end_beyond (test_scope_logic.ScopeTests.test_end_beyond) ... ok
+test_eventual_reverted (test_scope_logic.ScopeTests.test_eventual_reverted) ... ok
+test_false_dominates_always (test_scope_logic.ScopeTests.test_false_dominates_always) ... ok
+test_integer_not_boolean (test_scope_logic.ScopeTests.test_integer_not_boolean) ... ok
+test_known_witness (test_scope_logic.ScopeTests.test_known_witness) ... ok
+test_missing_final (test_scope_logic.ScopeTests.test_missing_final) ... ok
+test_mode_validation (test_scope_logic.ScopeTests.test_mode_validation) ... ok
+test_negative_start (test_scope_logic.ScopeTests.test_negative_start) ... ok
+test_repair_final (test_scope_logic.ScopeTests.test_repair_final) ... ok
+test_repair_not_invariant (test_scope_logic.ScopeTests.test_repair_not_invariant) ... ok
+test_retired_goal (test_scope_logic.ScopeTests.test_retired_goal) ... ok
+test_reverse_interval (test_scope_logic.ScopeTests.test_reverse_interval) ... ok
+test_revision_only_after_activation (test_scope_logic.ScopeTests.test_revision_only_after_activation) ... ok
+test_string_not_boolean (test_scope_logic.ScopeTests.test_string_not_boolean) ... ok
+test_terminal_reverted (test_scope_logic.ScopeTests.test_terminal_reverted) ... ok
+test_true_singleton (test_scope_logic.ScopeTests.test_true_singleton) ... ok
+test_unknown_always (test_scope_logic.ScopeTests.test_unknown_always) ... ok
+test_unknown_eventual (test_scope_logic.ScopeTests.test_unknown_eventual) ... ok
+
+----------------------------------------------------------------------
+Ran 39 tests in 4.541s
+
+OK

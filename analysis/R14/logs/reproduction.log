@@ -1,0 +1,12 @@
+{
+  "all_episodes.csv": true,
+  "by_model_persona.csv": true,
+  "combined_summary.json": true,
+  "sequential_scopes.csv": true,
+  "receipt_name_anomalies.json": true,
+  "posthoc_semantic_sensitivity.csv": true,
+  "posthoc_phase_sensitivity.csv": true,
+  "posthoc_sensitivity_summary.json": true,
+  "independent_final_check.json": true,
+  "raw_file_checks.json": true
+}

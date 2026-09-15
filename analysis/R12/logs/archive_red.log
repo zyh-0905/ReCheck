@@ -1,0 +1,63 @@
+test_changed (test_archive.ArchiveTests.test_changed) ... ERROR
+test_valid (test_archive.ArchiveTests.test_valid) ... ERROR
+test_agreement (test_contract.ContractTests.test_agreement) ... ok
+test_exact_false (test_contract.ContractTests.test_exact_false) ... ok
+test_exact_true (test_contract.ContractTests.test_exact_true) ... ok
+test_false_accept (test_contract.ContractTests.test_false_accept) ... ok
+test_missing (test_contract.ContractTests.test_missing) ... ok
+test_no_integer_coercion (test_contract.ContractTests.test_no_integer_coercion) ... ok
+test_not_drop_uuid_or_error (test_contract.ContractTests.test_not_drop_uuid_or_error) ... ok
+test_other_fields_do_not_change_target (test_contract.ContractTests.test_other_fields_do_not_change_target) ... ok
+test_partial_is_not_full (test_contract.ContractTests.test_partial_is_not_full) ... ok
+test_projection_only_drops_elapsed (test_contract.ContractTests.test_projection_only_drops_elapsed) ... ok
+test_wrong_value (test_contract.ContractTests.test_wrong_value) ... ok
+test_changed_event_state_rejected (test_evidence.EvidenceTests.test_changed_event_state_rejected) ... ok
+test_changed_target_rejected (test_evidence.EvidenceTests.test_changed_target_rejected) ... ok
+test_contact_terminal (test_evidence.EvidenceTests.test_contact_terminal) ... ok
+test_error_counter_rejected (test_evidence.EvidenceTests.test_error_counter_rejected) ... ok
+test_event_counter_rejected (test_evidence.EvidenceTests.test_event_counter_rejected) ... ok
+test_invalid_score_rejected (test_evidence.EvidenceTests.test_invalid_score_rejected) ... ok
+test_latest_snapshot (test_evidence.EvidenceTests.test_latest_snapshot) ... ok
+test_original_regression (test_evidence.EvidenceTests.test_original_regression) ... ok
+test_original_success (test_evidence.EvidenceTests.test_original_success) ... ok
+test_reminder_terminal (test_evidence.EvidenceTests.test_reminder_terminal) ... ok
+test_stale_final_settings_rejected (test_evidence.EvidenceTests.test_stale_final_settings_rejected) ... ok
+test_swapped_terminal_label_rejected (test_evidence.EvidenceTests.test_swapped_terminal_label_rejected) ... ok
+test_unknown_case_rejected (test_evidence.EvidenceTests.test_unknown_case_rejected) ... ok
+test_error_then_completion_remains_full (test_native_controls.NativeControls.test_error_then_completion_remains_full) ... ok
+test_idempotent_error_after_completion_remains_full (test_native_controls.NativeControls.test_idempotent_error_after_completion_remains_full) ... ok
+test_no_network (test_native_controls.NativeControls.test_no_network) ... ok
+test_prose_is_not_full_score (test_native_controls.NativeControls.test_prose_is_not_full_score) ... ok
+test_regression_remains_full_original_score (test_native_controls.NativeControls.test_regression_remains_full_original_score) ... ok
+test_repaired_regression_is_distinguished_by_terminal_check (test_native_controls.NativeControls.test_repaired_regression_is_distinguished_by_terminal_check) ... ok
+test_successful_state_is_kept (test_native_controls.NativeControls.test_successful_state_is_kept) ... ok
+test_regular_settings_kept (test_reference_clock.ReferenceClock.test_regular_settings_kept) ... ok
+test_reminder_target_date_restored_even_on_another_calendar_day (test_reference_clock.ReferenceClock.test_reminder_target_date_restored_even_on_another_calendar_day) ... ok
+test_original_reminder_correct_uses_documented_read (test_reminder_regression.ReminderHarnessRegression.test_original_reminder_correct_uses_documented_read) ... ok
+
+======================================================================
+ERROR: test_changed (test_archive.ArchiveTests.test_changed)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R12_Public_Evaluator_Audit/tests/test_archive.py", line 14, in test_changed
+    p=Path(d);self.make_root(p);(p/'a.txt').write_bytes(b'changed');self.assertFalse(m.verify(p)['ok'])
+                                                                                     ^^^^^^^^^^^
+  File "/mnt/data/R12_Public_Evaluator_Audit/verify_archive.py", line 6, in verify
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_valid (test_archive.ArchiveTests.test_valid)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R12_Public_Evaluator_Audit/tests/test_archive.py", line 11, in test_valid
+    p=Path(d);self.make_root(p);self.assertTrue(m.verify(p)['ok'])
+                                                ^^^^^^^^^^^
+  File "/mnt/data/R12_Public_Evaluator_Audit/verify_archive.py", line 6, in verify
+    raise NotImplementedError
+NotImplementedError
+
+----------------------------------------------------------------------
+Ran 36 tests in 2.123s
+
+FAILED (errors=2)

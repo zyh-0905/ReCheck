@@ -1,0 +1,15 @@
+{
+  "native_run1__native_run2": {
+    "results.csv": true,
+    "summary.json": true,
+    "scientific_projection.json": false
+  },
+  "supplement_run2__supplement_run3": {
+    "results.csv": true,
+    "summary.json": true,
+    "scientific_projection.json": false
+  },
+  "regrade_run1__regrade_run2": {
+    "summary.json": true
+  }
+}

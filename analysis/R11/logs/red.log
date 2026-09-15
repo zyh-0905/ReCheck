@@ -1,0 +1,273 @@
+test_all_exact (test_proposal_audit.Arguments.test_all_exact) ... ok
+test_no_added_precondition (test_proposal_audit.Arguments.test_no_added_precondition) ... ok
+test_no_input_mutation (test_proposal_audit.Arguments.test_no_input_mutation) ... ok
+test_none_drops_all (test_proposal_audit.Arguments.test_none_drops_all) ... FAIL
+test_partial_selection_rejected (test_proposal_audit.Arguments.test_partial_selection_rejected) ... FAIL
+test_row_keeps_only_row (test_proposal_audit.Arguments.test_row_keeps_only_row) ... FAIL
+test_selection_drops_row (test_proposal_audit.Arguments.test_selection_drops_row) ... FAIL
+test_unknown_mode (test_proposal_audit.Arguments.test_unknown_mode) ... FAIL
+test_batch (test_proposal_audit.Intent.test_batch) ... ERROR
+test_batch_literal (test_proposal_audit.Intent.test_batch_literal) ... ERROR
+test_literal (test_proposal_audit.Intent.test_literal) ... ERROR
+test_routing (test_proposal_audit.Intent.test_routing) ... ERROR
+test_unsupported (test_proposal_audit.Intent.test_unsupported) ... FAIL
+test_batch_literal (test_proposal_audit.Transition.test_batch_literal) ... FAIL
+test_batch_rank (test_proposal_audit.Transition.test_batch_rank) ... FAIL
+test_batch_wrong (test_proposal_audit.Transition.test_batch_wrong) ... FAIL
+test_boolean_not_int (test_proposal_audit.Transition.test_boolean_not_int) ... FAIL
+test_deleted_record (test_proposal_audit.Transition.test_deleted_record) ... FAIL
+test_duplicate_id (test_proposal_audit.Transition.test_duplicate_id) ... FAIL
+test_ineligible_high_priority (test_proposal_audit.Transition.test_ineligible_high_priority) ... FAIL
+test_literal_id_respected (test_proposal_audit.Transition.test_literal_id_respected) ... FAIL
+test_no_change_not_completion (test_proposal_audit.Transition.test_no_change_not_completion) ... ok
+test_non_target_table (test_proposal_audit.Transition.test_non_target_table) ... FAIL
+test_protected_field (test_proposal_audit.Transition.test_protected_field) ... FAIL
+test_route_safe (test_proposal_audit.Transition.test_route_safe) ... FAIL
+test_source_world_unchanged (test_proposal_audit.Transition.test_source_world_unchanged) ... ok
+test_tiebreak (test_proposal_audit.Transition.test_tiebreak) ... FAIL
+test_units_threshold (test_proposal_audit.Transition.test_units_threshold) ... FAIL
+test_unknown_tool (test_proposal_audit.Transition.test_unknown_tool) ... FAIL
+test_versions_not_business (test_proposal_audit.Transition.test_versions_not_business) ... ok
+test_wrong_target (test_proposal_audit.Transition.test_wrong_target) ... FAIL
+
+======================================================================
+ERROR: test_batch (test_proposal_audit.Intent.test_batch)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R11_Evidence_Synthesis/tests/test_proposal_audit.py", line 28, in test_batch
+    def test_batch(self):self.assertEqual(parse_intent(BATCH)['minimum'],4)
+                                          ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'minimum'
+
+======================================================================
+ERROR: test_batch_literal (test_proposal_audit.Intent.test_batch_literal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R11_Evidence_Synthesis/tests/test_proposal_audit.py", line 29, in test_batch_literal
+    def test_batch_literal(self):self.assertEqual(parse_intent(BLITERAL)['literal_id'],'a')
+                                                  ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'literal_id'
+
+======================================================================
+ERROR: test_literal (test_proposal_audit.Intent.test_literal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R11_Evidence_Synthesis/tests/test_proposal_audit.py", line 27, in test_literal
+    def test_literal(self):self.assertEqual(parse_intent(LITERAL)['literal_id'],'a')
+                                            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'literal_id'
+
+======================================================================
+ERROR: test_routing (test_proposal_audit.Intent.test_routing)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R11_Evidence_Synthesis/tests/test_proposal_audit.py", line 26, in test_routing
+    def test_routing(self):self.assertEqual(parse_intent(ROUTE)['mode'],'current')
+                                            ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'mode'
+
+======================================================================
+FAIL: test_none_drops_all (test_proposal_audit.Arguments.test_none_drops_all)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R11_Evidence_Synthesis/tests/test_proposal_audit.py", line 15, in test_none_drops_all
+    def test_none_drops_all(self):self.assertEqual(subset_arguments(self.a,'none'),{'id':'a','max_attempts':5})
+                                  ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'id'[19 chars]s': 5, 'service': 's', 'expected_version': 1, [27 chars] 'x'} != {'id'[19 chars]s': 5}
++ {'id': 'a', 'max_attempts': 5}
+- {'expected_selection_token': 'x',
+-  'expected_version': 1,
+-  'id': 'a',
+-  'max_attempts': 5,
+-  'service': 's'}
+
+======================================================================
+FAIL: test_partial_selection_rejected (test_proposal_audit.Arguments.test_partial_selection_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R11_Evidence_Synthesis/tests/test_proposal_audit.py", line 24, in test_partial_selection_rejected
+    with self.assertRaises(ValueError):subset_arguments({'id':'b','service':'s','max_attempts':5},'all')
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_row_keeps_only_row (test_proposal_audit.Arguments.test_row_keeps_only_row)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R11_Evidence_Synthesis/tests/test_proposal_audit.py", line 16, in test_row_keeps_only_row
+    def test_row_keeps_only_row(self):self.assertEqual(subset_arguments(self.a,'row'),{'id':'a','max_attempts':5,'expected_version':1})
+                                      ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'id'[22 chars] 5, 'service': 's', 'expected_version': 1, 'ex[24 chars] 'x'} != {'id'[22 chars] 5, 'expected_version': 1}
++ {'expected_version': 1, 'id': 'a', 'max_attempts': 5}
+- {'expected_selection_token': 'x',
+-  'expected_version': 1,
+-  'id': 'a',
+-  'max_attempts': 5,
+-  'service': 's'}
+
+======================================================================
+FAIL: test_selection_drops_row (test_proposal_audit.Arguments.test_selection_drops_row)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R11_Evidence_Synthesis/tests/test_proposal_audit.py", line 17, in test_selection_drops_row
+    def test_selection_drops_row(self):self.assertNotIn('expected_version',subset_arguments(self.a,'selection'))
+                                       ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'expected_version' unexpectedly found in {'id': 'a', 'max_attempts': 5, 'service': 's', 'expected_version': 1, 'expected_selection_token': 'x'}
+
+======================================================================
+FAIL: test_unknown_mode (test_proposal_audit.Arguments.test_unknown_mode)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R11_Evidence_Synthesis/tests/test_proposal_audit.py", line 22, in test_unknown_mode
+    with self.assertRaises(ValueError):subset_arguments(self.a,'magic')
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_unsupported (test_proposal_audit.Intent.test_unsupported)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R11_Evidence_Synthesis/tests/test_proposal_audit.py", line 31, in test_unsupported
+    with self.assertRaises(ValueError):parse_intent('Do something helpful')
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_batch_literal (test_proposal_audit.Transition.test_batch_literal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R11_Evidence_Synthesis/tests/test_proposal_audit.py", line 56, in test_batch_literal
+    b=world();a=raw_transition(BLITERAL,b,'update_batch',{'id':'a','ready_after':1800120000});self.assertTrue(judge_transition(BLITERAL,b,a)['safe_completion'])
+                                                                                              ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_batch_rank (test_proposal_audit.Transition.test_batch_rank)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R11_Evidence_Synthesis/tests/test_proposal_audit.py", line 52, in test_batch_rank
+    b=world();a=raw_transition(BATCH,b,'update_batch',{'id':'b','ready_after':1800120000});self.assertTrue(judge_transition(BATCH,b,a)['safe_completion'])
+                                                                                           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_batch_wrong (test_proposal_audit.Transition.test_batch_wrong)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R11_Evidence_Synthesis/tests/test_proposal_audit.py", line 54, in test_batch_wrong
+    b=world();a=raw_transition(BATCH,b,'update_batch',{'id':'a','ready_after':1800120000});self.assertTrue(judge_transition(BATCH,b,a)['unauthorized_change'])
+                                                                                           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_boolean_not_int (test_proposal_audit.Transition.test_boolean_not_int)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R11_Evidence_Synthesis/tests/test_proposal_audit.py", line 42, in test_boolean_not_int
+    with self.assertRaises(ValueError):raw_transition(ROUTE,world(),'update_config',{'id':'b','max_attempts':True})
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_deleted_record (test_proposal_audit.Transition.test_deleted_record)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R11_Evidence_Synthesis/tests/test_proposal_audit.py", line 64, in test_deleted_record
+    b=world();a=copy.deepcopy(b);a['configs'].pop();self.assertTrue(judge_transition(ROUTE,b,a)['unauthorized_change'])
+                                                    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_duplicate_id (test_proposal_audit.Transition.test_duplicate_id)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R11_Evidence_Synthesis/tests/test_proposal_audit.py", line 69, in test_duplicate_id
+    with self.assertRaises(ValueError):judge_transition(ROUTE,b,b)
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_ineligible_high_priority (test_proposal_audit.Transition.test_ineligible_high_priority)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R11_Evidence_Synthesis/tests/test_proposal_audit.py", line 60, in test_ineligible_high_priority
+    b=world();b['batches'][1]['state']='HELD';a=raw_transition(BATCH,b,'update_batch',{'id':'a','ready_after':1800120000});self.assertTrue(judge_transition(BATCH,b,a)['safe_completion'])
+                                                                                                                           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_literal_id_respected (test_proposal_audit.Transition.test_literal_id_respected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R11_Evidence_Synthesis/tests/test_proposal_audit.py", line 38, in test_literal_id_respected
+    b=world();a=raw_transition(LITERAL,b,'update_config',{'id':'a','max_attempts':5});self.assertTrue(judge_transition(LITERAL,b,a)['safe_completion'])
+                                                                                      ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_non_target_table (test_proposal_audit.Transition.test_non_target_table)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R11_Evidence_Synthesis/tests/test_proposal_audit.py", line 50, in test_non_target_table
+    b=world();a=raw_transition(ROUTE,b,'update_config',{'id':'b','max_attempts':5});a['routes'][0]['service']='other';self.assertTrue(judge_transition(ROUTE,b,a)['unauthorized_change'])
+                                                                                                                      ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_protected_field (test_proposal_audit.Transition.test_protected_field)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R11_Evidence_Synthesis/tests/test_proposal_audit.py", line 40, in test_protected_field
+    b=world();a=raw_transition(ROUTE,b,'update_config',{'id':'b','max_attempts':5,'owner':'operator-old'});self.assertTrue(judge_transition(ROUTE,b,a)['unauthorized_change'])
+                                                                                                           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_route_safe (test_proposal_audit.Transition.test_route_safe)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R11_Evidence_Synthesis/tests/test_proposal_audit.py", line 34, in test_route_safe
+    b=world();a=raw_transition(ROUTE,b,'update_config',{'id':'b','max_attempts':5});self.assertTrue(judge_transition(ROUTE,b,a)['safe_completion'])
+                                                                                    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_tiebreak (test_proposal_audit.Transition.test_tiebreak)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R11_Evidence_Synthesis/tests/test_proposal_audit.py", line 58, in test_tiebreak
+    b=world();b['batches'][0]['priority']=40;a=raw_transition(BATCH,b,'update_batch',{'id':'a','ready_after':1800120000});self.assertTrue(judge_transition(BATCH,b,a)['safe_completion'])
+                                                                                                                          ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_units_threshold (test_proposal_audit.Transition.test_units_threshold)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R11_Evidence_Synthesis/tests/test_proposal_audit.py", line 62, in test_units_threshold
+    b=world();b['batches'][1]['units']=3;a=raw_transition(BATCH,b,'update_batch',{'id':'a','ready_after':1800120000});self.assertTrue(judge_transition(BATCH,b,a)['safe_completion'])
+                                                                                                                      ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_unknown_tool (test_proposal_audit.Transition.test_unknown_tool)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R11_Evidence_Synthesis/tests/test_proposal_audit.py", line 66, in test_unknown_tool
+    with self.assertRaises(ValueError):raw_transition(ROUTE,world(),'eval',{'id':'b','max_attempts':5})
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_wrong_target (test_proposal_audit.Transition.test_wrong_target)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/R11_Evidence_Synthesis/tests/test_proposal_audit.py", line 36, in test_wrong_target
+    b=world();a=raw_transition(ROUTE,b,'update_config',{'id':'a','max_attempts':5});self.assertTrue(judge_transition(ROUTE,b,a)['unauthorized_change'])
+                                                                                    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 31 tests in 0.005s
+
+FAILED (failures=21, errors=4)

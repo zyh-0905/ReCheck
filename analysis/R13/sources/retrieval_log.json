@@ -1,0 +1,35 @@
+{
+  "date": "2026-09-15",
+  "operations": [
+    {
+      "provider": "GitHub",
+      "operation": "ToolSandbox pinned source-tree and releases read",
+      "result": "source tree read; releases empty; not a global absence claim"
+    },
+    {
+      "provider": "Exa/web",
+      "operation": "SAP dataset card, public raw JSON and TED article",
+      "result": "accessible web text; two targeted sample trajectories read; no full-corpus regrade"
+    },
+    {
+      "provider": "container urllib",
+      "operation": "HuggingFace dataset metadata request",
+      "result": "DNS resolution failed; no raw artifact"
+    },
+    {
+      "provider": "container.download",
+      "operation": "SAP toolsandbox/gpt_4_1/expert/trial_0_results.json raw and resolve attempts",
+      "result": "download failed; raw visible through web; no complete byte-level dataset snapshot"
+    },
+    {
+      "provider": "Plugin_Management",
+      "operation": "Hugging Face capability search",
+      "result": "integration discoverable but not connected; no installation or data access performed"
+    }
+  ],
+  "local_public_model_log_files_acquired": 0,
+  "public_model_record_targeted_web_reads": 2,
+  "unknown_natural_reversion_rate": true,
+  "no_pickle_loaded": true,
+  "no_keys_read": true
+}

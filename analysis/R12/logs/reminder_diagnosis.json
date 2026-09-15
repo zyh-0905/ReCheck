@@ -1,0 +1,154 @@
+{
+  "kind": "HARNESS_DIAGNOSIS_NO_MODEL",
+  "empty_search": {
+    "ok": false,
+    "error": "ValueError: No search criteria are given. At least one search criteria should be provided among ('reminder_id', 'content', 'creation_timestamp', 'creation_timestamp', 'reminder_timestamp', 'reminder_timestamp', 'latitude', 'longitude')",
+    "value": null
+  },
+  "clock": {
+    "ok": true,
+    "error": null,
+    "value": 1789442642.387071
+  },
+  "bounded_search": {
+    "ok": true,
+    "error": null,
+    "value": [
+      {
+        "reminder_id": "8f5b6fc6-1c25-5467-91ba-d4d1e17c7129",
+        "content": "Look for Company SF tickets",
+        "creation_timestamp": 1789183441.980362,
+        "reminder_timestamp": 1789356241.980368,
+        "latitude": null,
+        "longitude": null
+      },
+      {
+        "reminder_id": "da2b856e-9390-511f-bcbe-7005f72cbf5e",
+        "content": "Buy tickets for Merrily next week",
+        "creation_timestamp": 1789356241.980375,
+        "reminder_timestamp": 1789442581.980376,
+        "latitude": null,
+        "longitude": null
+      },
+      {
+        "reminder_id": "54f20be9-eac3-5e76-8e57-724e48d3d477",
+        "content": "Buy a nice rich navy bathing dress",
+        "creation_timestamp": 1789439041.980382,
+        "reminder_timestamp": 1789446241.980384,
+        "latitude": 37.3237926356735,
+        "longitude": -122.03961770355414
+      }
+    ]
+  },
+  "events": [
+    {
+      "scope": "runtime",
+      "tool": "search_reminder",
+      "arguments": {},
+      "response": {
+        "ok": false,
+        "error": "ValueError: No search criteria are given. At least one search criteria should be provided among ('reminder_id', 'content', 'creation_timestamp', 'creation_timestamp', 'reminder_timestamp', 'reminder_timestamp', 'latitude', 'longitude')",
+        "value": null
+      },
+      "native_response": {
+        "sender": "EXECUTION_ENVIRONMENT",
+        "recipient": "AGENT",
+        "content": "ValueError: No search criteria are given. At least one search criteria should be provided among ('reminder_id', 'content', 'creation_timestamp', 'creation_timestamp', 'reminder_timestamp', 'reminder_timestamp', 'latitude', 'longitude')",
+        "conversation_active": true,
+        "openai_tool_call_id": null,
+        "openai_function_name": null,
+        "tool_call_exception": "ValueError: No search criteria are given. At least one search criteria should be provided among ('reminder_id', 'content', 'creation_timestamp', 'creation_timestamp', 'reminder_timestamp', 'reminder_timestamp', 'latitude', 'longitude')",
+        "tool_trace": null,
+        "visible_to": [
+          "EXECUTION_ENVIRONMENT",
+          "AGENT"
+        ]
+      },
+      "elapsed_seconds": 0.006637517000058324,
+      "snapshot_index": 17
+    },
+    {
+      "scope": "runtime",
+      "tool": "get_current_timestamp",
+      "arguments": {},
+      "response": {
+        "ok": true,
+        "error": null,
+        "value": 1789442642.387071
+      },
+      "native_response": {
+        "sender": "EXECUTION_ENVIRONMENT",
+        "recipient": "AGENT",
+        "content": "1789442642.387071",
+        "conversation_active": true,
+        "openai_tool_call_id": null,
+        "openai_function_name": null,
+        "tool_call_exception": null,
+        "tool_trace": [
+          "{\"tool_name\": \"get_current_timestamp\", \"arguments\": {}, \"result\": 1789442642.387071}"
+        ],
+        "visible_to": [
+          "EXECUTION_ENVIRONMENT",
+          "AGENT"
+        ]
+      },
+      "elapsed_seconds": 0.010671321000017997,
+      "snapshot_index": 19
+    },
+    {
+      "scope": "runtime",
+      "tool": "search_reminder",
+      "arguments": {
+        "creation_timestamp_upperbound": 1789442642.387071
+      },
+      "response": {
+        "ok": true,
+        "error": null,
+        "value": [
+          {
+            "reminder_id": "8f5b6fc6-1c25-5467-91ba-d4d1e17c7129",
+            "content": "Look for Company SF tickets",
+            "creation_timestamp": 1789183441.980362,
+            "reminder_timestamp": 1789356241.980368,
+            "latitude": null,
+            "longitude": null
+          },
+          {
+            "reminder_id": "da2b856e-9390-511f-bcbe-7005f72cbf5e",
+            "content": "Buy tickets for Merrily next week",
+            "creation_timestamp": 1789356241.980375,
+            "reminder_timestamp": 1789442581.980376,
+            "latitude": null,
+            "longitude": null
+          },
+          {
+            "reminder_id": "54f20be9-eac3-5e76-8e57-724e48d3d477",
+            "content": "Buy a nice rich navy bathing dress",
+            "creation_timestamp": 1789439041.980382,
+            "reminder_timestamp": 1789446241.980384,
+            "latitude": 37.3237926356735,
+            "longitude": -122.03961770355414
+          }
+        ]
+      },
+      "native_response": {
+        "sender": "EXECUTION_ENVIRONMENT",
+        "recipient": "AGENT",
+        "content": "[{'reminder_id': '8f5b6fc6-1c25-5467-91ba-d4d1e17c7129', 'content': 'Look for Company SF tickets', 'creation_timestamp': 1789183441.980362, 'reminder_timestamp': 1789356241.980368, 'latitude': None, 'longitude': None}, {'reminder_id': 'da2b856e-9390-511f-bcbe-7005f72cbf5e', 'content': 'Buy tickets for Merrily next week', 'creation_timestamp': 1789356241.980375, 'reminder_timestamp': 1789442581.980376, 'latitude': None, 'longitude': None}, {'reminder_id': '54f20be9-eac3-5e76-8e57-724e48d3d477', 'content': 'Buy a nice rich navy bathing dress', 'creation_timestamp': 1789439041.980382, 'reminder_timestamp': 1789446241.980384, 'latitude': 37.3237926356735, 'longitude': -122.03961770355414}]",
+        "conversation_active": true,
+        "openai_tool_call_id": null,
+        "openai_function_name": null,
+        "tool_call_exception": null,
+        "tool_trace": [
+          "{\"tool_name\": \"search_reminder\", \"arguments\": {\"creation_timestamp_upperbound\": 1789442642.387071}, \"result\": [{\"reminder_id\": \"8f5b6fc6-1c25-5467-91ba-d4d1e17c7129\", \"content\": \"Look for Company SF tickets\", \"creation_timestamp\": 1789183441.980362, \"reminder_timestamp\": 1789356241.980368, \"latitude\": null, \"longitude\": null}, {\"reminder_id\": \"da2b856e-9390-511f-bcbe-7005f72cbf5e\", \"content\": \"Buy tickets for Merrily next week\", \"creation_timestamp\": 1789356241.980375, \"reminder_timestamp\": 1789442581.980376, \"latitude\": null, \"longitude\": null}, {\"reminder_id\": \"54f20be9-eac3-5e76-8e57-724e48d3d477\", \"content\": \"Buy a nice rich navy bathing dress\", \"creation_timestamp\": 1789439041.980382, \"reminder_timestamp\": 1789446241.980384, \"latitude\": 37.3237926356735, \"longitude\": -122.03961770355414}]}"
+        ],
+        "visible_to": [
+          "EXECUTION_ENVIRONMENT",
+          "AGENT"
+        ]
+      },
+      "elapsed_seconds": 0.01335570399999142,
+      "snapshot_index": 21
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+test_absolute_without_conversion_unknown (test_effects.EffectTests.test_absolute_without_conversion_unknown) ... ok
+test_apostrophe_punctuation (test_effects.EffectTests.test_apostrophe_punctuation) ... ok
+test_clock_paired_offsets (test_effects.EffectTests.test_clock_paired_offsets) ... ok
+test_contact_unknown_target (test_effects.EffectTests.test_contact_unknown_target) ... ok
+test_contact_wrong_self (test_effects.EffectTests.test_contact_wrong_self) ... ok
+test_content_exists_time_unknown (test_effects.EffectTests.test_content_exists_time_unknown) ... ok
+test_exact_date_conversion (test_effects.EffectTests.test_exact_date_conversion) ... ok
+test_existing_not_new_reminder (test_effects.EffectTests.test_existing_not_new_reminder) ... ok
+test_false_dominates_unknown (test_effects.EffectTests.test_false_dominates_unknown) ... ok
+test_friday_ambiguity (test_effects.EffectTests.test_friday_ambiguity) ... ok
+test_inconsistent_offsets_unknown (test_effects.EffectTests.test_inconsistent_offsets_unknown) ... ok
+test_latest_outgoing_not_incoming (test_effects.EffectTests.test_latest_outgoing_not_incoming) ... ok
+test_latest_tie_unknown (test_effects.EffectTests.test_latest_tie_unknown) ... ok
+test_literal_dict (test_effects.EffectTests.test_literal_dict) ... ok
+test_literal_no_exec (test_effects.EffectTests.test_literal_no_exec) ... ok
+test_message_recipient_and_self (test_effects.EffectTests.test_message_recipient_and_self) ... ok
+test_message_wrong_recipient (test_effects.EffectTests.test_message_wrong_recipient) ... ok
+test_missing_clock_unknown (test_effects.EffectTests.test_missing_clock_unknown) ... ok
+test_new_correct_reminder (test_effects.EffectTests.test_new_correct_reminder) ... ok
+test_new_rows_missing_initial_unknown (test_effects.EffectTests.test_new_rows_missing_initial_unknown) ... ok
+test_new_rows_not_initial_ids (test_effects.EffectTests.test_new_rows_not_initial_ids) ... ok
+test_not_remove_words (test_effects.EffectTests.test_not_remove_words) ... ok
+test_true_and_true (test_effects.EffectTests.test_true_and_true) ... ok
+test_unknown_does_not_become_false (test_effects.EffectTests.test_unknown_does_not_become_false) ... ok
+test_wrong_reminder_time (test_effects.EffectTests.test_wrong_reminder_time) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 0.001s
+
+OK

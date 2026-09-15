@@ -1,0 +1,82 @@
+{
+  "phase": "R12_PUBLIC_EVALUATOR_OFFLINE_AUDIT_01",
+  "generated_utc": "2026-09-15T03:35:30.204102+00:00",
+  "new_remote_llm_calls": 0,
+  "new_real_model_episodes": 0,
+  "user_run_required": false,
+  "paid_batch_authorized": false,
+  "official_native_scenarios": 8,
+  "initial_settings_scenarios": 5,
+  "exploratory_additional_scenarios": 3,
+  "recorded_native_scripted_trajectories": 45,
+  "independent_domains_claimed": false,
+  "native_recorded_calls": 108,
+  "native_error_results": 13,
+  "original_evaluation_regrade_matches": 45,
+  "independent_terminal_checks": 45,
+  "original_full_score_terminal_false_cases": 8,
+  "repeated_scores_and_tables_equal": true,
+  "full_snapshot_bytes_equal": false,
+  "full_snapshot_difference_reason": "unmodified native date/time-generated fields and related serialized clock receipts; retained explicitly",
+  "new_tests": {
+    "run": 36,
+    "failures": 0,
+    "errors": 0
+  },
+  "original_upstream_files_checked": 77,
+  "original_evaluation_blob": "af9faacc65c0e700a52093fb0c5d77ac6c36c449",
+  "material_entries_checked": 111,
+  "native_minimal_driver_without_legacy_helper_verified": true,
+  "regrading_calendar_note": "saved reminder relative-date evaluation input restored from recorded requested date only during snapshot regrading; original native executions used their real clock",
+  "upstream_task_tool_evaluator_sources_modified": false,
+  "tau2_full_native_execution": false,
+  "public_source_reads": {
+    "ToolSandbox_commit": "c8571d7854316d2e1c5f288e59fe1e34e53f6dd1",
+    "tau2_commit": "2174a603f6d014ef94473ffa95957f6ce27100db"
+  },
+  "retained_development_failures": [
+    "supplement_run1:10 contact traces completed before harness empty reminder-query error; original data retained, not included as extra samples",
+    "red logs for pure predicates, evidence checker, reference-clock reconstruction and manifest verification"
+  ],
+  "network_during_experiments": "Python socket connection and DNS blocked; not an OS sandbox",
+  "runtime": "restored CPython3.11.14 plus prior supplied wheel modules; no new pip install",
+  "platform": "Linux x86_64",
+  "windows_macos_tested": false,
+  "new_repairlens_evidence": false,
+  "limitations": [
+    "scripted traces, no natural-agent error rate or leaderboard ranking change",
+    "post-hoc supplement, not independent confirmation",
+    "original metric is milestone similarity, not automatically a final-state certificate",
+    "terminal semantics require independent human/maintainer review",
+    "no novelty or publication-readiness claim",
+    "no external issues, GitHub pushes, account operations or new paid request"
+  ],
+  "prior_artifacts": {
+    "R11_Evidence_Synthesis.zip": {
+      "sha256_at_delivery": "3fc238522aede5074e217a1736d1f3ef4a760c3b82da2d5da314e7bcc21bc66a",
+      "bytes": 2366115,
+      "modified_by_R12": false
+    },
+    "Research_Handoff_R10.zip": {
+      "sha256_at_delivery": "aece2409470c9773047fe328185e297d9f60c2601b0741ea569fb28ec6efcce5",
+      "bytes": 64645,
+      "modified_by_R12": false
+    },
+    "Research_Handoff_R9NT1.zip": {
+      "sha256_at_delivery": "e8686e52224b7d2ff454bdf521a72855f90925dfbe1dc96b0c6c64bb8bc7ad83",
+      "bytes": 331347,
+      "modified_by_R12": false
+    },
+    "ReCheck_GitHub_Archive.zip": {
+      "sha256_at_delivery": "48f23225b158bfbc790cce3f809775519f449276bca4ddc2617450643dba7f98",
+      "bytes": 164240524,
+      "modified_by_R12": false
+    },
+    "RepairLens_GitHub_Archive.zip": {
+      "sha256_at_delivery": "7dd99c93f0b1c8955df8a40fd90666a7d69fa85a1153095096bf52b1f925d7d8",
+      "bytes": 21367449,
+      "modified_by_R12": false
+    }
+  },
+  "fresh_package_verification": "see sibling R12_Delivery_Verification.json delivered with archive"
+}

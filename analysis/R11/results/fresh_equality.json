@@ -1,0 +1,8 @@
+{
+  "branch_evidence.json": true,
+  "branch_results.csv": true,
+  "episode_first_proposals.csv": true,
+  "proposal_ledger.csv": true,
+  "summary.csv": true,
+  "verification.json": true
+}

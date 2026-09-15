@@ -1,0 +1,13 @@
+{
+  "stage": "before_first_R15_application_to_trials2_7",
+  "created_utc": "2026-09-15T10:42:47.290599+00:00",
+  "files": {
+    "src/analyze.py": "892b82ca5f8416e7aef1bd1615866f986708ff3c202a02532f0f920b450f48ee",
+    "src/effects.py": "48631d7b317a53c60927af5253e2ca6785b037ff8d28bddb3b7922726857105a",
+    "src/record_parser_r14.py": "fef7b764f03b5b2944f14fc5308d81ce829b27acef71c99311e21bce25e9752d",
+    "tests/test_effects.py": "ec0895462fee0cf3c530c607298d9a637dc19cd06c2d8e32c72e1e154329bb05"
+  },
+  "protocol_sha256": "420089d0cdf2605acf125ed4eeb885ea143a37e6c859c9f35a0eed67d3441fa3",
+  "old_R14_structural_scores_already_seen": true,
+  "not_external_preregistration": true
+}
