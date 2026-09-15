@@ -1,0 +1,3794 @@
+[
+  {
+    "event_actions": [
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {},
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "get_cellular_service_status"
+      },
+      {
+        "arguments": {
+          "content": "How's the new album coming along",
+          "phone_number": "+12453344098"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "send_message_with_phone_number"
+      }
+    ],
+    "method": "cached_reactive",
+    "observation_timing": "none",
+    "ordinary_observation_calls": 0,
+    "policy_return": {
+      "error": null,
+      "reported_sent": true,
+      "used_phone": "+12453344098"
+    },
+    "public_input_sha256": "1b6832eb9e75e2550afd055cf14e5ef50c590e95ebe54a21765817c95d00ad25",
+    "recipient_ids": [
+      "9e137f06-916a-5310-8174-cf0b7e9f7054"
+    ],
+    "recipient_phones": [
+      "+12453344098"
+    ],
+    "regime": "stable",
+    "runtime_calls": 1,
+    "score": {
+      "contacts_unchanged_by_policy": true,
+      "correct_writes": 1,
+      "existing_rows_preserved": true,
+      "new_id_collision": false,
+      "new_writes": 1,
+      "reminders_unchanged_by_policy": true,
+      "safe_success": true,
+      "settings_only_cellular_changed_by_policy": true,
+      "target_reached": true,
+      "wrong_writes": 0
+    },
+    "startup_calls": 2
+  },
+  {
+    "event_actions": [
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {},
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "get_cellular_service_status"
+      },
+      {
+        "arguments": {
+          "content": "How's the new album coming along",
+          "phone_number": "+12453344098"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "send_message_with_phone_number"
+      }
+    ],
+    "method": "query_on_error",
+    "observation_timing": "none",
+    "ordinary_observation_calls": 0,
+    "policy_return": {
+      "error": null,
+      "reported_sent": true,
+      "used_phone": "+12453344098"
+    },
+    "public_input_sha256": "1b6832eb9e75e2550afd055cf14e5ef50c590e95ebe54a21765817c95d00ad25",
+    "recipient_ids": [
+      "9e137f06-916a-5310-8174-cf0b7e9f7054"
+    ],
+    "recipient_phones": [
+      "+12453344098"
+    ],
+    "regime": "stable",
+    "runtime_calls": 1,
+    "score": {
+      "contacts_unchanged_by_policy": true,
+      "correct_writes": 1,
+      "existing_rows_preserved": true,
+      "new_id_collision": false,
+      "new_writes": 1,
+      "reminders_unchanged_by_policy": true,
+      "safe_success": true,
+      "settings_only_cellular_changed_by_policy": true,
+      "target_reached": true,
+      "wrong_writes": 0
+    },
+    "startup_calls": 2
+  },
+  {
+    "event_actions": [
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {},
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "get_cellular_service_status"
+      },
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {
+          "content": "How's the new album coming along",
+          "phone_number": "+12453344098"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "send_message_with_phone_number"
+      }
+    ],
+    "method": "always_resolve",
+    "observation_timing": "none",
+    "ordinary_observation_calls": 0,
+    "policy_return": {
+      "error": null,
+      "reported_sent": true,
+      "used_phone": "+12453344098"
+    },
+    "public_input_sha256": "1b6832eb9e75e2550afd055cf14e5ef50c590e95ebe54a21765817c95d00ad25",
+    "recipient_ids": [
+      "9e137f06-916a-5310-8174-cf0b7e9f7054"
+    ],
+    "recipient_phones": [
+      "+12453344098"
+    ],
+    "regime": "stable",
+    "runtime_calls": 2,
+    "score": {
+      "contacts_unchanged_by_policy": true,
+      "correct_writes": 1,
+      "existing_rows_preserved": true,
+      "new_id_collision": false,
+      "new_writes": 1,
+      "reminders_unchanged_by_policy": true,
+      "safe_success": true,
+      "settings_only_cellular_changed_by_policy": true,
+      "target_reached": true,
+      "wrong_writes": 0
+    },
+    "startup_calls": 2
+  },
+  {
+    "event_actions": [
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {},
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "get_cellular_service_status"
+      },
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {
+          "content": "How's the new album coming along",
+          "phone_number": "+12453344098"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "send_message_with_phone_number"
+      }
+    ],
+    "method": "reuse_observed_then_resolve",
+    "observation_timing": "none",
+    "ordinary_observation_calls": 0,
+    "policy_return": {
+      "error": null,
+      "reported_sent": true,
+      "used_phone": "+12453344098"
+    },
+    "public_input_sha256": "1b6832eb9e75e2550afd055cf14e5ef50c590e95ebe54a21765817c95d00ad25",
+    "recipient_ids": [
+      "9e137f06-916a-5310-8174-cf0b7e9f7054"
+    ],
+    "recipient_phones": [
+      "+12453344098"
+    ],
+    "regime": "stable",
+    "runtime_calls": 2,
+    "score": {
+      "contacts_unchanged_by_policy": true,
+      "correct_writes": 1,
+      "existing_rows_preserved": true,
+      "new_id_collision": false,
+      "new_writes": 1,
+      "reminders_unchanged_by_policy": true,
+      "safe_success": true,
+      "settings_only_cellular_changed_by_policy": true,
+      "target_reached": true,
+      "wrong_writes": 0
+    },
+    "startup_calls": 2
+  },
+  {
+    "event_actions": [
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {},
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "get_cellular_service_status"
+      },
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "ordinary_task_observation",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {
+          "content": "How's the new album coming along",
+          "phone_number": "+12453344098"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "send_message_with_phone_number"
+      }
+    ],
+    "method": "cached_reactive",
+    "observation_timing": "pre_change",
+    "ordinary_observation_calls": 1,
+    "policy_return": {
+      "error": null,
+      "reported_sent": true,
+      "used_phone": "+12453344098"
+    },
+    "public_input_sha256": "c247923f0179d92cabcf85d853d7d12154f9d305add01d55847bdc1037c4c159",
+    "recipient_ids": [
+      "9e137f06-916a-5310-8174-cf0b7e9f7054"
+    ],
+    "recipient_phones": [
+      "+12453344098"
+    ],
+    "regime": "stable",
+    "runtime_calls": 1,
+    "score": {
+      "contacts_unchanged_by_policy": true,
+      "correct_writes": 1,
+      "existing_rows_preserved": true,
+      "new_id_collision": false,
+      "new_writes": 1,
+      "reminders_unchanged_by_policy": true,
+      "safe_success": true,
+      "settings_only_cellular_changed_by_policy": true,
+      "target_reached": true,
+      "wrong_writes": 0
+    },
+    "startup_calls": 2
+  },
+  {
+    "event_actions": [
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {},
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "get_cellular_service_status"
+      },
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "ordinary_task_observation",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {
+          "content": "How's the new album coming along",
+          "phone_number": "+12453344098"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "send_message_with_phone_number"
+      }
+    ],
+    "method": "query_on_error",
+    "observation_timing": "pre_change",
+    "ordinary_observation_calls": 1,
+    "policy_return": {
+      "error": null,
+      "reported_sent": true,
+      "used_phone": "+12453344098"
+    },
+    "public_input_sha256": "c247923f0179d92cabcf85d853d7d12154f9d305add01d55847bdc1037c4c159",
+    "recipient_ids": [
+      "9e137f06-916a-5310-8174-cf0b7e9f7054"
+    ],
+    "recipient_phones": [
+      "+12453344098"
+    ],
+    "regime": "stable",
+    "runtime_calls": 1,
+    "score": {
+      "contacts_unchanged_by_policy": true,
+      "correct_writes": 1,
+      "existing_rows_preserved": true,
+      "new_id_collision": false,
+      "new_writes": 1,
+      "reminders_unchanged_by_policy": true,
+      "safe_success": true,
+      "settings_only_cellular_changed_by_policy": true,
+      "target_reached": true,
+      "wrong_writes": 0
+    },
+    "startup_calls": 2
+  },
+  {
+    "event_actions": [
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {},
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "get_cellular_service_status"
+      },
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "ordinary_task_observation",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {
+          "content": "How's the new album coming along",
+          "phone_number": "+12453344098"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "send_message_with_phone_number"
+      }
+    ],
+    "method": "always_resolve",
+    "observation_timing": "pre_change",
+    "ordinary_observation_calls": 1,
+    "policy_return": {
+      "error": null,
+      "reported_sent": true,
+      "used_phone": "+12453344098"
+    },
+    "public_input_sha256": "c247923f0179d92cabcf85d853d7d12154f9d305add01d55847bdc1037c4c159",
+    "recipient_ids": [
+      "9e137f06-916a-5310-8174-cf0b7e9f7054"
+    ],
+    "recipient_phones": [
+      "+12453344098"
+    ],
+    "regime": "stable",
+    "runtime_calls": 2,
+    "score": {
+      "contacts_unchanged_by_policy": true,
+      "correct_writes": 1,
+      "existing_rows_preserved": true,
+      "new_id_collision": false,
+      "new_writes": 1,
+      "reminders_unchanged_by_policy": true,
+      "safe_success": true,
+      "settings_only_cellular_changed_by_policy": true,
+      "target_reached": true,
+      "wrong_writes": 0
+    },
+    "startup_calls": 2
+  },
+  {
+    "event_actions": [
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {},
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "get_cellular_service_status"
+      },
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "ordinary_task_observation",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {
+          "content": "How's the new album coming along",
+          "phone_number": "+12453344098"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "send_message_with_phone_number"
+      }
+    ],
+    "method": "reuse_observed_then_resolve",
+    "observation_timing": "pre_change",
+    "ordinary_observation_calls": 1,
+    "policy_return": {
+      "error": null,
+      "reported_sent": true,
+      "used_phone": "+12453344098"
+    },
+    "public_input_sha256": "c247923f0179d92cabcf85d853d7d12154f9d305add01d55847bdc1037c4c159",
+    "recipient_ids": [
+      "9e137f06-916a-5310-8174-cf0b7e9f7054"
+    ],
+    "recipient_phones": [
+      "+12453344098"
+    ],
+    "regime": "stable",
+    "runtime_calls": 1,
+    "score": {
+      "contacts_unchanged_by_policy": true,
+      "correct_writes": 1,
+      "existing_rows_preserved": true,
+      "new_id_collision": false,
+      "new_writes": 1,
+      "reminders_unchanged_by_policy": true,
+      "safe_success": true,
+      "settings_only_cellular_changed_by_policy": true,
+      "target_reached": true,
+      "wrong_writes": 0
+    },
+    "startup_calls": 2
+  },
+  {
+    "event_actions": [
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {},
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "get_cellular_service_status"
+      },
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "ordinary_task_observation",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {
+          "content": "How's the new album coming along",
+          "phone_number": "+12453344098"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "send_message_with_phone_number"
+      }
+    ],
+    "method": "cached_reactive",
+    "observation_timing": "post_change",
+    "ordinary_observation_calls": 1,
+    "policy_return": {
+      "error": null,
+      "reported_sent": true,
+      "used_phone": "+12453344098"
+    },
+    "public_input_sha256": "c247923f0179d92cabcf85d853d7d12154f9d305add01d55847bdc1037c4c159",
+    "recipient_ids": [
+      "9e137f06-916a-5310-8174-cf0b7e9f7054"
+    ],
+    "recipient_phones": [
+      "+12453344098"
+    ],
+    "regime": "stable",
+    "runtime_calls": 1,
+    "score": {
+      "contacts_unchanged_by_policy": true,
+      "correct_writes": 1,
+      "existing_rows_preserved": true,
+      "new_id_collision": false,
+      "new_writes": 1,
+      "reminders_unchanged_by_policy": true,
+      "safe_success": true,
+      "settings_only_cellular_changed_by_policy": true,
+      "target_reached": true,
+      "wrong_writes": 0
+    },
+    "startup_calls": 2
+  },
+  {
+    "event_actions": [
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {},
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "get_cellular_service_status"
+      },
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "ordinary_task_observation",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {
+          "content": "How's the new album coming along",
+          "phone_number": "+12453344098"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "send_message_with_phone_number"
+      }
+    ],
+    "method": "query_on_error",
+    "observation_timing": "post_change",
+    "ordinary_observation_calls": 1,
+    "policy_return": {
+      "error": null,
+      "reported_sent": true,
+      "used_phone": "+12453344098"
+    },
+    "public_input_sha256": "c247923f0179d92cabcf85d853d7d12154f9d305add01d55847bdc1037c4c159",
+    "recipient_ids": [
+      "9e137f06-916a-5310-8174-cf0b7e9f7054"
+    ],
+    "recipient_phones": [
+      "+12453344098"
+    ],
+    "regime": "stable",
+    "runtime_calls": 1,
+    "score": {
+      "contacts_unchanged_by_policy": true,
+      "correct_writes": 1,
+      "existing_rows_preserved": true,
+      "new_id_collision": false,
+      "new_writes": 1,
+      "reminders_unchanged_by_policy": true,
+      "safe_success": true,
+      "settings_only_cellular_changed_by_policy": true,
+      "target_reached": true,
+      "wrong_writes": 0
+    },
+    "startup_calls": 2
+  },
+  {
+    "event_actions": [
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {},
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "get_cellular_service_status"
+      },
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "ordinary_task_observation",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {
+          "content": "How's the new album coming along",
+          "phone_number": "+12453344098"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "send_message_with_phone_number"
+      }
+    ],
+    "method": "always_resolve",
+    "observation_timing": "post_change",
+    "ordinary_observation_calls": 1,
+    "policy_return": {
+      "error": null,
+      "reported_sent": true,
+      "used_phone": "+12453344098"
+    },
+    "public_input_sha256": "c247923f0179d92cabcf85d853d7d12154f9d305add01d55847bdc1037c4c159",
+    "recipient_ids": [
+      "9e137f06-916a-5310-8174-cf0b7e9f7054"
+    ],
+    "recipient_phones": [
+      "+12453344098"
+    ],
+    "regime": "stable",
+    "runtime_calls": 2,
+    "score": {
+      "contacts_unchanged_by_policy": true,
+      "correct_writes": 1,
+      "existing_rows_preserved": true,
+      "new_id_collision": false,
+      "new_writes": 1,
+      "reminders_unchanged_by_policy": true,
+      "safe_success": true,
+      "settings_only_cellular_changed_by_policy": true,
+      "target_reached": true,
+      "wrong_writes": 0
+    },
+    "startup_calls": 2
+  },
+  {
+    "event_actions": [
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {},
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "get_cellular_service_status"
+      },
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "ordinary_task_observation",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {
+          "content": "How's the new album coming along",
+          "phone_number": "+12453344098"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "send_message_with_phone_number"
+      }
+    ],
+    "method": "reuse_observed_then_resolve",
+    "observation_timing": "post_change",
+    "ordinary_observation_calls": 1,
+    "policy_return": {
+      "error": null,
+      "reported_sent": true,
+      "used_phone": "+12453344098"
+    },
+    "public_input_sha256": "c247923f0179d92cabcf85d853d7d12154f9d305add01d55847bdc1037c4c159",
+    "recipient_ids": [
+      "9e137f06-916a-5310-8174-cf0b7e9f7054"
+    ],
+    "recipient_phones": [
+      "+12453344098"
+    ],
+    "regime": "stable",
+    "runtime_calls": 1,
+    "score": {
+      "contacts_unchanged_by_policy": true,
+      "correct_writes": 1,
+      "existing_rows_preserved": true,
+      "new_id_collision": false,
+      "new_writes": 1,
+      "reminders_unchanged_by_policy": true,
+      "safe_success": true,
+      "settings_only_cellular_changed_by_policy": true,
+      "target_reached": true,
+      "wrong_writes": 0
+    },
+    "startup_calls": 2
+  },
+  {
+    "event_actions": [
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {},
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "get_cellular_service_status"
+      },
+      {
+        "arguments": {
+          "person_id": "a22e1984-6c6c-530c-8831-c3ea3b5138e7",
+          "phone_number": "+12025550119"
+        },
+        "error": null,
+        "ok": null,
+        "scope": "fixture_admin",
+        "tool": "modify_contact"
+      },
+      {
+        "arguments": {
+          "content": "How's the new album coming along",
+          "phone_number": "+12453344098"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "send_message_with_phone_number"
+      }
+    ],
+    "method": "cached_reactive",
+    "observation_timing": "none",
+    "ordinary_observation_calls": 0,
+    "policy_return": {
+      "error": null,
+      "reported_sent": true,
+      "used_phone": "+12453344098"
+    },
+    "public_input_sha256": "1b6832eb9e75e2550afd055cf14e5ef50c590e95ebe54a21765817c95d00ad25",
+    "recipient_ids": [
+      "9e137f06-916a-5310-8174-cf0b7e9f7054"
+    ],
+    "recipient_phones": [
+      "+12453344098"
+    ],
+    "regime": "unrelated",
+    "runtime_calls": 1,
+    "score": {
+      "contacts_unchanged_by_policy": true,
+      "correct_writes": 1,
+      "existing_rows_preserved": true,
+      "new_id_collision": false,
+      "new_writes": 1,
+      "reminders_unchanged_by_policy": true,
+      "safe_success": true,
+      "settings_only_cellular_changed_by_policy": true,
+      "target_reached": true,
+      "wrong_writes": 0
+    },
+    "startup_calls": 2
+  },
+  {
+    "event_actions": [
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {},
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "get_cellular_service_status"
+      },
+      {
+        "arguments": {
+          "person_id": "a22e1984-6c6c-530c-8831-c3ea3b5138e7",
+          "phone_number": "+12025550119"
+        },
+        "error": null,
+        "ok": null,
+        "scope": "fixture_admin",
+        "tool": "modify_contact"
+      },
+      {
+        "arguments": {
+          "content": "How's the new album coming along",
+          "phone_number": "+12453344098"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "send_message_with_phone_number"
+      }
+    ],
+    "method": "query_on_error",
+    "observation_timing": "none",
+    "ordinary_observation_calls": 0,
+    "policy_return": {
+      "error": null,
+      "reported_sent": true,
+      "used_phone": "+12453344098"
+    },
+    "public_input_sha256": "1b6832eb9e75e2550afd055cf14e5ef50c590e95ebe54a21765817c95d00ad25",
+    "recipient_ids": [
+      "9e137f06-916a-5310-8174-cf0b7e9f7054"
+    ],
+    "recipient_phones": [
+      "+12453344098"
+    ],
+    "regime": "unrelated",
+    "runtime_calls": 1,
+    "score": {
+      "contacts_unchanged_by_policy": true,
+      "correct_writes": 1,
+      "existing_rows_preserved": true,
+      "new_id_collision": false,
+      "new_writes": 1,
+      "reminders_unchanged_by_policy": true,
+      "safe_success": true,
+      "settings_only_cellular_changed_by_policy": true,
+      "target_reached": true,
+      "wrong_writes": 0
+    },
+    "startup_calls": 2
+  },
+  {
+    "event_actions": [
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {},
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "get_cellular_service_status"
+      },
+      {
+        "arguments": {
+          "person_id": "a22e1984-6c6c-530c-8831-c3ea3b5138e7",
+          "phone_number": "+12025550119"
+        },
+        "error": null,
+        "ok": null,
+        "scope": "fixture_admin",
+        "tool": "modify_contact"
+      },
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {
+          "content": "How's the new album coming along",
+          "phone_number": "+12453344098"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "send_message_with_phone_number"
+      }
+    ],
+    "method": "always_resolve",
+    "observation_timing": "none",
+    "ordinary_observation_calls": 0,
+    "policy_return": {
+      "error": null,
+      "reported_sent": true,
+      "used_phone": "+12453344098"
+    },
+    "public_input_sha256": "1b6832eb9e75e2550afd055cf14e5ef50c590e95ebe54a21765817c95d00ad25",
+    "recipient_ids": [
+      "9e137f06-916a-5310-8174-cf0b7e9f7054"
+    ],
+    "recipient_phones": [
+      "+12453344098"
+    ],
+    "regime": "unrelated",
+    "runtime_calls": 2,
+    "score": {
+      "contacts_unchanged_by_policy": true,
+      "correct_writes": 1,
+      "existing_rows_preserved": true,
+      "new_id_collision": false,
+      "new_writes": 1,
+      "reminders_unchanged_by_policy": true,
+      "safe_success": true,
+      "settings_only_cellular_changed_by_policy": true,
+      "target_reached": true,
+      "wrong_writes": 0
+    },
+    "startup_calls": 2
+  },
+  {
+    "event_actions": [
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {},
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "get_cellular_service_status"
+      },
+      {
+        "arguments": {
+          "person_id": "a22e1984-6c6c-530c-8831-c3ea3b5138e7",
+          "phone_number": "+12025550119"
+        },
+        "error": null,
+        "ok": null,
+        "scope": "fixture_admin",
+        "tool": "modify_contact"
+      },
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {
+          "content": "How's the new album coming along",
+          "phone_number": "+12453344098"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "send_message_with_phone_number"
+      }
+    ],
+    "method": "reuse_observed_then_resolve",
+    "observation_timing": "none",
+    "ordinary_observation_calls": 0,
+    "policy_return": {
+      "error": null,
+      "reported_sent": true,
+      "used_phone": "+12453344098"
+    },
+    "public_input_sha256": "1b6832eb9e75e2550afd055cf14e5ef50c590e95ebe54a21765817c95d00ad25",
+    "recipient_ids": [
+      "9e137f06-916a-5310-8174-cf0b7e9f7054"
+    ],
+    "recipient_phones": [
+      "+12453344098"
+    ],
+    "regime": "unrelated",
+    "runtime_calls": 2,
+    "score": {
+      "contacts_unchanged_by_policy": true,
+      "correct_writes": 1,
+      "existing_rows_preserved": true,
+      "new_id_collision": false,
+      "new_writes": 1,
+      "reminders_unchanged_by_policy": true,
+      "safe_success": true,
+      "settings_only_cellular_changed_by_policy": true,
+      "target_reached": true,
+      "wrong_writes": 0
+    },
+    "startup_calls": 2
+  },
+  {
+    "event_actions": [
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {},
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "get_cellular_service_status"
+      },
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "ordinary_task_observation",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {
+          "person_id": "a22e1984-6c6c-530c-8831-c3ea3b5138e7",
+          "phone_number": "+12025550119"
+        },
+        "error": null,
+        "ok": null,
+        "scope": "fixture_admin",
+        "tool": "modify_contact"
+      },
+      {
+        "arguments": {
+          "content": "How's the new album coming along",
+          "phone_number": "+12453344098"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "send_message_with_phone_number"
+      }
+    ],
+    "method": "cached_reactive",
+    "observation_timing": "pre_change",
+    "ordinary_observation_calls": 1,
+    "policy_return": {
+      "error": null,
+      "reported_sent": true,
+      "used_phone": "+12453344098"
+    },
+    "public_input_sha256": "c247923f0179d92cabcf85d853d7d12154f9d305add01d55847bdc1037c4c159",
+    "recipient_ids": [
+      "9e137f06-916a-5310-8174-cf0b7e9f7054"
+    ],
+    "recipient_phones": [
+      "+12453344098"
+    ],
+    "regime": "unrelated",
+    "runtime_calls": 1,
+    "score": {
+      "contacts_unchanged_by_policy": true,
+      "correct_writes": 1,
+      "existing_rows_preserved": true,
+      "new_id_collision": false,
+      "new_writes": 1,
+      "reminders_unchanged_by_policy": true,
+      "safe_success": true,
+      "settings_only_cellular_changed_by_policy": true,
+      "target_reached": true,
+      "wrong_writes": 0
+    },
+    "startup_calls": 2
+  },
+  {
+    "event_actions": [
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {},
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "get_cellular_service_status"
+      },
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "ordinary_task_observation",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {
+          "person_id": "a22e1984-6c6c-530c-8831-c3ea3b5138e7",
+          "phone_number": "+12025550119"
+        },
+        "error": null,
+        "ok": null,
+        "scope": "fixture_admin",
+        "tool": "modify_contact"
+      },
+      {
+        "arguments": {
+          "content": "How's the new album coming along",
+          "phone_number": "+12453344098"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "send_message_with_phone_number"
+      }
+    ],
+    "method": "query_on_error",
+    "observation_timing": "pre_change",
+    "ordinary_observation_calls": 1,
+    "policy_return": {
+      "error": null,
+      "reported_sent": true,
+      "used_phone": "+12453344098"
+    },
+    "public_input_sha256": "c247923f0179d92cabcf85d853d7d12154f9d305add01d55847bdc1037c4c159",
+    "recipient_ids": [
+      "9e137f06-916a-5310-8174-cf0b7e9f7054"
+    ],
+    "recipient_phones": [
+      "+12453344098"
+    ],
+    "regime": "unrelated",
+    "runtime_calls": 1,
+    "score": {
+      "contacts_unchanged_by_policy": true,
+      "correct_writes": 1,
+      "existing_rows_preserved": true,
+      "new_id_collision": false,
+      "new_writes": 1,
+      "reminders_unchanged_by_policy": true,
+      "safe_success": true,
+      "settings_only_cellular_changed_by_policy": true,
+      "target_reached": true,
+      "wrong_writes": 0
+    },
+    "startup_calls": 2
+  },
+  {
+    "event_actions": [
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {},
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "get_cellular_service_status"
+      },
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "ordinary_task_observation",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {
+          "person_id": "a22e1984-6c6c-530c-8831-c3ea3b5138e7",
+          "phone_number": "+12025550119"
+        },
+        "error": null,
+        "ok": null,
+        "scope": "fixture_admin",
+        "tool": "modify_contact"
+      },
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {
+          "content": "How's the new album coming along",
+          "phone_number": "+12453344098"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "send_message_with_phone_number"
+      }
+    ],
+    "method": "always_resolve",
+    "observation_timing": "pre_change",
+    "ordinary_observation_calls": 1,
+    "policy_return": {
+      "error": null,
+      "reported_sent": true,
+      "used_phone": "+12453344098"
+    },
+    "public_input_sha256": "c247923f0179d92cabcf85d853d7d12154f9d305add01d55847bdc1037c4c159",
+    "recipient_ids": [
+      "9e137f06-916a-5310-8174-cf0b7e9f7054"
+    ],
+    "recipient_phones": [
+      "+12453344098"
+    ],
+    "regime": "unrelated",
+    "runtime_calls": 2,
+    "score": {
+      "contacts_unchanged_by_policy": true,
+      "correct_writes": 1,
+      "existing_rows_preserved": true,
+      "new_id_collision": false,
+      "new_writes": 1,
+      "reminders_unchanged_by_policy": true,
+      "safe_success": true,
+      "settings_only_cellular_changed_by_policy": true,
+      "target_reached": true,
+      "wrong_writes": 0
+    },
+    "startup_calls": 2
+  },
+  {
+    "event_actions": [
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {},
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "get_cellular_service_status"
+      },
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "ordinary_task_observation",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {
+          "person_id": "a22e1984-6c6c-530c-8831-c3ea3b5138e7",
+          "phone_number": "+12025550119"
+        },
+        "error": null,
+        "ok": null,
+        "scope": "fixture_admin",
+        "tool": "modify_contact"
+      },
+      {
+        "arguments": {
+          "content": "How's the new album coming along",
+          "phone_number": "+12453344098"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "send_message_with_phone_number"
+      }
+    ],
+    "method": "reuse_observed_then_resolve",
+    "observation_timing": "pre_change",
+    "ordinary_observation_calls": 1,
+    "policy_return": {
+      "error": null,
+      "reported_sent": true,
+      "used_phone": "+12453344098"
+    },
+    "public_input_sha256": "c247923f0179d92cabcf85d853d7d12154f9d305add01d55847bdc1037c4c159",
+    "recipient_ids": [
+      "9e137f06-916a-5310-8174-cf0b7e9f7054"
+    ],
+    "recipient_phones": [
+      "+12453344098"
+    ],
+    "regime": "unrelated",
+    "runtime_calls": 1,
+    "score": {
+      "contacts_unchanged_by_policy": true,
+      "correct_writes": 1,
+      "existing_rows_preserved": true,
+      "new_id_collision": false,
+      "new_writes": 1,
+      "reminders_unchanged_by_policy": true,
+      "safe_success": true,
+      "settings_only_cellular_changed_by_policy": true,
+      "target_reached": true,
+      "wrong_writes": 0
+    },
+    "startup_calls": 2
+  },
+  {
+    "event_actions": [
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {},
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "get_cellular_service_status"
+      },
+      {
+        "arguments": {
+          "person_id": "a22e1984-6c6c-530c-8831-c3ea3b5138e7",
+          "phone_number": "+12025550119"
+        },
+        "error": null,
+        "ok": null,
+        "scope": "fixture_admin",
+        "tool": "modify_contact"
+      },
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "ordinary_task_observation",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {
+          "content": "How's the new album coming along",
+          "phone_number": "+12453344098"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "send_message_with_phone_number"
+      }
+    ],
+    "method": "cached_reactive",
+    "observation_timing": "post_change",
+    "ordinary_observation_calls": 1,
+    "policy_return": {
+      "error": null,
+      "reported_sent": true,
+      "used_phone": "+12453344098"
+    },
+    "public_input_sha256": "c247923f0179d92cabcf85d853d7d12154f9d305add01d55847bdc1037c4c159",
+    "recipient_ids": [
+      "9e137f06-916a-5310-8174-cf0b7e9f7054"
+    ],
+    "recipient_phones": [
+      "+12453344098"
+    ],
+    "regime": "unrelated",
+    "runtime_calls": 1,
+    "score": {
+      "contacts_unchanged_by_policy": true,
+      "correct_writes": 1,
+      "existing_rows_preserved": true,
+      "new_id_collision": false,
+      "new_writes": 1,
+      "reminders_unchanged_by_policy": true,
+      "safe_success": true,
+      "settings_only_cellular_changed_by_policy": true,
+      "target_reached": true,
+      "wrong_writes": 0
+    },
+    "startup_calls": 2
+  },
+  {
+    "event_actions": [
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {},
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "get_cellular_service_status"
+      },
+      {
+        "arguments": {
+          "person_id": "a22e1984-6c6c-530c-8831-c3ea3b5138e7",
+          "phone_number": "+12025550119"
+        },
+        "error": null,
+        "ok": null,
+        "scope": "fixture_admin",
+        "tool": "modify_contact"
+      },
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "ordinary_task_observation",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {
+          "content": "How's the new album coming along",
+          "phone_number": "+12453344098"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "send_message_with_phone_number"
+      }
+    ],
+    "method": "query_on_error",
+    "observation_timing": "post_change",
+    "ordinary_observation_calls": 1,
+    "policy_return": {
+      "error": null,
+      "reported_sent": true,
+      "used_phone": "+12453344098"
+    },
+    "public_input_sha256": "c247923f0179d92cabcf85d853d7d12154f9d305add01d55847bdc1037c4c159",
+    "recipient_ids": [
+      "9e137f06-916a-5310-8174-cf0b7e9f7054"
+    ],
+    "recipient_phones": [
+      "+12453344098"
+    ],
+    "regime": "unrelated",
+    "runtime_calls": 1,
+    "score": {
+      "contacts_unchanged_by_policy": true,
+      "correct_writes": 1,
+      "existing_rows_preserved": true,
+      "new_id_collision": false,
+      "new_writes": 1,
+      "reminders_unchanged_by_policy": true,
+      "safe_success": true,
+      "settings_only_cellular_changed_by_policy": true,
+      "target_reached": true,
+      "wrong_writes": 0
+    },
+    "startup_calls": 2
+  },
+  {
+    "event_actions": [
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {},
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "get_cellular_service_status"
+      },
+      {
+        "arguments": {
+          "person_id": "a22e1984-6c6c-530c-8831-c3ea3b5138e7",
+          "phone_number": "+12025550119"
+        },
+        "error": null,
+        "ok": null,
+        "scope": "fixture_admin",
+        "tool": "modify_contact"
+      },
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "ordinary_task_observation",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {
+          "content": "How's the new album coming along",
+          "phone_number": "+12453344098"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "send_message_with_phone_number"
+      }
+    ],
+    "method": "always_resolve",
+    "observation_timing": "post_change",
+    "ordinary_observation_calls": 1,
+    "policy_return": {
+      "error": null,
+      "reported_sent": true,
+      "used_phone": "+12453344098"
+    },
+    "public_input_sha256": "c247923f0179d92cabcf85d853d7d12154f9d305add01d55847bdc1037c4c159",
+    "recipient_ids": [
+      "9e137f06-916a-5310-8174-cf0b7e9f7054"
+    ],
+    "recipient_phones": [
+      "+12453344098"
+    ],
+    "regime": "unrelated",
+    "runtime_calls": 2,
+    "score": {
+      "contacts_unchanged_by_policy": true,
+      "correct_writes": 1,
+      "existing_rows_preserved": true,
+      "new_id_collision": false,
+      "new_writes": 1,
+      "reminders_unchanged_by_policy": true,
+      "safe_success": true,
+      "settings_only_cellular_changed_by_policy": true,
+      "target_reached": true,
+      "wrong_writes": 0
+    },
+    "startup_calls": 2
+  },
+  {
+    "event_actions": [
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {},
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "get_cellular_service_status"
+      },
+      {
+        "arguments": {
+          "person_id": "a22e1984-6c6c-530c-8831-c3ea3b5138e7",
+          "phone_number": "+12025550119"
+        },
+        "error": null,
+        "ok": null,
+        "scope": "fixture_admin",
+        "tool": "modify_contact"
+      },
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "ordinary_task_observation",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {
+          "content": "How's the new album coming along",
+          "phone_number": "+12453344098"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "send_message_with_phone_number"
+      }
+    ],
+    "method": "reuse_observed_then_resolve",
+    "observation_timing": "post_change",
+    "ordinary_observation_calls": 1,
+    "policy_return": {
+      "error": null,
+      "reported_sent": true,
+      "used_phone": "+12453344098"
+    },
+    "public_input_sha256": "c247923f0179d92cabcf85d853d7d12154f9d305add01d55847bdc1037c4c159",
+    "recipient_ids": [
+      "9e137f06-916a-5310-8174-cf0b7e9f7054"
+    ],
+    "recipient_phones": [
+      "+12453344098"
+    ],
+    "regime": "unrelated",
+    "runtime_calls": 1,
+    "score": {
+      "contacts_unchanged_by_policy": true,
+      "correct_writes": 1,
+      "existing_rows_preserved": true,
+      "new_id_collision": false,
+      "new_writes": 1,
+      "reminders_unchanged_by_policy": true,
+      "safe_success": true,
+      "settings_only_cellular_changed_by_policy": true,
+      "target_reached": true,
+      "wrong_writes": 0
+    },
+    "startup_calls": 2
+  },
+  {
+    "event_actions": [
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {},
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "get_cellular_service_status"
+      },
+      {
+        "arguments": {
+          "person_id": "9e137f06-916a-5310-8174-cf0b7e9f7054",
+          "phone_number": "+12025550119"
+        },
+        "error": null,
+        "ok": null,
+        "scope": "fixture_admin",
+        "tool": "modify_contact"
+      },
+      {
+        "arguments": {
+          "content": "How's the new album coming along",
+          "phone_number": "+12453344098"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "send_message_with_phone_number"
+      }
+    ],
+    "method": "cached_reactive",
+    "observation_timing": "none",
+    "ordinary_observation_calls": 0,
+    "policy_return": {
+      "error": null,
+      "reported_sent": true,
+      "used_phone": "+12453344098"
+    },
+    "public_input_sha256": "1b6832eb9e75e2550afd055cf14e5ef50c590e95ebe54a21765817c95d00ad25",
+    "recipient_ids": [
+      null
+    ],
+    "recipient_phones": [
+      "+12453344098"
+    ],
+    "regime": "moved",
+    "runtime_calls": 1,
+    "score": {
+      "contacts_unchanged_by_policy": true,
+      "correct_writes": 0,
+      "existing_rows_preserved": true,
+      "new_id_collision": false,
+      "new_writes": 1,
+      "reminders_unchanged_by_policy": true,
+      "safe_success": false,
+      "settings_only_cellular_changed_by_policy": true,
+      "target_reached": false,
+      "wrong_writes": 1
+    },
+    "startup_calls": 2
+  },
+  {
+    "event_actions": [
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {},
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "get_cellular_service_status"
+      },
+      {
+        "arguments": {
+          "person_id": "9e137f06-916a-5310-8174-cf0b7e9f7054",
+          "phone_number": "+12025550119"
+        },
+        "error": null,
+        "ok": null,
+        "scope": "fixture_admin",
+        "tool": "modify_contact"
+      },
+      {
+        "arguments": {
+          "content": "How's the new album coming along",
+          "phone_number": "+12453344098"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "send_message_with_phone_number"
+      }
+    ],
+    "method": "query_on_error",
+    "observation_timing": "none",
+    "ordinary_observation_calls": 0,
+    "policy_return": {
+      "error": null,
+      "reported_sent": true,
+      "used_phone": "+12453344098"
+    },
+    "public_input_sha256": "1b6832eb9e75e2550afd055cf14e5ef50c590e95ebe54a21765817c95d00ad25",
+    "recipient_ids": [
+      null
+    ],
+    "recipient_phones": [
+      "+12453344098"
+    ],
+    "regime": "moved",
+    "runtime_calls": 1,
+    "score": {
+      "contacts_unchanged_by_policy": true,
+      "correct_writes": 0,
+      "existing_rows_preserved": true,
+      "new_id_collision": false,
+      "new_writes": 1,
+      "reminders_unchanged_by_policy": true,
+      "safe_success": false,
+      "settings_only_cellular_changed_by_policy": true,
+      "target_reached": false,
+      "wrong_writes": 1
+    },
+    "startup_calls": 2
+  },
+  {
+    "event_actions": [
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {},
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "get_cellular_service_status"
+      },
+      {
+        "arguments": {
+          "person_id": "9e137f06-916a-5310-8174-cf0b7e9f7054",
+          "phone_number": "+12025550119"
+        },
+        "error": null,
+        "ok": null,
+        "scope": "fixture_admin",
+        "tool": "modify_contact"
+      },
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {
+          "content": "How's the new album coming along",
+          "phone_number": "+12025550119"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "send_message_with_phone_number"
+      }
+    ],
+    "method": "always_resolve",
+    "observation_timing": "none",
+    "ordinary_observation_calls": 0,
+    "policy_return": {
+      "error": null,
+      "reported_sent": true,
+      "used_phone": "+12025550119"
+    },
+    "public_input_sha256": "1b6832eb9e75e2550afd055cf14e5ef50c590e95ebe54a21765817c95d00ad25",
+    "recipient_ids": [
+      "9e137f06-916a-5310-8174-cf0b7e9f7054"
+    ],
+    "recipient_phones": [
+      "+12025550119"
+    ],
+    "regime": "moved",
+    "runtime_calls": 2,
+    "score": {
+      "contacts_unchanged_by_policy": true,
+      "correct_writes": 1,
+      "existing_rows_preserved": true,
+      "new_id_collision": false,
+      "new_writes": 1,
+      "reminders_unchanged_by_policy": true,
+      "safe_success": true,
+      "settings_only_cellular_changed_by_policy": true,
+      "target_reached": true,
+      "wrong_writes": 0
+    },
+    "startup_calls": 2
+  },
+  {
+    "event_actions": [
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {},
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "get_cellular_service_status"
+      },
+      {
+        "arguments": {
+          "person_id": "9e137f06-916a-5310-8174-cf0b7e9f7054",
+          "phone_number": "+12025550119"
+        },
+        "error": null,
+        "ok": null,
+        "scope": "fixture_admin",
+        "tool": "modify_contact"
+      },
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {
+          "content": "How's the new album coming along",
+          "phone_number": "+12025550119"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "send_message_with_phone_number"
+      }
+    ],
+    "method": "reuse_observed_then_resolve",
+    "observation_timing": "none",
+    "ordinary_observation_calls": 0,
+    "policy_return": {
+      "error": null,
+      "reported_sent": true,
+      "used_phone": "+12025550119"
+    },
+    "public_input_sha256": "1b6832eb9e75e2550afd055cf14e5ef50c590e95ebe54a21765817c95d00ad25",
+    "recipient_ids": [
+      "9e137f06-916a-5310-8174-cf0b7e9f7054"
+    ],
+    "recipient_phones": [
+      "+12025550119"
+    ],
+    "regime": "moved",
+    "runtime_calls": 2,
+    "score": {
+      "contacts_unchanged_by_policy": true,
+      "correct_writes": 1,
+      "existing_rows_preserved": true,
+      "new_id_collision": false,
+      "new_writes": 1,
+      "reminders_unchanged_by_policy": true,
+      "safe_success": true,
+      "settings_only_cellular_changed_by_policy": true,
+      "target_reached": true,
+      "wrong_writes": 0
+    },
+    "startup_calls": 2
+  },
+  {
+    "event_actions": [
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {},
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "get_cellular_service_status"
+      },
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "ordinary_task_observation",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {
+          "person_id": "9e137f06-916a-5310-8174-cf0b7e9f7054",
+          "phone_number": "+12025550119"
+        },
+        "error": null,
+        "ok": null,
+        "scope": "fixture_admin",
+        "tool": "modify_contact"
+      },
+      {
+        "arguments": {
+          "content": "How's the new album coming along",
+          "phone_number": "+12453344098"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "send_message_with_phone_number"
+      }
+    ],
+    "method": "cached_reactive",
+    "observation_timing": "pre_change",
+    "ordinary_observation_calls": 1,
+    "policy_return": {
+      "error": null,
+      "reported_sent": true,
+      "used_phone": "+12453344098"
+    },
+    "public_input_sha256": "c247923f0179d92cabcf85d853d7d12154f9d305add01d55847bdc1037c4c159",
+    "recipient_ids": [
+      null
+    ],
+    "recipient_phones": [
+      "+12453344098"
+    ],
+    "regime": "moved",
+    "runtime_calls": 1,
+    "score": {
+      "contacts_unchanged_by_policy": true,
+      "correct_writes": 0,
+      "existing_rows_preserved": true,
+      "new_id_collision": false,
+      "new_writes": 1,
+      "reminders_unchanged_by_policy": true,
+      "safe_success": false,
+      "settings_only_cellular_changed_by_policy": true,
+      "target_reached": false,
+      "wrong_writes": 1
+    },
+    "startup_calls": 2
+  },
+  {
+    "event_actions": [
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {},
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "get_cellular_service_status"
+      },
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "ordinary_task_observation",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {
+          "person_id": "9e137f06-916a-5310-8174-cf0b7e9f7054",
+          "phone_number": "+12025550119"
+        },
+        "error": null,
+        "ok": null,
+        "scope": "fixture_admin",
+        "tool": "modify_contact"
+      },
+      {
+        "arguments": {
+          "content": "How's the new album coming along",
+          "phone_number": "+12453344098"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "send_message_with_phone_number"
+      }
+    ],
+    "method": "query_on_error",
+    "observation_timing": "pre_change",
+    "ordinary_observation_calls": 1,
+    "policy_return": {
+      "error": null,
+      "reported_sent": true,
+      "used_phone": "+12453344098"
+    },
+    "public_input_sha256": "c247923f0179d92cabcf85d853d7d12154f9d305add01d55847bdc1037c4c159",
+    "recipient_ids": [
+      null
+    ],
+    "recipient_phones": [
+      "+12453344098"
+    ],
+    "regime": "moved",
+    "runtime_calls": 1,
+    "score": {
+      "contacts_unchanged_by_policy": true,
+      "correct_writes": 0,
+      "existing_rows_preserved": true,
+      "new_id_collision": false,
+      "new_writes": 1,
+      "reminders_unchanged_by_policy": true,
+      "safe_success": false,
+      "settings_only_cellular_changed_by_policy": true,
+      "target_reached": false,
+      "wrong_writes": 1
+    },
+    "startup_calls": 2
+  },
+  {
+    "event_actions": [
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {},
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "get_cellular_service_status"
+      },
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "ordinary_task_observation",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {
+          "person_id": "9e137f06-916a-5310-8174-cf0b7e9f7054",
+          "phone_number": "+12025550119"
+        },
+        "error": null,
+        "ok": null,
+        "scope": "fixture_admin",
+        "tool": "modify_contact"
+      },
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {
+          "content": "How's the new album coming along",
+          "phone_number": "+12025550119"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "send_message_with_phone_number"
+      }
+    ],
+    "method": "always_resolve",
+    "observation_timing": "pre_change",
+    "ordinary_observation_calls": 1,
+    "policy_return": {
+      "error": null,
+      "reported_sent": true,
+      "used_phone": "+12025550119"
+    },
+    "public_input_sha256": "c247923f0179d92cabcf85d853d7d12154f9d305add01d55847bdc1037c4c159",
+    "recipient_ids": [
+      "9e137f06-916a-5310-8174-cf0b7e9f7054"
+    ],
+    "recipient_phones": [
+      "+12025550119"
+    ],
+    "regime": "moved",
+    "runtime_calls": 2,
+    "score": {
+      "contacts_unchanged_by_policy": true,
+      "correct_writes": 1,
+      "existing_rows_preserved": true,
+      "new_id_collision": false,
+      "new_writes": 1,
+      "reminders_unchanged_by_policy": true,
+      "safe_success": true,
+      "settings_only_cellular_changed_by_policy": true,
+      "target_reached": true,
+      "wrong_writes": 0
+    },
+    "startup_calls": 2
+  },
+  {
+    "event_actions": [
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {},
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "get_cellular_service_status"
+      },
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "ordinary_task_observation",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {
+          "person_id": "9e137f06-916a-5310-8174-cf0b7e9f7054",
+          "phone_number": "+12025550119"
+        },
+        "error": null,
+        "ok": null,
+        "scope": "fixture_admin",
+        "tool": "modify_contact"
+      },
+      {
+        "arguments": {
+          "content": "How's the new album coming along",
+          "phone_number": "+12453344098"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "send_message_with_phone_number"
+      }
+    ],
+    "method": "reuse_observed_then_resolve",
+    "observation_timing": "pre_change",
+    "ordinary_observation_calls": 1,
+    "policy_return": {
+      "error": null,
+      "reported_sent": true,
+      "used_phone": "+12453344098"
+    },
+    "public_input_sha256": "c247923f0179d92cabcf85d853d7d12154f9d305add01d55847bdc1037c4c159",
+    "recipient_ids": [
+      null
+    ],
+    "recipient_phones": [
+      "+12453344098"
+    ],
+    "regime": "moved",
+    "runtime_calls": 1,
+    "score": {
+      "contacts_unchanged_by_policy": true,
+      "correct_writes": 0,
+      "existing_rows_preserved": true,
+      "new_id_collision": false,
+      "new_writes": 1,
+      "reminders_unchanged_by_policy": true,
+      "safe_success": false,
+      "settings_only_cellular_changed_by_policy": true,
+      "target_reached": false,
+      "wrong_writes": 1
+    },
+    "startup_calls": 2
+  },
+  {
+    "event_actions": [
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {},
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "get_cellular_service_status"
+      },
+      {
+        "arguments": {
+          "person_id": "9e137f06-916a-5310-8174-cf0b7e9f7054",
+          "phone_number": "+12025550119"
+        },
+        "error": null,
+        "ok": null,
+        "scope": "fixture_admin",
+        "tool": "modify_contact"
+      },
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "ordinary_task_observation",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {
+          "content": "How's the new album coming along",
+          "phone_number": "+12453344098"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "send_message_with_phone_number"
+      }
+    ],
+    "method": "cached_reactive",
+    "observation_timing": "post_change",
+    "ordinary_observation_calls": 1,
+    "policy_return": {
+      "error": null,
+      "reported_sent": true,
+      "used_phone": "+12453344098"
+    },
+    "public_input_sha256": "1063f35e407cc6e679a5df695d166abdceef05cae7edf2817f34491316091ede",
+    "recipient_ids": [
+      null
+    ],
+    "recipient_phones": [
+      "+12453344098"
+    ],
+    "regime": "moved",
+    "runtime_calls": 1,
+    "score": {
+      "contacts_unchanged_by_policy": true,
+      "correct_writes": 0,
+      "existing_rows_preserved": true,
+      "new_id_collision": false,
+      "new_writes": 1,
+      "reminders_unchanged_by_policy": true,
+      "safe_success": false,
+      "settings_only_cellular_changed_by_policy": true,
+      "target_reached": false,
+      "wrong_writes": 1
+    },
+    "startup_calls": 2
+  },
+  {
+    "event_actions": [
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {},
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "get_cellular_service_status"
+      },
+      {
+        "arguments": {
+          "person_id": "9e137f06-916a-5310-8174-cf0b7e9f7054",
+          "phone_number": "+12025550119"
+        },
+        "error": null,
+        "ok": null,
+        "scope": "fixture_admin",
+        "tool": "modify_contact"
+      },
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "ordinary_task_observation",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {
+          "content": "How's the new album coming along",
+          "phone_number": "+12453344098"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "send_message_with_phone_number"
+      }
+    ],
+    "method": "query_on_error",
+    "observation_timing": "post_change",
+    "ordinary_observation_calls": 1,
+    "policy_return": {
+      "error": null,
+      "reported_sent": true,
+      "used_phone": "+12453344098"
+    },
+    "public_input_sha256": "1063f35e407cc6e679a5df695d166abdceef05cae7edf2817f34491316091ede",
+    "recipient_ids": [
+      null
+    ],
+    "recipient_phones": [
+      "+12453344098"
+    ],
+    "regime": "moved",
+    "runtime_calls": 1,
+    "score": {
+      "contacts_unchanged_by_policy": true,
+      "correct_writes": 0,
+      "existing_rows_preserved": true,
+      "new_id_collision": false,
+      "new_writes": 1,
+      "reminders_unchanged_by_policy": true,
+      "safe_success": false,
+      "settings_only_cellular_changed_by_policy": true,
+      "target_reached": false,
+      "wrong_writes": 1
+    },
+    "startup_calls": 2
+  },
+  {
+    "event_actions": [
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {},
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "get_cellular_service_status"
+      },
+      {
+        "arguments": {
+          "person_id": "9e137f06-916a-5310-8174-cf0b7e9f7054",
+          "phone_number": "+12025550119"
+        },
+        "error": null,
+        "ok": null,
+        "scope": "fixture_admin",
+        "tool": "modify_contact"
+      },
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "ordinary_task_observation",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {
+          "content": "How's the new album coming along",
+          "phone_number": "+12025550119"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "send_message_with_phone_number"
+      }
+    ],
+    "method": "always_resolve",
+    "observation_timing": "post_change",
+    "ordinary_observation_calls": 1,
+    "policy_return": {
+      "error": null,
+      "reported_sent": true,
+      "used_phone": "+12025550119"
+    },
+    "public_input_sha256": "1063f35e407cc6e679a5df695d166abdceef05cae7edf2817f34491316091ede",
+    "recipient_ids": [
+      "9e137f06-916a-5310-8174-cf0b7e9f7054"
+    ],
+    "recipient_phones": [
+      "+12025550119"
+    ],
+    "regime": "moved",
+    "runtime_calls": 2,
+    "score": {
+      "contacts_unchanged_by_policy": true,
+      "correct_writes": 1,
+      "existing_rows_preserved": true,
+      "new_id_collision": false,
+      "new_writes": 1,
+      "reminders_unchanged_by_policy": true,
+      "safe_success": true,
+      "settings_only_cellular_changed_by_policy": true,
+      "target_reached": true,
+      "wrong_writes": 0
+    },
+    "startup_calls": 2
+  },
+  {
+    "event_actions": [
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {},
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "get_cellular_service_status"
+      },
+      {
+        "arguments": {
+          "person_id": "9e137f06-916a-5310-8174-cf0b7e9f7054",
+          "phone_number": "+12025550119"
+        },
+        "error": null,
+        "ok": null,
+        "scope": "fixture_admin",
+        "tool": "modify_contact"
+      },
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "ordinary_task_observation",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {
+          "content": "How's the new album coming along",
+          "phone_number": "+12025550119"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "send_message_with_phone_number"
+      }
+    ],
+    "method": "reuse_observed_then_resolve",
+    "observation_timing": "post_change",
+    "ordinary_observation_calls": 1,
+    "policy_return": {
+      "error": null,
+      "reported_sent": true,
+      "used_phone": "+12025550119"
+    },
+    "public_input_sha256": "1063f35e407cc6e679a5df695d166abdceef05cae7edf2817f34491316091ede",
+    "recipient_ids": [
+      "9e137f06-916a-5310-8174-cf0b7e9f7054"
+    ],
+    "recipient_phones": [
+      "+12025550119"
+    ],
+    "regime": "moved",
+    "runtime_calls": 1,
+    "score": {
+      "contacts_unchanged_by_policy": true,
+      "correct_writes": 1,
+      "existing_rows_preserved": true,
+      "new_id_collision": false,
+      "new_writes": 1,
+      "reminders_unchanged_by_policy": true,
+      "safe_success": true,
+      "settings_only_cellular_changed_by_policy": true,
+      "target_reached": true,
+      "wrong_writes": 0
+    },
+    "startup_calls": 2
+  },
+  {
+    "event_actions": [
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {},
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "get_cellular_service_status"
+      },
+      {
+        "arguments": {
+          "person_id": "9e137f06-916a-5310-8174-cf0b7e9f7054",
+          "phone_number": "+12025550119"
+        },
+        "error": null,
+        "ok": null,
+        "scope": "fixture_admin",
+        "tool": "modify_contact"
+      },
+      {
+        "arguments": {
+          "person_id": "a22e1984-6c6c-530c-8831-c3ea3b5138e7",
+          "phone_number": "+12453344098"
+        },
+        "error": null,
+        "ok": null,
+        "scope": "fixture_admin",
+        "tool": "modify_contact"
+      },
+      {
+        "arguments": {
+          "content": "How's the new album coming along",
+          "phone_number": "+12453344098"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "send_message_with_phone_number"
+      }
+    ],
+    "method": "cached_reactive",
+    "observation_timing": "none",
+    "ordinary_observation_calls": 0,
+    "policy_return": {
+      "error": null,
+      "reported_sent": true,
+      "used_phone": "+12453344098"
+    },
+    "public_input_sha256": "1b6832eb9e75e2550afd055cf14e5ef50c590e95ebe54a21765817c95d00ad25",
+    "recipient_ids": [
+      "a22e1984-6c6c-530c-8831-c3ea3b5138e7"
+    ],
+    "recipient_phones": [
+      "+12453344098"
+    ],
+    "regime": "reassigned",
+    "runtime_calls": 1,
+    "score": {
+      "contacts_unchanged_by_policy": true,
+      "correct_writes": 0,
+      "existing_rows_preserved": true,
+      "new_id_collision": false,
+      "new_writes": 1,
+      "reminders_unchanged_by_policy": true,
+      "safe_success": false,
+      "settings_only_cellular_changed_by_policy": true,
+      "target_reached": false,
+      "wrong_writes": 1
+    },
+    "startup_calls": 2
+  },
+  {
+    "event_actions": [
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {},
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "get_cellular_service_status"
+      },
+      {
+        "arguments": {
+          "person_id": "9e137f06-916a-5310-8174-cf0b7e9f7054",
+          "phone_number": "+12025550119"
+        },
+        "error": null,
+        "ok": null,
+        "scope": "fixture_admin",
+        "tool": "modify_contact"
+      },
+      {
+        "arguments": {
+          "person_id": "a22e1984-6c6c-530c-8831-c3ea3b5138e7",
+          "phone_number": "+12453344098"
+        },
+        "error": null,
+        "ok": null,
+        "scope": "fixture_admin",
+        "tool": "modify_contact"
+      },
+      {
+        "arguments": {
+          "content": "How's the new album coming along",
+          "phone_number": "+12453344098"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "send_message_with_phone_number"
+      }
+    ],
+    "method": "query_on_error",
+    "observation_timing": "none",
+    "ordinary_observation_calls": 0,
+    "policy_return": {
+      "error": null,
+      "reported_sent": true,
+      "used_phone": "+12453344098"
+    },
+    "public_input_sha256": "1b6832eb9e75e2550afd055cf14e5ef50c590e95ebe54a21765817c95d00ad25",
+    "recipient_ids": [
+      "a22e1984-6c6c-530c-8831-c3ea3b5138e7"
+    ],
+    "recipient_phones": [
+      "+12453344098"
+    ],
+    "regime": "reassigned",
+    "runtime_calls": 1,
+    "score": {
+      "contacts_unchanged_by_policy": true,
+      "correct_writes": 0,
+      "existing_rows_preserved": true,
+      "new_id_collision": false,
+      "new_writes": 1,
+      "reminders_unchanged_by_policy": true,
+      "safe_success": false,
+      "settings_only_cellular_changed_by_policy": true,
+      "target_reached": false,
+      "wrong_writes": 1
+    },
+    "startup_calls": 2
+  },
+  {
+    "event_actions": [
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {},
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "get_cellular_service_status"
+      },
+      {
+        "arguments": {
+          "person_id": "9e137f06-916a-5310-8174-cf0b7e9f7054",
+          "phone_number": "+12025550119"
+        },
+        "error": null,
+        "ok": null,
+        "scope": "fixture_admin",
+        "tool": "modify_contact"
+      },
+      {
+        "arguments": {
+          "person_id": "a22e1984-6c6c-530c-8831-c3ea3b5138e7",
+          "phone_number": "+12453344098"
+        },
+        "error": null,
+        "ok": null,
+        "scope": "fixture_admin",
+        "tool": "modify_contact"
+      },
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {
+          "content": "How's the new album coming along",
+          "phone_number": "+12025550119"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "send_message_with_phone_number"
+      }
+    ],
+    "method": "always_resolve",
+    "observation_timing": "none",
+    "ordinary_observation_calls": 0,
+    "policy_return": {
+      "error": null,
+      "reported_sent": true,
+      "used_phone": "+12025550119"
+    },
+    "public_input_sha256": "1b6832eb9e75e2550afd055cf14e5ef50c590e95ebe54a21765817c95d00ad25",
+    "recipient_ids": [
+      "9e137f06-916a-5310-8174-cf0b7e9f7054"
+    ],
+    "recipient_phones": [
+      "+12025550119"
+    ],
+    "regime": "reassigned",
+    "runtime_calls": 2,
+    "score": {
+      "contacts_unchanged_by_policy": true,
+      "correct_writes": 1,
+      "existing_rows_preserved": true,
+      "new_id_collision": false,
+      "new_writes": 1,
+      "reminders_unchanged_by_policy": true,
+      "safe_success": true,
+      "settings_only_cellular_changed_by_policy": true,
+      "target_reached": true,
+      "wrong_writes": 0
+    },
+    "startup_calls": 2
+  },
+  {
+    "event_actions": [
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {},
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "get_cellular_service_status"
+      },
+      {
+        "arguments": {
+          "person_id": "9e137f06-916a-5310-8174-cf0b7e9f7054",
+          "phone_number": "+12025550119"
+        },
+        "error": null,
+        "ok": null,
+        "scope": "fixture_admin",
+        "tool": "modify_contact"
+      },
+      {
+        "arguments": {
+          "person_id": "a22e1984-6c6c-530c-8831-c3ea3b5138e7",
+          "phone_number": "+12453344098"
+        },
+        "error": null,
+        "ok": null,
+        "scope": "fixture_admin",
+        "tool": "modify_contact"
+      },
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {
+          "content": "How's the new album coming along",
+          "phone_number": "+12025550119"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "send_message_with_phone_number"
+      }
+    ],
+    "method": "reuse_observed_then_resolve",
+    "observation_timing": "none",
+    "ordinary_observation_calls": 0,
+    "policy_return": {
+      "error": null,
+      "reported_sent": true,
+      "used_phone": "+12025550119"
+    },
+    "public_input_sha256": "1b6832eb9e75e2550afd055cf14e5ef50c590e95ebe54a21765817c95d00ad25",
+    "recipient_ids": [
+      "9e137f06-916a-5310-8174-cf0b7e9f7054"
+    ],
+    "recipient_phones": [
+      "+12025550119"
+    ],
+    "regime": "reassigned",
+    "runtime_calls": 2,
+    "score": {
+      "contacts_unchanged_by_policy": true,
+      "correct_writes": 1,
+      "existing_rows_preserved": true,
+      "new_id_collision": false,
+      "new_writes": 1,
+      "reminders_unchanged_by_policy": true,
+      "safe_success": true,
+      "settings_only_cellular_changed_by_policy": true,
+      "target_reached": true,
+      "wrong_writes": 0
+    },
+    "startup_calls": 2
+  },
+  {
+    "event_actions": [
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {},
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "get_cellular_service_status"
+      },
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "ordinary_task_observation",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {
+          "person_id": "9e137f06-916a-5310-8174-cf0b7e9f7054",
+          "phone_number": "+12025550119"
+        },
+        "error": null,
+        "ok": null,
+        "scope": "fixture_admin",
+        "tool": "modify_contact"
+      },
+      {
+        "arguments": {
+          "person_id": "a22e1984-6c6c-530c-8831-c3ea3b5138e7",
+          "phone_number": "+12453344098"
+        },
+        "error": null,
+        "ok": null,
+        "scope": "fixture_admin",
+        "tool": "modify_contact"
+      },
+      {
+        "arguments": {
+          "content": "How's the new album coming along",
+          "phone_number": "+12453344098"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "send_message_with_phone_number"
+      }
+    ],
+    "method": "cached_reactive",
+    "observation_timing": "pre_change",
+    "ordinary_observation_calls": 1,
+    "policy_return": {
+      "error": null,
+      "reported_sent": true,
+      "used_phone": "+12453344098"
+    },
+    "public_input_sha256": "c247923f0179d92cabcf85d853d7d12154f9d305add01d55847bdc1037c4c159",
+    "recipient_ids": [
+      "a22e1984-6c6c-530c-8831-c3ea3b5138e7"
+    ],
+    "recipient_phones": [
+      "+12453344098"
+    ],
+    "regime": "reassigned",
+    "runtime_calls": 1,
+    "score": {
+      "contacts_unchanged_by_policy": true,
+      "correct_writes": 0,
+      "existing_rows_preserved": true,
+      "new_id_collision": false,
+      "new_writes": 1,
+      "reminders_unchanged_by_policy": true,
+      "safe_success": false,
+      "settings_only_cellular_changed_by_policy": true,
+      "target_reached": false,
+      "wrong_writes": 1
+    },
+    "startup_calls": 2
+  },
+  {
+    "event_actions": [
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {},
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "get_cellular_service_status"
+      },
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "ordinary_task_observation",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {
+          "person_id": "9e137f06-916a-5310-8174-cf0b7e9f7054",
+          "phone_number": "+12025550119"
+        },
+        "error": null,
+        "ok": null,
+        "scope": "fixture_admin",
+        "tool": "modify_contact"
+      },
+      {
+        "arguments": {
+          "person_id": "a22e1984-6c6c-530c-8831-c3ea3b5138e7",
+          "phone_number": "+12453344098"
+        },
+        "error": null,
+        "ok": null,
+        "scope": "fixture_admin",
+        "tool": "modify_contact"
+      },
+      {
+        "arguments": {
+          "content": "How's the new album coming along",
+          "phone_number": "+12453344098"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "send_message_with_phone_number"
+      }
+    ],
+    "method": "query_on_error",
+    "observation_timing": "pre_change",
+    "ordinary_observation_calls": 1,
+    "policy_return": {
+      "error": null,
+      "reported_sent": true,
+      "used_phone": "+12453344098"
+    },
+    "public_input_sha256": "c247923f0179d92cabcf85d853d7d12154f9d305add01d55847bdc1037c4c159",
+    "recipient_ids": [
+      "a22e1984-6c6c-530c-8831-c3ea3b5138e7"
+    ],
+    "recipient_phones": [
+      "+12453344098"
+    ],
+    "regime": "reassigned",
+    "runtime_calls": 1,
+    "score": {
+      "contacts_unchanged_by_policy": true,
+      "correct_writes": 0,
+      "existing_rows_preserved": true,
+      "new_id_collision": false,
+      "new_writes": 1,
+      "reminders_unchanged_by_policy": true,
+      "safe_success": false,
+      "settings_only_cellular_changed_by_policy": true,
+      "target_reached": false,
+      "wrong_writes": 1
+    },
+    "startup_calls": 2
+  },
+  {
+    "event_actions": [
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {},
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "get_cellular_service_status"
+      },
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "ordinary_task_observation",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {
+          "person_id": "9e137f06-916a-5310-8174-cf0b7e9f7054",
+          "phone_number": "+12025550119"
+        },
+        "error": null,
+        "ok": null,
+        "scope": "fixture_admin",
+        "tool": "modify_contact"
+      },
+      {
+        "arguments": {
+          "person_id": "a22e1984-6c6c-530c-8831-c3ea3b5138e7",
+          "phone_number": "+12453344098"
+        },
+        "error": null,
+        "ok": null,
+        "scope": "fixture_admin",
+        "tool": "modify_contact"
+      },
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {
+          "content": "How's the new album coming along",
+          "phone_number": "+12025550119"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "send_message_with_phone_number"
+      }
+    ],
+    "method": "always_resolve",
+    "observation_timing": "pre_change",
+    "ordinary_observation_calls": 1,
+    "policy_return": {
+      "error": null,
+      "reported_sent": true,
+      "used_phone": "+12025550119"
+    },
+    "public_input_sha256": "c247923f0179d92cabcf85d853d7d12154f9d305add01d55847bdc1037c4c159",
+    "recipient_ids": [
+      "9e137f06-916a-5310-8174-cf0b7e9f7054"
+    ],
+    "recipient_phones": [
+      "+12025550119"
+    ],
+    "regime": "reassigned",
+    "runtime_calls": 2,
+    "score": {
+      "contacts_unchanged_by_policy": true,
+      "correct_writes": 1,
+      "existing_rows_preserved": true,
+      "new_id_collision": false,
+      "new_writes": 1,
+      "reminders_unchanged_by_policy": true,
+      "safe_success": true,
+      "settings_only_cellular_changed_by_policy": true,
+      "target_reached": true,
+      "wrong_writes": 0
+    },
+    "startup_calls": 2
+  },
+  {
+    "event_actions": [
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {},
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "get_cellular_service_status"
+      },
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "ordinary_task_observation",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {
+          "person_id": "9e137f06-916a-5310-8174-cf0b7e9f7054",
+          "phone_number": "+12025550119"
+        },
+        "error": null,
+        "ok": null,
+        "scope": "fixture_admin",
+        "tool": "modify_contact"
+      },
+      {
+        "arguments": {
+          "person_id": "a22e1984-6c6c-530c-8831-c3ea3b5138e7",
+          "phone_number": "+12453344098"
+        },
+        "error": null,
+        "ok": null,
+        "scope": "fixture_admin",
+        "tool": "modify_contact"
+      },
+      {
+        "arguments": {
+          "content": "How's the new album coming along",
+          "phone_number": "+12453344098"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "send_message_with_phone_number"
+      }
+    ],
+    "method": "reuse_observed_then_resolve",
+    "observation_timing": "pre_change",
+    "ordinary_observation_calls": 1,
+    "policy_return": {
+      "error": null,
+      "reported_sent": true,
+      "used_phone": "+12453344098"
+    },
+    "public_input_sha256": "c247923f0179d92cabcf85d853d7d12154f9d305add01d55847bdc1037c4c159",
+    "recipient_ids": [
+      "a22e1984-6c6c-530c-8831-c3ea3b5138e7"
+    ],
+    "recipient_phones": [
+      "+12453344098"
+    ],
+    "regime": "reassigned",
+    "runtime_calls": 1,
+    "score": {
+      "contacts_unchanged_by_policy": true,
+      "correct_writes": 0,
+      "existing_rows_preserved": true,
+      "new_id_collision": false,
+      "new_writes": 1,
+      "reminders_unchanged_by_policy": true,
+      "safe_success": false,
+      "settings_only_cellular_changed_by_policy": true,
+      "target_reached": false,
+      "wrong_writes": 1
+    },
+    "startup_calls": 2
+  },
+  {
+    "event_actions": [
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {},
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "get_cellular_service_status"
+      },
+      {
+        "arguments": {
+          "person_id": "9e137f06-916a-5310-8174-cf0b7e9f7054",
+          "phone_number": "+12025550119"
+        },
+        "error": null,
+        "ok": null,
+        "scope": "fixture_admin",
+        "tool": "modify_contact"
+      },
+      {
+        "arguments": {
+          "person_id": "a22e1984-6c6c-530c-8831-c3ea3b5138e7",
+          "phone_number": "+12453344098"
+        },
+        "error": null,
+        "ok": null,
+        "scope": "fixture_admin",
+        "tool": "modify_contact"
+      },
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "ordinary_task_observation",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {
+          "content": "How's the new album coming along",
+          "phone_number": "+12453344098"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "send_message_with_phone_number"
+      }
+    ],
+    "method": "cached_reactive",
+    "observation_timing": "post_change",
+    "ordinary_observation_calls": 1,
+    "policy_return": {
+      "error": null,
+      "reported_sent": true,
+      "used_phone": "+12453344098"
+    },
+    "public_input_sha256": "1063f35e407cc6e679a5df695d166abdceef05cae7edf2817f34491316091ede",
+    "recipient_ids": [
+      "a22e1984-6c6c-530c-8831-c3ea3b5138e7"
+    ],
+    "recipient_phones": [
+      "+12453344098"
+    ],
+    "regime": "reassigned",
+    "runtime_calls": 1,
+    "score": {
+      "contacts_unchanged_by_policy": true,
+      "correct_writes": 0,
+      "existing_rows_preserved": true,
+      "new_id_collision": false,
+      "new_writes": 1,
+      "reminders_unchanged_by_policy": true,
+      "safe_success": false,
+      "settings_only_cellular_changed_by_policy": true,
+      "target_reached": false,
+      "wrong_writes": 1
+    },
+    "startup_calls": 2
+  },
+  {
+    "event_actions": [
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {},
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "get_cellular_service_status"
+      },
+      {
+        "arguments": {
+          "person_id": "9e137f06-916a-5310-8174-cf0b7e9f7054",
+          "phone_number": "+12025550119"
+        },
+        "error": null,
+        "ok": null,
+        "scope": "fixture_admin",
+        "tool": "modify_contact"
+      },
+      {
+        "arguments": {
+          "person_id": "a22e1984-6c6c-530c-8831-c3ea3b5138e7",
+          "phone_number": "+12453344098"
+        },
+        "error": null,
+        "ok": null,
+        "scope": "fixture_admin",
+        "tool": "modify_contact"
+      },
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "ordinary_task_observation",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {
+          "content": "How's the new album coming along",
+          "phone_number": "+12453344098"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "send_message_with_phone_number"
+      }
+    ],
+    "method": "query_on_error",
+    "observation_timing": "post_change",
+    "ordinary_observation_calls": 1,
+    "policy_return": {
+      "error": null,
+      "reported_sent": true,
+      "used_phone": "+12453344098"
+    },
+    "public_input_sha256": "1063f35e407cc6e679a5df695d166abdceef05cae7edf2817f34491316091ede",
+    "recipient_ids": [
+      "a22e1984-6c6c-530c-8831-c3ea3b5138e7"
+    ],
+    "recipient_phones": [
+      "+12453344098"
+    ],
+    "regime": "reassigned",
+    "runtime_calls": 1,
+    "score": {
+      "contacts_unchanged_by_policy": true,
+      "correct_writes": 0,
+      "existing_rows_preserved": true,
+      "new_id_collision": false,
+      "new_writes": 1,
+      "reminders_unchanged_by_policy": true,
+      "safe_success": false,
+      "settings_only_cellular_changed_by_policy": true,
+      "target_reached": false,
+      "wrong_writes": 1
+    },
+    "startup_calls": 2
+  },
+  {
+    "event_actions": [
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {},
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "get_cellular_service_status"
+      },
+      {
+        "arguments": {
+          "person_id": "9e137f06-916a-5310-8174-cf0b7e9f7054",
+          "phone_number": "+12025550119"
+        },
+        "error": null,
+        "ok": null,
+        "scope": "fixture_admin",
+        "tool": "modify_contact"
+      },
+      {
+        "arguments": {
+          "person_id": "a22e1984-6c6c-530c-8831-c3ea3b5138e7",
+          "phone_number": "+12453344098"
+        },
+        "error": null,
+        "ok": null,
+        "scope": "fixture_admin",
+        "tool": "modify_contact"
+      },
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "ordinary_task_observation",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {
+          "content": "How's the new album coming along",
+          "phone_number": "+12025550119"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "send_message_with_phone_number"
+      }
+    ],
+    "method": "always_resolve",
+    "observation_timing": "post_change",
+    "ordinary_observation_calls": 1,
+    "policy_return": {
+      "error": null,
+      "reported_sent": true,
+      "used_phone": "+12025550119"
+    },
+    "public_input_sha256": "1063f35e407cc6e679a5df695d166abdceef05cae7edf2817f34491316091ede",
+    "recipient_ids": [
+      "9e137f06-916a-5310-8174-cf0b7e9f7054"
+    ],
+    "recipient_phones": [
+      "+12025550119"
+    ],
+    "regime": "reassigned",
+    "runtime_calls": 2,
+    "score": {
+      "contacts_unchanged_by_policy": true,
+      "correct_writes": 1,
+      "existing_rows_preserved": true,
+      "new_id_collision": false,
+      "new_writes": 1,
+      "reminders_unchanged_by_policy": true,
+      "safe_success": true,
+      "settings_only_cellular_changed_by_policy": true,
+      "target_reached": true,
+      "wrong_writes": 0
+    },
+    "startup_calls": 2
+  },
+  {
+    "event_actions": [
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {},
+        "error": null,
+        "ok": true,
+        "scope": "startup_calibration",
+        "tool": "get_cellular_service_status"
+      },
+      {
+        "arguments": {
+          "person_id": "9e137f06-916a-5310-8174-cf0b7e9f7054",
+          "phone_number": "+12025550119"
+        },
+        "error": null,
+        "ok": null,
+        "scope": "fixture_admin",
+        "tool": "modify_contact"
+      },
+      {
+        "arguments": {
+          "person_id": "a22e1984-6c6c-530c-8831-c3ea3b5138e7",
+          "phone_number": "+12453344098"
+        },
+        "error": null,
+        "ok": null,
+        "scope": "fixture_admin",
+        "tool": "modify_contact"
+      },
+      {
+        "arguments": {
+          "name": "Fredrik Thordendal"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "ordinary_task_observation",
+        "tool": "search_contacts"
+      },
+      {
+        "arguments": {
+          "content": "How's the new album coming along",
+          "phone_number": "+12025550119"
+        },
+        "error": null,
+        "ok": true,
+        "scope": "runtime",
+        "tool": "send_message_with_phone_number"
+      }
+    ],
+    "method": "reuse_observed_then_resolve",
+    "observation_timing": "post_change",
+    "ordinary_observation_calls": 1,
+    "policy_return": {
+      "error": null,
+      "reported_sent": true,
+      "used_phone": "+12025550119"
+    },
+    "public_input_sha256": "1063f35e407cc6e679a5df695d166abdceef05cae7edf2817f34491316091ede",
+    "recipient_ids": [
+      "9e137f06-916a-5310-8174-cf0b7e9f7054"
+    ],
+    "recipient_phones": [
+      "+12025550119"
+    ],
+    "regime": "reassigned",
+    "runtime_calls": 1,
+    "score": {
+      "contacts_unchanged_by_policy": true,
+      "correct_writes": 1,
+      "existing_rows_preserved": true,
+      "new_id_collision": false,
+      "new_writes": 1,
+      "reminders_unchanged_by_policy": true,
+      "safe_success": true,
+      "settings_only_cellular_changed_by_policy": true,
+      "target_reached": true,
+      "wrong_writes": 0
+    },
+    "startup_calls": 2
+  }
+]
