@@ -1,0 +1,12 @@
+test_amortized_cost_has_explicit_units_and_startup (tests.test_study.StudyTests.test_amortized_cost_has_explicit_units_and_startup) ... ok
+test_calibration_cost_accounting (tests.test_study.StudyTests.test_calibration_cost_accounting) ... ok
+test_exact_integer_cost_units (tests.test_study.StudyTests.test_exact_integer_cost_units) ... ok
+test_modified_budget_rejected (tests.test_study.StudyTests.test_modified_budget_rejected) ... ok
+test_modified_raw_answer_rejected (tests.test_study.StudyTests.test_modified_raw_answer_rejected) ... ok
+test_original_protocol_marked_development (tests.test_study.StudyTests.test_original_protocol_marked_development) ... ok
+test_reference_and_runtime_labels_do_not_share_cases (tests.test_study.StudyTests.test_reference_and_runtime_labels_do_not_share_cases) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.067s
+
+OK

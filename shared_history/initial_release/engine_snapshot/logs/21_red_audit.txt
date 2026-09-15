@@ -1,0 +1,76 @@
+FFF                                                                      [100%]
+=================================== FAILURES ===================================
+_________ test_reproduction_compares_results_but_not_variable_timings __________
+
+    def test_reproduction_compares_results_but_not_variable_timings():
+>       m=load('verify_reproduction')
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_audit.py:12: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'verify_reproduction'
+
+    def load(name):
+        path=Path(__file__).parents[1]/'scripts'/f'{name}.py'
+>       assert path.exists(), f'{name} implementation required'
+E       AssertionError: verify_reproduction implementation required
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('/mnt/data/icassp_research_20260912/scripts/verify_reproduction.py').exists
+
+tests/test_audit.py:8: AssertionError
+_____________ test_reproduction_fails_on_changed_scientific_result _____________
+
+    def test_reproduction_fails_on_changed_scientific_result():
+>       m=load('verify_reproduction')
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_audit.py:18: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'verify_reproduction'
+
+    def load(name):
+        path=Path(__file__).parents[1]/'scripts'/f'{name}.py'
+>       assert path.exists(), f'{name} implementation required'
+E       AssertionError: verify_reproduction implementation required
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('/mnt/data/icassp_research_20260912/scripts/verify_reproduction.py').exists
+
+tests/test_audit.py:8: AssertionError
+_____________ test_final_pdf_audit_detects_placeholder_authorship ______________
+
+    def test_final_pdf_audit_detects_placeholder_authorship():
+>       m=load('audit')
+          ^^^^^^^^^^^^^
+
+tests/test_audit.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'audit'
+
+    def load(name):
+        path=Path(__file__).parents[1]/'scripts'/f'{name}.py'
+>       assert path.exists(), f'{name} implementation required'
+E       AssertionError: audit implementation required
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('/mnt/data/icassp_research_20260912/scripts/audit.py').exists
+
+tests/test_audit.py:8: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_audit.py::test_reproduction_compares_results_but_not_variable_timings - AssertionError: verify_reproduction implementation required
+assert False
+ +  where False = exists()
+ +    where exists = PosixPath('/mnt/data/icassp_research_20260912/scripts/verify_reproduction.py').exists
+FAILED tests/test_audit.py::test_reproduction_fails_on_changed_scientific_result - AssertionError: verify_reproduction implementation required
+assert False
+ +  where False = exists()
+ +    where exists = PosixPath('/mnt/data/icassp_research_20260912/scripts/verify_reproduction.py').exists
+FAILED tests/test_audit.py::test_final_pdf_audit_detects_placeholder_authorship - AssertionError: audit implementation required
+assert False
+ +  where False = exists()
+ +    where exists = PosixPath('/mnt/data/icassp_research_20260912/scripts/audit.py').exists
+3 failed in 0.05s

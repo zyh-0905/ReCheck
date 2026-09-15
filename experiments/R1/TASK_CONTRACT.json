@@ -1,0 +1,18 @@
+{
+  "task_id": "R1_EVIDENCE_COMPLETION",
+  "version": "handoff-1.0",
+  "default_run": "runs/recheck_deepseek_v41_flash",
+  "expected_study": "recheck",
+  "expected_output_cap": 4096,
+  "expected_fingerprint": "355529e7f26e5ac8c997dae4c4240064e477bd03ab39bf99967f3ae7eb32365e",
+  "prior_manifest_sha256": "014d2109e7b5790836e6d52e2ac9b09678c38cf838a148e3223128fbe45d56cc",
+  "purpose": "Collect original interrupted records; do not run new model experiments.",
+  "network_allowed": false,
+  "llm_call_budget": 0,
+  "modify_original_runs": false,
+  "replace_completed_responses": false,
+  "billing_evidence_optional": true,
+  "missing_data_is_reportable": true,
+  "review_required_before_new_experiment": true,
+  "request_endpoint_for_hash_check": "https://api.deepseek.com/v1"
+}

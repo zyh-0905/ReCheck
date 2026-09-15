@@ -1,0 +1,10 @@
+﻿attempt,logical_id,started_utc,status,finish_reason,ended_utc,prompt_tokens,cached_input_tokens,completion_tokens,reasoning_tokens,visible_chars,estimated_cost_config_usd,conditional_previous_tariff_cny,response_id
+1,rc/0/shared_initial,2026-09-12T08:12:39.111259+00:00,response_recorded,stop,2026-09-12T08:12:40.823878+00:00,209,0,279,264,48,0.0003975,0.001325,ce40bb4a-977b-4691-924a-683a51bae19c
+2,rc/0/0/recheck/plan,2026-09-12T08:12:40.827135+00:00,response_recorded,stop,2026-09-12T08:12:43.333943+00:00,268,0,300,287,38,0.0004404,0.001468,0e06fa15-8281-42df-ba27-f867bac03458
+3,rc/0/0/recheck/answer,2026-09-12T08:12:43.336939+00:00,response_recorded,stop,2026-09-12T08:12:54.942845+00:00,247,0,2647,2632,30,0.0032505,0.010835,9aa29916-efe1-4a75-bf4c-1bceaf46aee4
+4,rc/0/0/myopic/plan,2026-09-12T08:12:54.947820+00:00,response_recorded,stop,2026-09-12T08:12:57.724609+00:00,268,128,363,350,38,0.000478368,0.00159456,38f374b6-677e-4344-ad26-39364be7b2fb
+5,rc/0/0/myopic/answer,2026-09-12T08:12:57.727860+00:00,response_recorded,length,2026-09-12T08:13:16.229222+00:00,247,0,4096,4096,0,0.0049893,0.016631,16ad62ad-0eaa-47ca-b6f8-84ac58ddd85c
+6,rc/0/0/ttl/plan,2026-09-12T08:13:16.239958+00:00,response_recorded,stop,2026-09-12T08:13:18.500686+00:00,268,128,283,270,38,0.000382368,0.00127456,79fbd0d9-f4c5-48ef-beac-9bdfa2f6c46c
+7,rc/0/0/ttl/answer,2026-09-12T08:13:18.504136+00:00,response_recorded,stop,2026-09-12T08:13:22.044272+00:00,247,0,633,621,27,0.0008337,0.002779,caf6ce8e-bf9a-44e2-92fc-a6e8177a3766
+8,rc/0/0/always/plan,2026-09-12T08:13:22.050194+00:00,response_recorded,stop,2026-09-12T08:13:24.216402+00:00,268,0,154,141,38,0.0002652,0.000884,a66acdf7-7585-41c2-9ff4-dc3c565a9daa
+9,rc/0/0/always/answer,2026-09-12T08:13:24.220862+00:00,no_result_record,,,,,,,,,,

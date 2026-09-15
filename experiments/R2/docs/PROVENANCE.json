@@ -1,0 +1,9 @@
+{
+  "input_archive_sha256": {
+    "LLM_Pilot_Kit_v0.1.zip": "26d461b7ede40e2fa7607a2a90ea79b463c459e841f2946b12167f317657b962",
+    "8a80ceb7-3588-4ffe-a4b2-4d6c9943b2d5.zip": "f95f661a233adf18f592484ad11a552dc22216563bcc77eaf6016b2e5d0fb386",
+    "09af9535-f0df-4db5-a4a9-60a6b8f1b839.zip": "b87fe0ce07b48f4d78542c51f708fd53566f3a5dc03652b8716dc9ee64e72381"
+  },
+  "legacy_sources": "pilot/ and vendor/ initially copied verbatim from LLM_Pilot_Kit_v0.1.zip",
+  "new_api_calls_in_development": 0
+}

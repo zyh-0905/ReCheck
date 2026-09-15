@@ -1,0 +1,139 @@
+{
+  "protocol_id": "R2_RECHECK_MECHANISM_01",
+  "version": "2.0.0",
+  "phase": "development_mechanism_not_confirmatory",
+  "methods": [
+    "recheck",
+    "myopic",
+    "ttl",
+    "always",
+    "never"
+  ],
+  "steps": 12,
+  "streams": [
+    {
+      "stream": 0,
+      "task_seed": 920101,
+      "world_seed": 930101,
+      "data_seed": 940101,
+      "regime": "no_drift",
+      "actual_hazard": 0.0,
+      "probe_price": [
+        0.18,
+        0.18
+      ]
+    },
+    {
+      "stream": 1,
+      "task_seed": 920102,
+      "world_seed": 930102,
+      "data_seed": 940102,
+      "regime": "hidden_drift",
+      "actual_hazard": 0.12,
+      "probe_price": [
+        0.18,
+        0.18
+      ]
+    },
+    {
+      "stream": 2,
+      "task_seed": 920103,
+      "world_seed": 930103,
+      "data_seed": 940103,
+      "regime": "no_drift",
+      "actual_hazard": 0.0,
+      "probe_price": [
+        0.22,
+        0.22
+      ]
+    },
+    {
+      "stream": 3,
+      "task_seed": 920104,
+      "world_seed": 930104,
+      "data_seed": 940104,
+      "regime": "hidden_drift",
+      "actual_hazard": 0.12,
+      "probe_price": [
+        0.22,
+        0.22
+      ]
+    }
+  ],
+  "assumed_hazards": [
+    0.12,
+    0.12
+  ],
+  "weights": [
+    [
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0
+    ],
+    [
+      1.0,
+      1.0
+    ],
+    [
+      0.0,
+      0.0
+    ]
+  ],
+  "transition": [
+    [
+      0.7,
+      0.1,
+      0.1,
+      0.1
+    ],
+    [
+      0.1,
+      0.7,
+      0.1,
+      0.1
+    ],
+    [
+      0.1,
+      0.1,
+      0.7,
+      0.1
+    ],
+    [
+      0.1,
+      0.1,
+      0.1,
+      0.7
+    ]
+  ],
+  "ttl_age": 3,
+  "order_seed": 950101,
+  "logical_calls": 484,
+  "total_with_smoke": 485,
+  "prompt_version": "rc-public-worker-0.1",
+  "output_cap": 16384,
+  "failure_policy": {
+    "http_error": "pause_no_automatic_retry",
+    "truncation": "preserve_response_then_pause",
+    "invalid_json": "preserve_response_then_pause",
+    "interface_violation": "record_failure_no_resample",
+    "identity_change": "pause_no_resample"
+  },
+  "preflight": {
+    "same_age_equivalence_price": 0.18,
+    "same_age_separation_price": 0.22,
+    "minimum_trajectory_probe_disagreements": 1
+  },
+  "selection_disclosure": "Prices 0.18 and 0.22 chosen using prior R1 policy analysis, before R2 model outputs. All listed streams retained even without drift or method improvement. Not an unbiased sweep over hyperparameters.",
+  "limitations": [
+    "Four independent synthetic streams; no confirmatory p-values.",
+    "Known hazard model and exact probes; no learned drift, shared hard probe budget or natural failures.",
+    "Price is a dimensionless controller trade-off, not currency.",
+    "TTL=3 is fixed, not tuned strongest baseline.",
+    "SQLite bounded worker, not native public-benchmark or free-running agent.",
+    "No request-body result cache across methods; shared initial prefix only.",
+    "No dependence extraction performance claim."
+  ]
+}

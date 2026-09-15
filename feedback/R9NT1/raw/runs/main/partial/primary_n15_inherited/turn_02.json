@@ -1,0 +1,47 @@
+{
+  "assistant_message": {
+    "content": "Let me verify the change took effect.",
+    "reasoning_content": "Let me verify wifi is now on.",
+    "role": "assistant",
+    "tool_calls": [
+      {
+        "function": {
+          "arguments": "{}",
+          "name": "get_wifi_status"
+        },
+        "id": "call_00_cyoEs61qAZtfyCM1BHaS5766",
+        "index": 0,
+        "type": "function"
+      }
+    ]
+  },
+  "decoded_calls": [
+    {
+      "arguments": {},
+      "id": "call_00_cyoEs61qAZtfyCM1BHaS5766",
+      "name": "get_wifi_status"
+    }
+  ],
+  "event_end": 5,
+  "event_start": 4,
+  "executions": [
+    {
+      "batch_index": 0,
+      "event_end": 5,
+      "event_start": 4,
+      "outer_tool_count": 4,
+      "tool_call_id": "call_00_cyoEs61qAZtfyCM1BHaS5766"
+    }
+  ],
+  "kind": "tools",
+  "logical_id": "primary_n15_inherited/turn_02",
+  "request_sha256": "50f9e56b4624796de289cd7dd4e8ac6f100d564be5675ae0376dc4381116e015",
+  "tool_messages": [
+    {
+      "content": "{\"error\":null,\"ok\":true,\"value\":true}",
+      "role": "tool",
+      "tool_call_id": "call_00_cyoEs61qAZtfyCM1BHaS5766"
+    }
+  ],
+  "turn": 2
+}

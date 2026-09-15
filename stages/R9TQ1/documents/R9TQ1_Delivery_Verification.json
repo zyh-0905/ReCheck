@@ -1,0 +1,93 @@
+{
+  "phase": "R9TQ1_NATIVE_TOOL_QUALIFICATION_01",
+  "version": "r9tq-1.0.0",
+  "scope": "Native API transport qualification only; not R9 study completion",
+  "registered_files": 110,
+  "unchanged_upstream_files": 77,
+  "upstream_commit": "c8571d7854316d2e1c5f288e59fe1e34e53f6dd1",
+  "old_R9J1_archive_unchanged_sha256": "0ed0d58c4a6824322ec10b61e70dd7af2740e8778363ff8ed122bdfdfd03fdeb",
+  "native_bridge_scoring_replay_reused_unmodified": true,
+  "fresh_unpacked_tests": 70,
+  "fresh_unpacked_tests_failed": 0,
+  "local_http_fixture": {
+    "normal": {
+      "exit_code": 0,
+      "requests": 10,
+      "mechanical_pass": true,
+      "reconstructed_requests": 10,
+      "qualification_pass": true,
+      "status": "completed",
+      "native_tool_events": 7,
+      "no_resampling": true
+    },
+    "cap": {
+      "exit_code": 0,
+      "requests": 12,
+      "mechanical_pass": true,
+      "reconstructed_requests": 12,
+      "qualification_pass": true,
+      "status": "completed",
+      "native_tool_events": 9,
+      "no_resampling": true
+    },
+    "prose": {
+      "exit_code": 0,
+      "requests": 1,
+      "mechanical_pass": true,
+      "reconstructed_requests": 1,
+      "qualification_pass": false,
+      "status": "completed_not_qualified",
+      "native_tool_events": 0,
+      "no_resampling": true
+    },
+    "bad_batch": {
+      "exit_code": 0,
+      "requests": 1,
+      "mechanical_pass": true,
+      "reconstructed_requests": 1,
+      "qualification_pass": false,
+      "status": "paused",
+      "native_tool_events": 0,
+      "no_resampling": true
+    }
+  },
+  "provider_native_interface_tested": false,
+  "researcher_new_remote_llm_calls": 0,
+  "new_research_episodes": 0,
+  "qualification_case_count": 3,
+  "per_case_request_caps": [
+    2,
+    5,
+    5
+  ],
+  "total_new_request_cap": 12,
+  "extra_smoke_calls": 0,
+  "max_native_calls_per_response": 4,
+  "max_native_calls_whole_qualification": 48,
+  "request_model": "deepseek-flash",
+  "previous_request_model": "deepseek-v4-flash",
+  "model_label_change_disclosed": true,
+  "tool_choice": "auto",
+  "response_format_in_live_payload": false,
+  "reasoning_history_preserved": true,
+  "native_function_execution": "Original ToolSandbox native bridge; local simulated databases, no state interventions",
+  "independent_human_review": false,
+  "tested_platform": "Linux x86_64 / supplied CPython3.11.14 / numpy1.26.4 / polars0.20.31",
+  "dependency_restore": "Previously checked wheel modules unpacked for -S execution; not a new pip installation",
+  "windows_macos_tested": false,
+  "lineage_prior_known_responses": 4,
+  "lineage_max_with_qualification": 16,
+  "no_auto_full_research": true,
+  "monetary_cost": "UNKNOWN",
+  "package_sha256": "5c6a38967bab56a3f12efff9801fd4ecb36a067e57e73c5165857ff9fab62185",
+  "package_bytes": 272351,
+  "references_checked_date": "2026-09-13",
+  "limits": [
+    "Software tests are not native endpoint performance measurements",
+    "Native tool calls still require untrusted arguments and result validation",
+    "Response metadata does not authenticate model weights",
+    "Target task state is checked, but natural final prose truth is not scored by another model",
+    "Small qualification does not validate dynamic-state research hypotheses",
+    "OS-level sandbox and independent peer review not provided"
+  ]
+}

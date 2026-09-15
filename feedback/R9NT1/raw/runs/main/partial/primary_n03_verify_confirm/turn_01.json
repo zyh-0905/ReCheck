@@ -1,0 +1,50 @@
+{
+  "assistant_message": {
+    "content": "Cellular service is on and the contact's current number is +12453344098. Sending the message now.",
+    "reasoning_content": "Cellular service is on. Contact phone number is +12453344098. Send exactly one text with the exact message.",
+    "role": "assistant",
+    "tool_calls": [
+      {
+        "function": {
+          "arguments": "{\"content\": \"Rehearsal begins at 19:15. Please acknowledge.\", \"phone_number\": \"+12453344098\"}",
+          "name": "send_message_with_phone_number"
+        },
+        "id": "call_00_QsqFottDTku7DowmskQO9917",
+        "index": 0,
+        "type": "function"
+      }
+    ]
+  },
+  "decoded_calls": [
+    {
+      "arguments": {
+        "content": "Rehearsal begins at 19:15. Please acknowledge.",
+        "phone_number": "+12453344098"
+      },
+      "id": "call_00_QsqFottDTku7DowmskQO9917",
+      "name": "send_message_with_phone_number"
+    }
+  ],
+  "event_end": 4,
+  "event_start": 3,
+  "executions": [
+    {
+      "batch_index": 0,
+      "event_end": 4,
+      "event_start": 3,
+      "outer_tool_count": 3,
+      "tool_call_id": "call_00_QsqFottDTku7DowmskQO9917"
+    }
+  ],
+  "kind": "tools",
+  "logical_id": "primary_n03_verify_confirm/turn_01",
+  "request_sha256": "238a29dc86b5cfd9c4ba1d8443971dd2100b93c792c506623da8efd55efced62",
+  "tool_messages": [
+    {
+      "content": "{\"error\":null,\"ok\":true,\"value\":\"f614ac0c-a42f-4f76-8194-25e41bf2f265\"}",
+      "role": "tool",
+      "tool_call_id": "call_00_QsqFottDTku7DowmskQO9917"
+    }
+  ],
+  "turn": 1
+}

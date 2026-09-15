@@ -1,0 +1,120 @@
+{
+  "task_id": "R9_LIVE_CONTINUATION_DIAGNOSIS_01",
+  "version": "r9-1.0.0",
+  "researcher_new_remote_llm_calls": 0,
+  "researcher_new_external_service_calls": 0,
+  "input_archive_unchanged": {
+    "R7C1": "60e5e182c6f256b320cf7a2a19ce2b5c50ef690510e90765765a8e507d44fe84",
+    "R8_pdf": "1bd93e337c302d99bedb0d920122526ed272e7860d9cdb83845d9dbb4b0f71c1"
+  },
+  "upstream_commit": "c8571d7854316d2e1c5f288e59fe1e34e53f6dd1",
+  "unmodified_upstream_files": 77,
+  "frozen_cases": 16,
+  "task_templates": 4,
+  "single_backend": "native ToolSandbox; not independent external benchmark",
+  "scripted_trajectories": 48,
+  "scripted_summary": [
+    {
+      "mode": "once",
+      "cases": 16,
+      "tool_success_proxy": 16,
+      "goal_final": 14,
+      "final_state_clean": 14,
+      "trace_safe_success": 14,
+      "wrong_write": 2,
+      "goal_only_false_accept": 0,
+      "final_clean_false_accept": 0,
+      "tool_errors": 1,
+      "tool_calls": 35,
+      "event_triggered": 12
+    },
+    {
+      "mode": "extra_read",
+      "cases": 16,
+      "tool_success_proxy": 16,
+      "goal_final": 16,
+      "final_state_clean": 16,
+      "trace_safe_success": 16,
+      "wrong_write": 0,
+      "goal_only_false_accept": 0,
+      "final_clean_false_accept": 0,
+      "tool_errors": 0,
+      "tool_calls": 46,
+      "event_triggered": 12
+    },
+    {
+      "mode": "post_confirm",
+      "cases": 16,
+      "tool_success_proxy": 16,
+      "goal_final": 15,
+      "final_state_clean": 15,
+      "trace_safe_success": 14,
+      "wrong_write": 2,
+      "goal_only_false_accept": 1,
+      "final_clean_false_accept": 1,
+      "tool_errors": 1,
+      "tool_calls": 47,
+      "event_triggered": 12
+    }
+  ],
+  "scripted_rerun_discrete_projection_equal": true,
+  "uuid_clock_and_elapsed_byte_equality_not_claimed": true,
+  "fresh_unpacked_tests": 61,
+  "fresh_unpacked_tests_passed": true,
+  "registered_source_files": 120,
+  "full_fixture_final_distribution": {
+    "kind": "SOFTWARE_TEST_NOT_LLM_RESULT",
+    "mode": "rule",
+    "local_http_requests": 133,
+    "completed_primary": 32,
+    "completed_repeat": 4,
+    "reconstructed_research_requests": 132,
+    "execution_complete": true,
+    "no_completed_run_resampling": true
+  },
+  "cap_fixture": {
+    "mode": "cap",
+    "kind": "SOFTWARE_TEST_NOT_LLM_RESULT",
+    "local_http_requests": 361,
+    "main_requests": 360,
+    "execution_complete": true,
+    "reconstructed_research_requests": 360,
+    "no_completed_run_resampling": true,
+    "history": "60-second outer command timed out during offline audit after all calls completed; offline audit/export resumed without new responses"
+  },
+  "cap_fixture_production_and_data_match_final": true,
+  "test_history": [
+    "Scoring/timeline interface stubs failed before implementation.",
+    "First aggregate test caught migration typo 16360 vs16384; fixed before any paid responses.",
+    "Cap software run completed all361 loopback requests; enclosing60second command timed out during offline audit. Same saved data audited/exported in subsequent offline-only command."
+  ],
+  "environment": {
+    "system": "Linux x86_64",
+    "python": "3.11.14 supplied runtime -S",
+    "numpy": "1.26.4",
+    "polars": "0.20.31",
+    "dependency_restore": "verified distributions extracted; no claim of fresh pip install"
+  },
+  "windows_macos_runtime_tested": false,
+  "independent_human_review": false,
+  "paid_protocol": {
+    "model_request": "deepseek-v4-flash",
+    "accepted_response_labels_at_smoke": [
+      "deepseek-v4-flash",
+      "deepseek-flash"
+    ],
+    "max_tokens": 16384,
+    "main_request_cap": 360,
+    "smoke_request_cap": 1,
+    "combined_cap": 361,
+    "primary_episodes": 32,
+    "repeat_episodes": 4,
+    "turn_cap": 10,
+    "currency_cost": "UNKNOWN"
+  },
+  "research_gate": "READY_FOR_ONE_FIXED_LIVE_DEVELOPMENT_DIAGNOSTIC; not scientific superiority or publication readiness",
+  "novelty_status": "TOCTOU and trajectory-level grading are established; R9 tests an unmeasured live-continuation diagnostic in this project, not a new defense.",
+  "new_repairlens_evidence": false,
+  "handoff_zip_sha256": "272f7fa9bfc7c538bd58d0649108a856cb1592434299d5ac169358788f920a27",
+  "handoff_zip_bytes": 334225
+}

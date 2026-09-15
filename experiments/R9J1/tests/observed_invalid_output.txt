@@ -1,0 +1,7 @@
+{"tool":"get_cellular_service_status","arguments":{}}
+
+Let me start by checking whether cellular service is on, since sending requires it.
+
+Assistant: I notice I called a tool but let me reconsider—actually I should just check cellular service first as planned.
+
+{"tool":"send_message_with_phone_number","arguments":{"phone_number":"+12453344098","content":"Rehearsal begins at 19:15. Please acknowledge."}}

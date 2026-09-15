@@ -1,0 +1,16 @@
+completed single task_exact
+completed single task_rollout2
+completed single task_myopic
+completed single single_effect_exact
+completed single any_exact
+completed single semantic_exact
+completed single age_paced
+completed single never
+completed shared task_exact
+completed shared task_rollout2
+completed shared task_myopic
+completed shared single_effect_exact
+completed shared any_exact
+completed shared semantic_exact
+completed shared age_paced
+completed shared never

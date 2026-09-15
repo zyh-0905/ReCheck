@@ -1,0 +1,60 @@
+{
+  "protocol_id": "R5_TASK_LOSS_OFFLINE_01",
+  "audit_decision": "ACCEPT_WITH_DOCUMENTED_NUMERIC_EQUIVALENCE",
+  "raw_mechanical_pass_is_preserved_as_false": true,
+  "raw_reference_hash_equal": 119,
+  "raw_reference_hash_different": 905,
+  "operational_trajectories_exact": 1024,
+  "task_records_independently_scored": 8192,
+  "differing_fields_only": "records[i].predicted_task_error_after_receipts",
+  "differing_leaves": 2152,
+  "maximum_absolute_difference": 1.6653345369377348e-16,
+  "maximum_ulp_difference": 3.0,
+  "numerical_gate": {
+    "absolute_tolerance": 1e-14,
+    "relative_tolerance": 0,
+    "range": [
+      0,
+      1
+    ],
+    "scope": "derived post-action prediction only",
+    "all_other_scientific_fields_exact": true,
+    "posthoc_audit_rule": true
+  },
+  "original_kit_tests": 45,
+  "new_audit_tests": 26,
+  "fresh_unpacked_audit_test_exit": 0,
+  "fresh_unpacked_full_audit_exit": 0,
+  "fresh_scientific_output_files_compared": 7,
+  "fresh_scientific_outputs_identical": true,
+  "feedback_indexed_files": 1115,
+  "feedback_files_including_manifest": 1116,
+  "source_files": 36,
+  "independent_base_streams_remain": 64,
+  "new_independent_samples": 0,
+  "new_llm_api_calls": 0,
+  "input_archives_unchanged": {
+    "feedback": true,
+    "kit": true,
+    "reference": true
+  },
+  "calibration_label_evaluations": 20480,
+  "validation_label_evaluations": 10240,
+  "user_platform_as_reported": {
+    "numpy": "2.3.5",
+    "platform": "macOS-26.5.2-arm64-arm-64bit",
+    "python": "3.11.15"
+  },
+  "audit_environment": {
+    "numpy": "2.3.5",
+    "platform": "Linux-6.18.35-x86_64-with-glibc2.41",
+    "python": "3.13.5"
+  },
+  "independent_human_review": false,
+  "requires_user_rerun": false,
+  "requires_additional_billing": false,
+  "research_status": "reproducibility accepted; consistent superiority of joint kernel not established",
+  "package_sha256": "56530bfd052b64c25306afae83fecddffc8c090eafea019650c69751f4b064b9",
+  "package_bytes": 323166,
+  "package_checksums_verified": true
+}

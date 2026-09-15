@@ -1,0 +1,42 @@
+{
+  "pass": true,
+  "records_checked": 48,
+  "paired_cases": 12,
+  "issues": [],
+  "by_method": {
+    "always_resolve": {
+      "cases": 12,
+      "safe_successes": 12,
+      "wrong_writes": 0,
+      "runtime_calls": 24,
+      "ordinary_observation_calls": 8,
+      "startup_calls": 24
+    },
+    "cached_reactive": {
+      "cases": 12,
+      "safe_successes": 6,
+      "wrong_writes": 6,
+      "runtime_calls": 12,
+      "ordinary_observation_calls": 8,
+      "startup_calls": 24
+    },
+    "query_on_error": {
+      "cases": 12,
+      "safe_successes": 6,
+      "wrong_writes": 6,
+      "runtime_calls": 12,
+      "ordinary_observation_calls": 8,
+      "startup_calls": 24
+    },
+    "reuse_observed_then_resolve": {
+      "cases": 12,
+      "safe_successes": 10,
+      "wrong_writes": 2,
+      "runtime_calls": 16,
+      "ordinary_observation_calls": 8,
+      "startup_calls": 24
+    }
+  },
+  "method": "independent snapshot/multiset score and tool-ledger check; no model calls",
+  "limits": "Does not authenticate provider or establish statistical generalization."
+}

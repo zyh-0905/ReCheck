@@ -1,0 +1,54 @@
+{
+  "task_id": "R7C_NATIVE_AGENT_DIAGNOSIS_01",
+  "version": "r7c-1.0.0",
+  "evidence_label": "EXTERNAL_NATIVE_TOOL_CONSTRUCTED_EXTENSION_NOT_OFFICIAL_BENCHMARK_SCORE",
+  "upstream_commit": "c8571d7854316d2e1c5f288e59fe1e34e53f6dd1",
+  "families": [
+    "person_message",
+    "literal_message",
+    "reminder_label"
+  ],
+  "core_variants": [
+    "stable",
+    "unrelated",
+    "changed_old_observation",
+    "changed_current_observation"
+  ],
+  "extra_cases": [
+    "person_message_combined_error",
+    "literal_message_combined_error"
+  ],
+  "arms": [
+    "stateless",
+    "inherited",
+    "resolve_rule"
+  ],
+  "repeated_case_ids": [
+    "c02",
+    "c10"
+  ],
+  "max_turns_per_episode": 8,
+  "primary_episodes": 42,
+  "repeat_episodes": 6,
+  "max_main_calls": 384,
+  "smoke_cap": 1,
+  "order_seed": 714031,
+  "worker": "native_tool_json_action",
+  "json_action_keys": [
+    "tool",
+    "arguments"
+  ],
+  "cold_start_note": "Constructed common prefixes from native read tools, no LLM-generated initialization",
+  "currency_cost": "UNKNOWN",
+  "no_more_paid_followup_authorized": true,
+  "stop_on": [
+    "HTTP_ERROR",
+    "INVALID_JSON",
+    "TRUNCATION",
+    "IDENTITY_CHANGE",
+    "INVALID_USAGE"
+  ],
+  "task_error_policy": "Valid JSON tool/schema failures are observed by the model; no hidden retries.",
+  "start_over_policy": "Paused/running/locked runs cannot auto-resume; complete run is read-only.",
+  "research_scope": "Problem diagnosis and strong prompt baseline; not ReCheck efficacy or RepairLens."
+}

@@ -1,0 +1,4 @@
+case_id,model_requests,tool_calls,qualified,task_state_ok,wrong_write,terminated,prompt_tokens,completion_tokens,total_tokens,reasoning_tokens,cached_input_tokens,uncached_input_tokens,latency_seconds
+q0_read,2,1,True,True,False,True,1109,100,1209,71,384,725,1.8078925418667495
+q1_message,4,3,True,True,False,True,11374,331,11705,67,8192,3182,4.170564750675112
+q2_reminder,4,3,True,True,False,True,11682,427,12109,35,10624,1058,3.9657795010134578

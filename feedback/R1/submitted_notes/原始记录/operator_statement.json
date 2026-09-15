@@ -1,0 +1,10 @@
+{
+  "interrupted_run_status": "operator_terminated_evidence_preserved",
+  "reason": "The operator intentionally stopped this batch after the 8th completed call. The 9th call (rc/0/1/myopic/plan) had been journaled and sent, but its response was never written back because the process was killed. Cause of the stop: the operator had just observed, in call 3 of this same batch, that finish_reason=length with all 4096 output tokens consumed by internal reasoning and empty visible content. The batch was therefore abandoned as knowingly compromised, and a fresh run with a 16384 output cap was started in a new directory. No crash, provider outage, HTTP error, or rate limit was involved.",
+  "billing_status": "partial_self_reported",
+  "other_calls_in_billing_window": "yes",
+  "currency": "CNY account credit, with list prices published in USD",
+  "billing_time_window": "2026-09-12 UTC 08:12-08:42 (China Standard Time UTC+8, 16:12-16:42), a Friday",
+  "redactions": "Sanitized summary of operator dashboard credit balance and provider list prices. No account identifier, API key, invoice number, cookie, or credential is included. No raw provider invoice was exported; only pre-existing operator-observed values.",
+  "notes": "This batch recorded 9 request attempts and 8 completed responses. Local list-price estimate for the 8 completed calls is 0.011 USD. The account credit balance observed before the whole session was 52.14 CNY and after all runs 51.09 CNY, so the total observed credit decrease for every call made that day (smoke test, this interrupted batch, probe calls, a 260-call completed batch and a 34-call readiness batch) was 1.05 CNY. Unresolved discrepancy: the local list-price estimate for all calls in the session is 0.2686 USD (about 1.91 CNY at roughly 7.1 CNY per USD), which is higher than the observed 1.05 CNY credit decrease. The cause was not established and is reported as unexplained rather than reconciled. Provider billing remains authoritative. No new API call, network request or account login was performed while preparing this statement."
+}

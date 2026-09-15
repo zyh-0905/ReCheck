@@ -1,0 +1,10 @@
+{
+  "turn": 2,
+  "logical_id": "repeat_c10_stateless/turn_02",
+  "request_sha256": "f16b645d388dcbbee2f8fc2d23cc1c13fd3b39f7a05a611e3fa6f998d13b98f8",
+  "response_text": "{\"done\":\"Updated the reminder \\\"Submit the cobalt expense report\\\" (id da2b856e-9390-511f-bcbe-7005f72cbf5e) to reminder time 1800003600, leaving its text and location unchanged.\"}",
+  "kind": "done",
+  "action": {
+    "done": "Updated the reminder \"Submit the cobalt expense report\" (id da2b856e-9390-511f-bcbe-7005f72cbf5e) to reminder time 1800003600, leaving its text and location unchanged."
+  }
+}

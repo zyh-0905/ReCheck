@@ -1,0 +1,122 @@
+ReCheck completed 0.01:0.2:0.04
+ReCheck completed 0.01:0.2:0.12
+ReCheck completed 0.01:0.2:0.35
+ReCheck completed 0.01:0.9:0.04
+ReCheck completed 0.01:0.9:0.12
+ReCheck completed 0.01:0.9:0.35
+ReCheck completed 0.05:0.2:0.04
+ReCheck completed 0.05:0.2:0.12
+ReCheck completed 0.05:0.2:0.35
+ReCheck completed 0.05:0.9:0.04
+ReCheck completed 0.05:0.9:0.12
+ReCheck completed 0.05:0.9:0.35
+ReCheck completed 0.15:0.2:0.04
+ReCheck completed 0.15:0.2:0.12
+ReCheck completed 0.15:0.2:0.35
+ReCheck completed 0.15:0.9:0.04
+ReCheck completed 0.15:0.9:0.12
+ReCheck completed 0.15:0.9:0.35
+RepairLens completed sparse 10000
+RepairLens completed sparse 10001
+RepairLens completed sparse 10002
+RepairLens completed sparse 10003
+RepairLens completed sparse 10004
+RepairLens completed sparse 10005
+RepairLens completed sparse 10006
+RepairLens completed sparse 10007
+RepairLens completed sparse 10008
+RepairLens completed sparse 10009
+RepairLens completed sparse 10010
+RepairLens completed sparse 10011
+RepairLens completed sparse 10012
+RepairLens completed sparse 10013
+RepairLens completed sparse 10014
+RepairLens completed sparse 10015
+RepairLens completed sparse 10016
+RepairLens completed sparse 10017
+RepairLens completed sparse 10018
+RepairLens completed sparse 10019
+RepairLens completed overlap 10100
+RepairLens completed overlap 10101
+RepairLens completed overlap 10102
+RepairLens completed overlap 10103
+RepairLens completed overlap 10104
+RepairLens completed overlap 10105
+RepairLens completed overlap 10106
+RepairLens completed overlap 10107
+RepairLens completed overlap 10108
+RepairLens completed overlap 10109
+RepairLens completed overlap 10110
+RepairLens completed overlap 10111
+RepairLens completed overlap 10112
+RepairLens completed overlap 10113
+RepairLens completed overlap 10114
+RepairLens completed overlap 10115
+RepairLens completed overlap 10116
+RepairLens completed overlap 10117
+RepairLens completed overlap 10118
+RepairLens completed overlap 10119
+RepairLens completed general 10200
+RepairLens completed general 10201
+RepairLens completed general 10202
+RepairLens completed general 10203
+RepairLens completed general 10204
+RepairLens completed general 10205
+RepairLens completed general 10206
+RepairLens completed general 10207
+RepairLens completed general 10208
+RepairLens completed general 10209
+RepairLens completed general 10210
+RepairLens completed general 10211
+RepairLens completed general 10212
+RepairLens completed general 10213
+RepairLens completed general 10214
+RepairLens completed general 10215
+RepairLens completed general 10216
+RepairLens completed general 10217
+RepairLens completed general 10218
+RepairLens completed general 10219
+RepairLens completed nuisance 10300
+RepairLens completed nuisance 10301
+RepairLens completed nuisance 10302
+RepairLens completed nuisance 10303
+RepairLens completed nuisance 10304
+RepairLens completed nuisance 10305
+RepairLens completed nuisance 10306
+RepairLens completed nuisance 10307
+RepairLens completed nuisance 10308
+RepairLens completed nuisance 10309
+RepairLens completed nuisance 10310
+RepairLens completed nuisance 10311
+RepairLens completed nuisance 10312
+RepairLens completed nuisance 10313
+RepairLens completed nuisance 10314
+RepairLens completed nuisance 10315
+RepairLens completed nuisance 10316
+RepairLens completed nuisance 10317
+RepairLens completed nuisance 10318
+RepairLens completed nuisance 10319
+RepairLens completed coupled 10400
+RepairLens completed coupled 10401
+RepairLens completed coupled 10402
+RepairLens completed coupled 10403
+RepairLens completed coupled 10404
+RepairLens completed coupled 10405
+RepairLens completed coupled 10406
+RepairLens completed coupled 10407
+RepairLens completed coupled 10408
+RepairLens completed coupled 10409
+RepairLens completed coupled 10410
+RepairLens completed coupled 10411
+RepairLens completed coupled 10412
+RepairLens completed coupled 10413
+RepairLens completed coupled 10414
+RepairLens completed coupled 10415
+RepairLens completed coupled 10416
+RepairLens completed coupled 10417
+RepairLens completed coupled 10418
+RepairLens completed coupled 10419
+RepairLens completed expensive 10500
+RepairLens completed expensive 10501
+RepairLens completed expensive 10502
+RepairLens completed expensive 10503

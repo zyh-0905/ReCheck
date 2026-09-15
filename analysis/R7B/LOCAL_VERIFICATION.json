@@ -1,0 +1,50 @@
+{
+  "task_id": "R7B_NATIVE_VALIDATION_01",
+  "materials_pass": true,
+  "material_manifest_files": 111,
+  "upstream_commit": "c8571d7854316d2e1c5f288e59fe1e34e53f6dd1",
+  "upstream_tree": "64ccd1694a91f2029844434d5995a2c0945cd6b2",
+  "upstream_source_files_unmodified": 77,
+  "dependency_distributions": 53,
+  "wheel_files": 52,
+  "sdist_files": 1,
+  "installed_offline": true,
+  "python_runtime": "3.11.14",
+  "core_upstream_tests": {
+    "passed": 60,
+    "failed": 0
+  },
+  "extra_execution_tests": {
+    "passed": 4,
+    "failed": 2,
+    "failure_causes": [
+      "Syntax-error caret formatting differs from the upstream literal expectation under Python 3.11",
+      "External search test has no RAPID_API_KEY; original ordered branch fails before the expected reordered WiFi check"
+    ]
+  },
+  "full_upstream_suite_pass": false,
+  "new_local_tests_passed": 33,
+  "fresh_extracted_tests_passed": 33,
+  "original_scripted_walkthroughs": 4,
+  "official_walkthrough_similarities": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "constructed_extension_cases": 12,
+  "scripted_policy_comparisons": 48,
+  "independent_saved_score_check": true,
+  "repeat_scientific_projection_equal": true,
+  "new_remote_llm_calls": 0,
+  "new_external_service_calls": 0,
+  "statistical_claim": "NONE; fixtures and scripted walkthroughs are not LLM results or independent benchmark samples",
+  "backend_material_review": "subset of native local tools/state/evaluation, not complete cloud provider stack",
+  "user_run_required": false,
+  "new_paid_execution_kit_ready": false,
+  "tested_and_distributed_source_match": true,
+  "input_archive_unchanged": true,
+  "input_sha256": "d2afe3ee01d58122844e7b7fc67ca1c8a32ace0f72ff87b47dd641e7c161aa53",
+  "environment": "Linux x86_64 / supplied CPython3.11.14 / polars0.20.31 / numpy1.26.4",
+  "independent_human_peer_review": false
+}

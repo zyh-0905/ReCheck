@@ -1,0 +1,91 @@
+{
+  "pages": [
+    {
+      "page": 1,
+      "size_points": [
+        612,
+        792
+      ],
+      "text_bbox_points": [
+        54.42498016357422,
+        96.69713592529297,
+        558.9907836914062,
+        723.5408935546875
+      ],
+      "text_characters": 4463
+    },
+    {
+      "page": 2,
+      "size_points": [
+        612,
+        792
+      ],
+      "text_bbox_points": [
+        54.42500305175781,
+        74.40748596191406,
+        558.9968872070312,
+        723.541259765625
+      ],
+      "text_characters": 4822
+    },
+    {
+      "page": 3,
+      "size_points": [
+        612,
+        792
+      ],
+      "text_bbox_points": [
+        54.42498779296875,
+        71.34786224365234,
+        558.9884033203125,
+        723.5408325195312
+      ],
+      "text_characters": 4524
+    },
+    {
+      "page": 4,
+      "size_points": [
+        612,
+        792
+      ],
+      "text_bbox_points": [
+        54.42499923706055,
+        74.40724182128906,
+        558.9971923828125,
+        723.5408935546875
+      ],
+      "text_characters": 4960
+    },
+    {
+      "page": 5,
+      "size_points": [
+        612,
+        792
+      ],
+      "text_bbox_points": [
+        54.42498779296875,
+        74.40748596191406,
+        298.20654296875,
+        187.98123168945312
+      ],
+      "text_characters": 442
+    }
+  ],
+  "page_count": 5,
+  "technical_content_ends_by_page": 4,
+  "page5_references_only": true,
+  "abstract_whitespace_word_count": 142,
+  "body_font_points": 10,
+  "table_font_points": 9,
+  "figure_label_font_points": 9,
+  "embedded_font_entries": 16,
+  "all_fonts_embedded": true,
+  "type3_font_entries": 0,
+  "overfull_warnings": 0,
+  "undefined_references": 0,
+  "encrypted": false,
+  "known_nonfatal_warning": "epstopdf: shell escape disabled; no EPS conversion is required",
+  "visible_working_draft_marker": true,
+  "author_details_pending": true,
+  "official_submission_system_checked": false
+}

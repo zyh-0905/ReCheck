@@ -1,0 +1,3 @@
+run,logical_id,phase,attempt,prompt_tokens,completion_tokens,cached_input_tokens,reasoning_tokens,latency_seconds,requested_model,returned_model,currency_cost
+R9_smoke,smoke,smoke,1,48,26,0,20,0.8097959579899907,deepseek-v4-flash,deepseek-flash,UNKNOWN
+R9_main,primary_n06_verify_confirm/turn_00,primary,1,2630,128,0,36,1.9929463751614094,deepseek-v4-flash,deepseek-flash,UNKNOWN

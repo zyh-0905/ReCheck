@@ -1,0 +1,12 @@
+test_cap_consent_required (test_r2_cli.CLITests.test_cap_consent_required) ... ok
+test_exact_cap_consent (test_r2_cli.CLITests.test_exact_cap_consent) ... ok
+test_fixed_output_limit (test_r2_cli.CLITests.test_fixed_output_limit) ... ok
+test_freeze_config_cannot_be_changed (test_r2_cli.CLITests.test_freeze_config_cannot_be_changed) ... ok
+test_no_smoke_no_run (test_r2_cli.CLITests.test_no_smoke_no_run) ... ok
+test_smoke_profile_mismatch_no_run (test_r2_cli.CLITests.test_smoke_profile_mismatch_no_run) ... ok
+test_thinking_toggle_explicit_supported (test_r2_cli.CLITests.test_thinking_toggle_explicit_supported) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.009s
+
+OK

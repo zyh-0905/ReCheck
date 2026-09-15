@@ -1,0 +1,2 @@
+STOP: No completed R4 smoke. Run the one-call smoke first.
+No automatic retry. Fixes or new experiments require review; use export for available evidence.

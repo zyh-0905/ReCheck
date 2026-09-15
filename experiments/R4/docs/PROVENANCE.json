@@ -1,0 +1,23 @@
+{
+  "upstream": "Research_Handoff_R3.zip",
+  "upstream_sha256": "be7ca78141f3b16f942ea7a271f3ff040d1e74556f031ae52cbeaabc4930a0d6",
+  "reused": [
+    "pilot/client.py",
+    "pilot/common.py",
+    "pilot/recheck.py",
+    "vendor/recheck_core.py",
+    "r3lib/session.py",
+    "r3lib/storage.py",
+    "r3lib/accounting.py",
+    "r3lib/review.py helpers",
+    "regression/"
+  ],
+  "changes": [
+    "R4 ids and 408 main cap",
+    "lock error message forbids unauthorized unlock",
+    "new coupled model/environment/protocol/experiment/audit",
+    "LICENSE still retained"
+  ],
+  "original_archives_modified": false,
+  "no_new_remote_llm_calls": true
+}

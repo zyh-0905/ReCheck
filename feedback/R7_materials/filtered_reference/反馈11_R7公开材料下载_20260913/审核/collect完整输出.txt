@@ -1,0 +1,57 @@
+START_UTC=2026-09-13T06:17:55Z
+[1/53] Downloading polars==0.20.31
+[2/53] Downloading dill==0.3.8
+[3/53] Downloading phonenumbers==8.13.39
+[4/53] Downloading StrEnum==0.4.15
+[5/53] Downloading ccy==1.3.1
+[6/53] Downloading decorator==5.1.1
+[7/53] Downloading rapidfuzz==3.9.3
+[8/53] Downloading typing_extensions==4.12.2
+[9/53] Downloading python-dateutil==2.9.0.post0
+[10/53] Downloading pytz==2024.1
+[11/53] Downloading six==1.16.0
+[12/53] Downloading geopy==2.4.1
+[13/53] Downloading geographiclib==2.0
+[14/53] Downloading holidays==0.51
+[15/53] Downloading pint==0.23
+[16/53] Downloading requests==2.32.3
+[17/53] Downloading urllib3==2.2.2
+[18/53] Downloading idna==3.7
+[19/53] Downloading charset-normalizer==3.3.2
+[20/53] Downloading certifi==2024.7.4
+[21/53] Downloading numpy==1.26.4
+[22/53] Downloading networkx==3.2.1
+[23/53] Downloading scipy==1.13.1
+[24/53] Downloading attrs==23.2.0
+[25/53] Downloading rouge-score==0.1.2
+[26/53] Downloading nltk==3.8.1
+[27/53] Downloading absl-py==2.1.0
+[28/53] Downloading click==8.1.7
+[29/53] Downloading joblib==1.4.2
+[30/53] Downloading regex==2024.5.15
+[31/53] Downloading tqdm==4.66.4
+[32/53] Downloading pydantic==2.7.4
+[33/53] Downloading pydantic_core==2.18.4
+[34/53] Downloading annotated-types==0.7.0
+[35/53] Downloading PyYAML==6.0.1
+[36/53] Downloading pytest==8.2.2
+[37/53] Downloading pluggy==1.5.0
+[38/53] Downloading iniconfig==2.0.0
+[39/53] Downloading packaging==23.2
+[40/53] Downloading setuptools==70.3.0
+[41/53] Downloading wheel==0.43.0
+[42/53] Downloading openai==1.17.0
+[43/53] Downloading langchain-core==0.1.23
+[44/53] Downloading langsmith==0.0.87
+[45/53] Downloading tenacity==8.4.1
+[46/53] Downloading jsonpatch==1.33
+[47/53] Downloading jsonpointer==2.4
+[48/53] Downloading anyio==4.4.0
+[49/53] Downloading httpx==0.27.0
+[50/53] Downloading httpcore==1.0.5
+[51/53] Downloading h11==0.14.0
+[52/53] Downloading distro==1.9.0
+[53/53] Downloading sniffio==1.3.1
+MATERIALS_COLLECTED_NOT_INSTALLED
+/Users/user/代码/DeepSeek harness/REcheck/R7_Materials_Request/uploads/R7_materials_20260913T061951846901Z.zip
+END_UTC=2026-09-13T06:19:52Z

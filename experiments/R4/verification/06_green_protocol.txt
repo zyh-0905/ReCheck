@@ -1,0 +1,34 @@
+test_all_modes_rule_matches_independent_truth (test_environment.EnvironmentTests.test_all_modes_rule_matches_independent_truth) ... ok
+test_bad_unused_field_is_not_silently_fixed (test_environment.EnvironmentTests.test_bad_unused_field_is_not_silently_fixed) ... ok
+test_bool_page_rejected (test_environment.EnvironmentTests.test_bool_page_rejected) ... ok
+test_budget_rejects_before_query (test_environment.EnvironmentTests.test_budget_rejects_before_query) ... ok
+test_bundle_charged_once_and_scoped (test_environment.EnvironmentTests.test_bundle_charged_once_and_scoped) ... ok
+test_counterexample_stale_not_always_wrong (test_environment.EnvironmentTests.test_counterexample_stale_not_always_wrong) ... ok
+test_invalid_packet_never_executes (test_environment.EnvironmentTests.test_invalid_packet_never_executes) ... ok
+test_pagination_really_fetches_multiple_pages (test_environment.EnvironmentTests.test_pagination_really_fetches_multiple_pages) ... ok
+test_private_state_not_in_view (test_environment.EnvironmentTests.test_private_state_not_in_view) ... ok
+test_public_contract (test_environment.EnvironmentTests.test_public_contract) ... ok
+test_public_probability_contract (test_model.CoreContract.test_public_probability_contract) ... ok
+test_public_solver_contract (test_model.CoreContract.test_public_solver_contract) ... ok
+test_budget_and_overlap (test_model.ModelBehavior.test_budget_and_overlap) ... ok
+test_duplicate_packets_rejected (test_model.ModelBehavior.test_duplicate_packets_rejected) ... ok
+test_exhaustive_small (test_model.ModelBehavior.test_exhaustive_small) ... ok
+test_invalid_probability (test_model.ModelBehavior.test_invalid_probability) ... ok
+test_joint_model_not_worse_than_baselines (test_model.ModelBehavior.test_joint_model_not_worse_than_baselines) ... ok
+test_joint_one_step_equals_myopic (test_model.ModelBehavior.test_joint_one_step_equals_myopic) ... ok
+test_no_budget_loss_accumulates (test_model.ModelBehavior.test_no_budget_loss_accumulates) ... ok
+test_no_independent_double_refresh_charge (test_model.ModelBehavior.test_no_independent_double_refresh_charge) ... ok
+test_probability (test_model.ModelBehavior.test_probability) ... ok
+test_rollout_not_worse_than_its_base_model (test_model.ModelBehavior.test_rollout_not_worse_than_its_base_model) ... ok
+test_rules_are_feasible (test_model.ModelBehavior.test_rules_are_feasible) ... ok
+test_all_cases_retained (test_protocol.ProtocolTests.test_all_cases_retained) ... ok
+test_call_count (test_protocol.ProtocolTests.test_call_count) ... ok
+test_counterexample_available (test_protocol.ProtocolTests.test_counterexample_available) ... ok
+test_distinct_seed_streams (test_protocol.ProtocolTests.test_distinct_seed_streams) ... ok
+test_executable_experiment (test_protocol.ProtocolTests.test_executable_experiment) ... ok
+test_preflight_excludes_private_world (test_protocol.ProtocolTests.test_preflight_excludes_private_world) ... ok
+
+----------------------------------------------------------------------
+Ran 29 tests in 3.861s
+
+OK

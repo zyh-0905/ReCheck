@@ -1,0 +1,20 @@
+.........FF.                                                             [100%]
+=================================== FAILURES ===================================
+_________________________ test_stream_is_reproducible __________________________
+
+    def test_stream_is_reproducible():
+>       from src.recheck.experiment import make_stream, model
+E       ModuleNotFoundError: No module named 'src.recheck.experiment'
+
+tests/test_recheck.py:78: ModuleNotFoundError
+_________________ test_fresh_relevant_has_no_controlled_errors _________________
+
+    def test_fresh_relevant_has_no_controlled_errors():
+>       from src.recheck.experiment import make_stream, model, run_stream
+E       ModuleNotFoundError: No module named 'src.recheck.experiment'
+
+tests/test_recheck.py:85: ModuleNotFoundError
+=========================== short test summary info ============================
+FAILED tests/test_recheck.py::test_stream_is_reproducible - ModuleNotFoundError: No module named 'src.recheck.experiment'
+FAILED tests/test_recheck.py::test_fresh_relevant_has_no_controlled_errors - ModuleNotFoundError: No module named 'src.recheck.experiment'
+2 failed, 10 passed in 0.07s

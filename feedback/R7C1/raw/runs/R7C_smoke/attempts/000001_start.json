@@ -1,0 +1,30 @@
+{
+  "attempt": 1,
+  "logical_id": "smoke",
+  "request_sha256": "b66b69acd5cde999c77d6bc936095b5e16b0f0fe532e042af45f248af301e615",
+  "started_utc": "2026-09-13T08:44:45.696923+00:00",
+  "payload": {
+    "model": "deepseek-v4-flash",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Return exactly one JSON object: {\"done\":\"ready\"}."
+      },
+      {
+        "role": "user",
+        "content": "Check the JSON-only interface."
+      }
+    ],
+    "stream": false,
+    "max_tokens": 16384,
+    "thinking": {
+      "type": "enabled"
+    },
+    "reasoning_effort": "high"
+  },
+  "payload_sha256": "276d1132f834e138b09c4b056aa8274e2d3cd7a8bfffd9ada645861a68358e87",
+  "metadata": {
+    "phase": "smoke"
+  },
+  "registration_is_not_remote_receipt": true
+}

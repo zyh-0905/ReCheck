@@ -1,0 +1,4 @@
+phase,calls,prompt_tokens,completion_tokens,reasoning_tokens,cache_hit_tokens,cache_miss_tokens,latency_seconds
+smoke,1,48,23,17,0,48,0.8672604160383344
+primary,149,285995,12039,6751,250880,35115,165.14622870879248
+repeat,19,36407,1648,921,32512,3895,20.87924400018528

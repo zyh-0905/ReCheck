@@ -1,0 +1,77 @@
+{
+  "study": "recheck",
+  "stream": 0,
+  "step": 4,
+  "method": "always",
+  "task_type": 1,
+  "prefix_sha256": "1b805b5b7589497c28591f8e345c1c22f33cf76f0ce77e032f716b971c026c56",
+  "worker_view": {
+    "task": {
+      "request": "Return the number of orders with integer event_time at most 5, including 5.",
+      "requested_fields": [
+        "count"
+      ],
+      "cutoff": 5
+    },
+    "memory": {
+      "amount_divisor": 100,
+      "endpoint_inclusive": true,
+      "checked_at": [
+        5,
+        5
+      ]
+    },
+    "current_round": 5,
+    "tool_descriptions": {
+      "sum_amount": "Returns raw sum; divide by the remembered amount_divisor to obtain major units.",
+      "count_before": "Counts rows relative to integer bound. Use remembered endpoint_inclusive. Desired cutoff is inclusive.",
+      "count_all": "Counts all orders. No argument."
+    },
+    "instructions": "Return {\"amount_divisor\":1 or 100 or null,\"time_bound\":integer or null}. Use null for unused fields. Do not request extra probes."
+  },
+  "ages_before": [
+    1,
+    1
+  ],
+  "probed_channels": [
+    0,
+    1
+  ],
+  "probe_receipts": [
+    {
+      "channel": "amount_unit",
+      "raw_amount": 100.0,
+      "known_invoice_major_units": 1
+    },
+    {
+      "channel": "time_endpoint",
+      "returned_count": 1,
+      "known_event_time": 0,
+      "requested_bound": 0
+    }
+  ],
+  "probe_count": 2,
+  "model_probe_cost": 0.36,
+  "planning_seconds": 8.141598664224148e-05,
+  "probe_seconds": 7.458310574293137e-05,
+  "tool_seconds": 4.595797508955002e-05,
+  "task_tool_calls": 1,
+  "plan": {
+    "amount_divisor": null,
+    "time_bound": 5
+  },
+  "plan_json_error": null,
+  "plan_schema_valid": true,
+  "tool_result": {
+    "count_before": 6
+  },
+  "answer": {
+    "total": null,
+    "count": 6
+  },
+  "answer_json_error": null,
+  "logical_calls": [
+    "rc/0/4/always/plan",
+    "rc/0/4/always/answer"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "accepted_response_labels": [
+    "deepseek-flash",
+    "deepseek-v4-flash"
+  ],
+  "endpoint": "https://api.deepseek.com/v1/chat/completions",
+  "key_env": "LLM_API_KEY",
+  "max_attempts": 384,
+  "max_response_bytes": 8000000,
+  "max_tokens": 16384,
+  "max_tools_per_response": 4,
+  "min_interval_seconds": 0.4,
+  "model": "deepseek-flash",
+  "reasoning_effort": "high",
+  "stream": false,
+  "thinking": {
+    "type": "enabled"
+  },
+  "timeout_seconds": 120,
+  "tool_choice": "auto"
+}

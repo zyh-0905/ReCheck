@@ -1,0 +1,44 @@
+{
+  "audit_id": "R4_REVIEW_20260912",
+  "result": "EXECUTION_ACCEPTED_DEVELOPMENT_ONLY",
+  "new_remote_model_calls": 0,
+  "original_input_archives_unchanged": true,
+  "bundle_manifest_matches": 2206,
+  "bundle_files_with_manifest": 2207,
+  "reference_source_files": 41,
+  "run_code_snapshots": {
+    "R4_smoke": 41,
+    "R4_recheck": 41
+  },
+  "original_tests": 65,
+  "independent_evaluator_tests": 19,
+  "primary_records": 384,
+  "repeat_records": 24,
+  "smoke_responses": 1,
+  "research_responses": 408,
+  "request_and_metadata_reconstruction": 408,
+  "independent_tool_and_answer_recomputation": 408,
+  "hard_budget_violations": 0,
+  "offline_model_grid_cells": 72,
+  "additional_posthoc_rule_trajectories": 96,
+  "posthoc_is_llm_results": false,
+  "repeated_audit_outputs_byte_identical": 15,
+  "paper_main_tables_overwritten": false,
+  "source_identity_proof": "hash and bytes within submitted/pinned archive, not provider attestation",
+  "runtime": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "os": "Linux"
+  },
+  "independent_human_peer_review": false,
+  "billing_verified": false,
+  "input_sha256": {
+    "fae81259-daf9-403f-a3c6-767c311f50df.zip": "9e9f04349535d2707cce2953b69cd9b36375030670c9b9c4403ff3e74fdad6f1",
+    "Research_Handoff_R4.zip": "bbf20090d0a586f8965479c65da7cf26e071955e03fd43bcb6aac19cbb678eb9"
+  },
+  "derived_csv_rounding_scope": "Only recomputed proxy_J_NOT_CURRENCY sum serialization <=1e-9; no raw evidence relaxed.",
+  "distributed_zip_fresh_tests": 19,
+  "distributed_zip_fresh_audit_pass": true,
+  "zip_sha256": "e1151c91af41571d4444375e762c69bdf1c6f77719556aa680d0e1187a66a8d2",
+  "zip_bytes": 119594
+}

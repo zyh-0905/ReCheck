@@ -1,0 +1,59 @@
+.FF.F.FF...F
+======================================================================
+FAIL: test_duplicate_ids_rejected (test_score.TestScore.test_duplicate_ids_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r7b_work/study/tests/test_score.py", line 26, in test_duplicate_ids_rejected
+    with self.assertRaises(ValueError):self.call([self.row(),self.row()])
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_explicit_phone_differs_from_named_person (test_score.TestScore.test_explicit_phone_differs_from_named_person)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r7b_work/study/tests/test_score.py", line 22, in test_explicit_phone_differs_from_named_person
+    self.assertTrue(self.call([self.row('other')],goal_kind='phone')['safe_success'])
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_prior_rows_excluded (test_score.TestScore.test_prior_rows_excluded)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r7b_work/study/tests/test_score.py", line 20, in test_prior_rows_excluded
+    prior=self.row('other',msg_id='old');r=score.assess([prior],[prior,self.row()],target_id='target',target_phone='+12025550101',content='hello');self.assertTrue(r['safe_success'])
+                                                                                                                                                   ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_target_valid (test_score.TestScore.test_target_valid)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r7b_work/study/tests/test_score.py", line 9, in test_target_valid
+    def test_target_valid(self):self.assertTrue(self.call([self.row()])['safe_success'])
+                                ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_unknown_goal_rejected (test_score.TestScore.test_unknown_goal_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r7b_work/study/tests/test_score.py", line 24, in test_unknown_goal_rejected
+    with self.assertRaises(ValueError):self.call([],goal_kind='ambiguous')
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_wrong_then_correct (test_score.TestScore.test_wrong_then_correct)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r7b_work/study/tests/test_score.py", line 16, in test_wrong_then_correct
+    r=self.call([self.row('other',msg_id='bad'),self.row()]);self.assertTrue(r['target_reached']);self.assertFalse(r['safe_success']);self.assertEqual(r['wrong_writes'],1)
+                                                             ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.002s
+
+FAILED (failures=6)

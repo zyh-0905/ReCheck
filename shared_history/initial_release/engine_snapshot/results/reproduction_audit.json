@@ -1,0 +1,90 @@
+{
+  "passed": true,
+  "timestamp_utc": "2026-09-12T05:59:24.605347+00:00",
+  "scope": "Full same-environment deterministic replication, completed in resumable batches. NOT independent review or new samples.",
+  "checks": {
+    "recheck_development.csv": {
+      "rows": 378,
+      "scientific_columns": [
+        "hazard",
+        "method",
+        "objective",
+        "parameter",
+        "price",
+        "rho"
+      ],
+      "match": true,
+      "excluded_columns": []
+    },
+    "recheck_main.csv": {
+      "rows": 9216,
+      "scientific_columns": [
+        "hazard",
+        "method",
+        "objective",
+        "price",
+        "probes_per_task",
+        "rho",
+        "seed",
+        "stream_id",
+        "success",
+        "task_loss",
+        "tasks"
+      ],
+      "match": true,
+      "excluded_columns": [
+        "cpu_ms"
+      ]
+    },
+    "recheck_boundaries.csv": {
+      "rows": 384,
+      "scientific_columns": [
+        "condition",
+        "method",
+        "objective",
+        "probes_per_task",
+        "seed",
+        "success",
+        "task_loss",
+        "tasks"
+      ],
+      "match": true,
+      "excluded_columns": [
+        "cpu_ms"
+      ]
+    },
+    "recheck_sql.csv": {
+      "rows": 128,
+      "scientific_columns": [
+        "method",
+        "objective",
+        "probes_per_task",
+        "seed",
+        "sql_calls",
+        "success",
+        "task_loss",
+        "unchanged_schema"
+      ],
+      "match": true,
+      "excluded_columns": [
+        "cpu_ms"
+      ]
+    },
+    "recheck_traces.jsonl.gz": {
+      "match": true,
+      "decompressed_sha256": "fa7a688d028438f5895b984df4e1cf681608007df428518b04c178a4323a5347"
+    },
+    "repairlens_main.csv": {
+      "match": true,
+      "rows": 1320,
+      "method": "per-instance paired scientific columns and exact replay event ledgers; runtime excluded"
+    },
+    "repairlens_support_stress.csv": {
+      "match": true,
+      "rows": 120,
+      "method": "per-instance paired scientific columns; runtime excluded"
+    }
+  },
+  "timing_policy": "Published first-run timings retained; repetition times may differ.",
+  "execution_note": "Two monolithic attempts hit the tool wall-time limit. Complete ReCheck files were verified; RepairLens and stress cases were then verified in checkpointed batches."
+}

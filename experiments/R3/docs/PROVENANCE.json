@@ -1,0 +1,43 @@
+{
+  "prior_package_sha256": "f799eed31472fde3d426ee9ce78348d87b94595c95b3d32fa17bf4867892ab5d",
+  "reused": [
+    {
+      "r3_path": "pilot/common.py",
+      "r2_path": "pilot/common.py",
+      "sha256": "cd23f107baa5313baa2308cacedb3c64ee5ed57e16f811b0707d722fc9e90b1e",
+      "byte_identical_to_r2": true
+    },
+    {
+      "r3_path": "pilot/client.py",
+      "r2_path": "pilot/client.py",
+      "sha256": "2ca3fa9ee567762efa403c8052017f45d64adfc74a8e0da91355cc06530a92ae",
+      "byte_identical_to_r2": true
+    },
+    {
+      "r3_path": "pilot/recheck.py",
+      "r2_path": "pilot/recheck.py",
+      "sha256": "06f235dd60f371b6280ae164981a9570811c292c3e16df2221fafae55068d5e8",
+      "byte_identical_to_r2": true
+    },
+    {
+      "r3_path": "vendor/recheck_core.py",
+      "r2_path": "vendor/recheck_core.py",
+      "sha256": "df2a275361d74155007335a84299331a1780b13a73ab9e5abd5f078fe42d4310",
+      "byte_identical_to_r2": true
+    },
+    {
+      "r3_path": "r3lib/accounting.py",
+      "r2_path": "r2lib/accounting.py",
+      "sha256": "d89f82f41e0d82ef3474bd8495f1b5277ac7acd4d2cd4f529eebdf1a3ea644f2",
+      "byte_identical_to_r2": true
+    },
+    {
+      "r3_path": "r3lib/audit.py",
+      "r2_path": "r2lib/audit.py",
+      "sha256": "57183514e695b144c2309905be2db1c692be5a3c9a99a2fd82ca857470e60392",
+      "byte_identical_to_r2": true
+    }
+  ],
+  "legacy_helpers": "pilot modules retained as dependencies; only r3.py is the authorised experiment CLI. Older run functions are not invoked.",
+  "historical_response_regression": "R2 records remain unchanged, not rescored as R3 successes."
+}

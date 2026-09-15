@@ -1,0 +1,20 @@
+{
+  "status": "Ready for USER-RUN endpoint smoke and exploratory pilots; no live endpoint was tested here.",
+  "tests": 42,
+  "external_model_calls": 0,
+  "known_limits": [
+    "Chat Completions non-streaming only",
+    "Synthetic controlled ReCheck adapter with given model; not native external baselines",
+    "RepairLens readiness is not the RepairLens algorithm",
+    "Four independent units are not a confirmatory sample",
+    "Local spend guard is not a provider invoice hard cap",
+    "Same-assistant verification, not independent peer review"
+  ],
+  "verified": [
+    "default ReCheck 260 logical calls and 128 task-method records through local HTTP fixture",
+    "default repair-readiness produces 12 method-case records",
+    "resume issues no additional HTTP calls for completed run",
+    "every allowlisted export file hash verified",
+    "API headers, local config and environment files excluded"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "mechanical_pass": true,
+  "execution_complete": true,
+  "status": "completed",
+  "recorded_requests": 139,
+  "reconstructed_requests": 139,
+  "primary_episodes": 32,
+  "repeat_episodes": 4,
+  "native_tool_events": 124,
+  "completed_native_tool_events": 124,
+  "partial_native_tool_events": 0,
+  "environment_operations": 44,
+  "verified_partial_prefixes": [],
+  "retained_response_failures": [],
+  "new_remote_model_calls": 0,
+  "currency_cost": "UNKNOWN",
+  "uncompleted_are_not_zero_scores": true,
+  "scientific_superiority_claim": false,
+  "automatic_next_batch_authorized": false,
+  "limitation": "Same-assistant saved-response and native-engine replay, not independent human review or model-weight authentication."
+}

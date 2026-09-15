@@ -1,0 +1,10 @@
+{
+  "turn": 2,
+  "logical_id": "primary_c00_inherited/turn_02",
+  "request_sha256": "9de0614517529e48579f5b9233a796afb7ae56ea3ba30865388a20fe0d631756",
+  "response_text": "{\"done\":\"Sent the message to Fredrik Thordendal at +12453344098 exactly once: \\\"The rehearsal has moved to 18:30. Please confirm when you can.\\\" No settings or other entries were changed.\"}",
+  "kind": "done",
+  "action": {
+    "done": "Sent the message to Fredrik Thordendal at +12453344098 exactly once: \"The rehearsal has moved to 18:30. Please confirm when you can.\" No settings or other entries were changed."
+  }
+}

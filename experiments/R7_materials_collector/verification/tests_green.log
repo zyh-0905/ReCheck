@@ -1,0 +1,29 @@
+test_archive_duplicate_rejected (test_collect.CollectorTests.test_archive_duplicate_rejected) ... ok
+test_archive_traversal_rejected (test_collect.CollectorTests.test_archive_traversal_rejected) ... ok
+test_bad_file_name_rejected (test_collect.CollectorTests.test_bad_file_name_rejected) ... ok
+test_bundle_only_whitelist (test_collect.CollectorTests.test_bundle_only_whitelist) ... ok
+test_cp311_linux_compatible (test_collect.CollectorTests.test_cp311_linux_compatible) ... ok
+test_cp38_abi3_linux_compatible (test_collect.CollectorTests.test_cp38_abi3_linux_compatible) ... ok
+test_credentials_rejected (test_collect.CollectorTests.test_credentials_rejected) ... ok
+test_error_redacts_query_and_paths (test_collect.CollectorTests.test_error_redacts_query_and_paths) ... ok
+test_http_rejected (test_collect.CollectorTests.test_http_rejected) ... ok
+test_https_allowlist (test_collect.CollectorTests.test_https_allowlist) ... ok
+test_loopback_rejected (test_collect.CollectorTests.test_loopback_rejected) ... ok
+test_modified_source_tree_rejected (test_collect.CollectorTests.test_modified_source_tree_rejected) ... ok
+test_pure_wheel_compatible (test_collect.CollectorTests.test_pure_wheel_compatible) ... ok
+test_query_only_permitted_for_release_redirect (test_collect.CollectorTests.test_query_only_permitted_for_release_redirect) ... ok
+test_refuse_overwrite (test_collect.CollectorTests.test_refuse_overwrite) ... ok
+test_release_name_version_binding (test_collect.CollectorTests.test_release_name_version_binding) ... ok
+test_sha256_pass (test_collect.CollectorTests.test_sha256_pass) ... ok
+test_sha256_rejected (test_collect.CollectorTests.test_sha256_rejected) ... ok
+test_source_fallback_explicit (test_collect.CollectorTests.test_source_fallback_explicit) ... ok
+test_source_tree_hash (test_collect.CollectorTests.test_source_tree_hash) ... ok
+test_suffix_domain_rejected (test_collect.CollectorTests.test_suffix_domain_rejected) ... ok
+test_wrong_platform_rejected (test_collect.CollectorTests.test_wrong_platform_rejected) ... ok
+test_wrong_python_rejected (test_collect.CollectorTests.test_wrong_python_rejected) ... ok
+test_yanked_release_file_excluded (test_collect.CollectorTests.test_yanked_release_file_excluded) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 0.006s
+
+OK

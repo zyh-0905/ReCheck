@@ -1,0 +1,28 @@
+{
+  "turn": 0,
+  "logical_id": "primary_c09_inherited/turn_00",
+  "request_sha256": "e3d99a35601fe449cead761b58b6b930c4a250a85f61ae40eeba2d0852f1254e",
+  "response_text": "{\"tool\":\"search_reminder\",\"arguments\":{\"content\":\"Submit the cobalt expense report\"}}",
+  "kind": "tool",
+  "action": {
+    "tool": "search_reminder",
+    "arguments": {
+      "content": "Submit the cobalt expense report"
+    }
+  },
+  "observation": {
+    "ok": true,
+    "value": [
+      {
+        "reminder_id": "54f20be9-eac3-5e76-8e57-724e48d3d477",
+        "content": "Submit the cobalt expense report",
+        "creation_timestamp": 1789283893.170197,
+        "reminder_timestamp": 1800000000.0,
+        "latitude": 37.3237926356735,
+        "longitude": -122.03961770355414
+      }
+    ],
+    "error": null
+  },
+  "event_index": 0
+}

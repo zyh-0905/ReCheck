@@ -1,0 +1,29 @@
+{
+  "main_without_smoke_blocked": true,
+  "pass": true,
+  "main_fixture_calls": 484,
+  "smoke_fixture_calls": 1,
+  "total_local_http_fixture_calls": 485,
+  "new_remote_llm_calls": 0,
+  "records": 240,
+  "replay": {
+    "pass": true,
+    "applicable": true,
+    "new_model_calls": 0,
+    "request_bodies_checked": 484,
+    "completed_calls_consumed": 484,
+    "stop_reason": null,
+    "request_mismatches": [],
+    "artifact_mismatches": [],
+    "unconsumed_calls": [],
+    "note": "Local reconstruction only, not provider identity or invoice authentication."
+  },
+  "bundle": {
+    "pass": true,
+    "entries": 2324
+  },
+  "source_snapshot_mismatches": [],
+  "resume_without_resampling": true,
+  "evidence_label": "SOFTWARE_TEST_NOT_RESEARCH",
+  "all_prices_unknown": true
+}

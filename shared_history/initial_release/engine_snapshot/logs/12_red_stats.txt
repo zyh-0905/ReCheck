@@ -1,0 +1,28 @@
+FFF                                                                      [100%]
+=================================== FAILURES ===================================
+__________________ test_paired_bootstrap_constant_difference ___________________
+
+    def test_paired_bootstrap_constant_difference():
+>       from src.common.stats import paired_interval
+E       ModuleNotFoundError: No module named 'src.common.stats'
+
+tests/test_stats.py:6: ModuleNotFoundError
+_______________________ test_binomial_zero_failure_bound _______________________
+
+    def test_binomial_zero_failure_bound():
+>       from src.common.stats import zero_failure_upper
+E       ModuleNotFoundError: No module named 'src.common.stats'
+
+tests/test_stats.py:14: ModuleNotFoundError
+________________________ test_nonfinite_metric_rejected ________________________
+
+    def test_nonfinite_metric_rejected():
+>       from src.common.stats import paired_interval
+E       ModuleNotFoundError: No module named 'src.common.stats'
+
+tests/test_stats.py:19: ModuleNotFoundError
+=========================== short test summary info ============================
+FAILED tests/test_stats.py::test_paired_bootstrap_constant_difference - ModuleNotFoundError: No module named 'src.common.stats'
+FAILED tests/test_stats.py::test_binomial_zero_failure_bound - ModuleNotFoundError: No module named 'src.common.stats'
+FAILED tests/test_stats.py::test_nonfinite_metric_rejected - ModuleNotFoundError: No module named 'src.common.stats'
+3 failed in 0.05s

@@ -1,0 +1,17 @@
+{
+  "turn": 1,
+  "logical_id": "primary_c12_resolve_rule/turn_01",
+  "request_sha256": "e2d07cabf361c06e294555144e370d8b08a8dddb1e28fe9105dd3dbaf094d311",
+  "response_text": "{\"tool\":\"get_cellular_service_status\",\"arguments\":{}}",
+  "kind": "tool",
+  "action": {
+    "tool": "get_cellular_service_status",
+    "arguments": {}
+  },
+  "observation": {
+    "ok": true,
+    "value": false,
+    "error": null
+  },
+  "event_index": 1
+}

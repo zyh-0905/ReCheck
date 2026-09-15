@@ -1,0 +1,42 @@
+test_bool_is_not_number (test_core.TestCore.test_bool_is_not_number) ... ok
+test_chat_response (test_core.TestCore.test_chat_response) ... ok
+test_config_rejects_embedded_key (test_core.TestCore.test_config_rejects_embedded_key) ... ok
+test_config_rejects_token_parameter_override (test_core.TestCore.test_config_rejects_token_parameter_override) ... ok
+test_empty_content_preserved (test_core.TestCore.test_empty_content_preserved) ... ok
+test_implementation_exists (test_core.TestCore.test_implementation_exists) ... ok
+test_json_allows_single_fence (test_core.TestCore.test_json_allows_single_fence) ... ok
+test_json_rejects_duplicates (test_core.TestCore.test_json_rejects_duplicates) ... ok
+test_json_rejects_explanation (test_core.TestCore.test_json_rejects_explanation) ... ok
+test_json_rejects_nan (test_core.TestCore.test_json_rejects_nan) ... ok
+test_loopback_allowed (test_core.TestCore.test_loopback_allowed) ... ok
+test_max_completion_tokens (test_core.TestCore.test_max_completion_tokens) ... ok
+test_missing_prices_not_zero (test_core.TestCore.test_missing_prices_not_zero) ... ok
+test_pricing_cached_tokens (test_core.TestCore.test_pricing_cached_tokens) ... ok
+test_request_omits_unspecified_temperature (test_core.TestCore.test_request_omits_unspecified_temperature) ... ok
+test_secret_redaction_recursive (test_core.TestCore.test_secret_redaction_recursive) ... ok
+test_unsafe_url (test_core.TestCore.test_unsafe_url) ... ok
+test_readiness_module_exists (test_studies.TestStudiesRed.test_readiness_module_exists) ... FAIL
+test_recheck_module_exists (test_studies.TestStudiesRed.test_recheck_module_exists) ... FAIL
+
+======================================================================
+FAIL: test_readiness_module_exists (test_studies.TestStudiesRed.test_readiness_module_exists)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/LLM_Pilot_Kit/tests/test_studies.py", line 7, in test_readiness_module_exists
+    self.assertIsNotNone(importlib.util.find_spec('pilot.readiness'))
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: unexpectedly None
+
+======================================================================
+FAIL: test_recheck_module_exists (test_studies.TestStudiesRed.test_recheck_module_exists)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/LLM_Pilot_Kit/tests/test_studies.py", line 5, in test_recheck_module_exists
+    self.assertIsNotNone(importlib.util.find_spec('pilot.recheck'))
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: unexpectedly None
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.002s
+
+FAILED (failures=2)

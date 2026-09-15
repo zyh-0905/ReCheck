@@ -1,0 +1,12 @@
+{
+  "new_model_calls": 0,
+  "label": "PRIOR_R1_READINESS_NOT_REPAIRLENS_ALGORITHM",
+  "pricing_note": "Frozen R1 configured flat USD estimates used only for like-for-like ratios, NOT today's prices or actual invoice.",
+  "local_patch_call_ratio": 0.8333333333333334,
+  "local_patch_cost_ratio": 2.22372528616025,
+  "local_patch_latency_ratio": 1.3363477748004648,
+  "selection_cost_to_all_generation": 1.721297259798821,
+  "selection_cost_vs_saved_generation": 3.459393516904846,
+  "decision": "R2 pauses new RepairLens API trials. Need net-cost policy with a direct-recompute fallback.",
+  "not_a_claim": "No current fee, hypothetical speedup, or RepairLens-algorithm superiority claimed."
+}

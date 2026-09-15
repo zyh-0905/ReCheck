@@ -1,0 +1,49 @@
+{
+  "assistant_message": {
+    "content": "Let me verify the change took effect.",
+    "reasoning_content": "Now let me verify by searching the reminder again.",
+    "role": "assistant",
+    "tool_calls": [
+      {
+        "function": {
+          "arguments": "{\"reminder_id\": \"da2b856e-9390-511f-bcbe-7005f72cbf5e\"}",
+          "name": "search_reminder"
+        },
+        "id": "call_00_d37mRUVHWmeZFC7GPvxm2865",
+        "index": 0,
+        "type": "function"
+      }
+    ]
+  },
+  "decoded_calls": [
+    {
+      "arguments": {
+        "reminder_id": "da2b856e-9390-511f-bcbe-7005f72cbf5e"
+      },
+      "id": "call_00_d37mRUVHWmeZFC7GPvxm2865",
+      "name": "search_reminder"
+    }
+  ],
+  "event_end": 7,
+  "event_start": 6,
+  "executions": [
+    {
+      "batch_index": 0,
+      "event_end": 7,
+      "event_start": 6,
+      "outer_tool_count": 5,
+      "tool_call_id": "call_00_d37mRUVHWmeZFC7GPvxm2865"
+    }
+  ],
+  "kind": "tools",
+  "logical_id": "primary_n09_inherited/turn_03",
+  "request_sha256": "741313af54b5f9be025aad4c3b6ace940488551d44c13b49d187551897dd5132",
+  "tool_messages": [
+    {
+      "content": "{\"error\":null,\"ok\":true,\"value\":[{\"content\":\"Review the indigo rehearsal plan\",\"creation_timestamp\":1789356422.046298,\"latitude\":null,\"longitude\":null,\"reminder_id\":\"da2b856e-9390-511f-bcbe-7005f72cbf5e\",\"reminder_timestamp\":1800118800.0}]}",
+      "role": "tool",
+      "tool_call_id": "call_00_d37mRUVHWmeZFC7GPvxm2865"
+    }
+  ],
+  "turn": 3
+}

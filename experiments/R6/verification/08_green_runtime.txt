@@ -1,0 +1,13 @@
+test_gold_does_not_change_selected_action (tests.test_runtime.RuntimeTests.test_gold_does_not_change_selected_action) ... ok
+test_immutable_write (tests.test_runtime.RuntimeTests.test_immutable_write) ... ok
+test_network_blocked (tests.test_runtime.RuntimeTests.test_network_blocked) ... ok
+test_only_chosen_model_predicts_each_policy (tests.test_runtime.RuntimeTests.test_only_chosen_model_predicts_each_policy) ... ok
+test_real_budget_and_outputs (tests.test_runtime.RuntimeTests.test_real_budget_and_outputs) ... ok
+test_reference_mean_not_money (tests.test_runtime.RuntimeTests.test_reference_mean_not_money) ... ok
+test_source_tamper_detected (tests.test_runtime.RuntimeTests.test_source_tamper_detected) ... ok
+test_strict_state_has_no_true_mode_field (tests.test_runtime.RuntimeTests.test_strict_state_has_no_true_mode_field) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.085s
+
+OK

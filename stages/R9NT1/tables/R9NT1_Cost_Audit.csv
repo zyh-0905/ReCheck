@@ -1,0 +1,4 @@
+phase,requests,prompt_tokens,completion_tokens,total_tokens,reasoning_tokens,cached_input_tokens,uncached_input_tokens,latency_seconds,currency_cost
+primary,124,367260,14894,382154,5083,337152,30108,151.81370095419697,UNKNOWN
+repeat,15,45270,1997,47267,569,42240,3030,17.723832831718028,UNKNOWN
+all,139,412530,16891,429421,5652,379392,33138,169.537533785915,UNKNOWN

@@ -1,0 +1,15 @@
+test_legal_old_value_is_stale_not_fresh (test_r2_audit.AuditTests.test_legal_old_value_is_stale_not_fresh) ... FAIL
+
+======================================================================
+FAIL: test_legal_old_value_is_stale_not_fresh (test_r2_audit.AuditTests.test_legal_old_value_is_stale_not_fresh)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_audit.py", line 20, in test_legal_old_value_is_stale_not_fresh
+    self.assertEqual(e["amount_status"],"stale");self.assertFalse(e.get("reference_executor_correct",True))
+                                                 ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: True is not false
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (failures=1)

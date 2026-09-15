@@ -1,0 +1,1 @@
+Compile main.tex twice with pdflatex. This is a development manuscript, not submission-ready. The inherited spconf.sty is not byte-authenticated against a current official distribution. Original notice retained. Human authorship and final submission review pending. No font files distributed.

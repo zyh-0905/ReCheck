@@ -1,0 +1,26 @@
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 720, in _warm_feature_flows
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 704, in _warm_collaboration_flows
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/generated/interface/models.py", line 32317, in hydrate_crdt_from_proto
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/remote.py", line 749, in __call__
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/client.py", line 150, in call
+artifact_tool.rpc.client.RemoteError: hydrateCrdtFromProto requires an empty collaborative document.
+test_calibration_diagonal_and_shape (test_data.DataAndCalibrationTests.test_calibration_diagonal_and_shape) ... ok
+test_catalog_deterministic (test_data.DataAndCalibrationTests.test_catalog_deterministic) ... ok
+test_directional_pagination_loss (test_data.DataAndCalibrationTests.test_directional_pagination_loss) ... ok
+test_empty_calibration_rejected (test_data.DataAndCalibrationTests.test_empty_calibration_rejected) ... ok
+test_evaluation_seeds_disjoint (test_data.DataAndCalibrationTests.test_evaluation_seeds_disjoint) ... ok
+test_invalid_modes (test_data.DataAndCalibrationTests.test_invalid_modes) ... ok
+test_modes_roundtrip (test_data.DataAndCalibrationTests.test_modes_roundtrip) ... ok
+test_predictor_does_not_receive_test_rows (test_data.DataAndCalibrationTests.test_predictor_does_not_receive_test_rows) ... ok
+test_profiles (test_data.DataAndCalibrationTests.test_profiles) ... ok
+test_single_effect_ablation_bounds (test_data.DataAndCalibrationTests.test_single_effect_ablation_bounds) ... ok
+test_task_public_no_mode (test_data.DataAndCalibrationTests.test_task_public_no_mode) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.046s
+
+OK

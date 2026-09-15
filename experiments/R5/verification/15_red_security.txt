@@ -1,0 +1,46 @@
+test_archive_rejects_bad_paths (test_runtime.ExecutionTests.test_archive_rejects_bad_paths) ... ok
+test_budget_and_correct_replay (test_runtime.ExecutionTests.test_budget_and_correct_replay) ... ok
+test_independent_evaluator_all_modes (test_runtime.ExecutionTests.test_independent_evaluator_all_modes) ... ok
+test_lock_refuses_existing (test_runtime.ExecutionTests.test_lock_refuses_existing) ... ok
+test_no_network_guard (test_runtime.ExecutionTests.test_no_network_guard) ... ok
+test_run_has_no_test_scores (test_runtime.ExecutionTests.test_run_has_no_test_scores) ... ok
+test_same_world_menu_pairing (test_runtime.ExecutionTests.test_same_world_menu_pairing) ... ok
+test_source_hash_changed_blocks (test_runtime.ExecutionTests.test_source_hash_changed_blocks) ... ok
+test_write_once (test_runtime.ExecutionTests.test_write_once) ... ok
+test_current_hidden_rows_do_not_change_policy (test_runtime.IsolationRegressionTests.test_current_hidden_rows_do_not_change_policy) ... ok
+test_export_excludes_unregistered_local_config (test_runtime.IsolationRegressionTests.test_export_excludes_unregistered_local_config) ... FAIL
+test_future_tape_not_read_at_first_choice (test_runtime.IsolationRegressionTests.test_future_tape_not_read_at_first_choice) ... ok
+test_reject_negative_or_nonfinite_cost (test_runtime.IsolationRegressionTests.test_reject_negative_or_nonfinite_cost) ... FAIL
+test_sensitive_record_blocks_export (test_runtime.IsolationRegressionTests.test_sensitive_record_blocks_export) ... FAIL
+
+======================================================================
+FAIL: test_export_excludes_unregistered_local_config (test_runtime.IsolationRegressionTests.test_export_excludes_unregistered_local_config)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r5_work/R5_Research_Kit/tests/test_runtime.py", line 98, in test_export_excludes_unregistered_local_config
+    self.assertNotIn('kit_source/config.local.json',z.namelist())
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'kit_source/config.local.json' unexpectedly found in ['kit_source/a.py', 'kit_source/config.local.json', 'kit_source/SOURCE_MANIFEST.json', 'BUNDLE_MANIFEST.json']
+
+======================================================================
+FAIL: test_reject_negative_or_nonfinite_cost (test_runtime.IsolationRegressionTests.test_reject_negative_or_nonfinite_cost)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r5_work/R5_Research_Kit/tests/test_runtime.py", line 111, in test_reject_negative_or_nonfinite_cost
+    with self.assertRaises(ValueError):
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_sensitive_record_blocks_export (test_runtime.IsolationRegressionTests.test_sensitive_record_blocks_export)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r5_work/R5_Research_Kit/tests/test_runtime.py", line 105, in test_sensitive_record_blocks_export
+    with self.assertRaises(ValueError):storage.bundle(p,p/'out.zip')
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.176s
+
+FAILED (failures=3)

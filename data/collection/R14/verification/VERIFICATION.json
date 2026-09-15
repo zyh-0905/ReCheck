@@ -1,0 +1,22 @@
+{
+  "stage": "R14_PUBLIC_JSON_TRANSFER_PREPARED_NOT_RESEARCH_COMPLETE",
+  "fixed_revision": "593e686f4d0c2e9fcae5ae664c16a7687907cf97",
+  "planned_trial_jsons": 96,
+  "planned_aggregate_jsons": 12,
+  "planned_dataset_cards": 1,
+  "real_public_data_acquired_in_research_container": false,
+  "container_dns_attempt": "URLError: Temporary failure in name resolution",
+  "download_tool_attempt": "failed; no local raw JSON file established",
+  "tests_run": 16,
+  "tests_failures": 0,
+  "tests_errors": 0,
+  "full_collection_test": "109 synthetic software fixture files; not research observations",
+  "new_remote_model_calls": 0,
+  "new_research_episodes": 0,
+  "python": "3.13.5",
+  "platform": "Linux",
+  "windows_macos_live_validation": false,
+  "user_action": "Public-file download only, then return the ZIP; no separate audit run",
+  "existing_research_data_changed": false,
+  "sha256_scope": "Original bytes locally hashed; no independent provider signature claim"
+}

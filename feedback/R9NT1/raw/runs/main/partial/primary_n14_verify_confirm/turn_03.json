@@ -1,0 +1,73 @@
+{
+  "assistant_message": {
+    "content": "Let me verify the outcome.",
+    "reasoning_content": "Now verify by reading wifi status.",
+    "role": "assistant",
+    "tool_calls": [
+      {
+        "function": {
+          "arguments": "{}",
+          "name": "get_wifi_status"
+        },
+        "id": "call_00_9dx305vEBxW4cUX9wrDZ4184",
+        "index": 0,
+        "type": "function"
+      },
+      {
+        "function": {
+          "arguments": "{}",
+          "name": "get_low_battery_mode_status"
+        },
+        "id": "call_01_7CLbStvF6RALAEpPnoHI9693",
+        "index": 1,
+        "type": "function"
+      }
+    ]
+  },
+  "decoded_calls": [
+    {
+      "arguments": {},
+      "id": "call_00_9dx305vEBxW4cUX9wrDZ4184",
+      "name": "get_wifi_status"
+    },
+    {
+      "arguments": {},
+      "id": "call_01_7CLbStvF6RALAEpPnoHI9693",
+      "name": "get_low_battery_mode_status"
+    }
+  ],
+  "event_end": 7,
+  "event_start": 5,
+  "executions": [
+    {
+      "batch_index": 0,
+      "event_end": 6,
+      "event_start": 5,
+      "outer_tool_count": 5,
+      "tool_call_id": "call_00_9dx305vEBxW4cUX9wrDZ4184"
+    },
+    {
+      "batch_index": 1,
+      "event_end": 7,
+      "event_start": 6,
+      "outer_tool_count": 6,
+      "tool_call_id": "call_01_7CLbStvF6RALAEpPnoHI9693"
+    }
+  ],
+  "kind": "tools",
+  "logical_id": "primary_n14_verify_confirm/turn_03",
+  "request_sha256": "9ca17779798708b4ed94a4f726358a410d885c33b0bc620fc7f7d3b31e5a9aba",
+  "tool_messages": [
+    {
+      "content": "{\"error\":null,\"ok\":true,\"value\":true}",
+      "role": "tool",
+      "tool_call_id": "call_00_9dx305vEBxW4cUX9wrDZ4184"
+    },
+    {
+      "content": "{\"error\":null,\"ok\":true,\"value\":false}",
+      "role": "tool",
+      "tool_call_id": "call_01_7CLbStvF6RALAEpPnoHI9693"
+    }
+  ],
+  "turn": 3
+}

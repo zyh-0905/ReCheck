@@ -1,0 +1,49 @@
+{
+  "assistant_message": {
+    "content": "Let me verify the update.",
+    "reasoning_content": "Let me verify the change.",
+    "role": "assistant",
+    "tool_calls": [
+      {
+        "function": {
+          "arguments": "{\"reminder_id\": \"54f20be9-eac3-5e76-8e57-724e48d3d477\"}",
+          "name": "search_reminder"
+        },
+        "id": "call_00_87fRjiJHAhcDhDYdxYZF3584",
+        "index": 0,
+        "type": "function"
+      }
+    ]
+  },
+  "decoded_calls": [
+    {
+      "arguments": {
+        "reminder_id": "54f20be9-eac3-5e76-8e57-724e48d3d477"
+      },
+      "id": "call_00_87fRjiJHAhcDhDYdxYZF3584",
+      "name": "search_reminder"
+    }
+  ],
+  "event_end": 5,
+  "event_start": 4,
+  "executions": [
+    {
+      "batch_index": 0,
+      "event_end": 5,
+      "event_start": 4,
+      "outer_tool_count": 3,
+      "tool_call_id": "call_00_87fRjiJHAhcDhDYdxYZF3584"
+    }
+  ],
+  "kind": "tools",
+  "logical_id": "repeat_n10_inherited/turn_02",
+  "request_sha256": "9c6c0252bff16299e0870d29b6492152b9d9cfd9a842ae2bf687403a64f87f55",
+  "tool_messages": [
+    {
+      "content": "{\"error\":null,\"ok\":true,\"value\":[{\"content\":\"Review the indigo rehearsal plan\",\"creation_timestamp\":1789356584.767704,\"latitude\":37.3237926356735,\"longitude\":-122.03961770355414,\"reminder_id\":\"54f20be9-eac3-5e76-8e57-724e48d3d477\",\"reminder_timestamp\":1800118800.0}]}",
+      "role": "tool",
+      "tool_call_id": "call_00_87fRjiJHAhcDhDYdxYZF3584"
+    }
+  ],
+  "turn": 2
+}

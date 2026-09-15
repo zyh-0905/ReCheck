@@ -1,0 +1,10 @@
+{
+  "interrupted_run_status": "unknown",
+  "reason": "unknown",
+  "billing_status": "not_provided",
+  "other_calls_in_billing_window": "unknown",
+  "currency": "unknown",
+  "billing_time_window": "unknown",
+  "redactions": "none_declared",
+  "notes": "unknown"
+}

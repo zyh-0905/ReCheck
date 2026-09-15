@@ -1,0 +1,100 @@
+{
+  "scope": "R16 complete working-draft source; not submission certification",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 3224,
+      "sha256": "276297444ffa73bdd25454f573fda5f570ace10d8b2487ee643cb8b63c68a036"
+    },
+    {
+      "path": "abstract.tex",
+      "bytes": 1059,
+      "sha256": "c5d0beaa4463ee37bb53a597ef6d91092da8985bea4b6a3202d54f1d77951401"
+    },
+    {
+      "path": "author_handoff/AUTHOR_REVIEW_RECORD.json",
+      "bytes": 455,
+      "sha256": "1fdd748d8c90d2d1f59d705d2b8f95dbe3616bc5334a41c33de58ffea1e96ce8"
+    },
+    {
+      "path": "author_handoff/CLAIM_EVIDENCE_MAP_ZH.md",
+      "bytes": 2244,
+      "sha256": "8d22ae4b91986d627989e58b25f29bda7b9e461cb62c05f92dd1b048a2b46286"
+    },
+    {
+      "path": "author_handoff/FINALIZATION_ZH.md",
+      "bytes": 2012,
+      "sha256": "492215b62ce453e087a6b27b33accf2e3f63561bce7a579256d75bf9f037c8a4"
+    },
+    {
+      "path": "author_handoff/WORK_PLAN_ZH.md",
+      "bytes": 1357,
+      "sha256": "4fab25fa5af42e83864a768f2992715e9a02952dcc1df8338eddbb3724953988"
+    },
+    {
+      "path": "author_manuscript.tex",
+      "bytes": 2360,
+      "sha256": "ef695c038adcc6e37fa1a5e5b48fd74c5ae4e858e5817bdcab92cecdd7a61e08"
+    },
+    {
+      "path": "authors.tex",
+      "bytes": 286,
+      "sha256": "d7cd6bb14fc4b98d82a7edf2dfd0c40e81eaef9864194454b990715610641d83"
+    },
+    {
+      "path": "build.py",
+      "bytes": 665,
+      "sha256": "4b24d609131f3c46df8ad08e8a25d1a2705de05a3887b936ff31a545e8b44135"
+    },
+    {
+      "path": "figures/model_counts.pdf",
+      "bytes": 13390,
+      "sha256": "f170b0275a406af233ce158e1c18a70bdbf2b98e56abe4c02349aaed9091fe7f"
+    },
+    {
+      "path": "figures/model_counts.png",
+      "bytes": 41259,
+      "sha256": "56d87d2c4c62ea57d226690196eafc05b0025777b30a5f4ed5f3884611fcc0de"
+    },
+    {
+      "path": "figures/model_counts.svg",
+      "bytes": 34240,
+      "sha256": "b23fef6ad3df0050f451b3fb24d4e0313a0044c4c5f96696398988abb5fd244b"
+    },
+    {
+      "path": "main.tex",
+      "bytes": 17015,
+      "sha256": "1ff94a19519a3329911b4d59b5141544746306d9fc92a5060885a8401028a0e0"
+    },
+    {
+      "path": "references.bib",
+      "bytes": 2751,
+      "sha256": "3e49d3a9284e3347891eac2e6b9d2b083ebaf26db64de912d471f61ab10262a3"
+    },
+    {
+      "path": "references.tex",
+      "bytes": 1701,
+      "sha256": "43bd6b35589ab4c2b9a47f9682e0fa7ac4ce5cf98099be82bdc87c247a267918"
+    },
+    {
+      "path": "sources/SOURCE_REGISTER_ZH.md",
+      "bytes": 2982,
+      "sha256": "30bd25d6065113b959ac0c1208d88fa8a39f55d2701168509d5f4e1f60f40292"
+    },
+    {
+      "path": "spconf.sty",
+      "bytes": 4162,
+      "sha256": "178fb49b7a28516fec28492c3b415b21d752006a1d54b4e0a6e566a6b9d1b1fc"
+    },
+    {
+      "path": "tables/task_counts.tex",
+      "bytes": 657,
+      "sha256": "ada8248fd77498f21bbc42a79efd41c6d65bc2b813dbaa4a219e1b83f2ae9e2b"
+    },
+    {
+      "path": "tables/temporal_controls.tex",
+      "bytes": 633,
+      "sha256": "21f80e6eeedbf46a199df0c09ae671d6556f78892e2603187e2af591265cd7cf"
+    }
+  ]
+}

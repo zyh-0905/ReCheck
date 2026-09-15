@@ -1,0 +1,10 @@
+{
+  "turn": 3,
+  "logical_id": "primary_c01_stateless/turn_03",
+  "request_sha256": "15fae0eb3c5d857db69d4f3c651ec3c91220675eb9110c812164f3ac19f62994",
+  "response_text": "{\"done\":\"Sent the message to Fredrik Thordendal at +12453344098 exactly once with the specified content. Cellular service was already enabled, and no contacts, reminders, or settings were modified.\"}",
+  "kind": "done",
+  "action": {
+    "done": "Sent the message to Fredrik Thordendal at +12453344098 exactly once with the specified content. Cellular service was already enabled, and no contacts, reminders, or settings were modified."
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "turn": 0,
+  "logical_id": "primary_c01_stateless/turn_00",
+  "request_sha256": "c3a32705d9a13b0f73a12cc496fddc104baadb6d70162b81da8bd8e9b7c742bc",
+  "response_text": "{\"tool\":\"search_contacts\",\"arguments\":{\"name\":\"Fredrik Thordendal\"}}",
+  "kind": "tool",
+  "action": {
+    "tool": "search_contacts",
+    "arguments": {
+      "name": "Fredrik Thordendal"
+    }
+  },
+  "observation": {
+    "ok": true,
+    "value": [
+      {
+        "person_id": "9e137f06-916a-5310-8174-cf0b7e9f7054",
+        "name": "Fredrik Thordendal",
+        "phone_number": "+12453344098",
+        "relationship": "friend",
+        "is_self": false
+      }
+    ],
+    "error": null
+  },
+  "event_index": 0
+}

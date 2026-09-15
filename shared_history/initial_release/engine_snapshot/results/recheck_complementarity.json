@@ -1,0 +1,8 @@
+{
+  "prior": 0.5,
+  "none_loss": 0.5,
+  "one_probe_loss_plus_cost": 0.6,
+  "two_probe_loss_plus_cost": 0.2,
+  "single_probe_value_of_information": 0.0,
+  "conclusion": "Single-step independent scores cannot capture XOR complementarity."
+}

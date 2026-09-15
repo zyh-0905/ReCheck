@@ -1,0 +1,25 @@
+............................................................             [100%]
+=============================== warnings summary ===============================
+../../runtime/python/lib/python3.11/site-packages/holidays/__init__.py:32
+  /mnt/data/r7b_work/native/runtime/python/lib/python3.11/site-packages/holidays/__init__.py:32: FutureIncompatibilityWarning: 
+  
+  This is a future version incompatibility warning from Python Holidays library v0.51
+  to inform you about an upcoming change in our API versioning strategy that may affect your
+  project's dependencies. Starting from version 1.0 onwards, we will be following a loose form of
+  Semantic Versioning (SemVer) to provide clearer communication regarding any potential breaking
+  changes.
+  
+  This means that while we strive to maintain backward compatibility, there might be occasional
+  updates that introduce breaking changes to our API. To ensure the stability of your projects,
+  we highly recommend pinning the version of our API that you rely on. You can pin your current
+  holidays v0.x dependency (e.g., holidays==0.51) or limit it (e.g., holidays<1.0) in order to
+  avoid potentially unwanted upgrade to the version 1.0 when it's released (ETA 2024Q4 - 2025Q1).
+  
+  If you have any questions or concerns regarding this change, please don't hesitate to reach out
+  to us via https://github.com/vacanza/python-holidays/discussions/1800.
+  
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+-------- generated xml file: /mnt/data/r7b_work/logs/upstream_tests.xml --------
+60 passed, 1 warning in 1.71s

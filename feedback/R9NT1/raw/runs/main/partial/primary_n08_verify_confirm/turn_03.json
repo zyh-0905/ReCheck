@@ -1,0 +1,16 @@
+{
+  "assistant_message": {
+    "content": "Done. The reminder \"Review the indigo rehearsal plan\" (id 54f20be9-eac3-5e76-8e57-724e48d3d477) has been updated:\n\n- Reminder time: 1800118800 (previously 1800100000)\n- Text: unchanged — \"Review the indigo rehearsal plan\"\n- Location: unchanged — latitude 37.3237926356735, longitude -122.03961770355414\n\nNo other reminders, contacts, messages, or settings were touched.",
+    "reasoning_content": "",
+    "role": "assistant"
+  },
+  "decoded_calls": [],
+  "event_end": 3,
+  "event_start": 3,
+  "executions": [],
+  "kind": "final",
+  "logical_id": "primary_n08_verify_confirm/turn_03",
+  "request_sha256": "e44548b82a78b4fae9630801a8f5e5b58d5b8525d8e0a77d6b4406e4e82d2d68",
+  "tool_messages": [],
+  "turn": 3
+}

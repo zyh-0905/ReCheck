@@ -1,0 +1,13 @@
+{
+  "target_repository": "zyh-0905/ReCheck",
+  "visibility_observed": "public",
+  "local_archive_prepared": true,
+  "remote_push_completed": false,
+  "remote_commits_created": 0,
+  "github_write_attempt_http_status": 403,
+  "github_message": "Resource not accessible by integration",
+  "authenticated_login_observed": "Sorasky681",
+  "target_owner": "zyh-0905",
+  "push_permission_observed": false,
+  "note": "This describes this archival turn only. Update after a separately verified successful upload."
+}

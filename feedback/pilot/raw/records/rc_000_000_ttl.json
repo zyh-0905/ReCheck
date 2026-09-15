@@ -1,0 +1,64 @@
+{
+  "study": "recheck",
+  "stream": 0,
+  "step": 0,
+  "method": "ttl",
+  "task_type": 2,
+  "prefix_sha256": "1b805b5b7589497c28591f8e345c1c22f33cf76f0ce77e032f716b971c026c56",
+  "worker_view": {
+    "task": {
+      "request": "Return both the total amount of ALL orders in major currency units and the number of orders with integer event_time at most 10, including 10.",
+      "requested_fields": [
+        "total",
+        "count"
+      ],
+      "cutoff": 10
+    },
+    "memory": {
+      "amount_divisor": 100,
+      "endpoint_inclusive": true,
+      "checked_at": [
+        0,
+        0
+      ]
+    },
+    "current_round": 1,
+    "tool_descriptions": {
+      "sum_amount": "Returns raw sum; divide by the remembered amount_divisor to obtain major units.",
+      "count_before": "Counts rows relative to integer bound. Use remembered endpoint_inclusive. Desired cutoff is inclusive.",
+      "count_all": "Counts all orders. No argument."
+    },
+    "instructions": "Return {\"amount_divisor\":1 or 100 or null,\"time_bound\":integer or null}. Use null for unused fields. Do not request extra probes."
+  },
+  "ages_before": [
+    1,
+    1
+  ],
+  "probed_channels": [],
+  "probe_receipts": [],
+  "probe_count": 0,
+  "model_probe_cost": 0.0,
+  "planning_seconds": 3.087497316300869e-05,
+  "probe_seconds": 1.550000160932541e-05,
+  "tool_seconds": 0.0001962080132216215,
+  "task_tool_calls": 2,
+  "plan": {
+    "amount_divisor": 100,
+    "time_bound": 10
+  },
+  "plan_json_error": null,
+  "plan_schema_valid": true,
+  "tool_result": {
+    "sum_amount_raw": 89319.0,
+    "count_before": 11
+  },
+  "answer": {
+    "total": 893.19,
+    "count": 11
+  },
+  "answer_json_error": null,
+  "logical_calls": [
+    "rc/0/0/ttl/plan",
+    "rc/0/0/ttl/answer"
+  ]
+}

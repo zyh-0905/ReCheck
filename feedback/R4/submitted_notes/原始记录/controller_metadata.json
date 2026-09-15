@@ -1,0 +1,7 @@
+{
+  "controller_llm_calls": 0,
+  "hard_episode_budget": 8,
+  "step_cap": 4,
+  "budget_unit": "abstract calibration credits, not currency",
+  "timing": "Separate per-method solver caches; setup shared environment not charged as a method speedup."
+}

@@ -1,0 +1,14 @@
+{
+  "recheck": {
+    "pages": 4,
+    "mechanical_format_checks_pass": true,
+    "ordinary_text_min_pdf_pt": 8.966400146484375,
+    "out_of_bounds": []
+  },
+  "repairlens": {
+    "pages": 5,
+    "mechanical_format_checks_pass": true,
+    "ordinary_text_min_pdf_pt": 8.966400146484375,
+    "out_of_bounds": []
+  }
+}

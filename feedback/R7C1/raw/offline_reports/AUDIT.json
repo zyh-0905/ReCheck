@@ -1,0 +1,87 @@
+{
+  "scientific_gate": "PENDING_RESEARCHER_REVIEW",
+  "new_model_calls": 0,
+  "source": {
+    "pass": true,
+    "files": 116,
+    "source_manifest_sha256": "4c20c6b6f88cd2314792d647c35e191ce1c530ba041f40b08dacfdebb1f2cfa1"
+  },
+  "issues": [],
+  "evidence_kind": "response_reconstruction_not_new_samples",
+  "smoke_status": "completed",
+  "run_status": "completed",
+  "mechanical_pass": true,
+  "planned_primary_episodes": 42,
+  "planned_repeat_episodes": 6,
+  "completed_primary": 42,
+  "completed_repeat": 6,
+  "requests_registered": 169,
+  "reconstructed_requests": 168,
+  "summary": [
+    {
+      "phase": "primary",
+      "arm": "stateless",
+      "completed_episodes": 14,
+      "planned_episodes": 14,
+      "safe_success": 14,
+      "wrong_write": 0,
+      "model_calls": 51,
+      "tool_calls": 37
+    },
+    {
+      "phase": "primary",
+      "arm": "inherited",
+      "completed_episodes": 14,
+      "planned_episodes": 14,
+      "safe_success": 14,
+      "wrong_write": 0,
+      "model_calls": 49,
+      "tool_calls": 35
+    },
+    {
+      "phase": "primary",
+      "arm": "resolve_rule",
+      "completed_episodes": 14,
+      "planned_episodes": 14,
+      "safe_success": 14,
+      "wrong_write": 0,
+      "model_calls": 49,
+      "tool_calls": 35
+    },
+    {
+      "phase": "repeat",
+      "arm": "stateless",
+      "completed_episodes": 2,
+      "planned_episodes": 2,
+      "safe_success": 2,
+      "wrong_write": 0,
+      "model_calls": 7,
+      "tool_calls": 5
+    },
+    {
+      "phase": "repeat",
+      "arm": "inherited",
+      "completed_episodes": 2,
+      "planned_episodes": 2,
+      "safe_success": 2,
+      "wrong_write": 0,
+      "model_calls": 6,
+      "tool_calls": 4
+    },
+    {
+      "phase": "repeat",
+      "arm": "resolve_rule",
+      "completed_episodes": 2,
+      "planned_episodes": 2,
+      "safe_success": 2,
+      "wrong_write": 0,
+      "model_calls": 6,
+      "tool_calls": 4
+    }
+  ],
+  "partial_data_note": "Missing/paused episodes are not silently counted as successes or excluded from planned denominators",
+  "grouping_note": "14 constructed cases, three intent templates, two domains; not independent benchmark samples",
+  "costs": "UNKNOWN; tokens/latency are records, not invoices",
+  "execution_complete": true,
+  "response_label_policy": "R7C1_RESPONSE_LABELS_V1; smoke establishes a single returned-label/fingerprint cohort, not verified weights"
+}

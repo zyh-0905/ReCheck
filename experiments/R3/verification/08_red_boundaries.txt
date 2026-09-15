@@ -1,0 +1,34 @@
+test_exact_expectation_vs_all_paths (test_r3_boundaries.Boundaries.test_exact_expectation_vs_all_paths) ... ok
+test_future_cost_matters_two_steps (test_r3_boundaries.Boundaries.test_future_cost_matters_two_steps) ... ok
+test_isolated_score_not_online (test_r3_boundaries.Boundaries.test_isolated_score_not_online) ... ok
+test_live_endpoint_frozen (test_r3_boundaries.Boundaries.test_live_endpoint_frozen) ... FAIL
+test_live_model_frozen (test_r3_boundaries.Boundaries.test_live_model_frozen) ... FAIL
+test_main_paused_no_new_calls (test_r3_boundaries.Boundaries.test_main_paused_no_new_calls) ... ok
+test_no_drift_is_kept_when_recheck_loses (test_r3_boundaries.Boundaries.test_no_drift_is_kept_when_recheck_loses) ... ok
+test_precise_renderer_handles_tool_error (test_r3_boundaries.Boundaries.test_precise_renderer_handles_tool_error) ... ok
+test_renderer_type_bool_is_not_correct (test_r3_boundaries.Boundaries.test_renderer_type_bool_is_not_correct) ... ok
+test_six_r2_cases_are_not_relabelled (test_r3_boundaries.Boundaries.test_six_r2_cases_are_not_relabelled) ... ok
+test_snapshot_license_with_manifest (test_r3_boundaries.Boundaries.test_snapshot_license_with_manifest) ... ok
+
+======================================================================
+FAIL: test_live_endpoint_frozen (test_r3_boundaries.Boundaries.test_live_endpoint_frozen)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r3_work/R3_Research_Kit/tests/test_r3_boundaries.py", line 14, in test_live_endpoint_frozen
+    with self.assertRaises(ValueError):session.validate_r3_config(c)
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_live_model_frozen (test_r3_boundaries.Boundaries.test_live_model_frozen)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r3_work/R3_Research_Kit/tests/test_r3_boundaries.py", line 11, in test_live_model_frozen
+    with self.assertRaises(ValueError):session.validate_r3_config(c)
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.144s
+
+FAILED (failures=2)

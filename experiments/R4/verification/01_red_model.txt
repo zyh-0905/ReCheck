@@ -1,0 +1,25 @@
+test_public_probability_contract (test_model.CoreContract.test_public_probability_contract) ... FAIL
+test_public_solver_contract (test_model.CoreContract.test_public_solver_contract) ... FAIL
+
+======================================================================
+FAIL: test_public_probability_contract (test_model.CoreContract.test_public_probability_contract)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r4_work/R4_Research_Kit/tests/test_model.py", line 8, in test_public_probability_contract
+    self.assertTrue(callable(getattr(model, 'mismatch', None)), 'Missing binary flip probability')
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : Missing binary flip probability
+
+======================================================================
+FAIL: test_public_solver_contract (test_model.CoreContract.test_public_solver_contract)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r4_work/R4_Research_Kit/tests/test_model.py", line 6, in test_public_solver_contract
+    self.assertTrue(callable(getattr(model, 'Solver', None)), 'Missing coupled refresh solver')
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : Missing coupled refresh solver
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.001s
+
+FAILED (failures=2)

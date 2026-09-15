@@ -1,0 +1,32 @@
+[
+  {
+    "cache_hit_tokens": 0,
+    "cache_miss_tokens": 48,
+    "calls": 1,
+    "completion_tokens": 23,
+    "latency_seconds": 0.8672604160383344,
+    "phase": "smoke",
+    "prompt_tokens": 48,
+    "reasoning_tokens": 17
+  },
+  {
+    "cache_hit_tokens": 250880,
+    "cache_miss_tokens": 35115,
+    "calls": 149,
+    "completion_tokens": 12039,
+    "latency_seconds": 165.14622870879248,
+    "phase": "primary",
+    "prompt_tokens": 285995,
+    "reasoning_tokens": 6751
+  },
+  {
+    "cache_hit_tokens": 32512,
+    "cache_miss_tokens": 3895,
+    "calls": 19,
+    "completion_tokens": 1648,
+    "latency_seconds": 20.87924400018528,
+    "phase": "repeat",
+    "prompt_tokens": 36407,
+    "reasoning_tokens": 921
+  }
+]

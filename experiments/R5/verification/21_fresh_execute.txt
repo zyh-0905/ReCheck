@@ -1,0 +1,20 @@
+Prepared independent calibration. No LLM calls.
+completed single task_exact
+completed single task_rollout2
+completed single task_myopic
+completed single single_effect_exact
+completed single any_exact
+completed single semantic_exact
+completed single age_paced
+completed single never
+completed shared task_exact
+completed shared task_rollout2
+completed shared task_myopic
+completed shared single_effect_exact
+completed shared any_exact
+completed shared semantic_exact
+completed shared age_paced
+completed shared never
+{'mechanical_pass': True, 'complete': True, 'rows': 8192, 'replayed_task_records': 8192, 'reference_science_match': True, 'scientific_gate': 'PENDING_RESEARCHER_REVIEW'}
+{'pass': True, 'files': 1115, 'sha256': '3e63aef9a4a3e1579670e6d59cddf0a006cebd37ed19367dfd1ffd39aa82f0af'}
+UPLOAD: /mnt/data/r5_work/fresh_verify/R5_Research_Kit/uploads/R5_feedback_20260912T164546789998Z.zip

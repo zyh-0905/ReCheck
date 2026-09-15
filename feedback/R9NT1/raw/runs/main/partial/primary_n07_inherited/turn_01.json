@@ -1,0 +1,50 @@
+{
+  "assistant_message": {
+    "content": "Cellular service is already on, so no setting changes are needed. Sending the exact message now.",
+    "reasoning_content": "Cellular is on. Now send the message.",
+    "role": "assistant",
+    "tool_calls": [
+      {
+        "function": {
+          "arguments": "{\"content\": \"Rehearsal begins at 19:15. Please acknowledge.\", \"phone_number\": \"+12453344098\"}",
+          "name": "send_message_with_phone_number"
+        },
+        "id": "call_00_XtApNDcVApTE9y0z5fYv0522",
+        "index": 0,
+        "type": "function"
+      }
+    ]
+  },
+  "decoded_calls": [
+    {
+      "arguments": {
+        "content": "Rehearsal begins at 19:15. Please acknowledge.",
+        "phone_number": "+12453344098"
+      },
+      "id": "call_00_XtApNDcVApTE9y0z5fYv0522",
+      "name": "send_message_with_phone_number"
+    }
+  ],
+  "event_end": 3,
+  "event_start": 2,
+  "executions": [
+    {
+      "batch_index": 0,
+      "event_end": 3,
+      "event_start": 2,
+      "outer_tool_count": 2,
+      "tool_call_id": "call_00_XtApNDcVApTE9y0z5fYv0522"
+    }
+  ],
+  "kind": "tools",
+  "logical_id": "primary_n07_inherited/turn_01",
+  "request_sha256": "1494a7355cf9627faf62dd9248cbc81d97d6804a91601b111ba13af6654e7789",
+  "tool_messages": [
+    {
+      "content": "{\"error\":null,\"ok\":true,\"value\":\"e58878b2-ee0c-4c58-b176-cde86a5615e5\"}",
+      "role": "tool",
+      "tool_call_id": "call_00_XtApNDcVApTE9y0z5fYv0522"
+    }
+  ],
+  "turn": 1
+}

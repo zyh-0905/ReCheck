@@ -1,0 +1,27 @@
+{
+  "arms": [
+    "generic",
+    "minimal",
+    "intent",
+    "both"
+  ],
+  "backend": "constructed_file_backed_SQLite",
+  "cases": 12,
+  "date": "2026-09-14",
+  "disallow_main_resume": true,
+  "factorial_guidance_not_forced_actions": true,
+  "main_outer_tool_cap": 1536,
+  "main_request_cap": 384,
+  "max_requests_per_episode": 8,
+  "max_tools_per_episode": 32,
+  "max_tools_per_response": 4,
+  "no_hidden_state_in_model_inputs": true,
+  "optional_preconditions_same_for_all_arms": true,
+  "primary_episodes": 48,
+  "repeat_episodes": 0,
+  "scientific_superiority_claim": false,
+  "smoke_request_cap": 0,
+  "task_families": 2,
+  "task_id": "R10_SELECTION_AND_WRITE_SCOPE_DIAGNOSIS_01",
+  "version": "r10-1.0.0"
+}

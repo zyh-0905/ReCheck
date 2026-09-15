@@ -1,0 +1,12 @@
+[
+  {
+    "url": "https://cmsworkshops.com/ICASSP2027/papers/PaperFormat/spconf.sty",
+    "ok": false,
+    "error": "URLError(gaierror(-3, 'Temporary failure in name resolution'))"
+  },
+  {
+    "url": "https://cmsworkshops.com/ICASSP2027/papers/PaperFormat/IEEEbib.bst",
+    "ok": false,
+    "error": "URLError(gaierror(-3, 'Temporary failure in name resolution'))"
+  }
+]

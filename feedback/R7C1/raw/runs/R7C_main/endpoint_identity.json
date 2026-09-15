@@ -1,0 +1,7 @@
+{
+  "policy_id": "R7C1_RESPONSE_LABELS_V1",
+  "requested_model": "deepseek-v4-flash",
+  "returned_model": "deepseek-flash",
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669",
+  "weight_identity_verified": false
+}

@@ -1,0 +1,10 @@
+{
+  "turn": 3,
+  "logical_id": "primary_c13_resolve_rule/turn_03",
+  "request_sha256": "5094e95defdd109aac5f63f8339098cbb4f015d518a2c3b1cec99dbaffcc153f",
+  "response_text": "{\"done\":\"Cellular service was off, so I enabled it, then sent exactly one text to +12453344098 with the message: \\\"The rehearsal has moved to 18:30. Please confirm when you can.\\\" No contacts, reminders, or other settings were changed.\"}",
+  "kind": "done",
+  "action": {
+    "done": "Cellular service was off, so I enabled it, then sent exactly one text to +12453344098 with the message: \"The rehearsal has moved to 18:30. Please confirm when you can.\" No contacts, reminders, or other settings were changed."
+  }
+}

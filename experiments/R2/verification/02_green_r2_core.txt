@@ -1,0 +1,36 @@
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 720, in _warm_feature_flows
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 704, in _warm_collaboration_flows
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/generated/interface/models.py", line 32317, in hydrate_crdt_from_proto
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/remote.py", line 749, in __call__
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/client.py", line 150, in call
+artifact_tool.rpc.client.RemoteError: hydrateCrdtFromProto requires an empty collaborative document.
+test_conflicting_cache_uses_unknown_not_guess (test_r2_accounting.AccountingTests.test_conflicting_cache_uses_unknown_not_guess) ... ok
+test_crossing_period_unknown (test_r2_accounting.AccountingTests.test_crossing_period_unknown) ... ok
+test_expired_schedule_not_priced (test_r2_accounting.AccountingTests.test_expired_schedule_not_priced) ... ok
+test_invalid_reasoning_flagged (test_r2_accounting.AccountingTests.test_invalid_reasoning_flagged) ... ok
+test_missing_usage_never_zero (test_r2_accounting.AccountingTests.test_missing_usage_never_zero) ... ok
+test_other_model_not_priced (test_r2_accounting.AccountingTests.test_other_model_not_priced) ... ok
+test_saturday_is_not_weekday_peak (test_r2_accounting.AccountingTests.test_saturday_is_not_weekday_peak) ... ok
+test_unknown_price_not_zero (test_r2_accounting.AccountingTests.test_unknown_price_not_zero) ... ok
+test_correct_fresh_memory (test_r2_audit.AuditTests.test_correct_fresh_memory) ... ok
+test_count_unused_field_is_contract_error (test_r2_audit.AuditTests.test_count_unused_field_is_contract_error) ... ok
+test_float_count_contract_violation (test_r2_audit.AuditTests.test_float_count_contract_violation) ... ok
+test_irrelevant_stale_value_not_an_exposure (test_r2_audit.AuditTests.test_irrelevant_stale_value_not_an_exposure) ... ok
+test_legal_old_value_is_stale_not_fresh (test_r2_audit.AuditTests.test_legal_old_value_is_stale_not_fresh) ... ok
+test_missing_call_not_silently_success (test_r2_audit.AuditTests.test_missing_call_not_silently_success) ... ok
+test_missing_memory_not_stale (test_r2_audit.AuditTests.test_missing_memory_not_stale) ... ok
+test_truncated_and_json_error_are_separate_axes (test_r2_audit.AuditTests.test_truncated_and_json_error_are_separate_axes) ... ok
+test_call_cap_cannot_diverge (test_r2_protocol.ProtocolTests.test_call_cap_cannot_diverge) ... ok
+test_fixed_calls_and_methods (test_r2_protocol.ProtocolTests.test_fixed_calls_and_methods) ... ok
+test_outcome_blind_preflight (test_r2_protocol.ProtocolTests.test_outcome_blind_preflight) ... ok
+test_public_task_sequence_not_affected_by_world_seed (test_r2_protocol.ProtocolTests.test_public_task_sequence_not_affected_by_world_seed) ... ok
+test_seeds_new_and_fixed (test_r2_protocol.ProtocolTests.test_seeds_new_and_fixed) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 0.024s
+
+OK

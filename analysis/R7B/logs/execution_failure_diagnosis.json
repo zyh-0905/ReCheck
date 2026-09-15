@@ -1,0 +1,63 @@
+{
+  "test_execution_environment_syntax_error": {
+    "original_assertion_failed": true,
+    "last_messages": [
+      {
+        "sender": "AGENT",
+        "recipient": "EXECUTION_ENVIRONMENT",
+        "content": "improt math",
+        "tool_call_exception": null,
+        "tool": null
+      },
+      {
+        "sender": "EXECUTION_ENVIRONMENT",
+        "recipient": "AGENT",
+        "content": "  File \"<input>\", line 1\n    improt math\n           ^^^^\nSyntaxError: invalid syntax\n",
+        "tool_call_exception": "  File \"<input>\", line 1\n    improt math\n           ^^^^\nSyntaxError: invalid syntax\n",
+        "tool": null
+      }
+    ]
+  },
+  "test_invalid_parallel_tool_call": {
+    "original_assertion_failed": true,
+    "last_messages": [
+      {
+        "sender": "EXECUTION_ENVIRONMENT",
+        "recipient": "AGENT",
+        "content": "None",
+        "tool_call_exception": null,
+        "tool": "set_wifi_status"
+      },
+      {
+        "sender": "EXECUTION_ENVIRONMENT",
+        "recipient": "AGENT",
+        "content": "PermissionError: Please provide 'RAPID_API_KEY' in environment variable. You can find your API key by following https://docs.rapidapi.com/v1.0/docs/keys",
+        "tool_call_exception": "PermissionError: Please provide 'RAPID_API_KEY' in environment variable. You can find your API key by following https://docs.rapidapi.com/v1.0/docs/keys",
+        "tool": "search_stock"
+      }
+    ]
+  },
+  "local_parallel_dependency": {
+    "response_tools": [
+      "set_wifi_status",
+      "set_low_battery_mode_status"
+    ],
+    "errors": [
+      "PermissionError: Wifi cannot be turned on in low battery mode",
+      null
+    ],
+    "settings": [
+      {
+        "device_id": "04640c30-ec89-5a3c-9fb4-4af3101c8e04",
+        "cellular": false,
+        "wifi": false,
+        "location_service": false,
+        "low_battery_mode": false,
+        "latitude": 37.334606,
+        "longitude": -122.009102
+      }
+    ],
+    "first_failed": true,
+    "first_tool": "set_wifi_status"
+  }
+}

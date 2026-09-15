@@ -1,0 +1,49 @@
+{
+  "assistant_message": {
+    "content": "",
+    "reasoning_content": "I need to find the reminder whose text is exactly \"Review the indigo rehearsal plan\" and move its reminder time to POSIX 1800118800, preserving text and location.\n\nThe historical record gives a reminder_id but I should do a current lookup. Let me search.\n\nNote: search_reminder with content is fuzzy matched. Let me search by content and verify exact match.\n\nLet me do the lookup first.",
+    "role": "assistant",
+    "tool_calls": [
+      {
+        "function": {
+          "arguments": "{\"content\": \"Review the indigo rehearsal plan\"}",
+          "name": "search_reminder"
+        },
+        "id": "call_00_xvAsPn2GmaIutCdFjsXk1008",
+        "index": 0,
+        "type": "function"
+      }
+    ]
+  },
+  "decoded_calls": [
+    {
+      "arguments": {
+        "content": "Review the indigo rehearsal plan"
+      },
+      "id": "call_00_xvAsPn2GmaIutCdFjsXk1008",
+      "name": "search_reminder"
+    }
+  ],
+  "event_end": 1,
+  "event_start": 0,
+  "executions": [
+    {
+      "batch_index": 0,
+      "event_end": 1,
+      "event_start": 0,
+      "outer_tool_count": 1,
+      "tool_call_id": "call_00_xvAsPn2GmaIutCdFjsXk1008"
+    }
+  ],
+  "kind": "tools",
+  "logical_id": "primary_n08_verify_confirm/turn_00",
+  "request_sha256": "235de28219da1d03e7fe7960c46eba454248c07fbe96928b4d66e94fddbaddba",
+  "tool_messages": [
+    {
+      "content": "{\"error\":null,\"ok\":true,\"value\":[{\"content\":\"Review the indigo rehearsal plan\",\"creation_timestamp\":1789299322.801928,\"latitude\":37.3237926356735,\"longitude\":-122.03961770355414,\"reminder_id\":\"54f20be9-eac3-5e76-8e57-724e48d3d477\",\"reminder_timestamp\":1800100000.0}]}",
+      "role": "tool",
+      "tool_call_id": "call_00_xvAsPn2GmaIutCdFjsXk1008"
+    }
+  ],
+  "turn": 0
+}

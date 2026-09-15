@@ -1,0 +1,10 @@
+{
+  "turn": 3,
+  "logical_id": "repeat_c02_stateless/turn_03",
+  "request_sha256": "3f8e2b8dca8fa12d75ed0ad5d9e992ffbe95d9c545421ae7cd99ff47cdd7c2eb",
+  "response_text": "{\"done\":\"Sent the message to Fredrik Thordendal at +12025550119 exactly once with the specified content. Cellular service was already on.\"}",
+  "kind": "done",
+  "action": {
+    "done": "Sent the message to Fredrik Thordendal at +12025550119 exactly once with the specified content. Cellular service was already on."
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "execution_seconds": 16.79300368700001,
+  "native_scored_writes": 109,
+  "new_llm_calls": 0,
+  "phase": "OFFLINE_EXECUTION_CONTRACT_BOUNDARY_NOT_LLM_PERFORMANCE",
+  "python": "3.11.14",
+  "records": 120,
+  "science_sha256": "cf7fe6be6dcede2f3038273f2235c4b73b3bb569df7f6f6ee07638eb363fb587",
+  "separate_stress_cases": 2,
+  "system": "Linux"
+}

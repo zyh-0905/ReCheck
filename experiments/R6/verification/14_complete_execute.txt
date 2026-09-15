@@ -1,0 +1,67 @@
+{
+  "prepared": true,
+  "protocol": "R6_SELECTIVE_CALIBRATION_01"
+}
+Calibration panel 1/4
+Calibration panel 2/4
+Calibration panel 3/4
+Calibration panel 4/4
+Frozen-policy evaluation panel 1/4
+Frozen-policy evaluation panel 2/4
+Frozen-policy evaluation panel 3/4
+Frozen-policy evaluation panel 4/4
+{
+  "started_at_utc": "2026-09-12T17:43:27.276196+00:00",
+  "finished_at_utc": "2026-09-12T17:44:18.839377+00:00",
+  "run_seconds": 51.563190948000056,
+  "training_and_design_seconds": 17.597196481000083,
+  "physical_training_workflows": 40384,
+  "base_streams": 128,
+  "trajectories": 2560,
+  "task_records": 20480,
+  "new_llm_api_calls": 0,
+  "network_allowed": false,
+  "independent_training_panels": 4,
+  "counts_note": "budgets16/32 are nested checkpoints, not independent training runs"
+}
+Audit calibration panel 1/4
+Audit calibration panel 2/4
+Audit calibration panel 3/4
+Audit calibration panel 4/4
+Audit frozen trajectories panel 1/4
+Audit frozen trajectories panel 2/4
+Audit frozen trajectories panel 3/4
+Audit frozen trajectories panel 4/4
+{
+  "mechanical_pass": true,
+  "issues": [],
+  "source": {
+    "pass": true,
+    "issues": [],
+    "files": 30,
+    "manifest_sha256": "3b7e2ff9ca5c438390cdfdda65d26f029f6177faac0fac3aec44493388f588ed"
+  },
+  "calibration_workflow_events_checked": 40384,
+  "physical_calibration_workflows": 40384,
+  "runtime_task_records": 20480,
+  "trajectories": 2560,
+  "base_streams": 128,
+  "training_panels": 4,
+  "scoped_probability_atol": 1e-14,
+  "scoped_probability_rtol": 0,
+  "max_probability_delta": 0.0,
+  "reference_present": false,
+  "reference_science_match": null,
+  "hard_budget_violations": [],
+  "new_llm_api_calls": 0,
+  "scientific_gate": "PENDING_RESEARCHER_REVIEW",
+  "limits": "Conditional development experiment; same catalogs/API grammar; no public benchmark or general optimum proof."
+}
+{
+  "export": "/mnt/data/r6_work/R6_Research_Kit/uploads/R6_feedback_20260912T174518970343Z.zip",
+  "verification": {
+    "pass": true,
+    "entries": 2696,
+    "issues": []
+  }
+}

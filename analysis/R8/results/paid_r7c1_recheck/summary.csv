@@ -1,0 +1,7 @@
+phase,arm,episodes,safe_success,wrong_write,tool_calls,model_calls,prompt_tokens,completion_tokens,reasoning_tokens,cache_hit_tokens,cache_miss_tokens,model_latency_seconds,cost
+primary,stateless,14,14,0,37,51,89224,3669,1850,77056,12168,53.662309169303626,UNKNOWN
+primary,inherited,14,14,0,35,49,96493,4607,2812,85760,10733,56.953333457233384,UNKNOWN
+primary,resolve_rule,14,14,0,35,49,100278,3763,2089,88064,12214,54.53058608225547,UNKNOWN
+repeat,stateless,2,2,0,5,7,12238,441,205,10752,1486,7.627771166386083,UNKNOWN
+repeat,inherited,2,2,0,4,6,11822,598,342,10624,1198,6.6057220010552555,UNKNOWN
+repeat,resolve_rule,2,2,0,4,6,12347,609,374,11136,1211,6.645750832743943,UNKNOWN

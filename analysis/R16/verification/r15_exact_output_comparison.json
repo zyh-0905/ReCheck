@@ -1,0 +1,70 @@
+{
+  "files": [
+    {
+      "path": "all_episodes.csv",
+      "identical": true,
+      "sha256": "266fa3487dcd238cb9b81949d612162bc80d7979475ade81ba1da1b917ced170"
+    },
+    {
+      "path": "by_task.csv",
+      "identical": true,
+      "sha256": "ab9c85fc5fbcba63a5b59336b23080fbb59900936a4e7841d3bd6385b942ed65"
+    },
+    {
+      "path": "confirmed_cases.csv",
+      "identical": true,
+      "sha256": "7e9659c418e3510f1cab41973452970ddcbae645920cb6ec660827cbefe84b15"
+    },
+    {
+      "path": "dev/episodes.csv",
+      "identical": true,
+      "sha256": "990cced30281e9b6f803ecde27d45dd997a978190b98e18d4bde92e548867b65"
+    },
+    {
+      "path": "dev/episodes.json",
+      "identical": true,
+      "sha256": "772fac8ab440fd2297de5609f2e0d6fb27c539f357b449d1b040fb877ca42b1a"
+    },
+    {
+      "path": "dev/evidence.json",
+      "identical": true,
+      "sha256": "4e5b3c6cbd6c6583bfb1116828188ab39fa4dbfd581d853d487c0dfe5dae2d8e"
+    },
+    {
+      "path": "dev/summary.json",
+      "identical": true,
+      "sha256": "4538e63bf050fdb1c841147896a613599db7aa567e3c8bb729fb6a44af5589fe"
+    },
+    {
+      "path": "independent_check.json",
+      "identical": true,
+      "sha256": "a472d9d8bb64cbdfc78743a5943bb9fa6f03b3f631432c140a5dbd2ddedcf455"
+    },
+    {
+      "path": "later/episodes.csv",
+      "identical": true,
+      "sha256": "6b357fa5ecd202ee9f2ce68fc8e42e3eb5900e7e4459905cd9d330b2ddb9251a"
+    },
+    {
+      "path": "later/episodes.json",
+      "identical": true,
+      "sha256": "bead7a41f4188870752551718658933c37bb5efecb5f71a94e53e2bd52066859"
+    },
+    {
+      "path": "later/evidence.json",
+      "identical": true,
+      "sha256": "2fc70740e6d23175083908a0fbbd86a25622322d299a2e09141b3b4f5a3c74fc"
+    },
+    {
+      "path": "later/summary.json",
+      "identical": true,
+      "sha256": "84b1676027482cedcc922c8c9ada08fe86c54ac8a048644997770a8e7204c043"
+    },
+    {
+      "path": "summary.json",
+      "identical": true,
+      "sha256": "3f6bbd0ba15a4bad4c5c415806d16b6d74792ed05c945de63992161d20d6f02a"
+    }
+  ],
+  "all_13_equal": true
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "intent": "person",
+    "intervention": "none",
+    "transition_checks": 15,
+    "correct": 15,
+    "wrong_write": 0
+  },
+  {
+    "intent": "person",
+    "intervention": "binding",
+    "transition_checks": 15,
+    "correct": 0,
+    "wrong_write": 15
+  },
+  {
+    "intent": "literal",
+    "intervention": "none",
+    "transition_checks": 15,
+    "correct": 15,
+    "wrong_write": 0
+  },
+  {
+    "intent": "literal",
+    "intervention": "binding",
+    "transition_checks": 15,
+    "correct": 15,
+    "wrong_write": 0
+  },
+  {
+    "intent": "reminder",
+    "intervention": "none",
+    "transition_checks": 12,
+    "correct": 12,
+    "wrong_write": 0
+  },
+  {
+    "intent": "reminder",
+    "intervention": "binding",
+    "transition_checks": 12,
+    "correct": 0,
+    "wrong_write": 12
+  }
+]

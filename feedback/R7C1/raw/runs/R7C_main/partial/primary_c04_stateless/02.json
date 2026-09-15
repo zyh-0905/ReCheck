@@ -1,0 +1,10 @@
+{
+  "turn": 2,
+  "logical_id": "primary_c04_stateless/turn_02",
+  "request_sha256": "f0378016297517e7f9692c7c1437c7df7da35773da64e3bd9d3b5473c9aa92ab",
+  "response_text": "{\"done\":\"Sent the message to +12453344098: \\\"The rehearsal has moved to 18:30. Please confirm when you can.\\\" Cellular service was already on, so no settings were changed.\"}",
+  "kind": "done",
+  "action": {
+    "done": "Sent the message to +12453344098: \"The rehearsal has moved to 18:30. Please confirm when you can.\" Cellular service was already on, so no settings were changed."
+  }
+}

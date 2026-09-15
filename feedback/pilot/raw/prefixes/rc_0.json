@@ -1,0 +1,23 @@
+{
+  "initial_writer": {
+    "amount_divisor": 100,
+    "endpoint_inclusive": true
+  },
+  "initial_parse_error": null,
+  "schema_valid": true,
+  "calibration": [
+    {
+      "channel": "amount_unit",
+      "raw_amount": 100.0,
+      "known_invoice_major_units": 1
+    },
+    {
+      "channel": "time_endpoint",
+      "returned_count": 1,
+      "known_event_time": 0,
+      "requested_bound": 0
+    }
+  ],
+  "writer_logical_id": "rc/0/shared_initial",
+  "initial_probe_count": 2
+}

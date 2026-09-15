@@ -1,0 +1,50 @@
+{
+  "assistant_message": {
+    "content": "",
+    "reasoning_content": "Current contact entry phone number is +12453344098. Cellular service is on. Send the message.",
+    "role": "assistant",
+    "tool_calls": [
+      {
+        "function": {
+          "arguments": "{\"phone_number\": \"+12453344098\", \"content\": \"Rehearsal begins at 19:15. Please acknowledge.\"}",
+          "name": "send_message_with_phone_number"
+        },
+        "id": "call_00_pi0YFW7q18E9mDCTK58C9436",
+        "index": 0,
+        "type": "function"
+      }
+    ]
+  },
+  "decoded_calls": [
+    {
+      "arguments": {
+        "content": "Rehearsal begins at 19:15. Please acknowledge.",
+        "phone_number": "+12453344098"
+      },
+      "id": "call_00_pi0YFW7q18E9mDCTK58C9436",
+      "name": "send_message_with_phone_number"
+    }
+  ],
+  "event_end": 5,
+  "event_start": 4,
+  "executions": [
+    {
+      "batch_index": 0,
+      "event_end": 5,
+      "event_start": 4,
+      "outer_tool_count": 3,
+      "tool_call_id": "call_00_pi0YFW7q18E9mDCTK58C9436"
+    }
+  ],
+  "kind": "tools",
+  "logical_id": "primary_n02_inherited/turn_01",
+  "request_sha256": "62405a23dc254aa036c27bb89f46a9f12d71850541ff2d3eb14678ba74563608",
+  "tool_messages": [
+    {
+      "content": "{\"error\":null,\"ok\":true,\"value\":\"8b0efeb6-b75b-4e20-8c22-b2012b1d64a1\"}",
+      "role": "tool",
+      "tool_call_id": "call_00_pi0YFW7q18E9mDCTK58C9436"
+    }
+  ],
+  "turn": 1
+}

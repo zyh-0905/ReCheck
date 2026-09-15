@@ -1,0 +1,49 @@
+{
+  "assistant_message": {
+    "content": "The update succeeded. Let me verify the change persisted.",
+    "reasoning_content": "The modification succeeded. Let me verify by re-searching? That would be prudent. But the search by content would return the updated reminder. Let me verify.",
+    "role": "assistant",
+    "tool_calls": [
+      {
+        "function": {
+          "arguments": "{\"reminder_id\": \"54f20be9-eac3-5e76-8e57-724e48d3d477\"}",
+          "name": "search_reminder"
+        },
+        "id": "call_00_AmsfgAxyU1Vg0yA75isU4560",
+        "index": 0,
+        "type": "function"
+      }
+    ]
+  },
+  "decoded_calls": [
+    {
+      "arguments": {
+        "reminder_id": "54f20be9-eac3-5e76-8e57-724e48d3d477"
+      },
+      "id": "call_00_AmsfgAxyU1Vg0yA75isU4560",
+      "name": "search_reminder"
+    }
+  ],
+  "event_end": 3,
+  "event_start": 2,
+  "executions": [
+    {
+      "batch_index": 0,
+      "event_end": 3,
+      "event_start": 2,
+      "outer_tool_count": 3,
+      "tool_call_id": "call_00_AmsfgAxyU1Vg0yA75isU4560"
+    }
+  ],
+  "kind": "tools",
+  "logical_id": "primary_n08_inherited/turn_02",
+  "request_sha256": "352f993c4b6c68a4ecd595236246baf47985dba172022e96d7bdfab44b6f4868",
+  "tool_messages": [
+    {
+      "content": "{\"error\":null,\"ok\":true,\"value\":[{\"content\":\"Review the indigo rehearsal plan\",\"creation_timestamp\":1789356498.482123,\"latitude\":37.3237926356735,\"longitude\":-122.03961770355414,\"reminder_id\":\"54f20be9-eac3-5e76-8e57-724e48d3d477\",\"reminder_timestamp\":1800118800.0}]}",
+      "role": "tool",
+      "tool_call_id": "call_00_AmsfgAxyU1Vg0yA75isU4560"
+    }
+  ],
+  "turn": 2
+}

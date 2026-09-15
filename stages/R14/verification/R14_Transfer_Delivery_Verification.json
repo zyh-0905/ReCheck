@@ -1,0 +1,11 @@
+{
+  "archive": "/mnt/data/R14_Public_Data_Download_Kit.zip",
+  "bytes": 16560,
+  "sha256": "dbf58aae241e37568f52060155f7346f41a2b5d64581ee411b85b6bd821d2713",
+  "fresh_tests": 16,
+  "fresh_test_failures": 0,
+  "registered_files_checked": 9,
+  "default_invocation_no_download_directory": true,
+  "actual_public_download_in_research_container": false,
+  "new_llm_calls": 0
+}

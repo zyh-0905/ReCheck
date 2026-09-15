@@ -1,0 +1,87 @@
+{
+  "phase": "R9TQ1_FEEDBACK_REVIEW",
+  "qualification_pass": true,
+  "interface_qualification_closed": true,
+  "full_R9_study_completed": false,
+  "new_paid_batch_authorized": false,
+  "new_remote_model_calls": 0,
+  "feedback_outer_sha256": "44ec9f74351569d7a617bb13a633eb1f1e787b88f9b45c47f3b412cf57737dd1",
+  "feedback_inner_sha256": "73e27c008a96c3206974a8b335c475546073a87627c7248a5b4b37f754dff2e9",
+  "frozen_kit_sha256": "5c6a38967bab56a3f12efff9801fd4ecb36a067e57e73c5165857ff9fab62185",
+  "bundle_manifest_files": 172,
+  "inner_zip_files_including_manifest": 173,
+  "registered_source_files_checked": 110,
+  "unchanged_upstream_files": 77,
+  "raw_response_bodies_checked": 10,
+  "native_requests_reconstructed": 10,
+  "native_tool_transitions_replayed": 7,
+  "tool_receipt_links_checked": 7,
+  "cases_independently_rescored": 3,
+  "original_unit_tests": {
+    "run": 70,
+    "failures": 0,
+    "errors": 0
+  },
+  "independent_tests": {
+    "run": 37,
+    "failures": 0,
+    "errors": 0
+  },
+  "original_saved_audit_equal": true,
+  "completed_branch_no_new_requests": true,
+  "standard_library_second_run_equal_files": [
+    "independent_review.json",
+    "case_evidence.json",
+    "cases.csv",
+    "calls.csv",
+    "receipt_links.csv"
+  ],
+  "input_archives_unchanged": true,
+  "usage": {
+    "prompt_tokens": 24165,
+    "completion_tokens": 858,
+    "total_tokens": 25023,
+    "reasoning_tokens": 173,
+    "cached_input_tokens": 19200,
+    "uncached_input_tokens": 4965,
+    "latency_seconds": 9.94423679355532
+  },
+  "qualification_wall_seconds": 13.60996604221873,
+  "cache_correction": {
+    "submitted_README": 16896,
+    "verified_actual": 19200,
+    "difference": 2304
+  },
+  "native_environment": {
+    "python": "3.11.14",
+    "numpy": "1.26.4",
+    "polars": "0.20.31",
+    "scipy": "1.13.1",
+    "restored_from": "Previously supplied runtime, 52 wheels and rouge-score source, not fresh pip install"
+  },
+  "limits": [
+    "Single-assistant review, not independent human peer review",
+    "Raw HTTP bodies are not TLS/provider instrumentation",
+    "No proof of weights or billed currency",
+    "No injected environment changes in qualification",
+    "No multiple tool calls per response observed",
+    "No tool-error recovery branch observed",
+    "No superiority/general reliability claim"
+  ],
+  "review_generated_utc": "2026-09-13T15:58:51.273888+00:00",
+  "fresh_extracted_tests": {
+    "run": 37,
+    "failures": 0,
+    "errors": 0
+  },
+  "fresh_extracted_audit_outputs_identical": [
+    "independent_review.json",
+    "case_evidence.json",
+    "cases.csv",
+    "calls.csv",
+    "receipt_links.csv"
+  ],
+  "delivery_zip_bytes": 700560,
+  "delivery_zip_sha256": "6b71ff869aff2f9c205da84d69eaf2fb03ad37d8fe749f3c648c74636b91fbe2",
+  "delivery_manifest_files": 28
+}

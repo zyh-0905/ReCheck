@@ -1,0 +1,49 @@
+{
+  "files": [
+    {
+      "path": "R14_Execution_Prompt_ZH.md",
+      "bytes": 1323,
+      "sha256": "20155b907e78483c557dbf800f10b11b534aa70bdda06552ad2f39f76ce64f52"
+    },
+    {
+      "path": "README_ZH.md",
+      "bytes": 3336,
+      "sha256": "d0b76fbea7f80a2131a9d2719b3577e266c80e1fcabd322b5d01230b8a8b09e3"
+    },
+    {
+      "path": "docs/IMPLEMENTATION_PLAN.md",
+      "bytes": 1069,
+      "sha256": "5c03eb7f7a49f715e0975167e517a8b8b6627800b3e38681542405a9755ff1e5"
+    },
+    {
+      "path": "docs/R14_ANALYSIS_LOCK_ZH.md",
+      "bytes": 3380,
+      "sha256": "2df3d57604ae21e2068d7ff9441d8dd8561f510ffa9cb79885033fa69e7cd28f"
+    },
+    {
+      "path": "download_public.py",
+      "bytes": 11342,
+      "sha256": "7fadec38739eb770f18371e90f9ebd12df7eb32b4521fbb7925a4c1b70b6d456"
+    },
+    {
+      "path": "tests/test_download.py",
+      "bytes": 5638,
+      "sha256": "7cf5cfa01552cbbb80bb36d91fe1851c29b280ac66e16fff034788ca848eec0a"
+    },
+    {
+      "path": "verification/VERIFICATION.json",
+      "bytes": 968,
+      "sha256": "3002b1e095e65d61ff6f3b66261e590245684d92af0fe68092c1b030fec83d5e"
+    },
+    {
+      "path": "verification/tests_after.log",
+      "bytes": 1581,
+      "sha256": "7ea151fbfa0af7e22deacd4a62e0345beb791421e7a747703eda90857e010008"
+    },
+    {
+      "path": "verification/tests_before.log",
+      "bytes": 10353,
+      "sha256": "4cd68a127d806348a3a504572b9be366c8933cd2b113cce1b1815bc31807641e"
+    }
+  ]
+}

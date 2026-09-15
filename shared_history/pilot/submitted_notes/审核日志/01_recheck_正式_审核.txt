@@ -1,0 +1,74 @@
+=== reviewing recheck_deepseek_v41_flash_cap16384 ===
+study=recheck label=REAL_ENDPOINT_CONTROLLED_PILOT_NOT_CONFIRMATORY
+config.model=deepseek-flash output_cap=16384 max_tokens_field=max_tokens temperature=None extra_body={}
+
+[1] snapshot / export integrity
+  PASS  code_snapshot matches manifest.source_hashes (15 files)
+  status=completed budget={"attempts": 260, "known_estimated_spend": 0.2502598559999999, "unknown_or_unbilled_attempts": 0, "conservative_reserved_spend": 0.0, "guard_spend": 0.2502598559999999}
+
+[2] accounting
+  attempts_started=260 attempts_finished=260 completed_logical_calls=260
+  PASS  no interrupted/uncertain attempts (start without result)
+  PASS  attempt index sets agree
+  statuses={'ok': 260}
+  PASS  records complete 128/128
+  PASS  every successful response carries usage (missing=0)
+  planned_logical_calls=260 actual=260
+  PASS  logical call count equals frozen protocol value
+  PASS  default pilot size 4 streams x 8 steps
+
+[3] hidden-answer leakage scan of transmitted payloads
+  PASS  no hidden-state field or value in any of 260 transmitted payloads
+  payload key sets: {('max_tokens', 'messages', 'model', 'stream'): 260}
+  PASS  no unexpected request parameters
+  PASS  no hidden thinking/temperature override smuggled into requests
+
+[4] shared prefix + no cross-method answer reuse
+  PASS  all four methods in each stream share one identical prefix hash
+  PASS  exactly one shared-prefix model call per stream (4)
+  PASS  logical call IDs are unique (no answer shared across methods)
+
+[5] provider identity and decoding
+  requested=deepseek-flash returned={'deepseek-flash': 260}
+  PASS  returned model matches requested model for every call
+  system_fingerprints={'aeb56401ca74e127821c4f9126dcb669': 260}
+  ok    single serving fingerprint across the run (no silent backend switch)
+  finish_reasons={'stop': 260}
+  PASS  no truncated responses (length=0)
+  prompt_tokens=62436 completion_tokens=193474 of which reasoning=190208 cache_hit_input=2176
+  estimated_cost total = 0.250260 USD  (unknown-attempt cost entries=0)
+
+[6] error decomposition
+  answer finish=stop     text  n=128
+  plan   finish=stop     text  n=128
+  method   regime          n  correct  plan_bad  json_err schema_bad mem_div_ok  mem_ep_ok
+  always   hidden_drift   16       16         0         0          0         16         16
+  always   no_drift       16       15         1         0          0         16         16
+  myopic   hidden_drift   16       16         0         0          0         16         16
+  myopic   no_drift       16       16         0         0          0         16         16
+  recheck  hidden_drift   16       16         0         0          0         16         16
+  recheck  no_drift       16       16         0         0          0         16         16
+  ttl      hidden_drift   16       15         0         0          0         16         16
+  ttl      no_drift       16       16         0         0          0         16         16
+
+  rows with valid plan AND fully-known semantics: 127/128 -> correctness 126/127
+
+  task_type    n  correct  needs
+          0   48       47  amount
+          1   32       31  endpoint
+          2   40       40  amount+endpoint
+          3    8        8  none
+
+  method    needed_semantics_unknown  wrong_with_semantics_known
+  recheck                          0                           0
+  myopic                           0                           0
+  ttl                              0                           1
+  always                           0                           1
+
+  phase             n  prompt_tok   compl_tok  reason_tok  mean_lat_s
+  plan            128       32616       53655       51989        2.39
+  answer          128       28984      138512      136972        5.24
+
+=== verdict ===
+hard failures: 0
+warnings: 0

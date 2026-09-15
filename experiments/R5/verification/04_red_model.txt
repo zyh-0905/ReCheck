@@ -1,0 +1,23 @@
+test_model (unittest.loader._FailedTest.test_model) ... ERROR
+
+======================================================================
+ERROR: test_model (unittest.loader._FailedTest.test_model)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_model
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/unittest/loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python3.13/unittest/loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "/mnt/data/r5_work/R5_Research_Kit/tests/test_model.py", line 4, in <module>
+    from r5lib.model import Planner, actions, posterior
+  File "/mnt/data/r5_work/R5_Research_Kit/r5lib/model.py", line 2, in __getattr__
+    raise NotImplementedError("Planner implementation absent")
+NotImplementedError: Planner implementation absent
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)

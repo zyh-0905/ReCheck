@@ -1,0 +1,20 @@
+{
+  "turn": 1,
+  "logical_id": "primary_c02_inherited/turn_01",
+  "request_sha256": "cc83e980f5938ea298e8d0190b5357e73f3d86a3fd99c3a6d7bcd51e1e45ab4b",
+  "response_text": "{\"tool\":\"send_message_with_phone_number\",\"arguments\":{\"phone_number\":\"+12025550119\",\"content\":\"The rehearsal has moved to 18:30. Please confirm when you can.\"}}",
+  "kind": "tool",
+  "action": {
+    "tool": "send_message_with_phone_number",
+    "arguments": {
+      "phone_number": "+12025550119",
+      "content": "The rehearsal has moved to 18:30. Please confirm when you can."
+    }
+  },
+  "observation": {
+    "ok": true,
+    "value": "a80b0b64-f675-4cf6-89f8-de1b90798466",
+    "error": null
+  },
+  "event_index": 1
+}

@@ -1,0 +1,62 @@
+{
+  "files_scanned": 7392,
+  "unique_contents_scanned": 39550,
+  "zip_containers_scanned": 114,
+  "zip_members_inspected": 50610,
+  "text_bytes_scanned": 889744356,
+  "forbidden_files": [],
+  "credential_candidates": [
+    {
+      "path": "experiments/R1/tests/test_collect.py",
+      "kind": "private_key",
+      "candidate_sha256": "3021d90eb9437b2d8f30e8363695c4418b5e5f1870801b5c317e9398ee0f572d",
+      "length": 27,
+      "context_redacted": "ture(self.base)\n        write(root/'calls'/'credential.json',{'text':'<REDACTED_CANDIDATE>'})\n        self.assertEqual(self.collect(root)['status'],'BLOCKED_SENSITIVE_CON"
+    },
+    {
+      "path": "experiments/R1/tests/test_collect.py",
+      "kind": "key_literal",
+      "candidate_sha256": "1e88d022bf2d060d1c9ed7260a7166e1426ed5dc698af44affd7a08730091a03",
+      "length": 19,
+      "context_redacted": "self):\n        root=fixture(self.base);write(root/'records'/'r.json',{'api_key':'<REDACTED_CANDIDATE>'})\n        self.assertEqual(self.collect(root)['status'],'BLOCKED_SENSITIVE_CONT"
+    },
+    {
+      "path": "experiments/R1/verification/03_red_metadata.txt",
+      "kind": "api_token",
+      "candidate_sha256": "a21dd43db1b31fe7b2fce93eb608e6077c71a3617e1ca28f06d9f77a7fe39fd2",
+      "length": 35,
+      "context_redacted": "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: b'<REDACTED_CANDIDATE>' unexpectedly found in b'{\\n  \"tool_version\": \"handoff-1.0\",\\n  \"sha256\": {\\n  "
+    },
+    {
+      "path": "experiments/R1/verification/03_red_metadata.txt",
+      "kind": "api_token",
+      "candidate_sha256": "a21dd43db1b31fe7b2fce93eb608e6077c71a3617e1ca28f06d9f77a7fe39fd2",
+      "length": 35,
+      "context_redacted": "les\": 0,\\n    \"prefix_files\": 0,\\n    \"returned_model_ids\": [\\n      \"<REDACTED_CANDIDATE>\"\\n    ],\\n    \"cost_estimate_recomputed\": false,\\n    \"provider_bill_reconciled"
+    },
+    {
+      "path": "feedback/R7_materials/filtered_reference/反馈11_R7公开材料下载_20260913/原始记录/R7_materials_20260913T061951846901Z/metadata/nltk-3.8.1.json",
+      "kind": "aws_id",
+      "candidate_sha256": "1a5d44a2dca19669d72edf4c4f1c27c4c1ca4b4408fbb17f6ce4ad452d78ddb3",
+      "length": 20,
+      "context_redacted": "ET_credentials.txt\\\", format=\\\"raw\\\")\\nprint(data)\\n b'AWS_SECRET_KEY=<REDACTED_CANDIDATE>\\\\nDATABASE_PASS=hunter2\\\\n'\\nAll of these bypass path checks and decode identic"
+    }
+  ],
+  "scope": "Pattern-based candidate scan, not comprehensive privacy or IP certification.",
+  "candidate_disposition": [
+    {
+      "type": "test_placeholder_or_test_failure_log",
+      "matches": 4,
+      "basis": "R1 test constructs the sk- repeated-character dummy, a key header without key material, and literal fake-secret-value."
+    },
+    {
+      "type": "upstream_documentation_example",
+      "matches": 1,
+      "basis": "nltk package metadata demonstration credential; same archived finding as earlier review."
+    }
+  ],
+  "known_live_credentials_found": 0,
+  "private_account_files_read": false,
+  "retained_user_data": "Public/synthetic task records and original research timestamps/path metadata, unchanged.",
+  "scanner_timing_note": "Initial unoptimized full-text passes exceeded command time limits. Marker prefiltering retained the same regex matches and allowed complete scan. No research was run."
+}

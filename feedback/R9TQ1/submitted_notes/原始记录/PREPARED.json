@@ -1,0 +1,69 @@
+{
+  "binding": "ab7bc842edc959564f88804e8ec182c2736064c7a7a62f2474be8fc7ae6dc993",
+  "config": {
+    "accepted_response_labels": [
+      "deepseek-flash",
+      "deepseek-v4-flash"
+    ],
+    "endpoint": "https://api.deepseek.com/v1/chat/completions",
+    "key_env": "LLM_API_KEY",
+    "max_attempts": 12,
+    "max_response_bytes": 8000000,
+    "max_tokens": 16384,
+    "max_tools_per_response": 4,
+    "min_interval_seconds": 0.4,
+    "model": "deepseek-flash",
+    "reasoning_effort": "high",
+    "stream": false,
+    "thinking": {
+      "type": "enabled"
+    },
+    "timeout_seconds": 120,
+    "tool_choice": "auto"
+  },
+  "environment": {
+    "machine": "arm64",
+    "numpy": "1.26.4",
+    "platform": "Darwin",
+    "polars": "0.20.31",
+    "python": "3.11.15"
+  },
+  "new_model_calls": 0,
+  "prepared_utc": "2026-09-13T15:42:27.055038+00:00",
+  "protocol": {
+    "additional_smoke": 0,
+    "batch_execution": "Validate entire batch then execute in returned order; sequential, not parallel or atomic",
+    "cases": [
+      "q0_read",
+      "q1_message",
+      "q2_reminder"
+    ],
+    "environment_events": "Disabled for interface qualification; R9 tasks not run",
+    "identity_policy": "Allowed response labels at first response, exact fixed label/fingerprint thereafter; no weights authentication",
+    "lineage_max_including_this_qualification": 16,
+    "lineage_prior_received_requests": 4,
+    "max_structured_calls_per_response": 4,
+    "notes": [
+      "Request model changes explicitly from deepseek-v4-flash to documented deepseek-flash",
+      "Drop response_format and JSON action text loop; no strict/beta/forced-tool/parallel flag",
+      "No JSON extraction or repair of content; only tool_calls can authorize dispatch",
+      "This batch is NOT a confirmation experiment; passing does not auto-start 360-call R9"
+    ],
+    "on_native_error": "Return actual error via role=tool within the same fixed request budget",
+    "on_schema_error": "Pause without executing ANY call from the response",
+    "phase": "INTERFACE_QUALIFICATION_NOT_RESEARCH_COMPARISON",
+    "qualification_requires": "Native calls plus consumed real tool replies, explicit end, task state valid with no forbidden effects",
+    "reasoning_history": "Preserve response reasoning_content in assistant messages for every follow-up with tools",
+    "request_caps": [
+      2,
+      5,
+      5
+    ],
+    "researcher_remote_calls": 0,
+    "run_existing_state_policy": "NO_RESUME_NO_RETRY_NO_OVERWRITE",
+    "task_id": "R9TQ1_NATIVE_TOOL_QUALIFICATION_01",
+    "total_request_cap": 12,
+    "version": "r9tq-1.0.0"
+  },
+  "source_manifest_sha256": "f4eb1392041f0afd1141d33eb317a0d6b6650d922e443ecf226d1acc61933002"
+}

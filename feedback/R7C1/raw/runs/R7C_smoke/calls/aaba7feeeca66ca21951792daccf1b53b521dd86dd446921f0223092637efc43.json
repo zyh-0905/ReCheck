@@ -1,0 +1,67 @@
+{
+  "attempt": 1,
+  "logical_id": "smoke",
+  "request_sha256": "b66b69acd5cde999c77d6bc936095b5e16b0f0fe532e042af45f248af301e615",
+  "started_utc": "2026-09-13T08:44:45.696923+00:00",
+  "payload": {
+    "model": "deepseek-v4-flash",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Return exactly one JSON object: {\"done\":\"ready\"}."
+      },
+      {
+        "role": "user",
+        "content": "Check the JSON-only interface."
+      }
+    ],
+    "stream": false,
+    "max_tokens": 16384,
+    "thinking": {
+      "type": "enabled"
+    },
+    "reasoning_effort": "high"
+  },
+  "payload_sha256": "276d1132f834e138b09c4b056aa8274e2d3cd7a8bfffd9ada645861a68358e87",
+  "metadata": {
+    "phase": "smoke"
+  },
+  "registration_is_not_remote_receipt": true,
+  "status": "ok",
+  "ended_utc": "2026-09-13T08:44:46.564546+00:00",
+  "latency_seconds": 0.8672604160383344,
+  "response": {
+    "id": "aed2491d-843a-4d71-b130-f39d45b36f05",
+    "object": "chat.completion",
+    "created": 1789289085,
+    "model": "deepseek-flash",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"done\":\"ready\"}",
+          "reasoning_content": "We need answer exactly one JSON object: {\"done\":\"ready\"}. Need comply."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 48,
+      "completion_tokens": 23,
+      "total_tokens": 71,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 17
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 48
+    },
+    "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+  },
+  "text": "{\"done\":\"ready\"}",
+  "estimated_cost": null
+}

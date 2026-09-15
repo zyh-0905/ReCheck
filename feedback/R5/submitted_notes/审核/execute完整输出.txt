@@ -1,0 +1,21 @@
+Prepared independent calibration. No LLM calls.
+completed single task_exact
+completed single task_rollout2
+completed single task_myopic
+completed single single_effect_exact
+completed single any_exact
+completed single semantic_exact
+completed single age_paced
+completed single never
+completed shared task_exact
+completed shared task_rollout2
+completed shared task_myopic
+completed shared single_effect_exact
+completed shared any_exact
+completed shared semantic_exact
+completed shared age_paced
+completed shared never
+{'mechanical_pass': False, 'complete': True, 'rows': 8192, 'replayed_task_records': 8192, 'reference_science_match': False, 'scientific_gate': 'PENDING_RESEARCHER_REVIEW'}
+ISSUES: ['reference scientific outputs differ: preserve records for review']
+{'pass': True, 'files': 1115, 'sha256': '8c41c11ef23ca6bb502f6029b29695d5088207ea664391831c5e170c98305575'}
+UPLOAD: /Users/user/代码/DeepSeek harness/REcheck/R5_Research_Kit/uploads/R5_feedback_20260912T165808097946Z.zip

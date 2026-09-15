@@ -1,0 +1,69 @@
+START_UTC=2026-09-12T18:34:49Z
+{
+  "prepared": true,
+  "protocol": "R6_SELECTIVE_CALIBRATION_01"
+}
+Calibration panel 1/4
+Calibration panel 2/4
+Calibration panel 3/4
+Calibration panel 4/4
+Frozen-policy evaluation panel 1/4
+Frozen-policy evaluation panel 2/4
+Frozen-policy evaluation panel 3/4
+Frozen-policy evaluation panel 4/4
+{
+  "started_at_utc": "2026-09-12T18:34:49.381883+00:00",
+  "finished_at_utc": "2026-09-12T18:35:03.693007+00:00",
+  "run_seconds": 14.311297875130549,
+  "training_and_design_seconds": 4.397308792220429,
+  "physical_training_workflows": 40384,
+  "base_streams": 128,
+  "trajectories": 2560,
+  "task_records": 20480,
+  "new_llm_api_calls": 0,
+  "network_allowed": false,
+  "independent_training_panels": 4,
+  "counts_note": "budgets16/32 are nested checkpoints, not independent training runs"
+}
+Audit calibration panel 1/4
+Audit calibration panel 2/4
+Audit calibration panel 3/4
+Audit calibration panel 4/4
+Audit frozen trajectories panel 1/4
+Audit frozen trajectories panel 2/4
+Audit frozen trajectories panel 3/4
+Audit frozen trajectories panel 4/4
+{
+  "mechanical_pass": true,
+  "issues": [],
+  "source": {
+    "pass": true,
+    "issues": [],
+    "files": 39,
+    "manifest_sha256": "f50e48d8fd36844d58cf18c12b21f7fcbdb6f16ce9faf6827c8bb6d285b7e632"
+  },
+  "calibration_workflow_events_checked": 40384,
+  "physical_calibration_workflows": 40384,
+  "runtime_task_records": 20480,
+  "trajectories": 2560,
+  "base_streams": 128,
+  "training_panels": 4,
+  "scoped_probability_atol": 1e-14,
+  "scoped_probability_rtol": 0,
+  "max_probability_delta": 0.0,
+  "reference_present": true,
+  "reference_science_match": true,
+  "hard_budget_violations": [],
+  "new_llm_api_calls": 0,
+  "scientific_gate": "PENDING_RESEARCHER_REVIEW",
+  "limits": "Conditional development experiment; same catalogs/API grammar; no public benchmark or general optimum proof."
+}
+{
+  "export": "/Users/user/\u4ee3\u7801/DeepSeek harness/REcheck/R6_Research_Kit/uploads/R6_feedback_20260912T183528217128Z.zip",
+  "verification": {
+    "pass": true,
+    "entries": 2714,
+    "issues": []
+  }
+}
+END_UTC=2026-09-12T18:35:29Z

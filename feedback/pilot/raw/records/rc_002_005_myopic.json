@@ -1,0 +1,62 @@
+{
+  "study": "recheck",
+  "stream": 2,
+  "step": 5,
+  "method": "myopic",
+  "task_type": 1,
+  "prefix_sha256": "d7d468754cba91107b5f33c57a5a62b53be58ec3354ec9ad49e8ac5bbb681ec4",
+  "worker_view": {
+    "task": {
+      "request": "Return the number of orders with integer event_time at most 5, including 5.",
+      "requested_fields": [
+        "count"
+      ],
+      "cutoff": 5
+    },
+    "memory": {
+      "amount_divisor": 1,
+      "endpoint_inclusive": false,
+      "checked_at": [
+        4,
+        5
+      ]
+    },
+    "current_round": 6,
+    "tool_descriptions": {
+      "sum_amount": "Returns raw sum; divide by the remembered amount_divisor to obtain major units.",
+      "count_before": "Counts rows relative to integer bound. Use remembered endpoint_inclusive. Desired cutoff is inclusive.",
+      "count_all": "Counts all orders. No argument."
+    },
+    "instructions": "Return {\"amount_divisor\":1 or 100 or null,\"time_bound\":integer or null}. Use null for unused fields. Do not request extra probes."
+  },
+  "ages_before": [
+    2,
+    1
+  ],
+  "probed_channels": [],
+  "probe_receipts": [],
+  "probe_count": 0,
+  "model_probe_cost": 0.0,
+  "planning_seconds": 9.837513789534569e-05,
+  "probe_seconds": 5.58304600417614e-06,
+  "tool_seconds": 0.00010679196566343307,
+  "task_tool_calls": 1,
+  "plan": {
+    "amount_divisor": null,
+    "time_bound": 6
+  },
+  "plan_json_error": null,
+  "plan_schema_valid": true,
+  "tool_result": {
+    "count_before": 6
+  },
+  "answer": {
+    "total": null,
+    "count": 6
+  },
+  "answer_json_error": null,
+  "logical_calls": [
+    "rc/2/5/myopic/plan",
+    "rc/2/5/myopic/answer"
+  ]
+}

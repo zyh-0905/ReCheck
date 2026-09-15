@@ -1,0 +1,50 @@
+{
+  "all_pages_unchanged_after_final_build": true,
+  "checks": [
+    {
+      "paper": "recheck",
+      "page": 1,
+      "same_as_visually_reviewed_render": true
+    },
+    {
+      "paper": "recheck",
+      "page": 2,
+      "same_as_visually_reviewed_render": true
+    },
+    {
+      "paper": "recheck",
+      "page": 3,
+      "same_as_visually_reviewed_render": true
+    },
+    {
+      "paper": "recheck",
+      "page": 4,
+      "same_as_visually_reviewed_render": true
+    },
+    {
+      "paper": "repairlens",
+      "page": 1,
+      "same_as_visually_reviewed_render": true
+    },
+    {
+      "paper": "repairlens",
+      "page": 2,
+      "same_as_visually_reviewed_render": true
+    },
+    {
+      "paper": "repairlens",
+      "page": 3,
+      "same_as_visually_reviewed_render": true
+    },
+    {
+      "paper": "repairlens",
+      "page": 4,
+      "same_as_visually_reviewed_render": true
+    },
+    {
+      "paper": "repairlens",
+      "page": 5,
+      "same_as_visually_reviewed_render": true
+    }
+  ]
+}

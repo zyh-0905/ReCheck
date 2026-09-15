@@ -1,0 +1,10 @@
+.venv/
+_vendor/
+__pycache__/
+.pytest_cache/
+runs/
+uploads/
+offline_reports/
+PREPARED.json
+.DS_Store
+.env

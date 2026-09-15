@@ -1,0 +1,22 @@
+{
+  "offline_gate": "PASS",
+  "remote_model_calls": 0,
+  "planned_main_calls": 408,
+  "model": "deepseek-flash",
+  "main_output_cap": 16384,
+  "prices": "unknown",
+  "trajectory_probe_disagreements": [
+    5,
+    4,
+    5,
+    5,
+    4,
+    5,
+    5,
+    4,
+    5,
+    5,
+    5,
+    5
+  ]
+}

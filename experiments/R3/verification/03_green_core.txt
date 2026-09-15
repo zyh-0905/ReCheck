@@ -1,0 +1,31 @@
+test_actual_hazard_changes_loss_not_probes (test_r3_core.ExactTests.test_actual_hazard_changes_loss_not_probes) ... ok
+test_all_grid_cells_retained (test_r3_core.ExactTests.test_all_grid_cells_retained) ... ok
+test_always (test_r3_core.ExactTests.test_always) ... ok
+test_dp_matches_bellman (test_r3_core.ExactTests.test_dp_matches_bellman) ... ok
+test_never_no_drift (test_r3_core.ExactTests.test_never_no_drift) ... ok
+test_one_step_dp_myopic (test_r3_core.ExactTests.test_one_step_dp_myopic) ... ok
+test_opportunity_no_hidden_rng (test_r3_core.ExactTests.test_opportunity_no_hidden_rng) ... ok
+test_zero_drift_no_semantic_opportunity (test_r3_core.ExactTests.test_zero_drift_no_semantic_opportunity) ... ok
+test_case_deterministic (test_r3_core.ProtocolTests.test_case_deterministic) ... ok
+test_counts (test_r3_core.ProtocolTests.test_counts) ... ok
+test_initial_tasks_balanced (test_r3_core.ProtocolTests.test_initial_tasks_balanced) ... ok
+test_main_ids_unique (test_r3_core.ProtocolTests.test_main_ids_unique) ... ok
+test_policy_view_excludes_world (test_r3_core.ProtocolTests.test_policy_view_excludes_world) ... ok
+test_world_rng_does_not_change_public_tasks (test_r3_core.ProtocolTests.test_world_rng_does_not_change_public_tasks) ... ok
+test_all_schema_empty (test_r3_core.WorkerTests.test_all_schema_empty) ... ok
+test_amount (test_r3_core.WorkerTests.test_amount) ... ok
+test_bool_not_bound (test_r3_core.WorkerTests.test_bool_not_bound) ... ok
+test_count_render_never_reinterprets (test_r3_core.WorkerTests.test_count_render_never_reinterprets) ... ok
+test_count_schema_has_no_amount (test_r3_core.WorkerTests.test_count_schema_has_no_amount) ... ok
+test_counterfactual_is_not_used (test_r3_core.WorkerTests.test_counterfactual_is_not_used) ... ok
+test_irrelevant_stale_not_counted (test_r3_core.WorkerTests.test_irrelevant_stale_not_counted) ... ok
+test_normative_error_stays_wrong (test_r3_core.WorkerTests.test_normative_error_stays_wrong) ... ok
+test_stale_value_legal_but_not_fresh (test_r3_core.WorkerTests.test_stale_value_legal_but_not_fresh) ... ok
+test_total_render_selected_divisor (test_r3_core.WorkerTests.test_total_render_selected_divisor) ... ok
+test_unused_amount_is_invalid_not_silently_fixed (test_r3_core.WorkerTests.test_unused_amount_is_invalid_not_silently_fixed) ... ok
+test_valid_count (test_r3_core.WorkerTests.test_valid_count) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 0.227s
+
+OK

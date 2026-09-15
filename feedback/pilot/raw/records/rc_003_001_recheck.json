@@ -1,0 +1,70 @@
+{
+  "study": "recheck",
+  "stream": 3,
+  "step": 1,
+  "method": "recheck",
+  "task_type": 0,
+  "prefix_sha256": "ac06b3b10e7164d026657e8238f717cfaad302d17356fdef068defa76f362b5b",
+  "worker_view": {
+    "task": {
+      "request": "Return the total amount of all orders in major currency units.",
+      "requested_fields": [
+        "total"
+      ],
+      "cutoff": null
+    },
+    "memory": {
+      "amount_divisor": 1,
+      "endpoint_inclusive": true,
+      "checked_at": [
+        2,
+        0
+      ]
+    },
+    "current_round": 2,
+    "tool_descriptions": {
+      "sum_amount": "Returns raw sum; divide by the remembered amount_divisor to obtain major units.",
+      "count_before": "Counts rows relative to integer bound. Use remembered endpoint_inclusive. Desired cutoff is inclusive.",
+      "count_all": "Counts all orders. No argument."
+    },
+    "instructions": "Return {\"amount_divisor\":1 or 100 or null,\"time_bound\":integer or null}. Use null for unused fields. Do not request extra probes."
+  },
+  "ages_before": [
+    2,
+    2
+  ],
+  "probed_channels": [
+    0
+  ],
+  "probe_receipts": [
+    {
+      "channel": "amount_unit",
+      "raw_amount": 1.0,
+      "known_invoice_major_units": 1
+    }
+  ],
+  "probe_count": 1,
+  "model_probe_cost": 0.18,
+  "planning_seconds": 7.962505333125591e-05,
+  "probe_seconds": 2.2541964426636696e-05,
+  "tool_seconds": 0.00012395810335874557,
+  "task_tool_calls": 1,
+  "plan": {
+    "amount_divisor": 1,
+    "time_bound": null
+  },
+  "plan_json_error": null,
+  "plan_schema_valid": true,
+  "tool_result": {
+    "sum_amount_raw": 1088.51
+  },
+  "answer": {
+    "total": 1088.51,
+    "count": null
+  },
+  "answer_json_error": null,
+  "logical_calls": [
+    "rc/3/1/recheck/plan",
+    "rc/3/1/recheck/answer"
+  ]
+}

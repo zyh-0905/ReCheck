@@ -1,0 +1,118 @@
+{
+  "automatic_full_research_authorized": false,
+  "completed_qualification_cases": [
+    "q0_read",
+    "q1_message",
+    "q2_reminder"
+  ],
+  "execution_complete": true,
+  "mechanical_pass": true,
+  "monetary_cost": "UNKNOWN",
+  "native_tool_events": 7,
+  "new_remote_model_calls": 0,
+  "note": "Engineering qualification, not model reliability or experiment success rate; same-assistant replay",
+  "qualification_pass": true,
+  "reconstructed_requests": 10,
+  "recorded_requests": 10,
+  "research_complete": false,
+  "retained_response_failures": [],
+  "status": "completed",
+  "usage_records": [
+    {
+      "cached_input_tokens": 0,
+      "completion_tokens": 25,
+      "latency_seconds": 0.7147784999106079,
+      "logical_id": "q0_read/turn_00",
+      "prompt_tokens": 530,
+      "reasoning_tokens": 0,
+      "total_tokens": 555
+    },
+    {
+      "cached_input_tokens": 384,
+      "completion_tokens": 75,
+      "latency_seconds": 1.0931140419561416,
+      "logical_id": "q0_read/turn_01",
+      "prompt_tokens": 579,
+      "reasoning_tokens": 71,
+      "total_tokens": 654
+    },
+    {
+      "cached_input_tokens": 0,
+      "completion_tokens": 64,
+      "latency_seconds": 0.9766206247732043,
+      "logical_id": "q1_message/turn_00",
+      "prompt_tokens": 2643,
+      "reasoning_tokens": 39,
+      "total_tokens": 2707
+    },
+    {
+      "cached_input_tokens": 2560,
+      "completion_tokens": 101,
+      "latency_seconds": 0.937559291953221,
+      "logical_id": "q1_message/turn_01",
+      "prompt_tokens": 2731,
+      "reasoning_tokens": 14,
+      "total_tokens": 2832
+    },
+    {
+      "cached_input_tokens": 2688,
+      "completion_tokens": 82,
+      "latency_seconds": 1.107609709026292,
+      "logical_id": "q1_message/turn_02",
+      "prompt_tokens": 2878,
+      "reasoning_tokens": 14,
+      "total_tokens": 2960
+    },
+    {
+      "cached_input_tokens": 2944,
+      "completion_tokens": 84,
+      "latency_seconds": 1.1487751249223948,
+      "logical_id": "q1_message/turn_03",
+      "prompt_tokens": 3122,
+      "reasoning_tokens": 0,
+      "total_tokens": 3206
+    },
+    {
+      "cached_input_tokens": 2304,
+      "completion_tokens": 60,
+      "latency_seconds": 0.6642960840836167,
+      "logical_id": "q2_reminder/turn_00",
+      "prompt_tokens": 2653,
+      "reasoning_tokens": 15,
+      "total_tokens": 2713
+    },
+    {
+      "cached_input_tokens": 2560,
+      "completion_tokens": 170,
+      "latency_seconds": 1.258655291981995,
+      "logical_id": "q2_reminder/turn_01",
+      "prompt_tokens": 2821,
+      "reasoning_tokens": 15,
+      "total_tokens": 2991
+    },
+    {
+      "cached_input_tokens": 2816,
+      "completion_tokens": 70,
+      "latency_seconds": 0.8759792500641197,
+      "logical_id": "q2_reminder/turn_02",
+      "prompt_tokens": 3015,
+      "reasoning_tokens": 5,
+      "total_tokens": 3085
+    },
+    {
+      "cached_input_tokens": 2944,
+      "completion_tokens": 127,
+      "latency_seconds": 1.1668488748837262,
+      "logical_id": "q2_reminder/turn_03",
+      "prompt_tokens": 3193,
+      "reasoning_tokens": 0,
+      "total_tokens": 3320
+    }
+  ],
+  "usage_total": {
+    "completion_tokens": 858,
+    "latency_seconds": 9.94423679355532,
+    "prompt_tokens": 24165,
+    "total_tokens": 25023
+  }
+}

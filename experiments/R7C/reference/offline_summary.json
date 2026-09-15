@@ -1,0 +1,36 @@
+{
+  "cases": 24,
+  "episodes": 96,
+  "kind": "SCRIPTED_NATIVE_DIAGNOSIS_NOT_LLM",
+  "new_llm_calls": 0,
+  "summary": {
+    "always_resolve": {
+      "cases": 24,
+      "historical_queries": 30,
+      "ordinary_queries": 10,
+      "runtime_tools": 51,
+      "success": 24
+    },
+    "cached_reactive": {
+      "cases": 24,
+      "historical_queries": 30,
+      "ordinary_queries": 10,
+      "runtime_tools": 37,
+      "success": 17
+    },
+    "on_error_resolve": {
+      "cases": 24,
+      "historical_queries": 30,
+      "ordinary_queries": 10,
+      "runtime_tools": 38,
+      "success": 18
+    },
+    "reuse_observed": {
+      "cases": 24,
+      "historical_queries": 30,
+      "ordinary_queries": 10,
+      "runtime_tools": 37,
+      "success": 19
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "task_id": "R6_SELECTIVE_CALIBRATION_01",
+  "version": "r6-6.0.0",
+  "fresh_unpacked_tests": 60,
+  "test_exit_code": 0,
+  "fresh_execute_exit_code": 0,
+  "final_audit": {
+    "base_streams": 128,
+    "calibration_workflow_events_checked": 40384,
+    "hard_budget_violations": [],
+    "issues": [],
+    "limits": "Conditional development experiment; same catalogs/API grammar; no public benchmark or general optimum proof.",
+    "max_probability_delta": 0.0,
+    "mechanical_pass": true,
+    "new_llm_api_calls": 0,
+    "physical_calibration_workflows": 40384,
+    "reference_present": true,
+    "reference_science_match": true,
+    "runtime_task_records": 20480,
+    "scientific_gate": "PENDING_RESEARCHER_REVIEW",
+    "scoped_probability_atol": 1e-14,
+    "scoped_probability_rtol": 0,
+    "source": {
+      "files": 39,
+      "issues": [],
+      "manifest_sha256": "f50e48d8fd36844d58cf18c12b21f7fcbdb6f16ce9faf6827c8bb6d285b7e632",
+      "pass": true
+    },
+    "training_panels": 4,
+    "trajectories": 2560
+  },
+  "feedback_bundle_verification": {
+    "pass": true,
+    "entries": 2714,
+    "issues": []
+  },
+  "completed_run_resampled": false,
+  "registered_source_byte_match_to_tested_zip": true,
+  "source_integrity": {
+    "pass": true,
+    "issues": [],
+    "files": 39,
+    "manifest_sha256": "f50e48d8fd36844d58cf18c12b21f7fcbdb6f16ce9faf6827c8bb6d285b7e632"
+  },
+  "physical_calibration_workflow_events": 40384,
+  "training_reference_workflow_events": 1600,
+  "measured_perturbed_workflow_events": 38784,
+  "independent_training_panels": 4,
+  "catalogs_per_training_panel": 16,
+  "independent_evaluation_base_streams": 128,
+  "paired_menus": 2,
+  "methods": 10,
+  "trajectories": 2560,
+  "task_records": 20480,
+  "runtime_budget_credits": 8,
+  "round_budget_cap": 4,
+  "shared_initialization_credit_equivalent": 6,
+  "new_llm_api_calls": 0,
+  "phase": "OFFLINE_DEVELOPMENT_NOT_CONFIRMATORY",
+  "model_rule_environment": "Existing synthetic R4 catalog/inventory environment; not a public benchmark",
+  "partial_attempt_preserved": {
+    "reason": "container execution command timeout",
+    "retained_trajectories": 1184,
+    "new_model_calls": 0,
+    "path_in_research_workspace": "/mnt/data/r6_work/interrupted_research_run",
+    "not_merged_into_sample_counts": true,
+    "overlapping_scientific_trajectories": 1184,
+    "unchanged": true,
+    "issues": [],
+    "not_added_to_sample_count": true,
+    "archive_sha256": "c0ef3cffd07ab9415652ded1be99baa650ec0648a3fdfcffae832942da8d3bf7"
+  },
+  "first_complete_reference_retained": true,
+  "environment": {
+    "os": "Linux",
+    "python": "3.13.5",
+    "numpy": "2.3.5"
+  },
+  "windows_macos_runtime_tested": false,
+  "independent_human_review": false,
+  "statistical_scope": "Evaluation uncertainty conditional on four fitted training panels; user replication adds no new n",
+  "scientific_verdict": "Decision-sensitive acquisition did not consistently beat random or single-effect baselines. Fewer labels did not imply lower measured local time.",
+  "raw_r5_archive_unchanged": true,
+  "not_claimed": [
+    "real LLM improvement",
+    "public benchmark transfer",
+    "new general active learning theorem",
+    "uniform superiority",
+    "currency savings",
+    "paper acceptance"
+  ]
+}

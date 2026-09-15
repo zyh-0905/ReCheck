@@ -1,0 +1,41 @@
+=== reviewing repair_readiness_deepseek_v41_flash_cap16384 ===
+study=repairlens_readiness label=REAL_ENDPOINT_CONTROLLED_PILOT_NOT_CONFIRMATORY
+config.model=deepseek-flash output_cap=16384 max_tokens_field=max_tokens temperature=None extra_body={}
+
+[1] snapshot / export integrity
+  PASS  code_snapshot matches manifest.source_hashes (15 files)
+  status=completed budget={"attempts": 34, "known_estimated_spend": 0.007347, "unknown_or_unbilled_attempts": 0, "conservative_reserved_spend": 0.0, "guard_spend": 0.007347}
+
+[2] accounting
+  attempts_started=34 attempts_finished=34 completed_logical_calls=34
+  PASS  no interrupted/uncertain attempts (start without result)
+  PASS  attempt index sets agree
+  statuses={'ok': 34}
+  PASS  records complete 12/12
+  PASS  every successful response carries usage (missing=0)
+
+[3] hidden-answer leakage scan of transmitted payloads
+  PASS  no generator-private evaluator rule in any of 34 transmitted payloads
+  note: specifications, old/new source values and the correction text are public by design
+
+[4] shared prefix + no cross-method answer reuse
+
+[5] provider identity and decoding
+  requested=deepseek-flash returned={'deepseek-flash': 34}
+  PASS  returned model matches requested model for every call
+  system_fingerprints={'aeb56401ca74e127821c4f9126dcb669': 34}
+  ok    single serving fingerprint across the run (no silent backend switch)
+  finish_reasons={'stop': 34}
+  PASS  no truncated responses (length=0)
+  prompt_tokens=7690 completion_tokens=4200 of which reasoning=3847 cache_hit_input=0
+  estimated_cost total = 0.007347 USD  (unknown-attempt cost entries=0)
+
+[6] error decomposition
+  method                 n  selection_invalid  mean_selected
+  full_regeneration      4                  0           3.00
+  llm_selected_patch     4                  0           1.50
+  keep_stale             4                  0           0.00
+
+=== verdict ===
+hard failures: 0
+warnings: 0

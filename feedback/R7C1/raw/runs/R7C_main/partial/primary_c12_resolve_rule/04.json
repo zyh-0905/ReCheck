@@ -1,0 +1,10 @@
+{
+  "turn": 4,
+  "logical_id": "primary_c12_resolve_rule/turn_04",
+  "request_sha256": "7a00c3cc9051a463f2dab662e56aafa0a8122ead0b81dd51a18310d04399defc",
+  "response_text": "{\"done\":\"Sent the exact message to Fredrik Thordendal at his current contact number (+12025550119), exactly once. Cellular service was off and was enabled to send it. No contacts, reminders, or other settings were edited.\"}",
+  "kind": "done",
+  "action": {
+    "done": "Sent the exact message to Fredrik Thordendal at his current contact number (+12025550119), exactly once. Cellular service was off and was enabled to send it. No contacts, reminders, or other settings were edited."
+  }
+}

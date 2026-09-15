@@ -1,0 +1,19 @@
+{
+  "turn": 2,
+  "logical_id": "primary_c12_stateless/turn_02",
+  "request_sha256": "16fe53df00f2d28bbe07f6e779e247f11734bb5ee131c3237c80647f7b430668",
+  "response_text": "{\"tool\":\"set_cellular_service_status\",\"arguments\":{\"on\":true}}",
+  "kind": "tool",
+  "action": {
+    "tool": "set_cellular_service_status",
+    "arguments": {
+      "on": true
+    }
+  },
+  "observation": {
+    "ok": true,
+    "value": null,
+    "error": null
+  },
+  "event_index": 2
+}

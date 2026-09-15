@@ -1,0 +1,22 @@
+{
+  "task": "R2_FEEDBACK_INDEPENDENT_REVIEW",
+  "original_distribution_tests_passed": 91,
+  "independent_evaluator_tests_passed": 14,
+  "manifest_entries_checked": 2327,
+  "frozen_main_requests_replayed": 484,
+  "independent_task_records": 240,
+  "responses_main_plus_smoke": 485,
+  "fresh_repeat_scientific_outputs_equal": true,
+  "new_llm_calls": 0,
+  "live_provider_network_used": false,
+  "audit_runtime": "Linux / Python 3.13.5 / numpy 2.3.5",
+  "run_snapshot_export_warning": "LICENSE missing in two snapshots; complete matching file available in kit_source",
+  "decision": "ACCEPT_R2_DEVELOPMENT_DATA; DO_NOT_RERUN_R2; NO_NEW_PAID_TRIAL_AUTHORIZATION",
+  "reference_vs_live_scores_kept_separate": true,
+  "original_input_archives_unchanged": true,
+  "money": "UNKNOWN",
+  "independent_human_review": false,
+  "distributed_archive_tests_passed": 14,
+  "distributed_archive_full_audit_passed": true,
+  "distributed_archive_outputs_byte_identical": true
+}

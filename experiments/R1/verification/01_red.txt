@@ -1,0 +1,15 @@
+test_entrypoint_exists (test_collect.CollectorTests.test_entrypoint_exists) ... FAIL
+
+======================================================================
+FAIL: test_entrypoint_exists (test_collect.CollectorTests.test_entrypoint_exists)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/Research_Handoff_R1/tests/test_collect.py", line 56, in test_entrypoint_exists
+    self.assertTrue(callable(getattr(c,'collect_bundle',None)))
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (failures=1)

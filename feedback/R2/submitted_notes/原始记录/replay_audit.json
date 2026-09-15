@@ -1,0 +1,12 @@
+{
+  "pass": true,
+  "applicable": true,
+  "new_model_calls": 0,
+  "request_bodies_checked": 484,
+  "completed_calls_consumed": 484,
+  "stop_reason": null,
+  "request_mismatches": [],
+  "artifact_mismatches": [],
+  "unconsumed_calls": [],
+  "note": "Local reconstruction only, not provider identity or invoice authentication."
+}

@@ -1,0 +1,21 @@
+test_prepare_git_upload (unittest.loader._FailedTest.test_prepare_git_upload) ... ERROR
+
+======================================================================
+ERROR: test_prepare_git_upload (unittest.loader._FailedTest.test_prepare_git_upload)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_prepare_git_upload
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/unittest/loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python3.13/unittest/loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "/mnt/data/recheck_consolidation_work/ReCheck/tests/test_prepare_git_upload.py", line 4, in <module>
+    from prepare_git_upload import prepare, validate_origin
+ModuleNotFoundError: No module named 'prepare_git_upload'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)

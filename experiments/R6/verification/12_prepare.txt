@@ -1,0 +1,4 @@
+{
+  "prepared": true,
+  "protocol": "R6_SELECTIVE_CALIBRATION_01"
+}

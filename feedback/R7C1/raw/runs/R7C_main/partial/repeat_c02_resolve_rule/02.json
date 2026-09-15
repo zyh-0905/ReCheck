@@ -1,0 +1,10 @@
+{
+  "turn": 2,
+  "logical_id": "repeat_c02_resolve_rule/turn_02",
+  "request_sha256": "008f51162eabf4ab6348c9f14b59577fd7c239e7bcae428ad16d5f4569c0f3a8",
+  "response_text": "{\"done\":\"Sent the message to Fredrik Thordendal at +12025550119: \\\"The rehearsal has moved to 18:30. Please confirm when you can.\\\"\"}",
+  "kind": "done",
+  "action": {
+    "done": "Sent the message to Fredrik Thordendal at +12025550119: \"The rehearsal has moved to 18:30. Please confirm when you can.\""
+  }
+}

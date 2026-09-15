@@ -1,0 +1,49 @@
+{
+  "assistant_message": {
+    "content": "Message sent successfully. Let me verify the outcome.",
+    "reasoning_content": "Message sent. Now verify with a read tool.",
+    "role": "assistant",
+    "tool_calls": [
+      {
+        "function": {
+          "arguments": "{\"message_id\": \"f614ac0c-a42f-4f76-8194-25e41bf2f265\"}",
+          "name": "search_messages"
+        },
+        "id": "call_00_S86pcJYRzkqGoWmsCZsv3135",
+        "index": 0,
+        "type": "function"
+      }
+    ]
+  },
+  "decoded_calls": [
+    {
+      "arguments": {
+        "message_id": "f614ac0c-a42f-4f76-8194-25e41bf2f265"
+      },
+      "id": "call_00_S86pcJYRzkqGoWmsCZsv3135",
+      "name": "search_messages"
+    }
+  ],
+  "event_end": 5,
+  "event_start": 4,
+  "executions": [
+    {
+      "batch_index": 0,
+      "event_end": 5,
+      "event_start": 4,
+      "outer_tool_count": 4,
+      "tool_call_id": "call_00_S86pcJYRzkqGoWmsCZsv3135"
+    }
+  ],
+  "kind": "tools",
+  "logical_id": "primary_n03_verify_confirm/turn_02",
+  "request_sha256": "f8b79e777d94680023360cb72a7d60b4f3faaf170e7317c77b240a2823b49e72",
+  "tool_messages": [
+    {
+      "content": "{\"error\":null,\"ok\":true,\"value\":[{\"content\":\"Rehearsal begins at 19:15. Please acknowledge.\",\"creation_timestamp\":1789356572.037926,\"message_id\":\"f614ac0c-a42f-4f76-8194-25e41bf2f265\",\"recipient_person_id\":\"9e137f06-916a-5310-8174-cf0b7e9f7054\",\"recipient_phone_number\":\"+12453344098\",\"sender_person_id\":\"3815cac9-3cab-5d75-89e2-fe12fe19779e\",\"sender_phone_number\":\"+11233344455\"}]}",
+      "role": "tool",
+      "tool_call_id": "call_00_S86pcJYRzkqGoWmsCZsv3135"
+    }
+  ],
+  "turn": 2
+}

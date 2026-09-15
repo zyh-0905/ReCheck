@@ -1,0 +1,73 @@
+=== reviewing recheck_deepseek_v41_flash ===
+study=recheck label=REAL_ENDPOINT_CONTROLLED_PILOT_NOT_CONFIRMATORY
+config.model=deepseek-flash output_cap=4096 max_tokens_field=max_tokens temperature=None extra_body={}
+
+[1] snapshot / export integrity
+  PASS  code_snapshot matches manifest.source_hashes (15 files)
+  status=running budget=null
+
+[2] accounting
+  attempts_started=9 attempts_finished=8 completed_logical_calls=8
+  FAIL  no interrupted/uncertain attempts (start without result)
+  FAIL  attempt index sets agree
+  statuses={'ok': 8}
+  FAIL  records complete 3/128
+  PASS  every successful response carries usage (missing=0)
+  planned_logical_calls=260 actual=8
+  FAIL  logical call count equals frozen protocol value
+  PASS  default pilot size 4 streams x 8 steps
+
+[3] hidden-answer leakage scan of transmitted payloads
+  PASS  no hidden-state field or value in any of 9 transmitted payloads
+  payload key sets: {('max_tokens', 'messages', 'model', 'stream'): 9}
+  PASS  no unexpected request parameters
+  PASS  no hidden thinking/temperature override smuggled into requests
+
+[4] shared prefix + no cross-method answer reuse
+  PASS  all four methods in each stream share one identical prefix hash
+  FAIL  exactly one shared-prefix model call per stream (1)
+  PASS  logical call IDs are unique (no answer shared across methods)
+
+[5] provider identity and decoding
+  requested=deepseek-flash returned={'deepseek-flash': 8}
+  PASS  returned model matches requested model for every call
+  system_fingerprints={'aeb56401ca74e127821c4f9126dcb669': 8}
+  ok    single serving fingerprint across the run (no silent backend switch)
+  finish_reasons={'stop': 7, 'length': 1}
+  FAIL  no truncated responses (length=1)
+  prompt_tokens=2022 completion_tokens=8755 of which reasoning=8661 cache_hit_input=256
+  estimated_cost total = 0.011037 USD  (unknown-attempt cost entries=0)
+
+[6] error decomposition
+  answer finish=length   empty n=1
+  answer finish=stop     text  n=2
+  plan   finish=stop     text  n=3
+  method   regime          n  correct  plan_bad  json_err schema_bad mem_div_ok  mem_ep_ok
+  myopic   no_drift        1        0         0         1          1          1          1
+  recheck  no_drift        1        1         0         0          0          1          1
+  ttl      no_drift        1        1         0         0          0          1          1
+
+  rows with valid plan AND fully-known semantics: 3/3 -> correctness 2/3
+
+  task_type    n  correct  needs
+          2    3        2  amount+endpoint
+
+  method    needed_semantics_unknown  wrong_with_semantics_known
+  recheck                          0                           0
+  myopic                           0                           1
+  ttl                              0                           0
+  always                           0                           0
+
+  phase             n  prompt_tok   compl_tok  reason_tok  mean_lat_s
+  plan              3         804         946         907        2.02
+  answer            3         741        7376        7349       10.72
+
+=== verdict ===
+hard failures: 6
+  - no interrupted/uncertain attempts (start without result)
+  - attempt index sets agree
+  - records complete 3/128
+  - logical call count equals frozen protocol value
+  - exactly one shared-prefix model call per stream (1)
+  - no truncated responses (length=1)
+warnings: 0

@@ -1,0 +1,11 @@
+{
+  "state": "completed",
+  "updated_utc": "2026-09-12T08:36:33.173268+00:00",
+  "budget": {
+    "attempts": 34,
+    "known_estimated_spend": 0.007347,
+    "unknown_or_unbilled_attempts": 0,
+    "conservative_reserved_spend": 0.0,
+    "guard_spend": 0.007347
+  }
+}

@@ -1,0 +1,18 @@
+name                                 type              encoding         emb sub uni object ID
+------------------------------------ ----------------- ---------------- --- --- --- ---------
+NIFIML+NimbusRomNo9L-Medi            Type 1            Custom           yes yes yes     75  0
+KXLGWL+NimbusRomNo9L-ReguItal        Type 1            Custom           yes yes yes     76  0
+QBXSYD+NimbusRomNo9L-Regu            Type 1            Custom           yes yes yes     77  0
+SJISBO+NimbusRomNo9L-MediItal        Type 1            Custom           yes yes yes     79  0
+ISMFLZ+CMMI10                        Type 1            Builtin          yes yes yes     92  0
+SDVCAT+CMSY7                         Type 1            Builtin          yes yes yes     93  0
+XWWTVG+CMSY10                        Type 1            Builtin          yes yes yes     95  0
+HSVFQZ+CMR7                          Type 1            Builtin          yes yes yes     96  0
+APHPSD+CMMI7                         Type 1            Builtin          yes yes yes     98  0
+LJRJAZ+CMR10                         Type 1            Builtin          yes yes yes     99  0
+ZABVWA+CMEX10                        Type 1            Builtin          yes yes yes    100  0
+UAGOMC+CMBX10                        Type 1            Builtin          yes yes yes    102  0
+JZOPIF+CMMI5                         Type 1            Builtin          yes yes yes    104  0
+DGLYWB+NimbusMonL-Regu               Type 1            Custom           yes yes yes    107  0
+UJQVKJ+CMMI9                         Type 1            Builtin          yes yes yes    117  0
+BMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes    120  0

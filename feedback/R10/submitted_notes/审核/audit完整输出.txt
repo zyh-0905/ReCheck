@@ -1,0 +1,15 @@
+{
+  "mechanical_pass": true,
+  "execution_complete": true,
+  "status": "completed",
+  "primary_episodes": 48,
+  "recorded_requests": 237,
+  "reconstructed_requests": 237,
+  "database_tool_events": 214,
+  "partial_database_events": 0,
+  "retained_response_failures": [],
+  "new_remote_model_calls": 0,
+  "cost_currency": "UNKNOWN",
+  "scientific_superiority_claim": false,
+  "automatic_next_batch_authorized": false
+}

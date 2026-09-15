@@ -1,0 +1,1 @@
+Transport journaling reuses R4 serialization helpers. The old retry-capable JournalClient was removed; only RunStopped/NoRedirect remain. Live entry is r7clib.transport.Client via r7c.py. Unused legacy helper functions in pilot/common.py are not execution entry points and do not start network calls.

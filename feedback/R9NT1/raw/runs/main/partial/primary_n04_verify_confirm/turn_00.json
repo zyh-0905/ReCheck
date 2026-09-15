@@ -1,0 +1,47 @@
+{
+  "assistant_message": {
+    "content": "",
+    "reasoning_content": "The user wants to send exactly one text to +12453344098. Cellular service may need to be enabled. Let me check cellular service status first.\n\nLet me check cellular status.",
+    "role": "assistant",
+    "tool_calls": [
+      {
+        "function": {
+          "arguments": "{}",
+          "name": "get_cellular_service_status"
+        },
+        "id": "call_00_xB3vRW31f43wZcsBXeth8320",
+        "index": 0,
+        "type": "function"
+      }
+    ]
+  },
+  "decoded_calls": [
+    {
+      "arguments": {},
+      "id": "call_00_xB3vRW31f43wZcsBXeth8320",
+      "name": "get_cellular_service_status"
+    }
+  ],
+  "event_end": 1,
+  "event_start": 0,
+  "executions": [
+    {
+      "batch_index": 0,
+      "event_end": 1,
+      "event_start": 0,
+      "outer_tool_count": 1,
+      "tool_call_id": "call_00_xB3vRW31f43wZcsBXeth8320"
+    }
+  ],
+  "kind": "tools",
+  "logical_id": "primary_n04_verify_confirm/turn_00",
+  "request_sha256": "c42aede3b33d56f7b0c63ac6609d54d77b14c2d6b356203dca7a6ed5716ec616",
+  "tool_messages": [
+    {
+      "content": "{\"error\":null,\"ok\":true,\"value\":true}",
+      "role": "tool",
+      "tool_call_id": "call_00_xB3vRW31f43wZcsBXeth8320"
+    }
+  ],
+  "turn": 0
+}

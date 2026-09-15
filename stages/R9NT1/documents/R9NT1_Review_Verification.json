@@ -1,0 +1,119 @@
+{
+  "phase": "R9NT1_FEEDBACK_REVIEW",
+  "generated_utc": "2026-09-14T04:36:51.628495+00:00",
+  "execution_accepted": true,
+  "study_round_closed": true,
+  "rerun_required": false,
+  "new_paid_batch_authorized": false,
+  "new_remote_model_calls": 0,
+  "feedback_outer_sha256": "b8f3c4d009f40932e6ad8c127633e36ebf4a340ad09931278a79965fb603c8ae",
+  "feedback_inner_sha256": "eea1a15d09c962463aab41bac0a2db9705c6195a79f5709aedb8ade623522fca",
+  "original_kit_sha256": "e8686e52224b7d2ff454bdf521a72855f90925dfbe1dc96b0c6c64bb8bc7ad83",
+  "bundle_data_files": 932,
+  "bundle_total_files": 933,
+  "registered_source_files": 116,
+  "upstream_files_unchanged": 77,
+  "raw_response_bodies": 139,
+  "primary_episodes": 32,
+  "repeat_episodes": 4,
+  "native_tool_events": 124,
+  "environment_operations": 44,
+  "receipt_links": 124,
+  "native_full_replays": 2,
+  "saved_derived_reports_byte_equal": {
+    "calls.csv": true,
+    "episodes.csv": true,
+    "exposure.csv": true,
+    "paired.csv": true,
+    "repeats.csv": true,
+    "scores.json": true,
+    "summary.csv": true
+  },
+  "completed_branch_no_resampling": true,
+  "independent_scoring_all_episodes_equal": true,
+  "original_unit_tests": {
+    "run": 88,
+    "failures": 0,
+    "errors": 0,
+    "seconds": 53.094
+  },
+  "independent_tests": {
+    "unit": 36,
+    "full_evidence_tamper": 10,
+    "total": 46,
+    "failures": 0,
+    "errors": 0
+  },
+  "fresh_extracted_tests": {
+    "run": 46,
+    "failures": 0,
+    "errors": 0
+  },
+  "fresh_scientific_outputs_equal": {
+    "calls.csv": true,
+    "episodes.csv": true,
+    "summary.csv": true,
+    "exposure.csv": true,
+    "receipt_links.csv": true,
+    "repeats.csv": true,
+    "paired.csv": true,
+    "independent_review.json": true,
+    "failure_evidence.json": true
+  },
+  "primary_result": {
+    "inherited": {
+      "safe": 14,
+      "of": 16,
+      "wrong": 2,
+      "model_calls": 58,
+      "tool_calls": 52
+    },
+    "verify_confirm": {
+      "safe": 14,
+      "of": 16,
+      "wrong": 2,
+      "model_calls": 66,
+      "tool_calls": 59
+    }
+  },
+  "primary_goal_vs_trace_disagreements": 0,
+  "primary_final_clean_vs_trace_disagreements": 0,
+  "primary_tool_success_false_accepts": 4,
+  "multi_tool_response_counts": {
+    "single_tool": 82,
+    "two_tools": 21,
+    "final": 36
+  },
+  "posthoc_not_primary": {
+    "native_observability_reads": 4,
+    "sparse_argument_counterfactuals": 2,
+    "counterfactual_safe_successes": 0,
+    "new_model_responses": 0
+  },
+  "inputs_unchanged": true,
+  "currency_cost": "UNKNOWN",
+  "test_history": [
+    "First original-suite command was stopped by a 45-second command limit; partial log retained. A separate complete process passed 88 tests in 53.094 seconds. No live requests.",
+    "Independent interface stub: 36 tests, 32 failures and 1 missing-result error. Actual implementation passed all unit tests; 10 whole-evidence tests subsequently passed."
+  ],
+  "native_environment": {
+    "python": "3.11.14 supplied runtime -S",
+    "numpy": "1.26.4",
+    "polars": "0.20.31",
+    "scipy": "1.13.1",
+    "restoration": "verified supplied wheel modules and source modules, not a new pip installation"
+  },
+  "independent_human_review": false,
+  "not_claimed": [
+    "model weight authentication",
+    "official benchmark score",
+    "final-state evaluator false acceptance in this batch",
+    "universal safety or superiority",
+    "publication readiness",
+    "new RepairLens result"
+  ],
+  "delivery_package_sha256": "c515433f485715ff622e6925f53dee9f66e1533c5916a6c4001b2872fdfc71b3",
+  "delivery_package_bytes": 2891234,
+  "delivery_manifest_files": 44,
+  "tested_source_matches_delivered_source": true
+}

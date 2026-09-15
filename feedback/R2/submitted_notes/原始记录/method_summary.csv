@@ -1,0 +1,6 @@
+﻿method,completed_records,planned_records,successes,success_rate_completed_only,independent_streams,probe_count,stale_related,stale_propagation_consistent,interface_failures,response_records,output_tokens_known,output_tokens_missing,llm_latency_seconds,list_price_estimate_excluding_prefix,local_recorded_seconds
+recheck,48,48,43,0.8958333333333334,4,30,2,2,1,96,81187,0,399.8590164221823,,0.010263536125421524
+myopic,48,48,46,0.9583333333333334,4,25,2,2,0,96,69876,0,353.38844687258825,,0.008780124131590128
+ttl,48,48,43,0.8958333333333334,4,32,5,5,0,96,75452,0,380.47460350301117,,0.005248586414381862
+always,48,48,47,0.9791666666666666,4,96,0,0,1,96,70979,0,359.74167287233286,,0.008158334763720632
+never,48,48,42,0.875,4,0,4,4,2,96,52828,0,285.15933112055063,,0.003484215820208192

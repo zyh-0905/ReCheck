@@ -1,0 +1,92 @@
+{
+  "phase": "R11_OFFLINE_EVIDENCE_SYNTHESIS",
+  "created_utc": "2026-09-14T15:40:38.258285+00:00",
+  "new_remote_llm_calls": 0,
+  "new_model_episodes": 0,
+  "user_execution_required": false,
+  "new_paid_package": false,
+  "original_R10_scores_unchanged": true,
+  "original_R9NT1_data_not_rerun_or_changed": true,
+  "original_R10_episodes_replayed": 48,
+  "original_R10_proposals": 70,
+  "first_proposals": 48,
+  "feedback_induced_later_proposals": 22,
+  "local_SQLite_branch_transitions": 280,
+  "first_proposal_branches": 192,
+  "later_proposal_branches": 88,
+  "original_condition_branches_equal": 70,
+  "input_manifest_files": 1091,
+  "original_source_files": 38,
+  "new_analysis_unit_tests": 37,
+  "new_analysis_unit_tests_failures": 0,
+  "fresh_extracted_tests": 37,
+  "fresh_extracted_failures": 0,
+  "scientific_outputs_equal_on_fresh_extract": {
+    "branch_evidence.json": true,
+    "branch_results.csv": true,
+    "episode_first_proposals.csv": true,
+    "proposal_ledger.csv": true,
+    "summary.csv": true,
+    "verification.json": true
+  },
+  "new_independent_research_samples": 0,
+  "input_sha256": {
+    "R10_feedback_inner.zip": "8bfc5a830dfe94fb9d4df09f82f1df965b1cd0565f7c2f74df45b7efc6f71dd7",
+    "R10_handoff.zip": "aece2409470c9773047fe328185e297d9f60c2601b0741ea569fb28ec6efcce5"
+  },
+  "original_user_outer_zip_sha256": "6c65dd4e04c16f9aa7069bd0ee94e076f6f08694ee62ede9d62a49b4adbfe396",
+  "conditional_rejection_is_not_automatically_a_model_error": true,
+  "counterfactuals_do_not_identify_alternative_policy_value": true,
+  "paper": {
+    "pages": 4,
+    "size_pt": [
+      612,
+      792
+    ],
+    "fonts_all_embedded": true,
+    "type3_fonts": false,
+    "out_of_page_blocks": [],
+    "overfull_warnings": false,
+    "undefined_references": false,
+    "rendered_pages_visually_checked": 4,
+    "standalone_latex_fresh_compile": true,
+    "standalone_render_equal": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "style_provenance": "inherited transcription; not authenticated current official kit",
+    "authors": "pending",
+    "submission_readiness_claim": false
+  },
+  "platform": {
+    "python": "3.13.5",
+    "sqlite": "3.46.1",
+    "system": "Linux-6.18.44-x86_64-with-glibc2.41"
+  },
+  "no_independent_human_or_subagent_review": true,
+  "no_OS_level_sandbox_guarantee": true,
+  "new_repairlens_results": false,
+  "limits": [
+    "Only fixed R10 snapshot branches, not a new closed-loop agent evaluation",
+    "All condition subsets retain originally submitted predicates only",
+    "Original retry proposals are policy-dependent, not samples of an unguarded trajectory",
+    "R9NT1 and R10 differ in tasks and execution capabilities; no cross-cohort causal contrast",
+    "Known gate/semantic-validation mechanisms are not claimed novel",
+    "37 tests belong to new analysis code; original 92-test suite not rerun this turn"
+  ],
+  "final_exact_archive_tests": 37,
+  "final_exact_archive_audit_outputs_equal": {
+    "branch_evidence.json": true,
+    "branch_results.csv": true,
+    "episode_first_proposals.csv": true,
+    "proposal_ledger.csv": true,
+    "summary.csv": true,
+    "verification.json": true
+  },
+  "delivery_zip_sha256": "3fc238522aede5074e217a1736d1f3ef4a760c3b82da2d5da314e7bcc21bc66a",
+  "delivery_zip_bytes": 2366115,
+  "delivery_manifest_entries": 53,
+  "standalone_latex_zip_sha256": "aa4466d6660db6a692e1523749914c289a688d8cd8fc33dc030f73b77e385083"
+}

@@ -1,0 +1,48 @@
+FF                                                                       [100%]
+=================================== FAILURES ===================================
+_________ test_recheck_bootstrap_clusters_base_seeds_not_regime_labels _________
+
+    def test_recheck_bootstrap_clusters_base_seeds_not_regime_labels():
+>       m=report_module()
+          ^^^^^^^^^^^^^^^
+
+tests/test_reporting.py:14: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def report_module():
+        path=Path(__file__).parents[1]/'scripts'/'make_report.py'
+>       assert path.exists(), 'report generator must exist'
+E       AssertionError: report generator must exist
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('/mnt/data/icassp_research_20260912/scripts/make_report.py').exists
+
+tests/test_reporting.py:8: AssertionError
+_______________ test_stratified_paired_interval_retains_pairing ________________
+
+    def test_stratified_paired_interval_retains_pairing():
+>       m=report_module()
+          ^^^^^^^^^^^^^^^
+
+tests/test_reporting.py:21: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def report_module():
+        path=Path(__file__).parents[1]/'scripts'/'make_report.py'
+>       assert path.exists(), 'report generator must exist'
+E       AssertionError: report generator must exist
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('/mnt/data/icassp_research_20260912/scripts/make_report.py').exists
+
+tests/test_reporting.py:8: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_reporting.py::test_recheck_bootstrap_clusters_base_seeds_not_regime_labels - AssertionError: report generator must exist
+assert False
+ +  where False = exists()
+ +    where exists = PosixPath('/mnt/data/icassp_research_20260912/scripts/make_report.py').exists
+FAILED tests/test_reporting.py::test_stratified_paired_interval_retains_pairing - AssertionError: report generator must exist
+assert False
+ +  where False = exists()
+ +    where exists = PosixPath('/mnt/data/icassp_research_20260912/scripts/make_report.py').exists
+2 failed in 0.05s

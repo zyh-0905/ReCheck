@@ -1,0 +1,32 @@
+{
+  "stage": "R7A_SOURCE_CONTRACT_AND_MATERIALS_PREPARATION",
+  "recorded_utc": "2026-09-13T06:02:35.783285+00:00",
+  "source_tests": 17,
+  "materials_downloader_tests": 26,
+  "all_passed": true,
+  "fresh_unpack_retested": true,
+  "clean_standard_library_startup": true,
+  "source_results_reproducible": true,
+  "native_toolsandbox_installed": false,
+  "native_toolsandbox_tests_run": false,
+  "public_benchmark_tasks_executed": 0,
+  "new_llm_calls": 0,
+  "upstream_function_body_executed_with_test_doubles": true,
+  "source_function_blob_verified": "9900cd2fbd4b88f25cf937776c4e185c0ab6339e",
+  "dependency_download_attempt": "failed DNS in current container; raw failure logs packaged",
+  "materials_collector_real_network_tested": false,
+  "materials_collector_end_to_end_fixture_tests": true,
+  "no_install_or_execution_on_user_machine": "collector downloads only; no subprocess or import of downloaded files",
+  "future_native_compatibility_guaranteed": false,
+  "user_action": "one-time public material download and ZIP upload, NOT offline experiment rerun",
+  "independent_peer_review": false,
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "artifact_sha256": {
+    "R7A_Source_Study.zip": "89f1da003eebde6fd22687debfc28518feed5c97933fab9fb2c61a6a98b02580",
+    "R7_Materials_Request.zip": "19383fc7cf93dc71e446090fcda2b0088e41f5ac7d5929810fd0bcef35ed0732",
+    "R7A_Research_Update_ZH.md": "fe8a0ebe5075137c29ffa5a5e699a475379de1f0b19c5f6e7a80b671a0f6a81a",
+    "R7_Materials_Prompt_ZH.md": "f4932a577c871443a42a8f622a3ea9acd169354f81d27dfb914cbcae0d959fc6",
+    "R7_Materials_Runbook_ZH.md": "9f60bfd895097de68844886a672f8613e4615e0a6e5c7d5511dc77afefc9eac2"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "enabled": false,
+  "currency": "UNKNOWN",
+  "source": "",
+  "model_ids": [],
+  "valid_from_utc": "",
+  "valid_until_utc": "",
+  "off_peak": {
+    "input_per_million": null,
+    "cached_input_per_million": null,
+    "output_per_million": null
+  },
+  "peak": {
+    "input_per_million": null,
+    "cached_input_per_million": null,
+    "output_per_million": null
+  },
+  "peak_windows_utc": []
+}

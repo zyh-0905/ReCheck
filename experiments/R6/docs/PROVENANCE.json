@@ -1,0 +1,28 @@
+{
+  "original_r5_sha256": "4540d6c1689c63010685d82c53b8f068a105de662b3d6110e527369b089ddeab",
+  "vendor_files": {
+    "vendor/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "vendor/planner.py": "16bfe2b87257961ceebc7b3706604db4e3b7ee3d13aed9420103f6aa2d16c0ac",
+    "vendor/r4/worker.py": "9a4bc34db6aa7af067d3420bb357512282685848ba0bebdc50d0a0e16633440e",
+    "vendor/r4/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "vendor/r4/LICENSE": "748f17c6499a0c1c087c85ae2b1cd1090ad2063d9eaeb55e52511a1b7f2f9370",
+    "vendor/r4/environment.py": "766fc9c1bef4f803474f71b5e46c5a36696f18d46eb2dec49699dddc2c5ded30"
+  },
+  "notes": "R5 Planner and R4 World/worker reused byte-for-byte. No R5 learning table or test outcomes used.",
+  "first_completed_candidate_archive_sha256": "e557b3dac85ed59f23501b433709126b43fe88031b41f646527bf6ce0e551015",
+  "first_completed_science_reference_sha256": "c4b355131b5622441d6a14e57a64b66bb38946da48848e9dcf3e904dfb4ce4cc",
+  "interrupted_attempt": {
+    "reason": "container execution command timeout",
+    "retained_trajectories": 1184,
+    "new_model_calls": 0,
+    "path_in_research_workspace": "/mnt/data/r6_work/interrupted_research_run",
+    "not_merged_into_sample_counts": true,
+    "overlapping_scientific_trajectories": 1184,
+    "unchanged": true,
+    "issues": [],
+    "not_added_to_sample_count": true,
+    "archive_sha256": "c0ef3cffd07ab9415652ded1be99baa650ec0648a3fdfcffae832942da8d3bf7"
+  },
+  "after_first_complete": "audit-only typed comparison/layout tests; no planner, selector, seeds or labels changed",
+  "documentation_timing_values": "first complete run, not selected fastest repeat"
+}

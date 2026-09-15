@@ -1,0 +1,30 @@
+[
+  {
+    "name": "R12_Public_Evaluator_Audit.zip",
+    "bytes": 878402,
+    "sha256": "eb53d1226e0a213d2a212fbc76f804cc6cc21f651a23b1765df57a9fe242ec7b",
+    "previously_reported_sha256": "eb53d1226e0a213d2a212fbc76f804cc6cc21f651a23b1765df57a9fe242ec7b",
+    "match": true
+  },
+  {
+    "name": "R13_Temporal_Scope_Audit.zip",
+    "bytes": 369458,
+    "sha256": "2a4fdc0b453f3455695234a2685f037faf5c36aa3ee22171e8444ce72f23738c",
+    "previously_reported_sha256": "2a4fdc0b453f3455695234a2685f037faf5c36aa3ee22171e8444ce72f23738c",
+    "match": true
+  },
+  {
+    "name": "R14_Public_Corpus_Analysis.zip",
+    "bytes": 19449608,
+    "sha256": "2bb15d73541df1254acc3e28d939d068d61b348243c3e055ad539b9d99361cfe",
+    "previously_reported_sha256": "2bb15d73541df1254acc3e28d939d068d61b348243c3e055ad539b9d99361cfe",
+    "match": true
+  },
+  {
+    "name": "R15_Public_Effect_Audit.zip",
+    "bytes": 20234542,
+    "sha256": "d7af1d62444d82864aac3ca2fc4ea341ae6ce98cdc5091553e5417759ca51d19",
+    "previously_reported_sha256": "d7af1d62444d82864aac3ca2fc4ea341ae6ce98cdc5091553e5417759ca51d19",
+    "match": true
+  }
+]

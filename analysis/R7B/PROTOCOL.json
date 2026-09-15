@@ -1,0 +1,16 @@
+{
+  "id": "R7B_NATIVE_VALIDATION_01",
+  "version": "0.1",
+  "new_llm_calls": 0,
+  "upstream_commit": "c8571d7854316d2e1c5f288e59fe1e34e53f6dd1",
+  "scope": "Native integration and hand-constructed mechanism fixtures, not agent benchmark scores",
+  "rule_methods": [
+    "cached_reactive",
+    "query_on_error",
+    "always_resolve",
+    "reuse_observed_then_resolve"
+  ],
+  "construction": "4 state regimes x 3 observation timings; one task family",
+  "user_action": "NONE",
+  "next_paid_run_package_ready": false
+}

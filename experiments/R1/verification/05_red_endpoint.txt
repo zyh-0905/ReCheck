@@ -1,0 +1,15 @@
+test_endpoint_bound_request_hash_validates (test_collect.CollectorTests.test_endpoint_bound_request_hash_validates) ... FAIL
+
+======================================================================
+FAIL: test_endpoint_bound_request_hash_validates (test_collect.CollectorTests.test_endpoint_bound_request_hash_validates)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/Research_Handoff_R1/tests/test_collect.py", line 194, in test_endpoint_bound_request_hash_validates
+    self.assertNotIn('REQUEST_HASH_MISMATCH',{x['code'] for x in r['issues']})
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'REQUEST_HASH_MISMATCH' unexpectedly found in {'INTERRUPTED_ATTEMPTS_PRESERVED', 'RAW_DIRECTORY_HAS_NO_FILES', 'TRUNCATED_RESPONSES_PRESERVED', 'REQUEST_HASH_MISMATCH'}
+
+----------------------------------------------------------------------
+Ran 1 test in 0.009s
+
+FAILED (failures=1)

@@ -1,0 +1,5 @@
+phase,arm,planned_episodes,completed_episodes,tool_success_proxy,goal_final,final_state_clean,trace_safe_success,wrong_write,goal_only_false_accept,final_clean_false_accept,tool_errors,tool_calls,terminated,triggered,recorded_model_requests,prompt_tokens,completion_tokens,total_tokens,latency_seconds,monetary_cost
+primary,inherited,16,16,16,14,14,14,2,0,0,0,52,16,12,58,169400,7513,176913,73.1470021684654,UNKNOWN
+primary,verify_confirm,16,16,16,14,14,14,2,0,0,0,59,16,12,66,197860,7381,205241,78.66669878573157,UNKNOWN
+repeat,inherited,2,2,2,0,0,0,2,0,0,0,6,2,2,7,20645,946,21591,7.7187338748481125,UNKNOWN
+repeat,verify_confirm,2,2,2,0,0,0,2,0,0,0,7,2,2,8,24625,1051,25676,10.005098956869915,UNKNOWN

@@ -1,0 +1,23 @@
+{
+  "task_id": "R1_EVIDENCE_COMPLETION",
+  "tool": "handoff-1.0",
+  "unit_tests_passed": 32,
+  "fresh_test_exit_code": 0,
+  "cli_missing_source_bundle_verified": true,
+  "cli_requires_stopped_confirmation": true,
+  "previously_returned_live_logs_checked": {
+    "recheck": 260,
+    "repair_readiness": 34,
+    "smoke": 1
+  },
+  "partial_summary_not_accepted_as_complete": true,
+  "new_model_api_calls": 0,
+  "network_or_account_access": false,
+  "missing_interrupted_batch_recovered": false,
+  "validation_environment": "Linux / Python 3.13.5",
+  "platform_caveat": "Windows/macOS command forms supplied; runtime testing was performed on Linux, not those platforms.",
+  "research_claims": "Packaging checks only, not new experiments, provider billing reconciliation, or independent peer review.",
+  "distributed_zip_fresh_extract_tests": 32,
+  "zip_sha256": "01946fb06feb922a4ff9a61681d524db503a6ec50730877d08678b5e809a1c79",
+  "zip_bytes": 33180
+}

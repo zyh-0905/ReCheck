@@ -1,0 +1,17 @@
+{
+  "turn": 0,
+  "logical_id": "primary_c05_stateless/turn_00",
+  "request_sha256": "99c2bef113fbefbd86e107ee41aee61b5a52766e7f7b1270a2193d2984aa1b49",
+  "response_text": "{\"tool\":\"get_cellular_service_status\",\"arguments\":{}}",
+  "kind": "tool",
+  "action": {
+    "tool": "get_cellular_service_status",
+    "arguments": {}
+  },
+  "observation": {
+    "ok": true,
+    "value": true,
+    "error": null
+  },
+  "event_index": 0
+}

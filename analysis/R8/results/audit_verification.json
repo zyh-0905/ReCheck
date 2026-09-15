@@ -1,0 +1,19 @@
+{
+  "new_remote_llm_calls": 0,
+  "new_primary_llm_episodes": 0,
+  "scripted_contract_trajectories": 120,
+  "main_write_transitions_rescored": 109,
+  "stress_cases_separate": 2,
+  "frozen_action_transitions": 84,
+  "frozen_action_source_primary_episodes": 42,
+  "paid_r7c1_responses_rechecked_not_new": 169,
+  "native_repeat_discrete_projection_equal": true,
+  "all_checks_pass": true,
+  "not_claimed": [
+    "real concurrency atomicity",
+    "new model failures under changed feedback",
+    "novel TOCTOU defense",
+    "model superiority",
+    "publication readiness"
+  ]
+}

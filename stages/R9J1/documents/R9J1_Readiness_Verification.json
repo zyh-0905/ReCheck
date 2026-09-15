@@ -1,0 +1,28 @@
+{
+  "scope": "READ_ONLY_PACKAGE_AND_PURE_REQUEST_BUILDER_CHECK",
+  "zip_sha256": "0ed0d58c4a6824322ec10b61e70dd7af2740e8778363ff8ed122bdfdfd03fdeb",
+  "zip_bytes": 338885,
+  "registered_files": 124,
+  "upstream_files_checked": 77,
+  "python_files_ast_parsed_for_3_11": 97,
+  "pure_request_builder_checks": 2,
+  "task_id": "R9J1_LIVE_CONTINUATION_DIAGNOSIS_01",
+  "version": "r9-1.0.1",
+  "cases": 16,
+  "primary_episodes": 32,
+  "repeat_episodes": 4,
+  "main_attempt_cap": 360,
+  "new_smoke_attempt_cap": 1,
+  "lineage_call_cap": 363,
+  "checks_passed": true,
+  "source_modified": false,
+  "new_model_calls": 0,
+  "native_suite_rerun": false,
+  "actual_endpoint_compatibility_tested_this_turn": false,
+  "new_research_samples": 0,
+  "limits": [
+    "Not a full integrated test run",
+    "Not provider/model identity authentication",
+    "No claim that R9J1 has run on the user machine"
+  ]
+}

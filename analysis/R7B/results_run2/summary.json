@@ -1,0 +1,40 @@
+{
+  "boundary_runs": 9,
+  "by_method": {
+    "always_resolve": {
+      "denominator": 12,
+      "ordinary_observation_calls": 8,
+      "runtime_calls": 24,
+      "safe_successes": 12,
+      "startup_calls": 24
+    },
+    "cached_reactive": {
+      "denominator": 12,
+      "ordinary_observation_calls": 8,
+      "runtime_calls": 12,
+      "safe_successes": 6,
+      "startup_calls": 24
+    },
+    "query_on_error": {
+      "denominator": 12,
+      "ordinary_observation_calls": 8,
+      "runtime_calls": 12,
+      "safe_successes": 6,
+      "startup_calls": 24
+    },
+    "reuse_observed_then_resolve": {
+      "denominator": 12,
+      "ordinary_observation_calls": 8,
+      "runtime_calls": 16,
+      "safe_successes": 10,
+      "startup_calls": 24
+    }
+  },
+  "constructed_cases": 12,
+  "label": "NATIVE_INTEGRATION_AND_CONSTRUCTED_MECHANISMS_NOT_LLM_BENCHMARK",
+  "new_llm_calls": 0,
+  "original_walkthroughs": 4,
+  "policy_comparisons": 48,
+  "source_commit": "c8571d7854316d2e1c5f288e59fe1e34e53f6dd1",
+  "warning": "Deterministic policies and hand-constructed perturbations; counts are fixture coverage, not inferential success rates. Underlying settings are not shared with policies."
+}

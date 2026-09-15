@@ -1,0 +1,11 @@
+method,paired_policy_episodes,independent_base_streams,task_records,successes,failures,probe_credits,runtime_j_total,runtime_j_per_paired_episode,runtime_j_per_task,note
+single_only,256,128,2048,1717,331,1984,430.2,1.68046875,0.21005859375,"mixed conditions, paired menus; descriptive only"
+full_joint,256,128,2048,1716,332,1972,430.6,1.68203125,0.21025390625,"mixed conditions, paired menus; descriptive only"
+random_16,256,128,2048,1722,326,1979,424.95,1.6599609375,0.2074951171875,"mixed conditions, paired menus; descriptive only"
+random_32,256,128,2048,1722,326,1975,424.75,1.6591796875,0.2073974609375,"mixed conditions, paired menus; descriptive only"
+occupancy_16,256,128,2048,1712,336,1975,434.75,1.6982421875,0.2122802734375,"mixed conditions, paired menus; descriptive only"
+occupancy_32,256,128,2048,1714,334,1977,432.85,1.6908203125,0.2113525390625,"mixed conditions, paired menus; descriptive only"
+decision_16,256,128,2048,1709,339,1974,437.7,1.709765625,0.213720703125,"mixed conditions, paired menus; descriptive only"
+decision_32,256,128,2048,1712,336,1975,434.75,1.6982421875,0.2122802734375,"mixed conditions, paired menus; descriptive only"
+any_exact,256,128,2048,1693,355,2028,456.4,1.7828125,0.2228515625,"mixed conditions, paired menus; descriptive only"
+never,256,128,2048,1362,686,0,686.0,2.6796875,0.3349609375,"mixed conditions, paired menus; descriptive only"

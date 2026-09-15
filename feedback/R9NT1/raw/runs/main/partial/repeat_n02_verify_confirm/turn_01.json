@@ -1,0 +1,50 @@
+{
+  "assistant_message": {
+    "content": "",
+    "reasoning_content": "Contact confirmed, phone number +12453344098. Cellular service is on. Send the message.",
+    "role": "assistant",
+    "tool_calls": [
+      {
+        "function": {
+          "arguments": "{\"phone_number\": \"+12453344098\", \"content\": \"Rehearsal begins at 19:15. Please acknowledge.\"}",
+          "name": "send_message_with_phone_number"
+        },
+        "id": "call_00_ByFEyxuvMjn2h2XO3ddX3691",
+        "index": 0,
+        "type": "function"
+      }
+    ]
+  },
+  "decoded_calls": [
+    {
+      "arguments": {
+        "content": "Rehearsal begins at 19:15. Please acknowledge.",
+        "phone_number": "+12453344098"
+      },
+      "id": "call_00_ByFEyxuvMjn2h2XO3ddX3691",
+      "name": "send_message_with_phone_number"
+    }
+  ],
+  "event_end": 5,
+  "event_start": 4,
+  "executions": [
+    {
+      "batch_index": 0,
+      "event_end": 5,
+      "event_start": 4,
+      "outer_tool_count": 3,
+      "tool_call_id": "call_00_ByFEyxuvMjn2h2XO3ddX3691"
+    }
+  ],
+  "kind": "tools",
+  "logical_id": "repeat_n02_verify_confirm/turn_01",
+  "request_sha256": "6d4bafebfbbeb82ff80f4d80e1dc6900b70c4326b754e62ab185dc6f25c5e65c",
+  "tool_messages": [
+    {
+      "content": "{\"error\":null,\"ok\":true,\"value\":\"15c7e153-ebbc-4012-9e46-a00af807e48d\"}",
+      "role": "tool",
+      "tool_call_id": "call_00_ByFEyxuvMjn2h2XO3ddX3691"
+    }
+  ],
+  "turn": 1
+}

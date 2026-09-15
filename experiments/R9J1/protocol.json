@@ -1,0 +1,60 @@
+{
+  "task_id": "R9J1_LIVE_CONTINUATION_DIAGNOSIS_01",
+  "version": "r9-1.0.1",
+  "phase": "DEVELOPMENT_DIAGNOSTIC_NOT_CONFIRMATORY",
+  "cases": 16,
+  "families": [
+    "person",
+    "phone",
+    "reminder",
+    "wifi"
+  ],
+  "variants": [
+    "stable",
+    "pre_relevant",
+    "post_relevant",
+    "post_unrelated"
+  ],
+  "arms": [
+    "inherited",
+    "verify_confirm"
+  ],
+  "primary_episodes": 32,
+  "repeat_episodes": 4,
+  "max_calls_per_episode": 10,
+  "main_attempt_cap": 360,
+  "smoke_attempt_cap": 1,
+  "combined_attempt_cap": 361,
+  "response_label_policy": "R7C1_RESPONSE_LABELS_V1",
+  "event_schedule": "at most one update; post update immediately after first successful qualifying pre-write read; no update if read opportunity missed; never outcome-conditioned",
+  "actor_capabilities": "same unchanged native API whitelist; no atomic guards; no event labels, private state or scores",
+  "primary_question": "disagreement of tool-success, goal-final, final-business-state and path-sensitive scores on the same live trace",
+  "main_endpoint": "goal_final and no unauthorized earlier actor write; termination separate",
+  "scope": "four constructed task templates within native ToolSandbox; not official benchmark score or independent external dataset",
+  "unknowns": [
+    "currency cost",
+    "provider weights",
+    "generalization",
+    "new methodological contribution"
+  ],
+  "new_repairlens_evidence": false,
+  "response_format": {
+    "type": "json_object"
+  },
+  "amendment": {
+    "kind": "DISCLOSED_OUTPUT_CONSTRAINT_CHANGE_NOT_NEW_METHOD",
+    "predecessor": "R9_LIVE_CONTINUATION_DIAGNOSIS_01 / r9-1.0.0",
+    "original_handoff_sha256": "272f7fa9bfc7c538bd58d0649108a856cb1592434299d5ac169358788f920a27",
+    "original_feedback_sha256": "b18a9a001cc95acee8fcec8f538353d23e753b1cc95730ef472c64c818114de7",
+    "retained_prior_calls": 2,
+    "retained_prior_main_format_failures": 1,
+    "prior_completed_primary": 0,
+    "prior_completed_repeat": 0,
+    "new_call_cap": 361,
+    "lineage_call_cap": 363,
+    "same_task_prompt_tools_grading": true,
+    "inference_changed": true,
+    "no_old_response_import": true,
+    "no_parser_relaxation": true
+  }
+}

@@ -1,0 +1,24 @@
+.........FF                                                              [100%]
+=================================== FAILURES ===================================
+______________ test_actual_replay_completes_and_preserves_prefix _______________
+
+tmp_path = PosixPath('/tmp/pytest-of-root/pytest-2/test_actual_replay_completes_a0')
+
+    def test_actual_replay_completes_and_preserves_prefix(tmp_path):
+>       from src.repairlens.experiment import make_problem,run_case
+E       ModuleNotFoundError: No module named 'src.repairlens.experiment'
+
+tests/test_repairlens.py:83: ModuleNotFoundError
+___________________________ test_cost_ledger_adds_up ___________________________
+
+tmp_path = PosixPath('/tmp/pytest-of-root/pytest-2/test_cost_ledger_adds_up0')
+
+    def test_cost_ledger_adds_up(tmp_path):
+>       from src.repairlens.experiment import make_problem,run_case
+E       ModuleNotFoundError: No module named 'src.repairlens.experiment'
+
+tests/test_repairlens.py:92: ModuleNotFoundError
+=========================== short test summary info ============================
+FAILED tests/test_repairlens.py::test_actual_replay_completes_and_preserves_prefix - ModuleNotFoundError: No module named 'src.repairlens.experiment'
+FAILED tests/test_repairlens.py::test_cost_ledger_adds_up - ModuleNotFoundError: No module named 'src.repairlens.experiment'
+2 failed, 9 passed in 0.07s

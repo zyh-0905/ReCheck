@@ -1,0 +1,12 @@
+{
+  "contains_scripted_trajectories_only": true,
+  "full_score_terminal_mismatch": 8,
+  "native_tool_calls": 108,
+  "native_tool_errors": 13,
+  "new_llm_calls": 0,
+  "original_evaluation_exact_matches": 45,
+  "original_full_scores": 37,
+  "records": 45,
+  "terminal_predicates_independently_checked": 45,
+  "terminal_valid": 29
+}

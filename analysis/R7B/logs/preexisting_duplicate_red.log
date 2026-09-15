@@ -1,0 +1,18 @@
+....E.........
+======================================================================
+ERROR: test_preexisting_duplicate_ids_preserved (test_score.TestScore.test_preexisting_duplicate_ids_preserved)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r7b_work/study/tests/test_score.py", line 29, in test_preexisting_duplicate_ids_preserved
+    r=score.assess([a,b],[a,b,self.row()],target_id='target',target_phone='+12025550101',content='hello')
+  File "/mnt/data/r7b_work/study/score.py", line 14, in assess
+    old=index(before);new=index(after)
+  File "/mnt/data/r7b_work/study/score.py", line 11, in index
+    if mid in result: raise ValueError('Duplicate message ID')
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Duplicate message ID
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.001s
+
+FAILED (errors=1)

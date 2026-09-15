@@ -1,0 +1,7 @@
+variant,records,original_full_score,terminal_true,terminal_false
+correct,8,8,8,0
+error_then_correct,8,8,8,0
+correct_then_redundant_error,5,5,5,0
+achieve_then_revert,8,8,0,8
+achieve_revert_repair,8,8,8,0
+claim_only,8,0,0,8

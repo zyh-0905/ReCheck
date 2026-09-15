@@ -1,0 +1,17 @@
+{
+  "copied_unmodified": {
+    "LICENSE": "748f17c6499a0c1c087c85ae2b1cd1090ad2063d9eaeb55e52511a1b7f2f9370",
+    "environment.py": "766fc9c1bef4f803474f71b5e46c5a36696f18d46eb2dec49699dddc2c5ded30",
+    "model.py": "f1bf8450e72fad240219917464f6e0fa7ede509616b4ead6c868d1ab50f999b5",
+    "worker.py": "9a4bc34db6aa7af067d3420bb357512282685848ba0bebdc50d0a0e16633440e"
+  },
+  "first_candidate_retained": true,
+  "first_executed_candidate_zip_sha256": "7884edc5d40565f35576e222f634d5c5534187daaac86701891b2231fd8aea43",
+  "negative_results_retained": true,
+  "new_llm_calls": 0,
+  "optimization_after_timing": "Fixed-policy continuation now evaluates only chosen actions; all 1024 scientific trajectory hashes unchanged. No hyperparameter/seed/label change.",
+  "protocol_sha256": "7cc2500dfe7c922135a9bef516a97a24cdb51abcfa6f90e6fcb35c9ecc5a9f08",
+  "review_type": "single assistant with independent evaluator implementation; no independent human review",
+  "source_zip": "Research_Handoff_R4.zip",
+  "source_zip_sha256": "bbf20090d0a586f8965479c65da7cf26e071955e03fd43bcb6aac19cbb678eb9"
+}

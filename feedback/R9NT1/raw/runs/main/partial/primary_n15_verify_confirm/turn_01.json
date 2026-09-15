@@ -1,0 +1,49 @@
+{
+  "assistant_message": {
+    "content": "Wi-Fi is currently off, and low battery mode is off (so it won't block the change). I'll enable Wi-Fi now.",
+    "reasoning_content": "Wi-Fi is off, low battery mode is off. So I can enable Wi-Fi directly. No need to disable low battery mode.\n\nNote: the historical evidence said value false - but that was probably the wifi status. Anyway, current state: wifi off, low battery off.\n\nLet me enable Wi-Fi.",
+    "role": "assistant",
+    "tool_calls": [
+      {
+        "function": {
+          "arguments": "{\"on\": true}",
+          "name": "set_wifi_status"
+        },
+        "id": "call_00_Iij45Zu5YcnGO2Ryh1en4174",
+        "index": 0,
+        "type": "function"
+      }
+    ]
+  },
+  "decoded_calls": [
+    {
+      "arguments": {
+        "on": true
+      },
+      "id": "call_00_Iij45Zu5YcnGO2Ryh1en4174",
+      "name": "set_wifi_status"
+    }
+  ],
+  "event_end": 4,
+  "event_start": 3,
+  "executions": [
+    {
+      "batch_index": 0,
+      "event_end": 4,
+      "event_start": 3,
+      "outer_tool_count": 3,
+      "tool_call_id": "call_00_Iij45Zu5YcnGO2Ryh1en4174"
+    }
+  ],
+  "kind": "tools",
+  "logical_id": "primary_n15_verify_confirm/turn_01",
+  "request_sha256": "8824899480577b7dff6b8bb5731277dbe20e91b95575c5e94a6317589ce7c4e3",
+  "tool_messages": [
+    {
+      "content": "{\"error\":null,\"ok\":true,\"value\":null}",
+      "role": "tool",
+      "tool_call_id": "call_00_Iij45Zu5YcnGO2Ryh1en4174"
+    }
+  ],
+  "turn": 1
+}

@@ -1,0 +1,5 @@
+arm,episodes,tool_success_proxy,goal_final,final_state_clean,trace_safe_success,wrong_write,false_completion_claim,conflicts,model_calls,tool_calls,visible_tool_calls,finish_task_calls,prompt_tokens,completion_tokens,total_tokens,reasoning_tokens,cached_input_tokens,uncached_input_tokens,latency_seconds,db_tool_seconds,event_triggered,minimal_update_episodes
+generic,12,12,12,12,12,0,0,5,58,52,64,12,109786,13598,123384,4895,95360,14426,89.27800045371987,0.014487579930573702,10,12
+minimal,12,12,12,12,12,0,0,6,60,52,64,12,116264,11177,127441,3306,100224,16040,86.9888378335163,0.014628413366153836,10,12
+intent,12,12,12,12,12,0,0,5,58,54,66,12,112662,12280,124942,3183,97920,14742,81.65351417008787,0.014472629642114043,10,12
+both,12,12,12,12,12,0,0,6,61,56,68,12,124960,12624,137584,3717,109952,15008,85.24360953993164,0.016660542227327824,10,12

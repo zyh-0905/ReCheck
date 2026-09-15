@@ -1,0 +1,16 @@
+{
+  "label": "RETROSPECTIVE_PRIOR_READINESS_NOT_NEW_REPAIRLENS_RESULTS",
+  "new_llm_calls": 0,
+  "currency_route": {
+    "route": "direct_recompute",
+    "certified_savings_under_supplied_bounds": -0.0021168000000000003,
+    "reason": "Only conditional on externally valid cost bounds; not a learned efficacy claim"
+  },
+  "latency_route": {
+    "route": "direct_recompute",
+    "certified_savings_under_supplied_bounds": -4.2833961707074195,
+    "reason": "Only conditional on externally valid cost bounds; not a learned efficacy claim"
+  },
+  "selection_cost_over_avoided_regeneration": 3.459393516904846,
+  "limitations": "Historical measured point costs are NOT prospective valid bounds. This diagnoses why the old route loses; it does not claim deployment safety, current prices, or new experimental improvement."
+}

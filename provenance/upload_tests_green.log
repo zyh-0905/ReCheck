@@ -1,0 +1,30 @@
+test_accepted_origin_forms (test_prepare_git_upload.UploadPreparationTests.test_accepted_origin_forms) ... ok
+test_dry_run_does_not_create_git (test_prepare_git_upload.UploadPreparationTests.test_dry_run_does_not_create_git) ... ok
+test_existing_partial_index_refused (test_prepare_git_upload.UploadPreparationTests.test_existing_partial_index_refused) ... ok
+test_idempotent_stage (test_prepare_git_upload.UploadPreparationTests.test_idempotent_stage) ... ok
+test_index_check (test_prepare_git_upload.UploadPreparationTests.test_index_check) ... ok
+test_no_filters_executed (test_prepare_git_upload.UploadPreparationTests.test_no_filters_executed) ... ok
+test_reject_nested_repo_root (test_prepare_git_upload.UploadPreparationTests.test_reject_nested_repo_root) ... ok
+test_stage_has_no_commit (test_prepare_git_upload.UploadPreparationTests.test_stage_has_no_commit) ... ok
+test_stage_ignored_data_exactly (test_prepare_git_upload.UploadPreparationTests.test_stage_ignored_data_exactly) ... ok
+test_stage_requires_git_repo (test_prepare_git_upload.UploadPreparationTests.test_stage_requires_git_repo) ... ok
+test_tampered_file_rejected (test_prepare_git_upload.UploadPreparationTests.test_tampered_file_rejected) ... ok
+test_wrong_origin_rejected (test_prepare_git_upload.UploadPreparationTests.test_wrong_origin_rejected) ... ok
+test_wrong_remote_aborts_without_index (test_prepare_git_upload.UploadPreparationTests.test_wrong_remote_aborts_without_index) ... ok
+test_bad_hash (test_verify_archive.ArchiveTests.test_bad_hash) ... ok
+test_bad_size_type (test_verify_archive.ArchiveTests.test_bad_size_type) ... ok
+test_changed_bytes (test_verify_archive.ArchiveTests.test_changed_bytes) ... ok
+test_duplicate (test_verify_archive.ArchiveTests.test_duplicate) ... ok
+test_exact (test_verify_archive.ArchiveTests.test_exact) ... ok
+test_extra (test_verify_archive.ArchiveTests.test_extra) ... ok
+test_fonts_refused (test_verify_archive.ArchiveTests.test_fonts_refused) ... ok
+test_git_metadata_ignored (test_verify_archive.ArchiveTests.test_git_metadata_ignored) ... ok
+test_missing (test_verify_archive.ArchiveTests.test_missing) ... ok
+test_paths (test_verify_archive.ArchiveTests.test_paths) ... ok
+test_secret_filename (test_verify_archive.ArchiveTests.test_secret_filename) ... ok
+test_symlink_refused (test_verify_archive.ArchiveTests.test_symlink_refused) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 0.259s
+
+OK

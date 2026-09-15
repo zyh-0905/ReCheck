@@ -1,0 +1,36 @@
+{
+  "scope": "Pattern scan of available research sources and nested ZIP/gzip text; not a comprehensive privacy certification",
+  "source_records_classified": 230,
+  "initial_unique_blobs_examined": 39049,
+  "initial_archive_members_examined": 50015,
+  "initial_text_bytes_scanned": 778144803,
+  "candidate_matches": 5,
+  "candidate_disposition": [
+    {
+      "class": "upstream_package_documentation",
+      "count": 1,
+      "finding": "Third-party package description contains a demonstration credential, not a submitted live credential."
+    },
+    {
+      "class": "unit_test_placeholder",
+      "count": 2,
+      "finding": "R1 collector test contains a bare private-key BEGIN marker without key body and a literal fake-secret string."
+    },
+    {
+      "class": "test_failure_log",
+      "count": 2,
+      "finding": "R1 red-test log contains synthetic repeated-character API-key test data; source test constructs the value."
+    }
+  ],
+  "known_live_credentials_found": 0,
+  "original_response_data_modified": false,
+  "dependency_distributions_excluded": 54,
+  "font_files_distributed": 0,
+  "separate_UI_page_previews": "Not duplicated; scientific figures and PDFs remain inside original research packages.",
+  "notes": [
+    "No environment variables, personal credential files, bank/email/contacts, or unrelated Library files were read.",
+    "The public targets were explicitly selected by the user. Model outputs, synthetic contact/task fields, local path/time metadata and source logs remain as research evidence.",
+    "Dummy test values are preserved so source integrity is not silently altered.",
+    "No claim that all possible personal information or novel secret formats were detected."
+  ]
+}

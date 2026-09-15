@@ -1,0 +1,16 @@
+{
+ "id": "R12_PUBLIC_EVALUATOR_OFFLINE_AUDIT_01",
+ "scope": "Source audit plus researcher-scripted trajectories through unchanged public ToolSandbox tasks and evaluator; not LLM results",
+ "source_commit": "c8571d7854316d2e1c5f288e59fe1e34e53f6dd1",
+ "inclusion": "Five canonical non-implicit mutating boolean-setting tasks with offline tools: cellular_off, wifi_off, turn_on_wifi_low_battery_mode, turn_on_cellular_low_battery_mode, turn_on_location_low_battery_mode. One settings family, not five independent domains.",
+ "cases": ["cellular_off","wifi_off","turn_on_wifi_low_battery_mode","turn_on_cellular_low_battery_mode","turn_on_location_low_battery_mode"],
+ "variants": ["correct","error_then_correct","correct_then_redundant_error","claim_only","achieve_then_revert","achieve_revert_repair"],
+ "hypotheses": ["H1: Does a recorded no-state-change tool exception automatically invalidate an otherwise completed task?", "H2: Does historical milestone attainment imply the requested setting remains correct at terminal state?"],
+ "comparison": "Report original milestone/minefield similarity and an explicitly separate Boolean terminal-setting check. Do not modify upstream scoring or call terminal check official scoring.",
+ "controls": "reference completion; legal alternative with non-mutating error; no-action false claim; regression; repaired regression",
+ "no_agent_generation": true,
+ "no_paid_calls": true,
+ "no_test_data_claim": "Tasks inspected for constructing scripts; not held-out model evaluation or preregistered confirmatory research.",
+ "external_updates": 0,
+ "automatic_user_execution": false
+}

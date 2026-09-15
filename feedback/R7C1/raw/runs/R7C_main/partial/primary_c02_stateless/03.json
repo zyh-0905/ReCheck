@@ -1,0 +1,10 @@
+{
+  "turn": 3,
+  "logical_id": "primary_c02_stateless/turn_03",
+  "request_sha256": "f386f1b72702f40ce4d1188ca30835f85cc49b02dd647e3d1096b373da9635d8",
+  "response_text": "{\"done\":\"Sent the message exactly once to Fredrik Thordendal at +12025550119 with the content \\\"The rehearsal has moved to 18:30. Please confirm when you can.\\\" Cellular service was already enabled, so no settings were changed.\"}",
+  "kind": "done",
+  "action": {
+    "done": "Sent the message exactly once to Fredrik Thordendal at +12025550119 with the content \"The rehearsal has moved to 18:30. Please confirm when you can.\" Cellular service was already enabled, so no settings were changed."
+  }
+}

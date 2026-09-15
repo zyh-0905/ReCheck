@@ -1,0 +1,47 @@
+{
+  "task_id": "R3_FACTORED_REFRESH_01_REVIEW",
+  "audit_date": "2026-09-12",
+  "status": "EXECUTION_ACCEPTED_DEVELOPMENT_EVIDENCE_ONLY",
+  "original_unit_tests_passed": 77,
+  "independent_audit_tests_passed": 17,
+  "mechanical_assertions_passed": 3383,
+  "main_requests_rebuilt": 416,
+  "primary_records": 384,
+  "repeat_records": 32,
+  "smoke_calls": 1,
+  "manifest_entries_verified": 2241,
+  "source_files_compared": 38,
+  "same_files_compared_per_run_snapshot": 38,
+  "two_independent_audit_invocations_derived_files_equal": true,
+  "derived_files_compared": 9,
+  "new_remote_model_calls": 0,
+  "network_in_audit": "socket connections disabled",
+  "network_in_original_tests": "loopback fixtures only",
+  "input_zip_hashes": {
+    "/mnt/data/a46910a7-8636-4bf3-a2c2-c5ccb28c8fe0.zip": "82a910958ffcfad0865e9e31d84c3d3dac47473867c3c68b570181f0a9c1bde0",
+    "/mnt/data/Research_Handoff_R3.zip": "be7ca78141f3b16f942ea7a271f3ff040d1e74556f031ae52cbeaabc4930a0d6"
+  },
+  "raw_data_modified": false,
+  "raw_requests_comparison": "exact",
+  "replay_record_exclusions": [
+    "planning_seconds",
+    "probe_seconds",
+    "tool_seconds"
+  ],
+  "derived_summary_float_absolute_tolerance": 1e-10,
+  "currency_cost": "UNKNOWN_NOT_ZERO",
+  "provider_weights_or_invoice_attested": false,
+  "independent_human_peer_review": false,
+  "papers_recompiled_or_main_tables_replaced": false,
+  "new_paid_run_authorized": false,
+  "environment": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "os": "Linux"
+  },
+  "delivery_zip_sha256": "822e4c8187393c8dc0f21b29885f237a7d9bfff0a91a6d07ee30af19e8d896b6",
+  "delivery_zip_bytes": 109899,
+  "fresh_extracted_review_bundle_hash_check": true,
+  "fresh_extracted_auditor_unit_tests": 17,
+  "fresh_extracted_test_exit_code": 0
+}

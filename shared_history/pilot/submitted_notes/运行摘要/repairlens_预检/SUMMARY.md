@@ -1,0 +1,77 @@
+# Pilot results
+
+Study: repairlens_readiness
+Evidence label: REAL_ENDPOINT_CONTROLLED_PILOT_NOT_CONFIRMATORY
+
+**Development pilot only. Do not use these results as final paper evidence.**
+
+Completed records: 12/12; HTTP attempts: 34.
+
+```json
+{
+  "study": "repairlens_readiness",
+  "evidence_label": "REAL_ENDPOINT_CONTROLLED_PILOT_NOT_CONFIRMATORY",
+  "phase": "replay_readiness_only",
+  "expected_records": 12,
+  "completed_records": 12,
+  "request_attempts": 34,
+  "completed_logical_calls": 34,
+  "request_errors": 0,
+  "uncertain_interrupted_attempts": 0,
+  "unknown_cost_attempts": 0,
+  "known_estimated_spend": 0.007347,
+  "currency": "USD",
+  "returned_model_ids": [
+    "deepseek-flash"
+  ],
+  "source_snapshot_mismatches": [],
+  "methods": [
+    {
+      "method": "full_regeneration",
+      "completed_records": 4,
+      "independent_units": 4,
+      "success_rate": 1.0,
+      "llm_calls_excluding_shared_prefix": 12,
+      "llm_attempts_excluding_shared_prefix": 12,
+      "llm_latency_seconds_excluding_shared_prefix": 12.735021580709144,
+      "estimated_cost_excluding_shared_prefix": 0.0017297999999999997
+    },
+    {
+      "method": "keep_stale",
+      "completed_records": 4,
+      "independent_units": 4,
+      "success_rate": 0.25,
+      "llm_calls_excluding_shared_prefix": 0,
+      "llm_attempts_excluding_shared_prefix": 0,
+      "llm_latency_seconds_excluding_shared_prefix": 0,
+      "estimated_cost_excluding_shared_prefix": 0
+    },
+    {
+      "method": "llm_selected_patch",
+      "completed_records": 4,
+      "independent_units": 4,
+      "success_rate": 1.0,
+      "llm_calls_excluding_shared_prefix": 10,
+      "llm_attempts_excluding_shared_prefix": 10,
+      "llm_latency_seconds_excluding_shared_prefix": 17.018417751416564,
+      "estimated_cost_excluding_shared_prefix": 0.0038466
+    }
+  ],
+  "shared_prefix_resources": {
+    "llm_calls": 12,
+    "llm_attempts": 12,
+    "llm_latency_seconds": 11.578589124372229,
+    "estimated_cost": 0.0017706,
+    "prompt_tokens": 2326,
+    "completion_tokens": 894,
+    "missing_usage_calls": 0
+  },
+  "limitations": [
+    "Pilot only; no confirmatory p values or manuscript updates.",
+    "Token totals exclude missing usage; missing_usage_calls must be inspected.",
+    "Provider invoice overrides all local list-price estimates.",
+    "Shared prefix paid once in this run; include its cost in each strategy for deployment comparisons, but do not sum those attributed costs into the actual invoice.",
+    "Synthetic task generation; no natural-failure or public-benchmark claim."
+  ]
+}
+```

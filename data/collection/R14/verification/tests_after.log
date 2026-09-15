@@ -1,0 +1,21 @@
+test_all_model_persona_trial_cells (test_download.CollectorTests.test_all_model_persona_trial_cells) ... ok
+test_changed_commit_rejected (test_download.CollectorTests.test_changed_commit_rejected) ... ok
+test_complete_raw_archive (test_download.CollectorTests.test_complete_raw_archive) ... ok
+test_file_byte_limit (test_download.CollectorTests.test_file_byte_limit) ... ok
+test_foreign_file_rejected (test_download.CollectorTests.test_foreign_file_rejected) ... ok
+test_html_not_json (test_download.CollectorTests.test_html_not_json) ... ok
+test_incomplete_json_rejected (test_download.CollectorTests.test_incomplete_json_rejected) ... ok
+test_manifest_detects_tamper (test_download.CollectorTests.test_manifest_detects_tamper) ... ok
+test_no_overwrite_no_fetch (test_download.CollectorTests.test_no_overwrite_no_fetch) ... ok
+test_no_pickle_or_model_weights (test_download.CollectorTests.test_no_pickle_or_model_weights) ... ok
+test_path_traversal_rejected (test_download.CollectorTests.test_path_traversal_rejected) ... ok
+test_pin_and_roster (test_download.CollectorTests.test_pin_and_roster) ... ok
+test_source_is_fixed_https (test_download.CollectorTests.test_source_is_fixed_https) ... ok
+test_transport_failure_partial_zip (test_download.CollectorTests.test_transport_failure_partial_zip) ... ok
+test_valid_json_metadata (test_download.CollectorTests.test_valid_json_metadata) ... ok
+test_wrong_trial_rejected (test_download.CollectorTests.test_wrong_trial_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.157s
+
+OK

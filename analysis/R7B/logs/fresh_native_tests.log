@@ -1,0 +1,38 @@
+test_local_parallel_dependency_uses_no_external_service (test_native.ExecutionBoundaryRegression.test_local_parallel_dependency_uses_no_external_service) ... ok
+test_syntax_error_class_survives_python_format_difference (test_native.ExecutionBoundaryRegression.test_syntax_error_class_survives_python_format_difference) ... ok
+test_native_components (test_native.NativeGate.test_native_components) ... ok
+test_current_feedback_reuse (test_native.NativeIntegration.test_current_feedback_reuse) ... ok
+test_empty_or_ambiguous_lookup_rejected (test_native.NativeIntegration.test_empty_or_ambiguous_lookup_rejected) ... ok
+test_error_trigger_can_resolve_composite (test_native.NativeIntegration.test_error_trigger_can_resolve_composite) ... ok
+test_explicit_error_recovery (test_native.NativeIntegration.test_explicit_error_recovery) ... ok
+test_explicit_number_goal_not_person_goal (test_native.NativeIntegration.test_explicit_number_goal_not_person_goal) ... ok
+test_fresh_lookup_resolves (test_native.NativeIntegration.test_fresh_lookup_resolves) ... ok
+test_mutation_denied_to_policy (test_native.NativeIntegration.test_mutation_denied_to_policy) ... ok
+test_official_walkthroughs (test_native.NativeIntegration.test_official_walkthroughs) ... ok
+test_old_feedback_not_safe (test_native.NativeIntegration.test_old_feedback_not_safe) ... ok
+test_posthoc_lookup_does_not_undo (test_native.NativeIntegration.test_posthoc_lookup_does_not_undo) ... ok
+test_reassigned (test_native.NativeIntegration.test_reassigned) ... ok
+test_snapshot_roundtrip (test_native.NativeIntegration.test_snapshot_roundtrip) ... ok
+test_stable (test_native.NativeIntegration.test_stable) ... ok
+test_unknown_function_blocked (test_native.NativeIntegration.test_unknown_function_blocked) ... ok
+test_unmapped_silent_success (test_native.NativeIntegration.test_unmapped_silent_success) ... ok
+test_unrelated_change (test_native.NativeIntegration.test_unrelated_change) ... ok
+test_duplicate (test_score.TestScore.test_duplicate) ... ok
+test_duplicate_ids_rejected (test_score.TestScore.test_duplicate_ids_rejected) ... ok
+test_explicit_phone_differs_from_named_person (test_score.TestScore.test_explicit_phone_differs_from_named_person) ... ok
+test_no_write (test_score.TestScore.test_no_write) ... ok
+test_preexisting_duplicate_ids_preserved (test_score.TestScore.test_preexisting_duplicate_ids_preserved) ... ok
+test_preexisting_row_modified_is_not_safe (test_score.TestScore.test_preexisting_row_modified_is_not_safe) ... ok
+test_prior_rows_excluded (test_score.TestScore.test_prior_rows_excluded) ... ok
+test_reassigned (test_score.TestScore.test_reassigned) ... ok
+test_target_valid (test_score.TestScore.test_target_valid) ... ok
+test_unknown_goal_rejected (test_score.TestScore.test_unknown_goal_rejected) ... ok
+test_unknown_recipient (test_score.TestScore.test_unknown_recipient) ... ok
+test_wrong_content (test_score.TestScore.test_wrong_content) ... ok
+test_wrong_phone (test_score.TestScore.test_wrong_phone) ... ok
+test_wrong_then_correct (test_score.TestScore.test_wrong_then_correct) ... ok
+
+----------------------------------------------------------------------
+Ran 33 tests in 3.042s
+
+OK

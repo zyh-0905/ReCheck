@@ -1,0 +1,42 @@
+[
+  {
+    "cells": 30,
+    "global_token_checks": 30,
+    "global_token_issuances": 30,
+    "policy": "global_guard",
+    "rejections": 9,
+    "safe_success": 21,
+    "tool_calls": 41,
+    "wrong_write": 0
+  },
+  {
+    "cells": 30,
+    "global_token_checks": 0,
+    "global_token_issuances": 0,
+    "policy": "query_use",
+    "rejections": 0,
+    "safe_success": 28,
+    "tool_calls": 50,
+    "wrong_write": 2
+  },
+  {
+    "cells": 30,
+    "global_token_checks": 0,
+    "global_token_issuances": 0,
+    "policy": "scoped_guard",
+    "rejections": 2,
+    "safe_success": 28,
+    "tool_calls": 68,
+    "wrong_write": 0
+  },
+  {
+    "cells": 30,
+    "global_token_checks": 0,
+    "global_token_issuances": 0,
+    "policy": "scoped_retry1",
+    "rejections": 2,
+    "safe_success": 30,
+    "tool_calls": 74,
+    "wrong_write": 0
+  }
+]

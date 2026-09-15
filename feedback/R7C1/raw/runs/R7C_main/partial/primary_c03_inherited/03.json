@@ -1,0 +1,10 @@
+{
+  "turn": 3,
+  "logical_id": "primary_c03_inherited/turn_03",
+  "request_sha256": "c6246e9cb7f94fd01d1585ae5b37667c4d0eaff4fa793a70e3a476c7bb48a160",
+  "response_text": "{\"done\":\"Sent the message to Fredrik Thordendal at +12025550119 exactly once with the requested content.\"}",
+  "kind": "done",
+  "action": {
+    "done": "Sent the message to Fredrik Thordendal at +12025550119 exactly once with the requested content."
+  }
+}

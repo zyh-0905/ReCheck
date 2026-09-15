@@ -1,0 +1,25 @@
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 720, in _warm_feature_flows
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 704, in _warm_collaboration_flows
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/generated/interface/models.py", line 32317, in hydrate_crdt_from_proto
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/remote.py", line 749, in __call__
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/client.py", line 150, in call
+artifact_tool.rpc.client.RemoteError: hydrateCrdtFromProto requires an empty collaborative document.
+test_different_request_same_id_blocked (test_r2_live.LiveTests.test_different_request_same_id_blocked) ... ok
+test_full_protocol_and_no_private_fields (test_r2_live.LiveTests.test_full_protocol_and_no_private_fields) ... ok
+test_hard_cap_before_transmission (test_r2_live.LiveTests.test_hard_cap_before_transmission) ... ok
+test_http_error_pauses_and_no_retry (test_r2_live.LiveTests.test_http_error_pauses_and_no_retry) ... ok
+test_invalid_json_saved_no_retry (test_r2_live.LiveTests.test_invalid_json_saved_no_retry) ... ok
+test_real_secret_not_in_model_payload (test_r2_live.LiveTests.test_real_secret_not_in_model_payload) ... ok
+test_registered_and_send_intent_are_separate (test_r2_live.LiveTests.test_registered_and_send_intent_are_separate) ... ok
+test_success_resume_not_resampled (test_r2_live.LiveTests.test_success_resume_not_resampled) ... ok
+test_truncation_saved_and_pauses_on_resume (test_r2_live.LiveTests.test_truncation_saved_and_pauses_on_resume) ... ok
+test_uncertain_start_does_not_retry (test_r2_live.LiveTests.test_uncertain_start_does_not_retry) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 4.902s
+
+OK

@@ -1,0 +1,10 @@
+{
+  "turn": 2,
+  "logical_id": "primary_c06_inherited/turn_02",
+  "request_sha256": "86e4f87cba81894961d5bfa564d9925146503950921494101760e6978f93abf8",
+  "response_text": "{\"done\":\"Sent exactly one text to +12453344098 with the content: \\\"The rehearsal has moved to 18:30. Please confirm when you can.\\\" Cellular service was already enabled; no contacts, reminders, or other settings were changed.\"}",
+  "kind": "done",
+  "action": {
+    "done": "Sent exactly one text to +12453344098 with the content: \"The rehearsal has moved to 18:30. Please confirm when you can.\" Cellular service was already enabled; no contacts, reminders, or other settings were changed."
+  }
+}

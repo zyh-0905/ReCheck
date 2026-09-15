@@ -1,0 +1,2 @@
+{"event": "invocation_started", "utc": "2026-09-12T11:44:55.544102+00:00", "prior_budget": {"attempts": 0, "response_records": 0, "uncertain_attempts": 0, "model_call_cap": 484, "actual_billing": "unknown; not inferred from local start events"}}
+{"event": "invocation_ended", "started_utc": "2026-09-12T11:44:55.544102+00:00", "utc": "2026-09-12T12:18:46.201117+00:00", "wall_seconds": 2030.5643417919055, "budget": {"attempts": 484, "response_records": 484, "uncertain_attempts": 0, "model_call_cap": 484, "actual_billing": "unknown; not inferred from local start events"}}

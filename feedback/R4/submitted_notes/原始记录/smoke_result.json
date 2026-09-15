@@ -1,0 +1,8 @@
+{
+  "json_ok": true,
+  "profile_sha256": "af542d06b25b5b59c9e40510526297c494e84400920cdb71faddcd32765b33ba",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669",
+  "claim": "Metadata recorded, not an independent weight-identity attestation."
+}

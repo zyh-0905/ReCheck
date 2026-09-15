@@ -1,0 +1,121 @@
+{
+  "version": "llm-pilot-0.1",
+  "config": {
+    "model": "deepseek-flash",
+    "provider_label": "DeepSeek official API (DeepSeek-V4.1-Flash)",
+    "key_env": "LLM_API_KEY",
+    "local_no_auth": false,
+    "backend_kind": "live",
+    "max_tokens_field": "max_tokens",
+    "max_output_tokens": 4096,
+    "temperature": null,
+    "extra_body": {},
+    "instruction_role": "system",
+    "timeout_seconds": 300,
+    "min_interval_seconds": 0.5,
+    "max_requests": 300,
+    "max_estimated_spend": null,
+    "prices": {
+      "currency": "USD",
+      "input_per_million": 0.3,
+      "output_per_million": 1.2,
+      "cached_input_per_million": 0.006
+    },
+    "base_url_sha256": "5abe20d7d3d56ed5cd86f95d28d3e712ce59ab9161922170c78a4cfc18eaaf0f"
+  },
+  "study": "recheck",
+  "spec": {
+    "phase": "development_pilot",
+    "streams": 4,
+    "steps": 8,
+    "methods": [
+      "recheck",
+      "myopic",
+      "ttl",
+      "always"
+    ],
+    "seed_start": 910001,
+    "assumed_hazards": [
+      0.12,
+      0.12
+    ],
+    "model_probe_prices": [
+      0.18,
+      0.18
+    ],
+    "model_prices_are_not_currency": true,
+    "weights": [
+      [
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        0.0,
+        0.0
+      ]
+    ],
+    "transition": [
+      [
+        0.7,
+        0.1,
+        0.1,
+        0.1
+      ],
+      [
+        0.1,
+        0.7,
+        0.1,
+        0.1
+      ],
+      [
+        0.1,
+        0.1,
+        0.7,
+        0.1
+      ],
+      [
+        0.1,
+        0.1,
+        0.1,
+        0.7
+      ]
+    ],
+    "ttl_age": 3,
+    "prompt_version": "rc-public-worker-0.1",
+    "logical_calls": 260,
+    "limitation": "known finite model; exact scoped calibration; fixed LLM worker; not native GLOVE/SafeCommit evaluation"
+  },
+  "source_hashes": {
+    "run.py": "9b96d091342a2ca7826e296231498633e577342f66def00bdbfff5f8b18d2c60",
+    "requirements.txt": "7bd6b8946940b79948c548c8048e545684b91c8edc9444d8dfc0c8f76a97c0a7",
+    "config.example.json": "8f6e290438a28cb220f1c0440baee46065efca0dfd398166850623632c97c295",
+    "pilot/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "pilot/client.py": "2ca3fa9ee567762efa403c8052017f45d64adfc74a8e0da91355cc06530a92ae",
+    "pilot/common.py": "cd23f107baa5313baa2308cacedb3c64ee5ed57e16f811b0707d722fc9e90b1e",
+    "pilot/readiness.py": "927511825ea33b66eb0916b0c062d8ad5a8da4b5a4ac4436925e00031aae765b",
+    "pilot/recheck.py": "06f235dd60f371b6280ae164981a9570811c292c3e16df2221fafae55068d5e8",
+    "pilot/report.py": "156c965d843c3a801581c584e008f6f80d35db22b90bc8a972d2c0732bfa49cb",
+    "vendor/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "vendor/recheck_core.py": "df2a275361d74155007335a84299331a1780b13a73ab9e5abd5f078fe42d4310",
+    "docs/API_SOURCES.md": "184bc178c15e01f0b74b7b9ec1fe53c473b7838a7678bca97ca87220efbb467d",
+    "docs/IMPLEMENTATION_PLAN.md": "3bd5506fc31069d26bbb4f3760f5eaa9b5ce10c4778435ce6523400b2dfd6e4b",
+    "docs/PROTOCOL.md": "7b855e79a692302c87f10e611f412802c686d69f30b79b80f6299adc684feaad",
+    "docs/RETURN_REVIEW.md": "3f5a9b277f2aa84ca5bb29c8925affc7bde3eb3bf30be285def4b26d7dc36771"
+  },
+  "fingerprint": "355529e7f26e5ac8c997dae4c4240064e477bd03ab39bf99967f3ae7eb32365e",
+  "created_utc": "2026-09-12T08:12:39.086051+00:00",
+  "runtime": {
+    "python": "3.11.15",
+    "numpy": "2.3.5",
+    "os": "Darwin"
+  },
+  "evidence_label": "REAL_ENDPOINT_CONTROLLED_PILOT_NOT_CONFIRMATORY"
+}

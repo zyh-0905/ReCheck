@@ -1,0 +1,47 @@
+{
+  "assistant_message": {
+    "content": "",
+    "reasoning_content": "Now verify with a read.",
+    "role": "assistant",
+    "tool_calls": [
+      {
+        "function": {
+          "arguments": "{}",
+          "name": "get_wifi_status"
+        },
+        "id": "call_00_c8pHAM09PpThYUXUNT9z0539",
+        "index": 0,
+        "type": "function"
+      }
+    ]
+  },
+  "decoded_calls": [
+    {
+      "arguments": {},
+      "id": "call_00_c8pHAM09PpThYUXUNT9z0539",
+      "name": "get_wifi_status"
+    }
+  ],
+  "event_end": 6,
+  "event_start": 5,
+  "executions": [
+    {
+      "batch_index": 0,
+      "event_end": 6,
+      "event_start": 5,
+      "outer_tool_count": 5,
+      "tool_call_id": "call_00_c8pHAM09PpThYUXUNT9z0539"
+    }
+  ],
+  "kind": "tools",
+  "logical_id": "primary_n13_verify_confirm/turn_03",
+  "request_sha256": "c18a5a1de45a67bb07e80f40d4f908a3219f68483d0f573b440cbd4f30df2b25",
+  "tool_messages": [
+    {
+      "content": "{\"error\":null,\"ok\":true,\"value\":true}",
+      "role": "tool",
+      "tool_call_id": "call_00_c8pHAM09PpThYUXUNT9z0539"
+    }
+  ],
+  "turn": 3
+}

@@ -1,0 +1,10 @@
+{
+  "turn": 4,
+  "logical_id": "primary_c12_inherited/turn_04",
+  "request_sha256": "bcc7af193130eb393dac37ee5baf65b536b23ee03d3cd461310c4d302791c8d4",
+  "response_text": "{\"done\":\"Retrieved Fredrik Thordendal's current number (+12025550119) from his contact entry, enabled cellular service, and sent exactly one message with the requested content.\"}",
+  "kind": "done",
+  "action": {
+    "done": "Retrieved Fredrik Thordendal's current number (+12025550119) from his contact entry, enabled cellular service, and sent exactly one message with the requested content."
+  }
+}

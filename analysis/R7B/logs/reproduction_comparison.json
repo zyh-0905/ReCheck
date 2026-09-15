@@ -1,0 +1,5 @@
+{
+  "scientific_projection_equal": true,
+  "records": 48,
+  "excluded": "Raw generated UUIDs, wall-clock timestamps, timing and history timestamp fields; raw logs from both runs preserved. Discrete decisions, goals, tool arguments, counts, errors and score comparison strict."
+}

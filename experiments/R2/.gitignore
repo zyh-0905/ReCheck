@@ -1,0 +1,8 @@
+__pycache__/
+.venv/
+config.local.json
+billing.local.json
+.env
+runs/
+uploads/
+*.pyc

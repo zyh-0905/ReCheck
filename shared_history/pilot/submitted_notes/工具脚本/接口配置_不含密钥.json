@@ -1,0 +1,23 @@
+{
+  "base_url": "https://api.deepseek.com/v1",
+  "model": "deepseek-flash",
+  "provider_label": "DeepSeek official API (DeepSeek-V4.1-Flash)",
+  "key_env": "LLM_API_KEY",
+  "local_no_auth": false,
+  "backend_kind": "live",
+  "max_tokens_field": "max_tokens",
+  "max_output_tokens": 16384,
+  "temperature": null,
+  "extra_body": {},
+  "instruction_role": "system",
+  "timeout_seconds": 300,
+  "min_interval_seconds": 0.5,
+  "max_requests": 300,
+  "max_estimated_spend": null,
+  "prices": {
+    "currency": "USD",
+    "input_per_million": 0.3,
+    "output_per_million": 1.2,
+    "cached_input_per_million": 0.006
+  }
+}

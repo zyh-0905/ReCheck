@@ -1,0 +1,57 @@
+{
+  "task_id": "R3_FACTORED_REFRESH_01",
+  "version": "r3-3.0.0",
+  "full_unit_tests": 77,
+  "failures": 0,
+  "errors": 0,
+  "new_remote_llm_calls": 0,
+  "user_planned_main_calls": 416,
+  "user_planned_smoke_calls": 1,
+  "user_total_call_cap": 417,
+  "primary_records": 384,
+  "repeat_records": 32,
+  "independent_streams": 16,
+  "conditions": 4,
+  "steps_per_stream": 12,
+  "source_integrity": {
+    "pass": true,
+    "files": 38,
+    "source_manifest_sha256": "a331dffb11eba70a7172820625f35adf46bbd44cab76ef2640917e354bb73e6d"
+  },
+  "full_cli_fixture": {
+    "label": "SOFTWARE_TEST_NOT_RESEARCH",
+    "fixture_task_world_data_seeds_disjoint": true,
+    "main_calls": 416,
+    "smoke_calls": 1,
+    "main_exit_code": 0,
+    "smoke_exit_code": 0,
+    "main_without_smoke_blocked": true,
+    "completed_run_resampled": false,
+    "replay": {
+      "pass": true,
+      "applicable": true,
+      "new_model_calls": 0,
+      "request_bodies_checked": 416,
+      "completed_calls_consumed": 416,
+      "stop_reason": null,
+      "request_mismatches": [],
+      "artifact_mismatches": [],
+      "unconsumed_calls": [],
+      "note": "Local reconstruction only, not provider identity or invoice authentication."
+    },
+    "primary_records": 384,
+    "repeat_records": 32,
+    "source_snapshot_mismatches": [],
+    "prices_unknown": true,
+    "scientific_gate": "PENDING_RESEARCHER_REVIEW"
+  },
+  "environment": {
+    "os": "Linux",
+    "python": "3.13.5",
+    "numpy": "2.3.5"
+  },
+  "windows_macos_runtime_tested": false,
+  "independent_human_review": false,
+  "provider_identity_or_invoice_verified": false,
+  "scope": "Given-model offline calculations and software validation. No real R3 model responses. No R2 scores replaced; no publication acceptance claim."
+}

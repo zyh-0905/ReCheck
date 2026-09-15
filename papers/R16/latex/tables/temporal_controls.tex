@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\caption{One public two-stage task: change initial friends to enemies, then back to friends. Scripted controls, not model samples. End checks only the latest friend state; scoped checks both required stages.}
+\label{tab:scope}
+{\fontsize{9}{10.8}\selectfont
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+Trajectory & Source & End & Scoped\\
+\midrule
+Both stages completed &1.0&Yes&Yes\\
+Second update omitted &0.8&No&No\\
+Latest effect reversed &1.0&No&No\\
+No write; completion claims &0.6&Yes&No\\
+No-op error, then both stages &1.0&Yes&Yes\\
+\bottomrule
+\end{tabular}}
+\end{table}

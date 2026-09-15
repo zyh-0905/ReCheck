@@ -1,0 +1,32 @@
+[
+  {
+    "old_path": "README.md",
+    "preserved_at": "history/archive_through_R11/README.md",
+    "sha256": "8d71a70433cc400d7ba108993cabea892e3cd249d1afb657173609600225fc01"
+  },
+  {
+    "old_path": "CONTENTS_ZH.md",
+    "preserved_at": "history/archive_through_R11/CONTENTS_ZH.md",
+    "sha256": "97cd702e23bc0b117a3215cfb03a99b1af8bef2a436d3c91332141fefa94223c"
+  },
+  {
+    "old_path": "ARCHIVE_INDEX_ZH.md",
+    "preserved_at": "history/archive_through_R11/ARCHIVE_INDEX_ZH.md",
+    "sha256": "9fc43b0fc46fd9994f8c222c4f73608f6c84e53775253d06c624808c7f7cdfe3"
+  },
+  {
+    "old_path": "RESEARCH_TIMELINE_ZH.md",
+    "preserved_at": "history/archive_through_R11/RESEARCH_TIMELINE_ZH.md",
+    "sha256": "02c3283d59b8c77f208a202ee35a614ec6e068d34ebe6794833c83af16d471de"
+  },
+  {
+    "old_path": "PUBLISH_STATUS.json",
+    "preserved_at": "history/archive_through_R11/PUBLISH_STATUS.json",
+    "sha256": "5a29c4a8bbe89ffaa9f04578e05d71f0846bccd662912da75b9b3f6416a72936"
+  },
+  {
+    "old_path": "ARCHIVE_MANIFEST.json",
+    "preserved_at": "history/archive_through_R11/ARCHIVE_MANIFEST.json",
+    "sha256": "628235fb7499378963c1253e8bdee2d1dde8af49c5179a95404e1e24250c857b"
+  }
+]

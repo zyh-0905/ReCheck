@@ -1,0 +1,43 @@
+test_churn_retry_exhaustion (test_boundary.Contracts.test_churn_retry_exhaustion) ... /mnt/data/r8_work/native_env/deps/networkx/convert.py:136: ImportWarning: pandas not found, skipping conversion test.
+  warnings.warn("pandas not found, skipping conversion test.", ImportWarning)
+ok
+test_global_blocks_nonbinding (test_boundary.Contracts.test_global_blocks_nonbinding) ... ok
+test_global_blocks_unrelated (test_boundary.Contracts.test_global_blocks_unrelated) ... ok
+test_invalid_intent (test_boundary.Contracts.test_invalid_intent) ... ok
+test_invalid_policy (test_boundary.Contracts.test_invalid_policy) ... ok
+test_invalid_timing (test_boundary.Contracts.test_invalid_timing) ... ok
+test_literal_gap_is_not_wrong (test_boundary.Contracts.test_literal_gap_is_not_wrong) ... ok
+test_no_network (test_boundary.Contracts.test_no_network) ... ok
+test_person_after_commit_stays_valid (test_boundary.Contracts.test_person_after_commit_stays_valid) ... ok
+test_person_before_check_is_safe (test_boundary.Contracts.test_person_before_check_is_safe) ... ok
+test_person_gap_is_wrong (test_boundary.Contracts.test_person_gap_is_wrong) ... ok
+test_reminder_after_commit_stays_valid (test_boundary.Contracts.test_reminder_after_commit_stays_valid) ... ok
+test_reminder_before_check_is_safe (test_boundary.Contracts.test_reminder_before_check_is_safe) ... ok
+test_reminder_gap_is_wrong (test_boundary.Contracts.test_reminder_gap_is_wrong) ... ok
+test_retry_person (test_boundary.Contracts.test_retry_person) ... ok
+test_retry_reminder (test_boundary.Contracts.test_retry_reminder) ... ok
+test_scoped_allows_nonbinding (test_boundary.Contracts.test_scoped_allows_nonbinding) ... ok
+test_scoped_allows_unrelated (test_boundary.Contracts.test_scoped_allows_unrelated) ... ok
+test_scoped_blocks_person (test_boundary.Contracts.test_scoped_blocks_person) ... ok
+test_scoped_blocks_reminder (test_boundary.Contracts.test_scoped_blocks_reminder) ... ok
+test_stable_literal (test_boundary.Contracts.test_stable_literal) ... ok
+test_stable_no_irrelevant_writes (test_boundary.Contracts.test_stable_no_irrelevant_writes) ... ok
+test_stable_person (test_boundary.Contracts.test_stable_person) ... ok
+test_stable_reminder (test_boundary.Contracts.test_stable_reminder) ... ok
+test_actual_query_count_guard (test_boundary.ScorerNegativeCases.test_actual_query_count_guard) ... ok
+test_actual_query_count_retry (test_boundary.ScorerNegativeCases.test_actual_query_count_retry) ... ok
+test_all_fixed_specs_count (test_boundary.ScorerNegativeCases.test_all_fixed_specs_count) ... ok
+test_correct_native_write_scores (test_boundary.ScorerNegativeCases.test_correct_native_write_scores) ... ok
+test_duplicate_new_message_rejected (test_boundary.ScorerNegativeCases.test_duplicate_new_message_rejected) ... ok
+test_extra_reminder_change_rejected (test_boundary.ScorerNegativeCases.test_extra_reminder_change_rejected) ... ok
+test_guard_reject_does_not_equal_success (test_boundary.ScorerNegativeCases.test_guard_reject_does_not_equal_success) ... ok
+test_history_deletion_rejected (test_boundary.ScorerNegativeCases.test_history_deletion_rejected) ... ok
+test_literal_does_not_require_person_identity (test_boundary.ScorerNegativeCases.test_literal_does_not_require_person_identity) ... ok
+test_unrelated_contact_write_rejected (test_boundary.ScorerNegativeCases.test_unrelated_contact_write_rejected) ... ok
+test_wrong_phone_rejected (test_boundary.ScorerNegativeCases.test_wrong_phone_rejected) ... ok
+test_wrong_reminder_time_rejected (test_boundary.ScorerNegativeCases.test_wrong_reminder_time_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 36 tests in 3.803s
+
+OK

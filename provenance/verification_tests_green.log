@@ -1,0 +1,17 @@
+test_bad_hash (test_verify_archive.ArchiveTests.test_bad_hash) ... ok
+test_bad_size_type (test_verify_archive.ArchiveTests.test_bad_size_type) ... ok
+test_changed_bytes (test_verify_archive.ArchiveTests.test_changed_bytes) ... ok
+test_duplicate (test_verify_archive.ArchiveTests.test_duplicate) ... ok
+test_exact (test_verify_archive.ArchiveTests.test_exact) ... ok
+test_extra (test_verify_archive.ArchiveTests.test_extra) ... ok
+test_fonts_refused (test_verify_archive.ArchiveTests.test_fonts_refused) ... ok
+test_git_metadata_ignored (test_verify_archive.ArchiveTests.test_git_metadata_ignored) ... ok
+test_missing (test_verify_archive.ArchiveTests.test_missing) ... ok
+test_paths (test_verify_archive.ArchiveTests.test_paths) ... ok
+test_secret_filename (test_verify_archive.ArchiveTests.test_secret_filename) ... ok
+test_symlink_refused (test_verify_archive.ArchiveTests.test_symlink_refused) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.005s
+
+OK

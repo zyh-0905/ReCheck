@@ -1,0 +1,53 @@
+{
+  "assistant_message": {
+    "content": "The reminder exists as expected. I'll now update its reminder time while preserving the text and location.",
+    "reasoning_content": "The reminder exists with content exactly \"Review the indigo rehearsal plan\", id 54f20be9-eac3-5e76-8e57-724e48d3d477. Now modify reminder_timestamp to 1800118800, preserving content and location.",
+    "role": "assistant",
+    "tool_calls": [
+      {
+        "function": {
+          "arguments": "{\"reminder_id\": \"54f20be9-eac3-5e76-8e57-724e48d3d477\", \"content\": \"Review the indigo rehearsal plan\", \"latitude\": 37.3237926356735, \"longitude\": -122.03961770355414, \"reminder_timestamp\": 1800118800}",
+          "name": "modify_reminder"
+        },
+        "id": "call_00_W9kmYmVNs72a2TlfqHKl2660",
+        "index": 0,
+        "type": "function"
+      }
+    ]
+  },
+  "decoded_calls": [
+    {
+      "arguments": {
+        "content": "Review the indigo rehearsal plan",
+        "latitude": 37.3237926356735,
+        "longitude": -122.03961770355414,
+        "reminder_id": "54f20be9-eac3-5e76-8e57-724e48d3d477",
+        "reminder_timestamp": 1800118800
+      },
+      "id": "call_00_W9kmYmVNs72a2TlfqHKl2660",
+      "name": "modify_reminder"
+    }
+  ],
+  "event_end": 4,
+  "event_start": 3,
+  "executions": [
+    {
+      "batch_index": 0,
+      "event_end": 4,
+      "event_start": 3,
+      "outer_tool_count": 2,
+      "tool_call_id": "call_00_W9kmYmVNs72a2TlfqHKl2660"
+    }
+  ],
+  "kind": "tools",
+  "logical_id": "repeat_n10_inherited/turn_01",
+  "request_sha256": "220ceccd834c98e15e41f5cf75dc39f75fd4f77e0842a69549fb5daf9f9eace9",
+  "tool_messages": [
+    {
+      "content": "{\"error\":null,\"ok\":true,\"value\":null}",
+      "role": "tool",
+      "tool_call_id": "call_00_W9kmYmVNs72a2TlfqHKl2660"
+    }
+  ],
+  "turn": 1
+}

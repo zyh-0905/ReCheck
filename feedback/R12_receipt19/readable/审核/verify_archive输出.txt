@@ -1,0 +1,5 @@
+{
+  "ok": true,
+  "registered_files": 174,
+  "errors": []
+}

@@ -1,0 +1,9 @@
+{
+  "source_artifact": "ICASSP_Research_Package.zip",
+  "source_member": "icassp_research_20260912/src/recheck/core.py",
+  "local_member": "vendor/recheck_core.py",
+  "source_sha256": "df2a275361d74155007335a84299331a1780b13a73ab9e5abd5f078fe42d4310",
+  "copy_sha256": "df2a275361d74155007335a84299331a1780b13a73ab9e5abd5f078fe42d4310",
+  "byte_identical": true,
+  "license": "MIT; full notice included in LICENSE"
+}

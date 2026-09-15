@@ -1,0 +1,8 @@
+{
+  "status": "paused",
+  "started_utc": "2026-09-13T12:09:48.205727+00:00",
+  "ended_utc": "2026-09-13T12:09:50.209291+00:00",
+  "wall_seconds": 2.0035450828727335,
+  "error": "RunStopped: Invalid JSON response preserved. Paused, not automatically repaired.",
+  "registered_requests": 1
+}

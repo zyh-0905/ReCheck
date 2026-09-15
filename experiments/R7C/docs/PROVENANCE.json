@@ -1,0 +1,14 @@
+{
+  "research_protocol_date": "2026-09-13",
+  "upstream_repository": "apple-aiml-research/ToolSandbox",
+  "upstream_commit": "c8571d7854316d2e1c5f288e59fe1e34e53f6dd1",
+  "upstream_tree": "64ccd1694a91f2029844434d5995a2c0945cd6b2",
+  "upstream_source": "previously user-supplied and validated R7 materials; embedded original archive",
+  "modifications_to_upstream_source": "none",
+  "runtime_dispatch": "custom allowlisted direct calls; native function/decorators/state, no InteractiveConsole",
+  "scenario_and_grader": "author-constructed; not official Scenario.play or benchmark score",
+  "provider_docs_checked": "2026-09-13",
+  "provider_docs": ["https://api-docs.deepseek.com/api/create-chat-completion/", "https://api-docs.deepseek.com/guides/thinking_mode/"],
+  "provider_calls_by_research_assistant": 0,
+  "independent_human_review": false
+}

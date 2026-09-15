@@ -1,0 +1,12 @@
+test_acquisition_scores_without_oracle_argument (tests.test_selection.SelectionTests.test_acquisition_scores_without_oracle_argument) ... ok
+test_budgets_share_prefix_but_not_future_labels (tests.test_selection.SelectionTests.test_budgets_share_prefix_but_not_future_labels) ... ok
+test_every_added_atom_has_equal_workflow_cost (tests.test_selection.SelectionTests.test_every_added_atom_has_equal_workflow_cost) ... ok
+test_features_equal_exact_myopic_stage (tests.test_selection.SelectionTests.test_features_equal_exact_myopic_stage) ... ok
+test_selection_deterministic_at_fixed_seed (tests.test_selection.SelectionTests.test_selection_deterministic_at_fixed_seed) ... ok
+test_single_model_ignores_labels_of_future_unbought_cells (tests.test_selection.SelectionTests.test_single_model_ignores_labels_of_future_unbought_cells) ... ok
+test_unknown_selector_rejected (tests.test_selection.SelectionTests.test_unknown_selector_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.495s
+
+OK

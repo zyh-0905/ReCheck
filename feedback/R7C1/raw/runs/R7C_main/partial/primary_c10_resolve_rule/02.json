@@ -1,0 +1,10 @@
+{
+  "turn": 2,
+  "logical_id": "primary_c10_resolve_rule/turn_02",
+  "request_sha256": "ce760373bd167b7074352ce8576bb7ad92e641044b902c22d7771c9890233761",
+  "response_text": "{\"done\":\"Updated the reminder with exact text \\\"Submit the cobalt expense report\\\" (id da2b856e-9390-511f-bcbe-7005f72cbf5e) to reminder_timestamp 1800003600, leaving its text and location unchanged. No other reminder was edited.\"}",
+  "kind": "done",
+  "action": {
+    "done": "Updated the reminder with exact text \"Submit the cobalt expense report\" (id da2b856e-9390-511f-bcbe-7005f72cbf5e) to reminder_timestamp 1800003600, leaving its text and location unchanged. No other reminder was edited."
+  }
+}

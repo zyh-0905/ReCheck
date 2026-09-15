@@ -1,0 +1,31 @@
+{
+  "label": "PRIOR_R1_READINESS_NOT_REPAIRLENS_ALGORITHM",
+  "origin_sha256": "f95f661a233adf18f592484ad11a552dc22216563bcc77eaf6016b2e5d0fb386",
+  "pricing_note": "Frozen R1 configured flat USD estimates used only for like-for-like ratios, NOT today's prices or actual invoice.",
+  "groups": {
+    "shared_prefix/shared_prefix": {
+      "calls": 12,
+      "completion_tokens": 894,
+      "latency_seconds": 11.578589124372229,
+      "legacy_flat_USD_estimate": 0.0017706
+    },
+    "full_regeneration/repair": {
+      "calls": 12,
+      "completion_tokens": 860,
+      "latency_seconds": 12.735021580709144,
+      "legacy_flat_USD_estimate": 0.0017297999999999997
+    },
+    "llm_selected_patch/repair": {
+      "calls": 6,
+      "completion_tokens": 436,
+      "latency_seconds": 5.939880542224273,
+      "legacy_flat_USD_estimate": 0.0008690999999999999
+    },
+    "llm_selected_patch/selection": {
+      "calls": 4,
+      "completion_tokens": 2010,
+      "latency_seconds": 11.078537209192291,
+      "legacy_flat_USD_estimate": 0.0029775
+    }
+  }
+}

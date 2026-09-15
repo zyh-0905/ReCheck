@@ -1,0 +1,22 @@
+test_absent_self_is_rejected (test_source_probe.SourceContractTest.test_absent_self_is_rejected) ... ok
+test_cellular_off_fails_before_write (test_source_probe.SourceContractTest.test_cellular_off_fails_before_write) ... ok
+test_diagnostics_label_not_native_benchmark (test_source_probe.SourceContractTest.test_diagnostics_label_not_native_benchmark) ... ok
+test_duplicate_self_is_rejected (test_source_probe.SourceContractTest.test_duplicate_self_is_rejected) ... ok
+test_elementary_information_bound (test_source_probe.SourceContractTest.test_elementary_information_bound) ... ok
+test_exact_git_blob_identity (test_source_probe.SourceContractTest.test_exact_git_blob_identity) ... ok
+test_execution_retains_original_function_body_ast (test_source_probe.SourceContractTest.test_execution_retains_original_function_body_ast) ... ok
+test_fixture_validator_rejects_non_string (test_source_probe.SourceContractTest.test_fixture_validator_rejects_non_string) ... ok
+test_immediate_observation_equivalent_despite_recipient_difference (test_source_probe.SourceContractTest.test_immediate_observation_equivalent_despite_recipient_difference) ... ok
+test_later_lookup_does_not_undo_prior_write (test_source_probe.SourceContractTest.test_later_lookup_does_not_undo_prior_write) ... ok
+test_modified_source_rejected (test_source_probe.SourceContractTest.test_modified_source_rejected) ... ok
+test_reactive_cellular_enable_then_retry_no_duplicate_write (test_source_probe.SourceContractTest.test_reactive_cellular_enable_then_retry_no_duplicate_write) ... ok
+test_read_current_contact_then_send_uses_new_phone (test_source_probe.SourceContractTest.test_read_current_contact_then_send_uses_new_phone) ... ok
+test_reassigned_phone_succeeds_but_points_to_other_person (test_source_probe.SourceContractTest.test_reassigned_phone_succeeds_but_points_to_other_person) ... ok
+test_retired_phone_succeeds_but_recipient_is_none (test_source_probe.SourceContractTest.test_retired_phone_succeeds_but_recipient_is_none) ... ok
+test_same_contact_message_points_to_target (test_source_probe.SourceContractTest.test_same_contact_message_points_to_target) ... ok
+test_unrelated_phone_change_not_target_change (test_source_probe.SourceContractTest.test_unrelated_phone_change_not_target_change) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.062s
+
+OK

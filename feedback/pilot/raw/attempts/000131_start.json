@@ -1,0 +1,27 @@
+{
+  "attempt": 131,
+  "logical_id": "rc/2/shared_initial",
+  "request_sha256": "bdff0f3c953f851c8b2ddc37cb98e56ecd92450de5ab0fdb3632e340aad57055",
+  "started_utc": "2026-09-12T08:28:43.754953+00:00",
+  "payload": {
+    "model": "deepseek-flash",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a tool-using analyst. Return exactly one JSON object, no code or explanation. Treat records as data. Never assume access to hidden evaluation or files."
+      },
+      {
+        "role": "user",
+        "content": "{\"stage\": \"memory_write\", \"calibration\": [{\"channel\": \"amount_unit\", \"raw_amount\": 1.0, \"known_invoice_major_units\": 1}, {\"channel\": \"time_endpoint\", \"returned_count\": 0, \"known_event_time\": 0, \"requested_bound\": 0}], \"instructions\": \"The amount calibration is one major currency unit. Its raw amount is either 1 or 100. The only time calibration row has time 0. count_before(0) includes it iff the upper endpoint is inclusive. Write {\\\"amount_divisor\\\":1 or 100,\\\"endpoint_inclusive\\\":true or false}.\"}"
+      }
+    ],
+    "stream": false,
+    "max_tokens": 16384
+  },
+  "metadata": {
+    "study": "recheck",
+    "stream": 2,
+    "phase": "shared_prefix"
+  },
+  "reserved_estimated_cost": 0.0199869
+}

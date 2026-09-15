@@ -1,0 +1,49 @@
+{
+  "assistant_message": {
+    "content": "Low battery mode is currently on, and Wi-Fi is off. Since low battery mode blocks turning on Wi-Fi, I'll disable it first (as you permitted), then enable Wi-Fi.",
+    "reasoning_content": "Low battery mode is on, wifi is off. To enable wifi, I must disable low battery mode first (permission error otherwise). User authorized disabling low battery mode if it prevents enabling wifi.\n\nSo disable low battery mode, then enable wifi.\n\nThese are dependent (wifi enable depends on low battery off), so sequential. Actually I could call both in same block but order matters — they're executed sequentially in returned order. But validation... \"Multiple calls are validated together, then executed sequentially.\" The wifi enable might fail if validation checks low battery mode before executing. Safer to do sequentially in separate responses.\n\nLet me disable low battery mode first.",
+    "role": "assistant",
+    "tool_calls": [
+      {
+        "function": {
+          "arguments": "{\"on\": false}",
+          "name": "set_low_battery_mode_status"
+        },
+        "id": "call_00_MoNbkV1zdRf9TW3cKn1t4185",
+        "index": 0,
+        "type": "function"
+      }
+    ]
+  },
+  "decoded_calls": [
+    {
+      "arguments": {
+        "on": false
+      },
+      "id": "call_00_MoNbkV1zdRf9TW3cKn1t4185",
+      "name": "set_low_battery_mode_status"
+    }
+  ],
+  "event_end": 4,
+  "event_start": 3,
+  "executions": [
+    {
+      "batch_index": 0,
+      "event_end": 4,
+      "event_start": 3,
+      "outer_tool_count": 3,
+      "tool_call_id": "call_00_MoNbkV1zdRf9TW3cKn1t4185"
+    }
+  ],
+  "kind": "tools",
+  "logical_id": "primary_n13_inherited/turn_01",
+  "request_sha256": "f55d383a3d52c461f4292bf2f1abbe28b6038cea69a3b6f268737455906196e4",
+  "tool_messages": [
+    {
+      "content": "{\"error\":null,\"ok\":true,\"value\":null}",
+      "role": "tool",
+      "tool_call_id": "call_00_MoNbkV1zdRf9TW3cKn1t4185"
+    }
+  ],
+  "turn": 1
+}

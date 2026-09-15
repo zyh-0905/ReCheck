@@ -1,0 +1,23 @@
+test_collect (unittest.loader._FailedTest.test_collect) ... ERROR
+
+======================================================================
+ERROR: test_collect (unittest.loader._FailedTest.test_collect)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_collect
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/unittest/loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python3.13/unittest/loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "/mnt/data/r7_work/R7_Materials_Request/tests/test_collect.py", line 8, in <module>
+    from collect_materials import (validate_url, wheel_rank, select_release_file,
+        verify_bytes, repository_tree, verify_source_zip, pick_filename, build_bundle,
+        safe_error, DownloadFailure)
+ModuleNotFoundError: No module named 'collect_materials'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)

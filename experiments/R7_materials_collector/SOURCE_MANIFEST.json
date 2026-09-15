@@ -1,0 +1,8 @@
+{
+  "files": {
+    "R7_Materials_Prompt_ZH.md": "f4932a577c871443a42a8f622a3ea9acd169354f81d27dfb914cbcae0d959fc6",
+    "README_ZH.md": "9f60bfd895097de68844886a672f8613e4615e0a6e5c7d5511dc77afefc9eac2",
+    "collect_materials.py": "22fe5e7b28c752d3bba33ef5d3c3aa5d87dbf4c9aa7174804d6a08dfebd1624f",
+    "tests/test_collect.py": "8833866fe31d948e6763f758301c49665a25995a0f4773ca60741de3d6aab3a1"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "assistant_message": {
+    "content": "Cellular service is already on, and the current contact entry for Fredrik Thordendal shows +12453344098. Sending the message now.",
+    "reasoning_content": "Cellular is on. Contact number matches +12453344098. Send the message.",
+    "role": "assistant",
+    "tool_calls": [
+      {
+        "function": {
+          "arguments": "{\"phone_number\": \"+12453344098\", \"content\": \"Rehearsal begins at 19:15. Please acknowledge.\"}",
+          "name": "send_message_with_phone_number"
+        },
+        "id": "call_00_W8mKpmSwKu8XzZDGwVZ95065",
+        "index": 0,
+        "type": "function"
+      }
+    ]
+  },
+  "decoded_calls": [
+    {
+      "arguments": {
+        "content": "Rehearsal begins at 19:15. Please acknowledge.",
+        "phone_number": "+12453344098"
+      },
+      "id": "call_00_W8mKpmSwKu8XzZDGwVZ95065",
+      "name": "send_message_with_phone_number"
+    }
+  ],
+  "event_end": 3,
+  "event_start": 2,
+  "executions": [
+    {
+      "batch_index": 0,
+      "event_end": 3,
+      "event_start": 2,
+      "outer_tool_count": 3,
+      "tool_call_id": "call_00_W8mKpmSwKu8XzZDGwVZ95065"
+    }
+  ],
+  "kind": "tools",
+  "logical_id": "primary_n00_verify_confirm/turn_01",
+  "request_sha256": "fc844cb69f6a9f43f6a3704258a9d8b76e0f48ff7bb1d602a10dbb1bbdee9ab4",
+  "tool_messages": [
+    {
+      "content": "{\"error\":null,\"ok\":true,\"value\":\"fd48b0c9-eacb-4bbb-a287-68664bea2622\"}",
+      "role": "tool",
+      "tool_call_id": "call_00_W8mKpmSwKu8XzZDGwVZ95065"
+    }
+  ],
+  "turn": 1
+}

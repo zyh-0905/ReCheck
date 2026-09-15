@@ -1,0 +1,23 @@
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 720, in _warm_feature_flows
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 704, in _warm_collaboration_flows
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/generated/interface/models.py", line 32317, in hydrate_crdt_from_proto
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/remote.py", line 749, in __call__
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/client.py", line 150, in call
+artifact_tool.rpc.client.RemoteError: hydrateCrdtFromProto requires an empty collaborative document.
+test_export_excludes_local_secrets (test_r2_boundary.BoundaryTests.test_export_excludes_local_secrets) ... ok
+test_export_key_pattern_blocked (test_r2_boundary.BoundaryTests.test_export_key_pattern_blocked) ... ok
+test_export_refuses_overwrite (test_r2_boundary.BoundaryTests.test_export_refuses_overwrite) ... ok
+test_export_symlink_rejected (test_r2_boundary.BoundaryTests.test_export_symlink_rejected) ... ok
+test_orphan_result_not_passed (test_r2_boundary.BoundaryTests.test_orphan_result_not_passed) ... ok
+test_prior_regression_reproduced (test_r2_boundary.BoundaryTests.test_prior_regression_reproduced) ... ok
+test_registered_not_claimed_sent (test_r2_boundary.BoundaryTests.test_registered_not_claimed_sent) ... ok
+test_repair_cost_not_call_count (test_r2_boundary.BoundaryTests.test_repair_cost_not_call_count) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.006s
+
+OK

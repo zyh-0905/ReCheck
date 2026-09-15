@@ -1,0 +1,10 @@
+{
+  "turn": 2,
+  "logical_id": "repeat_c02_inherited/turn_02",
+  "request_sha256": "957d7f96cdb9a1029915b177c58b9b3749c5d68ce2ef093a2b299da1af31c215",
+  "response_text": "{\"done\":\"Sent the message to Fredrik Thordendal at his current number (+12025550119), exactly once, with the exact content: \\\"The rehearsal has moved to 18:30. Please confirm when you can.\\\" No other settings or entries were changed.\"}",
+  "kind": "done",
+  "action": {
+    "done": "Sent the message to Fredrik Thordendal at his current number (+12025550119), exactly once, with the exact content: \"The rehearsal has moved to 18:30. Please confirm when you can.\" No other settings or entries were changed."
+  }
+}

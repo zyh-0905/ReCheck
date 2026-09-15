@@ -1,0 +1,20 @@
+{
+  "registered_source_files": 19,
+  "all_hashes_match": true,
+  "clean_build_exit_codes": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "working_draft_pages": 5,
+  "page_render_equality": [
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "PDF_byte_identity_required": false,
+  "scope": "Same-environment compile and render reproduction, not official conference validation"
+}

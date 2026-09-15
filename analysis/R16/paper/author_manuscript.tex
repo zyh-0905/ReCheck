@@ -1,0 +1,36 @@
+% Author-composition scaffold. This is intentionally not a completed submission.
+\documentclass[10pt,letterpaper]{article}
+\usepackage{spconf}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,graphicx,booktabs,url}
+\usepackage[hidelinks]{hyperref}
+\title{ReCheck: Auditing Full-Progress Scores Against Executed Effects in LLM Agents}
+\input{authors}
+\begin{document}
+\maketitle
+\begin{abstract}
+\textbf{AUTHOR TEXT REQUIRED.} Compose approximately 100--150 words from the verified study, distinguishing saved model records, scripted controls, and local effect checks.
+\end{abstract}
+\begin{keywords}
+Agent evaluation, tool use, benchmark auditing, temporal reasoning, outcome verification
+\end{keywords}
+\section{Introduction}
+\textbf{AUTHOR TEXT REQUIRED.} State the research question and the narrow empirical contribution. Do not claim a new planning method or verified leaderboard change.
+\section{Related Work}
+\textbf{AUTHOR TEXT REQUIRED.} Compare ToolSandbox~\cite{toolsandbox}, TED~\cite{ted}, judge validation~\cite{judge}, tool-evaluator auditing~\cite{validity}, automated audits~\cite{aba}, and temporal reasoning~\cite{timebench}.
+\section{Protocol and Data}
+\textbf{AUTHOR TEXT REQUIRED.} Describe evidence identifiers, observed snapshot boundaries, active-request adjudication, calendar checks, abstention, data version~\cite{sapdata}, retrospective selection, and dependence between repeated templates.
+\section{Results}
+\textbf{AUTHOR TEXT REQUIRED.} Explain each denominator; retain ambiguous exclusions and the separate negative coverage.
+\input{tables/task_counts}
+\begin{figure}[t]
+\centering\includegraphics[width=\columnwidth]{figures/model_counts.pdf}
+\caption{AUTHOR CAPTION REQUIRED. Six source labels; 48 reminder records each. The right-hand bars show retained score/effect conflicts, not re-ranked models.}
+\end{figure}
+\section{Temporal Controls}
+\textbf{AUTHOR TEXT REQUIRED.} Explain why historical attainment and latest-state checks fail on different controls. These are scripted, not model-generated counterexamples.
+\input{tables/temporal_controls}
+\section{Limitations and Conclusion}
+\textbf{AUTHOR TEXT REQUIRED.} Bound the claim by observable effects and the fixed task subset. No causal diagnosis of the original judge and no general human-verified accuracy estimate were measured.
+\input{references}
+\end{document}

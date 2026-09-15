@@ -1,0 +1,5 @@
+arm,planned,completed,goal_final,final_state_clean,trace_safe_success,wrong_write,false_completion_claim,model_calls,tool_calls,conflicts
+generic,12,12,12,12,12,0,0,58,52,5
+minimal,12,12,12,12,12,0,0,60,52,6
+intent,12,12,12,12,12,0,0,58,54,5
+both,12,12,12,12,12,0,0,61,56,6

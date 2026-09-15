@@ -1,0 +1,7 @@
+{
+  "reason": "container command invocation timed out; no source or protocol changed",
+  "partial_trajectories": 1184,
+  "new_model_calls": 0,
+  "preserved_path": "/mnt/data/r6_work/interrupted_research_run",
+  "policy": "archive incomplete attempt; fresh identical-protocol run; never merge sample counts"
+}

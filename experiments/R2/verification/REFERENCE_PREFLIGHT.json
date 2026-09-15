@@ -1,0 +1,126 @@
+{
+  "protocol_id": "R2_RECHECK_MECHANISM_01",
+  "pass": true,
+  "outcome_labels_inspected": 0,
+  "hidden_modes_constructed": 0,
+  "new_model_calls": 0,
+  "logical_calls": 484,
+  "streams": [
+    {
+      "stream": 0,
+      "task_seed": 920101,
+      "probe_price": [
+        0.18,
+        0.18
+      ],
+      "task_types": [
+        3,
+        3,
+        3,
+        3,
+        1,
+        1,
+        3,
+        0,
+        2,
+        2,
+        2,
+        2
+      ],
+      "same_age_state_action_disagreements": 0,
+      "trajectory_probe_disagreements": 0,
+      "differing_steps": [],
+      "public_evidence_timestamp_differences": 0
+    },
+    {
+      "stream": 1,
+      "task_seed": 920102,
+      "probe_price": [
+        0.18,
+        0.18
+      ],
+      "task_types": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "same_age_state_action_disagreements": 0,
+      "trajectory_probe_disagreements": 0,
+      "differing_steps": [],
+      "public_evidence_timestamp_differences": 0
+    },
+    {
+      "stream": 2,
+      "task_seed": 920103,
+      "probe_price": [
+        0.22,
+        0.22
+      ],
+      "task_types": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        3,
+        2,
+        2,
+        2
+      ],
+      "same_age_state_action_disagreements": 40,
+      "trajectory_probe_disagreements": 4,
+      "differing_steps": [
+        1,
+        4,
+        9,
+        10
+      ],
+      "public_evidence_timestamp_differences": 9
+    },
+    {
+      "stream": 3,
+      "task_seed": 920104,
+      "probe_price": [
+        0.22,
+        0.22
+      ],
+      "task_types": [
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "same_age_state_action_disagreements": 40,
+      "trajectory_probe_disagreements": 4,
+      "differing_steps": [
+        1,
+        2,
+        3,
+        9
+      ],
+      "public_evidence_timestamp_differences": 11
+    }
+  ],
+  "interpretation": "Treatment opportunity only; no prediction of accuracy improvement or statistical significance.",
+  "selection_disclosure": "Prices 0.18 and 0.22 chosen using prior R1 policy analysis, before R2 model outputs. All listed streams retained even without drift or method improvement. Not an unbiased sweep over hyperparameters."
+}

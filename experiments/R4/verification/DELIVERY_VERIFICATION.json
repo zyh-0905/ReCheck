@@ -1,0 +1,73 @@
+{
+  "task_id": "R4_BUNDLE_BUDGET_01",
+  "version": "r4-4.0.0",
+  "fresh_unpacked_unit_tests": 65,
+  "failures": 0,
+  "errors": 0,
+  "new_remote_llm_calls": 0,
+  "planned_user_primary_calls": 384,
+  "planned_user_repeat_calls": 24,
+  "planned_user_smoke_calls": 1,
+  "planned_user_total_cap": 409,
+  "independent_streams": 12,
+  "conditions": 4,
+  "steps_per_stream": 8,
+  "per_episode_runtime_probe_credits": 8,
+  "per_round_probe_credit_cap": 4,
+  "shared_startup_calibration_credit_equivalent": 6,
+  "startup_budget_scope": "outside runtime budget, identical per policy; report separately",
+  "offline_grid_cells": 72,
+  "fresh_exact_grid_matches_reference": true,
+  "source_files": 41,
+  "source_manifest_sha256": "00d37f9e59c69a10fa1d8bc7777f5fee4c18f537c9432ebf2faa6c824bee808e",
+  "full_cli_fixture": {
+    "label": "SOFTWARE_TEST_NOT_RESEARCH",
+    "smoke_calls": 1,
+    "main_calls": 408,
+    "total_local_http_fixture_calls": 409,
+    "primary_records": 384,
+    "repeat_records": 24,
+    "replay": {
+      "pass": true,
+      "applicable": true,
+      "new_model_calls": 0,
+      "request_bodies_checked": 408,
+      "completed_calls_consumed": 408,
+      "stop_reason": null,
+      "request_mismatches": [],
+      "artifact_mismatches": [],
+      "unconsumed_calls": [],
+      "note": "Local reconstruction only, not provider identity or invoice authentication."
+    },
+    "budget_violations": [],
+    "source_snapshot_mismatches": [],
+    "no_resampling": true,
+    "smoke_required": true,
+    "prices_unknown": true,
+    "scientific_gate": "PENDING_RESEARCHER_REVIEW",
+    "bundle": {
+      "pass": true,
+      "entries": 2206
+    },
+    "fixture_task_world_data_seeds_disjoint": true,
+    "remote_llm_calls": 0
+  },
+  "live_before_smoke_blocked": true,
+  "environment": {
+    "os": "Linux",
+    "python": "3.13.5",
+    "numpy": "2.3.5"
+  },
+  "windows_macos_runtime_tested": false,
+  "independent_human_review": false,
+  "research_status": "KNOWN_MODEL_AND_SOFTWARE_CHECKS_COMPLETE; USER_LIVE_R4_RESULTS_PENDING",
+  "no_claims": [
+    "new general scheduling theorem",
+    "public benchmark evaluation",
+    "LLM necessity",
+    "currency savings",
+    "paper acceptance"
+  ],
+  "old_R3_archive_sha256": "be7ca78141f3b16f942ea7a271f3ff040d1e74556f031ae52cbeaabc4930a0d6",
+  "old_R3_archive_unchanged": true
+}

@@ -1,0 +1,38 @@
+{
+  "review_date_label": "2026-09-13",
+  "sources": [
+    {
+      "title": "Near Optimal Bayesian Active Learning for Decision Making",
+      "authors": "Javdani et al.",
+      "year": 2014,
+      "venue": "AISTATS, PMLR 33:430-438",
+      "url": "https://proceedings.mlr.press/v33/javdani14.html",
+      "use": "Prior art for deciding what information is necessary for a decision; R6 does not re-prove HEC guarantees."
+    },
+    {
+      "title": "Decision-Focused Learning: Through the Lens of Learning to Rank",
+      "authors": "Mandi et al.",
+      "year": 2022,
+      "venue": "ICML, PMLR 162:14935-14947",
+      "url": "https://proceedings.mlr.press/v162/mandi22a.html",
+      "use": "Prior art: prediction accuracy and downstream decision quality need not agree."
+    },
+    {
+      "title": "Targeted Active Learning for Bayesian Decision-Making",
+      "authors": "Filstroff et al.",
+      "year": 2021,
+      "venue": "arXiv:2106.04193v2",
+      "url": "https://arxiv.org/abs/2106.04193",
+      "use": "Prior art for acquiring labels useful to optimal decisions; R6 endpoint stress is not this Bayesian acquisition."
+    },
+    {
+      "title": "Decision-Focused On-Policy Learning for Contextual Linear Optimization with Partial Feedback",
+      "authors": "Benslimane et al.",
+      "year": 2026,
+      "venue": "arXiv:2606.01081",
+      "url": "https://arxiv.org/abs/2606.01081",
+      "use": "Related partial-feedback learning; R6 is an offline simulator calibration study, not on-policy learning."
+    }
+  ],
+  "review_scope": "primary landing pages and abstracts; not full-text exhaustive novelty review"
+}

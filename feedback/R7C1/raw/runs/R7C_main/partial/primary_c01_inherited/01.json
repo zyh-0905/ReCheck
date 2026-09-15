@@ -1,0 +1,17 @@
+{
+  "turn": 1,
+  "logical_id": "primary_c01_inherited/turn_01",
+  "request_sha256": "fd4f0aa36a92dcc05d1ecd9664bb88f424e7d1135b83ec36180a9e4c26807aea",
+  "response_text": "{\"tool\":\"get_cellular_service_status\",\"arguments\":{}}",
+  "kind": "tool",
+  "action": {
+    "tool": "get_cellular_service_status",
+    "arguments": {}
+  },
+  "observation": {
+    "ok": true,
+    "value": true,
+    "error": null
+  },
+  "event_index": 1
+}

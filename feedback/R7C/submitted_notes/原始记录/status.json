@@ -1,0 +1,5 @@
+{
+  "status": "paused",
+  "error": "RunStopped: Returned model differs from requested exact ID. Raw response retained; no fallback.",
+  "ended_utc": "2026-09-13T08:00:06.357160+00:00"
+}

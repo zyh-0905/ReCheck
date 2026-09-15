@@ -1,0 +1,49 @@
+{
+  "assistant_message": {
+    "content": "",
+    "reasoning_content": "Now enable wifi.",
+    "role": "assistant",
+    "tool_calls": [
+      {
+        "function": {
+          "arguments": "{\"on\": true}",
+          "name": "set_wifi_status"
+        },
+        "id": "call_00_Kp3Nsp1fT2qR5ON5k7KQ1004",
+        "index": 0,
+        "type": "function"
+      }
+    ]
+  },
+  "decoded_calls": [
+    {
+      "arguments": {
+        "on": true
+      },
+      "id": "call_00_Kp3Nsp1fT2qR5ON5k7KQ1004",
+      "name": "set_wifi_status"
+    }
+  ],
+  "event_end": 5,
+  "event_start": 4,
+  "executions": [
+    {
+      "batch_index": 0,
+      "event_end": 5,
+      "event_start": 4,
+      "outer_tool_count": 4,
+      "tool_call_id": "call_00_Kp3Nsp1fT2qR5ON5k7KQ1004"
+    }
+  ],
+  "kind": "tools",
+  "logical_id": "primary_n13_inherited/turn_02",
+  "request_sha256": "744fedf6c932d7bd83f8dcc90c976bdebc86744b7b78a47ed9ef08b6dd2ac7ef",
+  "tool_messages": [
+    {
+      "content": "{\"error\":null,\"ok\":true,\"value\":null}",
+      "role": "tool",
+      "tool_call_id": "call_00_Kp3Nsp1fT2qR5ON5k7KQ1004"
+    }
+  ],
+  "turn": 2
+}

@@ -1,0 +1,73 @@
+{
+  "assistant_message": {
+    "content": "I'll start by checking the current Wi-Fi and low battery mode status.",
+    "reasoning_content": "The user wants to enable Wi-Fi. First I should check Wi-Fi status and low battery mode status. Let me get both.\n\nActually, let me check current states: wifi status and low battery mode status. These are independent calls.",
+    "role": "assistant",
+    "tool_calls": [
+      {
+        "function": {
+          "arguments": "{}",
+          "name": "get_wifi_status"
+        },
+        "id": "call_00_3zilb6BmntLuViEDFShS8286",
+        "index": 0,
+        "type": "function"
+      },
+      {
+        "function": {
+          "arguments": "{}",
+          "name": "get_low_battery_mode_status"
+        },
+        "id": "call_01_lpHF30Wn5mXCpPKxgBVt3339",
+        "index": 1,
+        "type": "function"
+      }
+    ]
+  },
+  "decoded_calls": [
+    {
+      "arguments": {},
+      "id": "call_00_3zilb6BmntLuViEDFShS8286",
+      "name": "get_wifi_status"
+    },
+    {
+      "arguments": {},
+      "id": "call_01_lpHF30Wn5mXCpPKxgBVt3339",
+      "name": "get_low_battery_mode_status"
+    }
+  ],
+  "event_end": 2,
+  "event_start": 0,
+  "executions": [
+    {
+      "batch_index": 0,
+      "event_end": 1,
+      "event_start": 0,
+      "outer_tool_count": 1,
+      "tool_call_id": "call_00_3zilb6BmntLuViEDFShS8286"
+    },
+    {
+      "batch_index": 1,
+      "event_end": 2,
+      "event_start": 1,
+      "outer_tool_count": 2,
+      "tool_call_id": "call_01_lpHF30Wn5mXCpPKxgBVt3339"
+    }
+  ],
+  "kind": "tools",
+  "logical_id": "primary_n12_inherited/turn_00",
+  "request_sha256": "9d22a9194264f34e277903f85b6972e949988bdc62af66b9c2e8a67e0c97e2b9",
+  "tool_messages": [
+    {
+      "content": "{\"error\":null,\"ok\":true,\"value\":false}",
+      "role": "tool",
+      "tool_call_id": "call_00_3zilb6BmntLuViEDFShS8286"
+    },
+    {
+      "content": "{\"error\":null,\"ok\":true,\"value\":false}",
+      "role": "tool",
+      "tool_call_id": "call_01_lpHF30Wn5mXCpPKxgBVt3339"
+    }
+  ],
+  "turn": 0
+}

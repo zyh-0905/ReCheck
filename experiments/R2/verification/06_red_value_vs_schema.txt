@@ -1,0 +1,32 @@
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 720, in _warm_feature_flows
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 704, in _warm_collaboration_flows
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/generated/interface/models.py", line 32317, in hydrate_crdt_from_proto
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/remote.py", line 749, in __call__
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/client.py", line 150, in call
+artifact_tool.rpc.client.RemoteError: hydrateCrdtFromProto requires an empty collaborative document.
+test_correct_fresh_memory (test_r2_audit.AuditTests.test_correct_fresh_memory) ... ok
+test_count_unused_field_is_contract_error (test_r2_audit.AuditTests.test_count_unused_field_is_contract_error) ... ok
+test_float_count_contract_violation (test_r2_audit.AuditTests.test_float_count_contract_violation) ... FAIL
+test_irrelevant_stale_value_not_an_exposure (test_r2_audit.AuditTests.test_irrelevant_stale_value_not_an_exposure) ... ok
+test_legal_old_value_is_stale_not_fresh (test_r2_audit.AuditTests.test_legal_old_value_is_stale_not_fresh) ... ok
+test_missing_call_not_silently_success (test_r2_audit.AuditTests.test_missing_call_not_silently_success) ... ok
+test_missing_memory_not_stale (test_r2_audit.AuditTests.test_missing_memory_not_stale) ... ok
+test_truncated_and_json_error_are_separate_axes (test_r2_audit.AuditTests.test_truncated_and_json_error_are_separate_axes) ... ok
+
+======================================================================
+FAIL: test_float_count_contract_violation (test_r2_audit.AuditTests.test_float_count_contract_violation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_audit.py", line 43, in test_float_count_contract_violation
+    e=self.ev(r,c,b);self.assertFalse(e["answer_schema_valid"]);self.assertFalse(e["end_to_end_success"]);self.assertTrue(e["answer_value_correct"])
+                                                                                                          ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.001s
+
+FAILED (failures=1)

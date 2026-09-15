@@ -1,0 +1,18 @@
+test_public_probability_contract (test_model.CoreContract.test_public_probability_contract) ... ok
+test_public_solver_contract (test_model.CoreContract.test_public_solver_contract) ... ok
+test_budget_and_overlap (test_model.ModelBehavior.test_budget_and_overlap) ... ok
+test_duplicate_packets_rejected (test_model.ModelBehavior.test_duplicate_packets_rejected) ... ok
+test_exhaustive_small (test_model.ModelBehavior.test_exhaustive_small) ... ok
+test_invalid_probability (test_model.ModelBehavior.test_invalid_probability) ... ok
+test_joint_model_not_worse_than_baselines (test_model.ModelBehavior.test_joint_model_not_worse_than_baselines) ... ok
+test_joint_one_step_equals_myopic (test_model.ModelBehavior.test_joint_one_step_equals_myopic) ... ok
+test_no_budget_loss_accumulates (test_model.ModelBehavior.test_no_budget_loss_accumulates) ... ok
+test_no_independent_double_refresh_charge (test_model.ModelBehavior.test_no_independent_double_refresh_charge) ... ok
+test_probability (test_model.ModelBehavior.test_probability) ... ok
+test_rollout_not_worse_than_its_base_model (test_model.ModelBehavior.test_rollout_not_worse_than_its_base_model) ... ok
+test_rules_are_feasible (test_model.ModelBehavior.test_rules_are_feasible) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.027s
+
+OK

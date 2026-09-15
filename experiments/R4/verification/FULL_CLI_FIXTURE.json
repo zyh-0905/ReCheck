@@ -1,0 +1,32 @@
+{
+  "label": "SOFTWARE_TEST_NOT_RESEARCH",
+  "smoke_calls": 1,
+  "main_calls": 408,
+  "total_local_http_fixture_calls": 409,
+  "primary_records": 384,
+  "repeat_records": 24,
+  "replay": {
+    "pass": true,
+    "applicable": true,
+    "new_model_calls": 0,
+    "request_bodies_checked": 408,
+    "completed_calls_consumed": 408,
+    "stop_reason": null,
+    "request_mismatches": [],
+    "artifact_mismatches": [],
+    "unconsumed_calls": [],
+    "note": "Local reconstruction only, not provider identity or invoice authentication."
+  },
+  "budget_violations": [],
+  "source_snapshot_mismatches": [],
+  "no_resampling": true,
+  "smoke_required": true,
+  "prices_unknown": true,
+  "scientific_gate": "PENDING_RESEARCHER_REVIEW",
+  "bundle": {
+    "pass": true,
+    "entries": 2206
+  },
+  "fixture_task_world_data_seeds_disjoint": true,
+  "remote_llm_calls": 0
+}

@@ -1,0 +1,21 @@
+{
+  "automatic_next_batch_authorized": false,
+  "completed_native_tool_events": 124,
+  "currency_cost": "UNKNOWN",
+  "environment_operations": 44,
+  "execution_complete": true,
+  "limitation": "Same-assistant saved-response and native-engine replay, not independent human review or model-weight authentication.",
+  "mechanical_pass": true,
+  "native_tool_events": 124,
+  "new_remote_model_calls": 0,
+  "partial_native_tool_events": 0,
+  "primary_episodes": 32,
+  "reconstructed_requests": 139,
+  "recorded_requests": 139,
+  "repeat_episodes": 4,
+  "retained_response_failures": [],
+  "scientific_superiority_claim": false,
+  "status": "completed",
+  "uncompleted_are_not_zero_scores": true,
+  "verified_partial_prefixes": []
+}

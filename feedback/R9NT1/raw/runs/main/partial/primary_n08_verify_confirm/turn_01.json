@@ -1,0 +1,53 @@
+{
+  "assistant_message": {
+    "content": "",
+    "reasoning_content": "The current lookup confirms the reminder with id 54f20be9-eac3-5e76-8e57-724e48d3d477, content exact match \"Review the indigo rehearsal plan\", location lat 37.3237926356735, lon -122.03961770355414.\n\nNow modify: keep content and location, set reminder_timestamp to 1800118800.",
+    "role": "assistant",
+    "tool_calls": [
+      {
+        "function": {
+          "arguments": "{\"reminder_id\": \"54f20be9-eac3-5e76-8e57-724e48d3d477\", \"content\": \"Review the indigo rehearsal plan\", \"reminder_timestamp\": 1800118800, \"latitude\": 37.3237926356735, \"longitude\": -122.03961770355414}",
+          "name": "modify_reminder"
+        },
+        "id": "call_00_s8xhSq9IChYhXXdskO6o9610",
+        "index": 0,
+        "type": "function"
+      }
+    ]
+  },
+  "decoded_calls": [
+    {
+      "arguments": {
+        "content": "Review the indigo rehearsal plan",
+        "latitude": 37.3237926356735,
+        "longitude": -122.03961770355414,
+        "reminder_id": "54f20be9-eac3-5e76-8e57-724e48d3d477",
+        "reminder_timestamp": 1800118800
+      },
+      "id": "call_00_s8xhSq9IChYhXXdskO6o9610",
+      "name": "modify_reminder"
+    }
+  ],
+  "event_end": 2,
+  "event_start": 1,
+  "executions": [
+    {
+      "batch_index": 0,
+      "event_end": 2,
+      "event_start": 1,
+      "outer_tool_count": 2,
+      "tool_call_id": "call_00_s8xhSq9IChYhXXdskO6o9610"
+    }
+  ],
+  "kind": "tools",
+  "logical_id": "primary_n08_verify_confirm/turn_01",
+  "request_sha256": "9bfab6527bc3f44f353652aa6c50926f9243e1d6aba89c4fa9b7c387911cf7f5",
+  "tool_messages": [
+    {
+      "content": "{\"error\":null,\"ok\":true,\"value\":null}",
+      "role": "tool",
+      "tool_call_id": "call_00_s8xhSq9IChYhXXdskO6o9610"
+    }
+  ],
+  "turn": 1
+}

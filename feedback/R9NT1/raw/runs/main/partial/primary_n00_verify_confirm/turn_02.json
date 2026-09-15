@@ -1,0 +1,49 @@
+{
+  "assistant_message": {
+    "content": "Now verifying the sent message.",
+    "reasoning_content": "Now verify by reading the message.",
+    "role": "assistant",
+    "tool_calls": [
+      {
+        "function": {
+          "arguments": "{\"message_id\": \"fd48b0c9-eacb-4bbb-a287-68664bea2622\"}",
+          "name": "search_messages"
+        },
+        "id": "call_00_eVFK7oDxwmGrMEDQqatE7635",
+        "index": 0,
+        "type": "function"
+      }
+    ]
+  },
+  "decoded_calls": [
+    {
+      "arguments": {
+        "message_id": "fd48b0c9-eacb-4bbb-a287-68664bea2622"
+      },
+      "id": "call_00_eVFK7oDxwmGrMEDQqatE7635",
+      "name": "search_messages"
+    }
+  ],
+  "event_end": 4,
+  "event_start": 3,
+  "executions": [
+    {
+      "batch_index": 0,
+      "event_end": 4,
+      "event_start": 3,
+      "outer_tool_count": 4,
+      "tool_call_id": "call_00_eVFK7oDxwmGrMEDQqatE7635"
+    }
+  ],
+  "kind": "tools",
+  "logical_id": "primary_n00_verify_confirm/turn_02",
+  "request_sha256": "e8fec235c801cb34843bec5211b245491abaea8b2b3d84c8810e6917a75ca122",
+  "tool_messages": [
+    {
+      "content": "{\"error\":null,\"ok\":true,\"value\":[{\"content\":\"Rehearsal begins at 19:15. Please acknowledge.\",\"creation_timestamp\":1789356448.597248,\"message_id\":\"fd48b0c9-eacb-4bbb-a287-68664bea2622\",\"recipient_person_id\":\"9e137f06-916a-5310-8174-cf0b7e9f7054\",\"recipient_phone_number\":\"+12453344098\",\"sender_person_id\":\"3815cac9-3cab-5d75-89e2-fe12fe19779e\",\"sender_phone_number\":\"+11233344455\"}]}",
+      "role": "tool",
+      "tool_call_id": "call_00_eVFK7oDxwmGrMEDQqatE7635"
+    }
+  ],
+  "turn": 2
+}

@@ -1,0 +1,15 @@
+test_bad_cells_and_seed_reuse_rejected (tests.test_acquisition.AcquisitionTests.test_bad_cells_and_seed_reuse_rejected) ... ok
+test_canonical_cell_counts (tests.test_acquisition.AcquisitionTests.test_canonical_cell_counts) ... ok
+test_checkpoint_is_not_mutated_by_later_purchase (tests.test_acquisition.AcquisitionTests.test_checkpoint_is_not_mutated_by_later_purchase) ... ok
+test_data_seed_sets_disjoint (tests.test_acquisition.AcquisitionTests.test_data_seed_sets_disjoint) ... ok
+test_duplicate_label_purchase_is_not_reexecuted (tests.test_acquisition.AcquisitionTests.test_duplicate_label_purchase_is_not_reexecuted) ... ok
+test_irrelevant_coordinates_are_publicly_invariant (tests.test_acquisition.AcquisitionTests.test_irrelevant_coordinates_are_publicly_invariant) ... ok
+test_known_diagonal_zero_without_buying_labels (tests.test_acquisition.AcquisitionTests.test_known_diagonal_zero_without_buying_labels) ... ok
+test_reference_answers_and_every_label_match_independent_math (tests.test_acquisition.AcquisitionTests.test_reference_answers_and_every_label_match_independent_math) ... ok
+test_single_and_full_costs_include_reference_runs (tests.test_acquisition.AcquisitionTests.test_single_and_full_costs_include_reference_runs) ... ok
+test_single_only_never_queries_interactions (tests.test_acquisition.AcquisitionTests.test_single_only_never_queries_interactions) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.216s
+
+OK

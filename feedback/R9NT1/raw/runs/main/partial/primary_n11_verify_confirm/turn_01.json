@@ -1,0 +1,53 @@
+{
+  "assistant_message": {
+    "content": "Found the current reminder. Now I'll update its reminder time while preserving text and location.",
+    "reasoning_content": "Now modify the reminder, preserving content and location, changing timestamp to 1800118800.",
+    "role": "assistant",
+    "tool_calls": [
+      {
+        "function": {
+          "arguments": "{\"reminder_id\": \"54f20be9-eac3-5e76-8e57-724e48d3d477\", \"content\": \"Review the indigo rehearsal plan\", \"reminder_timestamp\": 1800118800, \"latitude\": 37.3237926356735, \"longitude\": -122.03961770355414}",
+          "name": "modify_reminder"
+        },
+        "id": "call_00_RX1EwHhX6r9XMftM5o5C7289",
+        "index": 0,
+        "type": "function"
+      }
+    ]
+  },
+  "decoded_calls": [
+    {
+      "arguments": {
+        "content": "Review the indigo rehearsal plan",
+        "latitude": 37.3237926356735,
+        "longitude": -122.03961770355414,
+        "reminder_id": "54f20be9-eac3-5e76-8e57-724e48d3d477",
+        "reminder_timestamp": 1800118800
+      },
+      "id": "call_00_RX1EwHhX6r9XMftM5o5C7289",
+      "name": "modify_reminder"
+    }
+  ],
+  "event_end": 3,
+  "event_start": 2,
+  "executions": [
+    {
+      "batch_index": 0,
+      "event_end": 3,
+      "event_start": 2,
+      "outer_tool_count": 2,
+      "tool_call_id": "call_00_RX1EwHhX6r9XMftM5o5C7289"
+    }
+  ],
+  "kind": "tools",
+  "logical_id": "primary_n11_verify_confirm/turn_01",
+  "request_sha256": "ae0105fae2de069f6f77391f6390b436cfa0e3a528782805ebf9cb8bdc33d0ac",
+  "tool_messages": [
+    {
+      "content": "{\"error\":null,\"ok\":true,\"value\":null}",
+      "role": "tool",
+      "tool_call_id": "call_00_RX1EwHhX6r9XMftM5o5C7289"
+    }
+  ],
+  "turn": 1
+}

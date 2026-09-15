@@ -1,0 +1,26 @@
+{
+  "task_id": "R9J1_LIVE_CONTINUATION_DIAGNOSIS_01",
+  "mechanical_pass": true,
+  "execution_complete": false,
+  "source": {
+    "pass": true,
+    "files": 124,
+    "source_manifest_sha256": "578bd491801575b80a69fc686b2c87b497ac1af490c3cadfe6e4b36dc4556360"
+  },
+  "issues": [],
+  "states": {
+    "R9_smoke": "completed",
+    "R9_main": "paused"
+  },
+  "registered_requests": 2,
+  "reconstructed_research_requests": 0,
+  "completed_primary": 0,
+  "completed_repeat": 0,
+  "planned_primary": 32,
+  "planned_repeat": 4,
+  "uncertain_attempts": [],
+  "summary": [],
+  "scientific_gate": "PENDING_RESEARCHER_REVIEW",
+  "new_remote_calls_in_audit": 0,
+  "limits": "Four constructed families, one endpoint; no new method or official benchmark score; untriggered scheduled events not dropped; missing episodes not scored as failures/successes."
+}

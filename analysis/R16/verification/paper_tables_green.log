@@ -1,0 +1,15 @@
+test_authorized_not_counted (test_paper_tables.PaperTableTests.test_authorized_not_counted) ... ok
+test_bool_false (test_paper_tables.PaperTableTests.test_bool_false) ... ok
+test_bool_true (test_paper_tables.PaperTableTests.test_bool_true) ... ok
+test_calendar_and_no_commit_separate (test_paper_tables.PaperTableTests.test_calendar_and_no_commit_separate) ... ok
+test_conflict_requires_full (test_paper_tables.PaperTableTests.test_conflict_requires_full) ... ok
+test_count_full (test_paper_tables.PaperTableTests.test_count_full) ... ok
+test_count_records_not_tasks (test_paper_tables.PaperTableTests.test_count_records_not_tasks) ... ok
+test_duplicate_rejected (test_paper_tables.PaperTableTests.test_duplicate_rejected) ... ok
+test_empty (test_paper_tables.PaperTableTests.test_empty) ... ok
+test_reject_unknown_bool (test_paper_tables.PaperTableTests.test_reject_unknown_bool) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.000s
+
+OK

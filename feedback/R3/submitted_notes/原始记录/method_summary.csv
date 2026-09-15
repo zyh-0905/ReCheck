@@ -1,0 +1,11 @@
+﻿condition,method,completed_primary,successes,success_rate_completed_only,independent_streams,probe_count,semantic_loss_count,proxy_J_NOT_CURRENCY,interfaces_failed,stale_related,stale_propagation_consistent,primary_prompt_tokens,primary_completion_tokens,primary_model_latency_seconds,price_estimate
+ALL,recheck,192,170,0.8854166666666666,16,66,22,44.079999999999984,0,22,22,"{""known_sum"": 45142, ""unknown_count"": 0}","{""known_sum"": 35986, ""unknown_count"": 0}",293.80705188121647,
+ALL,myopic,192,163,0.8489583333333334,16,44,34,48.35999999999999,0,29,29,"{""known_sum"": 45142, ""unknown_count"": 0}","{""known_sum"": 36549, ""unknown_count"": 0}",297.34907658468,
+matched_high,recheck,48,41,0.8541666666666666,4,16,7,13.400000000000002,0,7,7,"{""known_sum"": 11742, ""unknown_count"": 0}","{""known_sum"": 9208, ""unknown_count"": 0}",71.94207637640648,
+matched_high,myopic,48,38,0.7916666666666666,4,10,12,16.000000000000004,0,10,10,"{""known_sum"": 11742, ""unknown_count"": 0}","{""known_sum"": 9473, ""unknown_count"": 0}",74.02038374985568,
+matched_low,recheck,48,44,0.9166666666666666,4,24,4,9.280000000000001,0,4,4,"{""known_sum"": 11160, ""unknown_count"": 0}","{""known_sum"": 9069, ""unknown_count"": 0}",75.92110250261612,
+matched_low,myopic,48,44,0.9166666666666666,4,18,5,8.960000000000003,0,4,4,"{""known_sum"": 11160, ""unknown_count"": 0}","{""known_sum"": 9214, ""unknown_count"": 0}",75.04105766513385,
+no_drift,recheck,48,48,1.0,4,14,0,5.6,0,0,0,"{""known_sum"": 11233, ""unknown_count"": 0}","{""known_sum"": 9843, ""unknown_count"": 0}",78.07623420958407,
+no_drift,myopic,48,48,1.0,4,8,0,3.2,0,0,0,"{""known_sum"": 11233, ""unknown_count"": 0}","{""known_sum"": 9677, ""unknown_count"": 0}",76.81780495960265,
+underestimated_drift,recheck,48,37,0.7708333333333334,4,12,11,15.800000000000002,0,11,11,"{""known_sum"": 11007, ""unknown_count"": 0}","{""known_sum"": 7866, ""unknown_count"": 0}",67.8676387926098,
+underestimated_drift,myopic,48,33,0.6875,4,8,17,20.200000000000003,0,15,15,"{""known_sum"": 11007, ""unknown_count"": 0}","{""known_sum"": 8185, ""unknown_count"": 0}",71.46983021008782,

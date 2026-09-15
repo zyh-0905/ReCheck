@@ -1,0 +1,49 @@
+{
+  "assistant_message": {
+    "content": "",
+    "reasoning_content": "Now verify by reading the message back.",
+    "role": "assistant",
+    "tool_calls": [
+      {
+        "function": {
+          "arguments": "{\"message_id\": \"704808b1-5242-4ede-b804-4db086110653\"}",
+          "name": "search_messages"
+        },
+        "id": "call_00_8uADMUKNPJYzHV1EH2CO5231",
+        "index": 0,
+        "type": "function"
+      }
+    ]
+  },
+  "decoded_calls": [
+    {
+      "arguments": {
+        "message_id": "704808b1-5242-4ede-b804-4db086110653"
+      },
+      "id": "call_00_8uADMUKNPJYzHV1EH2CO5231",
+      "name": "search_messages"
+    }
+  ],
+  "event_end": 4,
+  "event_start": 3,
+  "executions": [
+    {
+      "batch_index": 0,
+      "event_end": 4,
+      "event_start": 3,
+      "outer_tool_count": 3,
+      "tool_call_id": "call_00_8uADMUKNPJYzHV1EH2CO5231"
+    }
+  ],
+  "kind": "tools",
+  "logical_id": "primary_n07_verify_confirm/turn_02",
+  "request_sha256": "70d8a83b1dc727784b705791ca8a42034afa713fabb16af3dd6b437c9cdeca16",
+  "tool_messages": [
+    {
+      "content": "{\"error\":null,\"ok\":true,\"value\":[{\"content\":\"Rehearsal begins at 19:15. Please acknowledge.\",\"creation_timestamp\":1789356537.480828,\"message_id\":\"704808b1-5242-4ede-b804-4db086110653\",\"recipient_person_id\":\"9e137f06-916a-5310-8174-cf0b7e9f7054\",\"recipient_phone_number\":\"+12453344098\",\"sender_person_id\":\"3815cac9-3cab-5d75-89e2-fe12fe19779e\",\"sender_phone_number\":\"+11233344455\"}]}",
+      "role": "tool",
+      "tool_call_id": "call_00_8uADMUKNPJYzHV1EH2CO5231"
+    }
+  ],
+  "turn": 2
+}

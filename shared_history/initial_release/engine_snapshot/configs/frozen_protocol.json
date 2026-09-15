@@ -1,0 +1,81 @@
+{
+  "kind": "local pre-execution protocol snapshot; NOT external preregistration",
+  "timestamp_utc": "2026-09-12T05:22:31.814135+00:00",
+  "recheck": {
+    "horizon": 80,
+    "hazards": [
+      0.01,
+      0.05,
+      0.15
+    ],
+    "task_persistence": [
+      0.2,
+      0.9
+    ],
+    "prices": [
+      0.04,
+      0.12,
+      0.35
+    ],
+    "development_seeds": [
+      100,
+      115
+    ],
+    "test_seeds": [
+      10000,
+      10063
+    ],
+    "primary_estimand": "paired stream mean difference in weighted Hamming loss plus declared probe price; CPUs separately measured",
+    "limitations": [
+      "exact probes",
+      "known drift and task transition model",
+      "separable cost",
+      "no LLM",
+      "IID generator replication, not unseen-template generalization"
+    ]
+  },
+  "repairlens": {
+    "instances_per_family": 20,
+    "families": [
+      "sparse",
+      "overlap",
+      "general",
+      "nuisance",
+      "coupled",
+      "expensive"
+    ],
+    "primary_estimand": "complete-state restoration and normalized declared operation cost, exact vs myopic/class-entropy/restart",
+    "limitations": [
+      "finite true-included behavior family in primary experiment",
+      "deterministic replay",
+      "three synthetic signal-summary blocks",
+      "no natural LLM failures"
+    ]
+  },
+  "statistics": {
+    "bootstrap_seed": 8675309,
+    "bootstrap_replicates": 3000,
+    "unit_recheck": "independent stream within regime; share resampling across methods/prices",
+    "unit_repairlens": "workflow instance within family",
+    "interval": "percentile paired 95% CI, descriptive conditional on generator"
+  },
+  "no_test_based_method_tuning": true,
+  "source_sha256": {
+    "src/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/common/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/recheck/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/recheck/core.py": "df2a275361d74155007335a84299331a1780b13a73ab9e5abd5f078fe42d4310",
+    "src/recheck/experiment.py": "f19d9f9b282f7862cb7ef896c9b538c579e39d40707a850327d54e56e78ecaed",
+    "src/recheck/sql_environment.py": "49c96bbd8680e3585430ed4df755b71b7901967c637d568811b496264c24ab6f",
+    "src/repairlens/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/repairlens/artifacts.py": "042cc8ff5f6657d5a6811c177db9b87f393e01390ce28f083825744e9fdea3ac",
+    "src/repairlens/core.py": "e77ce70ecdc463b42f3e0ef7246f4b98057ad1ed4fb53c48d276bf832e8402d7",
+    "src/repairlens/experiment.py": "b3e6ecb01487893291159c2a6f5cacd1582e6ecff29772c036c44de39866c5b3"
+  },
+  "calibration_sha256": "80616d7697a900fb5cdfd99ebc1d7131220645693c2dced51fc6abff883b52b6",
+  "environment": {
+    "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+    "platform": "Linux-6.18.35-x86_64-with-glibc2.41",
+    "gpu": false
+  }
+}

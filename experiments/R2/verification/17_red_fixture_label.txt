@@ -1,0 +1,15 @@
+test_fixture_label_not_allowed_on_remote_endpoint (test_r2_cli.CLITests.test_fixture_label_not_allowed_on_remote_endpoint) ... FAIL
+
+======================================================================
+FAIL: test_fixture_label_not_allowed_on_remote_endpoint (test_r2_cli.CLITests.test_fixture_label_not_allowed_on_remote_endpoint)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_cli.py", line 44, in test_fixture_label_not_allowed_on_remote_endpoint
+    with self.assertRaises(ValueError):session.validate_r2_config(c)
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+----------------------------------------------------------------------
+Ran 1 test in 0.003s
+
+FAILED (failures=1)

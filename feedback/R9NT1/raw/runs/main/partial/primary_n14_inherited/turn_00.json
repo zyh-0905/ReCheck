@@ -1,0 +1,73 @@
+{
+  "assistant_message": {
+    "content": "I'll first check the current Wi-Fi and low battery mode status.",
+    "reasoning_content": "The user wants to enable Wi-Fi. First check status. Historical evidence says wifi was off (value false). But state may have changed. Let's check wifi status and low battery mode status.",
+    "role": "assistant",
+    "tool_calls": [
+      {
+        "function": {
+          "arguments": "{}",
+          "name": "get_wifi_status"
+        },
+        "id": "call_00_hT5DM6UAWsSiSafRCtXP9108",
+        "index": 0,
+        "type": "function"
+      },
+      {
+        "function": {
+          "arguments": "{}",
+          "name": "get_low_battery_mode_status"
+        },
+        "id": "call_01_q78RfkVuUt816fAWLrbv5408",
+        "index": 1,
+        "type": "function"
+      }
+    ]
+  },
+  "decoded_calls": [
+    {
+      "arguments": {},
+      "id": "call_00_hT5DM6UAWsSiSafRCtXP9108",
+      "name": "get_wifi_status"
+    },
+    {
+      "arguments": {},
+      "id": "call_01_q78RfkVuUt816fAWLrbv5408",
+      "name": "get_low_battery_mode_status"
+    }
+  ],
+  "event_end": 3,
+  "event_start": 0,
+  "executions": [
+    {
+      "batch_index": 0,
+      "event_end": 2,
+      "event_start": 0,
+      "outer_tool_count": 1,
+      "tool_call_id": "call_00_hT5DM6UAWsSiSafRCtXP9108"
+    },
+    {
+      "batch_index": 1,
+      "event_end": 3,
+      "event_start": 2,
+      "outer_tool_count": 2,
+      "tool_call_id": "call_01_q78RfkVuUt816fAWLrbv5408"
+    }
+  ],
+  "kind": "tools",
+  "logical_id": "primary_n14_inherited/turn_00",
+  "request_sha256": "9d22a9194264f34e277903f85b6972e949988bdc62af66b9c2e8a67e0c97e2b9",
+  "tool_messages": [
+    {
+      "content": "{\"error\":null,\"ok\":true,\"value\":false}",
+      "role": "tool",
+      "tool_call_id": "call_00_hT5DM6UAWsSiSafRCtXP9108"
+    },
+    {
+      "content": "{\"error\":null,\"ok\":true,\"value\":true}",
+      "role": "tool",
+      "tool_call_id": "call_01_q78RfkVuUt816fAWLrbv5408"
+    }
+  ],
+  "turn": 0
+}

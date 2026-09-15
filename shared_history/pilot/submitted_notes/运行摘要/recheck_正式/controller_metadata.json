@@ -1,0 +1,4 @@
+{
+  "dp_construction_seconds": 0.00044341618195176125,
+  "assumptions": "known finite model; exact scoped calibration; fixed LLM worker; not native GLOVE/SafeCommit evaluation"
+}

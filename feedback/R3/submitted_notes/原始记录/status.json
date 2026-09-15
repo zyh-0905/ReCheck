@@ -1,0 +1,11 @@
+{
+  "state": "completed",
+  "updated_utc": "2026-09-12T14:03:19.377124+00:00",
+  "budget": {
+    "attempts": 1,
+    "response_records": 1,
+    "uncertain_attempts": 0,
+    "model_call_cap": 1,
+    "actual_billing": "unknown; not inferred from local start events"
+  }
+}

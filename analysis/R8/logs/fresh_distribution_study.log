@@ -1,0 +1,43 @@
+[
+  {
+    "policy": "global_guard",
+    "cells": 30,
+    "safe_success": 21,
+    "wrong_write": 0,
+    "rejections": 9,
+    "tool_calls": 41,
+    "global_token_issuances": 30,
+    "global_token_checks": 30
+  },
+  {
+    "policy": "query_use",
+    "cells": 30,
+    "safe_success": 28,
+    "wrong_write": 2,
+    "rejections": 0,
+    "tool_calls": 50,
+    "global_token_issuances": 0,
+    "global_token_checks": 0
+  },
+  {
+    "policy": "scoped_guard",
+    "cells": 30,
+    "safe_success": 28,
+    "wrong_write": 0,
+    "rejections": 2,
+    "tool_calls": 68,
+    "global_token_issuances": 0,
+    "global_token_checks": 0
+  },
+  {
+    "policy": "scoped_retry1",
+    "cells": 30,
+    "safe_success": 30,
+    "wrong_write": 0,
+    "rejections": 2,
+    "tool_calls": 74,
+    "global_token_issuances": 0,
+    "global_token_checks": 0
+  }
+]
+/mnt/data/r8_work/final_unpacked_run

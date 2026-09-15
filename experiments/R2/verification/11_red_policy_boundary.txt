@@ -1,0 +1,20 @@
+test_controller_arguments_exclude_private_generation_fields (test_r2_live.LiveTests.test_controller_arguments_exclude_private_generation_fields) ... FAIL
+
+======================================================================
+FAIL: test_controller_arguments_exclude_private_generation_fields (test_r2_live.LiveTests.test_controller_arguments_exclude_private_generation_fields)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_live.py", line 142, in test_controller_arguments_exclude_private_generation_fields
+    experiment.run(c,self.cfg(),Path(d),spec)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/r2_work/R2_Research_Kit/r2lib/experiment.py", line 46, in run
+    refresh=choose(m,st["ages"],task["type"],spec["steps"]-t,dp,cell,spec)
+  File "/mnt/data/r2_work/R2_Research_Kit/tests/test_r2_live.py", line 132, in guard
+    self.assertNotIn("actual_hazard",cell)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'actual_hazard' unexpectedly found in {'stream': 0, 'task_seed': 920101, 'world_seed': 930101, 'data_seed': 940101, 'regime': 'no_drift', 'actual_hazard': 0.0, 'probe_price': [0.18, 0.18]}
+
+----------------------------------------------------------------------
+Ran 1 test in 0.535s
+
+FAILED (failures=1)

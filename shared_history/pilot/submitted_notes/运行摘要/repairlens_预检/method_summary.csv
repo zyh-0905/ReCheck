@@ -1,0 +1,4 @@
+﻿method,completed_records,independent_units,success_rate,llm_calls_excluding_shared_prefix,llm_attempts_excluding_shared_prefix,llm_latency_seconds_excluding_shared_prefix,estimated_cost_excluding_shared_prefix
+full_regeneration,4,4,1.0,12,12,12.735021580709144,0.0017297999999999997
+keep_stale,4,4,0.25,0,0,0,0
+llm_selected_patch,4,4,1.0,10,10,17.018417751416564,0.0038466

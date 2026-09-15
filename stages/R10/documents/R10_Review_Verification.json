@@ -1,0 +1,106 @@
+{
+  "phase": "R10_FEEDBACK_REVIEW",
+  "review_date": "2026-09-14",
+  "input_feedback_sha256": "6c65dd4e04c16f9aa7069bd0ee94e076f6f08694ee62ede9d62a49b4adbfe396",
+  "frozen_package_sha256": "aece2409470c9773047fe328185e297d9f60c2601b0741ea569fb28ec6efcce5",
+  "input_inner_sha256": "8bfc5a830dfe94fb9d4df09f82f1df965b1cd0565f7c2f74df45b7efc6f71dd7",
+  "bundle_registered_files": 1091,
+  "frozen_source_files": 38,
+  "original_tests": {
+    "run": 92,
+    "failures": 0,
+    "errors": 0
+  },
+  "independent_tests": {
+    "run": 50,
+    "failures": 0,
+    "errors": 0,
+    "full_bundle_negative_cases": 12
+  },
+  "independent_red_phase": {
+    "tests": 38,
+    "failures": 22,
+    "errors": 16,
+    "meaning": "auditor interface stubs; not user experiment"
+  },
+  "native_requests_replayed": 237,
+  "independent_episodes_scored": 48,
+  "database_tool_events": 214,
+  "report_tool_events": 48,
+  "receipt_links_checked": 262,
+  "database_receipts_in_followup_requests": 214,
+  "terminal_reports_without_followup": 48,
+  "environment_events": 40,
+  "conflicts": {
+    "row_version": 14,
+    "selection": 8
+  },
+  "all_four_outcomes_12_of_12_per_arm": true,
+  "source_and_original_scores_unchanged": true,
+  "original_derived_files_reproduced": [
+    "AUDIT.json",
+    "calls.csv",
+    "episodes.csv",
+    "summary.csv"
+  ],
+  "completed_run_no_resampling": true,
+  "local_precondition_branch_checks": 22,
+  "local_precondition_branch_agent_samples": 0,
+  "specific_narration_counterexamples_not_primary_endpoint": 2,
+  "new_remote_llm_calls": 0,
+  "new_repairlens_evidence": false,
+  "research_decision": "ACCEPT_AND_CLOSE_NO_RERUN_NO_SAME_TEMPLATE_EXPANSION",
+  "monetary_cost": "UNKNOWN",
+  "original_run_wall_seconds": 438.9877896248363,
+  "model_latency_seconds": 343.1639619972557,
+  "review_environment": {
+    "system": "Linux",
+    "python": "3.13.5",
+    "sqlite": "3.46.1"
+  },
+  "user_reported_environment": {
+    "system": "Darwin",
+    "machine": "arm64",
+    "python": "3.11.15",
+    "sqlite": "3.53.1"
+  },
+  "limits": [
+    "No independent human peer review",
+    "No provider weights or invoice authentication",
+    "One constructed SQLite backend, two task families, one endpoint",
+    "Posthoc guard branches are not agent efficacy trials",
+    "No statistical superiority or equivalence claim",
+    "Original safe-completion score does not validate every free-text factual statement"
+  ],
+  "generated_utc": "2026-09-14T14:56:14.025600+00:00",
+  "fresh_extracted_tests": {
+    "independent_run": 50,
+    "original_run": 92,
+    "failures": 0,
+    "errors": 0
+  },
+  "fresh_reproduced_scientific_outputs_identical": [
+    "receipt_links.csv",
+    "paired_behaviors.csv",
+    "score_by_episode.json",
+    "database_events.csv",
+    "behaviors.csv",
+    "review.json",
+    "conflicts.csv",
+    "summary.csv",
+    "episodes.csv",
+    "calls.csv",
+    "local_guards/local_guard_checks.csv",
+    "local_guards/local_guard_checks.json",
+    "local_guards/local_guard_summary.json",
+    "narrative_checks.json"
+  ],
+  "fresh_reproduction_exit_code": 0,
+  "fresh_reproduction_verified_utc": "2026-09-14T14:57:52.222783+00:00",
+  "delivery_zip_sha256": "34de584cbb795a817d0c391ce65189a5479c0edb93dfabc4e146e8efd3964a38",
+  "delivery_zip_bytes": 2221943,
+  "delivery_manifest_files_verified": 42,
+  "input_archives_still_unchanged": true,
+  "limited_credential_pattern_scan_hits": [],
+  "credential_scan_not_complete_privacy_audit": true
+}

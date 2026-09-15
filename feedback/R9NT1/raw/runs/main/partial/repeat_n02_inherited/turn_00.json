@@ -1,0 +1,75 @@
+{
+  "assistant_message": {
+    "content": "I'll first verify Fredrik's current contact entry and check the cellular service status.",
+    "reasoning_content": "The user wants to send a message to Fredrik Thordendal. I have a historical record of his contact entry, but it \"need not remain current.\" I should search contacts to find his current contact entry and phone number.\n\nLet me search for the contact. Then check cellular service status, enable if needed, and send the message.\n\nLet me start with searching contacts.",
+    "role": "assistant",
+    "tool_calls": [
+      {
+        "function": {
+          "arguments": "{\"name\": \"Fredrik Thordendal\"}",
+          "name": "search_contacts"
+        },
+        "id": "call_00_4fQ4cNjhupMnJlv41olL6201",
+        "index": 0,
+        "type": "function"
+      },
+      {
+        "function": {
+          "arguments": "{}",
+          "name": "get_cellular_service_status"
+        },
+        "id": "call_01_kYKsYBH5pmvKr5QEMpzG9535",
+        "index": 1,
+        "type": "function"
+      }
+    ]
+  },
+  "decoded_calls": [
+    {
+      "arguments": {
+        "name": "Fredrik Thordendal"
+      },
+      "id": "call_00_4fQ4cNjhupMnJlv41olL6201",
+      "name": "search_contacts"
+    },
+    {
+      "arguments": {},
+      "id": "call_01_kYKsYBH5pmvKr5QEMpzG9535",
+      "name": "get_cellular_service_status"
+    }
+  ],
+  "event_end": 4,
+  "event_start": 0,
+  "executions": [
+    {
+      "batch_index": 0,
+      "event_end": 3,
+      "event_start": 0,
+      "outer_tool_count": 1,
+      "tool_call_id": "call_00_4fQ4cNjhupMnJlv41olL6201"
+    },
+    {
+      "batch_index": 1,
+      "event_end": 4,
+      "event_start": 3,
+      "outer_tool_count": 2,
+      "tool_call_id": "call_01_kYKsYBH5pmvKr5QEMpzG9535"
+    }
+  ],
+  "kind": "tools",
+  "logical_id": "repeat_n02_inherited/turn_00",
+  "request_sha256": "97659ee681222dbfeb4022ce9a0e60bb24c292164202daa70fa37c7db2aae203",
+  "tool_messages": [
+    {
+      "content": "{\"error\":null,\"ok\":true,\"value\":[{\"is_self\":false,\"name\":\"Fredrik Thordendal\",\"person_id\":\"9e137f06-916a-5310-8174-cf0b7e9f7054\",\"phone_number\":\"+12453344098\",\"relationship\":\"friend\"}]}",
+      "role": "tool",
+      "tool_call_id": "call_00_4fQ4cNjhupMnJlv41olL6201"
+    },
+    {
+      "content": "{\"error\":null,\"ok\":true,\"value\":true}",
+      "role": "tool",
+      "tool_call_id": "call_01_kYKsYBH5pmvKr5QEMpzG9535"
+    }
+  ],
+  "turn": 0
+}

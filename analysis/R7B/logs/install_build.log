@@ -1,0 +1,12 @@
+WARNING: The directory '/home/oai/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+Looking in links: /mnt/data/r7b_work/materials/packages
+Processing ./mnt/data/r7b_work/materials/packages/setuptools-70.3.0-py3-none-any.whl
+Processing ./mnt/data/r7b_work/materials/packages/wheel-0.43.0-py3-none-any.whl
+Installing collected packages: wheel, setuptools
+  Attempting uninstall: setuptools
+    Found existing installation: setuptools 80.9.0
+    Uninstalling setuptools-80.9.0:
+      Successfully uninstalled setuptools-80.9.0
+
+Successfully installed setuptools-70.3.0 wheel-0.43.0
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.

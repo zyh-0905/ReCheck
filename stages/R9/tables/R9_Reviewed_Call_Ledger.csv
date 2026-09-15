@@ -1,0 +1,3 @@
+run,logical_id,state,prompt_tokens,completion_tokens,total_tokens,reasoning_tokens,cached_input_tokens,valid_object,json_error,finish_reason,response_id,returned_model,system_fingerprint,requested_model,response_format,text_characters,latency_seconds
+R9_smoke,smoke,completed,48,26,74,20,0,True,,stop,a84995a2-f72a-4af7-9c7c-cd642b036d61,deepseek-flash,aeb56401ca74e127821c4f9126dcb669,deepseek-v4-flash,,16,0.8097959579899907
+R9_main,primary_n06_verify_confirm/turn_00,paused,2630,128,2758,36,0,False,Extra data: line 3 column 1 (char 55),stop,3a1c11af-2c7b-4930-8994-a15129749a39,deepseek-flash,aeb56401ca74e127821c4f9126dcb669,deepseek-v4-flash,,407,1.9929463751614094

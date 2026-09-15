@@ -1,0 +1,37 @@
+test_bundle_rejects_path_traversal (test_collect.CollectorTests.test_bundle_rejects_path_traversal) ... ok
+test_changed_source_refuses_inconsistent_evidence (test_collect.CollectorTests.test_changed_source_refuses_inconsistent_evidence) ... ok
+test_common_credential_blocks_raw_evidence (test_collect.CollectorTests.test_common_credential_blocks_raw_evidence) ... ok
+test_config_local_and_dotenv_never_copied (test_collect.CollectorTests.test_config_local_and_dotenv_never_copied) ... ok
+test_duplicate_json_keys_preserved_and_reported (test_collect.CollectorTests.test_duplicate_json_keys_preserved_and_reported) ... ok
+test_empty_directories_and_missing_calls_are_reported (test_collect.CollectorTests.test_empty_directories_and_missing_calls_are_reported) ... ok
+test_endpoint_bound_request_hash_validates (test_collect.CollectorTests.test_endpoint_bound_request_hash_validates) ... ok
+test_entrypoint_exists (test_collect.CollectorTests.test_entrypoint_exists) ... ok
+test_fingerprint_mismatch_is_reported (test_collect.CollectorTests.test_fingerprint_mismatch_is_reported) ... ok
+test_lock_never_deleted_or_executed (test_collect.CollectorTests.test_lock_never_deleted_or_executed) ... ok
+test_manifest_cap_mismatch_reported_not_silently_accepted (test_collect.CollectorTests.test_manifest_cap_mismatch_reported_not_silently_accepted) ... ok
+test_missing_run_report_without_fabrication (test_collect.CollectorTests.test_missing_run_report_without_fabrication) ... ok
+test_no_network_and_no_subprocess_used (test_collect.CollectorTests.test_no_network_and_no_subprocess_used) ... ok
+test_output_inside_run_refused (test_collect.CollectorTests.test_output_inside_run_refused) ... ok
+test_overwrite_refused (test_collect.CollectorTests.test_overwrite_refused) ... ok
+test_partial_interrupted_is_packaged_not_retried (test_collect.CollectorTests.test_partial_interrupted_is_packaged_not_retried) ... ok
+test_personal_path_not_in_report (test_collect.CollectorTests.test_personal_path_not_in_report) ... ok
+test_private_key_blocks_raw_evidence (test_collect.CollectorTests.test_private_key_blocks_raw_evidence) ... ok
+test_request_hash_corruption_reported (test_collect.CollectorTests.test_request_hash_corruption_reported) ... ok
+test_result_without_start_is_reported (test_collect.CollectorTests.test_result_without_start_is_reported) ... ok
+test_sanitized_billing_note_is_explicit_only (test_collect.CollectorTests.test_sanitized_billing_note_is_explicit_only) ... ok
+test_secret_field_value_blocked_but_key_env_name_allowed (test_collect.CollectorTests.test_secret_field_value_blocked_but_key_env_name_allowed) ... ok
+test_sensitive_metadata_not_echoed_in_diagnostic (test_collect.CollectorTests.test_sensitive_metadata_not_echoed_in_diagnostic) ... ok
+test_snapshot_hash_corruption_reported (test_collect.CollectorTests.test_snapshot_hash_corruption_reported) ... ok
+test_source_bytes_preserved (test_collect.CollectorTests.test_source_bytes_preserved) ... ok
+test_statement_unknown_allowed_and_billing_optional (test_collect.CollectorTests.test_statement_unknown_allowed_and_billing_optional) ... ok
+test_symlink_not_followed (test_collect.CollectorTests.test_symlink_not_followed) ... ok
+test_unknown_endpoint_not_claimed_to_be_verified (test_collect.CollectorTests.test_unknown_endpoint_not_claimed_to_be_verified) ... ok
+test_unknown_file_not_in_export (test_collect.CollectorTests.test_unknown_file_not_in_export) ... ok
+test_unknown_values_not_replaced_with_zero_bill (test_collect.CollectorTests.test_unknown_values_not_replaced_with_zero_bill) ... ok
+test_unlisted_source_file_excluded (test_collect.CollectorTests.test_unlisted_source_file_excluded) ... ok
+test_verify_detects_changed_member (test_collect.CollectorTests.test_verify_detects_changed_member) ... ok
+
+----------------------------------------------------------------------
+Ran 32 tests in 0.138s
+
+OK

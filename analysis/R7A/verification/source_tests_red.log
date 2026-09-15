@@ -1,0 +1,22 @@
+test_source_probe (unittest.loader._FailedTest.test_source_probe) ... ERROR
+
+======================================================================
+ERROR: test_source_probe (unittest.loader._FailedTest.test_source_probe)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_source_probe
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/unittest/loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python3.13/unittest/loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "/mnt/data/r7_work/R7_Source_Study/tests/test_source_probe.py", line 6, in <module>
+    from source_probe import (WorldDouble, load_sender, source_identity, run_diagnostics,
+                              indistinguishability_bound, COMMIT)
+ModuleNotFoundError: No module named 'source_probe'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)

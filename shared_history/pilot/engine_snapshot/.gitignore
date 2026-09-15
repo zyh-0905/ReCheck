@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+config.local.json
+runs/
+uploads/
+.env
+*.key

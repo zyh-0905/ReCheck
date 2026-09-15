@@ -1,0 +1,71 @@
+{
+  "task_id": "R2_RECHECK_MECHANISM_01",
+  "version": "r2-2.0.0",
+  "local_unit_tests_passed": 91,
+  "unit_test_exit_code": 0,
+  "new_remote_llm_calls": 0,
+  "planned_user_main_calls": 484,
+  "planned_user_smoke_calls": 1,
+  "planned_user_total_calls": 485,
+  "planned_records": 240,
+  "independent_synthetic_streams": 4,
+  "steps_per_stream": 12,
+  "methods": [
+    "recheck",
+    "myopic",
+    "ttl",
+    "always",
+    "never"
+  ],
+  "outcome_blind_probe_disagreements": [
+    0,
+    0,
+    4,
+    4
+  ],
+  "prices_default": "UNKNOWN_NOT_ZERO",
+  "repairlens_new_calls": 0,
+  "original_input_archives_unchanged": true,
+  "validation_environment": "Linux / CPython 3.13.5 / numpy 2.3.5; final subprocesses without unrelated injected sitecustomize",
+  "windows_macos_runtime_tested": false,
+  "scientific_status": "DEVELOPMENT_PROTOCOL; REAL R2 RESULTS PENDING USER EXECUTION",
+  "llm_model_or_provider_verified": false,
+  "not_claimed": [
+    "confirmatory superiority",
+    "independent peer review",
+    "provider invoice reconciliation",
+    "real-world benchmark results"
+  ],
+  "distributed_zip_unit_tests": 91,
+  "distributed_zip_test_exit_code": 0,
+  "distributed_zip_full_cli_fixture": {
+    "main_without_smoke_blocked": true,
+    "pass": true,
+    "main_fixture_calls": 484,
+    "smoke_fixture_calls": 1,
+    "total_local_http_fixture_calls": 485,
+    "new_remote_llm_calls": 0,
+    "records": 240,
+    "replay": {
+      "pass": true,
+      "applicable": true,
+      "new_model_calls": 0,
+      "request_bodies_checked": 484,
+      "completed_calls_consumed": 484,
+      "stop_reason": null,
+      "request_mismatches": [],
+      "artifact_mismatches": [],
+      "unconsumed_calls": [],
+      "note": "Local reconstruction only, not provider identity or invoice authentication."
+    },
+    "bundle": {
+      "pass": true,
+      "entries": 2327
+    },
+    "source_snapshot_mismatches": [],
+    "resume_without_resampling": true,
+    "evidence_label": "SOFTWARE_TEST_NOT_RESEARCH",
+    "all_prices_unknown": true
+  },
+  "final_source_manifest_sha256": "a75cf811e5d72dae8ff1312e2764d067ccbb817a4627fcce7ac73bbb0aee6835"
+}

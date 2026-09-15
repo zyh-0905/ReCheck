@@ -1,0 +1,5 @@
+﻿method,completed_records,independent_units,success_rate,llm_calls_excluding_shared_prefix,llm_attempts_excluding_shared_prefix,llm_latency_seconds_excluding_shared_prefix,estimated_cost_excluding_shared_prefix
+always,32,4,0.96875,64,64,238.1146304171998,0.06157477199999999
+myopic,32,4,1.0,64,64,270.3595762848854,0.07166547599999999
+recheck,32,4,1.0,64,64,238.81919787591323,0.058521972000000005
+ttl,32,4,0.96875,64,64,229.3116458291188,0.056678435999999985

@@ -1,0 +1,14 @@
+{
+  "dp_build": [
+    {
+      "model_sha256": "aaed8cecbaec6ece36bec26e809e12e09ded6878ac0905a626367d4545c69a44",
+      "dp_build_seconds": 0.000527665950357914
+    },
+    {
+      "model_sha256": "5e5a6cdd150aa21e907538645858300ed8869b110cc7c21bb6d3fa4a08b49c53",
+      "dp_build_seconds": 0.0009309998713433743
+    }
+  ],
+  "new_remote_calls_in_controller": 0,
+  "not_currency": true
+}

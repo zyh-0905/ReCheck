@@ -1,0 +1,9 @@
+{
+ "kind":"Exploratory follow-up specified after the first five setting tasks showed terminal regressions were not excluded by milestone score",
+ "cases":["update_contact_with_id_and_phone_number","update_contact_relationship_with_relationship","modify_reminder_with_recency_latest"],
+ "variants":["correct","error_then_correct","claim_only","achieve_then_revert","achieve_revert_repair"],
+ "selection":"Canonical tasks exposing a reversible authorized update tool, spanning two additional tool families; not random task sampling or confirmation",
+ "same_upstream":true,
+ "no_new_model_calls":true,
+ "invariance":"Final target is based on the public task and initial reference selection; prior successful milestone achievement is not presumed to imply a valid final state. Timestamp metadata is reported separately."
+}

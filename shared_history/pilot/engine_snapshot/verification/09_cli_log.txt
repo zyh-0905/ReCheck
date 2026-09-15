@@ -1,0 +1,103 @@
+{
+  "passed": true,
+  "evidence": "LOCAL_HTTP_FIXTURE_ONLY_NOT_REAL_LLM",
+  "external_model_requests": 0,
+  "recheck_default_logical_calls": 260,
+  "recheck_default_records": 128,
+  "readiness_logical_calls_in_fixture": 34,
+  "readiness_default_records": 12,
+  "resume_sent_additional_http_requests": 0,
+  "export_hashes_match": true,
+  "steps": [
+    {
+      "command": [
+        "doctor",
+        "--config",
+        "fixture.json"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "smoke",
+        "--config",
+        "fixture.json",
+        "--out",
+        "smoke"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "run",
+        "--config",
+        "fixture.json",
+        "--study",
+        "recheck",
+        "--out",
+        "recheck"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "summarize",
+        "--run",
+        "recheck"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "run",
+        "--config",
+        "fixture.json",
+        "--study",
+        "recheck",
+        "--out",
+        "recheck"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "export",
+        "--run",
+        "recheck",
+        "--out",
+        "recheck_upload.zip"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "run",
+        "--config",
+        "fixture.json",
+        "--study",
+        "repairlens-readiness",
+        "--out",
+        "readiness"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "summarize",
+        "--run",
+        "readiness"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "export",
+        "--run",
+        "readiness",
+        "--out",
+        "readiness_upload.zip"
+      ],
+      "returncode": 0
+    }
+  ]
+}

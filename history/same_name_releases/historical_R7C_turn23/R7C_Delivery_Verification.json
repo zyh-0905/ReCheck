@@ -1,0 +1,94 @@
+{
+  "task_id": "R7C_NATIVE_AGENT_DIAGNOSIS_01",
+  "version": "r7c-1.0.0",
+  "researcher_new_remote_llm_calls": 0,
+  "new_external_service_calls": 0,
+  "native_constructed_cases": 14,
+  "intent_templates": 3,
+  "underlying_tool_domains": 2,
+  "scripted_native_comparisons": 42,
+  "scripted_results": {
+    "cached": {
+      "safe_cases": 9,
+      "runtime_tool_calls": 18
+    },
+    "reuse": {
+      "safe_cases": 11,
+      "runtime_tool_calls": 18
+    },
+    "resolve": {
+      "safe_cases": 14,
+      "runtime_tool_calls": 27
+    }
+  },
+  "scripted_results_are_not_llm_results": true,
+  "fresh_distribution_unit_tests": 71,
+  "unit_test_exit_code": 0,
+  "selected_upstream_local_core_tests": {
+    "passed": 60,
+    "failed": 0,
+    "warnings": 1
+  },
+  "full_upstream_suite_pass_not_claimed": true,
+  "upstream_commit": "c8571d7854316d2e1c5f288e59fe1e34e53f6dd1",
+  "unmodified_upstream_source_files": 77,
+  "fresh_registered_source_files": 111,
+  "full_http_fixture": {
+    "rule": {
+      "evidence_kind": "SOFTWARE_TEST_NOT_RESEARCH",
+      "requests": 142,
+      "main_requests": 141,
+      "primary_episodes": 42,
+      "repeat_episodes": 6,
+      "reconstructed_requests": 141,
+      "mechanical_pass": true,
+      "no_resampling": true,
+      "source_manifest_sha256": "e7c011da97123b1b74296fbc09ebaa26c2f8b001ad592b916a820c0be2974e0e"
+    },
+    "cap": {
+      "evidence_kind": "SOFTWARE_TEST_NOT_RESEARCH",
+      "requests": 385,
+      "main_requests": 384,
+      "primary_episodes": 42,
+      "repeat_episodes": 6,
+      "reconstructed_requests": 384,
+      "mechanical_pass": true,
+      "no_resampling": true,
+      "source_manifest_sha256": "e7c011da97123b1b74296fbc09ebaa26c2f8b001ad592b916a820c0be2974e0e"
+    }
+  },
+  "paid_protocol": {
+    "model": "deepseek-v4-flash",
+    "base_url": "https://api.deepseek.com/v1",
+    "max_output_tokens": 16384,
+    "thinking": "enabled",
+    "reasoning_effort": "high",
+    "primary_episodes": 42,
+    "repeat_episodes": 6,
+    "max_calls_per_episode": 8,
+    "main_attempt_cap": 384,
+    "smoke_attempt_cap": 1,
+    "combined_attempt_cap": 385,
+    "currency_cost": "UNKNOWN",
+    "actual_endpoint_compatibility_tested": false
+  },
+  "environment": {
+    "system": "Linux x86_64",
+    "python": "3.11.14",
+    "numpy": "1.26.4",
+    "polars": "0.20.31"
+  },
+  "windows_macos_runtime_tested": false,
+  "independent_human_review": false,
+  "source_matches_fresh_tested_distribution": true,
+  "zip_sha256": "4ff4c3d46a20c8d2a5f6041cb13adad5aff67cca3cdea8d9efc583db1c5622f6",
+  "zip_bytes": 321548,
+  "not_claimed": [
+    "ReCheck superiority",
+    "official ToolSandbox benchmark results",
+    "independent scenario sample size 42",
+    "new RepairLens evidence",
+    "real model results from software fixtures",
+    "submission readiness"
+  ]
+}

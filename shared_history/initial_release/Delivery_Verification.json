@@ -1,0 +1,18 @@
+{
+  "zip_crc": true,
+  "clean_package_tests": "35 passed",
+  "full_package_checksums": true,
+  "standalone_latex": {
+    "ReCheck": {
+      "pages": 4,
+      "standalone_compile": true,
+      "pixel_identical_to_delivered_pdf": true
+    },
+    "RepairLens": {
+      "pages": 5,
+      "standalone_compile": true,
+      "pixel_identical_to_delivered_pdf": true
+    }
+  },
+  "independent_peer_review": false
+}

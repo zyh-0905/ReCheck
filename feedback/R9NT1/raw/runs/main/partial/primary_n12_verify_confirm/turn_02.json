@@ -1,0 +1,47 @@
+{
+  "assistant_message": {
+    "content": "Now let me verify the change.",
+    "reasoning_content": "Now verify by reading wifi status.",
+    "role": "assistant",
+    "tool_calls": [
+      {
+        "function": {
+          "arguments": "{}",
+          "name": "get_wifi_status"
+        },
+        "id": "call_00_5ZvhKD7xMas6wIw80q2z6962",
+        "index": 0,
+        "type": "function"
+      }
+    ]
+  },
+  "decoded_calls": [
+    {
+      "arguments": {},
+      "id": "call_00_5ZvhKD7xMas6wIw80q2z6962",
+      "name": "get_wifi_status"
+    }
+  ],
+  "event_end": 4,
+  "event_start": 3,
+  "executions": [
+    {
+      "batch_index": 0,
+      "event_end": 4,
+      "event_start": 3,
+      "outer_tool_count": 4,
+      "tool_call_id": "call_00_5ZvhKD7xMas6wIw80q2z6962"
+    }
+  ],
+  "kind": "tools",
+  "logical_id": "primary_n12_verify_confirm/turn_02",
+  "request_sha256": "961301726ce3f4c9062bd376c448c0b653aaffdc4d8d60fe2789391733127c38",
+  "tool_messages": [
+    {
+      "content": "{\"error\":null,\"ok\":true,\"value\":true}",
+      "role": "tool",
+      "tool_call_id": "call_00_5ZvhKD7xMas6wIw80q2z6962"
+    }
+  ],
+  "turn": 2
+}

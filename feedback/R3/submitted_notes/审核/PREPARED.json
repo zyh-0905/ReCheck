@@ -1,0 +1,34 @@
+{
+  "task_id": "R3_FACTORED_REFRESH_01",
+  "prepared_utc": "2026-09-12T14:03:07.087183+00:00",
+  "integrity": {
+    "pass": true,
+    "files": 38,
+    "source_manifest_sha256": "a331dffb11eba70a7172820625f35adf46bbd44cab76ef2640917e354bb73e6d"
+  },
+  "config_sha256": "dfd03ba337c2d2cea7d8c8d3b6e777d094f105a65b90c684e713feebbec6f48d",
+  "billing_sha256": "a65ad17a0f4de3ea7c9aca5f77f2c0b73b02f2cb7880211865c4e2bb26992cdf",
+  "protocol_sha256": "c9d66a53bc6177dd92b95301431f028faee54345a6d727498fe685d5eea48354",
+  "source_sha256": "d2b92c4662fd6f0d2098fae6b60831094ba0d0048ae8c21fd3bfeb0f54378ee2",
+  "preflight_pass": true,
+  "regression_pass": true,
+  "network_calls": 0,
+  "planned_main_calls": 416,
+  "planned_smoke_calls": 1,
+  "model_profile": {
+    "model": "deepseek-flash",
+    "max_tokens_field": "max_tokens",
+    "max_output_tokens": 16384,
+    "temperature": null,
+    "extra_body": {
+      "reasoning_effort": "high",
+      "thinking": {
+        "type": "enabled"
+      }
+    },
+    "instruction_role": "system",
+    "backend_kind": "live",
+    "base_url_sha256": "5abe20d7d3d56ed5cd86f95d28d3e712ce59ab9161922170c78a4cfc18eaaf0f"
+  },
+  "price_status": "unknown"
+}
